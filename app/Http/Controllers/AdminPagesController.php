@@ -10,4 +10,10 @@ class AdminPagesController extends Controller
     {
     return view('admin.index');
     }
+
+    public function customers()
+    {
+    return view('admin.customers');
+    }
+
 }
