@@ -11,6 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/* Main Pages */
+Route::get('/', 'PagesController@index');
+Route::get('/', 'PagesController@aboutus');
+Route::get('/', 'PagesController@contactus');
+
+/* Service Pages */
+Route::get('/', 'PagesController@advertising');
+Route::get('/', 'PagesController@search');
+Route::get('/', 'PagesController@social');
+
+
+Route::get('/', 'PagesController@');
