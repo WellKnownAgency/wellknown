@@ -20,3 +20,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::resource('customers', 'CustomersController', [
   'except' => ['create']
 ]);
+
+Route::resource('companies', 'CompaniesController', [
+  'except' => ['create']
+]);

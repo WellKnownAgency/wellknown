@@ -13,7 +13,7 @@
 
 Route::get('admin/', 'AdminPagesController@index');
 Route::get('admin/customers', 'AdminPagesController@customers');
-
+Route::get('admin/companies', 'AdminPagesController@companies');
 
 /* Main Pages */
 Route::get('/', 'PagesController@index');

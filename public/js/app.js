@@ -13904,6 +13904,8 @@ window.Vue = __webpack_require__(36);
  */
 
 Vue.component('customers', __webpack_require__(48));
+Vue.component('companies', __webpack_require__(52));
+
 Vue.component('example-component', __webpack_require__(39));
 
 var app = new Vue({
@@ -48869,6 +48871,337 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_20__;
 /******/ ]);
 });
 //# sourceMappingURL=index.js.map
+
+/***/ }),
+/* 52 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(40)
+/* script */
+var __vue_script__ = __webpack_require__(53)
+/* template */
+var __vue_template__ = __webpack_require__(54)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/Companies.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-3be22680", Component.options)
+  } else {
+    hotAPI.reload("data-v-3be22680", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 53 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_notification__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_notification___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_notification__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mounted: function mounted() {
+    this.fetchUse();
+  },
+  data: function data() {
+    return {
+      companies: [],
+      company: {
+        name: '',
+        email: '',
+        phone: '',
+        address: '',
+        website: '',
+        created_at: ''
+      }
+    };
+  },
+
+  methods: {
+    fetchUse: function fetchUse() {
+      var _this = this;
+
+      axios.get('/api/companies').then(function (res) {
+        _this.companies = res.data;
+      }).catch(function (err) {
+        console.log(err);
+      });
+    }
+  },
+
+  deleteCompany: function deleteCompany() {
+    var _this2 = this;
+
+    axios.delete('/api/companies/' + company.id).then(function (res) {
+      var companyIndex = _this2.customers.indexOf(customer);
+      _this2.companies.splice(companyIndex, 1);
+    }).then(function (res) {
+      _this2.$notify({
+        // (optional)
+        // Name of the notification holder
+        group: 'foo',
+
+        // (optional)
+        // Class that will be assigned to the notification
+        type: 'warn',
+
+        // (optional)
+        // Title (will be wrapped in div.notification-title)
+        title: 'This is title',
+
+        // Content (will be wrapped in div.notification-content)
+        text: 'This is <b> content </b>',
+
+        // (optional)
+        // Overrides default/provided duration
+        duration: 10000,
+
+        // (optional)
+        // Overrides default/provided animation speed
+        speed: 1000
+      });
+    });
+  }
+});
+
+/***/ }),
+/* 54 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { attrs: { id: "content-wrapper" } }, [
+    _c("div", { staticClass: "container-fluid" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "card mb-3" }, [
+        _vm._m(1),
+        _vm._v(" "),
+        _c("div", { staticClass: "card-body" }, [
+          _c("div", { staticClass: "table-responsive" }, [
+            _c(
+              "table",
+              {
+                staticClass: "table table-bordered",
+                attrs: { id: "dataTable", width: "100%", cellspacing: "0" }
+              },
+              [
+                _vm._m(2),
+                _vm._v(" "),
+                _c(
+                  "tbody",
+                  _vm._l(_vm.companies, function(company) {
+                    return _c("tr", [
+                      _c("td", [_vm._v(_vm._s(company.name))]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(_vm._s(company.email))]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(_vm._s(company.phone))]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(_vm._s(company.address))]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(_vm._s(company.website))]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(_vm._s(company.created_at))]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "btn btn-info btn-sm",
+                            attrs: { href: "" }
+                          },
+                          [_vm._v("View")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-danger btn-sm delete",
+                            on: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                _vm.deleteCompany(company)
+                              }
+                            }
+                          },
+                          [_vm._v("Delete")]
+                        )
+                      ])
+                    ])
+                  })
+                )
+              ]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card-footer small text-muted" }, [
+          _vm._v("Updated yesterday at 11:59 PM")
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(3)
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("ol", { staticClass: "breadcrumb" }, [
+      _c("li", { staticClass: "breadcrumb-item" }, [
+        _c("a", { attrs: { href: "#" } }, [_vm._v("Dashboard")])
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "breadcrumb-item active" }, [_vm._v("Tables")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-header" }, [
+      _c("i", { staticClass: "fas fa-table" }),
+      _vm._v("\r\n        Data Table Example")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", [_vm._v("Name")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("E-mail")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Phone")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Address")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Website")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Created_at")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Actions")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { staticClass: "small text-center text-muted my-5" }, [
+      _c("em", [_vm._v("More table examples coming soon...")])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-3be22680", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);
