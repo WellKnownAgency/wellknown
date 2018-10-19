@@ -19,3 +19,4 @@
 
 <!-- Vendor CSS -->
 <link rel="stylesheet" href="{!! asset('css/app.css') !!}">
+<link href="vendor/admin/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">

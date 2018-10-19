@@ -7,7 +7,6 @@
       <div id="wrapper">
       @yield('content')
       </div>
-      @include('admin/partials/_footer')
 
       <!-- Scroll to Top Button-->
       <a class="scroll-to-top rounded" href="#page-top">
