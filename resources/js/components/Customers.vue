@@ -1,6 +1,6 @@
 <template>
 <div id="content-wrapper">
-
+<notifications group="foo" />
   <div class="container-fluid">
 
     <!-- Breadcrumbs-->
@@ -21,16 +21,16 @@
           <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
             <thead>
               <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Phone</th>
-                <th>E-mail</th>
-                <th>Submitted date</th>
+                <th>First Name  <i class="fas fa-sort" style="float:right"></i></th>
+                <th>Last Name  <i class="fas fa-sort" style="float:right"></i></th>
+                <th>Phone  <i class="fas fa-sort" style="float:right"></i></th>
+                <th>E-mail  <i class="fas fa-sort" style="float:right"></i></th>
+                <th>Submitted date  <i class="fas fa-sort" style="float:right"></i></th>
                 <th>Actions</th>
               </tr>
             </thead>
-            <tbody>
-              <tr v-for="customer in customers">
+            <transition-group tag="tbody" name="slide-fade">
+              <tr v-for="customer in customers" :key="customer.id">
                 <td>{{customer.first_name}}</td>
                 <td>{{customer.last_name}}</td>
                 <td>{{customer.phone}}</td>
@@ -41,7 +41,7 @@
                   <button @click.prevent="deleteCustomer(customer)" class="btn btn-danger btn-sm delete">Delete</button>
                 </td>
               </tr>
-            </tbody>
+            </transition-group>
           </table>
         </div>
       </div>
@@ -71,6 +71,7 @@ import Notifications from 'vue-notification'
         return {
           customers: [],
           customer: {
+            id: '',
             first_name: '',
             last_name: '',
             phone: '',
@@ -89,43 +90,21 @@ import Notifications from 'vue-notification'
                  .catch((err) => {
                    console.log(err)
                  })
-               }
-            },
+               },
 
               deleteCustomer () {
                 axios.delete(`/api/customers/${customer.id}`)
                 .then((res) => {
                     const customerIndex = this.customers.indexOf(customer)
                     this.customers.splice(customerIndex, 1)
-                })
-                .then((res) =>{
-                  this.$notify({
-                      // (optional)
-                      // Name of the notification holder
+                    this.$notify({
                       group: 'foo',
-
-                      // (optional)
-                      // Class that will be assigned to the notification
-                      type: 'warn',
-
-                      // (optional)
-                      // Title (will be wrapped in div.notification-title)
-                      title: 'This is title',
-
-                      // Content (will be wrapped in div.notification-content)
-                      text: 'This is <b> content </b>',
-
-                      // (optional)
-                      // Overrides default/provided duration
-                      duration: 10000,
-
-                      // (optional)
-                      // Overrides default/provided animation speed
-                      speed: 1000
-                    })
-                }
-              )
+                      title: 'Important message',
+                      text: 'Hello user! This is a notification!'
+                    });
+                })
             }
+          }
 
   }
 </script>
