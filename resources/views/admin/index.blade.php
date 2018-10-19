@@ -593,12 +593,4 @@
       <!-- /.container-fluid -->
     </div>
     <!-- /.content-wrapper -->
-
-
-
-
-
-
-
-
 @stop
