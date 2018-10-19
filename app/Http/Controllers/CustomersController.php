@@ -12,6 +12,7 @@ class CustomersController extends Controller
       return Customer::latest()->get();
   }
 
+
   public function destroy($id)
     {
         $customer = Customer::findOrFail($id);

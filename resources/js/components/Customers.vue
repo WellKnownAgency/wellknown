@@ -1,6 +1,5 @@
 <template>
 <div id="content-wrapper">
-<notifications group="foo" />
   <div class="container-fluid">
 
     <!-- Breadcrumbs-->
@@ -59,8 +58,7 @@
 </template>
 
 <script>
-
-import Notifications from 'vue-notification'
+import swal from 'sweetalert2'
 
     export default {
       mounted() {
@@ -92,19 +90,29 @@ import Notifications from 'vue-notification'
                  })
                },
 
-              deleteCustomer () {
-                axios.delete(`/api/customers/${customer.id}`)
-                .then((res) => {
-                    const customerIndex = this.customers.indexOf(customer)
-                    this.customers.splice(customerIndex, 1)
-                    this.$notify({
-                      group: 'foo',
-                      title: 'Important message',
-                      text: 'Hello user! This is a notification!'
-                    });
-                })
-            }
+              deleteCustomer (customer) {
+                swal({
+                    title: 'Are you sure?',
+                    type: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Yes, Delete!'
+                    })
+                    .then((result) => {
+                    if (result.value) {
+                    swal(
+                    'Deleted!',
+                    )
+                    axios.delete(`/api/cusomers/${customer.id}`)
+                        .then((res) => {
+                            const customerIndex = this.customers.indexOf(customer)
+                            this.customers.splice(customerIndex, 1)
+                        })
+                    }
+                    })
+                },
           }
+        }
 
-  }
 </script>
