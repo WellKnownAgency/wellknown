@@ -17,13 +17,16 @@ Route::get('admin/companies', 'AdminPagesController@companies');
 
 /* Main Pages */
 Route::get('/', 'PagesController@index');
-Route::get('/', 'PagesController@aboutus');
-Route::get('/', 'PagesController@contactus');
+Route::get('/', 'PagesController@getIndex');
+Route::get('advertising', 'PagesController@getAdvertising');
+Route::get('search-engine-optimization', 'PagesController@getSearch');
+Route::get('social-media-marketing', 'PagesController@getSocial');
+Route::get('web-design', 'PagesController@getWebdesign');
+Route::get('about-us', 'PagesController@getAboutus');
+Route::get('your-form-submitted', 'PagesController@getYourformsubmitted');
+Route::get('privacy-policy', 'PagesController@getPrivacypolicy');
+Route::get('/sitemap.xml', 'PagesController@sitemap');
+Route::get('contact-us', 'PagesController@getContactus');
 
-/* Service Pages */
-Route::get('/', 'PagesController@advertising');
-Route::get('/', 'PagesController@search');
-Route::get('/', 'PagesController@social');
-
-
-Route::get('/', 'PagesController@');
+/* Post Methods */
+Route::post('contact-us', 'PagesController@postContactus');
