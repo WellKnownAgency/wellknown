@@ -7,7 +7,7 @@
 @section('content')
 
 
-<customers></customer>
+<leads></leads>
 
 
 @stop

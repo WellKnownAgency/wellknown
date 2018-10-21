@@ -19,7 +19,6 @@
 			<div class="form-box">
 		<form class="form-horizontal" action="{{ url('contact-us') }}" method="POST"  id="contact_form">
 			{{csrf_field()}}
-			@captcha
 			<div class="row">
 			<div class="col-lg-6">
 
@@ -30,7 +29,7 @@
 			  <div class="inputGroupContainer">
 			  <div class="input-group">
 			  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-			  <input  name="firstname" placeholder="First Name" class="form-control"  type="text" required>
+			  <input  name="first_name" placeholder="First Name" class="form-control"  type="text" required>
 				</div>
 			  </div>
 			</div>
@@ -41,7 +40,7 @@
 				<div class="inputGroupContainer">
 				<div class="input-group">
 			  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-			  <input name="lastname" placeholder="Last Name" class="form-control"  type="text" required>
+			  <input name="last_name" placeholder="Last Name" class="form-control"  type="text" required>
 				</div>
 			  </div>
 			</div>

@@ -6,7 +6,7 @@ use Notification;
 use App\Notifications\Comments;
 use App\Notifications\Customers;
 use Illuminate\Http\Request;
-use App\Customer;
+use App\Lead;
 use App\Post;
 use App\Comment;
 use Mail;
@@ -53,50 +53,28 @@ class PagesController extends Controller
 
   public function postContactus(Request $request) {
     $this->validate($request, [
-      'firstname' => 'required',
-      'lastname'  => 'required',
+      'first_name' => 'required',
+      'last_name'  => 'required',
       'email'     => 'required|email',
       'phone'     => 'required',
       'website'   => 'required',
       'body'      => 'required'
     ]);
 
-    $customer = new Customer;
+    $lead = new Lead;
 
-		$customer->firstname = $request->firstname;
-		$customer->lastname = $request->lastname;
-		$customer->phone = $request->phone;
-		$customer->email = $request->email;
-		$customer->website = $request->website;
-		$customer->body = $request->body;
+		$lead->first_name = $request->first_name;
+		$lead->last_name = $request->last_name;
+		$lead->phone = $request->phone;
+		$lead->email = $request->email;
+		$lead->website = $request->website;
+		$lead->body = $request->body;
+    $lead->source_id = '1';
+
+		$lead->save();
 
 
-		$customer->save();
 
-    $data = array(
-      'firstname' => $request->firstname,
-      'lastname'  => $request->lastname,
-      'email'     => $request->email,
-      'phone'     => $request->phone,
-      'website'   => $request->website,
-      'body'      => $request->body
-    );
-
-    Notification::route('slack', 'https://hooks.slack.com/services/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')->notify(new Customers);
-
-    Mail::send('emails.notification', $data, function($message) use ($data){
-      $message->from($data['email']);
-      $message->to('info@wknown.com');
-      $message->subject('Contact Request');
-
-    });
-
-    Mail::send('emails.contact', $data, function($message) use ($data){
-      $message->from('info@wknown.com');
-      $message->to($data['email']);
-      $message->subject('Contact Request');
-
-    });
     return redirect('/your-form-submitted');
   }
 

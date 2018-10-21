@@ -11,9 +11,9 @@ class AdminPagesController extends Controller
     return view('admin.index');
     }
 
-    public function customers()
+    public function leads()
     {
-    return view('admin.customers');
+    return view('admin.leads');
     }
 
     public function companies()
