@@ -7,7 +7,7 @@
 @section('content')
 
 
-
+<companies></companies>
 
 
 @stop

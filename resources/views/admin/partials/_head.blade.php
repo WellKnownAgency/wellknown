@@ -18,5 +18,6 @@
 <link href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' rel='stylesheet' type='text/css'>
 
 <!-- Vendor CSS -->
-<link rel="stylesheet" href="{!! asset('/css/app.css') !!}">
+<link rel="stylesheet" href="{!! asset('css/app.css') !!}">
+
 <link href="/vendor/admin/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
