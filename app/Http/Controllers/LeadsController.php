@@ -15,7 +15,7 @@ class LeadsController extends Controller
 
   public function show($id)
   {
-    $lead = Lead::find($id);
+    $lead = Lead::with('status')->with('source')->find($id);
 
     return $lead;
   }

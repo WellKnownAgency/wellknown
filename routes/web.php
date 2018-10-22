@@ -10,10 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('admin/', 'AdminPagesController@index');
-Route::get('admin/leads', 'AdminPagesController@leads');
-Route::get('admin/companies', 'AdminPagesController@companies');
+Route::prefix('admin')->middleware('auth:admin')->group(function() {
+  Route::get('/', 'AdminPagesController@index')->name('admin.index');
+  Route::get('/leads', 'AdminPagesController@leads');
+  Route::get('/companies', 'AdminPagesController@companies');
+});
 
 /* Main Pages */
 Route::get('/', 'PagesController@index');
@@ -27,6 +28,11 @@ Route::get('your-form-submitted', 'PagesController@getYourformsubmitted');
 Route::get('privacy-policy', 'PagesController@getPrivacypolicy');
 Route::get('/sitemap.xml', 'PagesController@sitemap');
 Route::get('contact-us', 'PagesController@getContactus');
+
+/* Auth Routes */
+Auth::routes();
+Route::get('/admin/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
+Route::post('/admin/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
 
 /* Post Methods */
 Route::post('contact-us', 'PagesController@postContactus');

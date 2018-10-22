@@ -79,8 +79,7 @@
           </div>
         </div>
       </div>
-
+      </div>
     @include('admin/partials/_js')
-    </div>
   </body>
 </html>
