@@ -47653,9 +47653,7 @@ var moment = __webpack_require__(56);
     };
   },
 
-  watch: {
-    test: 'lead.status_id'
-  },
+
   methods: {
     customFormatter: function customFormatter(date) {
       return moment(date).format('YYYY-MM-D');
@@ -51530,8 +51528,8 @@ var render = function() {
                               {
                                 name: "model",
                                 rawName: "v-model",
-                                value: _vm.test,
-                                expression: "test"
+                                value: lead.status_id,
+                                expression: "lead.status_id"
                               }
                             ],
                             staticClass: "custom-select",
@@ -51547,9 +51545,13 @@ var render = function() {
                                         "_value" in o ? o._value : o.value
                                       return val
                                     })
-                                  _vm.test = $event.target.multiple
-                                    ? $$selectedVal
-                                    : $$selectedVal[0]
+                                  _vm.$set(
+                                    lead,
+                                    "status_id",
+                                    $event.target.multiple
+                                      ? $$selectedVal
+                                      : $$selectedVal[0]
+                                  )
                                 },
                                 function($event) {
                                   _vm.statuschange(lead)

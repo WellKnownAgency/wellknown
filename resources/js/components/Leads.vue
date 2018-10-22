@@ -36,7 +36,7 @@
                 <td>{{lead.phone}}</td>
                 <td>{{lead.email}}</td>
                 <td>
-                  <select class="custom-select" v-model="test" v-on:change="statuschange(lead)" >
+                  <select class="custom-select" v-model="lead.status_id" @change="statuschange(lead)" >
                     <option selected>Choose...</option>
                     <option v-for="status in statuses" :key="status.id" v-bind:value="status.id">{{status.name}}</option>
                   </select>
@@ -305,9 +305,7 @@ var moment = require('moment');
           }
           }
       },
-      watch: {
-          test: 'lead.status_id'
-      },
+
       methods: {
           customFormatter(date) {
             return moment(date).format('YYYY-MM-D');
