@@ -36,13 +36,15 @@
                 <td>{{lead.phone}}</td>
                 <td>{{lead.email}}</td>
                 <td>
-                  <span v-if="lead.status.name === 'New' "
-                  style="margin-left: 5px;" class="badge badge-primary">{{ lead.status.name }}</span>
-                  <span v-else-if="lead.status.name === 'In Progress' "
-                  style="margin-left: 5px;" class="badge badge-pill badge-warning">{{ lead.status.name }}</span>
+                  <select class="custom-select" v-model="test" v-on:change="statuschange(lead)" >
+                    <option selected>Choose...</option>
+                    <option v-for="status in statuses" :key="status.id" v-bind:value="status.id">{{status.name}}</option>
+                  </select>
                 </td>
-                <td>{{lead.created_at}}</td>
+                <td>{{moment(lead.created_at).fromNow()}}</td>
                 <td>
+                  <button @click.prevent="" v-if="lead.status.name === 'New' " disabled class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#followup">Follow up</button>
+                  <button @click.prevent="" @click.prevent="showlead(lead)" v-else-if="lead.status.name === 'In Progress' " class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#followup">Follow up</button>
                   <button @click.prevent="showlead(lead)" class="btn btn-info btn-sm" data-toggle="modal" data-target="#leadshow">View</button>
                   <button @click.prevent="deleteLead(lead)" type="button" class="btn btn-danger btn-sm delete">Delete</button>
                 </td>
@@ -52,6 +54,26 @@
         </div>
       </div>
       <div class="card-footer small text-muted">Last Update: </div>
+    </div>
+    <!-- Modal Follow up-->
+    <div class="modal fade bd-example-modal-lg" id="followup" tabindex="-1" role="dialog" aria-labelledby="leadid" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="leadshowmodal">Marketing Automation</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Modal -->
     <div class="modal fade bd-example-modal-lg" id="leadshow" tabindex="-1" role="dialog" aria-labelledby="leadid" aria-hidden="true">
@@ -111,7 +133,7 @@
     </div>
     <!-- Modal Add New Lead-->
     <div class="modal fade" id="addnew" tabindex="-1" role="dialog" aria-labelledby="leadid" aria-hidden="true">
-      <div class="modal-dialog" role="document">
+      <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="leadshowmodal">Create New Lead</h5>
@@ -130,8 +152,6 @@
                   <label for="last_name" class="col-form-label" >Last Name:</label>
                   <input class="form-control" id="last_name" autocomplete="nope">
                 </div>
-              </div>
-              <div class="form-row">
                 <div class="col">
                   <label for="status" class="col-form-label">Status:</label>
                   <select id="status" class="form-control">
@@ -156,8 +176,6 @@
                   <label for="email" class="col-form-label">Email:</label>
                   <input type="email" class="form-control" id="email" autocomplete="nope">
                 </div>
-              </div>
-              <div class="form-row">
                 <div class="col">
                   <label for="website" class="col-form-label">Website:</label>
                   <input type="url" class="form-control" id="website" autocomplete="nope">
@@ -188,8 +206,6 @@
                   <label for="city" class="col-form-label">City:</label>
                   <input type="text" class="form-control" id="city" autocomplete="nope">
                 </div>
-              </div>
-              <div class="form-row">
                 <div class="col">
                   <label for="state" class="col-form-label">State:</label>
                   <input type="text" class="form-control" id="state" autocomplete="nope">
@@ -208,8 +224,6 @@
                   <label for="linkedin" class="col-form-label">Linkedin:</label>
                   <input type="url" class="form-control" id="linkedin" autocomplete="nope">
                 </div>
-              </div>
-              <div class="form-row">
                 <div class="col">
                   <label for="instagram" class="col-form-label">Instagram:</label>
                   <input type="url" class="form-control" id="instagram" autocomplete="nope">
@@ -245,13 +259,16 @@
 <script>
 import swal from 'sweetalert2'
 
+var moment = require('moment');
     export default {
       mounted() {
-        this.fetchLeads()
+        this.fetchLeads(),
+        this.fetchStatuses()
       },
 
       data () {
         return {
+          moment: moment,
           leads: [],
           lead: {
             id: '',
@@ -276,13 +293,26 @@ import swal from 'sweetalert2'
             created_at: '',
             updated_at: ''
           },
+          statuses: [],
+          status: {
+            id: '',
+            name: '',
+          },
           sources: [],
           source: {
-            name: ''
+            id: '',
+            name: '',
           }
           }
       },
+      watch: {
+          test: 'lead.status_id'
+      },
       methods: {
+          customFormatter(date) {
+            return moment(date).format('YYYY-MM-D');
+          },
+
           fetchLeads () {
             axios.get('/api/leads')
                  .then((res) => {
@@ -292,6 +322,25 @@ import swal from 'sweetalert2'
                    console.log(err)
                  })
                },
+               fetchStatuses () {
+                 axios.get('/api/statuses')
+                      .then((res) => {
+                        this.statuses = res.data
+                      })
+                      .catch((err) => {
+                        console.log(err)
+                      })
+                    },
+
+                statuschange(lead) {
+                      axios.put(`/api/leads/${lead.id}`, this.lead)
+                        .then((res) => {
+                          this.lead.status_id = ''
+                          })
+                          .catch((err) => {
+                              console.log(err)
+                          })
+                  },
 
                showlead (lead){
                  axios.get(`/api/leads/${lead.id}`)

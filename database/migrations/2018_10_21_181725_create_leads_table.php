@@ -26,12 +26,12 @@ class CreateLeadsTable extends Migration
             $table->string('city')->nullable();
             $table->string('state')->nullable();
             $table->string('country')->nullable();
-            $table->string('body')->nullable();
+            $table->text('body')->nullable();
             $table->string('facebook')->nullable();
             $table->string('twitter')->nullable();
             $table->string('instagram')->nullable();
             $table->string('linkedin')->nullable();
-            $table->string('note')->nullable();
+            $table->text('note')->nullable();
             $table->integer('status_id')->unsigned()->index()->default('1');
             $table->foreign('status_id')->references('id')->on('statuss')->onDelete('cascade');
             $table->integer('source_id')->unsigned()->index()->nullable();

@@ -17,10 +17,12 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::resource('leads', 'LeadsController', [
-  'except' => ['create']
-]);
-
-Route::resource('companies', 'CompaniesController', [
-  'except' => ['create']
-]);
+  Route::resource('leads', 'LeadsController', [
+    'except' => ['create']
+  ]);
+  Route::resource('statuses', 'StatusesController', [
+    'except' => ['create']
+  ]);
+  Route::resource('companies', 'CompaniesController', [
+    'except' => ['create']
+  ]);

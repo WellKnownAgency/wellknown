@@ -28,4 +28,14 @@ class LeadsController extends Controller
         return 204;
     }
 
+  public function update(Request $request, $id)
+  {
+
+    $lead = Lead::findOrFail($id);
+    $lead->status_id = $request->status_id;
+    $lead->update();
+
+    return $lead;
+  }
+
 }
