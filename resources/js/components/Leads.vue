@@ -82,28 +82,28 @@
                                 </p>
                             </div>
                         </div>
-                        <a href="#" class="timeline">
+                        <a href="#" class="timeline" :class="{ cursornot: lead.introcall }" v-model="lead.introcall" @click="doneintrocall(lead)">
                             <div class="timeline-icon" ><i class="fa fa-phone"></i></div>
                             <div class="timeline-content">
-                                <h3 class="title">Introduction Call</h3>
+                                <h3 class="title" :class="{ done: lead.introcall }">Introduction Call</h3>
                                 <p class="description">
                                   Make a phone call to introduce yourself and your servces (try 3 times during the day and next day)
                                 </p>
                             </div>
                         </a>
-                        <a href="#" class="timeline">
+                        <a href="#" class="timeline" :class="{ cursornot: lead.fllupemail }" v-model="lead.fllupemail" @click="donefllupemail(lead)">
                             <div class="timeline-icon"><i class="fa fa-envelope"></i></div>
                             <div class="timeline-content">
-                                <h3 class="title">Follow up Email</h3>
+                                <h3 class="title" :class="{ done: lead.fllupemail }">Follow up Email</h3>
                                 <p class="description">
                                     Send a follow up email
                                 </p>
                             </div>
                         </a>
-                        <a href="#" class="timeline">
+                        <a href="#" class="timeline" :class="{ cursornot: lead.lastemail }" v-model="lead.lastemail" @click="donelastemail(lead)">
                             <div class="timeline-icon"><i class="fa fa-envelope"></i></div>
                             <div class="timeline-content">
-                                <h3 class="title">Last Email</h3>
+                                <h3 class="title" :class="{ done: lead.lastemail }">Last Email</h3>
                                 <p class="description">
                                     Send last email
                                 </p>
@@ -429,6 +429,79 @@ var moment = require('moment');
                          }
                          })
                    },
+
+                   doneintrocall (lead) {
+                         swal(
+                         'Calls were made!',
+                         )
+                         axios.put(`/api/leads/introcall/${lead.id}`, {
+                               introcall: true
+                             })
+                             .catch((err) => {
+                                 console.log(err)
+                             })
+                             .then((res) => {
+                               this.showDone = true,
+                               this.showCursornot = true
+                             })
+                     },
+
+                     donefllupemail (lead) {
+                       swal({
+                           title: 'Are you sure?',
+                           type: 'warning',
+                           showCancelButton: true,
+                           confirmButtonColor: '#3085d6',
+                           cancelButtonColor: '#d33',
+                           confirmButtonText: 'Yes, Send!'
+                           })
+                           .then((result) => {
+                           if (result.value) {
+                           swal(
+                           'intro Email Sent!',
+                           )
+                           axios.put(`/api/leads/fllupemail/${lead.id}`, {
+                                 fllupemail: true
+                               })
+                               .catch((err) => {
+                                   console.log(err)
+                               })
+                               .then((res) => {
+                                 this.showDone = true,
+                                 this.showCursornot = true
+                               })
+                             }
+                             })
+                       },
+
+                     donelastemail (lead) {
+                       swal({
+                           title: 'Are you sure?',
+                           type: 'warning',
+                           showCancelButton: true,
+                           confirmButtonColor: '#3085d6',
+                           cancelButtonColor: '#d33',
+                           confirmButtonText: 'Yes, Send!'
+                           })
+                           .then((result) => {
+                           if (result.value) {
+                           swal(
+                           'intro Email Sent!',
+                           )
+                           axios.put(`/api/leads/lastemail/${lead.id}`, {
+                                 lastemail: true
+                               })
+                               .catch((err) => {
+                                   console.log(err)
+                               })
+                               .then((res) => {
+                                 this.showDone = true,
+                                 this.showCursornot = true
+                               })
+                             }
+                             })
+                       },
+
 
               deleteLead (lead) {
                 swal({
