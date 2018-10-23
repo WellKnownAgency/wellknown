@@ -28,11 +28,21 @@ class LeadsController extends Controller
         return 204;
     }
 
-  public function update(Request $request, $id)
+  public function statuschange(Request $request, $id)
   {
 
     $lead = Lead::findOrFail($id);
     $lead->status_id = $request->status_id;
+    $lead->update();
+
+    return $lead;
+  }
+
+  public function doneintroemail(Request $request, $id)
+  {
+
+    $lead = Lead::findOrFail($id);
+    $lead->introemail = $request->introemail;
     $lead->update();
 
     return $lead;

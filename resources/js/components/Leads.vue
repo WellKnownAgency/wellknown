@@ -25,7 +25,8 @@
                 <th>Phone  <i class="fas fa-sort" style="float:right"></i></th>
                 <th>E-mail  <i class="fas fa-sort" style="float:right"></i></th>
                 <th>Status <i class="fas fa-sort" style="float:right"></i></th>
-                <th>Submitted date  <i class="fas fa-sort" style="float:right"></i></th>
+                <th>Submitted <i class="fas fa-sort" style="float:right"></i></th>
+                <th>Marketing</th>
                 <th>Actions</th>
               </tr>
             </thead>
@@ -36,15 +37,17 @@
                 <td>{{lead.phone}}</td>
                 <td>{{lead.email}}</td>
                 <td>
-                  <select class="custom-select" v-model="test" v-on:change="statuschange(lead)" >
+                  <select class="custom-select" v-model="lead.status_id" @change="statuschange(lead)" >
                     <option selected>Choose...</option>
                     <option v-for="status in statuses" :key="status.id" v-bind:value="status.id">{{status.name}}</option>
                   </select>
                 </td>
                 <td>{{moment(lead.created_at).fromNow()}}</td>
                 <td>
-                  <button @click.prevent="" v-if="lead.status.name === 'New' " disabled class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#followup">Follow up</button>
-                  <button @click.prevent="" @click.prevent="showlead(lead)" v-else-if="lead.status.name === 'In Progress' " class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#followup">Follow up</button>
+                  <button v-if="lead.status.name === 'New' " disabled class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#followup">Follow up</button>
+                  <button @click.prevent="showlead(lead)" v-else class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#followup">Follow up</button>
+                </td>
+                <td>
                   <button @click.prevent="showlead(lead)" class="btn btn-info btn-sm" data-toggle="modal" data-target="#leadshow">View</button>
                   <button @click.prevent="deleteLead(lead)" type="button" class="btn btn-danger btn-sm delete">Delete</button>
                 </td>
@@ -57,7 +60,7 @@
     </div>
     <!-- Modal Follow up-->
     <div class="modal fade bd-example-modal-lg" id="followup" tabindex="-1" role="dialog" aria-labelledby="leadid" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="leadshowmodal">Marketing Automation</h5>
@@ -66,11 +69,53 @@
             </button>
           </div>
           <div class="modal-body">
-
+            <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-timeline">
+                        <div href="#" class="timeline" :class="{ cursornot: lead.introemail }" v-model="lead.introemail" @click="doneintroemail(lead)">
+                            <div class="timeline-icon"><i class="fa fa-envelope"></i></div>
+                            <div class="timeline-content">
+                                <h3  class="title" :class="{ done: lead.introemail }" >Introduction Email</h3>
+                                <p class="description">
+                                    Send an Email to introduce yourself and your services
+                                </p>
+                            </div>
+                        </div>
+                        <a href="#" class="timeline">
+                            <div class="timeline-icon" ><i class="fa fa-phone"></i></div>
+                            <div class="timeline-content">
+                                <h3 class="title">Introduction Call</h3>
+                                <p class="description">
+                                  Make a phone call to introduce yourself and your servces (try 3 times during the day and next day)
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="timeline">
+                            <div class="timeline-icon"><i class="fa fa-envelope"></i></div>
+                            <div class="timeline-content">
+                                <h3 class="title">Follow up Email</h3>
+                                <p class="description">
+                                    Send a follow up email
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="timeline">
+                            <div class="timeline-icon"><i class="fa fa-envelope"></i></div>
+                            <div class="timeline-content">
+                                <h3 class="title">Last Email</h3>
+                                <p class="description">
+                                    Send last email
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
@@ -305,9 +350,8 @@ var moment = require('moment');
           }
           }
       },
-      watch: {
-          test: 'lead.status_id'
-      },
+
+
       methods: {
           customFormatter(date) {
             return moment(date).format('YYYY-MM-D');
@@ -333,12 +377,18 @@ var moment = require('moment');
                     },
 
                 statuschange(lead) {
-                      axios.put(`/api/leads/${lead.id}`, this.lead)
-                        .then((res) => {
-                          this.lead.status_id = ''
+                      swal(
+                      'Status Changed!',
+                      )
+                      axios.put(`/api/leads/statuschange/${lead.id}`,
+                        {
+                            status_id: lead.status_id
                           })
                           .catch((err) => {
                               console.log(err)
+                          })
+                          .then((res) => {
+                            this.fetchStatuses();
                           })
                   },
 
@@ -351,6 +401,34 @@ var moment = require('moment');
                      console.log(err)
                    })
                  },
+
+                 doneintroemail (lead) {
+                   swal({
+                       title: 'Are you sure?',
+                       type: 'warning',
+                       showCancelButton: true,
+                       confirmButtonColor: '#3085d6',
+                       cancelButtonColor: '#d33',
+                       confirmButtonText: 'Yes, Send!'
+                       })
+                       .then((result) => {
+                       if (result.value) {
+                       swal(
+                       'intro Email Sent!',
+                       )
+                       axios.put(`/api/leads/introemail/${lead.id}`, {
+                             introemail: true
+                           })
+                           .catch((err) => {
+                               console.log(err)
+                           })
+                           .then((res) => {
+                             this.showDone = true,
+                             this.showCursornot = true
+                           })
+                         }
+                         })
+                   },
 
               deleteLead (lead) {
                 swal({
