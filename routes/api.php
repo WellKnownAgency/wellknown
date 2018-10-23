@@ -16,10 +16,14 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-
+  /* Lead Routes */
   Route::resource('leads', 'LeadsController', [
     'except' => ['create']
   ]);
+  Route::put('leads/statuschange/{id}','LeadsController@statuschange');
+  Route::put('leads/introemail/{id}','LeadsController@doneintroemail');
+  /* End of Lead Routes */
+
   Route::resource('statuses', 'StatusesController', [
     'except' => ['create']
   ]);
