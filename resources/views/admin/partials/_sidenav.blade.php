@@ -22,9 +22,9 @@
       <span>Blog</span>
     </a>
     <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-      <a class="dropdown-item" href="">Posts</a>
+      <a class="dropdown-item" href="/admin/posts">Posts</a>
       <a class="dropdown-item" href="">Comments</a>
-      <a class="dropdown-item" href="">Categories</a>
+      <a class="dropdown-item" href="/admin/categories">Categories</a>
     </div>
   </li>
   <li class="nav-item dropdown">

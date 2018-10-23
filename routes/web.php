@@ -14,6 +14,9 @@ Route::prefix('admin')->middleware('auth:admin')->group(function() {
   Route::get('/', 'AdminPagesController@index')->name('admin.index');
   Route::get('/leads', 'AdminPagesController@leads');
   Route::get('/companies', 'AdminPagesController@companies');
+  Route::get('posts', 'AdminPagesController@posts');
+  Route::get('categories', 'AdminPagesController@categories');
+  Route::get('/posts/create', 'PostController@create');
 });
 
 /* Main Pages */

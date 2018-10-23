@@ -21,4 +21,15 @@ class AdminPagesController extends Controller
     return view('admin.companies');
     }
 
+    public function posts()
+    {
+    return view('admin.posts.index');
+    }
+
+    public function categories()
+    {
+    return view('admin.categories.index');
+    }
+
+
 }
