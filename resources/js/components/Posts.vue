@@ -33,11 +33,17 @@
             <tbody>
               <tr v-for="post in posts">
                 <td>{{post.title}}</td>
-                <td>{{post.image}}</td>
-                <td>{{post.status}}</td>
-                <td>{{post.created_at}}</td>
+                <td><img :src="'/images/blog/'+post.image" width="200px" height="auto"></td>
+                <td>
+                  <select class="custom-select" v-model="post.status" @change="statuschange(post)" >
+                    <option selected>{{post.status}}</option>
+                    <option v-for="status in statuses" :key="status.id" v-bind:value="status.id">{{post.status}}</option>
+                  </select>
+                </td>
+                <td>{{moment(post.created_at).fromNow()}}</td>
                 <td>
                   <a href="" class="btn btn-info btn-sm">View</a>
+                  <a :href="'/admin/posts/'+post.id+'/edit'" class="btn btn-warning btn-sm">Edit</a>
                   <button @click.prevent="deletePost(post)" class="btn btn-danger btn-sm delete">Delete</button>
                 </td>
               </tr>
@@ -59,22 +65,30 @@
 </template>
 
 <script>
+import swal from 'sweetalert2'
 
-import Notifications from 'vue-notification'
+var moment = require('moment');
 
     export default {
       mounted() {
-        this.fetchUse()
+        this.fetchUse(),
+        this.fetchStatuses()
       },
 
       data () {
         return {
+          moment: moment,
           posts: [],
           post: {
             title: '',
             image: '',
             status: '',
             created_at: ''
+          },
+          statuses: [],
+          status: {
+            id: '',
+            name: '',
           }
           }
       },
@@ -89,6 +103,23 @@ import Notifications from 'vue-notification'
                  })
                }
             },
+
+             statuschange(post) {
+                   swal(
+                   'Status Changed!',
+                   )
+                   axios.put(`/api/posts/statuschange/${post.id}`,
+                     {
+                         status: post.status
+                       })
+                       .catch((err) => {
+                           console.log(err)
+                       })
+                       .then((res) => {
+                         this.fetchStatuses();
+                       })
+               },
+
 
               deletePost () {
                 axios.delete(`/api/posts/${post.id}`)

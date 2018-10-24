@@ -17,6 +17,8 @@ Route::prefix('admin')->middleware('auth:admin')->group(function() {
   Route::get('posts', 'AdminPagesController@posts');
   Route::get('categories', 'AdminPagesController@categories');
   Route::get('/posts/create', 'PostController@create');
+  Route::get('/posts/{id}/edit', 'PostController@edit');
+  Route::post('/posts/{id}','PostController@update');
 });
 
 /* Main Pages */
