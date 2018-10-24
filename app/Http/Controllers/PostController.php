@@ -18,6 +18,8 @@ class PostController extends Controller
         return Post::latest()->get();
     }
 
+
+
     /**
      * Show the form for creating a new resource.
      *
@@ -143,9 +145,11 @@ class PostController extends Controller
     {
 
       $post = Post::findOrFail($id);
-      $post->status_id = $request->status_id;
+      $post->status = $request->status;
       $post->update();
 
       return $post;
     }
+
+
 }

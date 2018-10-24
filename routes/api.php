@@ -39,4 +39,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
   Route::resource('posts', 'PostController', [
     'except' => ['create', 'show', 'update', 'edit']
   ]);
+
+  Route::put('posts/statuschange/{id}','PostController@statuschange');
+
+
   Route::resource('categories', 'CategoryController');

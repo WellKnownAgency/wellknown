@@ -36,8 +36,9 @@
                 <td><img :src="'/images/blog/'+post.image" width="200px" height="auto"></td>
                 <td>
                   <select class="custom-select" v-model="post.status" @change="statuschange(post)" >
-                    <option selected>{{post.status}}</option>
-                    <option v-for="status in statuses" :key="status.id" v-bind:value="status.id">{{post.status}}</option>
+                    <option  :value="'PUBLISHED'">PUBLISHED</option>
+                    <option  :value="'DRAFT'">DRAFT</option>
+                    <option  :value="'PENDING'">PENDING</option>
                   </select>
                 </td>
                 <td>{{moment(post.created_at).fromNow()}}</td>
@@ -71,8 +72,7 @@ var moment = require('moment');
 
     export default {
       mounted() {
-        this.fetchUse(),
-        this.fetchStatuses()
+        this.fetchUse()
       },
 
       data () {
@@ -85,11 +85,6 @@ var moment = require('moment');
             status: '',
             created_at: ''
           },
-          statuses: [],
-          status: {
-            id: '',
-            name: '',
-          }
           }
       },
       methods: {
@@ -116,8 +111,9 @@ var moment = require('moment');
                            console.log(err)
                        })
                        .then((res) => {
-                         this.fetchStatuses();
-                       })
+                        this.fetchUse();
+                        })
+
                },
 
 
