@@ -11,14 +11,15 @@ class NewLead extends Notification
 {
     use Queueable;
 
+    public $lead;
     /**
      * Create a new notification instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($lead)
     {
-        //
+        $this->lead = $lead;
     }
 
     /**
@@ -29,7 +30,7 @@ class NewLead extends Notification
      */
     public function via($notifiable)
     {
-        return ['mail'];
+        return ['database'];
     }
 
     /**
@@ -38,12 +39,12 @@ class NewLead extends Notification
      * @param  mixed  $notifiable
      * @return \Illuminate\Notifications\Messages\MailMessage
      */
-    public function toMail($notifiable)
+    public function toDatabase($notifiable)
     {
-        return (new MailMessage)
-                    ->line('The introduction to the notification.')
-                    ->action('Notification Action', url('/'))
-                    ->line('Thank you for using our application!');
+      return [
+        'lead' => $this->lead,
+        'message' => 'New Lead'
+      ];
     }
 
     /**

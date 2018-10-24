@@ -10,9 +10,42 @@ class LeadsController extends Controller
 {
     public function index()
   {
-      return Lead::with('status')->with('source')->get();
+      $leads = Lead::with('source')->with('status')->get();
+
+      return $leads;
   }
 
+  public function store(Request $request)
+  {
+    $this->validate($request,[
+      'email'=>'required'
+    ]);
+
+    $lead = new Lead();
+    $lead->first_name = $request->first_name;
+    $lead->last_name = $request->last_name;
+    $lead->phone = $request->phone;
+    $lead->email = $request->email;
+    $lead->website = $request->website;
+    $lead->company = $request->company;
+    $lead->position = $request->position;
+    $lead->address = $request->address;
+    $lead->city = $request->city;
+    $lead->state = $request->state;
+    $lead->country = $request->country;
+    $lead->body = $request->body;
+    $lead->facebook = $request->facebook;
+    $lead->twitter = $request->twitter;
+    $lead->instagram = $request->instagram;
+    $lead->linkedin = $request->linkedin;
+    $lead->note = $request->note;
+    $lead->status_id = $request->status_id;
+    $lead->source_id = $request->source_id;
+
+    $lead->save();
+
+    return $lead;
+  }
 
   public function show($id)
   {

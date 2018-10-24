@@ -135,7 +135,7 @@
               <table class="table table-borderless" >
                 <tr>
                   <td>Name:</td><td>{{ lead.first_name }} {{ lead.last_name }}</td>
-                  <td>Source:</td><td>{{ lead.source }}</td>
+                  <td style="border-left: 1px solid #f0f0f0;">Source:</td><td>{{ lead.source }}</td>
                 </tr>
                 <tr>
                   <td>Phone:</td> <td>{{ lead.phone }}</td>
@@ -163,8 +163,8 @@
                   <td>Note:</td> <td>{{ lead.note }}</td>
                 </tr>
                 <tr>
-                  <td>Created:</td> <td>{{ lead.created_at }}</td>
-                  <td style="border-left: 1px solid #f0f0f0;">Updated:</td> <td>{{ lead.updated_at }}</td>
+                  <td>Created:</td> <td>{{moment(lead.created_at).fromNow()}}</td>
+                  <td style="border-left: 1px solid #f0f0f0;">Updated:</td> <td>{{moment(lead.updated_at).fromNow()}}</td>
                 </tr>
               </table>
             </div>
@@ -191,104 +191,103 @@
               <div class="form-row">
                 <div class="col">
                   <label for="first_name" class="col-form-label">First Name:</label>
-                  <input type="text" class="form-control" id="first_name" autocomplete="nope">
+                  <input type="text" class="form-control" id="first_name" v-model="lead.first_name" @keydown.enter="createlead" autocomplete="nope">
                 </div>
                 <div class="col">
                   <label for="last_name" class="col-form-label" >Last Name:</label>
-                  <input class="form-control" id="last_name" autocomplete="nope">
+                  <input class="form-control" id="last_name" v-model="lead.last_name" @keydown.enter="createlead" autocomplete="nope">
                 </div>
                 <div class="col">
                   <label for="status" class="col-form-label">Status:</label>
-                  <select id="status" class="form-control">
-                    <option selected>Choose...</option>
-                    <option>...</option>
+                  <select class="form-control" v-model="lead.status_id" @keydown.enter="createlead">
+                    <option v-for="status in statuses" :key="status.id" v-bind:value="status.id">{{status.name}}</option>
                   </select>
                 </div>
                 <div class="col">
                   <label for="source" class="col-form-label">Source:</label>
-                  <select id="source" class="form-control">
+                  <select class="form-control" v-model="lead.source_id" @keydown.enter="createlead">
                     <option selected>Choose...</option>
-                    <option>...</option>
+                    <option v-for="source in sources" :key="source.id" v-bind:value="source.id">{{source.name}}</option>
                   </select>
                 </div>
               </div>
               <div class="form-row">
                 <div class="col">
                   <label for="phone" class="col-form-label">Phone:</label>
-                  <input type="number" class="form-control" id="phone" autocomplete="nope">
+                  <input type="number" class="form-control" v-model="lead.phone" @keydown.enter="createlead" id="phone" autocomplete="nope">
                 </div>
                 <div class="col">
                   <label for="email" class="col-form-label">Email:</label>
-                  <input type="email" class="form-control" id="email" autocomplete="nope">
+                  <input type="email" class="form-control" v-model="lead.email" @keydown.enter="createlead" id="email" autocomplete="nope">
                 </div>
                 <div class="col">
                   <label for="website" class="col-form-label">Website:</label>
-                  <input type="url" class="form-control" id="website" autocomplete="nope">
+                  <input type="url" class="form-control" v-model="lead.website" @keydown.enter="createlead" id="website" autocomplete="nope">
                 </div>
               </div>
               <div class="form-row">
                 <div class="col">
                   <label for="body" class="col-form-label">Message:</label>
-                  <textarea class="form-control" id="body"></textarea>
+                  <textarea class="form-control" v-model="lead.body" @keydown.enter="createlead" id="body"></textarea>
                 </div>
               </div>
               <div class="form-row">
                 <div class="col">
                   <label for="company" class="col-form-label">Company:</label>
-                  <input type="text" class="form-control" id="company" autocomplete="nope">
+                  <input type="text" class="form-control" v-model="lead.company" @keydown.enter="createlead" id="company" autocomplete="nope">
                 </div>
                 <div class="col">
                   <label for="position" class="col-form-label">Position:</label>
-                  <input type="text" class="form-control" id="position" autocomplete="nope">
+                  <input type="text" class="form-control" v-model="lead.position" @keydown.enter="createlead" id="position" autocomplete="nope">
                 </div>
               </div>
               <div class="form-row">
                 <div class="col">
                   <label for="address" class="col-form-label">Address:</label>
-                  <input type="text" class="form-control" id="address" autocomplete="nope">
+                  <input type="text" class="form-control" v-model="lead.address" @keydown.enter="createlead" id="address" autocomplete="nope">
                 </div>
                 <div class="col">
                   <label for="city" class="col-form-label">City:</label>
-                  <input type="text" class="form-control" id="city" autocomplete="nope">
+                  <input type="text" class="form-control" v-model="lead.city" @keydown.enter="createlead" id="city" autocomplete="nope">
                 </div>
                 <div class="col">
                   <label for="state" class="col-form-label">State:</label>
-                  <input type="text" class="form-control" id="state" autocomplete="nope">
+                  <input type="text" class="form-control" v-model="lead.state" @keydown.enter="createlead" id="state" autocomplete="nope">
                 </div>
                 <div class="col">
                   <label for="country" class="col-form-label">Country:</label>
-                  <input type="text" class="form-control" id="country" autocomplete="nope">
+                  <input type="text" class="form-control" v-model="lead.country" @keydown.enter="createlead" id="country" autocomplete="nope">
                 </div>
               </div>
               <div class="form-row">
                 <div class="col">
                   <label for="facebook" class="col-form-label">Facebook:</label>
-                  <input type="url" class="form-control" id="facebook" autocomplete="nope">
+                  <input type="url" class="form-control" v-model="lead.facebook" @keydown.enter="createlead" id="facebook" autocomplete="nope">
                 </div>
                 <div class="col">
                   <label for="linkedin" class="col-form-label">Linkedin:</label>
-                  <input type="url" class="form-control" id="linkedin" autocomplete="nope">
+                  <input type="url" class="form-control" v-model="lead.linkedin" @keydown.enter="createlead" id="linkedin" autocomplete="nope">
                 </div>
                 <div class="col">
                   <label for="instagram" class="col-form-label">Instagram:</label>
-                  <input type="url" class="form-control" id="instagram" autocomplete="nope">
+                  <input type="url" class="form-control" v-model="lead.instagram" @keydown.enter="createlead" id="instagram" autocomplete="nope">
                 </div>
                 <div class="col">
                   <label for="twitter" class="col-form-label">Twitter:</label>
-                  <input type="url" class="form-control" id="twitter" autocomplete="nope">
+                  <input type="url" class="form-control" v-model="lead.twitter" @keydown.enter="createlead" id="twitter" autocomplete="nope">
                 </div>
               </div>
               <div class="form-row">
                 <div class="col">
                   <label for="note" class="col-form-label">Note:</label>
-                  <textarea class="form-control" id="note"></textarea>
+                  <textarea class="form-control" v-model="lead.note" @keydown.enter="createlead" id="note"></textarea>
                 </div>
               </div>
             </form>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-primary" v-on:click="createlead" >Save changes</button>
           </div>
         </div>
       </div>
@@ -308,7 +307,8 @@ var moment = require('moment');
     export default {
       mounted() {
         this.fetchLeads(),
-        this.fetchStatuses()
+        this.fetchStatuses(),
+        this.fetchSources()
       },
 
       data () {
@@ -336,7 +336,7 @@ var moment = require('moment');
             status_id: '',
             source_id: '',
             created_at: '',
-            updated_at: ''
+            updated_at: '',
           },
           statuses: [],
           status: {
@@ -366,165 +366,218 @@ var moment = require('moment');
                    console.log(err)
                  })
                },
-               fetchStatuses () {
-                 axios.get('/api/statuses')
-                      .then((res) => {
-                        this.statuses = res.data
-                      })
-                      .catch((err) => {
+          fetchStatuses () {
+            axios.get('/api/statuses')
+                .then((res) => {
+                  this.statuses = res.data
+                })
+                .catch((err) => {
+                  console.log(err)
+                })
+              },
+          fetchSources () {
+            axios.get('/api/sources')
+                 .then((res) => {
+                   this.sources = res.data
+                 })
+                 .catch((err) => {
+                   console.log(err)
+                 })
+               },
+
+          createlead () {
+           axios.post('/api/leads', this.lead)
+               .then((res) => {
+                 this.leads.unshift(res.data)
+                 this.lead.first_name = ''
+                 this.lead.last_name = ''
+                 this.lead.phone = ''
+                 this.lead.emil = ''
+                 this.lead.website = ''
+                 this.lead.company = ''
+                 this.lead.position = ''
+                 this.lead.address = ''
+                 this.lead.city = ''
+                 this.lead.state = ''
+                 this.lead.country = ''
+                 this.lead.body = ''
+                 this.lead.facebook = ''
+                 this.lead.twitter = ''
+                 this.lead.instagram = ''
+                 this.lead.linkedin = ''
+                 this.lead.note = ''
+                 this.lead.status_id = ''
+                 this.lead.source_id = ''
+               })
+               .then((res) => {
+                 this.fetchLeads();
+               })
+               .then((res) => {
+                 swal({
+                     type: 'success',
+                     title: 'Yeah',
+                     text: 'Lead successfully created!'
+                   })
+               })
+               .catch((err) =>{
+                 console.log(err)
+                 swal({
+                     type: 'error',
+                     title: 'Ooops...',
+                     text: 'Something went wrong!'
+                   })
+           })
+          },
+
+          statuschange(lead) {
+                swal(
+                'Status Changed!',
+                )
+                axios.put(`/api/leads/statuschange/${lead.id}`,
+                  {
+                      status_id: lead.status_id
+                    })
+                    .catch((err) => {
                         console.log(err)
-                      })
-                    },
+                    })
+                    .then((res) => {
+                      this.fetchStatuses();
+                    })
+            },
 
-                statuschange(lead) {
-                      swal(
-                      'Status Changed!',
-                      )
-                      axios.put(`/api/leads/statuschange/${lead.id}`,
-                        {
-                            status_id: lead.status_id
-                          })
-                          .catch((err) => {
-                              console.log(err)
-                          })
-                          .then((res) => {
-                            this.fetchStatuses();
-                          })
-                  },
+          showlead (lead){
+           axios.get(`/api/leads/${lead.id}`)
+             .then((res) => {
+               this.lead = res.data
+             })
+             .catch((err) => {
+               console.log(err)
+             })
+           },
 
-               showlead (lead){
-                 axios.get(`/api/leads/${lead.id}`)
-                   .then((res) => {
-                     this.lead = res.data
+          doneintroemail (lead) {
+           swal({
+               title: 'Are you sure?',
+               type: 'warning',
+               showCancelButton: true,
+               confirmButtonColor: '#3085d6',
+               cancelButtonColor: '#d33',
+               confirmButtonText: 'Yes, Send!'
+               })
+               .then((result) => {
+               if (result.value) {
+               swal(
+               'intro Email Sent!',
+               )
+               axios.put(`/api/leads/introemail/${lead.id}`, {
+                     introemail: true
                    })
                    .catch((err) => {
-                     console.log(err)
+                       console.log(err)
                    })
-                 },
+                   .then((res) => {
+                     this.showDone = true,
+                     this.showCursornot = true
+                   })
+                 }
+                 })
+           },
 
-                 doneintroemail (lead) {
-                   swal({
-                       title: 'Are you sure?',
-                       type: 'warning',
-                       showCancelButton: true,
-                       confirmButtonColor: '#3085d6',
-                       cancelButtonColor: '#d33',
-                       confirmButtonText: 'Yes, Send!'
-                       })
-                       .then((result) => {
-                       if (result.value) {
-                       swal(
-                       'intro Email Sent!',
-                       )
-                       axios.put(`/api/leads/introemail/${lead.id}`, {
-                             introemail: true
-                           })
-                           .catch((err) => {
-                               console.log(err)
-                           })
-                           .then((res) => {
-                             this.showDone = true,
-                             this.showCursornot = true
-                           })
-                         }
-                         })
-                   },
+          doneintrocall (lead) {
+               swal(
+               'Calls were made!',
+               )
+               axios.put(`/api/leads/introcall/${lead.id}`, {
+                     introcall: true
+                   })
+                   .catch((err) => {
+                       console.log(err)
+                   })
+                   .then((res) => {
+                     this.showDone = true,
+                     this.showCursornot = true
+                   })
+           },
 
-                   doneintrocall (lead) {
-                         swal(
-                         'Calls were made!',
-                         )
-                         axios.put(`/api/leads/introcall/${lead.id}`, {
-                               introcall: true
-                             })
-                             .catch((err) => {
-                                 console.log(err)
-                             })
-                             .then((res) => {
-                               this.showDone = true,
-                               this.showCursornot = true
-                             })
-                     },
+          donefllupemail (lead) {
+           swal({
+               title: 'Are you sure?',
+               type: 'warning',
+               showCancelButton: true,
+               confirmButtonColor: '#3085d6',
+               cancelButtonColor: '#d33',
+               confirmButtonText: 'Yes, Send!'
+               })
+               .then((result) => {
+               if (result.value) {
+               swal(
+               'intro Email Sent!',
+               )
+               axios.put(`/api/leads/fllupemail/${lead.id}`, {
+                     fllupemail: true
+                   })
+                   .catch((err) => {
+                       console.log(err)
+                   })
+                   .then((res) => {
+                     this.showDone = true,
+                     this.showCursornot = true
+                   })
+                 }
+                 })
+           },
 
-                     donefllupemail (lead) {
-                       swal({
-                           title: 'Are you sure?',
-                           type: 'warning',
-                           showCancelButton: true,
-                           confirmButtonColor: '#3085d6',
-                           cancelButtonColor: '#d33',
-                           confirmButtonText: 'Yes, Send!'
-                           })
-                           .then((result) => {
-                           if (result.value) {
-                           swal(
-                           'intro Email Sent!',
-                           )
-                           axios.put(`/api/leads/fllupemail/${lead.id}`, {
-                                 fllupemail: true
-                               })
-                               .catch((err) => {
-                                   console.log(err)
-                               })
-                               .then((res) => {
-                                 this.showDone = true,
-                                 this.showCursornot = true
-                               })
-                             }
-                             })
-                       },
-
-                     donelastemail (lead) {
-                       swal({
-                           title: 'Are you sure?',
-                           type: 'warning',
-                           showCancelButton: true,
-                           confirmButtonColor: '#3085d6',
-                           cancelButtonColor: '#d33',
-                           confirmButtonText: 'Yes, Send!'
-                           })
-                           .then((result) => {
-                           if (result.value) {
-                           swal(
-                           'intro Email Sent!',
-                           )
-                           axios.put(`/api/leads/lastemail/${lead.id}`, {
-                                 lastemail: true
-                               })
-                               .catch((err) => {
-                                   console.log(err)
-                               })
-                               .then((res) => {
-                                 this.showDone = true,
-                                 this.showCursornot = true
-                               })
-                             }
-                             })
-                       },
+          donelastemail (lead) {
+           swal({
+               title: 'Are you sure?',
+               type: 'warning',
+               showCancelButton: true,
+               confirmButtonColor: '#3085d6',
+               cancelButtonColor: '#d33',
+               confirmButtonText: 'Yes, Send!'
+               })
+               .then((result) => {
+               if (result.value) {
+               swal(
+               'intro Email Sent!',
+               )
+               axios.put(`/api/leads/lastemail/${lead.id}`, {
+                     lastemail: true
+                   })
+                   .catch((err) => {
+                       console.log(err)
+                   })
+                   .then((res) => {
+                     this.showDone = true,
+                     this.showCursornot = true
+                   })
+                 }
+                 })
+           },
 
 
-              deleteLead (lead) {
-                swal({
-                    title: 'Are you sure?',
-                    type: 'warning',
-                    showCancelButton: true,
-                    confirmButtonColor: '#3085d6',
-                    cancelButtonColor: '#d33',
-                    confirmButtonText: 'Yes, Delete!'
+          deleteLead (lead) {
+            swal({
+                title: 'Are you sure?',
+                type: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, Delete!'
+                })
+                .then((result) => {
+                if (result.value) {
+                swal(
+                'Deleted!',
+                )
+                axios.delete(`/api/leads/${lead.id}`)
+                    .then((res) => {
+                        const leadIndex = this.leads.indexOf(lead)
+                        this.leads.splice(leadIndex, 1)
                     })
-                    .then((result) => {
-                    if (result.value) {
-                    swal(
-                    'Deleted!',
-                    )
-                    axios.delete(`/api/leads/${lead.id}`)
-                        .then((res) => {
-                            const leadIndex = this.leads.indexOf(lead)
-                            this.leads.splice(leadIndex, 1)
-                        })
-                    }
-                    })
-                },
+                }
+                })
+            },
           }
         }
 
