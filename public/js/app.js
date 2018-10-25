@@ -68898,7 +68898,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 
 
@@ -69023,13 +69022,21 @@ var moment = __webpack_require__(0);
     statuschange: function statuschange(lead) {
       var _this5 = this;
 
-      __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()('Status Changed!');
       axios.put('/api/leads/statuschange/' + lead.id, {
         status_id: lead.status_id
       }).catch(function (err) {
         console.log(err);
+        __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
+          type: 'error',
+          title: 'Ooops...',
+          text: 'Something went wrong!'
+        });
       }).then(function (res) {
-        _this5.fetchStatuses();
+        _this5.fetchLeads();
+      });
+      __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
+        type: 'success',
+        title: 'Status Changed!'
       });
     },
     showlead: function showlead(lead) {
@@ -69067,13 +69074,16 @@ var moment = __webpack_require__(0);
     doneintrocall: function doneintrocall(lead) {
       var _this8 = this;
 
-      __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()('Calls were made!');
       axios.put('/api/leads/introcall/' + lead.id, {
         introcall: true
       }).catch(function (err) {
         console.log(err);
       }).then(function (res) {
         _this8.showDone = true, _this8.showCursornot = true;
+      });
+      __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
+        type: 'success',
+        title: 'Call were Made!'
       });
     },
     donefllupemail: function donefllupemail(lead) {
@@ -69655,7 +69665,7 @@ var render = function() {
                                 _vm._v(" "),
                                 _c("p", { staticClass: "description" }, [
                                   _vm._v(
-                                    "\r\n                                    Send an Email to introduce yourself and your services\r\n                                "
+                                    "\n                                    Send an Email to introduce yourself and your services\n                                "
                                   )
                                 ])
                               ])
@@ -69696,7 +69706,7 @@ var render = function() {
                                 _vm._v(" "),
                                 _c("p", { staticClass: "description" }, [
                                   _vm._v(
-                                    "\r\n                                  Make a phone call to introduce yourself and your servces (try 3 times during the day and next day)\r\n                                "
+                                    "\n                                  Make a phone call to introduce yourself and your servces (try 3 times during the day and next day)\n                                "
                                   )
                                 ])
                               ])
@@ -69737,7 +69747,7 @@ var render = function() {
                                 _vm._v(" "),
                                 _c("p", { staticClass: "description" }, [
                                   _vm._v(
-                                    "\r\n                                    Send a follow up email\r\n                                "
+                                    "\n                                    Send a follow up email\n                                "
                                   )
                                 ])
                               ])
@@ -69778,7 +69788,7 @@ var render = function() {
                                 _vm._v(" "),
                                 _c("p", { staticClass: "description" }, [
                                   _vm._v(
-                                    "\r\n                                    Send last email\r\n                                "
+                                    "\n                                    Send last email\n                                "
                                   )
                                 ])
                               ])
@@ -71067,8 +71077,12 @@ var render = function() {
                     "button",
                     {
                       staticClass: "btn btn-primary",
-                      attrs: { type: "button" },
-                      on: { click: _vm.createlead }
+                      attrs: { type: "button", "data-dismiss": "modal" },
+                      on: {
+                        click: function($event) {
+                          _vm.createlead()
+                        }
+                      }
                     },
                     [_vm._v("Save changes")]
                   )
@@ -71100,7 +71114,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\r\n        List of Leads "),
+      _vm._v("\n        List of Leads "),
       _c(
         "button",
         {
@@ -71277,12 +71291,6 @@ var staticRenderFns = [
           attrs: { type: "button", "data-dismiss": "modal" }
         },
         [_vm._v("Close")]
-      ),
-      _vm._v(" "),
-      _c(
-        "button",
-        { staticClass: "btn btn-primary", attrs: { type: "button" } },
-        [_vm._v("Save changes")]
       )
     ])
   },
@@ -71607,7 +71615,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\r\n        Data Table Example")
+      _vm._v("\n        Data Table Example")
     ])
   },
   function() {
@@ -72023,7 +72031,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\r\n        List of Posts\r\n        "),
+      _vm._v("\n        List of Posts\n        "),
       _c(
         "a",
         {
@@ -72124,8 +72132,8 @@ module.exports = Component.exports
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_notification__ = __webpack_require__(139);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_notification___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_notification__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_sweetalert2__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_sweetalert2__);
 //
 //
 //
@@ -72219,13 +72227,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-
+var moment = __webpack_require__(0);
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     this.fetchUse();
   },
   data: function data() {
     return {
+      moment: moment,
       categories: [],
       category: {
         id: '',
@@ -72245,65 +72254,51 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       }).catch(function (err) {
         console.log(err);
       });
+    },
+    createCat: function createCat() {
+      var _this2 = this;
+
+      axios.post('/api/categories', this.category).then(function (res) {
+        _this2.categories.unshift(res.data);
+        _this2.category.name = '';
+        _this2.category.slug = '';
+      }).then(function (res) {
+        _this2.fetchUse();
+      }).then(function (res) {
+        __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
+          type: 'success',
+          title: 'Yeah',
+          text: 'Category successfully created!'
+        });
+      }).catch(function (err) {
+        console.log(err);
+        __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
+          type: 'error',
+          title: 'Ooops...',
+          text: 'Something went wrong!'
+        });
+      });
+    },
+    deleteCategory: function deleteCategory(category) {
+      var _this3 = this;
+
+      __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
+        title: 'Are you sure?',
+        type: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, Delete!'
+      }).then(function (result) {
+        if (result.value) {
+          __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()('Deleted!');
+          axios.delete('/api/categories/' + category.id).then(function (res) {
+            var categoryIndex = _this3.categories.indexOf(category);
+            _this3.categories.splice(categoryIndex, 1);
+          });
+        }
+      });
     }
-  },
-
-  createCat: function createCat() {
-    var _this2 = this;
-
-    axios.post('/api/categories', this.category).then(function (res) {
-      _this2.categories.unshift(res.data);
-      _this2.category.name = '';
-      _this2.category.slug = '';
-    }).then(function (res) {
-      _this2.fetchUse();
-    }).then(function (res) {
-      swal({
-        type: 'success',
-        title: 'Yeah',
-        text: 'Category successfully created!'
-      });
-    }).catch(function (err) {
-      console.log(err);
-      swal({
-        type: 'error',
-        title: 'Ooops...',
-        text: 'Something went wrong!'
-      });
-    });
-  },
-  deletecCategory: function deletecCategory() {
-    var _this3 = this;
-
-    axios.delete('/api/categories/' + category.id).then(function (res) {
-      var categoryIndex = _this3.categories.indexOf(category);
-      _this3.categories.splice(categoryIndex, 1);
-    }).then(function (res) {
-      _this3.$notify({
-        // (optional)
-        // Name of the notification holder
-        group: 'foo',
-
-        // (optional)
-        // Class that will be assigned to the notification
-        type: 'warn',
-
-        // (optional)
-        // Title (will be wrapped in div.notification-title)
-        title: 'This is title',
-
-        // Content (will be wrapped in div.notification-content)
-        text: 'This is <b> content </b>',
-
-        // (optional)
-        // Overrides default/provided duration
-        duration: 10000,
-
-        // (optional)
-        // Overrides default/provided animation speed
-        speed: 1000
-      });
-    });
   }
 });
 
@@ -72397,7 +72392,7 @@ var render = function() {
                 _vm._m(4),
                 _vm._v(" "),
                 _c("div", { staticClass: "modal-body" }, [
-                  _c("form", { attrs: { method: "", autocomplete: "nope" } }, [
+                  _c("form", { attrs: { autocomplete: "nope" } }, [
                     _c("div", { staticClass: "form-row" }, [
                       _c("div", { staticClass: "col" }, [
                         _c(
@@ -72494,7 +72489,7 @@ var render = function() {
                     "button",
                     {
                       staticClass: "btn btn-primary",
-                      attrs: { type: "button" },
+                      attrs: { type: "button", "data-dismiss": "modal" },
                       on: {
                         click: function($event) {
                           _vm.createCat()
@@ -72531,7 +72526,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\r\n        Categories Table\r\n        "),
+      _vm._v("\n        Categories Table\n        "),
       _c(
         "button",
         {

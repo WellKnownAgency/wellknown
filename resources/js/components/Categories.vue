@@ -60,7 +60,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <form method="" autocomplete="nope">
+            <form autocomplete="nope">
               <div class="form-row">
                 <div class="col">
                   <label for="name" class="col-form-label">Name:</label>
@@ -75,7 +75,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" @click="createCat()">Save </button>
+            <button type="button" class="btn btn-primary" v-on:click="createCat()" data-dismiss="modal">Save </button>
           </div>
         </div>
       </div>
@@ -89,9 +89,9 @@
 </template>
 
 <script>
+import swal from 'sweetalert2'
 
-import Notifications from 'vue-notification'
-
+var moment = require('moment');
     export default {
       mounted() {
         this.fetchUse()
@@ -99,6 +99,7 @@ import Notifications from 'vue-notification'
 
       data () {
         return {
+          moment: moment,
           categories: [],
           category: {
             id:'',
@@ -117,8 +118,8 @@ import Notifications from 'vue-notification'
                  .catch((err) => {
                    console.log(err)
                  })
-               }
-            },
+               },
+
 
             createCat () {
              axios.post('/api/categories', this.category)
@@ -147,40 +148,28 @@ import Notifications from 'vue-notification'
              })
             },
 
-              deletecCategory () {
-                axios.delete(`/api/categories/${category.id}`)
-                .then((res) => {
-                    const categoryIndex = this.categories.indexOf(category)
-                    this.categories.splice(categoryIndex, 1)
-                })
-                .then((res) =>{
-                  this.$notify({
-                      // (optional)
-                      // Name of the notification holder
-                      group: 'foo',
-
-                      // (optional)
-                      // Class that will be assigned to the notification
-                      type: 'warn',
-
-                      // (optional)
-                      // Title (will be wrapped in div.notification-title)
-                      title: 'This is title',
-
-                      // Content (will be wrapped in div.notification-content)
-                      text: 'This is <b> content </b>',
-
-                      // (optional)
-                      // Overrides default/provided duration
-                      duration: 10000,
-
-                      // (optional)
-                      // Overrides default/provided animation speed
-                      speed: 1000
-                    })
-                }
-              )
-            }
-
+            deleteCategory (category) {
+              swal({
+                  title: 'Are you sure?',
+                  type: 'warning',
+                  showCancelButton: true,
+                  confirmButtonColor: '#3085d6',
+                  cancelButtonColor: '#d33',
+                  confirmButtonText: 'Yes, Delete!'
+                  })
+                  .then((result) => {
+                  if (result.value) {
+                  swal(
+                  'Deleted!',
+                  )
+                  axios.delete(`/api/categories/${category.id}`)
+                      .then((res) => {
+                          const categoryIndex = this.categories.indexOf(category)
+                          this.categories.splice(categoryIndex, 1)
+                      })
+                  }
+                  })
+              },
+          },
   }
 </script>

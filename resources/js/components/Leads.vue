@@ -171,7 +171,6 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
@@ -287,7 +286,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" v-on:click="createlead" >Save changes</button>
+            <button type="button" class="btn btn-primary" v-on:click="createlead()" data-dismiss="modal">Save changes</button>
           </div>
         </div>
       </div>
@@ -430,19 +429,25 @@ var moment = require('moment');
           },
 
           statuschange(lead) {
-                swal(
-                'Status Changed!',
-                )
                 axios.put(`/api/leads/statuschange/${lead.id}`,
                   {
                       status_id: lead.status_id
                     })
-                    .catch((err) => {
-                        console.log(err)
-                    })
+                    .catch((err) =>{
+                      console.log(err)
+                      swal({
+                          type: 'error',
+                          title: 'Ooops...',
+                          text: 'Something went wrong!'
+                        })
+                      })
                     .then((res) => {
-                      this.fetchStatuses();
+                      this.fetchLeads();
                     })
+                    swal({
+                        type: 'success',
+                        title: 'Status Changed!'
+                      })
             },
 
           showlead (lead){
@@ -484,9 +489,6 @@ var moment = require('moment');
            },
 
           doneintrocall (lead) {
-               swal(
-               'Calls were made!',
-               )
                axios.put(`/api/leads/introcall/${lead.id}`, {
                      introcall: true
                    })
@@ -497,6 +499,10 @@ var moment = require('moment');
                      this.showDone = true,
                      this.showCursornot = true
                    })
+                   swal({
+                       type: 'success',
+                       title: 'Call were Made!'
+                     })
            },
 
           donefllupemail (lead) {
