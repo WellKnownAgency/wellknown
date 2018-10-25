@@ -33,9 +33,15 @@ class CategoryController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store()
     {
-        //
+      $category = new Category();
+      $category->name = $request->name;
+      $category->slug = $request->slug;
+
+      $category->save();
+
+      return $category;
     }
 
     /**

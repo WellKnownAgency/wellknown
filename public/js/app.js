@@ -72182,6 +72182,40 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -72194,6 +72228,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     return {
       categories: [],
       category: {
+        id: '',
         name: '',
         slug: '',
         created_at: ''
@@ -72213,14 +72248,38 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     }
   },
 
-  deletecCategory: function deletecCategory() {
+  createCat: function createCat() {
     var _this2 = this;
 
-    axios.delete('/api/categories/' + category.id).then(function (res) {
-      var categoryIndex = _this2.categories.indexOf(category);
-      _this2.categories.splice(categoryIndex, 1);
+    axios.post('/api/categories', this.category).then(function (res) {
+      _this2.categories.unshift(res.data);
+      _this2.category.name = '';
+      _this2.category.slug = '';
     }).then(function (res) {
-      _this2.$notify({
+      _this2.fetchUse();
+    }).then(function (res) {
+      swal({
+        type: 'success',
+        title: 'Yeah',
+        text: 'Category successfully created!'
+      });
+    }).catch(function (err) {
+      console.log(err);
+      swal({
+        type: 'error',
+        title: 'Ooops...',
+        text: 'Something went wrong!'
+      });
+    });
+  },
+  deletecCategory: function deletecCategory() {
+    var _this3 = this;
+
+    axios.delete('/api/categories/' + category.id).then(function (res) {
+      var categoryIndex = _this3.categories.indexOf(category);
+      _this3.categories.splice(categoryIndex, 1);
+    }).then(function (res) {
+      _this3.$notify({
         // (optional)
         // Name of the notification holder
         group: 'foo',
@@ -72286,15 +72345,6 @@ var render = function() {
                       _vm._v(" "),
                       _c("td", [
                         _c(
-                          "a",
-                          {
-                            staticClass: "btn btn-info btn-sm",
-                            attrs: { href: "" }
-                          },
-                          [_vm._v("View")]
-                        ),
-                        _vm._v(" "),
-                        _c(
                           "button",
                           {
                             staticClass: "btn btn-danger btn-sm delete",
@@ -72321,7 +72371,144 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(3)
+      _vm._m(3),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "modal fade",
+          attrs: {
+            id: "addnew",
+            tabindex: "-1",
+            role: "dialog",
+            "aria-labelledby": "categoryid",
+            "aria-hidden": "true"
+          }
+        },
+        [
+          _c(
+            "div",
+            {
+              staticClass: "modal-dialog modal-lg",
+              attrs: { role: "document" }
+            },
+            [
+              _c("div", { staticClass: "modal-content" }, [
+                _vm._m(4),
+                _vm._v(" "),
+                _c("div", { staticClass: "modal-body" }, [
+                  _c("form", { attrs: { method: "", autocomplete: "nope" } }, [
+                    _c("div", { staticClass: "form-row" }, [
+                      _c("div", { staticClass: "col" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "col-form-label",
+                            attrs: { for: "name" }
+                          },
+                          [_vm._v("Name:")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.category.name,
+                              expression: "category.name"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            id: "name",
+                            autocomplete: "nope"
+                          },
+                          domProps: { value: _vm.category.name },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(
+                                _vm.category,
+                                "name",
+                                $event.target.value
+                              )
+                            }
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "col-form-label",
+                            attrs: { for: "slug" }
+                          },
+                          [_vm._v("Slug:")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.category.slug,
+                              expression: "category.slug"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: { id: "slug", autocomplete: "nope" },
+                          domProps: { value: _vm.category.slug },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(
+                                _vm.category,
+                                "slug",
+                                $event.target.value
+                              )
+                            }
+                          }
+                        })
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "modal-footer" }, [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-secondary",
+                      attrs: { type: "button", "data-dismiss": "modal" }
+                    },
+                    [_vm._v("Close")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-primary",
+                      attrs: { type: "button" },
+                      on: {
+                        click: function($event) {
+                          _vm.createCat()
+                        }
+                      }
+                    },
+                    [_vm._v("Save ")]
+                  )
+                ])
+              ])
+            ]
+          )
+        ]
+      )
     ])
   ])
 }
@@ -72344,7 +72531,16 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\r\n        Categories Table")
+      _vm._v("\r\n        Categories Table\r\n        "),
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-success",
+          staticStyle: { float: "right" },
+          attrs: { "data-toggle": "modal", "data-target": "#addnew" }
+        },
+        [_vm._v("Add New Category")]
+      )
     ])
   },
   function() {
@@ -72369,6 +72565,31 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("p", { staticClass: "small text-center text-muted my-5" }, [
       _c("em", [_vm._v("More table examples coming soon...")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "modal-header" }, [
+      _c(
+        "h5",
+        { staticClass: "modal-title", attrs: { id: "categoriesshowmodal" } },
+        [_vm._v("Create New Category")]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "close",
+          attrs: {
+            type: "button",
+            "data-dismiss": "modal",
+            "aria-label": "Close"
+          }
+        },
+        [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
+      )
     ])
   }
 ]
