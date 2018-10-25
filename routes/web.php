@@ -13,12 +13,16 @@
 Route::prefix('admin')->middleware('auth:admin')->group(function() {
   Route::get('/', 'AdminPagesController@index')->name('admin.index');
   Route::get('/leads', 'AdminPagesController@leads');
-  Route::get('/companies', 'AdminPagesController@companies');
+  Route::get('/clients', 'AdminPagesController@clients');
   Route::get('posts', 'AdminPagesController@posts');
   Route::get('categories', 'AdminPagesController@categories');
   Route::get('/posts/create', 'PostController@create');
   Route::get('/posts/{id}/edit', 'PostController@edit');
   Route::post('/posts/{id}','PostController@update');
+
+  Route::post('/notification/get', 'NotificationController@get');
+  Route::post('/notification/read', 'NotificationController@read');
+  Route::post('/notification/readall', 'NotificationController@readall');
 });
 
 /* Main Pages */
@@ -41,3 +45,7 @@ Route::post('/admin/login', 'Auth\AdminLoginController@login')->name('admin.logi
 
 /* Post Methods */
 Route::post('contact-us', 'PagesController@postContactus');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

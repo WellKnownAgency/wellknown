@@ -20,12 +20,17 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
   Route::resource('leads', 'LeadsController', [
     'except' => ['create']
   ]);
+  Route::get('clients', 'LeadsController@indexClients');
   Route::put('leads/statuschange/{id}','LeadsController@statuschange');
   Route::put('leads/introemail/{id}','LeadsController@doneintroemail');
   Route::put('leads/introcall/{id}','LeadsController@doneintrocall');
   Route::put('leads/fllupemail/{id}','LeadsController@donefllupemail');
   Route::put('leads/lastemail/{id}','LeadsController@donelastemail');
   /* End of Lead Routes */
+
+  /* Notifications */
+
+  /*Endof Notifications */
 
   Route::resource('statuses', 'StatusesController', [
     'except' => ['create']

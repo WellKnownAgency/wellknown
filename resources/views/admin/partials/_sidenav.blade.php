@@ -13,7 +13,7 @@
     </a>
     <div class="dropdown-menu" aria-labelledby="pagesDropdown">
       <a class="dropdown-item" href="/admin/leads">Leads</a>
-      <a class="dropdown-item" href="">Companies</a>
+      <a class="dropdown-item" href="/admin/clients">Clients</a>
     </div>
   </li>
   <li class="nav-item dropdown">

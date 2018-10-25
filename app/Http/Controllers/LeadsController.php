@@ -2,15 +2,24 @@
 
 namespace App\Http\Controllers;
 
+use App\Notifications\NewLead;
 use App\Notifications\IntroEmail;
 use Illuminate\Http\Request;
 use App\Lead;
+use App\Admin ;
 
 class LeadsController extends Controller
 {
     public function index()
   {
-      $leads = Lead::with('source')->with('status')->get();
+      $leads = Lead::with('source')->with('status')->where('status_id', '!=', 4)->get();
+
+      return $leads;
+  }
+
+  public function indexClients()
+  {
+      $leads = Lead::with('source')->with('status')->where('status_id', '=', 4)->get();
 
       return $leads;
   }
@@ -43,6 +52,11 @@ class LeadsController extends Controller
     $lead->source_id = $request->source_id;
 
     $lead->save();
+
+    $admins = Admin::all();
+    foreach ($admins as $admin) {
+      $admin->notify(new NewLead($lead));
+    }
 
     return $lead;
   }

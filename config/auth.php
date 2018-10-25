@@ -18,6 +18,11 @@ return [
         'passwords' => 'users',
     ],
 
+    'admins' => [
+        'driver' => 'eloquent',
+        'model' => App\Admin::class,
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Authentication Guards
