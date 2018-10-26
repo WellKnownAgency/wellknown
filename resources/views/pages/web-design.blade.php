@@ -70,19 +70,14 @@
 		<!-- SMB Partner -->
 		<section class="container-fluid bg-light-gray" id="SMB-Partner">
 			<div class="container">
-				<div class="row text-left">
-					<div class="col-md-6">
-						<img src="images/analytics.png" style="width:100%;">
-					</div>
-					<div class="col-md-6">
-						<h3>Website Developers</h3>
-						<p class="customp">Our team of professional designers and developers create websites for your Small Business needs and provide with simple Admin panel to rule your website and get important information. Contact us to learn more.
-						</p>
-						<br>
-						<br>
-						<a href="#contact" class="btn-xl hvr-pulse">Get Started</a>
-					</div>
-				</div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h3 class="section-heading">WellKnown Web Design and Development Process</h3>
+          </div>
+          <div class="col-md-12 text-center">
+            
+          </div>
+        </div>
 			</div>
 		</section>
     <div class="col-md-12 center">

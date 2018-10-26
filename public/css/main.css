@@ -1,3 +1,5 @@
+
+
 *, *:before, *:after {
     margin: 0;
     padding: 0;
@@ -170,7 +172,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .btn-send {
     color: #fff;
-    background-color: #dc3741;
+    background: linear-gradient(to right, #dc3741, #1D4350);
     border-color: #dc3741;
     font-family: "Montserrat",  "Helvetica Neue",  Helvetica,  Arial,  sans-serif;
     text-transform: uppercase;
@@ -179,7 +181,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 16px;
     padding: 5px 10px;
     text-shadow: none;
-    transition: all 0.5s;
+    transition: all 0.7s;
 }
 .btn-send:focus, .btn-send.focus {
     color: #fff;
@@ -188,19 +190,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 .btn-send:hover {
     color: #fff;
-    background-color: #bf212b;
-    boder-color: #b21f28;
+    background: linear-gradient(to right, #1D4350, #dc3741);
 }
 .btn-send:active, .btn-send.active, .open>.btn-send.dropdown-toggle {
     color: #fff;
     background-color: #bf212b;
     border-color: #7e161c;
 }
-.btn-send:hover, .btn-send:focus, .btn-send.focus {
-    color: #fff;
-    background-color: #a01c24;
-    brder-color: #7e161c;
-}
+
 .btn-send:active, .btn-send.active, .open>.btn-send.dropdown-toggle {
     background-image: none;
 }
@@ -220,7 +217,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .btn-rm {
     color: #fff;
-    background-color: #dc3741;
+    background: linear-gradient(to right, #dc3741, #1D4350);
     border-color: #dc3741;
     font-family: "Montserrat",  "Helvetica Neue",  Helvetica,  Arial,  sans-serif;
     text-transform: uppercase;
@@ -269,25 +266,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 .btn-xl {
     color: #fff;
-    background-color: #dc3741;
+    background: linear-gradient(to right, #dc3741, #1D4350);
     border-color: #dc3741;
     font-family: "Montserrat",  "Helvetica Neue",  Helvetica,  Arial,  sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    border-radius: 3px;
+    border-radius: 60px;
     font-size: 20px;
     padding: 20px 40px;
     text-shadow: none;
-    transition: all 0.5s;
+    transition: all 0.7s;
+    box-shadow: 0 2px 14px rgba(0,0,0, 0.22), 0 4px 6px rgba(0,0,0, 0.34);
 }
 .btn-xl:focus, .btn-xl.focus {
     color: #fff;
-    background-color: #bf212b;
+    background: #bf212b;
     border-color: #7e161c;
 }
 .btn-xl:hover {
+  text-decoration: none;
     color: #fff;
-    background-color: #bf212b;
+    background: linear-gradient(to right, #1D4350, #dc3741);
     border-color: #dc3741;
 
 }
@@ -309,11 +308,6 @@ h1, h2, h3, h4, h5, h6 {
     border-color: #dc3741;
 }
 .btn-xl .badge {
-    color: #dc3741;
-    background-color: #fff;
-}
-.btn-xl:hover {
-    text-decoration: none;
     color: #dc3741;
     background-color: #fff;
 }
@@ -1238,7 +1232,6 @@ div a:hover {
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px transparent;
 }
 .hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
     -webkit-animation-name: hvr-pulse;
@@ -1255,7 +1248,6 @@ div a:hover {
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px transparent;
     position: relative;
 }
 .hvr-curl-top-right:before {
@@ -1268,7 +1260,6 @@ div a:hover {
     right: 0;
     background: white;
     background: linear-gradient(225deg,  #fff 45%,  #aaa 50%,  #ccc 56%,  #fff 80%);
-    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4);
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     -webkit-transition-property: width,  height;
