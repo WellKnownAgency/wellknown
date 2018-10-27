@@ -27,9 +27,12 @@
 			 fjs.parentNode.insertBefore(js, fjs);
 		   }(document, 'script', 'facebook-jssdk'));
 		</script>
+
 		@include('partials/_nav')
 		<!-- Page Content -->
-		@yield('content')
+		<div id="container" class="intro-effect-push">
+			@yield('content')
+		</div>
 		@include('partials/_footer')
 		@include('partials/_js')
 	</body>

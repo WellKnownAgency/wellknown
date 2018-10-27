@@ -18,6 +18,8 @@
 <meta property="og:image" content="/images/homepage.jpg" />
 <meta property="og:description" content="@yield('description')" />
 
+@yield('preload')
+<link href="{!! asset('css/normalize.css') !!}" media="all" rel="stylesheet" type="text/css" />
 <link href="{!! asset('css/bootstrap.css') !!}" media="all" rel="stylesheet" type="text/css" />
 <link href="{!! asset('css/main.css') !!}" media="all" rel="stylesheet" type="text/css" />
 <link href="{!! asset('css/font-awesome.css') !!}" media="all" rel="stylesheet" type="text/css" />
@@ -25,6 +27,8 @@
 <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+
+
 
 
 <!-- Global site tag (gtag.js) - Google Analytics -->

@@ -1,4 +1,4 @@
-@extends('layout.mainaboutus')
+@extends('layout.main')
 
 @section('title', 'Digital Marketing and Advertising Agency | Full Service')
 
@@ -6,17 +6,19 @@
 
 @section('keywords', 'Digital Marketing, Online marketing, marketing Agency, Advertising Agency,  Marketing services')
 
+@section('preload')
+<link rel="preload" href="images/bgmain/sem.jpg" as="image">
+@stop
+
 @section('content')
-<!-- Header -->
-    	<header class="bgmainaboutus">
-			<div class="container">
-				<div class="intro-text">
-                <div class="intro-lead-in">WellKnown Agency</div>
-                <h1 class="intro-heading">About US</h1>
-					<a href="#contact" class="btn-xl hvr-pulse">Free Consultation</a>
-				</div>
-			</div>
-		</header>
+<header class="header">
+  <div class="bg-img"><img src="images/bgmain/sem.jpg" alt="Background Image"/></div>
+  <div class="title">
+    <h1>About us</h1>
+    <button class="btn-xl hvr-pulse trigger">Free Consultation</button>
+  </div>
+</header>
+
 
 		<section id="contact">
 			<div class="container">

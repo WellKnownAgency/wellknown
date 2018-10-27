@@ -6,17 +6,20 @@
 
 @section('keywords', 'Search Engine Optimization Services, SEO Agency, Services Company, Local SEO, SEO Expert')
 
+@section('preload')
+<link rel="preload" href="images/bgmain/seo.jpg" as="image">
+@stop
+
 @section('content')
 <!-- Header -->
-    	<header class="bgmainseo">
-			<div class="container">
-				<div class="intro-text container">
-                <div class="intro-lead-in">WellKnown Digital Agency</div>
-                <h1 class="intro-heading">Search Engine Optimization</h1>
-					<a href="#contact" class="btn-xl hvr-pulse">Free Consultation</a>
-				</div>
-			</div>
-		</header>
+<header class="header">
+  <div class="bg-img"><img src="images/bgmain/seo.jpg" alt="Background Image"/></div>
+  <div class="title">
+    <h1>Social Media Marketing</h1>
+    <h3 class="intro-heading"></h3>
+    <button class="btn-xl hvr-pulse trigger">Free Consultation</button>
+  </div>
+</header>
 
 		<!-- Icons Description -->
 		<section class="container-fluid">

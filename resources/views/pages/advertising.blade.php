@@ -6,17 +6,20 @@
 
 @section('keywords', 'Advertising, ads agency, ppc, pay per click, reamrketing campaigns, video advertising')
 
+@section('preload')
+<link rel="preload" href="images/bgmain/analytics.jpg" as="image">
+@stop
+
 @section('content')
 <!-- Header -->
-    <header class="bgmainsem">
-			<div class="container">
-				<div class="intro-text">
-					<div class="intro-lead-in">WellKnown Digital Agency</div>
-					<h1 class="intro-heading">PPC | Social ads | Video</h1>
-					<a href="#contact" class="btn-xl hvr-pulse">Free Consultation</a>
-				</div>
-			</div>
-		</header>
+<header class="header">
+  <div class="bg-img"><img src="images/bgmain/analytics.jpg" alt="Background Image"/></div>
+  <div class="title">
+    <h1>Online Advertising</h1>
+    <h3 class="intro-heading">PPC | Remarketing | Social Media Advertising</h3>
+    <button class="btn-xl hvr-pulse trigger">Free Consultation</button>
+  </div>
+</header>
 
 		<!-- Icons Description -->
 		<section  class="container-fluid">

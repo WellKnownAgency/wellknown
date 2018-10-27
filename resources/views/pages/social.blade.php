@@ -6,17 +6,21 @@
 
 @section('keywords', 'Social Media Agency, Social Media Services, Social Media Consultant, Smm Company, Viral Marketing, Social Media Marketing')
 
+@section('preload')
+<link rel="preload" href="images/bgmain/smm.jpg" as="image">
+@stop
+
 @section('content')
-<!-- Header -->
-    	<header class="bgmainsmm">
-			<div class="container">
-				<div class="intro-text">
-					<div class="intro-lead-in">WellKnown Digital Agency</div>
-					<h1 class="intro-heading">Social Media Marketing</h1>
-					<a href="#contact" class="btn-xl hvr-pulse">Free Consultation</a>
-				</div>
-			</div>
-		</header>
+
+    <!-- Header -->
+    <header class="header">
+    	<div class="bg-img"><img src="images/bgmain/smm.jpg" alt="Background Image"/></div>
+    	<div class="title">
+    		<h1>Social Media Marketing</h1>
+    		<h3 class="intro-heading"></h3>
+    		<button class="btn-xl hvr-pulse trigger">Free Consultation</button>
+    	</div>
+    </header>
 
 		<!-- Icons Description -->
 		<section class="container-fluid">

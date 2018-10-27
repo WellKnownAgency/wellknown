@@ -6,19 +6,23 @@
 
 @section('keywords', 'Digital Agency, Online marketing, online advertising, marketing Agency, Advertising Agency, Web design agency, web development')
 
+@section('preload')
+<link rel="preload" href="images/bgmain/homepage.jpg" as="image">
+@stop
+
 @section('content')
 <!-- Header -->
-<header class="bgmain no-flick">
-	<div class="container">
-		<div class="intro-text" id="wrapper">
-			<div class="intro-lead-in">WellKnown Digital Agency</div>
-			<h1 class="intro-heading">Advertising | Marketing | Web Design</h1>
-			<a href="#contact" class="btn-xl hvr-pulse">Free Consultation</a>
-		</div>
+<header class="header">
+	<div class="bg-img"><img src="images/bgmain/homepage.jpg" alt="Background Image"/></div>
+	<div class="title">
+		<h1>WellKnown Digital Agency</h1>
+		<h3 class="intro-heading">Advertising | Marketing | Web Design</h3>
+		<button class="btn-xl hvr-pulse trigger">Free Consultation</button>
 	</div>
 </header>
 
-<div id="section1">
+
+<div id="section1" >
 <!-- Services Section -->
 	<section class="container">
 			<div class="row">

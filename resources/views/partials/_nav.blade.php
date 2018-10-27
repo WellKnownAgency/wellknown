@@ -1,5 +1,5 @@
 <!-- Navbar -->
-    	<nav id="mainNav" class="navbar navbar-custom navbar-fixed-top" >
+    	<nav class="navbar navbar-custom navbar-fixed-top" >
   			<div class="container-fluid">
     		<!-- Brand and toggle get grouped for better mobile display -->
     			<div class="navbar-header">
@@ -28,9 +28,9 @@
             <li class="{{ Request::is('contact-us') ?"active" : "" }}"><a href="/contact-us">Contact US</a></li>
 						<li class="{{ Request::is('blog') ?"active" : "" }}"><a href="/blog/">BLOG</a></li>
 					</ul>
-					<ul class="phone pull-right nav">
-						<li><a href="tel:8572653644">(857) 265-3644</a></li>
-					</ul>
+					<div class="pull-right navbar-text">
+            <a href="tel:8572653644" style="font-weight: 600;text-decoration:none;">(857) 265-3644</a>
+					</div>
 					<div class="navbar-text pull-right">
             <a href="mailto:info@wknown.com" rel="external"><i class="fa fa-envelope fa-lg icon-color"></i></a>
 						<a href="https://www.facebook.com/WellKnown-153425045259276/" target="_blank" rel="external"><i class="fa fa-facebook fa-lg icon-color"></i></a>

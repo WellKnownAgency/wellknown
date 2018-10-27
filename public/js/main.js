@@ -1,11 +1,5 @@
 $('body').bind('touchstart', function() {});
 
-$(document).ready(function(){
-    $('#mainNav').affix({offset: {top: 150} });
-    $('.mainNav').on('affixed-top.bs.affix', function(){
-        alert;
-    });
-});
 
 window.addEventListener('load', function(){
     var allimages= document.getElementsByTagName('img');
@@ -61,4 +55,3 @@ $(document).ready(function($) {
     });
 
 });
- 

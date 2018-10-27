@@ -6,6 +6,7 @@
 
 @section('keywords', '')
 
+
 @section('content')
 <section id="contact" style="background: #f1f1f1;">
 	<div class="row">

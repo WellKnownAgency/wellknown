@@ -6,18 +6,20 @@
 
 @section('keywords', 'website design, simple crm and cms systems, website developers, responsive web design, web design and development')
 
+@section('preload')
+<link rel="preload" href="images/bgmain/webdesign.jpg" as="image">
+@stop
+
 @section('content')
 <!-- Header -->
-    	<header class="bgmainwebdesign">
-			<div class="container">
-				<div class="intro-text">
-                <div class="intro-lead-in">WellKnown Digital Agency</div>
-                <h1 class="intro-heading">Web Design and Development</h1>
-					<a href="#contact" class="btn-xl hvr-pulse">Free Consultation</a>
-				</div>
-			</div>
-		</header>
-
+<header class="header">
+	<div class="bg-img"><img src="images/bgmain/webdesign.jpg" class="bg-cover" alt="Background Image"/></div>
+	<div class="title">
+		<h1>Web Design and Development</h1>
+		<h3 class="intro-heading"></h3>
+		<button class="btn-xl hvr-pulse trigger">Free Consultation</button>
+	</div>
+</header>
 		<!-- Icons Description -->
 		<section class="container-fluid">
       <div class="container">
@@ -61,30 +63,56 @@
   				</div>
         </div>
 		</section>
-		<div class="col-md-12 center">
-					<a href="#SMB-Partner" class="downarrow">
-					<img src="images/arrow.png">
-					</a>
-			</div>
 
 		<!-- SMB Partner -->
-		<section class="container-fluid bg-light-gray" id="SMB-Partner">
-			<div class="container">
+		<section class="container-fluid bg-light-gray">
+			<div class="container" >
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h3 class="section-heading">WellKnown Web Design and Development Process</h3>
+            <h2 class="section-heading">Our Process</h2>
           </div>
           <div class="col-md-12 text-center">
-            
+						<div class="slides">
+					    <div class="slide">
+					      <a href="#">The Lorem</a>
+					      <div class="content">
+					        <div class="row">
+										<div class="col-md-3">
+											<img src="/images/icons/test_1.png" width="100%" heigth="auto">
+										</div>
+										<div class="col-md-9">
+
+										</div>
+									</div>
+					      </div>
+					    </div>
+					    <div class="slide" id="duration">
+					      <a href="#">The Ipsum</a>
+					      <div class="content">
+					        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi rem ab voluptate provident voluptatum veniam cupiditate beatae expedita veritatis aliquid officia doloribus dolore maiores doloremque mollitia! A ducimus autem ut!
+					        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse harum eius voluptas dicta. Vero tempore rerum itaque? Quidem nobis vel consectetur sit amet illo dicta veniam ab ut libero officia!
+					      </div>
+					    </div>
+
+					    <div class="slide">
+					      <a href="#">The Dolor Sit Amet</a>
+					      <div class="content">
+					        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi rem ab voluptate provident voluptatum veniam cupiditate beatae expedita veritatis aliquid officia doloribus dolore maiores doloremque mollitia! A ducimus autem ut!
+					        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim fugiat officiis repellat reprehenderit incidunt deserunt illum eum ipsa quod nihil eligendi hic delectus quaerat. Ad sint tempore cumque mollitia reiciendis!
+					      </div>
+					    </div>
+							<div class="slide">
+					      <a href="#">The Dolor Sit Amet</a>
+					      <div class="content">
+					        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi rem ab voluptate provident voluptatum veniam cupiditate beatae expedita veritatis aliquid officia doloribus dolore maiores doloremque mollitia! A ducimus autem ut!
+					        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim fugiat officiis repellat reprehenderit incidunt deserunt illum eum ipsa quod nihil eligendi hic delectus quaerat. Ad sint tempore cumque mollitia reiciendis!
+					      </div>
+					    </div>
+					  </div>
           </div>
         </div>
 			</div>
 		</section>
-    <div class="col-md-12 center">
-					<a href="#projects" class="downarrow">
-					<img src="images/arrow.png">
-					</a>
-			</div>
 
       <!-- SMB Partner -->
   		<section class="container-fluid bg-gray-light" id="projects">
@@ -95,21 +123,7 @@
                   <h3 class="section-subheading text-muted">From Simple Blogs to Service Business</h3>
               </div>
               <div class="row">
-                <div class="col-md-4">
-                  <a href="images/portfolio/borntomove.png" class="woop" target="_blank">
-                    <img src="images/portfolio/borntomove.png"/>
-                  </a>
-                </div>
-                <div class="col-md-4">
-                  <a href="images/portfolio/omdarling.jpg" class="woop" target="_blank">
-                    <img src="images/portfolio/omdarling.jpg"/>
-                  </a>
-                </div>
-                <div class="col-md-4">
-                  <a href="images/portfolio/sovi.png" class="woop" target="_blank">
-                    <img src="images/portfolio/sovi.png"/>
-                  </a>
-                </div>
+
               </div>
           </div>
         </div>
