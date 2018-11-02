@@ -49,7 +49,7 @@
 								<li class="nav-item">
 									<a class="nav-link active" data-toggle="tab" href="#link10" role="tablist">
 										<i class="now-ui-icons objects_umbrella-13"></i>
-										Home
+										
 									</a>
 								</li>
 								<li class="nav-item">
