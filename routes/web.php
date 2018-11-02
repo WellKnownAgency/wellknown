@@ -26,6 +26,7 @@ Route::prefix('admin')->middleware('auth:admin')->group(function() {
 });
 
 /* Main Pages */
+Route::get('/test', 'PagesController@getTest');
 Route::get('/', 'PagesController@index');
 Route::get('/', 'PagesController@getIndex');
 Route::get('advertising', 'PagesController@getAdvertising');

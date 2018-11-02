@@ -1,210 +1,30 @@
+<script type="text/javascript" src="{!! asset('js/js/core/popper.min.js') !!}"></script>
+<script type="text/javascript" src="{!! asset('js/js/core/jquery.min.js') !!}"></script>
+<script type="text/javascript" src="{!! asset('js/js/core/bootstrap.min.js') !!}"></script>
 
-<!-- jQery -->
-<script type="text/javascript" src="{!! asset('js/jquery-min.js') !!}"></script>
-<!-- MAIN JS -->
-<script type="text/javascript" src="{!!  asset('js/main.js') !!}"></script>
-<!-- Bootstrap js -->
-<script type="text/javascript" src="{!! asset('js/bootstrap.min.js') !!}"></script>
-<script type="text/javascript" src="{!! asset('js/jqBootstrapValidation.js') !!}"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-<script type="text/javascript" src="{!! asset('js/smoothscroll.min.js') !!}"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3-PDjdugehw4srILhEgVWuNqX4AY54EE&callback=initMap"></script>
+<script type="text/javascript" src="{!! asset('js/js/plugins/bootstrap-switch.js') !!}"></script>
+<script type="text/javascript" src="{!! asset('js/js/plugins/nouislider.min.js') !!}"></script>
+<script type="text/javascript" src="{!! asset('js/js/plugins/moment.min.js') !!}"></script>
+<script type="text/javascript" src="{!! asset('js/js/plugins/jasny-bootstrap.min.js') !!}"></script>
+<script type="text/javascript" src="{!! asset('js/js/plugins/bootstrap-tagsinput.js') !!}"></script>
+<script type="text/javascript" src="{!! asset('js/js/plugins/bootstrap-selectpicker.js') !!}"></script>
+<script type="text/javascript" src="{!! asset('js/js/plugins/bootstrap-datetimepicker.js') !!}"></script>
+<script type="text/javascript" src="{!! asset('js/js/now-ui-kit.min.js') !!}"></script>
+<script type="text/javascript" src="{!! asset('js/js/plugins/presentation-page/rellax.min.js') !!}"></script>
+<script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if ($(window).width() >= 991) {
 
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org/",
-  "@type": "Organization",
-  "name": "WellKnown Agency",
-  "url" : "https://wknown.com",
-  "sameAs" : [
-  "https://twitter.com/WKnownMarketing",
-  "https://plus.google.com/u/0/111455513240566433382",
-  "https://www.facebook.com/WellKnown-153425045259276/",
-  "https://www.linkedin.com/company/wellknown/",
-  "https://www.yelp.com/biz/wellknown-boston"
- ],
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "358 Commonwelath ave",
-    "addressLocality": "Boston",
-    "addressRegion": "Massachusetts",
-    "postalCode": "02115"
-  },
-  "telephone": "8572653644"
-}
-</script>
-<script>
+      setTimeout(function() {
+        var rellax = new Rellax('.rellax', {
+          center: true
+        });
+      }, 5000);
 
-    var popupSize = {
-        width: 780,
-        height: 550
-    };
-
-    $(document).on('click', '.card__social > a', function(e){
-
-        var
-            verticalPos = Math.floor(($(window).width() - popupSize.width) / 2),
-            horisontalPos = Math.floor(($(window).height() - popupSize.height) / 2);
-
-        var popup = window.open($(this).prop('href'), 'social',
-            'width='+popupSize.width+',height='+popupSize.height+
-            ',left='+verticalPos+',top='+horisontalPos+
-            ',location=0,menubar=0,toolbar=0,status=0,scrollbars=1,resizable=1');
-
-        if (popup) {
-            popup.focus();
-            e.preventDefault();
-        }
-
-    });
-</script>
-<script type="text/javascript" src="{!! asset('js/classie.js') !!}"></script>
-<script>
-  (function() {
-
-    // detect if IE : from http://stackoverflow.com/a/16657946
-    var ie = (function(){
-      var undef,rv = -1; // Return value assumes failure.
-      var ua = window.navigator.userAgent;
-      var msie = ua.indexOf('MSIE ');
-      var trident = ua.indexOf('Trident/');
-
-      if (msie > 0) {
-        // IE 10 or older => return version number
-        rv = parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
-      } else if (trident > 0) {
-        // IE 11 (or newer) => return version number
-        var rvNum = ua.indexOf('rv:');
-        rv = parseInt(ua.substring(rvNum + 3, ua.indexOf('.', rvNum)), 10);
-      }
-
-      return ((rv > -1) ? rv : undef);
-    }());
-
-
-    // disable/enable scroll (mousewheel and keys) from http://stackoverflow.com/a/4770179
-    // left: 37, up: 38, right: 39, down: 40,
-    // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
-    var keys = [32, 37, 38, 39, 40], wheelIter = 0;
-
-    function preventDefault(e) {
-      e = e || window.event;
-      if (e.preventDefault)
-      e.preventDefault();
-      e.returnValue = false;
+      var rellaxHeader = new Rellax('.rellax-header');
+      var rellaxText = new Rellax('.rellax-text');
     }
 
-    function keydown(e) {
-      for (var i = keys.length; i--;) {
-        if (e.keyCode === keys[i]) {
-          preventDefault(e);
-          return;
-        }
-      }
-    }
-
-    function touchmove(e) {
-      preventDefault(e);
-    }
-
-    function wheel(e) {
-      // for IE
-      //if( ie ) {
-        //preventDefault(e);
-      //}
-    }
-
-    function disable_scroll() {
-      window.onmousewheel = document.onmousewheel = wheel;
-      document.onkeydown = keydown;
-      document.body.ontouchmove = touchmove;
-    }
-
-    function enable_scroll() {
-      window.onmousewheel = document.onmousewheel = document.onkeydown = document.body.ontouchmove = null;
-    }
-
-    var docElem = window.document.documentElement,
-      scrollVal,
-      isRevealed,
-      noscroll,
-      isAnimating,
-      container = document.getElementById( 'container' ),
-      trigger = container.querySelector( 'button.trigger' );
-
-    function scrollY() {
-      return window.pageYOffset || docElem.scrollTop;
-    }
-
-    function scrollPage() {
-      scrollVal = scrollY();
-
-      if( noscroll && !ie ) {
-        if( scrollVal < 0 ) return false;
-        // keep it that way
-        window.scrollTo( 0, 0 );
-      }
-
-      if( classie.has( container, 'notrans' ) ) {
-        classie.remove( container, 'notrans' );
-        return false;
-      }
-
-      if( isAnimating ) {
-        return false;
-      }
-
-      if( scrollVal <= 0 && isRevealed ) {
-        toggle(0);
-      }
-      else if( scrollVal > 0 && !isRevealed ){
-        toggle(1);
-      }
-    }
-
-    function toggle( reveal ) {
-      isAnimating = true;
-
-      if( reveal ) {
-        classie.add( container, 'modify' );
-      }
-      else {
-        noscroll = true;
-        disable_scroll();
-        classie.remove( container, 'modify' );
-      }
-
-      // simulating the end of the transition:
-      setTimeout( function() {
-        isRevealed = !isRevealed;
-        isAnimating = false;
-        if( reveal ) {
-          noscroll = false;
-          enable_scroll();
-        }
-      }, 1200 );
-    }
-
-    // refreshing the page...
-    var pageScroll = scrollY();
-    noscroll = pageScroll === 0;
-
-    disable_scroll();
-
-    if( pageScroll ) {
-      isRevealed = true;
-      classie.add( container, 'notrans' );
-      classie.add( container, 'modify' );
-    }
-
-    window.addEventListener( 'scroll', scrollPage );
-    trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
-  })();
-</script>
-<script>
-$('.slide a').click(function () {
-  $('.slide.active').removeClass('active');
-  $(this).closest('.slide').addClass('active');
-  return false;
-});
+  });
 </script>

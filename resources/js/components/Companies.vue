@@ -62,8 +62,6 @@
 
 <script>
 
-import Notifications from 'vue-notification'
-
     export default {
       mounted() {
         this.fetchUse()

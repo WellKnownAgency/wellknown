@@ -1,42 +1,76 @@
-<!-- Navbar -->
-    	<nav class="navbar navbar-custom navbar-fixed-top" >
-  			<div class="container-fluid">
-    		<!-- Brand and toggle get grouped for better mobile display -->
-    			<div class="navbar-header">
-     				 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        				<span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-					</button>
-					<a class="navbar-brand" href="/"><img src="/images/wk.jpg" alt="WellKnown Agency"></a>
-    			</div>
-
-   		 		<!-- Collect the nav links, forms, and other content for toggling -->
-    			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      				<ul class="nav navbar-nav">
-       					<li class="{{ Request::is('/') ?"active" : "" }}"><a href="/">HOME</a></li>
-						<li class="dropdown {{ Request::is('web-design', 'analytics', 'search-engine-marketing-ppc', 'search-engine-optimization', 'social-media-marketing', 'display-advertising') ?"active" : "" }}">
-       						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							  Services
-							</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="app">
-								<li ><a href="/advertising">Advertising</a></li>
-								<li ><a href="/search-engine-optimization">Search</a></li>
-								<li ><a href="/social-media-marketing">Social</a></li>
-								<li ><a href="/web-design">Web Design</a></li>
-							</ul>
-						</li>
-						<li class="{{ Request::is('about-us') ?"active" : "" }}"><a href="/about-us">ABOUT US</a></li>
-            <li class="{{ Request::is('contact-us') ?"active" : "" }}"><a href="/contact-us">Contact US</a></li>
-						<li class="{{ Request::is('blog') ?"active" : "" }}"><a href="/blog/">BLOG</a></li>
-					</ul>
-					<div class="pull-right navbar-text">
-            <a href="tel:8572653644" style="font-weight: 600;text-decoration:none;">(857) 265-3644</a>
-					</div>
-					<div class="navbar-text pull-right">
-            <a href="mailto:info@wknown.com" rel="external"><i class="fa fa-envelope fa-lg icon-color"></i></a>
-						<a href="https://www.facebook.com/WellKnown-153425045259276/" target="_blank" rel="external"><i class="fa fa-facebook fa-lg icon-color"></i></a>
-						<a href="https://twitter.com/WKnownMarketing" target="_blank" rel="external"><i class="fa fa-twitter fa-lg icon-color"></i></a>
-						<a href="https://www.linkedin.com/company/wellknown/" target="_blank" rel="external"><i class="fa fa-linkedin fa-lg icon-color"></i></a>
-					</div>
-    			</div><!-- /.navbar-collapse -->
-  			</div><!-- /.container-fluid -->
-		</nav><!-- End navbar -->
+<nav class="navbar navbar-expand-lg bg-primary navbar-transparent fixed-top" color-on-scroll="400">
+  <div class="container">
+    <div class="navbar-translate">
+      <a class="navbar-brand" href="/" rel="tooltip" title="WellKnown Agency" data-placement="bottom">
+        <img src="images/wk.jpg" width="100" />
+      </a>
+      <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-bar top-bar"></span>
+        <span class="navbar-toggler-bar middle-bar"></span>
+        <span class="navbar-toggler-bar bottom-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="./assets/img/blurred-image-1.jpg">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">
+            <i class="fa fa-home wk-icons"></i>
+            <p>Home</p>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" data-toggle="dropdown">
+            <p>Services</p>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink1">
+            <a class="dropdown-item" href="/advertising">
+              <i class="fa fa-bullhorn wk-icons"></i> <span>Advertising</span>
+            </a>
+            <a class="dropdown-item" href="/search-engine-optimization">
+              <i class="fa fa-search wk-icons"></i>  <span>Search</span>
+            </a>
+            <a class="dropdown-item" href="/search-engine-optimization">
+              <i class="fa fa-share wk-icons"></i>  <span>Social</span>
+            </a>
+            <a class="dropdown-item" href="/web-design">
+              <i class="fa fa-file-text wk-icons"></i>  <span>Web Design and Dev</span>
+            </a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact-us">
+            <p>contact us</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about-us">
+            <p>about us</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/">
+            <p>blog</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
+            <i class="fa fa-twitter wk-icons fa-wk"></i>
+            <p class="d-lg-none d-xl-none">Twitter</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank">
+            <i class="fa fa-facebook wk-icons fa-wk"></i>
+            <p class="d-lg-none d-xl-none">Facebook</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" rel="tooltip" title="Follow us on Linkedin" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
+            <i class="fa fa-linkedin wk-icons fa-wk"></i>
+            <p class="d-lg-none d-xl-none">Instagram</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

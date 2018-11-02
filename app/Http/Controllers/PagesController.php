@@ -14,6 +14,10 @@ use Mail;
 
 class PagesController extends Controller
 {
+  public function getTest() {
+    return view('pages/test');
+  }
+
    public function getIndex() {
 	   return view('pages/index');
    }

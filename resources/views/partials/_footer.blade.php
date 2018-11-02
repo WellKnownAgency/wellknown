@@ -1,60 +1,131 @@
-<!-- Footer -->
-		<div id="footer" style="background-color: #353535;">
-			<div class="container">
-			<div class="widget-wrapper">
-				<div class="column one-forth">
-					<aside class="widget">
-						<div>
-							<ul style="list-style: none;">
-								<li><h5 class="footer-header">Services</h5></li>
-							</ul>
-						</div>
-						<div>
-							<ul style="list-style: none;" class="footer-text">
-								<li ><a href="/advertising">Advertising</a></li>
-								<li ><a href="/search-engine-optimization">Search</a></li>
-								<li ><a href="/social-media-marketing">Social</a></li>
-								<li ><a href="/web-design">Web Design</a></li>
-							</ul>
-						</div>
-					</aside>
-				</div>
-				<div class="column one-forth">
-					<aside class="widget">
-						<div>
-							<ul style="list-style: none;">
-								<li><h5 class="footer-header">Agency</h5></li>
-							</ul>
-						</div>
-						<div>
-							<ul style="list-style: none;" class="footer-text">
-								<li><a href="/about-us">About us</a></li>
-								<li><a href="/about-us">Partners</a></li>
-								<li><a href="/blog">Blog</a></li>
-								<li><a href="/contact-us">Contact Us</a></li>
-							</ul>
-						</div>
-					</aside>
-				</div>
-				<div class="column one-forth">
-					<div>
-						<ul style="list-style: none;">
-							<li><h5 class="footer-header">Connect</h5></li>
-						</ul>
-					</div>
-						<ul style="list-style: none">
-							<li class="fa-2x">
-							<a href="https://www.facebook.com/WellKnown-153425045259276/" target="_blank" rel="external"><i class="fa fa-facebook icon-color"></i></a>
-							<a href="https://twitter.com/WKnownMarketing" target="_blank" rel="external"><i class="fa fa-twitter icon-color"></i></a>
-							<a href="https://www.linkedin.com/company/wellknown/" target="_blank" rel="external"><i class="fa fa-linkedin icon-color"></i></a>
-							</li>
-
-					</ul>
-				</div>
-			<div class="footer-copy">
-				<div class="footer-text2 one">
-					<p class="footer-text2">© 2018 WellKnown Marketing Agency. All Rights Reserved.<br> <a href="/privacy-policy">Privacy Policy</a></a></p>
-				</div>
-			</div>
-			</div>
-		</div><!-- End Footer -->
+<footer class="footer footer-big" data-background-color="black">
+  <div class="container">
+    <div class="content">
+      <div class="row">
+        <div class="col-md-2">
+          <h5>About Us</h5>
+          <ul class="links-vertical">
+            <li>
+              <a href="#pablo" class="text-muted">
+                Blog
+              </a>
+            </li>
+            <li>
+              <a href="#pablo" class="text-muted">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a href="#pablo" class="text-muted">
+                Presentation
+              </a>
+            </li>
+            <li>
+              <a href="#pablo" class="text-muted">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h5>Market</h5>
+          <ul class="links-vertical">
+            <li>
+              <a href="#pablo" class="text-muted">
+                Sales FAQ
+              </a>
+            </li>
+            <li>
+              <a href="#pablo" class="text-muted">
+                How to Register
+              </a>
+            </li>
+            <li>
+              <a href="#pablo" class="text-muted">
+                Sell Goods
+              </a>
+            </li>
+            <li>
+              <a href="#pablo" class="text-muted">
+                Receive Payment
+              </a>
+            </li>
+            <li>
+              <a href="#pablo" class="text-muted">
+                Transactions Issues
+              </a>
+            </li>
+            <li>
+              <a href="#pablo" class="text-muted">
+                Affiliates Program
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Social Feed</h5>
+          <div class="social-feed">
+            <div class="feed-line">
+              <i class="fab fa-twitter"></i>
+              <p>How to handle ethical disagreements with your clients.</p>
+            </div>
+            <div class="feed-line">
+              <i class="fab fa-twitter"></i>
+              <p>The tangible benefits of designing at 1x pixel density.</p>
+            </div>
+            <div class="feed-line">
+              <i class="fab fa-facebook-square"></i>
+              <p>A collection of 25 stunning sites that you can use for inspiration.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5>Follow Us</h5>
+          <ul class="social-buttons">
+            <li>
+              <a href="#pablo" class="btn btn-icon btn-neutral btn-twitter btn-round">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#pablo" class="btn btn-icon btn-neutral btn-facebook btn-round">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#pablo" class="btn btn-icon btn-neutral btn-dribbble btn-round">
+                <i class="fab fa-dribbble"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#pablo" class="btn btn-icon btn-neutral btn-google btn-round">
+                <i class="fab fa-google-plus"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#pablo" class="btn btn-icon btn-neutral btn-instagram btn-round">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+          <h5>
+            <small>Numbers Don't Lie</small>
+          </h5>
+          <h5>14.521
+            <small class="text-muted">Freelancers</small>
+          </h5>
+          <h5>1.423.183
+            <small class="text-muted">Transactions</small>
+          </h5>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="copyright">
+      Copyright &copy;
+      <script>
+        document.write(new Date().getFullYear())
+      </script> Creative Tim All Rights Reserved.
+    </div>
+  </div>
+</footer>

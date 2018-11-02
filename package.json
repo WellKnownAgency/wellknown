@@ -11,18 +11,31 @@
     },
     "devDependencies": {
         "axios": "^0.18",
-        "bootstrap": "^4.0.0",
+        "bootstrap": "4.0.0",
         "cross-env": "^5.1",
         "jquery": "^3.2",
         "laravel-mix": "^2.0",
         "lodash": "^4.17.5",
         "popper.js": "^1.12",
-        "vue": "^2.5.7"
+        "element-ui": "^2.4.6",
+        "nouislider": "^11.1.0",
+        "vue": "^2.5.17",
+        "vue-lazyload": "^1.2.6",
+        "vue-router": "^3.0.1",
+        "vue2-transitions": "^0.2.3"
     },
     "dependencies": {
-        "sweetalert": "^2.1.0",
+        "@vue/cli-plugin-babel": "^3.0.0",
+        "@vue/cli-plugin-eslint": "^3.0.0",
+        "@vue/cli-service": "^3.0.0",
+        "@vue/eslint-config-prettier": "^3.0.1",
+        "babel-plugin-component": "^1.1.1",
+        "node-sass": "^4.9.0",
+        "now-ui-kit": "^1.1.0",
+        "sass-loader": "^7.0.1",
         "sweetalert2": "^7.28.7",
+        "vue-click-outside": "^1.0.7",
         "vue-moment": "^4.0.0",
-        "vue-notification": "^1.3.13"
+        "vue-template-compiler": "^2.5.17"
     }
 }

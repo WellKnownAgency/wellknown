@@ -1,7 +1,4 @@
-.bg-cover:after {
-    background:rgba(0,0,0,0.6);
-    opacity: 1;
-}
+
 /* SLides */
 .slides {
   position: relative;

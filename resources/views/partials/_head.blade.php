@@ -19,6 +19,15 @@
 <meta property="og:description" content="@yield('description')" />
 
 @yield('preload')
+
+<link href="{!! asset('css/bootstrap.min.css') !!}" media="all" rel="stylesheet" type="text/css" />
+<link href="{!! asset('css/now-ui-kit.css') !!}" media="all" rel="stylesheet" type="text/css" />
+<link href="{!! asset('css/demo.css') !!}" media="all" rel="stylesheet" type="text/css" />
+
+
+
+<!-- <link href="{!! asset('css/app.css') !!}" media="all" rel="stylesheet" type="text/css" /> -->
+<!--
 <link href="{!! asset('css/normalize.css') !!}" media="all" rel="stylesheet" type="text/css" />
 <link href="{!! asset('css/bootstrap.css') !!}" media="all" rel="stylesheet" type="text/css" />
 <link href="{!! asset('css/main.css') !!}" media="all" rel="stylesheet" type="text/css" />
@@ -27,11 +36,12 @@
 <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+-->
 
 
 
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109464444-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -40,21 +50,4 @@
 
   gtag('config', 'UA-109464444-1');
 </script>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-52K9TDC');</script>
-<!-- End Google Tag Manager -->
-<!-- Hotjar Tracking Code for https://wknown.com -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:793928,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+-->
