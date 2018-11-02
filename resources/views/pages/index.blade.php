@@ -7,268 +7,287 @@
 @section('keywords', 'Digital Agency, Online marketing, online advertising, marketing Agency, Advertising Agency, Web design agency, web development')
 
 @section('preload')
-<link rel="preload" href="images/bgmain/homepage.jpg" as="image">
+
 @stop
 
 @section('content')
-<!-- Header -->
-<header class="header">
-	<div class="bg-img"><img src="images/bgmain/homepage.jpg" alt="Background Image"/></div>
-	<div class="title">
-		<h1>WellKnown Digital Agency</h1>
-		<h3 class="intro-heading">Advertising | Marketing | Web Design</h3>
-		<button class="btn-xl hvr-pulse trigger">Free Consultation</button>
-	</div>
-</header>
+<div class="wrapper">
+  <div class="page-header clear-filter">
+    <div class="rellax-header rellax-header-sky" data-rellax-speed="-4">
+      <div class="page-header-image" style="background-image: url('/images/boston.jpeg')">
+      </div>
+    </div>
+    <div class="rellax-header rellax-header-buildings" data-rellax-speed="0">
+      <div class="page-header-image page-header-city" style="background-image: url('/images/boston2.png')">
+      </div>
+    </div>
+    <div class="rellax-text-container rellax-text">
+      <h1 class="h1-seo" data-rellax-speed="-1">WellKnown Agency</h1>
+    </div>
+    <h3 class="h3-description rellax-text" data-rellax-speed="-1">Advertising | Marketing | Web Design | Development</h3>
+    <a href="" class="btn btn-primary btn-large" data-rellax-speed="-1">FREE CONSULTATION</a>
+  </div>
+  <div class="features-3">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-8 ml-auto mr-auto">
+                  <h2 class="title">WellKnown Agency Services</h2>
+                  <h4 class="description">We are a full-service Marketing, Advertising and Web Development Agency. We create stunning websites, fully responsible and ready to convert leads. With our Marketing and Advertising services we can help you find customers all over the Internet.</h4>
+              </div>
+          </div>
 
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="info info-hover">
+                      <div class="icon icon-success icon-circle">
+                          <i class="now-ui-icons objects_globe"></i>
+                      </div>
+                      <h4 class="info-title">Marketing</h4>
+                      <p class="description">SEO, SMM, Branding and many more for your business online.</p>
+                  </div>
+              </div>
 
-<div id="section1" >
-<!-- Services Section -->
-	<section class="container">
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<h2 class="section-heading">Agency Services</h2>
-					<h3 class="section-subheading text-muted">Digital services for your business</h3>
-				</div>
-			</div>
-		<div class="row text-center">
-			<div class="col-md-3">
-				<a href="/advertising">
-					<div class="box1 text-center hvr-curl-top-right" id="effect">
-						<img src="images/icons/ppc.png" alt="PPC">
-						<h3 class="service-heading bgblack">Advertising</h3>
-						<p class="textwhiteshadow marginintext bgblack">All Kinds of online advertising - PPC, Social, Remarketing</p>
-					</div>
-				</a>
-			</div>
-			<div class="col-md-3">
-				<a href="/search-engine-optimization">
-					<div class="box2 text-center hvr-curl-top-right">
-						<img src="images/icons/display.png" alt="Ads">
-						<h3 class="service-heading bgblack">Search</h3>
-						<p class="textwhiteshadow marginintext bgblack">Search Engine Optimization Services for your website</p>
-					</div>
-				</a>
-			</div>
-			<div class="col-md-3">
-				<a href="/social-media-marketing">
-					<div class="box3 text-center hvr-curl-top-right">
-						<img src="images/icons/social.png" alt="social">
-						<h3 class="service-heading bgblack">Social</h3>
-						<p class="textwhiteshadow marginintext bgblack">Everything your business needs to be Socially Engaged</p>
-					</div>
-				</a>
-			</div>
-			<div class="col-md-3 clearfix">
-				<a href="/web-design">
-					<div class="box4 text-center hvr-curl-top-right">
-						<img src="images/icons/email.png" alt="email">
-						<h3 class="service-heading bgblack">Web Design</h3>
-						<p class="textwhiteshadow marginintext bgblack">We create stunning websites for your business</p>
-					</div>
-				</a>
-			</div>
-		</div>
+              <div class="col-md-4">
+                  <div class="info info-hover">
+                      <div class="icon icon-info icon-circle">
+                          <i class="now-ui-icons education_atom"></i>
+                      </div>
+                      <h4 class="info-title">Advertising</h4>
+                      <p class="description">From PPC Advertising to remarketing in Social Media.</p>
+                  </div>
+              </div>
 
-	</section>
-					<div class="col-md-12 center">
-			<a href="#Digital-Marketing" class="downarrow">
-			<img src="https://wknown.com/images/arrow.png" alt="next">
-			</a>
-	</div>
+              <div class="col-md-4">
+                  <div class="info info-hover">
+                      <div class="icon icon-primary icon-circle">
+                          <i class="now-ui-icons tech_watch-time"></i>
+                      </div>
+                      <h4 class="info-title">Web Development</h4>
+                      <p class="description">Any type of website, landing pages, web applications.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="section section-content" data-background-color="black">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="image-container">
+            <img class="img img-raised rounded img-comments rellax" data-rellax-speed="1" src="images/img/presentation-page/content1.jpg">
+            <img class="img img-raised rounded img-blog rellax" data-rellax-speed="4" src="images/img/presentation-page/content4.jpg">
+          </div>
+        </div>
+        <div class="col-md-4 ml-auto mr-auto">
+          <div class="section-description">
+            <h2 class="title">Agency Philosophy</h2>
+            <h6 class="category">That what we think matters</h6>
+            <h5 class="description">First of all, WellKnown is a full-service agency, based on a team of talented and creative people, who have a large marketing experience, unique ideas, and specific knowledge. Each of us joined the company to implement our ambitious and evolve. Your business or brand with your goals and purposes is what gives us energy and power. WellKnown is simply the best solution to make your ROI increase.</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--     *********    SIMPLE SOCIAL LINE     *********      -->
+  <div class="social-line social-line-big-icons social-line-white" style="padding:40px 40px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <a href="#pablo" class="btn btn-neutral btn-icon btn-twitter btn-footer">
+            Company 0
+          </a>
+        </div>
+        <div class="col-md-2">
+          <a href="#pablo" class="btn btn-neutral btn-icon btn-facebook btn-footer">
+            Company 1
+          </a>
+        </div>
+        <div class="col-md-2">
+          <a href="#pablo" class="btn btn-neutral btn-icon btn-google btn-footer">
+            Comany 2
+          </a>
+        </div>
+        <div class="col-md-2">
+          <a href="#pablo" class="btn btn-neutral btn-icon btn-dribbble btn-footer">
+            Company 3
+          </a>
+        </div>
+        <div class="col-md-2">
+          <a href="#pablo" class="btn btn-neutral btn-icon btn-youtube btn-footer">
+            Company 4
+          </a>
+        </div>
+        <div class="col-md-2">
+          <a href="#pablo" class="btn btn-neutral btn-icon btn-instagram btn-footer">
+            Company 5
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--     *********   SIMPLE SOCIAL LINE     *********      -->
+  <div class="section section-components" data-background-color="dark-red">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto">
+          <h2 class="text-center title">Agency Case Studies
+            <br>
+            <small class="description">Created with pleas</small>
+          </h2>
+          <h5 class="text-center description">We've had the pleasure of being involved in a stunning projects that helped our clients to boost their business . Here are a select few:</h5>
+          <div class="space-50"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 offset-md-1">
+          <div class="card-container first-card">
+            <div class="card-component">
+              <a href="index.html#basic-elements" target="_blank">
+                <div class="front">
+                  <img src="images/img/presentation-page/basic_thumb.jpg">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card-container second-card">
+            <div class="card-component">
+              <a href="index.html#cards" target="_blank">
+                <div class="front">
+                  <img src="images/img/presentation-page/cards_thumb.jpg">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card-container third-card">
+            <div class="card-component">
+              <a href="sections.html" target="_blank">
+                <div class="front">
+                  <img src="images/img/presentation-page/sections_thumb.jpg">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Blog -->
+  <div class="section section-plain-cards">
+    <div class="container">
+      <div class="title">
+        <h3>Latest Blog Posts
+        </h3>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-blog card-plain">
+            <div class="card-image">
+              <a href="#pablo">
+                <img class="img img-raised rounded" src="/images/img/examples/card-blog6.jpg">
+              </a>
+            </div>
+            <div class="card-body text-center">
+              <h6 class="category text-danger">
+                <i class="now-ui-icons media-2_sound-wave"></i> Business
+              </h6>
+              <h5 class="card-title">
+                <a href="#nuk">Axel Springer Spends $343M To Buy Business Insider</a>
+              </h5>
+              <p class="card-description">
+                German media giant Axel Springer has announced it’s acquiring online business news publication Business Inside...
+              </p>
+              <div class="card-footer">
+                <a href="#nuk" class="btn btn-primary">Read Article</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-blog card-plain">
+            <div class="card-image">
+              <a href="#pablo">
+                <img class="img img-raised rounded" src="/images/img/examples/card-blog6.jpg">
+              </a>
+            </div>
+            <div class="card-body text-center">
+              <h6 class="category text-danger">
+                <i class="now-ui-icons media-2_sound-wave"></i> Business
+              </h6>
+              <h5 class="card-title">
+                <a href="#nuk">Axel Springer Spends $343M To Buy Business Insider</a>
+              </h5>
+              <p class="card-description">
+                German media giant Axel Springer has announced it’s acquiring online business news publication Business Inside...
+              </p>
+              <div class="card-footer">
+                <a href="#nuk" class="btn btn-primary">Read Article</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-blog card-plain">
+            <div class="card-image">
+              <a href="#pablo">
+                <img class="img img-raised rounded" src="/images/img/examples/card-blog6.jpg">
+              </a>
+            </div>
+            <div class="card-body text-center">
+              <h6 class="category text-danger">
+                <i class="now-ui-icons media-2_sound-wave"></i> Business
+              </h6>
+              <h5 class="card-title">
+                <a href="#nuk">Axel Springer Spends $343M To Buy Business Insider</a>
+              </h5>
+              <p class="card-description">
+                German media giant Axel Springer has announced it’s acquiring online business news publication Business Inside...
+              </p>
+              <div class="card-footer">
+                <a href="#nuk" class="btn btn-primary">Read Article</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="subscribe-line subscribe-line-image" style="background-image: url('/images/img/bg7.jpg');">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 ml-auto mr-auto">
+          <div class="text-center">
+            <h4 class="title">Subscribe to our Newsletter</h4>
+            <p class="description">
+              Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
+            </p>
+          </div>
+          <div class="card card-raised card-form-horizontal">
+            <div class="card-body">
+              <form method="" action="">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="now-ui-icons ui-1_email-85"></i></span>
+                      </div>
+                      <input type="email" class="form-control" placeholder="Your Email...">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <button type="button" class="btn btn-primary btn-round btn-block">Subscribe</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
-
-
-<!-- About our Company -->
-<section class="bg-light-gray">
-	<div class="container wide" id="Digital-Marketing">
-		<div class="col-lg-12 text-center">
-			<h2 class="section-heading">WellKnown Digital Agency</h2>
-			<h3 class="section-subheading text-muted">We take care of our clients and provide best possible solutions</h3>
-			<div class="row">
-				<div class="col-lg-4 col-xs-12">
-					<div class="hover-fold">
-					  <h2>Customer Support</h2>
-					  <div class="top">
-						<div class="front face"></div>
-						<div class="back face">
-						  <p>Have Questions? Our team is always ready to find answers for you.</p>
-						</div>
-					  </div>
-
-					  <div class="bottom"></div>
-
-					</div>
-				</div>
-				<div class="col-lg-4 col-xs-12">
-					<div class="hover-fold2">
-					  <h2>Analytical Data</h2>
-					  <div class="top2">
-						<div class="front2 face2"></div>
-						<div class="back2 face2">
-						  <p>All numbers about your business, be dynamic with your plans</p>
-						</div>
-					  </div>
-
-					  <div class="bottom2"></div>
-
-					</div>
-				</div>
-				<div class="col-lg-4 col-xs-12">
-					<div class="hover-fold3">
-					  <h2>Follow Social Media</h2>
-					  <div class="top3">
-						<div class="front3 face3"></div>
-						<div class="back3 face3">
-						  <p>Easy way to get latest agency news</p>
-						</div>
-					  </div>
-
-					  <div class="bottom3"></div>
-
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-4 col-xs-12">
-					<div class="hover-fold4">
-					  <h2>Learn with us</h2>
-					  <div class="top4">
-						<div class="front4 face4"></div>
-						<div class="back4 face4">
-						  <p>Read our Blog posts to always catch latest news and learn</p>
-						</div>
-					  </div>
-
-					  <div class="bottom4"></div>
-
-					</div>
-				</div>
-				<div class="col-lg-4 col-xs-12">
-					<div class="hover-fold5">
-					  <h2>Contact us any time</h2>
-					  <div class="top5">
-						<div class="front5 face5"></div>
-						<div class="back5 face5">
-						  <p>You can get in touch with us from any device and any platform</p>
-						</div>
-					  </div>
-
-					  <div class="bottom5"></div>
-
-					</div>
-				</div>
-				<div class="col-lg-4 col-xs-12">
-					<div class="hover-fold6">
-					  <h2>Join Our Club
-						</h2>
-					  <div class="top6">
-						<div class="front6 face6"></div>
-						<div class="back6 face6">
-						  <p>Participate in discussions, find new partners and more in our Facebook Club (Invites only)</p>
-						</div>
-					  </div>
-
-					  <div class="bottom6"></div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-
-
-<!-- CFacts on photo bg -->
-	<div class="bg-image1" style="background-image: url(images/bg2.jpg); background-attachment: fixed; ">
-		<div class="container">
-			<div class="row">
-				<div class="col-12	col-md-4">
-					<div class="card card-stat">
-						<div class="card-block facts-text">
-								<p style="font-size:36px;">87%</p>
-							<h4>of Marketers use Video content</h4>
-						</div>
-					</div>
-				</div>
-				<div class="col-12	col-md-4">
-					<div class="card card-stat">
-						<div class="card-block facts-text">
-							<p style="font-size:36px;">85%</p>
-							<h4>of the most successful deliver content consistenly</h4>
-						</div>
-					</div>
-				</div>
-				<div class="col-12	col-md-4">
-					<div class="card card-stat">
-						<div class="card-block facts-text">
-							<p style="font-size:36px;">55%</p>
-							<h4>of all emails are opened on mobile devices</h4>
-						</div>
-					</div>
-				</div>
-				<div class="col-12	col-md-4">
-					<div class="card card-stat">
-						<div class="card-block facts-text">
-							<p style="font-size:36px;">94%</p>
-							<h4>more views receive articles with photographs</h4>
-						</div>
-					</div>
-				</div>
-				<div class="col-12	col-md-4">
-					<div class="card card-stat">
-						<div class="card-block facts-text">
-							<p style="font-size:36px;">50%</p>
-							<h4>of all searches begin on mobile device</h4>
-						</div>
-					</div>
-				</div>
-				<div class="col-12	col-md-4">
-					<div class="card card-stat">
-						<div class="card-block facts-text">
-							<p style="font-size:36px;">85%</p>
-							<h4>of all searches are done on Google</h4>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="container-fluid text-center" style="background-color: #f1f1f1;" id="contact">
-	<div class="row">
-		<div class="col-lg-12 text-center hrnew">
-			<h3 class="section-subheading text-muted">Partners</h3>
-		</div>
-	</div>
-					<ul style="list-style: none; padding-top: 20px; padding-bottom: 20px;">
-						<li style="display: inline; padding: 20px;"><a href="https://upcity.com/local-marketing-agencies/profiles/wellknown-agency" target="_blank"><img src="images/logos/upcity.png" alt="Upcity"></a></li>
-						<li style="display: inline; padding: 20px;"><img src="images/logos/dan.png" alt="Digital Agency Network"></li>
-						<li style="display: inline; padding: 20px;"><a href="https://clutch.co/profile/wellknown-agency" target="_blank"><img src="images/logos/clutch.png" alt="Clutch"></a></li>
-					</ul>
-				</div>
-
-
-				<!-- About us Section -->
-
-					<div class="container-fluid " style="background-color: #353535;">
-						<div style="padding: 70px 35px; position: relative;">
-								<p style="text-align:center;"><img src="images/icons/icon.png" alt="WellKnown Digital Agency" width="104px" height="104px"></p>
-								<div style="text-align: center;" class="container col-md-12">
-									<p class="quotep">
-										At <strong>WellKnown Agency</strong>, we not only provide you all services to help you build your
-										business and bring more customers, but also show you possible ways to improve your business with <strong>innovative
-										technologies</strong>!
-									 </p>
-										<a href="/about-us" class="btn-send" style="display: inline-block; margin: 20px;">learn more about us</a>
-								</div>
-						</div>
-					</div>
-					<section style="background-image: url(images/bg2.jpg); background-attachment: fixed; ">
-					<div class="container-fluid text-center">
-									<a href="/contact-us" class="btn-xl hvr-pulse">Contact us</a>
-					</div>
-				</section>
 @stop
