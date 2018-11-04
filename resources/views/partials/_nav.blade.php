@@ -54,19 +54,19 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
-            <i class="fa fa-twitter wk-icons fa-wk"></i>
+            <i class="fab fa-twitter wk-icons"></i>
             <p class="d-lg-none d-xl-none">Twitter</p>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank">
-            <i class="fa fa-facebook wk-icons fa-wk"></i>
+            <i class="fab fa-facebook wk-icons"></i>
             <p class="d-lg-none d-xl-none">Facebook</p>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" rel="tooltip" title="Follow us on Linkedin" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
-            <i class="fa fa-linkedin wk-icons fa-wk"></i>
+            <i class="fab fa-linkedin-in wk-icons"></i>
             <p class="d-lg-none d-xl-none">Instagram</p>
           </a>
         </li>

@@ -36,7 +36,7 @@
 	<div class="container">
     <div class="row">
         <div class="col-md-6 ml-auto mr-auto">
-            <h2 class="title text-center">How we create ads?</h2>
+            <h2 class="title text-center">How do we create advertising?</h2>
         </div>
     </div>
     <br
@@ -48,14 +48,26 @@
 							<ul class="nav nav-pills nav-pills-primary nav-pills-icons flex-column" role="tablist">
 								<li class="nav-item">
 									<a class="nav-link active" data-toggle="tab" href="#link10" role="tablist">
-										<i class="now-ui-icons objects_umbrella-13"></i>
-                    Your Goals and Ideas
+										<i class="fas fa-bullseye fa-2x"></i>
+                    Goals and Ideas
 									</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" data-toggle="tab" href="#link11" role="tablist">
-										<i class="now-ui-icons ui-2_settings-90"></i>
-										Settings
+										<i class="fas fa-globe fa-2x"></i>
+										Strategy and Tactics
+									</a>
+								</li>
+                <li class="nav-item">
+									<a class="nav-link" data-toggle="tab" href="#link12" role="tablist">
+										<i class="fab fa-creative-commons-share"></i>
+										Creating and Testing
+									</a>
+								</li>
+                <li class="nav-item">
+									<a class="nav-link" data-toggle="tab" href="#link13" role="tablist">
+										<i class="fas fa-clipboard-check"></i>
+										Deployment and Managing
 									</a>
 								</li>
 							</ul>
@@ -64,20 +76,75 @@
 							<div class="tab-content">
 								<div class="tab-pane active" id="link10">
                   <div class="row">
-                    <div class="col-md-6">
-                      It's essential to understant what you exactly looking for to get from the advertising. It helps, first of all, to understand what auditory is the best for you, what platform to use to get that auditory and more... 
+                    <div class="col-md-12">
+                      <p class="content-ads">It's essential to understand what you exactly looking for to get from the advertising.
+                        It helps, first of all, to understand what auditory is the best for you, what platform to use to catch your Ideal Client and more...
+                        Ideal Client is important part for any advertising campaign and any marketing plan.
+                        For Ads is important to have An overall Idea, we will make sure you get all you can from each penny you spend.
+                      </p>
                     </div>
-                    <div class="col-md-3">
-                      <div class="card" style="width: 20rem;">
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="card" style="width: 100%">
                         <img class="card-img-top" src="images/img/bg30.jpg" alt="Card image cap">
                       </div>
                     </div>
-
                   </div>
 								</div>
 								<div class="tab-pane" id="link11">
-								  Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.
-								  <br><br>Dramatically maintain clicks-and-mortar solutions without functional solutions.
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p class="content-ads">
+                        After understanding your business Goals and Ideas we come to the most important part. Without Strategy your advertising money can "fly away" and give zero results.
+                        Our Agency have tried different tactics for different businesses and cases. All this knowledge helps us to make sure,
+                        that strategy we use give your business real results.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="card" style="width: 100%">
+                        <img class="card-img-top" src="images/img/bg30.jpg" alt="Card image cap">
+                      </div>
+                    </div>
+                  </div>
+								</div>
+                <div class="tab-pane" id="link12">
+                  <div class="row">
+                    <div class="col-md-12 ">
+                      <p class="content-ads">
+                        Now we come to the creative part of the process. Not a secret for any Advertising campaign creativity is important, in some cases
+                        it takes first place. WellKnown Agency team created ads for a lot of industries and we have already an idea which kewords work best.
+                        But still any ad campaign needs testing, so it takes in our creation proces a huge part.
+                      </p>
+                    </div>
+  								</div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="card" style="width: 100%">
+                        <img class="card-img-top" src="images/img/bg30.jpg" alt="Card image cap">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="link13">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p class="content-ads">
+                        After all the above steps are done we finnaly can deploy your advertising. Any online advertising campaign needs 2 things:
+                        <br>Analytics and Managing.<br>
+                        Analytics gives you information hwo to improve you campaign and sometimes it's really a long process, but eventeally gives huge results.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="card" style="width: 100%">
+                        <img class="card-img-top" src="images/img/bg30.jpg" alt="Card image cap">
+                      </div>
+                    </div>
+                  </div>
 								</div>
 							</div>
 						</div>
@@ -90,8 +157,8 @@
 <div class="features-8 section-image" style="background-image: url('images/img/bg30.jpg')">
 
     <div class="col-md-8 ml-auto mr-auto text-center">
-        <h2 class="title">Working is a pleasure</h2>
-        <h4 class="description">Woodpecker.co is a follow-up automation SaaS founded in 2015. We’re an international team of 17, speaking 4 languages. Our mission is to enable all B2B companies to connect with their Ideal Customers.</h4>
+        <h2 class="title">Types of Online Advertising</h2>
+        <h4 class="description">There are many types of aadvertising you can use, but usually you need few to get real results.</h4>
     </div>
 
     <div class="container">
@@ -105,8 +172,8 @@
                         <div class="icon">
                             <i class="now-ui-icons ui-1_email-85"></i>
                         </div>
-                        <h4 class="info-title">Reply detection</h4>
-                        <p class="description">If you get a reply, further follow-ups are automatically stopped.</p>
+                        <h4 class="info-title">PPC</h4>
+                        <p class="description">Pay Per Click advertising in search like Google or Bing</p>
                     </div>
                 </div>
             </div>
@@ -120,8 +187,8 @@
                         <div class="icon">
                             <i class="now-ui-icons ui-1_calendar-60"></i>
                         </div>
-                        <h4 class="info-title">Follow-up</h4>
-                        <p class="description">Just set a number of days that you want send a follow-up. </p>
+                        <h4 class="info-title">Remarketing</h4>
+                        <p class="description">Great extension for any advertising campaign </p>
                     </div>
                 </div>
             </div>
@@ -135,8 +202,8 @@
                         <div class="icon">
                             <i class="now-ui-icons ui-1_send"></i>
                         </div>
-                        <h4 class="info-title">Cold email</h4>
-                        <p class="description">Unlimited number of prospects daily with personalized emails.</p>
+                        <h4 class="info-title">Social Media Ads</h4>
+                        <p class="description">Extend your Social Media with any type of advertising </p>
                     </div>
                 </div>
             </div>
@@ -150,8 +217,8 @@
                         <div class="icon">
                             <i class="now-ui-icons ui-2_like"></i>
                         </div>
-                        <h4 class="info-title">Teamwork</h4>
-                        <p class="description">You and your teammates won’t address the same person twice. </p>
+                        <h4 class="info-title">Brand Awareness</h4>
+                        <p class="description">Make sure your customers know your brand</p>
                     </div>
                 </div>
             </div>
@@ -162,9 +229,11 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-5 col-md-7 ml-auto mr-auto">
-        <h2 class="title">Basic Elements</h2>
-        <h6 class="category">The core elements of your website</h6>
-        <h5 class="description">We re-styled every Bootstrap 4 element to match the Now UI Kit style. All the Bootstrap 4 components that you need in a development have been re-design with the new look. Besides the numerous basic elements, we have also created additional classes. All these items will help you take your project to the next level.</h5>
+        <h2 class="title">Online Advertising</h2>
+        <h6 class="category">Huge part of any business</h6>
+        <h5 class="description">In the era of Internet there is no business that can ignore <b>online advertising</b>.
+          People search for things to buy online even if it right in front of them. It helps you business not only to build a ROI system
+          where we can help you to know how much any client cost, but also expend your brand to the next level.</h5>
       </div>
       <div class="col-lg-6 col-md-12">
         <div class="image-container">
