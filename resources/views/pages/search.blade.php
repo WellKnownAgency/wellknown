@@ -12,217 +12,261 @@
 
 @section('content')
 <!-- Header -->
-<header class="header">
-  <div class="bg-img"><img src="images/bgmain/seo.jpg" alt="Background Image"/></div>
-  <div class="title">
-    <h1>Social Media Marketing</h1>
-    <h3 class="intro-heading"></h3>
-    <button class="btn-xl hvr-pulse trigger">Free Consultation</button>
-  </div>
-</header>
-
-		<!-- Icons Description -->
-		<section class="container-fluid">
+<div class="wrapper">
+  <div class="header-2">
+    <div class="page-header header-filter">
+      <div class="page-header-image" style="background-image: url('images/img/bg14.jpg');"></div>
       <div class="container">
-  			<div>
-  				<div class="row">
-  					<div class="col-lg-12 text-center">
-  						<h2 class="section-heading">SEO Services</h2>
-  						<h3 class="section-subheading text-muted">From keyword reaserch to First page in search results</h3>
-  					</div>
-  				</div>
-  			</div>
-  			<div class="row text-center">
-  					<div class="col-md-3">
-  						<div class="box1 text-center hvr-curl-top-right" id="effect">
-  							<img src="images/icons/keyword-research.png">
-  							<h3 class="service-heading">Keywords Research</h3>
-  							<p class="textwhiteshadow">Keywords and Competitors research for your website</p>
-  						</div>
-  					</div>
-  					<div class="col-md-3">
-  						<div class="box2 text-center hvr-curl-top-right" id="effect">
-  							<img src="images/icons/landing-page-planning.png">
-  							<h3 class="service-heading">SEO Strategy</h3>
-  							<p class="textwhiteshadow">We create specific strategy to rank your website higher</p>
-  						</div>
-  					</div>
-  					<div class="col-md-3">
-  						<div class="box3 text-center hvr-curl-top-right" id="effect">
-  							<img src="images/icons/traffic-analysis.png">
-  							<h3 class="service-heading">Onsite Optimization</h3>
-  							<p class="textwhiteshadow">We Optimize your website to make sure bots understand it</p>
-  						</div>
-  					</div>
-  					<div class="col-md-3">
-  						<div class="box4 text-center hvr-curl-top-right" id="effect">
-  							<img src="images/icons/seo-management.png">
-  							<h3 class="service-heading">Building Backlinks</h3>
-  							<p class="textwhiteshadow">We create backlink strategy with only white high authority links</p>
-  						</div>
-  					</div>
-  				</div>
-        </div>
-		</section>
-						<div class="col-md-12 center">
-					<a href="#SMB-Partner" class="downarrow">
-					<img src="images/arrow.png">
-					</a>
-			</div>
-
-
-		<!-- SMB Partner -->
-		<section class="container-fluid bg-light-gray" id="SMB-Partner">
-			<div class="container">
-				<div class="row text-left">
-					<div class="col-md-6">
-						<img src="images/seo1.png" style="width:100%;">
-					</div>
-					<div class="col-md-6">
-						<h3>SEO Services Company</h3>
-						<p class="customp">Our Agency and people who work here have a long story with over 6 years of experience in <strong>Search Engine Optimization</strong>. Over all these years Search Engines changed dramaticly. if in the beginning  you could use just meta keywords to describe your pages, now google even not using this meta tag to determine your page content. <strong>SEO</strong> in our days is a long journey with analytics and testing and backlink building and much more... Our team with all it's knowledge ready to join you in it to help you reach your goals! </p>
-						<br>
-						<br>
-						<a href="#contact" class="btn-xl hvr-pulse">Get Started</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<div class="col-md-12 center">
-				<a href="#facts" class="downarrow2">
-					<img src="images/arrow.png">
-				</a>
-			</div>
-
-		<!-- Google Facts -->
-		<section class="container-fluid bg-gray-light" id="facts">
-      <div class="container">
-  			<div class="row">
-                  <div class="col-lg-12 text-center">
-                      <h2 class="section-heading">Search Engine Optimization</h2>
-                      <h3 class="section-subheading text-muted">Facts by numbers</h3>
+        <div class="row">
+          <div class="col-md-8 ml-auto mr-auto text-center">
+            <h1 class="title"> WellKnown Agency</h1>
+            <h4 class="description">Search Engine Optimization</h4>
+          </div>
+          <div class="col-md-10 ml-auto mr-auto">
+            <div class="card card-raised card-form-horizontal card-plain" data-background-color>
+              <div class="card-body">
+                <form method="" action="">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <input type="text" value="" placeholder="Full Name" class="form-control" autocomplete="family-name" />
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <input type="email" placeholder="Your Email" class="form-control" autocomplete="email" />
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <input type="password" placeholder="Password" class="form-control" autocomplete="current-password" />
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <button type="button" class="btn btn-primary btn-round btn-block">Join Us</button>
+                    </div>
                   </div>
+                </form>
               </div>
-  			<div class="row">
-  				<div class="col-lg-4 text-center facts-text">
-  					<div class="box hvr-grow">
-  						<i class="fa fa-search fa-4x icon-color" aria-hidden="true"></i>
-  						<br>
-  						<br>
-  						<p class="text-white"><strong id="numbers">6,6 B</strong> <br>Searches People Make a Day</p>
-  					</div>
-  				</div>
-  				<div class="col-lg-4 text-center facts-text">
-  					<div class="box hvr-grow">
-  						<i class="fa fa-mobile fa-4x icon-color" aria-hidden="true"></i>
-  						<br>
-  						<br>
-  						<p class="text-white"> <strong id="numbers">89%</strong> <br>Of Customers Begin Their Buying Process with a Search</p>
-  					</div>
-  				</div>
-  				<div class="col-lg-4 text-center facts-text">
-  					<div class="box hvr-grow">
-  						<i class="fa fa-shopping-cart fa-4x icon-color" aria-hidden="true"></i>
-  						<br>
-  						<br>
-  						<p class="text-white"><strong id="numbers">61%</strong> <br>Of CMOs Say Search Engines are an Effective Marketing</p>
-  					</div>
-  				</div>
-  			</div>
-      </div>
-		</section>
-		<div class="col-md-12">
-				<a href="#portfolio" class="downarrow">
-					<img src="images/arrow.png">
-				</a>
-			</div>
-
-		<!-- Latest posts in SEO category -->
-		<section id="portfolio" class="container-fluid bg-light-gray">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<h2 class="section-heading">latest posts in seo category</h2>
-					<h3 class="section-subheading text-muted">Find answers on all of your questions about SEO.</h3>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 col-sm-6 portfolio-item">
-					<a href="/blog/future-of-seo-and-how-it-will-work-with-artificial-intelligence" class="portfolio-link" data-toggle="modal">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<i class="fa fa-plus fa-3x"></i>
-							</div>
-						</div>
-						<img src="/images/blog/1519076170.jpeg" class="img-responsive" alt="">
-					</a>
-					<div class="portfolio-caption">
-						<h4>The Future of SEO and How it will work with artificial intelligence</h4>
-						<p class="text-muted">The value of search engine has been identified in the world and people know its importance in improving their business situations and brand establishment.</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6 portfolio-item">
-					<a href="/blog/most-important-seo-tips" class="portfolio-link" data-toggle="modal">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<i class="fa fa-plus fa-3x"></i>
-							</div>
-						</div>
-						<img src="/images/blog/1519076559.jpeg" class="img-responsive" alt="">
-					</a>
-					<div class="portfolio-caption">
-						<h4>Most Important SEO Tips</h4>
-						<p class="text-muted">The best SEO tips may slightly vary from one expert to another. Yet, the primary concern is to assist marketers and bloggers to improve SEO for the success of their website.</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6 portfolio-item">
-					<a href="/blog/white-hat-seo" class="portfolio-link" data-toggle="modal">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<i class="fa fa-plus fa-3x"></i>
-							</div>
-						</div>
-						<img src="/images/blog/1519076563.jpeg" class="img-responsive" alt="">
-					</a>
-					<div class="portfolio-caption">
-						<h4>White Hat SEO</h4>
-						<p class="text-muted">Becoming an important part of the internet is crucial for every online business. In the arena of dynamic web world where marketers require creativity and versatility with the change of each second, white hat are the best thing happened to you.</p>
-					</div>
-				</div>
-			</div>
-			</div>
-		</section>
-
-    <div class="container-fluid text-center" style="background-color: #f1f1f1;">
-    <div class="row">
-      <div class="col-lg-12 text-center hrnew">
-        <h3 class="section-subheading">Awards and Partners</h3>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-            <ul style="list-style: none; padding-top: 20px; padding-bottom: 20px;">
-              <li style="display: inline; padding: 20px;"><a href="https://upcity.com/local-marketing-agencies/profiles/wellknown-agency" target="_blank"><img src="images/logos/upcity.png" alt="Upcity"></a></li>
-  						<li style="display: inline; padding: 20px;"><img src="images/logos/dan.png" alt="Digital Agency Network"></li>
-  						<li style="display: inline; padding: 20px;"><a href="https://clutch.co/profile/wellknown-agency" target="_blank"><img src="images/logos/clutch.png" alt="Clutch"></a></li>
-            </ul>
-          </div>
+  </div>
+</div>
 
-    <!-- About us Section -->
-
-      <div class="container-fluid " style="background-color: #353535;">
-        <div style="padding: 70px 35px; position: relative;">
-            <p style="text-align:center;"><img src="images/icons/icon.png" width="104px" height="104px"></p>
-            <div style="text-align: center;" class="container col-md-12">
-              <p class="quotep">
-                At <strong>WellKnown Agency</strong>, we build a Search Optimization Strategy to get real results without using Black Hat SEO.
-                Link Building manually, Search Queries tracking, Blog system to spread a word across internet and many more!
-               </p>
-               <a href="/about-us" class="btn-send" style="display: inline-block; margin: 20px;">learn more about us</a>
+		<!-- Coming Home -->
+		<section>
+      <div class="features-4 " data-background-color="gray">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 ml-auto mr-auto text-center">
+              <h2 class="title">Professional SEO Services <br>That Boost Your Business</h2>
+              <h5 class="description">WellKnown is a perfect SEO company to make your business rapidly grow up. If you want to raise Conversions and Traffic to your Website, we can provide you a SEO Campaign with the best solutions to your particular case, that will help you reach your businesses goals </h4>
             </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card card-background card-raised" data-background-color style="background-image: url('images/img/bg24.jpg')">
+                <div class="info">
+                  <div class="icon icon-white">
+                    <i class="now-ui-icons business_bulb-63"></i>
+                  </div>
+                  <div class="description">
+                    <h4 class="info-title">Collaborate on ideas</h4>
+                    <p>Your designer will come back to you with an initial set of ideas.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card card-background card-raised" data-background-color style="background-image: url('images/img/bg23.jpg')">
+                <div class="info">
+                  <div class="icon icon-white">
+                    <i class="now-ui-icons business_badge"></i>
+                  </div>
+                  <div class="description">
+                    <h4 class="info-title">Pick your designer</h4>
+                    <p>Havenly interior designers are vetted professionals and real people.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card card-background card-raised" data-background-color style="background-image: url('images/img/bg25.jpg')">
+                <div class="info">
+                  <div class="icon icon-white">
+                    <i class="now-ui-icons location_map-big"></i>
+                  </div>
+                  <div class="description">
+                    <h4 class="info-title">Visualize your room</h4>
+                    <p>Share a floor plan, and we'll create a visualization of your room.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <section style="background-image: url(images/bg2.jpg); background-attachment: fixed; " id="contact">
-      <div class="container-fluid text-center">
-              <a href="/contact-us" class="btn-xl hvr-pulse">Contact us</a>
+		</section>
+
+		<!-- Iphone X -->
+		<section>
+      <div class="features-6">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 ml-auto mr-auto text-center">
+              <h2 class="title">Our SEO Strategy</h2>
+              <h4 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information.</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="info info-horizontal">
+                <div class="icon icon-info">
+                  <i class="now-ui-icons design-2_html5"></i>
+                </div>
+                <div class="description">
+                  <h5 class="info-title">For Developers</h5>
+                  <p>The moment you use Now UI Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
+                </div>
+              </div>
+              <div class="info info-horizontal">
+                <div class="icon icon-danger">
+                  <i class="now-ui-icons design_palette"></i>
+                </div>
+                <div class="description">
+                  <h4 class="info-title">For Designers</h4>
+                  <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="phone-container">
+                <img src="images/img/iphone2.png" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info info-horizontal">
+                <div class="icon icon-primary">
+                  <i class="now-ui-icons design-2_ruler-pencil"></i>
+                </div>
+                <div class="description">
+                  <h5 class="info-title">Bootstrap Grid</h5>
+                  <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                </div>
+              </div>
+              <div class="info info-horizontal">
+                <div class="icon icon-success">
+                  <i class="now-ui-icons files_single-copy-04"></i>
+                </div>
+                <div class="description">
+                  <h4 class="info-title">Example Pages Included</h4>
+                  <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+		</section>
+
+		<!-- Latest posts in SEO category -->
+		<section>
+      <div class="blogs-5" data-background-color="gray">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 ml-auto mr-auto">
+              <h2 class="title">Latest Blogposts 5</h2>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card card-blog">
+                    <div class="card-image">
+                      <a href="#pablo">
+                        <img class="img rounded" src="images/img/card-blog2.jpg">
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <h6 class="category text-primary">Features</h6>
+                      <h5 class="card-title">
+                        That’s One Way To Ditch Your Passenger
+                      </h5>
+                      <p class="card-description">
+                        As near as we can tell, this guy must have thought he was going over backwards and tapped the rear...
+                      </p>
+                      <div class="card-footer">
+                        <div class="author">
+                          <img src="images/img/julie.jpg" alt="..." class="avatar img-raised">
+                          <span>Mike John</span>
+                        </div>
+                        <div class="stats stats-right">
+                          <i class="now-ui-icons tech_watch-time"></i> 5 min read
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card card-blog">
+                    <div class="card-image">
+                      <a href="#pablo">
+                        <img class="img rounded" src="images/img/examples/card-blog18.jpg">
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <h6 class="category text-danger">Animals</h6>
+                      <h5 class="card-title">
+                        Shark Week: How to Watch It Like a Scientist
+                      </h5>
+                      <p class="card-description">
+                        Just when you thought it was safe to turn on your television, the Discovery Channel's "Shark Week"...
+                      </p>
+                      <div class="card-footer">
+                        <div class="author">
+                          <img src="images/img/julie.jpg" alt="..." class="avatar img-raised">
+                          <span>Mike John</span>
+                        </div>
+                        <div class="stats stats-right">
+                          <i class="now-ui-icons tech_watch-time"></i> 5 min read
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card card-blog">
+                    <div class="card-image">
+                      <a href="#pablo">
+                        <img class="img rounded" src="images/img/examples/card-blog17.jpg">
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <h6 class="category text-primary">Cars</h6>
+                      <h5 class="card-title">
+                        Who's Afraid of the Self-Driving Car?
+                      </h5>
+                      <p class="card-description">
+                        It's been 60 years since the cover of Popular Mechanics magazine gave us the promise of flying cars...
+                      </p>
+                      <div class="card-footer">
+                        <div class="author">
+                          <img src="images/img/olivia.jpg" alt="..." class="avatar img-raised">
+                          <span>Johanna Zmud</span>
+                        </div>
+                        <div class="stats stats-right">
+                          <i class="now-ui-icons ui-2_favourite-28"></i> 2.4K
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- About us Section -->
 @stop

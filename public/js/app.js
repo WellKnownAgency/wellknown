@@ -68490,7 +68490,7 @@ var render = function() {
                                 _vm._v(" "),
                                 _c("p", { staticClass: "description" }, [
                                   _vm._v(
-                                    "\n                                    Send an Email to introduce yourself and your services\n                                "
+                                    "\r\n                                    Send an Email to introduce yourself and your services\r\n                                "
                                   )
                                 ])
                               ])
@@ -68531,7 +68531,7 @@ var render = function() {
                                 _vm._v(" "),
                                 _c("p", { staticClass: "description" }, [
                                   _vm._v(
-                                    "\n                                  Make a phone call to introduce yourself and your servces (try 3 times during the day and next day)\n                                "
+                                    "\r\n                                  Make a phone call to introduce yourself and your servces (try 3 times during the day and next day)\r\n                                "
                                   )
                                 ])
                               ])
@@ -68572,7 +68572,7 @@ var render = function() {
                                 _vm._v(" "),
                                 _c("p", { staticClass: "description" }, [
                                   _vm._v(
-                                    "\n                                    Send a follow up email\n                                "
+                                    "\r\n                                    Send a follow up email\r\n                                "
                                   )
                                 ])
                               ])
@@ -68613,7 +68613,7 @@ var render = function() {
                                 _vm._v(" "),
                                 _c("p", { staticClass: "description" }, [
                                   _vm._v(
-                                    "\n                                    Send last email\n                                "
+                                    "\r\n                                    Send last email\r\n                                "
                                   )
                                 ])
                               ])
@@ -69939,7 +69939,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\n        List of Leads "),
+      _vm._v("\r\n        List of Leads "),
       _c(
         "button",
         {
@@ -70802,7 +70802,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\n        List of Clients")
+      _vm._v("\r\n        List of Clients")
     ])
   },
   function() {
@@ -71284,7 +71284,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\n        List of Posts\n        "),
+      _vm._v("\r\n        List of Posts\r\n        "),
       _c(
         "a",
         {
@@ -71779,7 +71779,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\n        Categories Table\n        "),
+      _vm._v("\r\n        Categories Table\r\n        "),
       _c(
         "button",
         {
@@ -71912,7 +71912,7 @@ var content = __webpack_require__(180);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(182)("44c6978c", content, false, {});
+var update = __webpack_require__(182)("19d45fad", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
