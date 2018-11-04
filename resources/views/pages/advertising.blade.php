@@ -49,7 +49,7 @@
 								<li class="nav-item">
 									<a class="nav-link active" data-toggle="tab" href="#link10" role="tablist">
 										<i class="now-ui-icons objects_umbrella-13"></i>
-
+                    Your Goals and Ideas
 									</a>
 								</li>
 								<li class="nav-item">
@@ -63,9 +63,17 @@
 						<div class="col-md-10">
 							<div class="tab-content">
 								<div class="tab-pane active" id="link10">
-								  Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits.
-								  <br><br>
-								  Dramatically visualize customer directed convergence without revolutionary ROI.
+                  <div class="row">
+                    <div class="col-md-6">
+                      It's essential to understant what you exactly looking for to get from the advertising. It helps, first of all, to understand what auditory is the best for you, what platform to use to get that auditory and more... 
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="images/img/bg30.jpg" alt="Card image cap">
+                      </div>
+                    </div>
+
+                  </div>
 								</div>
 								<div class="tab-pane" id="link11">
 								  Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.
@@ -167,6 +175,118 @@
           <img class="coloured-card-img" src="images/img/presentation-page/coloured-card.jpg" alt="">
           <img class="social-img" src="images/img/presentation-page/social-row.jpg" alt="">
           <img class="linkedin-btn-img" src="images/img/presentation-page/linkedin-btn.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section section-plain-cards">
+  <div class="container">
+    <div class="title">
+      <h3>Latest Blog Posts
+      </h3>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-blog card-plain">
+          <div class="card-image">
+            <a href="#pablo">
+              <img class="img img-raised rounded" src="/images/img/examples/card-blog6.jpg">
+            </a>
+          </div>
+          <div class="card-body text-center">
+            <h6 class="category text-danger">
+              <i class="now-ui-icons media-2_sound-wave"></i> Business
+            </h6>
+            <h5 class="card-title">
+              <a href="#nuk">Axel Springer Spends $343M To Buy Business Insider</a>
+            </h5>
+            <p class="card-description">
+              German media giant Axel Springer has announced it’s acquiring online business news publication Business Inside...
+            </p>
+            <div class="card-footer">
+              <a href="#nuk" class="btn btn-primary">Read Article</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-blog card-plain">
+          <div class="card-image">
+            <a href="#pablo">
+              <img class="img img-raised rounded" src="/images/img/examples/card-blog6.jpg">
+            </a>
+          </div>
+          <div class="card-body text-center">
+            <h6 class="category text-danger">
+              <i class="now-ui-icons media-2_sound-wave"></i> Business
+            </h6>
+            <h5 class="card-title">
+              <a href="#nuk">Axel Springer Spends $343M To Buy Business Insider</a>
+            </h5>
+            <p class="card-description">
+              German media giant Axel Springer has announced it’s acquiring online business news publication Business Inside...
+            </p>
+            <div class="card-footer">
+              <a href="#nuk" class="btn btn-primary">Read Article</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-blog card-plain">
+          <div class="card-image">
+            <a href="#pablo">
+              <img class="img img-raised rounded" src="/images/img/examples/card-blog6.jpg">
+            </a>
+          </div>
+          <div class="card-body text-center">
+            <h6 class="category text-danger">
+              <i class="now-ui-icons media-2_sound-wave"></i> Business
+            </h6>
+            <h5 class="card-title">
+              <a href="#nuk">Axel Springer Spends $343M To Buy Business Insider</a>
+            </h5>
+            <p class="card-description">
+              German media giant Axel Springer has announced it’s acquiring online business news publication Business Inside...
+            </p>
+            <div class="card-footer">
+              <a href="#nuk" class="btn btn-primary">Read Article</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="subscribe-line subscribe-line-image" style="background-image: url('/images/img/bg7.jpg');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 ml-auto mr-auto">
+        <div class="text-center">
+          <h4 class="title">Subscribe to our Newsletter</h4>
+          <p class="description">
+            Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
+          </p>
+        </div>
+        <div class="card card-raised card-form-horizontal">
+          <div class="card-body">
+            <form method="" action="">
+              <div class="row">
+                <div class="col-sm-8">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="now-ui-icons ui-1_email-85"></i></span>
+                    </div>
+                    <input type="email" class="form-control" placeholder="Your Email...">
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <button type="button" class="btn btn-primary btn-round btn-block">Subscribe</button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
