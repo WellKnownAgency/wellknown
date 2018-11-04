@@ -14,11 +14,11 @@
 <div class="wrapper">
   <div class="page-header clear-filter">
     <div class="rellax-header rellax-header-sky" data-rellax-speed="-4">
-      <div class="page-header-image" style="background-image: url('/images/boston.jpeg')">
+      <div class="page-header-image" style="background-image: url('/images/sky.jpeg')">
       </div>
     </div>
     <div class="rellax-header rellax-header-buildings" data-rellax-speed="0">
-      <div class="page-header-image page-header-city" style="background-image: url('/images/boston2.png')">
+      <div class="page-header-image page-header-city" style="background-image: url('/images/boston.png')">
       </div>
     </div>
     <div class="rellax-text-container rellax-text">

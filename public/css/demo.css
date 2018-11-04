@@ -637,10 +637,10 @@
   z-index: 1;
   letter-spacing: -10px;
   text-align: center;
-  background: #ffedea;
-  background: -moz-linear-gradient(top, #FFFFFF 35%, #c38775 100%);
-  background: -webkit-linear-gradient(top, #FFFFFF 35%, #c38775 100%);
-  background: linear-gradient(to bottom, #FFFFFF 35%, #c38775 100%);
+  background: #B87EA1;
+  background: -moz-linear-gradient(top, #FFFFFF 60%, #B87EA1 100%);
+  background: -webkit-linear-gradient(top, #FFFFFF 60%, #B87EA1 100%);
+  background: linear-gradient(to bottom, #FFFFFF 60%, #B87EA1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -668,14 +668,13 @@
 .index-page .page-header-city {
   background-size: cover;
   background-position: top;
-  top: 25.5%;
   background-repeat: no-repeat;
 }
 
 .presentation-page .h3-description,
 .index-page .h3-description {
   z-index: 3;
-  top: 50%;
+  top: 55%;
   position: absolute;
   width: 100%;
   text-align: center;
@@ -697,7 +696,7 @@
 .presentation-page .rellax-header-sky,
 .index-page .rellax-header-sky {
   z-index: 0;
-  height: 50%;
+  height: 100%;
 }
 
 .presentation-page .rellax-header-buildings,
@@ -718,7 +717,7 @@
 
 .index-page .rellax-text-container .h1-seo {
   letter-spacing: -3px;
-  font-size: 10.3em;
+  font-size: 9em;
 }
 
 .tim-white-buttons {
@@ -1008,9 +1007,9 @@
   }
   .presentation-page .rellax-text-container .h1-seo,
   .presentation-page .index-page .h1-seo {
-    background: -moz-linear-gradient(top, #FFFFFF 64%, #c38775 100%);
-    background: -webkit-linear-gradient(top, #FFFFFF 64%, #c38775 100%);
-    background: linear-gradient(to bottom, #FFFFFF 64%, #c38775 100%);
+    background: -moz-linear-gradient(top, #FFFFFF 64%, #B87EA1 100%);
+    background: -webkit-linear-gradient(top, #FFFFFF 64%, #B87EA1 100%);
+    background: linear-gradient(to bottom, #FFFFFF 64%, #B87EA1 100%);
     -webkit-background-clip: text;
     font-size: 8.4em;
   }
