@@ -14,39 +14,18 @@
 <!-- Header -->
 <div class="wrapper">
   <div class="header-2">
-    <div class="page-header header-filter">
+    <div class="page-header header-filter" >
       <div class="page-header-image" style="background-image: url('images/img/bg14.jpg');"></div>
       <div class="container">
         <div class="row">
-          <div class="col-md-8 ml-auto mr-auto text-center">
-            <h1 class="title"> WellKnown Agency</h1>
-            <h4 class="description">Search Engine Optimization</h4>
+          <div class="col-md-8 ml-auto mr-auto text-center" style="padding-top: 100px;">
+            <h1 class="title">Search Engine Optimization</h1>
+            <h4 class="description">From nowhere to top ten</h4>
           </div>
           <div class="col-md-10 ml-auto mr-auto">
             <div class="card card-raised card-form-horizontal card-plain" data-background-color>
               <div class="card-body">
-                <form method="" action="">
-                  <div class="row">
-                    <div class="col-md-3">
-                      <div class="form-group">
-                        <input type="text" value="" placeholder="Full Name" class="form-control" autocomplete="family-name" />
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div class="form-group">
-                        <input type="email" placeholder="Your Email" class="form-control" autocomplete="email" />
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div class="form-group">
-                        <input type="password" placeholder="Password" class="form-control" autocomplete="current-password" />
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <button type="button" class="btn btn-primary btn-round btn-block">Join Us</button>
-                    </div>
-                  </div>
-                </form>
+                <a href="#" class="btn btn-primary btn-round btn-l">Free consultation</a>
               </div>
             </div>
           </div>
@@ -74,7 +53,7 @@
                     <i class="now-ui-icons business_bulb-63"></i>
                   </div>
                   <div class="description">
-                    <h4 class="info-title">Collaborate on ideas</h4>
+                    <h4 class="info-title">Website Optimization</h4>
                     <p>Your designer will come back to you with an initial set of ideas.</p>
                   </div>
                 </div>
@@ -87,7 +66,7 @@
                     <i class="now-ui-icons business_badge"></i>
                   </div>
                   <div class="description">
-                    <h4 class="info-title">Pick your designer</h4>
+                    <h4 class="info-title">Analyzing</h4>
                     <p>Havenly interior designers are vetted professionals and real people.</p>
                   </div>
                 </div>
@@ -100,7 +79,7 @@
                     <i class="now-ui-icons location_map-big"></i>
                   </div>
                   <div class="description">
-                    <h4 class="info-title">Visualize your room</h4>
+                    <h4 class="info-title">Reporting</h4>
                     <p>Share a floor plan, and we'll create a visualization of your room.</p>
                   </div>
                 </div>
@@ -125,19 +104,19 @@
             <div class="col-md-4">
               <div class="info info-horizontal">
                 <div class="icon icon-info">
-                  <i class="now-ui-icons design-2_html5"></i>
+                  <i class="fab fa-searchengin"></i>
                 </div>
                 <div class="description">
-                  <h5 class="info-title">For Developers</h5>
+                  <h4 class="info-title">Keywords Research</h4>
                   <p>The moment you use Now UI Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
                 </div>
               </div>
               <div class="info info-horizontal">
                 <div class="icon icon-danger">
-                  <i class="now-ui-icons design_palette"></i>
+                  <i class="fas fa-globe"></i>
                 </div>
                 <div class="description">
-                  <h4 class="info-title">For Designers</h4>
+                  <h4 class="info-title">SEO Strategy</h4>
                   <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
                 </div>
               </div>
@@ -150,19 +129,19 @@
             <div class="col-md-4">
               <div class="info info-horizontal">
                 <div class="icon icon-primary">
-                  <i class="now-ui-icons design-2_ruler-pencil"></i>
+                  <i class="fas fa-edit"></i>
                 </div>
                 <div class="description">
-                  <h5 class="info-title">Bootstrap Grid</h5>
+                  <h4 class="info-title">Onsite Optimization</h4>
                   <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
                 </div>
               </div>
               <div class="info info-horizontal">
                 <div class="icon icon-success">
-                  <i class="now-ui-icons files_single-copy-04"></i>
+                  <i class="fas fa-link"></i>
                 </div>
                 <div class="description">
-                  <h4 class="info-title">Example Pages Included</h4>
+                  <h4 class="info-title">Link Building</h4>
                   <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
                 </div>
               </div>
