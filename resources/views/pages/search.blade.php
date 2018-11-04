@@ -174,91 +174,79 @@
 
 		<!-- Latest posts in SEO category -->
 		<section>
-      <div class="blogs-5" data-background-color="gray">
+      <!-- Blog -->
+      <div class="section section-plain-cards">
         <div class="container">
+          <div class="title">
+            <h3>Latest Blog Posts
+            </h3>
+          </div>
           <div class="row">
-            <div class="col-md-10 ml-auto mr-auto">
-              <h2 class="title">Latest Blogposts 5</h2>
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="card card-blog">
-                    <div class="card-image">
-                      <a href="#pablo">
-                        <img class="img rounded" src="images/img/card-blog2.jpg">
-                      </a>
-                    </div>
-                    <div class="card-body">
-                      <h6 class="category text-primary">Features</h6>
-                      <h5 class="card-title">
-                        That’s One Way To Ditch Your Passenger
-                      </h5>
-                      <p class="card-description">
-                        As near as we can tell, this guy must have thought he was going over backwards and tapped the rear...
-                      </p>
-                      <div class="card-footer">
-                        <div class="author">
-                          <img src="images/img/julie.jpg" alt="..." class="avatar img-raised">
-                          <span>Mike John</span>
-                        </div>
-                        <div class="stats stats-right">
-                          <i class="now-ui-icons tech_watch-time"></i> 5 min read
-                        </div>
-                      </div>
-                    </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-blog card-plain">
+                <div class="card-image">
+                  <a href="#pablo">
+                    <img class="img img-raised rounded" src="/images/img/examples/card-blog6.jpg">
+                  </a>
+                </div>
+                <div class="card-body text-center">
+                  <h6 class="category text-danger">
+                    <i class="now-ui-icons media-2_sound-wave"></i> Business
+                  </h6>
+                  <h5 class="card-title">
+                    <a href="#nuk">Axel Springer Spends $343M To Buy Business Insider</a>
+                  </h5>
+                  <p class="card-description">
+                    German media giant Axel Springer has announced it’s acquiring online business news publication Business Inside...
+                  </p>
+                  <div class="card-footer">
+                    <a href="#nuk" class="btn btn-primary">Read Article</a>
                   </div>
                 </div>
-                <div class="col-md-4">
-                  <div class="card card-blog">
-                    <div class="card-image">
-                      <a href="#pablo">
-                        <img class="img rounded" src="images/img/examples/card-blog18.jpg">
-                      </a>
-                    </div>
-                    <div class="card-body">
-                      <h6 class="category text-danger">Animals</h6>
-                      <h5 class="card-title">
-                        Shark Week: How to Watch It Like a Scientist
-                      </h5>
-                      <p class="card-description">
-                        Just when you thought it was safe to turn on your television, the Discovery Channel's "Shark Week"...
-                      </p>
-                      <div class="card-footer">
-                        <div class="author">
-                          <img src="images/img/julie.jpg" alt="..." class="avatar img-raised">
-                          <span>Mike John</span>
-                        </div>
-                        <div class="stats stats-right">
-                          <i class="now-ui-icons tech_watch-time"></i> 5 min read
-                        </div>
-                      </div>
-                    </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-blog card-plain">
+                <div class="card-image">
+                  <a href="#pablo">
+                    <img class="img img-raised rounded" src="/images/img/examples/card-blog6.jpg">
+                  </a>
+                </div>
+                <div class="card-body text-center">
+                  <h6 class="category text-danger">
+                    <i class="now-ui-icons media-2_sound-wave"></i> Business
+                  </h6>
+                  <h5 class="card-title">
+                    <a href="#nuk">Axel Springer Spends $343M To Buy Business Insider</a>
+                  </h5>
+                  <p class="card-description">
+                    German media giant Axel Springer has announced it’s acquiring online business news publication Business Inside...
+                  </p>
+                  <div class="card-footer">
+                    <a href="#nuk" class="btn btn-primary">Read Article</a>
                   </div>
                 </div>
-                <div class="col-md-4">
-                  <div class="card card-blog">
-                    <div class="card-image">
-                      <a href="#pablo">
-                        <img class="img rounded" src="images/img/examples/card-blog17.jpg">
-                      </a>
-                    </div>
-                    <div class="card-body">
-                      <h6 class="category text-primary">Cars</h6>
-                      <h5 class="card-title">
-                        Who's Afraid of the Self-Driving Car?
-                      </h5>
-                      <p class="card-description">
-                        It's been 60 years since the cover of Popular Mechanics magazine gave us the promise of flying cars...
-                      </p>
-                      <div class="card-footer">
-                        <div class="author">
-                          <img src="images/img/olivia.jpg" alt="..." class="avatar img-raised">
-                          <span>Johanna Zmud</span>
-                        </div>
-                        <div class="stats stats-right">
-                          <i class="now-ui-icons ui-2_favourite-28"></i> 2.4K
-                        </div>
-                      </div>
-                    </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-blog card-plain">
+                <div class="card-image">
+                  <a href="#pablo">
+                    <img class="img img-raised rounded" src="/images/img/examples/card-blog6.jpg">
+                  </a>
+                </div>
+                <div class="card-body text-center">
+                  <h6 class="category text-danger">
+                    <i class="now-ui-icons media-2_sound-wave"></i> Business
+                  </h6>
+                  <h5 class="card-title">
+                    <a href="#nuk">Axel Springer Spends $343M To Buy Business Insider</a>
+                  </h5>
+                  <p class="card-description">
+                    German media giant Axel Springer has announced it’s acquiring online business news publication Business Inside...
+                  </p>
+                  <div class="card-footer">
+                    <a href="#nuk" class="btn btn-primary">Read Article</a>
                   </div>
                 </div>
               </div>
