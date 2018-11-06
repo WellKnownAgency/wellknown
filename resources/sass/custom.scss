@@ -1,3 +1,7 @@
+.index-page .page-header, .presentation-page .page-header {
+    height: 0;
+}
+
 ::placeholder {
     color: red;
     opacity: 1; /* Firefox */

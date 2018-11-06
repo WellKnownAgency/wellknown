@@ -19,7 +19,7 @@
 <meta property="og:description" content="@yield('description')" />
 
 @yield('preload')
-
+@yield('customcss')
 <link href="{!! asset('css/bootstrap.min.css') !!}" media="all" rel="stylesheet" type="text/css" />
 <link href="{!! asset('css/now-ui-kit.css') !!}" media="all" rel="stylesheet" type="text/css" />
 <link href="{!! asset('css/demo.css') !!}" media="all" rel="stylesheet" type="text/css" />
