@@ -10839,6 +10839,29 @@ img {
   }
 }
 
+::-webkit-input-placeholder {
+  color: red;
+  opacity: 1;
+  /* Firefox */
+}
+
+::-ms-input-placeholder {
+  color: red;
+  opacity: 1;
+  /* Firefox */
+}
+
+::placeholder {
+  color: red;
+  opacity: 1;
+  /* Firefox */
+}
+
+.btn-l {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
 .content-ads {
   font-size: 18px;
 }

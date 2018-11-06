@@ -6,121 +6,177 @@
 
 @section('keywords', '')
 
+@section('preload')
+<link rel="preload" href="images/bgmain/seo.jpg" as="image">
+@stop
+@section('customcss')
+<style>
+	/* Анимации появления и исчезновения могут иметь */
+	/* различные продолжительности и динамику.       */
+	.fade-enter-active,
+	.fade-leave-active {
+	  transition: opacity 0.5s
+	}
 
+	.fade-enter,
+	.fade-leave-to
+	/* .fade-leave-active in <2.1.8 */
+
+	{
+	  opacity: 0
+	}
+</style>
+@stop
 @section('content')
-<section id="contact" style="background: #f1f1f1;">
-	<div class="row">
-			<div class="col-lg-12 text-center">
-				<h2 class="section-heading">Free Consultation</h2>
-				<h3 class="section-subheading text-muted">Leave your information and we will contact you within an hour</h3>
-			</div>
-		</div>
-
-		<div class="container">
-			<div class="form-box">
-		<form class="form-horizontal" action="{{ url('contact-us') }}" method="POST"  id="contact_form">
-			{{csrf_field()}}
-			<div class="row">
-			<div class="col-lg-6">
-
-			<!-- Text input-->
-			<input type="text" name="botcheck" style="display: none;">
-
-			<div class="form-group">
-			  <div class="inputGroupContainer">
-			  <div class="input-group">
-			  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-			  <input  name="first_name" placeholder="First Name" class="form-control"  type="text" required>
-				</div>
-			  </div>
-			</div>
-
-			<!-- Text input-->
-
-			<div class="form-group " style="::placeholder { color:red; opacity: 1;}">
-				<div class="inputGroupContainer">
-				<div class="input-group">
-			  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-			  <input name="last_name" placeholder="Last Name" class="form-control"  type="text" required>
-				</div>
-			  </div>
-			</div>
-
-			<!-- Text input-->
-
-			<div class="form-group">
-				<div class="inputGroupContainer">
-				<div class="input-group">
-					<span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-			  <input name="phone" placeholder="(555)555-5555" class="form-control" type="text" required>
-				</div>
-			  </div>
-			</div>
-
-			<!-- Text input-->
-				   <div class="form-group">
-				<div class="inputGroupContainer">
-				<div class="input-group">
-					<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-			  <input name="email" placeholder="E-Mail Address" class="form-control"  type="text" required>
-				</div>
-			  </div>
-			</div>
-
-			</div>
-			<div class="col-lg-6">
-
-			<!-- Text input-->
-			<div class="form-group">
-			   <div class="inputGroupContainer">
-
-				<div class="input-group">
-					<span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
-			  <input name="website" placeholder="Website or domain name" class="form-control" type="text" required>
-				</div>
-			  </div>
-			</div>
-
-
-			<div class="form-group">
-				<div class="inputGroupContainer">
-				<div class="input-group">
-					<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-						<textarea class="form-control" name="body" placeholder="Your message" required></textarea>
-			  </div>
-			  </div>
-			</div>
-		</div>
-</div>
-			<!-- Button -->
-			<div class="pull-right">
-			<div class="form-group">
-			  <div>
-				<button type="submit" class="btn btn-send" >Send <span class="glyphicon glyphicon-send"></span></button>
-			  </div>
-			</div>
-		</div>
-
-
-
-		</form>
-	</div>
-		</div>
-
-		<div class="row">
-				<div class="col-lg-12 text-center">
-					<h3 class="section-subheading text-muted">Or</br>Contact us through Social Media</h3>
-				</div>
-			</div>
-				<div class="row">
-					<div class="col-lg-12 text-center">
-						<a href="https://www.facebook.com/WellKnown-153425045259276/"><img src="images/aicons/Facebook.png" height="100" width="100" class="img-fluid"></a>
-						<a href="https://twitter.com/WKnownMarketing"><img src="images/aicons/Twitter.png" height="100" width="100" class="img-fluid"></a>
-						<a href="https://www.linkedin.com/company/wellknown/"><img src="images/aicons/Linkedin.png" height="100" width="100" class="img-fluid"></a>
-					</div>
-				</div>
-
-
-</section>
-
+<div class="page-header header-filter" filter-color="orange">
+        <div class="page-header-image" style="background-image:url(images/img/login.jpg)"></div>
+        <div class="content">
+            <div class="container">
+                <div class="col-md-5 ml-auto mr-auto">
+                    <div class="card card-login card-plain" style="margin-top: 100px;">
+											<form class="form">
+												<div class="card-header text-center">
+                              <div class="logo-container">
+                                  <h1>Contact us</h1>
+                              </div>
+                          </div>
+													<div class="card-body">
+														<div id="app">
+															<transition name="fade" mode="out-in">
+															<div class="card-body"  key="4" v-if="step === 1">
+	                              <div class="input-group no-border input-lg">
+	                                <div class="input-group-prepend">
+	                                  <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
+	                                </div>
+	                                <input type="text" class="form-control" placeholder="First Name..." >
+	                              </div>
+	                              <div class="input-group no-border input-lg">
+	                                <div class="input-group-prepend">
+	                                  <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
+	                                </div>
+	                                <input type="text" class="form-control" placeholder="Last Name...">
+	                              </div>
+																<button class="btn btn-primary btn-raised btn-round" @click.prevent="next()">Next</button>
+	                            </div>
+															<div class="card-body"  key="1" v-if="step === 2">
+	                              <div class="input-group no-border input-lg">
+	                                <div class="input-group-prepend">
+	                                  <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
+	                                </div>
+	                                <input type="email" class="form-control" placeholder="Email Here...">
+	                              </div>
+	                              <div class="input-group no-border input-lg">
+	                                <div class="input-group-prepend">
+	                                  <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
+	                                </div>
+	                                <input type="number" class="form-control" placeholder="Number Here...">
+	                              </div>
+																<button class="btn btn-primary btn-raised btn-round" @click.prevent="back()">Back</button>
+																<button class="btn btn-primary btn-raised btn-round" @click.prevent="next()">Next</button>
+	                            </div>
+															<div class="card-body"  key="2" v-if="step === 3">
+	                              <div class="input-group no-border input-lg">
+	                                <div class="input-group-prepend">
+	                                  <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
+	                                </div>
+	                                <input type="email" class="form-control" placeholder="Company Name...">
+	                              </div>
+	                              <div class="input-group no-border input-lg">
+	                                <div class="input-group-prepend">
+	                                  <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
+	                                </div>
+	                                <input type="number" class="form-control" placeholder="Website Here...">
+	                              </div>
+																<button class="btn btn-primary btn-raised btn-round" @click.prevent="back()">Back</button>
+																<button class="btn btn-primary btn-raised btn-round" @click.prevent="next()">Next</button>
+	                            </div>
+															<div class="card-body"  key="3" v-if="step === 4">
+	                              <div class="input-group no-border input-lg">
+	                                <textarea name="message" placeholder="Your Message" class="form-control" id="message" v-model="lead.body" rows="6"></textarea>
+	                              </div>
+																<button class="btn btn-primary btn-raised btn-round" @click.prevent="back()">Back</button>
+																<button type="button" @click.prevent="contactus"  class="btn btn-primary btn-raised btn-round">Contact us</button>
+	                            </div>
+															</transition>
+														</form>
+													</div>
+												</div>
+											</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@stop
+@section('customjs')
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+const app = new Vue({
+el: '#app',
+data: () => ({
+	step:1,
+  lead:{
+    first_name: '',
+		last_name: '',
+    email: '',
+    phone: '',
+    company: '',
+    website: '',
+    body: ''
+  }
+}),
+methods: {
+	back() {
+		this.step--;
+	},
+	next() {
+		this.step++;
+	},
+	contactus () {
+	 axios.post('/api/contacts', this.lead)
+			 .then((res) => {
+				 this.leads.unshift(res.data)
+				 this.lead.first_name = ''
+				 this.lead.last_name = ''
+				 this.lead.phone = ''
+				 this.lead.emil = ''
+				 this.lead.website = ''
+				 this.lead.company = ''
+				 this.lead.position = ''
+				 this.lead.address = ''
+				 this.lead.city = ''
+				 this.lead.state = ''
+				 this.lead.country = ''
+				 this.lead.body = ''
+				 this.lead.facebook = ''
+				 this.lead.twitter = ''
+				 this.lead.instagram = ''
+				 this.lead.linkedin = ''
+				 this.lead.note = ''
+				 this.lead.status_id = ''
+				 this.lead.source_id = ''
+			 })
+			 .then((res) => {
+				 this.fetchLeads();
+			 })
+			 .then((res) => {
+				 swal({
+						 type: 'success',
+						 title: 'Yeah',
+						 text: 'Lead successfully created!'
+					 })
+			 })
+			 .catch((err) =>{
+				 console.log(err)
+				 swal({
+						 type: 'error',
+						 title: 'Ooops...',
+						 text: 'Something went wrong!'
+					 })
+	 })
+	},
+	}
+})
+</script>
 @stop
