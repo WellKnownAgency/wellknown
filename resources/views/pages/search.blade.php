@@ -329,7 +329,7 @@ canvas {
         </div>
       </div>
     </section>
-    
+
     <!--subscribe section-->
     <div class="subscribe-line subscribe-line-image" style="background-image: url('/images/img/bg7.jpg');">
       <div class="container">
@@ -375,8 +375,8 @@ Object.getOwnPropertyNames(Math).map(function(p) {
 });
 
 var HEX_CRAD = 32,
-		HEX_BG = '#171717',
-		HEX_HL = '#2a2a2a',
+    HEX_BG = '#2c2c2c',
+    HEX_HL = '#5c5c5c',
 		HEX_HLW = 2,
 		HEX_GAP = 4,
 		NEON_PALETE = [
