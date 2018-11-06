@@ -12,255 +12,395 @@
 
 @section('content')
 <!-- Header -->
-<header class="header">
-	<div class="bg-img"><img src="images/bgmain/webdesign.jpg" class="bg-cover" alt="Background Image"/></div>
-	<div class="title">
-		<h1>Web Design and Development</h1>
-		<h3 class="intro-heading"></h3>
-		<button class="btn-xl hvr-pulse trigger">Free Consultation</button>
-	</div>
-</header>
-		<!-- Icons Description -->
-		<section class="container-fluid">
+<div class="wrapper">
+  <div class="header-2">
+    <div class="page-header header-filter" >
+      <div class="page-header-image" style="background-image: url('images/img/bg14.jpg');"></div>
       <div class="container">
-  			<div>
-  				<div class="row">
-  					<div class="col-lg-12 text-center">
-  						<h2 class="section-heading">Website Design</h2>
-  						<h3 class="section-subheading text-muted">We build websites according to latest trends</h3>
-  					</div>
-  				</div>
-  			</div>
-  			<div class="row text-center">
-  					<div class="col-md-3">
-  						<div class="box1 text-center hvr-curl-top-right" id="effect">
-  							<img src="images/icons/goal_tracking.png">
-  							<h3 class="service-heading">Search Optimized</h3>
-  							<p class="textwhiteshadow">It's always optimized for different browsers and to get better positions</p>
-  						</div>
-  					</div>
-  					<div class="col-md-3">
-  						<div class="box2 text-center hvr-curl-top-right" id="effect">
-  							<img src="images/icons/data_analysis.png">
-  							<h3 class="service-heading">Responsive Design</h3>
-  							<p class="textwhiteshadow">Our websites work on any kind of Devices and always look good</p>
-  						</div>
-  					</div>
-  					<div class="col-md-3">
-  						<div class="box3 text-center hvr-curl-top-right" id="effect">
-  							<img src="images/icons/tracking_code.png">
-  							<h3 class="service-heading">Fast Loading Speed</h3>
-  							<p class="textwhiteshadow">Our developers try very hard to make your website load really fast</p>
-  						</div>
-  					</div>
-  					<div class="col-md-3">
-  						<div class="box4 text-center hvr-curl-top-right" id="effect">
-  							<img src="images/icons/traffic_report.png">
-  							<h3 class="service-heading">Admin Panel</h3>
-  							<p class="textwhiteshadow">You have access to website analytics, simple CRM and CMS Systems</p>
-  						</div>
-  					</div>
-  				</div>
-        </div>
-		</section>
-
-		<!-- SMB Partner -->
-		<section class="container-fluid bg-light-gray">
-			<div class="container" >
         <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Our Process</h2>
+          <div class="col-md-8 ml-auto mr-auto text-center" style="padding-top: 100px;">
+            <h1 class="title">Web Design and Development</h1>
+            <h4 class="description">From nowhere to top ten</h4>
           </div>
-          <div class="col-md-12 text-center">
-						<div class="slides">
-					    <div class="slide">
-					      <a href="#">The Lorem</a>
-					      <div class="content">
-					        <div class="row">
-										<div class="col-md-3">
-											<img src="/images/icons/test_1.png" width="100%" heigth="auto">
-										</div>
-										<div class="col-md-9">
-
-										</div>
-									</div>
-					      </div>
-					    </div>
-					    <div class="slide" id="duration">
-					      <a href="#">The Ipsum</a>
-					      <div class="content">
-					        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi rem ab voluptate provident voluptatum veniam cupiditate beatae expedita veritatis aliquid officia doloribus dolore maiores doloremque mollitia! A ducimus autem ut!
-					        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse harum eius voluptas dicta. Vero tempore rerum itaque? Quidem nobis vel consectetur sit amet illo dicta veniam ab ut libero officia!
-					      </div>
-					    </div>
-
-					    <div class="slide">
-					      <a href="#">The Dolor Sit Amet</a>
-					      <div class="content">
-					        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi rem ab voluptate provident voluptatum veniam cupiditate beatae expedita veritatis aliquid officia doloribus dolore maiores doloremque mollitia! A ducimus autem ut!
-					        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim fugiat officiis repellat reprehenderit incidunt deserunt illum eum ipsa quod nihil eligendi hic delectus quaerat. Ad sint tempore cumque mollitia reiciendis!
-					      </div>
-					    </div>
-							<div class="slide">
-					      <a href="#">The Dolor Sit Amet</a>
-					      <div class="content">
-					        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi rem ab voluptate provident voluptatum veniam cupiditate beatae expedita veritatis aliquid officia doloribus dolore maiores doloremque mollitia! A ducimus autem ut!
-					        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim fugiat officiis repellat reprehenderit incidunt deserunt illum eum ipsa quod nihil eligendi hic delectus quaerat. Ad sint tempore cumque mollitia reiciendis!
-					      </div>
-					    </div>
-					  </div>
+          <div class="col-md-10 ml-auto mr-auto">
+            <div class="card card-raised card-form-horizontal card-plain" data-background-color>
+              <div class="card-body">
+                <a href="#" class="btn btn-primary btn-round btn-l">Free consultation</a>
+              </div>
+            </div>
           </div>
         </div>
-			</div>
-		</section>
-
-      <!-- SMB Partner -->
-  		<section class="container-fluid bg-gray-light" id="projects">
-        <div class="container">
-          <div class="row">
-              <div class="col-lg-12 text-center">
-                  <h2 class="section-heading">Our Projects</h2>
-                  <h3 class="section-subheading text-muted">From Simple Blogs to Service Business</h3>
-              </div>
-              <div class="row">
-
-              </div>
-          </div>
-        </div>
-  		</section>
-      <div class="col-md-12">
-  				<a href="#facts" class="downarrow">
-  					<img src="images/arrow.png">
-  				</a>
-  			</div>
-
-		<!-- Google Facts -->
-		<section class="container-fluid bg-light-gray" id="facts">
-      <div class="container">
-  			<div class="row">
-                  <div class="col-lg-12 text-center">
-                      <h2 class="section-heading">Web Agency</h2>
-                      <h3 class="section-subheading text-muted">Facts by numbers</h3>
-                  </div>
-              </div>
-  			<div class="row">
-  				<div class="col-lg-4 text-center">
-  					<div class="box hvr-grow">
-  						<i class="fa fa-search fa-4x icon-color" aria-hidden="true"></i>
-  						<br>
-  						<br>
-  						<p class="text-white"><strong id="numbers">38%</strong> <br>Of all domains land on a<br> .com page</p>
-  					</div>
-  				</div>
-  				<div class="col-lg-4 text-center">
-  					<div class="box hvr-grow">
-  						<i class="fa fa-mobile fa-4x icon-color" aria-hidden="true"></i>
-  						<br>
-  						<br>
-  						<p class="text-white"> <strong id="numbers">38%</strong> <br>Use your logo to return to </br> Homepage</p>
-  					</div>
-  				</div>
-  				<div class="col-lg-4 text-center">
-  					<div class="box hvr-grow">
-  						<i class="fa fa-shopping-cart fa-4x icon-color" aria-hidden="true"></i>
-  						<br>
-  						<br>
-  						<p class="text-white"><strong id="numbers">2 secs</strong> <br>People expect website</br> to Load</p>
-  					</div>
-  				</div>
-  			</div>
       </div>
-		</section>
-		<div class="col-md-12">
-				<a href="#portfolio" class="downarrow">
-					<img src="images/arrow.png">
-				</a>
-			</div>
+    </div>
+  </div>
+</div>
+<div class="section section-images">
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <div class="hero-images-container">
+       <img src="images/img/hero-image-1.png" alt="">
+      </div>
+
+      <div class="hero-images-container-1">
+       <img src="images/img/hero-image-2.png" alt="">
+      </div>
+
+      <div class="hero-images-container-2">
+       <img src="images/img/hero-image-3.png" alt="">
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+		<!-- Steps -->
+
+      <div class="features-7 section-image" style="background-image: url('images/img/bg11.jpg')">
+        <div class="col-md-8 mr-auto ml-auto text-center">
+          <h2 class="title">Our Steps to Build Your Website</h2>
+          <h4 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information.</h4>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 px-0">
+              <div class="col-sm-12">
+                <div class="info info-horizontal">
+                  <div class="icon">
+                    <i class="now-ui-icons design_palette"></i>
+                  </div>
+                  <div class="description">
+                    <h5 class="info-title">Design</h5>
+                    <p class="description">The moment you use Now UI Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
+                  </div>
+                </div>
+                <div class="info info-horizontal">
+                  <div class="icon">
+                    <i class="now-ui-icons design-2_html5"></i>
+                  </div>
+                  <div class="description">
+                    <h5 class="info-title">Development</h5>
+                    <p class="description">The moment you use Now UI Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
+                  </div>
+                </div>
+                <div class="info info-horizontal">
+                  <div class="icon">
+                    <i class="now-ui-icons objects_spaceship"></i>
+                  </div>
+                  <div class="description">
+                    <h5 class="info-title">Deployment</h5>
+                    <p class="description">The moment you use Now UI Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="image-container">
+                <img src="images/img/ipad3.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+		<!-- Design & Development -->
+    <div class="projects-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 ml-auto mr-auto text-center">
+            <h2 class="title">We have many advantages</h2>
+            <h4 class="description">This is the paragraph where you can write more details about your projects. Keep you user engaged by providing meaningful information.</h4>
+            <div class="section-space"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5 ml-auto">
+            <div class="card card-background card-background-product card-raised" style="background-image: url('../images/img/project8.jpg')">
+              <div class="card-body">
+                <h2 class="card-title">Web Design</h2>
+                <p class="card-description">
+                  Insight to help you create, connect, and convert. Understand Your Audience's Interests, Influence, Interactions, and Intent. Discover emerging topics and influencers to reach new audiences.
+                </p>
+                <label class="badge badge-neutral">Contact Us</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 mr-auto">
+            <div class="info info-horizontal">
+              <div class="icon icon-danger">
+                <i class="now-ui-icons ui-2_chat-round"></i>
+              </div>
+              <div class="description">
+                <h4 class="info-title">Listen to Social Conversations</h4>
+                <p class="description">
+                  Gain access to the demographics, psychographics, and location of unique people who talk about your brand.
+                </p>
+              </div>
+            </div>
+            <div class="info info-horizontal">
+              <div class="icon icon-danger">
+                <i class="now-ui-icons business_chart-pie-36"></i>
+              </div>
+              <div class="description">
+                <h4 class="info-title">Performance Analyze</h4>
+                <p class="description">
+                  Unify data from Facebook, Instagram, Twitter, LinkedIn, and Youtube to gain rich insights from easy-to-use reports.
+                </p>
+              </div>
+            </div>
+            <div class="info info-horizontal">
+              <div class="icon icon-danger">
+                <i class="now-ui-icons design-2_ruler-pencil"></i>
+              </div>
+              <div class="description">
+                <h4 class="info-title">Social Conversions</h4>
+                <p class="description">
+                  Track actions taken on your website that originated from social, and understand the impact on your bottom line.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+
+        <div class="row">
+          <div class="col-md-5 ml-auto mt-5">
+            <div class="info info-horizontal">
+              <div class="icon icon-warning">
+                <i class="now-ui-icons users_single-02"></i>
+              </div>
+              <div class="description">
+                <h4 class="info-title">Work With Any Team</h4>
+                <p class="description">
+                  Whether it’s for work or even the next family vacation, Trello helps your team.
+                </p>
+              </div>
+            </div>
+            <div class="info info-horizontal">
+              <div class="icon icon-warning">
+                <i class="now-ui-icons business_chart-bar-32"></i>
+              </div>
+              <div class="description">
+                <h4 class="info-title">A Productivity Platform</h4>
+                <p class="description">
+                  Integrate the apps your team already uses directly into your workflow.
+                </p>
+              </div>
+            </div>
+            <div class="info info-horizontal">
+              <div class="icon icon-warning">
+                <i class="now-ui-icons arrows-1_refresh-69"></i>
+              </div>
+              <div class="description">
+                <h4 class="info-title">Always In Sync</h4>
+                <p class="description">
+                  No matter where you are, Trello stays in sync across all of your devices.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 mr-auto">
+            <div class="card card-background card-background-product card-raised" style="background-image: url('../images/img/project9.jpg')">
+              <div class="card-body">
+                <h2 class="card-title">Web Development</h2>
+                <p class="card-description text-white">
+                  Trello’s boards, lists, and cards enable you to organize and prioritize your projects in a fun, flexible and rewarding way.
+                </p>
+                <label class="badge badge-neutral">Contact Us</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--     *********   CASE Studies     *********      -->
+    <div class="projects-1">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8 ml-auto mr-auto text-center">
+            <h2 class="title">Some of Our Awesome Projects</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 px-0">
+            <div class="card card-background card-background-product card-no-shadow" style="background-image: url('images/img/project1.jpg')">
+              <div class="card-body">
+                <h6 class="category">History</h6>
+                <h3 class="card-title">
+                  The City Lost & Found
+                </h3>
+                <p class="card-description">
+                  Developed on the occasion of an exhibition of the same name, The City Lost & Found: Capturing New York...
+                </p>
+                <a href="#pablo" class="btn btn-danger btn-round">
+                  <i class="now-ui-icons ui-1_send"></i> View Book
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 px-0">
+            <div class="card card-raised card-background card-background-product card-no-shadow" style="background-image: url('images/img/project18.jpg')">
+              <div class="card-body">
+                <h6 class="category">Satire</h6>
+                <h3 class="card-title">A Confederacy of Dunces</h3>
+                <p class="card-description">
+                  Satires, in the most basic definition, are works making fun of some sort of person or institution...
+                </p>
+                <a href="#pablo" class="btn btn-neutral btn-round">
+                  <i class="now-ui-icons ui-1_send"></i> View more
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 px-0">
+            <div class="card card-background card-background-product card-no-shadow" style="background-image: url('images/img/project20.jpg')">
+              <div class="card-body">
+                <h6 class="category">Fiction</h6>
+                <h3 class="card-title">The Sun Also Rises</h3>
+                <p class="card-description">
+                  The most commonly read works are works of fiction. Fiction books are ones that have been made up...
+                </p>
+                <a href="#pablo" class="btn btn-neutral btn-round">
+                  <i class="now-ui-icons ui-1_send"></i> Read Now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 px-0">
+            <div class="card card-background card-background-product card-no-shadow" style="background-image: url('images/img/project19.jpg')">
+              <div class="card-body">
+                <h6 class="category">Basic Civitas</h6>
+                <h3 class="card-title">The Right Mistake</h3>
+                <p class="card-description">
+                  Living in South Central L.A., Socrates Fortlow is a sixty-year-old ex-convict, still strong enough to kill men with...
+                </p>
+                <a href="#pablo" class="btn btn-danger btn-round">
+                  <i class="now-ui-icons ui-1_send"></i> Read Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 		<!-- Latest posts in SEO category -->
-		<section id="portfolio" class="container-fluid bg-gray-light">
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<h2 class="section-heading">latest posts in Web Design category</h2>
-					<h3 class="section-subheading text-muted">Find answers on all of your questions about Web Design.</h3>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 col-sm-6 portfolio-item">
-					<a href="/blog/responsive-web-design-and-its-pros-and-cons" class="portfolio-link" data-toggle="modal">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<i class="fa fa-plus fa-3x"></i>
-							</div>
-						</div>
-						<img src="/images/blog/nFt1erAQuRt4yIsps4Wa.jpg" class="img-responsive" alt="">
-					</a>
-					<div class="portfolio-caption">
-						<h4>Responsive Web Design and it's Pros and Cons</h4>
-						<p class="text-muted">Web designs offer variability in terms of fixed, fluid, adaptive and responsive web designs. There are pros and cons of every web design and not every design is particularly perfect for each website. Different websites have different requirements in terms of usage and viewership.</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6 portfolio-item">
-					<a href="/blog/pros-and-cons-of-fixed-design" class="portfolio-link" data-toggle="modal">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<i class="fa fa-plus fa-3x"></i>
-							</div>
-						</div>
-						<img src="/images/blog/VJUMW7oUbgxncsOqbqh5.jpeg" class="img-responsive" alt="">
-					</a>
-					<div class="portfolio-caption">
-						<h4>Pros and Cons of Fixed Web Design</h4>
-						<p class="text-muted">Web designing is a complicated process and it determines the success of your website. There are several layout designs that are used in different websites according to the need of business, its format, and viewers.</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6 portfolio-item">
-					<a href="/blog/types-of-web-developers" class="portfolio-link" data-toggle="modal">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<i class="fa fa-plus fa-3x"></i>
-							</div>
-						</div>
-						<img src="/images/blog/8CCBmQ5iDDPfrgT46RUZ.jpeg" class="img-responsive" alt="">
-					</a>
-					<div class="portfolio-caption">
-						<h4>Types of Web Developers</h4>
-						<p class="text-muted">Web development can be as simple as a one-page text document or can be as complicated and intense as building a full-fledged e-commerce site that enlists hundreds and thousands of products on sale.</p>
-					</div>
-				</div>
-			</div>
-		</section>
+      <!-- Blog -->
+      <div class="section section-plain-cards">
+        <div class="container">
+          <div class="title">
+            <h3>Latest Blog Posts
+            </h3>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-blog card-plain">
+                <div class="card-image">
+                  <a href="#pablo">
+                    <img class="img img-raised rounded" src="/images/img/examples/card-blog6.jpg">
+                  </a>
+                </div>
+                <div class="card-body text-center">
+                  <h6 class="category text-danger">
+                    <i class="now-ui-icons media-2_sound-wave"></i> Business
+                  </h6>
+                  <h5 class="card-title">
+                    <a href="#nuk">Axel Springer Spends $343M To Buy Business Insider</a>
+                  </h5>
+                  <p class="card-description">
+                    German media giant Axel Springer has announced it’s acquiring online business news publication Business Inside...
+                  </p>
+                  <div class="card-footer">
+                    <a href="#nuk" class="btn btn-primary">Read Article</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-blog card-plain">
+                <div class="card-image">
+                  <a href="#pablo">
+                    <img class="img img-raised rounded" src="/images/img/examples/card-blog6.jpg">
+                  </a>
+                </div>
+                <div class="card-body text-center">
+                  <h6 class="category text-danger">
+                    <i class="now-ui-icons media-2_sound-wave"></i> Business
+                  </h6>
+                  <h5 class="card-title">
+                    <a href="#nuk">Axel Springer Spends $343M To Buy Business Insider</a>
+                  </h5>
+                  <p class="card-description">
+                    German media giant Axel Springer has announced it’s acquiring online business news publication Business Inside...
+                  </p>
+                  <div class="card-footer">
+                    <a href="#nuk" class="btn btn-primary">Read Article</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-blog card-plain">
+                <div class="card-image">
+                  <a href="#pablo">
+                    <img class="img img-raised rounded" src="/images/img/examples/card-blog6.jpg">
+                  </a>
+                </div>
+                <div class="card-body text-center">
+                  <h6 class="category text-danger">
+                    <i class="now-ui-icons media-2_sound-wave"></i> Business
+                  </h6>
+                  <h5 class="card-title">
+                    <a href="#nuk">Axel Springer Spends $343M To Buy Business Insider</a>
+                  </h5>
+                  <p class="card-description">
+                    German media giant Axel Springer has announced it’s acquiring online business news publication Business Inside...
+                  </p>
+                  <div class="card-footer">
+                    <a href="#nuk" class="btn btn-primary">Read Article</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <div class="container-fluid text-center">
-  	<div class="row">
-  		<div class="col-lg-12 text-center hrnew">
-  			<h3 class="section-subheading">Awards and Partners</h3>
-  		</div>
-  	</div>
-  					<ul style="list-style: none; padding-top: 20px; padding-bottom: 20px;">
-              <li style="display: inline; padding: 20px;"><a href="https://upcity.com/local-marketing-agencies/profiles/wellknown-agency" target="_blank"><img src="images/logos/upcity.png" alt="Upcity"></a></li>
-  						<li style="display: inline; padding: 20px;"><img src="images/logos/dan.png" alt="Digital Agency Network"></li>
-  						<li style="display: inline; padding: 20px;"><a href="https://clutch.co/profile/wellknown-agency" target="_blank"><img src="images/logos/clutch.png" alt="Clutch"></a></li>
-  					</ul>
-  				</div>
+    <!--subscribe section-->
+    <div class="subscribe-line subscribe-line-image" style="background-image: url('/images/img/bg7.jpg');">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 ml-auto mr-auto">
+            <div class="text-center">
+              <h4 class="title">Subscribe to our Newsletter</h4>
+              <p class="description">
+                Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
+              </p>
+            </div>
+            <div class="card card-raised card-form-horizontal">
+              <div class="card-body">
+                <form method="" action="">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="now-ui-icons ui-1_email-85"></i></span>
+                        </div>
+                        <input type="email" class="form-control" placeholder="Your Email...">
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <button type="button" class="btn btn-primary btn-round btn-block">Subscribe</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- About us Section -->
 
-      <div class="container-fluid " style="background-color: #353535;">
-        <div style="padding: 70px 35px; position: relative;">
-            <p style="text-align:center;"><img src="images/icons/icon.png" width="104px" height="104px"></p>
-            <div style="text-align: center;" class="container col-md-12">
-              <p class="quotep">
-                At <strong>WellKnown Agency</strong>, we build websites to give all information to your leads in the interacting ways
-                , so they become real customers! Mobile-friendly, Fast and Efficient!
-               </p>
-               <a href="/about-us" class="btn-send" style="display: inline-block; margin: 20px;">learn more about us</a>
-            </div>
-        </div>
-      </div>
-      <section style="background-image: url(images/bg2.jpg); background-attachment: fixed; " id="contact">
-      <div class="container-fluid text-center">
-              <a href="/contact-us" class="btn-xl hvr-pulse">Contact us</a>
-      </div>
-    </section>
 @stop

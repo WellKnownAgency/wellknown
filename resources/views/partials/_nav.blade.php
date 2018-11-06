@@ -29,11 +29,13 @@
             <a class="dropdown-item" href="/search-engine-optimization">
               <i class="fa fa-search wk-icons"></i>  <span>Search</span>
             </a>
-            <a class="dropdown-item" href="/search-engine-optimization">
-              <i class="fa fa-share wk-icons"></i>  <span>Social</span>
-            </a>
+              <!--
+              <a class="dropdown-item" href="/search-engine-optimization">
+                <i class="fa fa-share wk-icons"></i>  <span>Social</span>
+              </a>
+            -->
             <a class="dropdown-item" href="/web-design">
-              <i class="fa fa-file-text wk-icons"></i>  <span>Web Design and Dev</span>
+              <i class="fa fa-code wk-icons"></i>  <span>Web Design and Dev</span>
             </a>
           </div>
         </li>
