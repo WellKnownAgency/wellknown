@@ -69,7 +69,7 @@ canvas {
       <div class="features-7 section-image" style="background-image: url('images/img/bg11.jpg')">
         <div class="col-md-8 mr-auto ml-auto text-center">
           <h2 class="title">Our Steps to Build Your Website</h2>
-          <h4 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information.</h4>
+          <h4 class="description">WellKnown Agency is providing a full service in web design & development and help your business to obtain gorgeous Internet profile.</h4>
         </div>
         <div class="container-fluid">
           <div class="row">
@@ -81,7 +81,7 @@ canvas {
                   </div>
                   <div class="description">
                     <h5 class="info-title">Design</h5>
-                    <p class="description">The moment you use Now UI Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
+                    <p class="description">We create stunning website design, which is supposed to tell the story of your business and help you to achieve all the goals you've planned. </p>
                   </div>
                 </div>
                 <div class="info info-horizontal">
@@ -90,7 +90,7 @@ canvas {
                   </div>
                   <div class="description">
                     <h5 class="info-title">Development</h5>
-                    <p class="description">The moment you use Now UI Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
+                    <p class="description">Our team are the experts of coding and development, and we have all the skills to implement your ideas to life, whether it is one page website or sophisticated web application.  </p>
                   </div>
                 </div>
                 <div class="info info-horizontal">
@@ -99,7 +99,7 @@ canvas {
                   </div>
                   <div class="description">
                     <h5 class="info-title">Deployment</h5>
-                    <p class="description">The moment you use Now UI Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
+                    <p class="description">WellKnown Agency is always happy to help you with registaring domain names and hosting websites. Our experience can suggest you the best way for your particular case. </p>
                   </div>
                 </div>
               </div>
@@ -129,7 +129,7 @@ canvas {
               <div class="card-body">
                 <h2 class="card-title">Web Design</h2>
                 <p class="card-description">
-                  Insight to help you create, connect, and convert. Understand Your Audience's Interests, Influence, Interactions, and Intent. Discover emerging topics and influencers to reach new audiences.
+                  If you want to get for your website the best UX and irresistible functionality - WellKnown Agency is the exclusive solution.
                 </p>
                 <label class="badge badge-neutral">Contact Us</label>
               </div>
@@ -141,31 +141,31 @@ canvas {
                 <i class="now-ui-icons ui-2_chat-round"></i>
               </div>
               <div class="description">
-                <h4 class="info-title">Listen to Social Conversations</h4>
+                <h4 class="info-title">Listen to Customers</h4>
                 <p class="description">
-                  Gain access to the demographics, psychographics, and location of unique people who talk about your brand.
+                  First of all, we carefully listen to our Clients, so we are able to syntesize our thoughts and easier reach their goals.
                 </p>
               </div>
             </div>
             <div class="info info-horizontal">
               <div class="icon icon-danger">
-                <i class="now-ui-icons business_chart-pie-36"></i>
+                <i class="now-ui-icons design_app"></i>
               </div>
               <div class="description">
-                <h4 class="info-title">Performance Analyze</h4>
+                <h4 class="info-title">Unique Design</h4>
                 <p class="description">
-                  Unify data from Facebook, Instagram, Twitter, LinkedIn, and Youtube to gain rich insights from easy-to-use reports.
+                   We create 100% custom design for each Client. Our creative designers will take care of your website to profitably stand out from the rest in your business' sphere.
                 </p>
               </div>
             </div>
             <div class="info info-horizontal">
               <div class="icon icon-danger">
-                <i class="now-ui-icons design-2_ruler-pencil"></i>
+                <i class="now-ui-icons tech_mobile"></i>
               </div>
               <div class="description">
-                <h4 class="info-title">Social Conversions</h4>
+                <h4 class="info-title">Mobile Responsive</h4>
                 <p class="description">
-                  Track actions taken on your website that originated from social, and understand the impact on your bottom line.
+                  We create fully optimized websites and web apps for mobile and tablet devices. Since mobile responsibility is vital nowadays, our team know how to build the most advanced and convenient mobile-web.
                 </p>
               </div>
             </div>

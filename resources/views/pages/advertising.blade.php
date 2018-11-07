@@ -169,7 +169,7 @@ canvas {
 
     <div class="col-md-8 ml-auto mr-auto text-center">
         <h2 class="title">Types of Online Advertising</h2>
-        <h4 class="description">There are many types of aadvertising you can use, but usually you need few to get real results.</h4>
+        <h4 class="description">There are many types of advertising you can use, but usually you need few to get real results.</h4>
     </div>
 
     <div class="container">
