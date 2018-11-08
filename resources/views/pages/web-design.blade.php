@@ -180,20 +180,20 @@ canvas {
                 <i class="now-ui-icons users_single-02"></i>
               </div>
               <div class="description">
-                <h4 class="info-title">Work With Any Team</h4>
+                <h4 class="info-title">Greatest Minds</h4>
                 <p class="description">
-                  Whether it’s for work or even the next family vacation, Trello helps your team.
+									Our experienced programmers create the most advanced applications, and they are always follow to the latest trends in IT universe.
                 </p>
               </div>
             </div>
             <div class="info info-horizontal">
               <div class="icon icon-warning">
-                <i class="now-ui-icons business_chart-bar-32"></i>
+                <i class="now-ui-icons objects_key-25"></i>
               </div>
               <div class="description">
-                <h4 class="info-title">A Productivity Platform</h4>
+                <h4 class="info-title">Data Security</h4>
                 <p class="description">
-                  Integrate the apps your team already uses directly into your workflow.
+                  We understand how important an information in your database is, that is why our applications are possessed of high-quality data protection.
                 </p>
               </div>
             </div>
@@ -204,7 +204,7 @@ canvas {
               <div class="description">
                 <h4 class="info-title">Always In Sync</h4>
                 <p class="description">
-                  No matter where you are, Trello stays in sync across all of your devices.
+                  We are proud of our designers and developers colloboration. These teams closely work together over the course of each project, so the final result is constatly as planned.
                 </p>
               </div>
             </div>
@@ -214,7 +214,7 @@ canvas {
               <div class="card-body">
                 <h2 class="card-title">Web Development</h2>
                 <p class="card-description text-white">
-                  Trello’s boards, lists, and cards enable you to organize and prioritize your projects in a fun, flexible and rewarding way.
+									There is nothing imposible in a programming world for our team. WellKnown Agency creates websites and applications no matter how complex it are.
                 </p>
                 <label class="badge badge-neutral">Contact Us</label>
               </div>
