@@ -98,8 +98,8 @@ canvas {
                     <i class="now-ui-icons objects_spaceship"></i>
                   </div>
                   <div class="description">
-                    <h5 class="info-title">Deployment</h5>
-                    <p class="description">WellKnown Agency is always happy to help you with registaring domain names and hosting websites. Our experience can suggest you the best way for your particular case. </p>
+                    <h5 class="info-title">Managing</h5>
+                    <p class="description">WellKnown Agency is always happy to maintain your website or application after deployment. We provide the best service to keep your website running like a Swiss clock. </p>
                   </div>
                 </div>
               </div>

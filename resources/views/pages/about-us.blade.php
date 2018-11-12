@@ -11,293 +11,240 @@
 @stop
 
 @section('content')
-<header class="header">
-  <div class="bg-img"><img src="images/bgmain/sem.jpg" alt="Background Image"/></div>
-  <div class="title">
-    <h1>About us</h1>
-    <button class="btn-xl hvr-pulse trigger">Free Consultation</button>
+<div class="page-header header-filter">
+  <div class="page-header-image" style="background-image: url('images/img/bg16.jpg');"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 ml-auto text-right">
+        <h1 class="title">History of surfing</h1>
+        <h4 class="description">The riding of waves has likely existed since humans began swimming in the ocean. In this sense, bodysurfing is the oldest type of wave-catching. Standing up on what is now called a surfboard is a relatively recent innovation developed by the Polynesians.</h4>
+        <br />
+        <div class="buttons">
+          <a href="#pablo" class="btn btn-icon btn-link btn-neutral btn-lg">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#pablo" class="btn btn-icon btn-link btn-neutral btn-lg">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a href="#pablo" class="btn btn-icon btn-link btn-neutral btn-lg">
+            <i class="fab fa-get-pocket"></i>
+          </a>
+          <a href="#pablo" class="btn btn-info btn-lg mr-3">
+            Read More
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
-</header>
+</div>
 
-
-		<section id="contact">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 text-center">
-						<h2 class="section-heading">WellKnown Digital Agency</h2>
-						<h3 class="section-subheading text-muted">Contact us to get Free Cosultation</h3>
-					</div>
-				</div>
-				<div class="row">
-				 <div class="col-lg-6">
-					 <input id="tab1" type="radio" name="tabs" checked>
-					  <label for="tab1">About US</label>
-
-					  <input id="tab2" type="radio" name="tabs">
-					  <label for="tab2">Social Media</label>
-
-					  <input id="tab3" type="radio" name="tabs">
-					  <label for="tab3">Our Vision</label>
-
-					  <input id="tab4" type="radio" name="tabs">
-					  <label for="tab4">Partners</label>
-
-					  <section-new id="content1">
-						<p class="radius shadowDepth1" style="background-color: #f1f1f1; padding: 5px;">
-						 We are a Group of Professionals who dedicate their time to work and always improve their skills in Digital Marketing, Advertising and Web Design. Our Agency concentates on your Business and ideas
-             and help to turn them in real life. We work in all spheres of marketing so you can always follow your main goal and create your Brand.<br>
-						 Many Ways - One Idea.<br>
-           </p>
-
-           <div class="row">
-             <div class="col-sm-4">
-               <div class="team-member">
-                 <img src="images/avatars/taraskim.jpg" style="border-radius: 50% !important; border: 0px; " class="shadowDepth1" alt=""/>
-                 <h4>Taras Kim</h4>
-                 <p class="text-muted">Lead Marketer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="https://www.instagram.com/taras_kim/">
-                    <i class="fa fa-instagram"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.facebook.com/kimtaras">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.linkedin.com/in/taras-kim-477a2756/">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-               </div>
-             </div>
-
-             <div class="col-sm-4">
-               <div class="team-member">
-                 <img src="images/avatars/0.jpg" style="border-radius: 50% !important; border: 0px;" class="shadowDepth1" alt=""/>
-                 <h4>Anton Likhnekevich</h4>
-                 <p class="text-muted">Marketing Manager</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-instagram"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.linkedin.com/in/anton-likhnekevich-941294165/">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-               </div>
-             </div>
-
-             <!-- Hide
-             <div class="col-sm-4">
-               <div class="team-member">
-                 <img class="mx-auto rounded-circle" src="images/avatars/taraskim.jpg" alt="">
-                 <h4>Taras Kim</h4>
-                 <p class="text-muted">Social Media Expert</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-               </div>
-             </div>
-
-             <div class="col-sm-4">
-               <div class="team-member">
-                 <img class="mx-auto rounded-circle" src="images/avatars/taraskim.jpg" alt="">
-                 <h4>Taras Kim</h4>
-                 <p class="text-muted">Lead Developer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-               </div>
-             </div>
-           -->
-
-           </div>
-
-           <hr>
-           <h4>we Care about our clients</h4>
-           <p>
-						 	<i class="fa fa-envelope icon-color"></i>	SMS Updating Systems<br>
-							<i class="fa fa-file-text icon-color"></i>	Reporting<br>
-							<i class="fa fa-comments icon-color"></i>	Chat to help you get answers on your questions ASAP<br>
-							<i class="fa fa-lightbulb-o icon-color"></i>	Clear understanding of tactics<br>
-							<i class="fa fa-clock-o icon-color"></i>	24 Hour Customer Service<br>
-						</p>
-					  </section-new>
-
-					  <section-new id="content2">
-					 	 <div class="col-lg-3 col-sm-3">
-							  <p>
-								  <a href="https://www.facebook.com/WellKnown-153425045259276/"><img src="images/aicons/Facebook.png" height="100" width="100" class="img-fluid"></a>
-							  </p>
-							  <p>
-								  <a href="https://twitter.com/WKnownMarketing"><img src="images/aicons/Twitter.png" height="100" width="100" class="img-fluid"></a>
-							  </p>
-							  <p>
-								  <a href="https://www.linkedin.com/company/wellknown/"><img src="images/aicons/Linkedin.png" height="100" width="100" class="img-fluid"></a>
-							  </p>
-							  <p>
-								  <a href=""><img src="images/aicons/Google-plus.png" height="100" width="100" class="img-fluid"></a>
-							  </p>
-						  </div>
-						  <div class="col-lg-9 col-sm-9 text-center" style="margin-top: 130px;" >
-						  	<p style="font-size: 50px;">
-						  		<strong>FOLLOW</strong>
-						  	</p>
-						  	<p style="font-size: 50px;">
-						  		<strong>US</strong>
-						  	</p>
-						  </div>
-					  </section-new>
-
-					  <section-new id="content3">
-						<p class="radius shadowDepth1" style="background-color: #f1f1f1; padding: 5px;">
-						  Our Vision is pretty clear... Automation is main goal for our agency. We not only bring you customers, we also help you find ways to use less power and get better results, so net profit growth. WellKnown Agency always follow last news to keep all technolgies we use up to date.<br>
-              </p>
-              <img src="images/robot.png" max-width="100%" height="auto">
-
-					  </section-new>
-
-					  <section-new id="content4">
-						<div class="container-fluid text-center radius shadowDepth1" style="background-color: #f1f1f1;">
-							<ul style="list-style: none; padding-top: 20px; padding-bottom: 20px;">
-								<li style="display: inline; padding: 20px;"><img src="images/logos/upcity.png"></li>
-								<li style="display: inline; padding: 20px;"><img src="images/logos/dan.png"></li>
-								<li style="display: inline; padding: 20px;"><img src="images/logos/clutch.png"></li>
-							</ul>
-						</div>
-					  </section-new>
-					</div>
-
-
-					<form action="{{ url('contact-us') }}" method="POST"  id="contact_form">
-            {{csrf_field()}}
-            @captcha
-					<div class="col-lg-6">
-            <div class="form-box">
-					<!-- Text input-->
-          <input type="text" name="botcheck" style="display: none;">
-					<div class="form-group">
-					  <div class="inputGroupContainer">
-					  <div class="input-group">
-					  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-					  <input  name="firstname" placeholder="First Name" class="form-control"  type="text" required>
-						</div>
-					  </div>
-					</div>
-
-					<!-- Text input-->
-
-					<div class="form-group " style="::placeholder { color:red; opacity: 1;}">
-						<div class="inputGroupContainer">
-						<div class="input-group">
-					  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-					  <input name="lastname" placeholder="Last Name" class="form-control"  type="text" required>
-						</div>
-					  </div>
-					</div>
-
-					<!-- Text input-->
-
-					<div class="form-group">
-						<div class="inputGroupContainer">
-						<div class="input-group">
-							<span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-					  <input name="phone" placeholder="(555)555-5555" class="form-control" type="text" required>
-						</div>
-					  </div>
-					</div>
-
-					<!-- Text input-->
-						   <div class="form-group">
-						<div class="inputGroupContainer">
-						<div class="input-group">
-							<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-					  <input name="email" placeholder="E-Mail Address" class="form-control"  type="text" required>
-						</div>
-					  </div>
-					</div>
-
-
-
-					<!-- Text input-->
-					<div class="form-group">
-					   <div class="inputGroupContainer">
-
-						<div class="input-group">
-							<span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
-					  <input name="website" placeholder="Website or domain name" class="form-control" type="text" required>
-						</div>
-					  </div>
-					</div>
-
-
-					<div class="form-group">
-						<div class="inputGroupContainer">
-						<div class="input-group">
-							<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-								<textarea class="form-control" name="body" placeholder="Max 20 characters" required></textarea>
-					  </div>
-					  </div>
-					</div>
-
-
-					<!-- Button -->
-					<div class="form-group">
-					  <div class="container-fluid">
-						  <div class="text-right">
-						<button type="submit" class="btn btn-send" >Send <span class="glyphicon glyphicon-send"></span></button>
-					  </div>
-						</div>
-					</div>
+<div class="about-team team-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 ml-auto mr-auto text-center">
+        <h2 class="title">We are nerd rockstars</h2>
+        <h4 class="description">This is the paragraph where you can write more details about your team. Keep you user engaged by providing meaningful information.</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-6 col-lg-7 ml-auto mr-auto">
+        <div class="card card-profile card-plain">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="card-image">
+                <a href="#pablo">
+                  <img class="rounded-circle img-raised" src="../images/img/olivia.jpg" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <h4 class="card-title">Ella Evelyn</h4>
+                <h6 class="category">Air Crew Member</h6>
+                <p class="card-description">
+                  Think in the morning. Act in the noon. Eat in the evening. Sleep in the night......
+                </p>
+                <div class="card-footer">
+                  <a href="#pablo" class="btn btn-icon btn-neutral btn-twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="#pablo" class="btn btn-icon btn-neutral btn-facebook"><i class="fab fa-facebook-square"></i></a>
+                  <a href="#pablo" class="btn btn-icon btn-neutral btn-google"><i class="fab fa-google"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-7 ml-auto mr-auto">
+        <div class="card card-profile card-plain">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="card-image">
+                <a href="#pablo">
+                  <img class="rounded-circle img-raised" src="../images/img/emily.jpg" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <h4 class="card-title">Mila Skylar</h4>
+                <h6 class="category">Architect</h6>
+                <p class="card-description">
+                  Love cures people - both the ones who give it and the ones who receive it...
+                </p>
+                <div class="card-footer">
+                  <a href="#pablo" class="btn btn-icon btn-neutral btn-linkedin"><i class="fab fa-linkedin"></i></a>
+                  <a href="#pablo" class="btn btn-icon btn-neutral btn-facebook"><i class="fab fa-facebook-square"></i></a>
+                  <a href="#pablo" class="btn btn-icon btn-neutral btn-dribbble"><i class="fab fa-dribbble"></i></a>
+                  <a href="#pablo" class="btn btn-icon btn-neutral btn-google"><i class="fab fa-google"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-7 ml-auto mr-auto">
+        <div class="card card-profile card-plain">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="card-image">
+                <a href="#pablo">
+                  <img class="img img-raised rounded" src="../images/img/james.jpg" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <h4 class="card-title">Daniel Carter</h4>
+                <h6 class="category">Aviation Inspector</h6>
+                <p class="card-description">
+                  Keep your face always toward the sunshine - and shadows will fall behind you...
+                </p>
+                <div class="card-footer">
+                  <a href="#pablo" class="btn btn-icon btn-neutral btn-linkedin"><i class="fab fa-linkedin"></i></a>
+                  <a href="#pablo" class="btn btn-icon btn-neutral btn-twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="#pablo" class="btn btn-icon btn-neutral btn-instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-7 ml-auto mr-auto">
+        <div class="card card-profile card-plain">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="card-image">
+                <a href="#pablo">
+                  <img class="img img-raised rounded" src="../images/img/michael.jpg" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <h4 class="card-title">Dylan Wyatt</h4>
+                <h6 class="category">Conservation Scientist</h6>
+                <p class="card-description">
+                  There is only one corner of the universe you can be certain of improving, and that's your own self...
+                </p>
+                <div class="card-footer">
+                  <a href="#pablo" class="btn btn-icon btn-neutral btn-linkedin"><i class="fab fa-linkedin"></i></a>
+                  <a href="#pablo" class="btn btn-icon btn-neutral btn-facebook"><i class="fab fa-facebook-square"></i></a>
+                  <a href="#pablo" class="btn btn-icon btn-neutral btn-google"><i class="fab fa-google"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-			</form>
+<div class="about-contact" style="padding-bottom:20px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 mr-auto ml-auto">
+        <h2 class="text-center title">Want to work with us?</h2>
+        <h4 class="text-center description">Divide details about your product or agency work into parts. Write a few lines about each one and contact us about any further collaboration. We will get back to you in a couple of hours.</h4>
+        <form class="contact-form">
+          <div class="row">
+            <div class="col-md-4">
+              <label>First name</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
+                </div>
+                <input type="text" class="form-control" placeholder="First Name..." autocomplete="firstname">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label>Your email</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="now-ui-icons ui-1_email-85"></i></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Email Name..." autocomplete="email">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="control-label">Speciality</label>
+                <select class="selectpicker" data-size="7" data-style="btn btn-default btn-round mt-0" title="Speciality">
+                  <option value="1">I'm a Designer</option>
+                  <option value="2">I'm a Developer</option>
+                  <option value="3">I'm a SEO specialist</option>
+                  <option value="4">I'm a Taras Kim</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 ml-auto mr-auto text-center">
+              <button class="btn btn-primary btn-round mt-4 btn-lg">
+                Let's talk
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
-				</div>
-			</div>
-		</section>
 
-		<div class="container-fluid" style="width: auto; height: 400px;" id="map"></div>
+<div class="subscribe-line subscribe-line-image" style="background-image: url('/images/img/bg7.jpg');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 ml-auto mr-auto">
+        <div class="text-center">
+          <h4 class="title">Subscribe to our Newsletter</h4>
+          <p class="description">
+            Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
+          </p>
+        </div>
+        <div class="card card-raised card-form-horizontal">
+          <div class="card-body">
+            <form method="" action="">
+              <div class="row">
+                <div class="col-sm-8">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="now-ui-icons ui-1_email-85"></i></span>
+                    </div>
+                    <input type="email" class="form-control" placeholder="Your Email...">
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <button type="button" class="btn btn-primary btn-round btn-block">Subscribe</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+		<!--<div class="container-fluid" style="width: auto; height: 400px;" id="map"></div>-->
 @stop
