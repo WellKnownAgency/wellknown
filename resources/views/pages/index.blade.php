@@ -74,8 +74,8 @@
       <div class="row">
         <div class="col-md-5">
           <div class="image-container">
-            <img class="img img-raised rounded img-comments rellax" data-rellax-speed="1" src="images/img/presentation-page/content1.jpg">
-            <img class="img img-raised rounded img-blog rellax" data-rellax-speed="4" src="images/img/presentation-page/content4.jpg">
+            <img class="img img-raised rounded img-comments rellax" data-rellax-speed="1" src="images/img/presentation-page/philosophy1.jpg">
+            <img class="img img-raised rounded img-blog rellax" data-rellax-speed="4" src="images/img/presentation-page/philosophy12.jpg">
           </div>
         </div>
         <div class="col-md-4 ml-auto mr-auto">
