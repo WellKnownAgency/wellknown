@@ -73,6 +73,7 @@ class PagesController extends Controller
 		$lead->email = $request->email;
 		$lead->website = $request->website;
 		$lead->body = $request->body;
+    $lead->note = $request->note;
     $lead->source_id = '1';
 
 		$lead->save();

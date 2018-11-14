@@ -7,7 +7,7 @@
 @section('keywords', '')
 
 @section('preload')
-<link rel="preload" href="images/bgmain/seo.jpg" as="image">
+<link rel="preload" href="images/img/login.jpg" as="image">
 @stop
 @section('customcss')
 <style>
@@ -45,9 +45,11 @@
 	background-color: transparent;
 }
 select.form-control:not([size]):not([multiple]) {
-    height:auto;
-		border-left: 0 none;
+    height:44px;
 }
+[v-cloak] {
+    display: none;
+  }
 </style>
 @stop
 @section('content')
@@ -71,59 +73,56 @@ select.form-control:not([size]):not([multiple]) {
 	                                <div class="input-group-prepend">
 	                                  <span class="input-group-text"><i class="far fa-user-circle"></i></span>
 	                                </div>
-	                                <input type="text" class="form-control" placeholder="First Name..." >
+	                                <input type="text" id="first_name" class="form-control" v-model="lead.first_name" placeholder="First Name..." >
 	                              </div>
 	                              <div class="input-group no-border input-lg">
 	                                <div class="input-group-prepend">
 	                                  <span class="input-group-text"><i class="fas fa-user-circle"></i></span>
 	                                </div>
-	                                <input type="text" class="form-control" placeholder="Last Name...">
+	                                <input type="text" id="last_name" class="form-control" v-model="lead.last_name" placeholder="Last Name...">
 	                              </div>
-																<button class="btn btn-primary btn-raised btn-round" @click.prevent="next()">Next</button>
+																	<button class="btn btn-primary btn-raised btn-round" id="buttonsd"  @click.prevent="next()">Next</button>
 	                            </div>
-															<div class="card-body"  key="1" v-if="step === 2">
+															<div class="card-body"  key="1" v-if="step === 2" v-cloak>
 	                              <div class="input-group no-border input-lg">
 	                                <div class="input-group-prepend">
 	                                  <span class="input-group-text"><i class="far fa-envelope-open"></i></span>
 	                                </div>
-	                                <input type="email" class="form-control" placeholder="Email Here...">
+	                                <input type="email" class="form-control" v-model="lead.email" placeholder="Email Here...">
 	                              </div>
 	                              <div class="input-group no-border input-lg">
 	                                <div class="input-group-prepend">
 	                                  <span class="input-group-text"><i class="fas fa-phone"></i></span>
 	                                </div>
-	                                <input type="number" class="form-control" placeholder="Number Here...">
+	                                <input type="number" class="form-control" v-model="lead.phone" placeholder="Number Here...">
 	                              </div>
 																<button class="btn btn-primary btn-raised btn-round" @click.prevent="back()">Back</button>
 																<button class="btn btn-primary btn-raised btn-round" @click.prevent="next()">Next</button>
 	                            </div>
-															<div class="card-body"  key="2" v-if="step === 3">
+															<div class="card-body"  key="2" v-if="step === 3" v-cloak>
 	                              <div class="input-group no-border input-lg">
 	                                <div class="input-group-prepend">
 	                                  <span class="input-group-text"><i class="far fa-building"></i></span>
 	                                </div>
-	                                <input type="email" class="form-control" placeholder="Company Name...">
+	                                <input type="text" class="form-control" v-model="lead.company" placeholder="Company Name...">
 	                              </div>
 	                              <div class="input-group no-border input-lg">
 	                                <div class="input-group-prepend">
 	                                  <span class="input-group-text"><i class="fas fa-link"></i></i></span>
 	                                </div>
-	                                <input type="number" class="form-control" placeholder="Website Here...">
+	                                <input type="text" class="form-control" v-model="lead.website" placeholder="Website Here...">
 	                              </div>
 																<button class="btn btn-primary btn-raised btn-round" @click.prevent="back()">Back</button>
 																<button class="btn btn-primary btn-raised btn-round" @click.prevent="next()">Next</button>
 	                            </div>
-															<div class="card-body"  key="3" v-if="step === 4">
+															<div class="card-body"  key="3" v-if="step === 4" v-cloak>
 																<div class="input-group no-border input-lg">
-																	<div class="input-group-prepend">
-	                                  <span class="input-group-text"><i class="fas fa-link"></i></i></span>
-	                                </div>
-	                                <select class="form-control" id="message" v-model="lead.body">
-																		<option>Advertising</option>
-																		<option>SEO</option>
-																		<option>Web Design and Dev</option>
-																		<option>Partner</option>
-																		<option>Other</option>
+	                                <select class="form-control" id="select" v-model="lead.note">
+																		<option value="Advertising">Advertising</option>
+																		<option value="SEO">SEO</option>
+																		<option value="Web Design">Web Design and Dev</option>
+																		<option value="Partner">Partner</option>
+																		<option value="Other">Other</option>
 																	</select>
 	                              </div>
 	                              <div class="input-group input-lg">
@@ -146,6 +145,8 @@ select.form-control:not([size]):not([multiple]) {
 @section('customjs')
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
 <script>
 const app = new Vue({
 el: '#app',
@@ -169,47 +170,33 @@ methods: {
 		this.step++;
 	},
 	contactus () {
-	 axios.post('/api/contacts', this.lead)
+	 axios.post('/contact-send', this.lead)
 			 .then((res) => {
-				 this.leads.unshift(res.data)
 				 this.lead.first_name = ''
 				 this.lead.last_name = ''
 				 this.lead.phone = ''
 				 this.lead.emil = ''
 				 this.lead.website = ''
 				 this.lead.company = ''
-				 this.lead.position = ''
-				 this.lead.address = ''
-				 this.lead.city = ''
-				 this.lead.state = ''
-				 this.lead.country = ''
 				 this.lead.body = ''
-				 this.lead.facebook = ''
-				 this.lead.twitter = ''
-				 this.lead.instagram = ''
-				 this.lead.linkedin = ''
 				 this.lead.note = ''
-				 this.lead.status_id = ''
-				 this.lead.source_id = ''
 			 })
-			 .then((res) => {
-				 this.fetchLeads();
-			 })
+
 			 .then((res) => {
 				 swal({
-						 type: 'success',
+						 icon: "success",
 						 title: 'Yeah',
-						 text: 'Lead successfully created!'
+						 text: 'Message Successfully Sent!'
 					 })
 			 })
 			 .catch((err) =>{
 				 console.log(err)
 				 swal({
-						 type: 'error',
+						 icon: "warning",
 						 title: 'Ooops...',
 						 text: 'Something went wrong!'
 					 })
-	 })
+				 })
 	},
 	}
 })

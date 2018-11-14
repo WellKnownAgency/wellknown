@@ -45,7 +45,7 @@ Route::get('/admin/login', 'Auth\AdminLoginController@showLoginForm')->name('adm
 Route::post('/admin/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
 
 /* Post Methods */
-Route::post('contact-us', 'PagesController@postContactus');
+Route::post('contact-send', 'PagesController@postContactus');
 
 Auth::routes();
 
