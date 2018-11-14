@@ -22,11 +22,6 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://wknown.com/social-media-marketing</loc>
-  <lastmod>2018-03-23T01:04:07+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://wknown.com/web-design</loc>
   <lastmod>2018-03-23T01:04:07+00:00</lastmod>
   <priority>0.80</priority>

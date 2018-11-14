@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -78,7 +77,7 @@
   <div class="email--background">
 
 		<div class="pre-header">
-			This is a responsive email template that I knocked up whilst waiting to hear back about a job that I was interviewed for last week...
+			Get a FREE consultation. Improve your busness with our Advertising, Marketing and Web Development solutions... 
 		</div>
 
 		<div class="email--container">
