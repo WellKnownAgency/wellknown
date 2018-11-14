@@ -1,9 +1,9 @@
-<footer class="footer footer-big" style="background-color: #0d0d0d;">
+<footer class="footer footer-big bg-indexcase">
   <div class="container">
     <div class="content">
       <div class="row">
         <div class="col-md-2">
-          <h5>About Us</h5>
+          <h5 style="color:#fff;">About Us</h5>
           <ul class="links-vertical">
             <li>
               <a href="/blog" class="text-muted">
@@ -23,7 +23,7 @@
           </ul>
         </div>
         <div class="col-md-6">
-          <h5>Services</h5>
+          <h5 style="color:#fff;">Services</h5>
           <ul class="links-vertical">
             <li>
               <a href="#pablo" class="text-muted">
@@ -44,7 +44,7 @@
         </div>
 
         <div class="col-md-4">
-          <h5>Follow Us</h5>
+          <h5 style="color:#fff;">Follow Us</h5>
           <ul class="social-buttons">
             <li>
               <a href="https://twitter.com/WKnownMarketing" class="btn btn-icon btn-neutral btn-twitter btn-round">
@@ -67,7 +67,7 @@
       </div>
     </div>
     <hr />
-    <div class="copyright">
+    <div class="copyright" style="color:#fff;">
       Copyright &copy;
       <script>
         document.write(new Date().getFullYear())
