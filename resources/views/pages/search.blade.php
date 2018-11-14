@@ -11,6 +11,7 @@
 @stop
 
 @section('customcss')
+<meta property="og:image" content="/images/sem.jpg" />
 <style>
 canvas {
 	position: absolute;
@@ -36,7 +37,7 @@ canvas {
           <div class="col-md-10 ml-auto mr-auto">
             <div class="card card-raised card-form-horizontal card-plain" data-background-color>
               <div class="card-body">
-                <a href="#" class="btn btn-primary btn-round btn-l">Free consultation</a>
+                <a href="#freeconsultation" class="btn btn-primary btn-round btn-l">Free consultation</a>
               </div>
             </div>
           </div>
@@ -61,11 +62,11 @@ canvas {
               <div class="card card-background card-raised" data-background-color style="background-image: url('images/img/bg24.jpg')">
                 <div class="info">
                   <div class="icon icon-white">
-                    <i class="now-ui-icons business_bulb-63"></i>
+                    <i class="fa fa-cog"></i>
                   </div>
                   <div class="description">
                     <h4 class="info-title">Website Optimization</h4>
-                    <p>Your designer will come back to you with an initial set of ideas.</p>
+                    <p>Our team will optimize your website for Search Engines.</p>
                   </div>
                 </div>
               </div>
@@ -74,11 +75,11 @@ canvas {
               <div class="card card-background card-raised" data-background-color style="background-image: url('images/img/bg23.jpg')">
                 <div class="info">
                   <div class="icon icon-white">
-                    <i class="now-ui-icons business_badge"></i>
+                    <i class="fas fa-chart-line"></i>
                   </div>
                   <div class="description">
                     <h4 class="info-title">Analyzing</h4>
-                    <p>Havenly interior designers are vetted professionals and real people.</p>
+                    <p>We Analyze your Business Industry and learn about your competitors.</p>
                   </div>
                 </div>
               </div>
@@ -87,11 +88,11 @@ canvas {
               <div class="card card-background card-raised" data-background-color style="background-image: url('images/img/bg25.jpg')">
                 <div class="info">
                   <div class="icon icon-white">
-                    <i class="now-ui-icons location_map-big"></i>
+                    <i class="fas fa-flag"></i>
                   </div>
                   <div class="description">
                     <h4 class="info-title">Reporting</h4>
-                    <p>Share a floor plan, and we'll create a visualization of your room.</p>
+                    <p>We provide you with weeekly and monthly reports about your positions in Search.</p>
                   </div>
                 </div>
               </div>
@@ -167,7 +168,7 @@ canvas {
         <div class="row">
             <div class="col-md-6 ml-auto mr-auto text-center">
                 <h2 class="title">SEO Services Packages</h2>
-                <h4 class="description">We totally understand that seo for different companies will be different, so we provide few </h4>
+                <h4 class="description">We totally understand that these SEO packages not always can fit you needs, for more detailes contact us</h4>
                 <div class="section-space"></div>
             </div>
         </div>
@@ -177,16 +178,18 @@ canvas {
             <div class="col-md-3">
                 <div class="card card-pricing card-plain">
                     <div class="card-body">
-                        <h5 class="category ">Bravo Pack</h5>
+                        <h5 class="category ">Single</h5>
                         <div class="icon icon-warning">
                             <i class="now-ui-icons media-1_button-power"></i>
                         </div>
-                        <h3 class="card-title">$10</h3>
+                        <h3 class="card-title">$300</h3>
                         <ul>
-                            <li>Complete documentation</li>
-                            <li>Working materials in Sketch</li>
+                            <li>One Page SEO</li>
+														<li>Keywords Research</li>
+														<li>Up to 10 Keywords Tracking</li>
+														<li>Weekly and Monthly Reporting</li>
                         </ul>
-                        <a href="#pablo" class="btn btn-neutral btn-warning btn-round">Add to Cart</a>
+                        <a href="/contact-us" class="btn btn-neutral btn-warning btn-round">Contact us</a>
                     </div>
                 </div>
             </div>
@@ -194,16 +197,18 @@ canvas {
             <div class="col-md-3">
                 <div class="card card-pricing">
                     <div class="card-body">
-                        <h5 class="category">Alpha Pack</h5>
+                        <h5 class="category">Double</h5>
                         <div class="icon icon-primary">
                             <i class="now-ui-icons objects_diamond"></i>
                         </div>
-                        <h3 class="card-title">$67</h3>
+                        <h3 class="card-title">$500</h3>
                         <ul>
-                            <li>Working materials in EPS</li>
-                            <li>6 months access to the library</li>
+													<li>Two Pages SEO</li>
+													<li>Keywords Research</li>
+													<li>Up to 25 Keywords Tracking</li>
+													<li>Weekly and Monthly Reporting</li>
                         </ul>
-                        <a href="#pablo" class="btn btn-primary btn-round">Add to Cart</a>
+                        <a href="/contact-us" class="btn btn-primary btn-round">Contact us</a>
                     </div>
                 </div>
             </div>
@@ -211,16 +216,18 @@ canvas {
             <div class="col-md-3">
                 <div class="card card-pricing card-plain">
                     <div class="card-body">
-                        <h5 class="category ">Charlie Pack</h5>
+                        <h5 class="category ">Triple</h5>
                         <div class="icon icon-success">
                             <i class="now-ui-icons media-2_sound-wave"></i>
                         </div>
-                        <h3 class="card-title">$69</h3>
+                        <h3 class="card-title">$800</h3>
                         <ul>
-                            <li>Working materials in PSD</li>
-                            <li>1 year access to the library</li>
+													<li>Three Pages SEO</li>
+													<li>Keywords Research</li>
+													<li>Up to 50 Keywords Tracking</li>
+													<li>Weekly and Monthly Reporting</li>
                         </ul>
-                        <a href="#pablo" class="btn btn-neutral btn-success btn-round">Add to Cart</a>
+                        <a href="/contact-us" class="btn btn-neutral btn-success btn-round">Contact us</a>
                     </div>
                 </div>
             </div>
@@ -228,16 +235,18 @@ canvas {
             <div class="col-md-3">
                 <div class="card card-pricing card-plain">
                     <div class="card-body">
-                        <h5 class="category ">Extra Pack</h5>
+                        <h5 class="category">Quadruple</h5>
                         <div class="icon icon-danger">
                             <i class="now-ui-icons education_atom"></i>
                         </div>
-                        <h3 class="card-title">$159</h3>
+                        <h3 class="card-title">$1200</h3>
                         <ul>
-                            <li>Complete documentation</li>
-                            <li>2GB cloud storage</li>
+													<li>Five Pages SEO</li>
+													<li>Keywords Research</li>
+													<li>Up to 100 Keywords Tracking</li>
+													<li>Weekly and Monthly Reporting</li>
                         </ul>
-                        <a href="#pablo" class="btn btn-neutral btn-danger btn-round">Add to Cart</a>
+                        <a href="/contact-us" class="btn btn-neutral btn-danger btn-round">Contact us</a>
                     </div>
                 </div>
             </div>
@@ -333,35 +342,17 @@ canvas {
     <!--subscribe section-->
     <div class="subscribe-line subscribe-line-image" style="background-image: url('/images/img/bg7.jpg');">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6 ml-auto mr-auto">
-            <div class="text-center">
-              <h4 class="title">Subscribe to our Newsletter</h4>
-              <p class="description">
-                Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
-              </p>
-            </div>
-            <div class="card card-raised card-form-horizontal">
-              <div class="card-body">
-                <form method="" action="">
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text"><i class="now-ui-icons ui-1_email-85"></i></span>
-                        </div>
-                        <input type="email" class="form-control" placeholder="Your Email...">
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <button type="button" class="btn btn-primary btn-round btn-block">Subscribe</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
+				<div class="row" id="freeconsultation">
+	        <div class="col-md-6 ml-auto mr-auto">
+	          <div class="text-center">
+	            <h4 class="title">Get a free Consultation</h4>
+	            <p class="description">
+	              Contact us if you have any questions and we will get back to you asap.
+	            </p>
+	            <a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;">Free consultation</a>
+	          </div>
+	        </div>
+	      </div>
       </div>
     </div>
 

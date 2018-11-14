@@ -7,25 +7,29 @@
 @section('keywords', 'Digital Agency, Online marketing, online advertising, marketing Agency, Advertising Agency, Web design agency, web development')
 
 @section('preload')
+<link rel="preload" href="/images/sky.webp" as="image">
+<link rel="preload" href="/images/boston.webp" as="image">
+@stop
 
+@section('customcss')
+<meta property="og:image" content="/images/sem.jpg" />
 @stop
 
 @section('content')
 <div class="wrapper">
   <div class="page-header clear-filter">
     <div class="rellax-header rellax-header-sky" data-rellax-speed="-4">
-      <div class="page-header-image" style="background-image: url('/images/sky.jpeg')">
+      <div class="page-header-image" style="background-image: url('/images/sky.webp')">
       </div>
     </div>
     <div class="rellax-header rellax-header-buildings" data-rellax-speed="0">
-      <div class="page-header-image page-header-city" style="background-image: url('/images/boston.png')">
+      <div class="page-header-image page-header-city" style="background-image: url('/images/boston.webp')">
       </div>
     </div>
     <div class="rellax-text-container rellax-text">
       <h1 class="h1-seo" data-rellax-speed="-1">WellKnown Agency</h1>
     </div>
     <h3 class="h3-description rellax-text" data-rellax-speed="-1">Advertising | Marketing | Web Design | Development</h3>
-    <a href="" class="btn btn-primary btn-large" data-rellax-speed="-1">FREE CONSULTATION</a>
   </div>
   <div class="features-3">
       <div class="container">
@@ -74,8 +78,8 @@
       <div class="row">
         <div class="col-md-5">
           <div class="image-container">
-            <img class="img img-raised rounded img-comments rellax" data-rellax-speed="1" src="images/img/presentation-page/content1.jpg">
-            <img class="img img-raised rounded img-blog rellax" data-rellax-speed="4" src="images/img/presentation-page/content4.jpg">
+            <img class="img img-raised rounded img-comments rellax" data-rellax-speed="1" src="/images/test3.webp">
+            <img class="img img-raised rounded img-blog rellax" data-rellax-speed="4" src="images/test2.webp">
           </div>
         </div>
         <div class="col-md-4 ml-auto mr-auto">
@@ -92,34 +96,19 @@
   <div class="social-line social-line-big-icons social-line-white" style="padding:40px 40px;">
     <div class="container">
       <div class="row">
-        <div class="col-md-2">
-          <a href="#pablo" class="btn btn-neutral btn-icon btn-twitter btn-footer">
-            Company 0
+        <div class="col-md-4">
+          <a href="https://upcity.com/local-marketing-agencies/profiles/wellknown-agency" class="btn btn-neutral btn-icon btn-twitter btn-footer">
+            <img src="/images/upcity.webp" width="100px"/>
           </a>
         </div>
-        <div class="col-md-2">
-          <a href="#pablo" class="btn btn-neutral btn-icon btn-facebook btn-footer">
-            Company 1
+        <div class="col-md-4">
+          <a href="https://clutch.co/profile/wellknown-agency" class="btn btn-neutral btn-icon btn-facebook btn-footer">
+            <img src="/images/clutch.webp" width="100px" />
           </a>
         </div>
-        <div class="col-md-2">
-          <a href="#pablo" class="btn btn-neutral btn-icon btn-google btn-footer">
-            Comany 2
-          </a>
-        </div>
-        <div class="col-md-2">
-          <a href="#pablo" class="btn btn-neutral btn-icon btn-dribbble btn-footer">
-            Company 3
-          </a>
-        </div>
-        <div class="col-md-2">
-          <a href="#pablo" class="btn btn-neutral btn-icon btn-youtube btn-footer">
-            Company 4
-          </a>
-        </div>
-        <div class="col-md-2">
-          <a href="#pablo" class="btn btn-neutral btn-icon btn-instagram btn-footer">
-            Company 5
+        <div class="col-md-4">
+          <a href="" class="btn btn-neutral btn-icon btn-google btn-footer">
+            <img src="/images/dan.webp" width="100px" />
           </a>
         </div>
       </div>
@@ -132,7 +121,7 @@
         <div class="col-md-8 ml-auto mr-auto">
           <h2 class="text-center title">Agency Case Studies
             <br>
-            <small class="description">Created with pleas</small>
+            <small class="description">Created with passion</small>
           </h2>
           <h5 class="text-center description">We've had the pleasure of being involved in a stunning projects that helped our clients to boost their business . Here are a select few:</h5>
           <div class="space-50"></div>
@@ -260,29 +249,11 @@
       <div class="row">
         <div class="col-md-6 ml-auto mr-auto">
           <div class="text-center">
-            <h4 class="title">Subscribe to our Newsletter</h4>
+            <h4 class="title">Get a free Consultation</h4>
             <p class="description">
-              Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
+              Contact us if you have any questions and we will get back to you asap.
             </p>
-          </div>
-          <div class="card card-raised card-form-horizontal">
-            <div class="card-body">
-              <form method="" action="">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="now-ui-icons ui-1_email-85"></i></span>
-                      </div>
-                      <input type="email" class="form-control" placeholder="Your Email...">
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <button type="button" class="btn btn-primary btn-round btn-block">Subscribe</button>
-                  </div>
-                </div>
-              </form>
-            </div>
+            <a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;">Free consultation</a>
           </div>
         </div>
       </div>

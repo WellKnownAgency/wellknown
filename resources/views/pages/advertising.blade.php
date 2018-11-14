@@ -1,16 +1,17 @@
 @extends('layout.main')
 
-@section('title', 'Advertsing | WellKnown Agency')
+@section('title', 'Online Advertsing | PPC, Remarketing, Social Media Adv')
 
-@section('description', 'All types of Digital Advertising for your Business. PPC, Remarketing and video ads by WellKNown Digital Agency')
+@section('description', 'All types of Digital Advertising for your Business Online. Pay Per Click (PPC), Remarketing, Social Media Advertising and Video Advertising by WellKnown Agency')
 
-@section('keywords', 'Advertising, ads agency, ppc, pay per click, reamrketing campaigns, video advertising')
+@section('keywords', 'Advertising, ads agency, ppc, pay per click, remarketing campaigns, video advertising')
 
 @section('preload')
-<link rel="preload" href="/images/bgmain/sem.jpg" as="image">
+
 @stop
 
 @section('customcss')
+<meta property="og:image" content="/images/sem.jpg" />
 <style>
 canvas {
 	position: absolute;
@@ -29,13 +30,13 @@ canvas {
         <div class="container">
             <div class="row">
                 <div class="col-md-8 ml-auto mr-auto text-center" style="padding-top: 100px;">
-                    <h1 class="title">Advertising</h1>
-                    <h5 class="description">Create catching advertising</h5>
+                    <h1 class="title">Online Advertising</h1>
+                    <h5 class="description">Advertise your business through Search or Social Media with the best possible ROI</h5>
                 </div>
                 <div class="col-md-10 ml-auto mr-auto">
                     <div class="card card-raised card-form-horizontal card-plain" data-background-color="">
                         <div class="card-body">
-                          <a href="#" class="btn btn-primary btn-round btn-l">Free consultation</a>
+                          <a href="#freeconsultation" class="btn btn-primary btn-round btn-l">Free consultation</a>
                         </div>
                     </div>
                 </div>
@@ -341,35 +342,17 @@ canvas {
 </div>
 <div class="subscribe-line subscribe-line-image" style="background-image: url('/images/img/bg7.jpg');">
   <div class="container">
-    <div class="row">
-      <div class="col-md-6 ml-auto mr-auto">
-        <div class="text-center">
-          <h4 class="title">Subscribe to our Newsletter</h4>
-          <p class="description">
-            Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
-          </p>
-        </div>
-        <div class="card card-raised card-form-horizontal">
-          <div class="card-body">
-            <form method="" action="">
-              <div class="row">
-                <div class="col-sm-8">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"><i class="now-ui-icons ui-1_email-85"></i></span>
-                    </div>
-                    <input type="email" class="form-control" placeholder="Your Email...">
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <button type="button" class="btn btn-primary btn-round btn-block">Subscribe</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+		<div class="row" id="freeconsultation">
+			<div class="col-md-6 ml-auto mr-auto">
+				<div class="text-center">
+					<h4 class="title">Get a free Consultation</h4>
+					<p class="description">
+						Contact us if you have any questions and we will get back to you asap.
+					</p>
+					<a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;">Free consultation</a>
+				</div>
+			</div>
+		</div>
   </div>
 </div>
 </div>
@@ -382,8 +365,8 @@ Object.getOwnPropertyNames(Math).map(function(p) {
 });
 
 var HEX_CRAD = 32,
-    HEX_BG = '#455560',
-    HEX_HL = '#809eb2',
+    HEX_BG = '#383838',
+    HEX_HL = '#606060',
 		HEX_HLW = 2,
 		HEX_GAP = 4,
 		NEON_PALETE = [

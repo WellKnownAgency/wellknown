@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-primary navbar-transparent fixed-top" color-on-scroll="400">
+<nav class="navbar navbar-expand-lg bg-primaryy navbar-transparent fixed-top" color-on-scroll="400">
   <div class="container">
     <div class="navbar-translate">
       <a class="navbar-brand" href="/" rel="tooltip" title="WellKnown Agency" data-placement="bottom">
