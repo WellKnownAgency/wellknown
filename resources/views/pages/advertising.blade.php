@@ -98,7 +98,7 @@ canvas {
                   <div class="row">
                     <div class="col-md-12">
                       <div class="card" style="width: 100%">
-                        <img class="card-img-top" src="images/img/bg30.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="images/img/ad1.jpg" alt="Card image cap">
                       </div>
                     </div>
                   </div>
@@ -116,7 +116,7 @@ canvas {
                   <div class="row">
                     <div class="col-md-12">
                       <div class="card" style="width: 100%">
-                        <img class="card-img-top" src="images/img/bg30.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="images/img/ad2.jpg" alt="Card image cap">
                       </div>
                     </div>
                   </div>
@@ -134,7 +134,7 @@ canvas {
                   <div class="row">
                     <div class="col-md-12">
                       <div class="card" style="width: 100%">
-                        <img class="card-img-top" src="images/img/bg30.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="images/img/ad3.jpg" alt="Card image cap">
                       </div>
                     </div>
                   </div>
@@ -152,7 +152,7 @@ canvas {
                   <div class="row">
                     <div class="col-md-12">
                       <div class="card" style="width: 100%">
-                        <img class="card-img-top" src="images/img/bg30.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="images/img/ad4.jpg" alt="Card image cap">
                       </div>
                     </div>
                   </div>
