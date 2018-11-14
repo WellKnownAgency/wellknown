@@ -17,25 +17,7 @@
 @yield('customcss')
 <link href="{!! asset('css/bootstrap.min.css') !!}" media="all" rel="stylesheet" type="text/css" />
 <link href="{!! asset('css/now-ui-kit.css') !!}" media="all" rel="stylesheet" type="text/css" />
-<link href="{!! asset('css/demo.css') !!}" media="all" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
-
-
-<!-- <link href="{!! asset('css/app.css') !!}" media="all" rel="stylesheet" type="text/css" /> -->
-<!--
-<link href="{!! asset('css/normalize.css') !!}" media="all" rel="stylesheet" type="text/css" />
-<link href="{!! asset('css/bootstrap.css') !!}" media="all" rel="stylesheet" type="text/css" />
-<link href="{!! asset('css/main.css') !!}" media="all" rel="stylesheet" type="text/css" />
-<link href="{!! asset('css/font-awesome.css') !!}" media="all" rel="stylesheet" type="text/css" />
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
--->
-
-
-
 
 <!-- Global site tag (gtag.js) - Google Analytics
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109464444-1"></script>

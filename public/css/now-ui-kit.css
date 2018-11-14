@@ -10839,6 +10839,20 @@ img {
   }
 }
 
+.btn-primary:hover {
+  -webkit-box-shadow: 0 15px 30px 0 rgba(220, 55, 65, 0.35);
+          box-shadow: 0 15px 30px 0 rgba(220, 55, 65, 0.35);
+}
+
+.btn-primary {
+  -webkit-box-shadow: 0 9px 30px -6px rgba(220, 55, 65, 0.35);
+          box-shadow: 0 9px 30px -6px rgba(220, 55, 65, 0.35);
+}
+
+.bg-indexcase {
+  background: #450c10;
+}
+
 .bg-primaryy {
   background: rgba(220, 55, 65, 0.6) !important;
 }
@@ -10846,24 +10860,6 @@ img {
 .index-page .page-header,
 .presentation-page .page-header {
   height: 0;
-}
-
-::-webkit-input-placeholder {
-  color: red;
-  opacity: 1;
-  /* Firefox */
-}
-
-::-ms-input-placeholder {
-  color: red;
-  opacity: 1;
-  /* Firefox */
-}
-
-::placeholder {
-  color: red;
-  opacity: 1;
-  /* Firefox */
 }
 
 .btn-l {
