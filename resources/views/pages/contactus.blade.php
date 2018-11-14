@@ -25,6 +25,29 @@
 	{
 	  opacity: 0
 	}
+	.form-control {
+		color: #fff !important;
+		font-size:16px;
+	}
+	.form-control::-moz-placeholder {
+  color: #fff;
+	font-size: 16px;
+}
+.form-control:-ms-input-placeholder {
+  color: #fff;
+	font-size: 18px;
+}
+.form-control::-webkit-input-placeholder {
+  color: #fff;
+	font-size: 18px;
+}
+.form-control:focus {
+	background-color: transparent;
+}
+select.form-control:not([size]):not([multiple]) {
+    height:auto;
+		border-left: 0 none;
+}
 </style>
 @stop
 @section('content')
@@ -46,13 +69,13 @@
 															<div class="card-body"  key="4" v-if="step === 1">
 	                              <div class="input-group no-border input-lg">
 	                                <div class="input-group-prepend">
-	                                  <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
+	                                  <span class="input-group-text"><i class="far fa-user-circle"></i></span>
 	                                </div>
 	                                <input type="text" class="form-control" placeholder="First Name..." >
 	                              </div>
 	                              <div class="input-group no-border input-lg">
 	                                <div class="input-group-prepend">
-	                                  <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
+	                                  <span class="input-group-text"><i class="fas fa-user-circle"></i></span>
 	                                </div>
 	                                <input type="text" class="form-control" placeholder="Last Name...">
 	                              </div>
@@ -61,13 +84,13 @@
 															<div class="card-body"  key="1" v-if="step === 2">
 	                              <div class="input-group no-border input-lg">
 	                                <div class="input-group-prepend">
-	                                  <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
+	                                  <span class="input-group-text"><i class="far fa-envelope-open"></i></span>
 	                                </div>
 	                                <input type="email" class="form-control" placeholder="Email Here...">
 	                              </div>
 	                              <div class="input-group no-border input-lg">
 	                                <div class="input-group-prepend">
-	                                  <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
+	                                  <span class="input-group-text"><i class="fas fa-phone"></i></span>
 	                                </div>
 	                                <input type="number" class="form-control" placeholder="Number Here...">
 	                              </div>
@@ -77,13 +100,13 @@
 															<div class="card-body"  key="2" v-if="step === 3">
 	                              <div class="input-group no-border input-lg">
 	                                <div class="input-group-prepend">
-	                                  <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
+	                                  <span class="input-group-text"><i class="far fa-building"></i></span>
 	                                </div>
 	                                <input type="email" class="form-control" placeholder="Company Name...">
 	                              </div>
 	                              <div class="input-group no-border input-lg">
 	                                <div class="input-group-prepend">
-	                                  <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
+	                                  <span class="input-group-text"><i class="fas fa-link"></i></i></span>
 	                                </div>
 	                                <input type="number" class="form-control" placeholder="Website Here...">
 	                              </div>
@@ -91,7 +114,19 @@
 																<button class="btn btn-primary btn-raised btn-round" @click.prevent="next()">Next</button>
 	                            </div>
 															<div class="card-body"  key="3" v-if="step === 4">
-	                              <div class="input-group no-border input-lg">
+																<div class="input-group no-border input-lg">
+																	<div class="input-group-prepend">
+	                                  <span class="input-group-text"><i class="fas fa-link"></i></i></span>
+	                                </div>
+	                                <select class="form-control" id="message" v-model="lead.body">
+																		<option>Advertising</option>
+																		<option>SEO</option>
+																		<option>Web Design and Dev</option>
+																		<option>Partner</option>
+																		<option>Other</option>
+																	</select>
+	                              </div>
+	                              <div class="input-group input-lg">
 	                                <textarea name="message" placeholder="Your Message" class="form-control" id="message" v-model="lead.body" rows="6"></textarea>
 	                              </div>
 																<button class="btn btn-primary btn-raised btn-round" @click.prevent="back()">Back</button>

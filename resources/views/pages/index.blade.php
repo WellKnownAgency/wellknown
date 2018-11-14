@@ -244,7 +244,8 @@
       </div>
     </div>
   </div>
-  <div class="subscribe-line subscribe-line-image" style="background-image: url('/images/index/hexagonred.webp'); background-color: rgba(255,255,255,0.2);">
+  <div class="subscribe-line subscribe-line-image" style="background-image: url('/images/index/hexagonred.webp'); background-repeat: no-repeat;
+    background-attachment: fixed;">
     <div class="container">
       <div class="row">
         <div class="col-md-6 ml-auto mr-auto">
