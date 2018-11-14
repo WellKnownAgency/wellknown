@@ -182,7 +182,7 @@ canvas {
                     </div>
                     <div class="info text-center">
                         <div class="icon">
-                            <i class="now-ui-icons ui-1_email-85"></i>
+                            <i class="now-ui-icons fa fa-bullhorn"></i>
                         </div>
                         <h4 class="info-title">PPC</h4>
                         <p class="description">Pay Per Click advertising in search like Google or Bing</p>
@@ -197,7 +197,7 @@ canvas {
                     </div>
                     <div class="info text-center">
                         <div class="icon">
-                            <i class="now-ui-icons ui-1_calendar-60"></i>
+                            <i class="now-ui-icons fa fa-bullseye"></i>
                         </div>
                         <h4 class="info-title">Remarketing</h4>
                         <p class="description">Great extension for any advertising campaign </p>
@@ -212,7 +212,7 @@ canvas {
                     </div>
                     <div class="info text-center">
                         <div class="icon">
-                            <i class="now-ui-icons ui-1_send"></i>
+                            <i class="now-ui-icons fa fa-share-alt"></i>
                         </div>
                         <h4 class="info-title">Social Media Ads</h4>
                         <p class="description">Extend your Social Media with any type of advertising </p>
@@ -227,7 +227,7 @@ canvas {
                     </div>
                     <div class="info text-center">
                         <div class="icon">
-                            <i class="now-ui-icons ui-2_like"></i>
+                            <i class="now-ui-icons fa fa-diamond"></i>
                         </div>
                         <h4 class="info-title">Brand Awareness</h4>
                         <p class="description">Make sure your customers know your brand</p>
