@@ -178,7 +178,7 @@ canvas {
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <img src="images/img/bg28.jpg" class="rounded" alt="">
+                        <img src="images/ppc.webp" class="rounded" alt="">
                     </div>
                     <div class="info text-center">
                         <div class="icon">
@@ -193,7 +193,7 @@ canvas {
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <img src="images/img/bg26.jpg" class="rounded" alt="">
+                        <img src="images/remarketing.webp" class="rounded" alt="">
                     </div>
                     <div class="info text-center">
                         <div class="icon">
@@ -208,7 +208,7 @@ canvas {
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <img src="images/img/bg27.jpg" class="rounded" alt="">
+                        <img src="images/smm.webp" class="rounded" alt="">
                     </div>
                     <div class="info text-center">
                         <div class="icon">
@@ -223,7 +223,7 @@ canvas {
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <img src="images/img/bg29.jpg" class="rounded" alt="">
+                        <img src="images/brand.webp" class="rounded" alt="">
                     </div>
                     <div class="info text-center">
                         <div class="icon">
