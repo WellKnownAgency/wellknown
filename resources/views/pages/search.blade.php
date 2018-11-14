@@ -59,7 +59,7 @@ canvas {
           </div>
           <div class="row">
             <div class="col-md-4">
-              <div class="card card-background card-raised" data-background-color style="background-image: url('images/img/bg24.jpg')">
+              <div class="card card-background card-raised" data-background-color style="background-image: url('images/search/optimization.webp')">
                 <div class="info">
                   <div class="icon icon-white">
                     <i class="fa fa-cog"></i>
@@ -72,7 +72,7 @@ canvas {
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card card-background card-raised" data-background-color style="background-image: url('images/img/bg23.jpg')">
+              <div class="card card-background card-raised" data-background-color style="background-image: url('images/search/analytics.webp')">
                 <div class="info">
                   <div class="icon icon-white">
                     <i class="fas fa-chart-line"></i>
@@ -85,7 +85,7 @@ canvas {
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card card-background card-raised" data-background-color style="background-image: url('images/img/bg25.jpg')">
+              <div class="card card-background card-raised" data-background-color style="background-image: url('images/search/reporting.webp')">
                 <div class="info">
                   <div class="icon icon-white">
                     <i class="fas fa-flag"></i>
@@ -162,7 +162,7 @@ canvas {
         </div>
       </div>
 		</section>
-    <div class="pricing-1 section-image" id="pricing-1" style="background-image: url('/images/img/pricing1.jpg')">
+    <div class="pricing-1 section-image" id="pricing-1" style="background-image: url('/images/search/seo-bg-prices.webp')">
 
     <div class="container">
         <div class="row">

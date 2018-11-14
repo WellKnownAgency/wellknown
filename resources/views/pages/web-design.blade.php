@@ -125,7 +125,7 @@ canvas {
         </div>
         <div class="row">
           <div class="col-md-5 ml-auto">
-            <div class="card card-background card-background-product card-raised" style="background-image: url('../images/img/project8.jpg')">
+            <div class="card card-background card-background-product card-raised" style="background-image: url('../images/webdesign/design.webp')">
               <div class="card-body">
                 <h2 class="card-title">Web Design</h2>
                 <p class="card-description">
@@ -204,13 +204,13 @@ canvas {
               <div class="description">
                 <h4 class="info-title">Always In Sync</h4>
                 <p class="description">
-                  We are proud of our designers and developers colloboration. These teams closely work together over the course of each project, so the final result is constatly as planned.
+                  We are proud of our designers and developers colloboration. These teams closely work together over the course of each project, so the final result is always as planned.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-md-5 mr-auto">
-            <div class="card card-background card-background-product card-raised" style="background-image: url('../images/img/project9.jpg')">
+            <div class="card card-background card-background-product card-raised" style="background-image: url('../images/webdesign/development.webp')">
               <div class="card-body">
                 <h2 class="card-title">Web Development</h2>
                 <p class="card-description text-white">

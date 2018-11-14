@@ -166,7 +166,7 @@ canvas {
 		</div>
 	</div>
 </div>
-<div class="features-8 section-image" style="background-image: url('images/img/bg30.jpg')">
+<div class="features-8 section-image" style="background-image: url('images/advertising/bg-1.webp')">
 
     <div class="col-md-8 ml-auto mr-auto text-center">
         <h2 class="title">Types of Online Advertising</h2>
@@ -178,7 +178,7 @@ canvas {
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <img src="images/ppc.webp" class="rounded" alt="">
+                        <img src="images/advertising/ppc.webp" class="rounded" alt="">
                     </div>
                     <div class="info text-center">
                         <div class="icon">
@@ -193,7 +193,7 @@ canvas {
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <img src="images/remarketing.webp" class="rounded" alt="">
+                        <img src="images/advertising/remarketing.webp" class="rounded" alt="">
                     </div>
                     <div class="info text-center">
                         <div class="icon">
@@ -208,7 +208,7 @@ canvas {
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <img src="images/smm.webp" class="rounded" alt="">
+                        <img src="images/advertising/smm.webp" class="rounded" alt="">
                     </div>
                     <div class="info text-center">
                         <div class="icon">
@@ -223,11 +223,11 @@ canvas {
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <img src="images/brand.webp" class="rounded" alt="">
+                        <img src="images/advertising/brand.webp" class="rounded" alt="">
                     </div>
                     <div class="info text-center">
                         <div class="icon">
-                            <i class="now-ui-icons fa fa-diamond"></i>
+                            <i class="now-ui-icons fas fa-gem"></i>
                         </div>
                         <h4 class="info-title">Brand Awareness</h4>
                         <p class="description">Make sure your customers know your brand</p>
