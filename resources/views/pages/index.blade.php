@@ -115,11 +115,11 @@
     </div>
   </div>
   <!--     *********   SIMPLE SOCIAL LINE     *********      -->
-  <div class="section section-components" data-background-color="dark-red">
+  <div class="section section-components bg-indexcase">
     <div class="container">
       <div class="row">
         <div class="col-md-8 ml-auto mr-auto">
-          <h2 class="text-center title">Agency Case Studies
+          <h2 class="text-center title" style="color: #fff;">Agency Case Studies
             <br>
             <small class="description">Created with passion</small>
           </h2>
@@ -244,7 +244,7 @@
       </div>
     </div>
   </div>
-  <div class="subscribe-line subscribe-line-image" style="background-image: url('/images/img/bg7.jpg');">
+  <div class="subscribe-line subscribe-line-image" style="background-image: url('/images/index/hexagonred.webp'); background-color: rgba(255,255,255,0.2);">
     <div class="container">
       <div class="row">
         <div class="col-md-6 ml-auto mr-auto">

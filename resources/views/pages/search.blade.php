@@ -54,7 +54,7 @@ canvas {
           <div class="row">
             <div class="col-md-8 ml-auto mr-auto text-center">
               <h2 class="title">Professional SEO Services <br>That Boost Your Business</h2>
-              <h5 class="description">WellKnown is a perfect SEO company to make your business rapidly grow up. If you want to raise FREE Conversions and Traffic to your Website, we can provide you a SEO Campaign with the best solutions to your particular case, that will help you expand your business n the Internet.</h4>
+              <h5 class="description">WellKnown is a perfect SEO company to make your business rapidly grow up. If you want to raise FREE Conversions and Traffic to your Website, we can provide you a SEO Campaign with the best solutions to your particular case, that will help you expand your business in the Internet.</h4>
             </div>
           </div>
           <div class="row">
@@ -92,7 +92,7 @@ canvas {
                   </div>
                   <div class="description">
                     <h4 class="info-title">Reporting</h4>
-                    <p>We provide you with weeekly and monthly reports about your positions in Search.</p>
+                    <p>Weeekly and monthly reports about your positions in Search.</p>
                   </div>
                 </div>
               </div>
