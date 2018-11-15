@@ -36,8 +36,6 @@ class CreateLeadsTable extends Migration
             $table->foreign('status_id')->references('id')->on('statuses')->onDelete('cascade');
             $table->integer('source_id')->unsigned()->index()->nullable();
             $table->foreign('source_id')->references('id')->on('sources')->onDelete('cascade');
-            $table->integer('service_id')->unsigned()->index()->default('1');
-            $table->foreign('service_id')->references('id')->on('services')->onDelete('cascade');
             $table->timestamps();
         });
     }

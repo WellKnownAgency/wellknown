@@ -69209,6 +69209,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -69372,9 +69373,11 @@ var render = function() {
                   { attrs: { tag: "tbody", name: "slide-fade" } },
                   _vm._l(_vm.leads, function(lead) {
                     return _c("tr", { key: lead.id }, [
-                      _c("td", [_vm._v(_vm._s(lead.first_name))]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(lead.last_name))]),
+                      _c("td", [
+                        _vm._v(
+                          _vm._s(lead.first_name) + " " + _vm._s(lead.last_name)
+                        )
+                      ]),
                       _vm._v(" "),
                       _c("td", [_vm._v(_vm._s(lead.phone))]),
                       _vm._v(" "),
@@ -69444,38 +69447,58 @@ var render = function() {
                       ]),
                       _vm._v(" "),
                       _c("td", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-info btn-sm",
-                            attrs: {
-                              "data-toggle": "modal",
-                              "data-target": "#leadshow"
+                        _c("span", { staticStyle: { float: "right" } }, [
+                          _c(
+                            "button",
+                            {
+                              staticClass: "btn btn-warning btn-sm",
+                              attrs: {
+                                "data-toggle": "modal",
+                                "data-target": "#services"
+                              },
+                              on: {
+                                click: function($event) {
+                                  $event.preventDefault()
+                                  _vm.showlead(lead)
+                                }
+                              }
                             },
-                            on: {
-                              click: function($event) {
-                                $event.preventDefault()
-                                _vm.showlead(lead)
+                            [_vm._v("Services")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "button",
+                            {
+                              staticClass: "btn btn-info btn-sm",
+                              attrs: {
+                                "data-toggle": "modal",
+                                "data-target": "#leadshow"
+                              },
+                              on: {
+                                click: function($event) {
+                                  $event.preventDefault()
+                                  _vm.showlead(lead)
+                                }
                               }
-                            }
-                          },
-                          [_vm._v("View")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-danger btn-sm delete",
-                            attrs: { type: "button" },
-                            on: {
-                              click: function($event) {
-                                $event.preventDefault()
-                                _vm.deleteLead(lead)
+                            },
+                            [_vm._v("View")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "button",
+                            {
+                              staticClass: "btn btn-danger btn-sm delete",
+                              attrs: { type: "button" },
+                              on: {
+                                click: function($event) {
+                                  $event.preventDefault()
+                                  _vm.deleteLead(lead)
+                                }
                               }
-                            }
-                          },
-                          [_vm._v("Delete")]
-                        )
+                            },
+                            [_vm._v("Delete")]
+                          )
+                        ])
                       ])
                     ])
                   })
@@ -69696,15 +69719,7 @@ var staticRenderFns = [
     return _c("thead", [
       _c("tr", [
         _c("th", [
-          _vm._v("First Name  "),
-          _c("i", {
-            staticClass: "fas fa-sort",
-            staticStyle: { float: "right" }
-          })
-        ]),
-        _vm._v(" "),
-        _c("th", [
-          _vm._v("Last Name  "),
+          _vm._v("First and Last Name  "),
           _c("i", {
             staticClass: "fas fa-sort",
             staticStyle: { float: "right" }

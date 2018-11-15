@@ -14,4 +14,10 @@ class Lead extends Model
     {
         return $this->belongsTo('App\Status');
     }
+
+  public function services()
+  {
+    return $this->belongsToMany('App\Services');
+  }
+
 }
