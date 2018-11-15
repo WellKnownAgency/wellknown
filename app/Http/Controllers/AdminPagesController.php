@@ -36,5 +36,10 @@ class AdminPagesController extends Controller
     return view('admin.categories.index');
     }
 
+    public function settings()
+    {
+    return view('admin.settings');
+    }
+
 
 }

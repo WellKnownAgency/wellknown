@@ -38,6 +38,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
   Route::resource('sources', 'SourcesController', [
     'except' => ['create']
   ]);
+  Route::resource('services', 'ServiceController', [
+    'except' => ['create']
+  ]);
   Route::resource('companies', 'CompaniesController', [
     'except' => ['create']
   ]);

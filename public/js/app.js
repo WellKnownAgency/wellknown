@@ -33050,6 +33050,7 @@ Vue.component('clients', __webpack_require__(169));
 Vue.component('posts', __webpack_require__(172));
 Vue.component('categories', __webpack_require__(175));
 Vue.component('notifications', __webpack_require__(178));
+Vue.component('settings', __webpack_require__(193));
 
 Vue.component('example-component', __webpack_require__(186));
 
@@ -71324,6 +71325,1127 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 190 */,
+/* 191 */,
+/* 192 */,
+/* 193 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(194)
+/* template */
+var __vue_template__ = __webpack_require__(195)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/Settings.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-3a09080e", Component.options)
+  } else {
+    hotAPI.reload("data-v-3a09080e", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 194 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_sweetalert2__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_sweetalert2__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+var moment = __webpack_require__(0);
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mounted: function mounted() {
+    this.fetchSource();
+    this.fetchStatus();
+    this.fetchService();
+  },
+  data: function data() {
+    return {
+      moment: moment,
+      sources: [],
+      source: {
+        id: '',
+        name: '',
+        created_at: ''
+      },
+      statuses: [],
+      status: {
+        id: '',
+        name: '',
+        created_at: ''
+      },
+      services: [],
+      service: {
+        id: '',
+        name: '',
+        created_at: ''
+      }
+    };
+  },
+
+  methods: {
+    fetchSource: function fetchSource() {
+      var _this = this;
+
+      axios.get('/api/sources').then(function (res) {
+        _this.sources = res.data;
+      }).catch(function (err) {
+        console.log(err);
+      });
+    },
+    fetchStatus: function fetchStatus() {
+      var _this2 = this;
+
+      axios.get('/api/statuses').then(function (res) {
+        _this2.statuses = res.data;
+      }).catch(function (err) {
+        console.log(err);
+      });
+    },
+    fetchService: function fetchService() {
+      var _this3 = this;
+
+      axios.get('/api/services').then(function (res) {
+        _this3.services = res.data;
+      }).catch(function (err) {
+        console.log(err);
+      });
+    },
+    createSource: function createSource() {
+      var _this4 = this;
+
+      axios.post('/api/sources', this.source).then(function (res) {
+        _this4.sources.unshift(res.data);
+        _this4.source.name = '';
+      }).then(function (res) {
+        _this4.fetchSource();
+      }).then(function (res) {
+        __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
+          type: 'success',
+          title: 'Yeah',
+          text: 'Source successfully created!'
+        });
+      }).catch(function (err) {
+        console.log(err);
+        __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
+          type: 'error',
+          title: 'Ooops...',
+          text: 'Something went wrong!'
+        });
+      });
+    },
+    deleteSource: function deleteSource(source) {
+      var _this5 = this;
+
+      __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
+        title: 'Are you sure?',
+        type: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, Delete!'
+      }).then(function (result) {
+        if (result.value) {
+          __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()('Deleted!');
+          axios.delete('/api/sources/' + source.id).then(function (res) {
+            var sourceIndex = _this5.sources.indexOf(source);
+            _this5.sources.splice(sourceIndex, 1);
+          }).then(function (res) {
+            _this5.fetchSource();
+          });
+        }
+      });
+    },
+    createStatus: function createStatus() {
+      var _this6 = this;
+
+      axios.post('/api/statuses', this.status).then(function (res) {
+        _this6.statuses.unshift(res.data);
+        _this6.status.name = '';
+      }).then(function (res) {
+        _this6.fetchStatus();
+      }).then(function (res) {
+        __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
+          type: 'success',
+          title: 'Yeah',
+          text: 'Status successfully created!'
+        });
+      }).catch(function (err) {
+        console.log(err);
+        __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
+          type: 'error',
+          title: 'Ooops...',
+          text: 'Something went wrong!'
+        });
+      });
+    },
+    deleteStatus: function deleteStatus(status) {
+      var _this7 = this;
+
+      __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
+        title: 'Are you sure?',
+        type: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, Delete!'
+      }).then(function (result) {
+        if (result.value) {
+          __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()('Deleted!');
+          axios.delete('/api/statuses/' + status.id).then(function (res) {
+            var statusIndex = _this7.statuses.indexOf(status);
+            _this7.statuses.splice(statusIndex, 1);
+          }).then(function (res) {
+            _this7.fetchStatus();
+          });
+        }
+      });
+    },
+    createService: function createService() {
+      var _this8 = this;
+
+      axios.post('/api/services', this.service).then(function (res) {
+        _this8.services.unshift(res.data);
+        _this8.service.name = '';
+      }).then(function (res) {
+        _this8.fetchService();
+      }).then(function (res) {
+        __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
+          type: 'success',
+          title: 'Yeah',
+          text: 'Service successfully created!'
+        });
+      }).catch(function (err) {
+        console.log(err);
+        __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
+          type: 'error',
+          title: 'Ooops...',
+          text: 'Something went wrong!'
+        });
+      });
+    },
+    deleteService: function deleteService(service) {
+      var _this9 = this;
+
+      __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
+        title: 'Are you sure?',
+        type: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, Delete!'
+      }).then(function (result) {
+        if (result.value) {
+          __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()('Deleted!');
+          axios.delete('/api/services/' + service.id).then(function (res) {
+            var serviceIndex = _this9.services.indexOf(service);
+            _this9.services.splice(serviceIndex, 1);
+          }).then(function (res) {
+            _this9.fetchStatus();
+          });
+        }
+      });
+    }
+  }
+});
+
+/***/ }),
+/* 195 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { attrs: { id: "content-wrapper" } }, [
+    _c("div", { staticClass: "container-fluid" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-9" }, [
+          _c(
+            "div",
+            { staticClass: "accordion", attrs: { id: "accordionExample" } },
+            [
+              _c("div", { staticClass: "card" }, [
+                _vm._m(1),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: {
+                      id: "collapseOne",
+                      "aria-labelledby": "headingOne",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c(
+                        "ul",
+                        { staticClass: "list-group list-group-flush" },
+                        _vm._l(_vm.sources, function(source) {
+                          return _c(
+                            "li",
+                            { key: source.id, staticClass: "list-group-item" },
+                            [
+                              _vm._v(
+                                "\n                    " +
+                                  _vm._s(source.name) +
+                                  "\n                    "
+                              ),
+                              _c(
+                                "button",
+                                {
+                                  staticClass: "btn btn-danger btn-sm delete",
+                                  staticStyle: { float: "right" },
+                                  on: {
+                                    click: function($event) {
+                                      $event.preventDefault()
+                                      _vm.deleteSource(source)
+                                    }
+                                  }
+                                },
+                                [_vm._v("Delete")]
+                              )
+                            ]
+                          )
+                        })
+                      )
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card" }, [
+                _vm._m(2),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: {
+                      id: "collapseTwo",
+                      "aria-labelledby": "headingTwo",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c(
+                        "ul",
+                        { staticClass: "list-group list-group-flush" },
+                        _vm._l(_vm.statuses, function(status) {
+                          return _c(
+                            "li",
+                            { key: status.id, staticClass: "list-group-item" },
+                            [
+                              _vm._v(
+                                "\n                " +
+                                  _vm._s(status.name) +
+                                  "\n                "
+                              ),
+                              _c(
+                                "button",
+                                {
+                                  staticClass: "btn btn-danger btn-sm delete",
+                                  staticStyle: { float: "right" },
+                                  on: {
+                                    click: function($event) {
+                                      $event.preventDefault()
+                                      _vm.deleteStatus(status)
+                                    }
+                                  }
+                                },
+                                [_vm._v("Delete")]
+                              )
+                            ]
+                          )
+                        })
+                      )
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card" }, [
+                _vm._m(3),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: {
+                      id: "collapseThree",
+                      "aria-labelledby": "headingThree",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c(
+                        "ul",
+                        { staticClass: "list-group list-group-flush" },
+                        _vm._l(_vm.services, function(service) {
+                          return _c(
+                            "li",
+                            { key: service.id, staticClass: "list-group-item" },
+                            [
+                              _vm._v(
+                                "\n                    " +
+                                  _vm._s(service.name) +
+                                  "\n                    "
+                              ),
+                              _c(
+                                "button",
+                                {
+                                  staticClass: "btn btn-danger btn-sm delete",
+                                  staticStyle: { float: "right" },
+                                  on: {
+                                    click: function($event) {
+                                      $event.preventDefault()
+                                      _vm.deleteService(service)
+                                    }
+                                  }
+                                },
+                                [_vm._v("Delete")]
+                              )
+                            ]
+                          )
+                        })
+                      )
+                    ])
+                  ]
+                )
+              ])
+            ]
+          )
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "modal fade bd-example-modal-lg",
+        attrs: {
+          id: "addsource",
+          tabindex: "-1",
+          role: "dialog",
+          "aria-labelledby": "leadid",
+          "aria-hidden": "true"
+        }
+      },
+      [
+        _c(
+          "div",
+          { staticClass: "modal-dialog", attrs: { role: "document" } },
+          [
+            _c("div", { staticClass: "modal-content" }, [
+              _vm._m(4),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-body" }, [
+                _c("div", { staticClass: "container" }, [
+                  _c("form", { attrs: { method: "", autocomplete: "nope" } }, [
+                    _c("div", { staticClass: "col" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass: "col-form-label",
+                          attrs: { for: "first_name" }
+                        },
+                        [_vm._v("Name:")]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.source.name,
+                            expression: "source.name"
+                          }
+                        ],
+                        staticClass: "form-control",
+                        attrs: {
+                          type: "text",
+                          id: "first_name",
+                          autocomplete: "nope"
+                        },
+                        domProps: { value: _vm.source.name },
+                        on: {
+                          keydown: function($event) {
+                            if (
+                              !("button" in $event) &&
+                              _vm._k(
+                                $event.keyCode,
+                                "enter",
+                                13,
+                                $event.key,
+                                "Enter"
+                              )
+                            ) {
+                              return null
+                            }
+                            return _vm.createSource($event)
+                          },
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(_vm.source, "name", $event.target.value)
+                          }
+                        }
+                      })
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-footer" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-secondary",
+                    attrs: { type: "button", "data-dismiss": "modal" }
+                  },
+                  [_vm._v("Close")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-primary",
+                    attrs: { type: "button", "data-dismiss": "modal" },
+                    on: {
+                      click: function($event) {
+                        _vm.createSource()
+                      }
+                    }
+                  },
+                  [_vm._v("Save changes")]
+                )
+              ])
+            ])
+          ]
+        )
+      ]
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "modal fade bd-example-modal-lg",
+        attrs: {
+          id: "addstatus",
+          tabindex: "-1",
+          role: "dialog",
+          "aria-labelledby": "leadid",
+          "aria-hidden": "true"
+        }
+      },
+      [
+        _c(
+          "div",
+          { staticClass: "modal-dialog", attrs: { role: "document" } },
+          [
+            _c("div", { staticClass: "modal-content" }, [
+              _vm._m(5),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-body" }, [
+                _c("div", { staticClass: "container" }, [
+                  _c("form", { attrs: { method: "", autocomplete: "nope" } }, [
+                    _c("div", { staticClass: "col" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass: "col-form-label",
+                          attrs: { for: "first_name" }
+                        },
+                        [_vm._v("Name:")]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.status.name,
+                            expression: "status.name"
+                          }
+                        ],
+                        staticClass: "form-control",
+                        attrs: {
+                          type: "text",
+                          id: "first_name",
+                          autocomplete: "nope"
+                        },
+                        domProps: { value: _vm.status.name },
+                        on: {
+                          keydown: function($event) {
+                            if (
+                              !("button" in $event) &&
+                              _vm._k(
+                                $event.keyCode,
+                                "enter",
+                                13,
+                                $event.key,
+                                "Enter"
+                              )
+                            ) {
+                              return null
+                            }
+                            return _vm.createStatus($event)
+                          },
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(_vm.status, "name", $event.target.value)
+                          }
+                        }
+                      })
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-footer" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-secondary",
+                    attrs: { type: "button", "data-dismiss": "modal" }
+                  },
+                  [_vm._v("Close")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-primary",
+                    attrs: { type: "button", "data-dismiss": "modal" },
+                    on: {
+                      click: function($event) {
+                        _vm.createStatus()
+                      }
+                    }
+                  },
+                  [_vm._v("Save changes")]
+                )
+              ])
+            ])
+          ]
+        )
+      ]
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "modal fade bd-example-modal-lg",
+        attrs: {
+          id: "addservice",
+          tabindex: "-1",
+          role: "dialog",
+          "aria-labelledby": "leadid",
+          "aria-hidden": "true"
+        }
+      },
+      [
+        _c(
+          "div",
+          { staticClass: "modal-dialog", attrs: { role: "document" } },
+          [
+            _c("div", { staticClass: "modal-content" }, [
+              _vm._m(6),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-body" }, [
+                _c("div", { staticClass: "container" }, [
+                  _c("form", { attrs: { method: "", autocomplete: "nope" } }, [
+                    _c("div", { staticClass: "col" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass: "col-form-label",
+                          attrs: { for: "first_name" }
+                        },
+                        [_vm._v("Name:")]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.service.name,
+                            expression: "service.name"
+                          }
+                        ],
+                        staticClass: "form-control",
+                        attrs: {
+                          type: "text",
+                          id: "first_name",
+                          autocomplete: "nope"
+                        },
+                        domProps: { value: _vm.service.name },
+                        on: {
+                          keydown: function($event) {
+                            if (
+                              !("button" in $event) &&
+                              _vm._k(
+                                $event.keyCode,
+                                "enter",
+                                13,
+                                $event.key,
+                                "Enter"
+                              )
+                            ) {
+                              return null
+                            }
+                            return _vm.createService($event)
+                          },
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(_vm.service, "name", $event.target.value)
+                          }
+                        }
+                      })
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-footer" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-secondary",
+                    attrs: { type: "button", "data-dismiss": "modal" }
+                  },
+                  [_vm._v("Close")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-primary",
+                    attrs: { type: "button", "data-dismiss": "modal" },
+                    on: {
+                      click: function($event) {
+                        _vm.createService()
+                      }
+                    }
+                  },
+                  [_vm._v("Save changes")]
+                )
+              ])
+            ])
+          ]
+        )
+      ]
+    )
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("ol", { staticClass: "breadcrumb" }, [
+      _c("li", { staticClass: "breadcrumb-item" }, [
+        _c("a", { attrs: { href: "#" } }, [_vm._v("Dashboard")])
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "breadcrumb-item active" }, [_vm._v("Settings")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "card-header", attrs: { id: "headingOne" } },
+      [
+        _c("h5", { staticClass: "mb-0" }, [
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-link",
+              staticStyle: { float: "left" },
+              attrs: {
+                type: "button",
+                "data-toggle": "collapse",
+                "data-target": "#collapseOne",
+                "aria-expanded": "false",
+                "aria-controls": "collapseOne"
+              }
+            },
+            [_vm._v("\n                  Sources\n                ")]
+          )
+        ]),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-success",
+            staticStyle: { float: "right" },
+            attrs: { "data-toggle": "modal", "data-target": "#addsource" }
+          },
+          [_vm._v("Add Source")]
+        )
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "card-header", attrs: { id: "headingTwo" } },
+      [
+        _c("h5", { staticClass: "mb-0" }, [
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-link collapsed",
+              staticStyle: { float: "left" },
+              attrs: {
+                type: "button",
+                "data-toggle": "collapse",
+                "data-target": "#collapseTwo",
+                "aria-expanded": "false",
+                "aria-controls": "collapseTwo"
+              }
+            },
+            [_vm._v("\n              Statuses\n            ")]
+          )
+        ]),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-success",
+            staticStyle: { float: "right" },
+            attrs: { "data-toggle": "modal", "data-target": "#addstatus" }
+          },
+          [_vm._v("Add Status")]
+        )
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "card-header", attrs: { id: "headingThree" } },
+      [
+        _c("h5", { staticClass: "mb-0" }, [
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-link collapsed",
+              staticStyle: { float: "left" },
+              attrs: {
+                type: "button",
+                "data-toggle": "collapse",
+                "data-target": "#collapseThree",
+                "aria-expanded": "false",
+                "aria-controls": "collapseThree"
+              }
+            },
+            [_vm._v("\n                  Services\n                ")]
+          )
+        ]),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-success",
+            staticStyle: { float: "right" },
+            attrs: { "data-toggle": "modal", "data-target": "#addservice" }
+          },
+          [_vm._v("Add Service")]
+        )
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "modal-header" }, [
+      _c("h5", { staticClass: "modal-title" }, [_vm._v("Add Source")]),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "close",
+          attrs: {
+            type: "button",
+            "data-dismiss": "modal",
+            "aria-label": "Close"
+          }
+        },
+        [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "modal-header" }, [
+      _c("h5", { staticClass: "modal-title" }, [_vm._v("Add Status")]),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "close",
+          attrs: {
+            type: "button",
+            "data-dismiss": "modal",
+            "aria-label": "Close"
+          }
+        },
+        [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "modal-header" }, [
+      _c("h5", { staticClass: "modal-title" }, [_vm._v("Add Service")]),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "close",
+          attrs: {
+            type: "button",
+            "data-dismiss": "modal",
+            "aria-label": "Close"
+          }
+        },
+        [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
+      )
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-3a09080e", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

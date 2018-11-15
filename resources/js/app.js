@@ -20,6 +20,7 @@ Vue.component('clients', require('./components/Clients.vue'));
 Vue.component('posts', require('./components/Posts.vue'));
 Vue.component('categories', require('./components/Categories.vue'));
 Vue.component('notifications', require('./components/Notifications.vue'));
+Vue.component('settings', require('./components/Settings.vue'));
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 

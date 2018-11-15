@@ -19,6 +19,7 @@ Route::prefix('admin')->middleware('auth:admin')->group(function() {
   Route::get('/posts/create', 'PostController@create');
   Route::get('/posts/{id}/edit', 'PostController@edit');
   Route::post('/posts/{id}','PostController@update');
+  Route::get('/settings', 'AdminPagesController@settings');
 
   Route::post('/notification/get', 'NotificationController@get');
   Route::post('/notification/read', 'NotificationController@read');
