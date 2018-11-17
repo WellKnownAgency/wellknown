@@ -9897,7 +9897,7 @@ img {
   left: 0;
   top: 0;
   content: "";
-  background-color: rgba(0, 0, 0, 0.66);
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 .subscribe-line.subscribe-line-image .container {
@@ -10850,7 +10850,7 @@ img {
 }
 
 .bg-indexcase {
-  background: #450c10;
+  background: #2c2c2c;
 }
 
 .bg-primaryy {
@@ -12683,4 +12683,3 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
-
