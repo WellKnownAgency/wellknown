@@ -50,6 +50,9 @@ select.form-control:not([size]):not([multiple]) {
 [v-cloak] {
     display: none;
   }
+	.input-group-text {
+		color: #fff!important;
+	}
 </style>
 @stop
 @section('content')
