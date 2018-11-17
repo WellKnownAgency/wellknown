@@ -55,6 +55,10 @@ class PagesController extends Controller
     return view('pages/contactus');
   }
 
+  public function blogIndex() {
+    return view('blog/index');
+  }
+
   public function postContactus(Request $request) {
     $this->validate($request, [
       'first_name' => 'required',

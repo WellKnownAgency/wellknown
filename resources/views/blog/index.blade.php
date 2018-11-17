@@ -17,6 +17,28 @@
 
 @section('content')
 <div class="wrapper">
+  <div class="page-header page-header-small">
+    <div class="page-header-image" data-parallax="true" style="background-image: url('../assets/img/bg44.jpg');">
+    </div>
+
+    <div class="content-center">
+		<div class="row">
+			<div class="col-md-8 ml-auto mr-auto text-center">
+				<h2 class="title">WellKnown Business and Marketing Blog</h2>
+                <a href="#button" class="btn btn-primary btn-round  btn-icon">
+               <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#button" class="btn btn-primary btn-round  btn-icon">
+               <i class="fab fa-facebook-f"></i>
+           </a>
+           <a href="#button" class="btn btn-primary btn-round  btn-icon">
+              <i class="fab fa-linkedin-in"></i>
+          </a>
+			</div>
+		</div>
+	</div>
+
+</div>
   <div class="blogs-1" id="blogs-1">
 
       <div class="container">
