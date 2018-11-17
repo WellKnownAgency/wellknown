@@ -55,19 +55,19 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
+          <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/WKnownMarketing" target="_blank">
             <i class="fab fa-twitter wk-icons"></i>
             <p class="d-lg-none d-xl-none">Twitter</p>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank">
+          <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/WellKnown-153425045259276/" target="_blank">
             <i class="fab fa-facebook wk-icons"></i>
             <p class="d-lg-none d-xl-none">Facebook</p>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" rel="tooltip" title="Follow us on Linkedin" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
+          <a class="nav-link" rel="tooltip" title="Follow us on Linkedin" data-placement="bottom" href="https://www.linkedin.com/company/wellknown/" target="_blank">
             <i class="fab fa-linkedin-in wk-icons"></i>
             <p class="d-lg-none d-xl-none">Instagram</p>
           </a>
