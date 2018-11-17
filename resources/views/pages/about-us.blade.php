@@ -12,7 +12,7 @@
 
 @section('content')
 <div class="page-header header-filter">
-  <div class="page-header-image" style="background-image: url('images/img/bg16.jpg');"></div>
+  <div class="page-header-image" style="background-image: url('images/about-bg.webp');"></div>
   <div class="container">
     <div class="row">
       <div class="col-md-7 ml-auto text-right">
