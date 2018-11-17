@@ -41,5 +41,9 @@ class AdminPagesController extends Controller
     return view('admin.settings');
     }
 
+    public function seo()
+    {
+    return view('admin.seo.index');
+    }
 
 }

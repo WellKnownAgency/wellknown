@@ -13,8 +13,14 @@
     </a>
     <div class="dropdown-menu" aria-labelledby="pagesDropdown">
       <a class="dropdown-item" href="/admin/leads">Leads</a>
-      <a class="dropdown-item" href="/admin/clients">Clients</a>
+      <a class="dropdown-item" href="/admin/clients">Customers</a>
     </div>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link" href="/admin/seo" id="pagesDropdown">
+      <i class="fas fa-fw fa-folder"></i>
+      <span>SEO</span>
+    </a>
   </li>
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
