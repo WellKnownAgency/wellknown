@@ -24,7 +24,7 @@
     <div class="content-center">
 		<div class="row">
 			<div class="col-md-8 ml-auto mr-auto text-center">
-				<h2 class="title">WellKnown Business and Marketing Blog</h2>
+				<h2 class="title">WellKnown<br> Business and Marketing<br> Blog</h2>
                 <a href="#button" class="btn btn-primary btn-round  btn-icon">
                <i class="fab fa-twitter"></i>
             </a>

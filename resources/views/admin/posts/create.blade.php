@@ -47,28 +47,41 @@
                   <input type="text" class="form-control" name="slug" id="slug" placeholder="Slug">
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="category_id">Category</label>
-                  <input type="text" class="form-control" name="category_id" id="category_id" placeholder="Category">
+                  <label for="inputState">Category</label>
+                  <select id="inputState" class="form-control" name="category_id">
+                    @foreach ($categories as $category)
+                    <option value="{{$category->id}}">{{ $category->name }}</option>
+                    @endforeach
+                  </select>
                 </div>
               </div>
               <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="metatitle">Featured</label>
-                  <input type="text" name="featured" class="form-control" id="featured" placeholder="Meta Title">
-                </div>
+
                 <div class="form-group col-md-6">
                   <label for="dscr">Description</label>
                   <input type="text" class="form-control" name="dscr" id="dscr" placeholder="Description">
                 </div>
+                <div class="form-group col-md-6">
+                  <label for="defaultCheck1">
+                    Featured
+                  </label>
+                  <div class="form-check">
+                    <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="1" aria-label="...">
+                  </div>
+                </div>
               </div>
               <div class="form-row">
               <div class="form-group col-md-6">
-                <label for="image">Upload Image (000x000)</label>
+                <label for="image">Upload Image (900x600)</label>
                 <input type="file" class="form-control-file" name="img" id="image">
               </div>
               <div class="form-group col-md-6">
-                <label for="status">Status</label>
-                <input type="text" class="form-control" name="status" id="status">
+                <label for="inputState">Status</label>
+                <select id="inputState" class="form-control" name="status">
+                  <option value="DRAFT" selected>Draft</option>
+                  <option value="PENDING">Pending</option>
+                  <option value="PUBLISHED">Published</option>
+                </select>
               </div>
               </div>
               <div class="form-group">
@@ -76,8 +89,8 @@
                 <input type="text" class="form-control" name="excerpt" id="excerpt">
               </div>
               <div class="form-group">
-                <label for="body">Body</label>
-                <textarea class="form-control" id="Body" name="body" rows="7"></textarea>
+                <label for="text">Body</label>
+                <textarea class="form-control" id="text" name="body" rows="20"></textarea>
               </div>
 
               <button type="submit" class="btn btn-success">Create</button>
@@ -89,3 +102,22 @@
   </div>
 </div>
 @stop
+@section('customjs')
+<script>
+  tinymce.init({
+         selector: "textarea",
+         language: 'ru',
+         plugins: [
+             "advlist autolink lists link image charmap print preview hr anchor pagebreak",
+             "searchreplace wordcount visualblocks visualchars code fullscreen",
+             "insertdatetime media nonbreaking save table contextmenu directionality",
+             "emoticons template paste textcolor colorpicker textpattern"
+         ],
+         file_browser_callback: function(field_name, url, type, win) {
+            // trigger file upload form
+            if (type == 'image') $('#formUpload input').click();
+        }
+       });
+</script>
+@stop
+@include('mceImageUpload::upload_form')
