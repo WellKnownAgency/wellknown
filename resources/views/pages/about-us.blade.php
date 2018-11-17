@@ -29,7 +29,7 @@
           <a href="#pablo" class="btn btn-icon btn-link btn-neutral btn-lg">
             <i class="fab fa-linkedin"></i>
           </a>
-          <a href="#pablo" class="btn btn-primary btn-lg mr-3">
+          <a href="#wellknown" class="btn btn-primary btn-lg mr-3">
             Read More
           </a>
         </div>
@@ -38,11 +38,11 @@
   </div>
 </div>
 
-<div class="about-team team-4">
+<div class="about-team team-4" id="wellknown">
   <div class="container">
     <div class="row">
       <div class="col-md-8 ml-auto mr-auto text-center">
-        <h2 class="title">We are WellKnown Professionals</h2>
+        <h2 class="title" >We are WellKnown Professionals</h2>
         <h4 class="description">Here is our small team of professionals who creates everything we do in our Agency.</h4>
       </div>
     </div>

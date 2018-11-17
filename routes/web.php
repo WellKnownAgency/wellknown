@@ -28,7 +28,6 @@ Route::prefix('admin')->middleware('auth:admin')->group(function() {
 });
 
 /* Main Pages */
-Route::get('/test', 'PagesController@getTest');
 Route::get('/', 'PagesController@index');
 Route::get('/', 'PagesController@getIndex');
 Route::get('advertising', 'PagesController@getAdvertising');
@@ -38,8 +37,9 @@ Route::get('web-design', 'PagesController@getWebdesign');
 Route::get('about-us', 'PagesController@getAboutus');
 Route::get('your-form-submitted', 'PagesController@getYourformsubmitted');
 Route::get('privacy-policy', 'PagesController@getPrivacypolicy');
-Route::get('/sitemap.xml', 'PagesController@sitemap');
+Route::get('sitemap.xml', 'PagesController@sitemap');
 Route::get('contact-us', 'PagesController@getContactus');
+Route::get('blog', 'PagesController@gBlogIndex');
 
 /* Auth Routes */
 Auth::routes();
