@@ -8590,7 +8590,7 @@ img {
 }
 
 .page-header:before {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .page-header > .container {
@@ -9303,13 +9303,13 @@ img {
 }
 
 .header-filter[filter-color="orange"] {
-  background: rgba(44, 44, 44, 0.1);
+  background: rgba(44, 44, 44, 0.2);
   /* For browsers that do not support gradients */
   /* For Safari 5.1 to 6.0 */
   /* For Opera 11.1 to 12.0 */
   /* For Firefox 3.6 to 15 */
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(44, 44, 44, 0.2)), to(rgba(224, 23, 3, 0.6)));
-  background: linear-gradient(0deg, rgba(44, 44, 44, 0.1), rgba(220, 65, 55, 0.7));
+  background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6));
   /* Standard syntax */
 }
 
@@ -9897,7 +9897,7 @@ img {
   left: 0;
   top: 0;
   content: "";
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.66);
 }
 
 .subscribe-line.subscribe-line-image .container {
@@ -10850,7 +10850,7 @@ img {
 }
 
 .bg-indexcase {
-  background: #2c2c2c;
+  background: #450c10;
 }
 
 .bg-primaryy {
@@ -11033,6 +11033,11 @@ img {
 
 .icon.icon-primary {
   color: #dc3741;
+}
+
+.dropdown-item .active-a {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0.1875rem;
 }
 
 .tim-row {
@@ -12683,3 +12688,4 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
+

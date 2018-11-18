@@ -18,7 +18,7 @@
 @section('content')
 <div class="wrapper">
   <div class="page-header page-header-small">
-    <div class="page-header-image" data-parallax="true" style="background-image: url('../assets/img/bg44.jpg');">
+    <div class="page-header-image" data-parallax="true" style="background-image: url('../images/blog/blog-bg.webp');">
     </div>
 
     <div class="content-center">
@@ -45,26 +45,26 @@
           <div class="row">
 
               <div class="col-md-10 ml-auto mr-auto">
-                  <h2 class="title">Latest Blogposts</h2>
+                  <h2 class="title">Latest Posts</h2>
 
                   <br>
                   <div class="card card-plain card-blog">
                       <div class="row">
                           <div class="col-md-5">
                               <div class="card-image">
-                                  <img class="img img-raised rounded" src="assets/img/examples/card-blog4.jpg">
+                                  <img class="img img-raised rounded" src="images/post1.jpeg">
                               </div>
                           </div>
                           <div class="col-md-7">
-                              <h6 class="category text-info mt-3">Enterprise</h6>
+                              <h6 class="category text-info mt-3">WEB DESIGN AND DEV</h6>
                               <h3 class="card-title">
-                                  <a href="#pablo">Warner Music Group buys concert discovery service Songkick</a>
+                                  <a href="#pablo">HOW MUCH YOU CAN EARN AS A WEB DESIGNER OR DEVELOPER?</a>
                               </h3>
                               <p class="card-description">
-                                  Warner Music Group announced today it’s acquiring the selected assets of the music platform Songkick, including its app for finding concerts and the company’s trademark. Songkick has been involved in a lawsuit against the major… <a href="#pablo"> Read More </a>
+                                  Web Designers are working on the internet to make, create, and codes web for different companies, individuals, and industries. These web pages contain information about different things like if the web is designed for any company… <a href="#pablo"> Read More </a>
                               </p>
                               <p class="author">
-                                  by <a href="#pablo"><b>Sarah Perez</b></a>, 2 days ago
+                                  by <a href="#pablo"><b>Taras Kim</b></a>, 2 days ago
 
                           </p></div>
                       </div>
@@ -74,22 +74,21 @@
                       <div class="row">
                           <div class="col-md-7">
                               <h6 class="category text-danger">
-                                  <i class="now-ui-icons now-ui-icons media-2_sound-wave"></i> Startup
+                                  SOCIAL MEDIA
                               </h6>
                               <h3 class="card-title">
-                                  <a href="#pablo">Insticator raises $5.2M to help publishers</a>
+                                  <a href="#pablo">FASCINATING AND INTERESTING SOCIAL MEDIA: WHICH SOCIAL MEDIA SITE TO USE</a>
                               </h3>
                               <p class="card-description">
-                                  Insticator is announcing that it has raised $5.2 million in Series A funding. The startup allows online publishers to add quizzes, polls and other interactive elements (either created by Insticator or by the publisher themselves) to their stories.<a href="#pablo"> Read More </a>
+                                  In the growing and developing a society of today almost each and every person likes to and consider it essential to use social media in which there are so many different applications like Facebook, WhatsApp, LinkedIn, YouTube, Instagram, and Twitter. The people of every age group...<a href="#pablo"> Read More </a>
                               </p>
                               <p class="author">
-                                  by <a href="#pablo"><b>Anthony Ha</b></a>, 5 days ago
+                                  by <a href="#pablo"><b>Anton Likhnekevich</b></a>, 5 days ago
 
                           </p></div>
                           <div class="col-md-5">
                               <div class="card-image">
-                                  <img class="img img-raised rounded
-                                  " src="assets/img/examples/card-blog6.jpg">
+                                  <img class="img img-raised rounded" src="images/post2.jpeg">
                               </div>
                           </div>
                       </div>
