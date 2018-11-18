@@ -9897,7 +9897,7 @@ img {
   left: 0;
   top: 0;
   content: "";
-  background-color: rgba(0, 0, 0, 0.66);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .subscribe-line.subscribe-line-image .container {
@@ -12688,4 +12688,3 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
-
