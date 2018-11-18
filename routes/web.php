@@ -39,7 +39,10 @@ Route::get('your-form-submitted', 'PagesController@getYourformsubmitted');
 Route::get('privacy-policy', 'PagesController@getPrivacypolicy');
 Route::get('sitemap.xml', 'PagesController@sitemap');
 Route::get('contact-us', 'PagesController@getContactus');
+
+/* Blog */
 Route::get('blog', 'PagesController@blogIndex');
+Route::get('/blog/{slug}', ['as' => 'blog.single', 'uses' => 'PagesController@getSingle' ]) -> where('slug', '[\w\d\-\_]+');
 
 /* Auth Routes */
 Auth::routes();

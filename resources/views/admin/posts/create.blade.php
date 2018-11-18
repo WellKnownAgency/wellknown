@@ -2,7 +2,7 @@
 @section('dscr', '')
 @section('keywords', '')
 
-@extends('admin.main')
+@extends('admin.maincrud')
 
 @section('content')
 <div id="content-wrapper">
@@ -120,4 +120,3 @@
        });
 </script>
 @stop
-@include('mceImageUpload::upload_form')

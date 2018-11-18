@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('layout.mainblog')
 
 @section('title', 'Digital Agency - Advertising | Marketing | Web Design - WellKnown ')
 
@@ -13,6 +13,11 @@
 
 @section('customcss')
 <meta property="og:image" content="/images/sem.jpg" />
+<style>
+.pagination {
+  justify-content: center !important;
+}
+</style>
 @stop
 
 @section('content')
@@ -37,71 +42,42 @@
 			</div>
 		</div>
 	</div>
-
-</div>
-  <div class="blogs-1" id="blogs-1">
-
-      <div class="container">
-          <div class="row">
-
-              <div class="col-md-10 ml-auto mr-auto">
-                  <h2 class="title">Latest Blogposts</h2>
-
-                  <br>
-                  <div class="card card-plain card-blog">
-                      <div class="row">
-                          <div class="col-md-5">
-                              <div class="card-image">
-                                  <img class="img img-raised rounded" src="assets/img/examples/card-blog4.jpg">
-                              </div>
-                          </div>
-                          <div class="col-md-7">
-                              <h6 class="category text-info mt-3">Enterprise</h6>
-                              <h3 class="card-title">
-                                  <a href="#pablo">Warner Music Group buys concert discovery service Songkick</a>
-                              </h3>
-                              <p class="card-description">
-                                  Warner Music Group announced today it’s acquiring the selected assets of the music platform Songkick, including its app for finding concerts and the company’s trademark. Songkick has been involved in a lawsuit against the major… <a href="#pablo"> Read More </a>
-                              </p>
-                              <p class="author">
-                                  by <a href="#pablo"><b>Sarah Perez</b></a>, 2 days ago
-
-                          </p></div>
-                      </div>
-                  </div>
-
-                  <div class="card card-plain card-blog">
-                      <div class="row">
-                          <div class="col-md-7">
-                              <h6 class="category text-danger">
-                                  <i class="now-ui-icons now-ui-icons media-2_sound-wave"></i> Startup
-                              </h6>
-                              <h3 class="card-title">
-                                  <a href="#pablo">Insticator raises $5.2M to help publishers</a>
-                              </h3>
-                              <p class="card-description">
-                                  Insticator is announcing that it has raised $5.2 million in Series A funding. The startup allows online publishers to add quizzes, polls and other interactive elements (either created by Insticator or by the publisher themselves) to their stories.<a href="#pablo"> Read More </a>
-                              </p>
-                              <p class="author">
-                                  by <a href="#pablo"><b>Anthony Ha</b></a>, 5 days ago
-
-                          </p></div>
-                          <div class="col-md-5">
-                              <div class="card-image">
-                                  <img class="img img-raised rounded
-                                  " src="assets/img/examples/card-blog6.jpg">
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-
-              </div>
-
-          </div>
-
-
-
-      </div>
   </div>
+  <div class="container">
+    <div class="section">
+      <div class="row">
+    @foreach($posts as $post)
+    <div class="col-md-4">
+        <div class="card card-plain card-blog">
+            <div class="card-image">
+                <a href="/blog/{{ $post->slug }}">
+                    <img class="img rounded img-raised" src="/images/blog/{{ $post->image }}">
+                </a>
+            </div>
+
+            <div class="card-body">
+                <h6 class="category text-info">{{ $post->category['name'] }}</h6>
+                <h4 class="card-title">
+                    <a href="/blog/{{ $post->slug }}">{{ $post->title }}</a>
+                </h4>
+                <p class="card-description">
+                    {{ str_limit($post->excerpt, 100) }} <a href="/blog/{{ $post->slug }}"> Read More </a>
+                    </p>
+                      <div class="author">
+                        <span></span>
+                      </div>
+                <p>
+                </p>
+            </div>
+        </div>
+    </div>
+    @endforeach
+  </div>
+  <div class="justify-content-center">
+    {{ $posts->links() }}
+  </div>
+    </div>
+  </div>
+
 </div>
 @stop

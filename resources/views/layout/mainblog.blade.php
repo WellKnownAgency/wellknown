@@ -9,7 +9,6 @@
 		<!-- Page Content -->
 		<div class="presentation-page">
 			@yield('content')
-			@include('partials/_upfooter')
 			@include('partials/_footer')
 		</div>
 

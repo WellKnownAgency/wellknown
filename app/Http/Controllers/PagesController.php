@@ -56,7 +56,8 @@ class PagesController extends Controller
   }
 
   public function blogIndex() {
-    return view('blog/index');
+    $posts = Post::latest()->with('category')->where('status', 'PUBLISHED')->paginate(9);
+    return view('blog/index')->withPosts($posts);
   }
 
   public function postContactus(Request $request) {
@@ -111,10 +112,16 @@ class PagesController extends Controller
 
   }
 
-	public function sitemap()
-{
-    $posts = Post::orderBy('updated_at', 'DESC')->get();
-    return response()->view('pages.sitemap', compact('posts'))->header('Content-Type', 'text/xml');
-}
+  	public function sitemap()
+  {
+      $posts = Post::orderBy('updated_at', 'DESC')->get();
+      return response()->view('pages.sitemap', compact('posts'))->header('Content-Type', 'text/xml');
+  }
+
+  public function getSingle($slug) {
+    $post = Post::where('slug', '=', $slug)->first();
+    $posts = Post::latest()->limit(3)->get();
+    return view('blog.single')->withPost($post)->withPosts($posts);
+  }
 
 }

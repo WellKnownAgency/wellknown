@@ -2,7 +2,7 @@
   <div class="container">
     <div class="navbar-translate">
       <a class="navbar-brand" href="/" rel="tooltip" title="WellKnown Agency" data-placement="bottom">
-        <img src="images/wk.jpg" width="100" />
+        <img src="/images/wk.jpg" width="100" />
       </a>
       <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-bar top-bar"></span>

@@ -7,7 +7,7 @@
 	<body class="index-page sidebar-collapse">
 		@include('partials/_nav')
 		<!-- Page Content -->
-		<div class="presentation-page">
+		<div id="app" class="presentation-page">
 			@yield('content')
 			@include('partials/_upfooter')
 			@include('partials/_footer')
