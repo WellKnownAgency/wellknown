@@ -12,21 +12,21 @@
     </div>
     <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="./assets/img/blurred-image-1.jpg">
       <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="/">
+        <li class="nav-item {{ Request::is('/') ?"active" : ""}}">
+          <a class="nav-link " href="/">
             <i class="fa fa-home wk-icons"></i>
             <p>Home</p>
           </a>
         </li>
         <li class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" data-toggle="dropdown">
+          <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" data-toggle="dropdown" >
             <p>Services</p>
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink1">
-            <a class="dropdown-item" href="/advertising">
+            <a class="dropdown-item {{ Request::is('advertising') ?"active-a" : ""}}" href="/advertising">
               <i class="fa fa-bullhorn wk-icons"></i> <span>Advertising</span>
             </a>
-            <a class="dropdown-item" href="/search-engine-optimization">
+            <a class="dropdown-item {{ Request::is('search') ?"active-a" : ""}}" href="/search-engine-optimization">
               <i class="fa fa-search wk-icons"></i>  <span>Search</span>
             </a>
               <!--
@@ -34,23 +34,23 @@
                 <i class="fa fa-share wk-icons"></i>  <span>Social</span>
               </a>
             -->
-            <a class="dropdown-item" href="/web-design">
+            <a class="dropdown-item {{ Request::is('web-design') ?"active-a" : ""}}" href="/web-design">
               <i class="fa fa-code wk-icons"></i>  <span>Web Design and Dev</span>
             </a>
           </div>
         </li>
-        <li class="nav-item">
+        <li class="nav-item {{ Request::is('contact-us') ?"active" : ""}}">
           <a class="nav-link" href="/contact-us">
             <p>contact us</p>
           </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item {{ Request::is('about-us') ?"active" : ""}}">
           <a class="nav-link" href="/about-us">
             <p>about us</p>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/">
+        <li class="nav-item {{ Request::is('blog') ?"active" : ""}}">
+          <a class="nav-link" href="/blog">
             <p>blog</p>
           </a>
         </li>
