@@ -14,11 +14,15 @@ class CreateLeadServiceTable extends Migration
     public function up()
     {
         Schema::create('lead_service', function (Blueprint $table) {
-          $table->increments('id');
           $table->integer('lead_id')->unsigned();
-          $table->foreign('lead_id')->references('id')->on('leads')->onDelete('cascade');
           $table->integer('service_id')->unsigned();
-          $table->foreign('service_id')->references('id')->on('services')->onDelete('cascade');
+
+          $table->foreign('lead_id')->references('id')->on('leads')
+              ->onUpdate('cascade')->onDelete('cascade');
+          $table->foreign('service_id')->references('id')->on('services')
+              ->onUpdate('cascade')->onDelete('cascade');
+
+          $table->primary(['lead_id', 'service_id']);
         });
     }
 

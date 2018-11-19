@@ -52,3 +52,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
   Route::resource('categories', 'CategoryController');
+
+  Route::get('seo-projects', 'SeoProjectController@index')->name('seo-projects');
+  Route::post('seo-projects', 'SeoProjectController@store')->name('seo-projects-store');
+  Route::delete('seo-projects/{seoProject}', 'SeoProjectController@destroy')->name('seo-projects-destroy');
+
