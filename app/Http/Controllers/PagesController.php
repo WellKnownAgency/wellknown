@@ -19,24 +19,23 @@ class PagesController extends Controller
   }
 
    public function getIndex() {
-	   return view('pages/index');
+     $posts = Post::latest()->with('category')->where('status', 'PUBLISHED')->take(3)->get();
+	   return view('pages/index')->withPosts($posts);
    }
 
 	public function getAdvertising() {
-		return view('pages/advertising');
+    $posts = Post::latest()->with('category')->where('status', 'PUBLISHED')->take(3)->get();
+		return view('pages/advertising')->withPosts($posts);
 	}
 
 	public function getSearch() {
-		return view('pages/search');
+    $posts = Post::latest()->with('category')->where('status', 'PUBLISHED')->take(3)->get();
+		return view('pages/search')->withPosts($posts);
 	}
-
-	public function getSocial() {
-		return view('pages/social');
-	}
-
 
 	public function getWebdesign() {
-		return view('pages/web-design');
+    $posts = Post::latest()->with('category')->where('status', 'PUBLISHED')->take(3)->get();
+		return view('pages/web-design')->withPosts($posts);
 	}
 
 	public function getAboutus() {
@@ -57,6 +56,14 @@ class PagesController extends Controller
 
   public function fancyflowers() {
     return view('pages/case/fancyflowers');
+  }
+
+  public function borntomove() {
+    return view('pages/case/goborntomove');
+  }
+
+  public function omdarling() {
+    return view('pages/case/omdarling');
   }
 
   public function blogIndex() {

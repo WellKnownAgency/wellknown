@@ -12,8 +12,7 @@
 			@include('partials/_upfooter')
 			@include('partials/_footer')
 		</div>
-
 		@include('partials/_js')
-@yield('customjs')
+		@yield('customjs')
 	</body>
 </html>

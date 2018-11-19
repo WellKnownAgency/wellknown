@@ -1,13 +1,17 @@
 @extends('layout.main')
 
-@section('title', 'Digital Marketing and Advertising Agency | Full Service')
+@section('title', 'Fancy Flowers | WellKnown Agency Case Studies')
 
-@section('description', 'Our Marketing and Advertisng Agency is ready to provide you with any online digital services for your small business company. Customer Support - Get a Free Consultation.')
+@section('description', 'Fancy Flowers is a flower delivery business in Philadelphia. Our team at WellKnown Agency create a Ecomerce website with all the functionality and managed SEO.')
 
-@section('keywords', 'Digital Marketing, Online marketing, marketing Agency, Advertising Agency,  Marketing services')
+@section('keywords', '')
 
 @section('preload')
-<link rel="preload" href="images/bgmain/sem.jpg" as="image">
+<link rel="preload" href="/images/ffmain.webp" as="image">
+@stop
+
+@section('customcss')
+<meta property="og:image" content="/images/ffmain.webp" />
 @stop
 
 @section('content')
@@ -18,7 +22,7 @@
       <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center" style="margin-top: 100px;">
               <h1 class="title">Fancy Flowers</h1>
-              <h3>Fully created Online flower store</h3>
+              <h3>Fully created Online Flowers Delivery store</h3>
           </div>
       </div>
   </div>
@@ -43,16 +47,16 @@
               <h5 class="card-title">Services</h5>
               <div class="row">
                 <div class="col-md-6">
-                  <ul>
-                    <li><a href="http://127.0.0.1:8000/web-design">Web Development</a></li>
-                    <li><a href="http://127.0.0.1:8000/web-design">Web Design</a></li>
-                    <li><a href="http://127.0.0.1:8000/search-engine-optimization">Search Engine Optimization</a></li>
+                  <ul style="list-style:none; padding-left: 0;">
+                    <li><a href="/web-design">Web Development</a></li>
+                    <li><a href="/web-design">Web Design</a></li>
+                    <li><a href="/search-engine-optimization">Search Engine Optimization</a></li>
                   </ul>
                 </div>
                 <div class="col-md-6">
-                  <ul>
-                    <li><a href="http://127.0.0.1:8000/search-engine-optimization">Content Marketing</a></li>
-                    <li><a href="http://127.0.0.1:8000/advertising">Advertising</a></li>
+                  <ul style="list-style:none; padding-left: 0;">
+                    <li><a href="/search-engine-optimization">Content Marketing</a></li>
+                    <li><a href="/advertising">Advertising</a></li>
                   </ul>
                 </div>
               </div>
@@ -81,6 +85,8 @@
       </div>
   </div>
   </div>
+  <br>
+  <div class="container"><hr></div>
   <br>
   <div class="container">
     <div class="card" width="100%">

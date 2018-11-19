@@ -131,9 +131,9 @@
         <div class="col-md-3 offset-md-1">
           <div class="card-container first-card">
             <div class="card-component">
-              <a href="index.html#basic-elements" target="_blank">
+              <a href="/fancy-flowers" target="_blank">
                 <div class="front">
-                  <img src="images/img/presentation-page/basic_thumb.jpg">
+                  <img src="/images/fflowermain.webp">
                 </div>
               </a>
             </div>
@@ -142,9 +142,9 @@
         <div class="col-md-3">
           <div class="card-container second-card">
             <div class="card-component">
-              <a href="index.html#cards" target="_blank">
+              <a href="/born-to-move" target="_blank">
                 <div class="front">
-                  <img src="images/img/presentation-page/cards_thumb.jpg">
+                  <img src="/images/btmpagem.webp">
                 </div>
               </a>
             </div>
@@ -153,9 +153,9 @@
         <div class="col-md-3">
           <div class="card-container third-card">
             <div class="card-component">
-              <a href="sections.html" target="_blank">
+              <a href="/omdarling" target="_blank">
                 <div class="front">
-                  <img src="images/img/presentation-page/sections_thumb.jpg">
+                  <img src="/images/omdarlingmain.webp">
                 </div>
               </a>
             </div>
@@ -172,77 +172,34 @@
         </h3>
       </div>
       <div class="row">
+        @foreach( $posts as $post )
         <div class="col-md-6 col-lg-4">
           <div class="card card-blog card-plain">
             <div class="card-image">
-              <a href="#pablo">
-                <img class="img img-raised rounded" src="/images/img/examples/card-blog6.jpg">
+              <a href="/blog/{{ $post->slug }}">
+                <img class="img img-raised rounded" src="/images/blog/{{ $post->image }}">
               </a>
             </div>
             <div class="card-body text-center">
               <h6 class="category text-danger">
-                <i class="now-ui-icons media-2_sound-wave"></i> Business
+                <i class="now-ui-icons media-2_sound-wave"></i> {{ $post->category['name'] }}
               </h6>
               <h5 class="card-title">
-                <a href="#nuk">Axel Springer Spends $343M To Buy Business Insider</a>
+                <a href="#nuk">{{ $post->title }}</a>
               </h5>
               <p class="card-description">
-                German media giant Axel Springer has announced it’s acquiring online business news publication Business Inside...
+                {{ str_limit($post->excerpt, 100) }}
               </p>
               <div class="card-footer">
-                <a href="#nuk" class="btn btn-primary">Read Article</a>
+                <a href="/blog/{{ $post->slug }}" class="btn btn-primary">Read Article</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card card-blog card-plain">
-            <div class="card-image">
-              <a href="#pablo">
-                <img class="img img-raised rounded" src="/images/img/examples/card-blog6.jpg">
-              </a>
-            </div>
-            <div class="card-body text-center">
-              <h6 class="category text-danger">
-                <i class="now-ui-icons media-2_sound-wave"></i> Business
-              </h6>
-              <h5 class="card-title">
-                <a href="#nuk">Axel Springer Spends $343M To Buy Business Insider</a>
-              </h5>
-              <p class="card-description">
-                German media giant Axel Springer has announced it’s acquiring online business news publication Business Inside...
-              </p>
-              <div class="card-footer">
-                <a href="#nuk" class="btn btn-primary">Read Article</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card card-blog card-plain">
-            <div class="card-image">
-              <a href="#pablo">
-                <img class="img img-raised rounded" src="/images/img/examples/card-blog6.jpg">
-              </a>
-            </div>
-            <div class="card-body text-center">
-              <h6 class="category text-danger">
-                <i class="now-ui-icons media-2_sound-wave"></i> Business
-              </h6>
-              <h5 class="card-title">
-                <a href="#nuk">Axel Springer Spends $343M To Buy Business Insider</a>
-              </h5>
-              <p class="card-description">
-                German media giant Axel Springer has announced it’s acquiring online business news publication Business Inside...
-              </p>
-              <div class="card-footer">
-                <a href="#nuk" class="btn btn-primary">Read Article</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        @endforeach
       </div>
     </div>
   </div>
+
 </div>
 @stop
