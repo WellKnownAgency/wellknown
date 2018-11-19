@@ -98,8 +98,8 @@ canvas {
                   </div>
                   <div class="row">
                     <div class="col-md-12">
-                      <div class="card" style="width: 100%">
-                        <img class="card-img-top" src="images/img/ad1.jpg" alt="Card image cap">
+                      <div class="center" style="width: 450px; text-align:center;">
+                        <img src="images/advertising/ideas.webp" alt="Card image cap" style="margin-left:auto; margin-right:auto; display:block;">
                       </div>
                     </div>
                   </div>
@@ -116,8 +116,8 @@ canvas {
                   </div>
                   <div class="row">
                     <div class="col-md-12">
-                      <div class="card" style="width: 100%">
-                        <img class="card-img-top" src="images/img/ad2.jpg" alt="Card image cap">
+                      <div class="" style="width: 450px">
+                        <img class="" src="images/advertising/strategy.webp" alt="Card image cap">
                       </div>
                     </div>
                   </div>
@@ -134,8 +134,8 @@ canvas {
   								</div>
                   <div class="row">
                     <div class="col-md-12">
-                      <div class="card" style="width: 100%">
-                        <img class="card-img-top" src="images/img/ad3.jpg" alt="Card image cap">
+											<div class="" style="width: 450px">
+                        <img class="" src="images/advertising/creating.webp" alt="Card image cap">
                       </div>
                     </div>
                   </div>
@@ -152,8 +152,8 @@ canvas {
                   </div>
                   <div class="row">
                     <div class="col-md-12">
-                      <div class="card" style="width: 100%">
-                        <img class="card-img-top" src="images/img/ad4.jpg" alt="Card image cap">
+											<div class="" style="width: 450px">
+                        <img class="" src="images/advertising/managing.webp" alt="Card image cap">
                       </div>
                     </div>
                   </div>
