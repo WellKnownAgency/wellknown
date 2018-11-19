@@ -55,6 +55,10 @@ class PagesController extends Controller
     return view('pages/contactus');
   }
 
+  public function fancyflowers() {
+    return view('pages/case/fancyflowers');
+  }
+
   public function blogIndex() {
     $posts = Post::latest()->with('category')->where('status', 'PUBLISHED')->paginate(9);
     return view('blog/index')->withPosts($posts);

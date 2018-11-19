@@ -39,6 +39,7 @@ Route::get('your-form-submitted', 'PagesController@getYourformsubmitted');
 Route::get('privacy-policy', 'PagesController@getPrivacypolicy');
 Route::get('sitemap.xml', 'PagesController@sitemap');
 Route::get('contact-us', 'PagesController@getContactus');
+Route::get('fancyflowers', 'PagesController@fancyflowers');
 
 /* Blog */
 Route::get('blog', 'PagesController@blogIndex');

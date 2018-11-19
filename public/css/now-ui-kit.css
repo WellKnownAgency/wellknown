@@ -9897,7 +9897,7 @@ img {
   left: 0;
   top: 0;
   content: "";
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.66);
 }
 
 .subscribe-line.subscribe-line-image .container {
@@ -10837,6 +10837,12 @@ img {
   .index-page .page-header .category-absolute {
     margin-top: -330px;
   }
+}
+
+.header-filter[filter-color="fflowers"] {
+  background: rgba(44, 44, 44, 0.2);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(44, 44, 44, 0.2)), to(rgba(255, 140, 148, 0.6)));
+  background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(255, 140, 148, 0.6));
 }
 
 .btn-primary:hover {
@@ -12688,3 +12694,4 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
+
