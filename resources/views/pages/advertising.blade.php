@@ -99,7 +99,7 @@ canvas {
                   <div class="row">
                     <div class="col-md-12">
                       <div class="center" style="width: 450px; text-align:center;">
-                        <img src="images/advertising/ideas.webp" alt="Card image cap" style="margin-left:auto; margin-right:auto; display:block;">
+                        <img src="images/advertising/ideas.jpg" alt="Card image cap" style="margin-left:auto; margin-right:auto; display:block;">
                       </div>
                     </div>
                   </div>
@@ -117,7 +117,7 @@ canvas {
                   <div class="row">
                     <div class="col-md-12">
                       <div class="" style="width: 450px">
-                        <img class="" src="images/advertising/strategy.webp" alt="Card image cap">
+                        <img class="" src="images/advertising/strategy.jpg" alt="Card image cap">
                       </div>
                     </div>
                   </div>
@@ -135,7 +135,7 @@ canvas {
                   <div class="row">
                     <div class="col-md-12">
 											<div class="" style="width: 450px">
-                        <img class="" src="images/advertising/creating.webp" alt="Card image cap">
+                        <img class="" src="images/advertising/creating.jpg" alt="Card image cap">
                       </div>
                     </div>
                   </div>
@@ -153,7 +153,7 @@ canvas {
                   <div class="row">
                     <div class="col-md-12">
 											<div class="" style="width: 450px">
-                        <img class="" src="images/advertising/managing.webp" alt="Card image cap">
+                        <img class="" src="images/advertising/managing.jpg" alt="Card image cap">
                       </div>
                     </div>
                   </div>
@@ -166,7 +166,7 @@ canvas {
 		</div>
 	</div>
 </div>
-<div class="features-8 section-image" style="background-image: url('images/advertising/bg-1.webp')">
+<div class="features-8 section-image" style="background-image: url('images/advertising/bg-1.jpg')">
 
     <div class="col-md-8 ml-auto mr-auto text-center">
         <h2 class="title">Types of Online Advertising</h2>
@@ -178,7 +178,7 @@ canvas {
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <img src="images/advertising/ppc.webp" class="rounded" alt="">
+                        <img src="images/advertising/ppc.jpg" class="rounded" alt="">
                     </div>
                     <div class="info text-center">
                         <div class="icon">
@@ -193,7 +193,7 @@ canvas {
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <img src="images/advertising/remarketing.webp" class="rounded" alt="">
+                        <img src="images/advertising/remarketing.jpg" class="rounded" alt="">
                     </div>
                     <div class="info text-center">
                         <div class="icon">
@@ -208,7 +208,7 @@ canvas {
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <img src="images/advertising/smm.webp" class="rounded" alt="">
+                        <img src="images/advertising/smm.jpg" class="rounded" alt="">
                     </div>
                     <div class="info text-center">
                         <div class="icon">
@@ -223,7 +223,7 @@ canvas {
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <img src="images/advertising/brand.webp" class="rounded" alt="">
+                        <img src="images/advertising/brand.jpg" class="rounded" alt="">
                     </div>
                     <div class="info text-center">
                         <div class="icon">

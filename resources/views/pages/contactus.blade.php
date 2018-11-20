@@ -57,7 +57,7 @@ select.form-control:not([size]):not([multiple]) {
 @stop
 @section('content')
 <div class="page-header header-filter" filter-color="orange">
-        <div class="page-header-image" style="background-image:url(images/contact-us.webp)"></div>
+        <div class="page-header-image" style="background-image:url(images/contact-us.jpg)"></div>
         <div class="content">
             <div class="container">
                 <div class="col-md-5 ml-auto mr-auto">

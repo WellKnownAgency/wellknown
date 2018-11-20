@@ -73,13 +73,13 @@
           </div>
       </div>
   </div>
-  <div class="section section-content" data-background-color="black">
+  <div class="section section-content" style="background-image: url('../images/webdesign/bg-2.webp');">
     <div class="container">
       <div class="row">
         <div class="col-md-5">
           <div class="image-container">
-            <img class="img img-raised rounded img-comments rellax" data-rellax-speed="1" src="/images/test3.webp">
-            <img class="img img-raised rounded img-blog rellax" data-rellax-speed="4" src="images/test2.webp">
+            <img class="img img-raised rounded img-comments rellax" data-rellax-speed="1" src="/images/phil1.jpg">
+            <img class="img img-raised rounded img-blog rellax" data-rellax-speed="4" src="images/phil2.jpg">
           </div>
         </div>
         <div class="col-md-4 ml-auto mr-auto">

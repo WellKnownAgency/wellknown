@@ -63,7 +63,7 @@ canvas {
   </div>
 		<!-- Steps -->
 
-      <div class="features-7 section-image" style="background-image: url('images/webdesign/bg-2.webp')">
+      <div class="features-7 section-image" style="background-image: url('images/webdesign/bg-2.jpg')">
         <div class="col-md-8 mr-auto ml-auto text-center">
           <h2 class="title">Our Steps to Build Your Website</h2>
           <h4 class="description">WellKnown Agency is providing a full service in web design & development and help your business to obtain gorgeous Internet profile.</h4>
@@ -122,7 +122,7 @@ canvas {
         </div>
         <div class="row">
           <div class="col-md-5 ml-auto">
-            <div class="card card-background card-background-product card-raised" style="background-image: url('../images/webdesign/design.webp')">
+            <div class="card card-background card-background-product card-raised" style="background-image: url('../images/webdesign/design.jpg')">
               <div class="card-body">
                 <h2 class="card-title">Web Design</h2>
                 <p class="card-description">
@@ -207,7 +207,7 @@ canvas {
             </div>
           </div>
           <div class="col-md-5 mr-auto">
-            <div class="card card-background card-background-product card-raised" style="background-image: url('../images/webdesign/development.webp')">
+            <div class="card card-background card-background-product card-raised" style="background-image: url('../images/webdesign/development.jpg')">
               <div class="card-body">
                 <h2 class="card-title">Web Development</h2>
                 <p class="card-description text-white">
@@ -231,59 +231,46 @@ canvas {
         </div>
         <div class="row">
           <div class="col-md-6 px-0">
-            <div class="card card-background card-background-product card-no-shadow" style="background-image: url('images/img/project1.jpg')">
+            <div class="card card-background card-background-product card-no-shadow" style="background-image: url('/images/ffmain.jpg')">
               <div class="card-body">
-                <h6 class="category">History</h6>
+                <h6 class="category">Web Design & Development</h6>
                 <h3 class="card-title">
-                  The City Lost & Found
+                  Fancy Flowers
                 </h3>
                 <p class="card-description">
-                  Developed on the occasion of an exhibition of the same name, The City Lost & Found: Capturing New York...
+                  Fully created Online Flowers Delivery store...
                 </p>
-                <a href="#pablo" class="btn btn-danger btn-round">
-                  <i class="now-ui-icons ui-1_send"></i> View Book
+                <a href="/fancy-flowers" target="_blank" class="btn btn-danger btn-round">
+                  <i class="now-ui-icons ui-1_send"></i> View Case
                 </a>
               </div>
             </div>
           </div>
           <div class="col-md-6 px-0">
-            <div class="card card-raised card-background card-background-product card-no-shadow" style="background-image: url('images/img/project18.jpg')">
+            <div class="card card-raised card-background card-background-product card-no-shadow" style="background-image: url('/images/omdarling.jpg')">
               <div class="card-body">
-                <h6 class="category">Satire</h6>
-                <h3 class="card-title">A Confederacy of Dunces</h3>
+                <h6 class="category">Web Design & Development</h6>
+                <h3 class="card-title">OmDarling</h3>
                 <p class="card-description">
-                  Satires, in the most basic definition, are works making fun of some sort of person or institution...
+                  Personal Blog...
                 </p>
-                <a href="#pablo" class="btn btn-neutral btn-round">
-                  <i class="now-ui-icons ui-1_send"></i> View more
+                <a href="/omdarling" target="_blank" class="btn btn-danger btn-round">
+                  <i class="now-ui-icons ui-1_send"></i> View case
                 </a>
               </div>
             </div>
           </div>
+
           <div class="col-md-6 px-0">
-            <div class="card card-background card-background-product card-no-shadow" style="background-image: url('images/img/project20.jpg')">
+            <div class="card card-background card-background-product card-no-shadow" style="background-image: url('/images/btmmain.jpg')">
               <div class="card-body">
-                <h6 class="category">Fiction</h6>
-                <h3 class="card-title">The Sun Also Rises</h3>
+                <h6 class="category">Web Design & Development</h6>
+                <h3 class="card-title">Born to Move</h3>
                 <p class="card-description">
-                  The most commonly read works are works of fiction. Fiction books are ones that have been made up...
+                  Moving Company Website with High Quality SEO...
                 </p>
-                <a href="#pablo" class="btn btn-neutral btn-round">
-                  <i class="now-ui-icons ui-1_send"></i> Read Now
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 px-0">
-            <div class="card card-background card-background-product card-no-shadow" style="background-image: url('images/img/project19.jpg')">
-              <div class="card-body">
-                <h6 class="category">Basic Civitas</h6>
-                <h3 class="card-title">The Right Mistake</h3>
-                <p class="card-description">
-                  Living in South Central L.A., Socrates Fortlow is a sixty-year-old ex-convict, still strong enough to kill men with...
-                </p>
-                <a href="#pablo" class="btn btn-danger btn-round">
-                  <i class="now-ui-icons ui-1_send"></i> Read Now
+                <a href="/born-to-move" target="_blank" class="btn btn-danger btn-round">
+                  <i class="now-ui-icons ui-1_send"></i> View case
                 </a>
               </div>
             </div>
