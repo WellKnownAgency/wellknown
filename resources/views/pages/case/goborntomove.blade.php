@@ -7,16 +7,16 @@
 @section('keywords', '')
 
 @section('preload')
-<link rel="preload" href="/images/btmmain.webp" as="image">
+<link rel="preload" href="/images/btmmain.jpg" as="image">
 @stop
 
 @section('customcss')
-<meta property="og:image" content="/images/btmmain.webp" />
+<meta property="og:image" content="/images/btmmain.jpg" />
 @stop
 
 @section('content')
 <div class="page-header header-filter " filter-color="borntomove">
-  <div class="page-header-image" style="background-image: url('/images/btmmain.webp');">
+  <div class="page-header-image" style="background-image: url('/images/btmmain.jpg');">
   </div>
   <div class="container">
       <div class="row">

@@ -2,21 +2,21 @@
 
 @section('title', 'OmDarling | WellKnown Agency Case Studies')
 
-@section('description', '')
+@section('description', 'OmDarling is a Personal Blog. Our team at WellKnown Agency created a Blog website with all the functionality and managed SEO and Advertising.')
 
-@section('keywords', 'OmDarling is a Personal Blog. Our team at WellKnown Agency created a Blog website with all the functionality and managed SEO and Advertising.')
+@section('keywords', '')
 
 @section('preload')
-<link rel="preload" href="/images/omdarling.webp" as="image">
+<link rel="preload" href="/images/omdarling.jpg" as="image">
 @stop
 
 @section('customcss')
-<meta property="og:image" content="/images/omdarling.webp" />
+<meta property="og:image" content="/images/omdarling.jpg" />
 @stop
 
 @section('content')
 <div class="page-header header-filter " filter-color="omdarling">
-  <div class="page-header-image" style="background-image: url('/images/omdarling.webp');">
+  <div class="page-header-image" style="background-image: url('/images/omdarling.jpg');">
   </div>
   <div class="container">
       <div class="row">

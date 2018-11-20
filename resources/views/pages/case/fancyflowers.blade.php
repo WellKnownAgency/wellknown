@@ -7,16 +7,16 @@
 @section('keywords', '')
 
 @section('preload')
-<link rel="preload" href="/images/ffmain.webp" as="image">
+<link rel="preload" href="/images/ffmain.jpg" as="image">
 @stop
 
 @section('customcss')
-<meta property="og:image" content="/images/ffmain.webp" />
+<meta property="og:image" content="/images/ffmain.jpg" />
 @stop
 
 @section('content')
 <div class="page-header header-filter " filter-color="fflowers">
-  <div class="page-header-image" style="background-image: url('/images/ffmain.webp');">
+  <div class="page-header-image" style="background-image: url('/images/ffmain.jpg');">
   </div>
   <div class="container">
       <div class="row">
