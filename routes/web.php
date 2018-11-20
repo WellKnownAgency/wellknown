@@ -29,14 +29,13 @@ Route::prefix('admin')->middleware('auth:admin')->group(function() {
 });
 
 /* Main Pages */
-Route::get('/', 'PagesController@index');
 Route::get('/', 'PagesController@getIndex');
 Route::get('advertising', 'PagesController@getAdvertising');
 Route::get('search-engine-optimization', 'PagesController@getSearch');
 Route::get('social-media-marketing', 'PagesController@getSocial');
 Route::get('web-design', 'PagesController@getWebdesign');
 Route::get('about-us', 'PagesController@getAboutus');
-Route::get('your-form-submitted', 'PagesController@getYourformsubmitted');
+/*Route::get('your-form-submitted', 'PagesController@getYourformsubmitted');*/
 Route::get('privacy-policy', 'PagesController@getPrivacypolicy');
 Route::get('sitemap.xml', 'PagesController@sitemap');
 Route::get('contact-us', 'PagesController@getContactus');
