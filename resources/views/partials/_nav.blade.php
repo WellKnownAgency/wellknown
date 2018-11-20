@@ -54,6 +54,7 @@
             <p>blog</p>
           </a>
         </li>
+
         <li class="nav-item">
           <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/WKnownMarketing" target="_blank">
             <i class="fab fa-twitter wk-icons"></i>
@@ -69,9 +70,15 @@
         <li class="nav-item">
           <a class="nav-link" rel="tooltip" title="Follow us on Linkedin" data-placement="bottom" href="https://www.linkedin.com/company/wellknown/" target="_blank">
             <i class="fab fa-linkedin-in wk-icons"></i>
-            <p class="d-lg-none d-xl-none">Instagram</p>
+            <p class="d-lg-none d-xl-none">LinkedIn</p>
           </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" rel="tooltip" title="Call Us" data-placement="bottom" href="tel:8572209555" style="font-size:20px; padding-top:5px;">
+            (857) 220-9555
+          </a>
+        </li>
+
       </ul>
     </div>
   </div>

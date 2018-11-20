@@ -11,7 +11,33 @@
 @stop
 
 @section('customcss')
-<meta property="og:image" content="/images/blog/{{ $post->image }}" />
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="http://www.wknown.com/blog/{{ $post->title }}">
+<meta itemprop="description" content="http://www.wknown.com/blog/{{ $post->dscr }}">
+<meta itemprop="image" content="http://www.wknown.com/images/blog/{{ $post->image }}">
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@WKnownMarketing">
+<meta name="twitter:title" content="http://www.wknown.com/blog/{{ $post->title }}">
+<meta name="twitter:description" content="http://www.wknown.com/blog/{{ $post->dscr }}">
+<meta name="twitter:creator" content="@taras_kim">
+<!-- Twitter summary card with large image must be at least 280x150px -->
+<meta name="twitter:image:src" content="http://www.wknown.com/images/blog/{{ $post->image }}">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="http://www.wknown.com/blog/{{ $post->title }}" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.wknown.com/blog/{{ $post->slug }}" />
+<meta property="og:image" content="http://www.wknown.com/images/blog/{{ $post->image }}" />
+<meta property="og:description" content="http://www.wknown.com/blog/{{ $post->dscr }}" />
+<meta property="og:site_name" content="WellKnown Agency" />
+<meta property="article:published_time" content="http://www.wknown.com/blog/{{ $post->created_at }}" />
+<meta property="article:modified_time" content="http://www.wknown.com/blog/{{ $post->updated_at }}" />
+<meta property="article:section" content="Article Section" />
+<meta property="article:tag" content="Marketing" />
+<meta property="fb:admins" content="153425045259276" />
+
 <style>
 .button-container {
   text-align: center;
@@ -43,17 +69,13 @@
         <div class="row">
             <div class="col-md-12">
               <div class="button-container">
-                  <a href="#pablo" class="btn btn-primary btn-round btn-lg">
-                      <i class="now-ui-icons text_align-left"></i> Read Article
-                  </a>
-
-                  <a href="#pablo" class="btn btn-icon btn-lg btn-twitter btn-round">
+                  <a id="shareb" href="https://twitter.com/intent/tweet?url={{ urlencode(Request::fullUrl()) }}" class="btn btn-icon btn-lg btn-twitter btn-round">
                       <i class="fab fa-twitter"></i>
                   </a>
-                  <a href="#pablo" class="btn btn-icon btn-lg btn-facebook btn-round">
+                  <a id="shareb" href="https://www.facebook.com/sharer.php?u={{ urlencode(Request::fullUrl()) }}" class="btn btn-icon btn-lg btn-facebook btn-round">
                       <i class="fab fa-facebook-square"></i>
                   </a>
-                  <a href="#pablo" class="btn btn-icon btn-lg btn-google btn-round">
+                  <a id="shareb" href="https://plus.google.com/share?url={{ urlencode(Request::fullUrl()) }}" class="btn btn-icon btn-lg btn-google btn-round">
                       <i class="fab fa-google"></i>
                   </a>
               </div>
@@ -77,114 +99,18 @@
 
                     <div class="row">
                         <div class="col-md-6">
-                            <a href="#pablo" class="btn btn-google btn-round pull-right">
-                                <i class="fab fa-google"></i> 232
+                            <a id="shareb" href="https://plus.google.com/share?url={{ urlencode(Request::fullUrl()) }}" class="btn btn-google btn-round pull-right">
+                                <i class="fab fa-google"></i>
                             </a>
-                            <a href="#pablo" class="btn btn-twitter btn-round pull-right">
-                                <i class="fab fa-twitter"></i> 910
+                            <a id="shareb" href="https://twitter.com/intent/tweet?url={{ urlencode(Request::fullUrl()) }}" class="btn btn-twitter btn-round pull-right">
+                                <i class="fab fa-twitter"></i>
                             </a>
-                            <a href="#pablo" class="btn btn-facebook btn-round pull-right">
-                                <i class="fab fa-facebook-square"></i> 872
+                            <a id="shareb" href="https://www.facebook.com/sharer.php?u={{ urlencode(Request::fullUrl()) }}" class="btn btn-facebook btn-round pull-right">
+                                <i class="fab fa-facebook-square"></i>
                             </a>
                         </div>
                     </div>
-
                     <hr>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="section section-comments">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 ml-auto mr-auto">
-                    <div class="media-area">
-                        <h3 class="title text-center">3 Comments</h3>
-                        <div class="media">
-                            <a class="pull-left" href="#pablo">
-                                <div class="avatar">
-                                    <img class="media-object img-raised" src="../assets/img/james.jpg" alt="...">
-                                </div>
-                            </a>
-                            <div class="media-body">
-                                <h5 class="media-heading">Tina Andrew <small class="text-muted">· 7 minutes ago</small></h5>
-
-                                <p>Chance too good. God level bars. I'm so proud of @LifeOfDesiigner #1 song in the country. Panda! Don't be scared of the truth because we need to restart the human foundation in truth I stand with the most humility. We are so blessed!</p>
-                                <p>All praises and blessings to the families of people who never gave up on dreams. Don't forget, You're Awesome!</p>
-
-                                <div class="media-footer">
-                                    <a href="#pablo" class="btn btn-primary btn-neutral pull-right" rel="tooltip" title="" data-original-title="Reply to Comment">
-                                        <i class="now-ui-icons ui-1_send"></i> Reply
-                                    </a>
-                                    <a href="#pablo" class="btn btn-danger btn-neutral pull-right">
-                                        <i class="now-ui-icons ui-2_favourite-28"></i> 243
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="media">
-                          <a class="pull-left" href="#pablo">
-                              <div class="avatar">
-                                 <img class="media-object img-raised" alt="Tim Picture" src="../assets/img/michael.jpg">
-                              </div>
-                          </a>
-                          <div class="media-body">
-                             <h5 class="media-heading">John Camber <small class="text-muted">· Yesterday</small></h5>
-
-                             <p>Hello guys, nice to have you on the platform! There will be a lot of great stuff coming soon. We will keep you posted for the latest news.</p>
-                             <p> Don't forget, You're Awesome!</p>
-
-                             <div class="media-footer">
-                                 <a href="#pablo" class="btn btn-primary btn-neutral pull-right" rel="tooltip" title="" data-original-title="Reply to Comment">
-                                     <i class="now-ui-icons ui-1_send"></i> Reply
-                                 </a>
-                                 <a href="#pablo" class="btn btn-danger btn-neutral pull-right">
-                                     <i class="now-ui-icons ui-2_favourite-28"></i> 25
-                                 </a>
-                             </div>
-                             <div class="media">
-                                  <a class="pull-left" href="#pablo">
-                                        <div class="avatar">
-                                            <img class="media-object img-raised" alt="64x64" src="../assets/img/julie.jpg">
-                                        </div>
-                                  </a>
-                                  <div class="media-body">
-                                        <h5 class="media-heading">Tina Andrew <small class="text-muted">· 2 Days Ago</small></h5>
-
-                                        <p>Hello guys, nice to have you on the platform! There will be a lot of great stuff coming soon. We will keep you posted for the latest news.</p>
-                                        <p> Don't forget, You're Awesome!</p>
-
-                                        <div class="media-footer">
-                                            <a href="#pablo" class="btn btn-primary btn-neutral pull-right" rel="tooltip" title="" data-original-title="Reply to Comment">
-                                                <i class="now-ui-icons ui-1_send"></i> Reply
-                                            </a>
-                                            <a href="#pablo" class="btn btn-danger btn-neutral pull-right">
-                                                <i class="now-ui-icons ui-2_favourite-28"></i> 2
-                                            </a>
-                                        </div>
-                                  </div>
-                              </div>
-                          </div>
-                        </div>
-                    </div>
-                      <h3 class="title text-center">Post your comment</h3>
-                      <div class="media media-post">
-                          <a class="pull-left author" href="#pablo">
-                              <div class="avatar">
-                                  <img class="media-object img-raised" alt="64x64" src="../assets/img/olivia.jpg">
-                              </div>
-                          </a>
-                          <div class="media-body">
-                                  <textarea class="form-control" placeholder="Write a nice reply or go home..." rows="4"></textarea>
-                                  <div class="media-footer">
-                                      <a href="#pablo" class="btn btn-primary pull-right">
-                                          <i class="now-ui-icons ui-1_send"></i> Reply
-                                      </a>
-                                  </div>
-                          </div>
-                      </div> <!-- end media-post -->
                 </div>
             </div>
         </div>
@@ -269,5 +195,33 @@
       </div>
     </div>
   </div>
-            </div>
+</div>
 @stop
+
+@section('customjs')
+<script>
+
+   var popupSize = {
+       width: 550,
+       height: 550
+   };
+
+   $(document).on('click', '#shareb', function(e){
+
+       var
+           verticalPos = Math.floor(($(window).width() - popupSize.width) / 2),
+           horisontalPos = Math.floor(($(window).height() - popupSize.height) / 2);
+
+       var popup = window.open($(this).prop('href'), 'social',
+           'width='+popupSize.width+',height='+popupSize.height+
+           ',left='+verticalPos+',top='+horisontalPos+
+           ',location=0,menubar=0,toolbar=0,status=0,scrollbars=1,resizable=1');
+
+       if (popup) {
+           popup.focus();
+           e.preventDefault();
+       }
+
+   });
+</script>
+@endsection

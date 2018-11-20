@@ -6,9 +6,6 @@
 
 @section('keywords', 'website design, simple crm and cms systems, website developers, responsive web design, web design and development')
 
-@section('preload')
-<link rel="preload" href="" as="image">
-@stop
 
 @section('customcss')
 <style>
@@ -66,7 +63,7 @@ canvas {
   </div>
 		<!-- Steps -->
 
-      <div class="features-7 section-image" style="background-image: url('images/img/bg11.jpg')">
+      <div class="features-7 section-image" style="background-image: url('images/webdesign/bg-2.webp')">
         <div class="col-md-8 mr-auto ml-auto text-center">
           <h2 class="title">Our Steps to Build Your Website</h2>
           <h4 class="description">WellKnown Agency is providing a full service in web design & development and help your business to obtain gorgeous Internet profile.</h4>

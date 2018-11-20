@@ -7,7 +7,7 @@
 @section('keywords', 'Digital Marketing, Online marketing, marketing Agency, Advertising Agency,  Marketing services')
 
 @section('preload')
-<link rel="preload" href="images/bgmain/sem.jpg" as="image">
+<link rel="preload" href="images/about-bg.webp" as="image">
 @stop
 
 @section('content')
@@ -20,15 +20,6 @@
         <h4 class="description">The begining of WellKnown Agency starts with people who started their carrier as Digital Marketers and Web Developers. And it still the same - it's all about people who work here.</h4>
         <br />
         <div class="buttons">
-          <a href="#pablo" class="btn btn-icon btn-link btn-neutral btn-lg">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#pablo" class="btn btn-icon btn-link btn-neutral btn-lg">
-            <i class="fab fa-facebook-square"></i>
-          </a>
-          <a href="#pablo" class="btn btn-icon btn-link btn-neutral btn-lg">
-            <i class="fab fa-linkedin"></i>
-          </a>
           <a href="#wellknown" class="btn btn-primary btn-lg mr-3">
             Read More
           </a>

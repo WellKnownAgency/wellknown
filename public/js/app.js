@@ -71237,7 +71237,7 @@ var render = function() {
                           "a",
                           {
                             staticClass: "btn btn-info btn-sm",
-                            attrs: { href: "" }
+                            attrs: { href: "/admin/posts/" + post.id + "/show" }
                           },
                           [_vm._v("View")]
                         ),
