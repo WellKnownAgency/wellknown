@@ -7,12 +7,12 @@
 @section('keywords', 'Digital Marketing, Online marketing, marketing Agency, Advertising Agency,  Marketing services')
 
 @section('preload')
-<link rel="preload" href="images/about-bg.webp" as="image">
+<link rel="preload" href="images/about-bg.jpg" as="image">
 @stop
 
 @section('content')
 <div class="page-header header-filter">
-  <div class="page-header-image" style="background-image: url('images/about-bg.webp');"></div>
+  <div class="page-header-image" style="background-image: url('images/about-bg.jpg');"></div>
   <div class="container">
     <div class="row">
       <div class="col-md-7 ml-auto text-right">
@@ -44,7 +44,7 @@
             <div class="col-md-5">
               <div class="card-image">
                 <a href="#pablo">
-                  <img class="rounded-circle img-raised" src="../images/taraskim.webp" />
+                  <img class="rounded-circle img-raised" src="../images/taraskim.jpg" />
                 </a>
               </div>
             </div>
@@ -71,7 +71,7 @@
             <div class="col-md-5">
               <div class="card-image">
                 <a href="#pablo">
-                  <img class="rounded-circle img-raised" src="../images/anton.webp" />
+                  <img class="rounded-circle img-raised" src="../images/anton.jpg" />
                 </a>
               </div>
             </div>

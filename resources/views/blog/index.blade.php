@@ -23,7 +23,7 @@
 @section('content')
 <div class="wrapper">
   <div class="page-header page-header-small">
-    <div class="page-header-image" style="background-image: url('../images/blog/blog-bg.webp');">
+    <div class="page-header-image" style="background-image: url('../images/blog/blog-bg.jpg');">
     </div>
 
     <div class="content-center">
