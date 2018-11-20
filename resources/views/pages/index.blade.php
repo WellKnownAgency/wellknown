@@ -7,23 +7,23 @@
 @section('keywords', 'Digital Agency, Online marketing, online advertising, marketing Agency, Advertising Agency, Web design agency, web development')
 
 @section('preload')
-<link rel="preload" href="/images/sky.webp" as="image">
-<link rel="preload" href="/images/boston.webp" as="image">
+<link rel="preload" href="/images/sky.jpg" as="image">
+<link rel="preload" href="/images/boston.png" as="image">
 @stop
 
 @section('customcss')
-<meta property="og:image" content="/images/sem.jpg" />
+<meta property="og:image" content="/images/sky.jpg" />
 @stop
 
 @section('content')
 <div class="wrapper">
   <div class="page-header clear-filter">
     <div class="rellax-header rellax-header-sky" data-rellax-speed="-4">
-      <div class="page-header-image" style="background-image: url('/images/sky.webp')">
+      <div class="page-header-image" style="background-image: url('/images/sky.jpg')">
       </div>
     </div>
     <div class="rellax-header rellax-header-buildings" data-rellax-speed="0">
-      <div class="page-header-image page-header-city" style="background-image: url('/images/boston.webp')">
+      <div class="page-header-image page-header-city" style="background-image: url('/images/boston.png')">
       </div>
     </div>
     <div class="rellax-text-container rellax-text">
@@ -98,17 +98,17 @@
       <div class="row">
         <div class="col-md-4">
           <a href="https://upcity.com/local-marketing-agencies/profiles/wellknown-agency" class="btn btn-neutral btn-icon btn-twitter btn-footer">
-            <img src="/images/upcity.webp" width="100px"/>
+            <img src="/images/upcity.png" width="100px"/>
           </a>
         </div>
         <div class="col-md-4">
           <a href="https://clutch.co/profile/wellknown-agency" class="btn btn-neutral btn-icon btn-facebook btn-footer">
-            <img src="/images/clutch.webp" width="100px" />
+            <img src="/images/clutch.png" width="100px" />
           </a>
         </div>
         <div class="col-md-4">
           <a href="" class="btn btn-neutral btn-icon btn-google btn-footer">
-            <img src="/images/dan.webp" width="100px" />
+            <img src="/images/dan.png" width="100px" />
           </a>
         </div>
       </div>
@@ -133,7 +133,7 @@
             <div class="card-component">
               <a href="/fancy-flowers" target="_blank">
                 <div class="front">
-                  <img src="/images/fflowermain.webp">
+                  <img src="/images/fflowermain.jpg">
                 </div>
               </a>
             </div>
@@ -144,7 +144,7 @@
             <div class="card-component">
               <a href="/born-to-move" target="_blank">
                 <div class="front">
-                  <img src="/images/btmpagem.webp">
+                  <img src="/images/btmpagem.jpg">
                 </div>
               </a>
             </div>
@@ -155,7 +155,7 @@
             <div class="card-component">
               <a href="/omdarling" target="_blank">
                 <div class="front">
-                  <img src="/images/omdarlingmain.webp">
+                  <img src="/images/omdarlingmain.jpg">
                 </div>
               </a>
             </div>

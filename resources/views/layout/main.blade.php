@@ -4,7 +4,7 @@
 	@include('partials/_head')
 	@yield('customcss')
 	</head>
-	<body class="index-page sidebar-collapse">
+	<body class="index-page">
 		@include('partials/_nav')
 		<!-- Page Content -->
 		<div id="app" class="presentation-page">
