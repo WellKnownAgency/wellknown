@@ -73,7 +73,7 @@
           </div>
       </div>
   </div>
-  <div class="section section-content" style="background-image: url('../images/webdesign/bg-2.webp');">
+  <div class="section section-content" style="background-image: url('../images/webdesign/bg-2.jpg');">
     <div class="container">
       <div class="row">
         <div class="col-md-5">
