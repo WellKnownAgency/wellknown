@@ -98,9 +98,7 @@ canvas {
                   </div>
                   <div class="row">
                     <div class="col-md-12">
-                      <div class="center" style="width: 450px; text-align:center;">
                         <img src="images/advertising/ideas.jpg" alt="Card image cap" style="margin-left:auto; margin-right:auto; display:block;">
-                      </div>
                     </div>
                   </div>
 								</div>
@@ -116,9 +114,7 @@ canvas {
                   </div>
                   <div class="row">
                     <div class="col-md-12">
-                      <div class="" style="width: 450px">
-                        <img class="" src="images/advertising/strategy.jpg" alt="Card image cap">
-                      </div>
+                        <img class="" src="images/advertising/strategy.jpg" alt="Card image cap" style="margin-left:auto; margin-right:auto; display:block;">
                     </div>
                   </div>
 								</div>
@@ -134,9 +130,7 @@ canvas {
   								</div>
                   <div class="row">
                     <div class="col-md-12">
-											<div class="" style="width: 450px">
-                        <img class="" src="images/advertising/creating.jpg" alt="Card image cap">
-                      </div>
+                        <img class="" src="images/advertising/creating.jpg" alt="Card image cap" style="margin-left:auto; margin-right:auto; display:block;">
                     </div>
                   </div>
                 </div>
@@ -152,9 +146,7 @@ canvas {
                   </div>
                   <div class="row">
                     <div class="col-md-12">
-											<div class="" style="width: 450px">
-                        <img class="" src="images/advertising/managing.jpg" alt="Card image cap">
-                      </div>
+                        <img class="" src="images/advertising/managing.jpg" alt="Card image cap" style="margin-left:auto; margin-right:auto; display:block;">
                     </div>
                   </div>
 								</div>
