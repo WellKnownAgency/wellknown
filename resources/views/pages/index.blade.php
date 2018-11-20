@@ -8,7 +8,7 @@
 
 @section('preload')
 <link rel="preload" href="/images/sky.jpg" as="image">
-<link rel="preload" href="/images/boston.webp" as="image">
+<link rel="preload" href="/images/boston.png" as="image">
 @stop
 
 @section('customcss')
