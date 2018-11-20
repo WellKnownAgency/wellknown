@@ -7,7 +7,7 @@
 @section('keywords', '')
 
 @section('preload')
-<link rel="preload" href="images/contact-us.webp" as="image">
+<link rel="preload" href="images/contact-us.jpg" as="image">
 @stop
 @section('customcss')
 <style>

@@ -6,10 +6,6 @@
 
 @section('keywords', 'Search Engine Optimization Services, SEO Agency, Services Company, Local SEO, SEO Expert')
 
-@section('preload')
-<link rel="preload" href="images/bgmain/seo.jpg" as="image">
-@stop
-
 @section('customcss')
 <meta property="og:image" content="/images/sem.jpg" />
 <style>

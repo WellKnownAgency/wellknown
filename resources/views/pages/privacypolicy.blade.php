@@ -9,7 +9,7 @@
 @section('content')
 <section>
 	<div class="page-header page-header-small">
-    <div class="page-header-image" style="background-image: url('../images/webdesign/bg-2.webp');">
+    <div class="page-header-image" style="background-image: url('../images/webdesign/bg-2.jpg');">
     </div>
 
     <div class="content-center">

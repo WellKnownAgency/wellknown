@@ -7,7 +7,7 @@
 @section('keywords', 'Digital Marketing, Online marketing, marketing Agency, Advertising Agency,  Marketing services')
 
 @section('preload')
-<link rel="preload" href="images/about-bg.webp" as="image">
+<link rel="preload" href="images/about-bg.jpg" as="image">
 @stop
 
 @section('content')
