@@ -67661,7 +67661,7 @@ var render = function() {
                       _c("tr", [
                         _c("td", [_vm._v("Message:")]),
                         _vm._v(" "),
-                        _c("td", { attrs: { colspan: "2" } }, [
+                        _c("td", { attrs: { colspan: "3" } }, [
                           _vm._v(_vm._s(_vm.lead.body))
                         ])
                       ]),
