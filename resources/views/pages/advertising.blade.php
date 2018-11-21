@@ -242,12 +242,11 @@ canvas {
       <div class="col-lg-6 col-md-12">
         <div class="image-container">
           <img class="components-macbook" src="images/img/ipad1.webp" alt="">
-          <img class="table-img" src="images/img/presentation-page/table.jpg" alt="">
-          <img class="share-btn-img" src="images/img/presentation-page/share-btn.jpg" alt="">
-          <img class="coloured-card-btn-img" src="images/img/presentation-page/coloured-card-with-btn.jpg" alt="">
-          <img class="coloured-card-img" src="images/img/presentation-page/coloured-card.jpg" alt="">
+          <img class="table-img" src="/images/advertising/anton.jpg" alt="">
+          <img class="share-btn-img" src="/images/advertising/stars.jpg" alt="">
+          <img class="coloured-card-btn-img" src="/images/advertising/bannerads.jpg" alt="">
+          <img class="coloured-card-img" src="/images/advertising/facebookads.jpg" alt="">
           <img class="social-img" src="/images/google.png" alt="">
-          <img class="linkedin-btn-img" src="images/img/presentation-page/linkedin-btn.jpg" alt="">
         </div>
       </div>
     </div>
