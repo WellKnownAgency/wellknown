@@ -96,7 +96,7 @@ class PagesController extends Controller
 
 
 
-    return redirect('/your-form-submitted');
+    return redirect('/contact-us');
   }
 
   public function postComment(Request $request, $post_id) {
