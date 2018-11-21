@@ -246,7 +246,7 @@ canvas {
           <img class="share-btn-img" src="images/img/presentation-page/share-btn.jpg" alt="">
           <img class="coloured-card-btn-img" src="images/img/presentation-page/coloured-card-with-btn.jpg" alt="">
           <img class="coloured-card-img" src="images/img/presentation-page/coloured-card.jpg" alt="">
-          <img class="social-img" src="images/img/presentation-page/social-row.jpg" alt="">
+          <img class="social-img" src="/images/google.png" alt="">
           <img class="linkedin-btn-img" src="images/img/presentation-page/linkedin-btn.jpg" alt="">
         </div>
       </div>
