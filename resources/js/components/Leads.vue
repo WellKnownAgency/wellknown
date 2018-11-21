@@ -163,7 +163,7 @@
                   <td>Note:</td> <td>{{ lead.note }}</td>
                 </tr>
                 <tr>
-                  <td>Message:</td> <td>{{ lead.body }}</td>
+                  <td>Message:</td> <td colspan="2">{{ lead.body }}</td>
                 </tr>
                 <tr>
                   <td>Created:</td> <td>{{moment(lead.created_at).fromNow()}}</td>
