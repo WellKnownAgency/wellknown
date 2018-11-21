@@ -12,7 +12,7 @@ class LeadsController extends Controller
 {
     public function index()
   {
-      $leads = Lead::with('source')->with('status')->where('status_id', '!=', 4)->get();
+      $leads = Lead::with('source')->where('status_id', '!=', 4)->get();
 
       return $leads;
   }

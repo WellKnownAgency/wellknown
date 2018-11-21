@@ -67563,7 +67563,7 @@ var render = function() {
                           },
                           [_vm._v("Source:")]
                         ),
-                        _c("td", [_vm._v(_vm._s(_vm.lead.source.name))])
+                        _c("td", [_vm._v(_vm._s(_vm.lead.source))])
                       ]),
                       _vm._v(" "),
                       _c("tr", [
