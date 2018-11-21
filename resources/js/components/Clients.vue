@@ -78,14 +78,14 @@
                   <td style="border-left: 1px solid #f0f0f0;">Email:</td> <td>{{ lead.email }}</td>
                 </tr>
                 <tr>
-                  <td>Website:</td> <td>{{ lead.website }}</td>
+                  <td>Website:</td> <td colspan="3">{{ lead.website }}</td>
                 </tr>
                 <tr>
                   <td>Company:</td> <td>{{ lead.company }}</td>
                   <td style="border-left: 1px solid #f0f0f0;">Position:</td> <td>{{ lead.position }}</td>
                 </tr>
                 <tr>
-                  <td>Address:</td> <td>{{ lead.address }}, {{ lead.city }} {{ lead.state }} {{ lead.country }}</td>
+                  <td>Address:</td> <td colspan="3">{{ lead.address }}, {{ lead.city }} {{ lead.state }} {{ lead.country }}</td>
                 </tr>
                 <tr>
                   <td>Facebook:</td> <td>{{ lead.facebook }}</td>
@@ -96,7 +96,10 @@
                   <td style="border-left: 1px solid #f0f0f0;">Twitter:</td> <td>{{ lead.twitter }}</td>
                 </tr>
                 <tr>
-                  <td>Note:</td> <td>{{ lead.note }}</td>
+                  <td>Note:</td> <td colspan="3">{{ lead.note }}</td>
+                </tr>
+                <tr>
+                  <td>Message:</td> <td colspan="3">{{ lead.body }}</td>
                 </tr>
                 <tr>
                   <td>Created:</td> <td>{{moment(lead.created_at).fromNow()}}</td>

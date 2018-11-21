@@ -149,7 +149,7 @@
                   <td style="border-left: 1px solid #f0f0f0;">Position:</td> <td>{{ lead.position }}</td>
                 </tr>
                 <tr>
-                  <td>Address:</td> <td>{{ lead.address }}, {{ lead.city }} {{ lead.state }} {{ lead.country }}</td>
+                  <td>Address:</td> <td colspan="3">{{ lead.address }}, {{ lead.city }} {{ lead.state }} {{ lead.country }}</td>
                 </tr>
                 <tr>
                   <td>Facebook:</td> <td>{{ lead.facebook }}</td>
