@@ -67585,7 +67585,9 @@ var render = function() {
                       _c("tr", [
                         _c("td", [_vm._v("Website:")]),
                         _vm._v(" "),
-                        _c("td", [_vm._v(_vm._s(_vm.lead.website))])
+                        _c("td", { attrs: { colspan: "3" } }, [
+                          _vm._v(_vm._s(_vm.lead.website))
+                        ])
                       ]),
                       _vm._v(" "),
                       _c("tr", [
@@ -67655,7 +67657,9 @@ var render = function() {
                       _c("tr", [
                         _c("td", [_vm._v("Note:")]),
                         _vm._v(" "),
-                        _c("td", [_vm._v(_vm._s(_vm.lead.note))])
+                        _c("td", { attrs: { colspan: "3" } }, [
+                          _vm._v(_vm._s(_vm.lead.note))
+                        ])
                       ]),
                       _vm._v(" "),
                       _c("tr", [
