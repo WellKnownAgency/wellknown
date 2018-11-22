@@ -116,7 +116,7 @@ canvas {
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center">
             <h2 class="title">We have many advantages</h2>
-            <h4 class="description">This is the paragraph where you can write more details about your projects. Keep you user engaged by providing meaningful information.</h4>
+            <h4 class="description">Our team will give you the most convenient experience in building your website. You will, definitely, never regret giving us the opportunity to create your online profile.</h4>
             <div class="section-space"></div>
           </div>
         </div>
