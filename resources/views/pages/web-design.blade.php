@@ -47,15 +47,15 @@ canvas {
     <div class="row">
      <div class="col-md-12">
       <div class="hero-images-container">
-       <img src="images/img/hero-image-1.png" alt="">
+       <img src="images/webdesign/desktop.png" alt="">
       </div>
 
       <div class="hero-images-container-1">
-       <img src="images/img/hero-image-2.png" alt="">
+       <img src="images/webdesign/ipad.png" alt="">
       </div>
 
       <div class="hero-images-container-2">
-       <img src="images/img/hero-image-3.png" alt="">
+       <img src="images/webdesign/iphone.png" alt="">
       </div>
      </div>
     </div>
@@ -103,7 +103,7 @@ canvas {
             </div>
             <div class="col-md-6">
               <div class="image-container">
-                <img src="images/img/ipad3.png" alt="">
+                <img src="images/webdesign/ipad3.png" alt="">
               </div>
             </div>
           </div>

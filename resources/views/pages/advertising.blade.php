@@ -241,7 +241,7 @@ canvas {
       </div>
       <div class="col-lg-6 col-md-12">
         <div class="image-container">
-          <img class="components-macbook" src="images/img/ipad1.webp" alt="">
+          <img class="components-macbook" src="images/advertising/ipad-ad.jpg" alt="">
           <img class="table-img" src="images/img/presentation-page/table.jpg" alt="">
           <img class="share-btn-img" src="images/img/presentation-page/share-btn.jpg" alt="">
           <img class="coloured-card-btn-img" src="images/img/presentation-page/coloured-card-with-btn.jpg" alt="">
