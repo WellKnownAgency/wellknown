@@ -71,7 +71,7 @@
               <table class="table table-borderless" >
                 <tr>
                   <td>Name:</td><td>{{ lead.first_name }} {{ lead.last_name }}</td>
-                  <td style="border-left: 1px solid #f0f0f0;">Source:</td><td>{{ lead.source[name] }}</td>
+                  <td style="border-left: 1px solid #f0f0f0;">Source:</td><td>{{ lead.source }}</td>
                 </tr>
                 <tr>
                   <td>Phone:</td> <td>{{ lead.phone }}</td>
