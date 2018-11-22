@@ -95,7 +95,7 @@
   <br>
   <div class="container">
     <div class="card" width="100%">
-      <img class="card-img-top" src="/images/btmall.webp" />
+      <img class="card-img-top" src="/images/btmall.jpg" />
     </div>
   </div>
 </div>

@@ -91,7 +91,7 @@
   <br>
   <div class="container">
     <div class="card" width="100%">
-      <img class="card-img-top" src="/images/omdarlingall.webp" />
+      <img class="card-img-top" src="/images/omdarlingall.jpg" />
     </div>
   </div>
 </div>
