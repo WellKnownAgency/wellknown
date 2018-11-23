@@ -275,6 +275,22 @@ canvas {
               </div>
             </div>
           </div>
+					<div class="col-md-6 px-0">
+            <div class="card card-background card-background-product card-no-shadow" style="background-image: url('/images/cases/flashmoving.jpg')">
+              <div class="card-body">
+                <h6 class="category">Web Design & Development</h6>
+                <h3 class="card-title">Flashmoving</h3>
+                <p class="card-description">
+                  In Progress...
+                </p>
+								<!--
+                <a href="/born-to-move" target="_blank" class="btn btn-danger btn-round">
+                  <i class="now-ui-icons ui-1_send"></i> View case
+                </a>
+							-->
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
