@@ -56,7 +56,7 @@
             </div>
 
             <div class="card-body">
-                <h6 class="category text-info">{{ $post->category['name'] }}</h6>
+                <h6 class="category text-danger">{{ $post->category['name'] }}</h6>
                 <h4 class="card-title">
                     <a href="/blog/{{ $post->slug }}">{{ $post->title }}</a>
                 </h4>
