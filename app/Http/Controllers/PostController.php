@@ -69,7 +69,7 @@ class PostController extends Controller
 
      $post->save();
 
-      return redirect()->route('posts.index');
+      return redirect('/admin/posts');
     }
 
     /**
