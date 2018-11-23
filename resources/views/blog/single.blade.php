@@ -12,8 +12,8 @@
 
 @section('customcss')
 <!-- Schema.org markup for Google+ -->
-<meta itemprop="name" content="http://www.wknown.com/blog/{{ $post->title }}">
-<meta itemprop="description" content="http://www.wknown.com/blog/{{ $post->dscr }}">
+<meta itemprop="name" content="{{ $post->title }}">
+<meta itemprop="description" content="{{ $post->dscr }}">
 <meta itemprop="image" content="http://www.wknown.com/images/blog/{{ $post->image }}">
 
 <!-- Twitter Card data -->
@@ -26,11 +26,11 @@
 <meta name="twitter:image:src" content="http://www.wknown.com/images/blog/{{ $post->image }}">
 
 <!-- Open Graph data -->
-<meta property="og:title" content="http://www.wknown.com/blog/{{ $post->title }}" />
+<meta property="og:title" content="{{ $post->title }}" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://www.wknown.com/blog/{{ $post->slug }}" />
 <meta property="og:image" content="http://www.wknown.com/images/blog/{{ $post->image }}" />
-<meta property="og:description" content="http://www.wknown.com/blog/{{ $post->dscr }}" />
+<meta property="og:description" content="{{ $post->dscr }}" />
 <meta property="og:site_name" content="WellKnown Agency" />
 <meta property="article:published_time" content="http://www.wknown.com/blog/{{ $post->created_at }}" />
 <meta property="article:modified_time" content="http://www.wknown.com/blog/{{ $post->updated_at }}" />
