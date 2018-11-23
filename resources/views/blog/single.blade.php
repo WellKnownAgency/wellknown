@@ -92,7 +92,7 @@
         </div>
     </div>
 
-    <div class="section section-blog-info">
+    <div class="section-blog-info">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 ml-auto mr-auto">
@@ -121,7 +121,7 @@
 <div class="section section-plain-cards">
 	<div class="container">
 		<div class="title">
-			<h3>Latest Blog Posts
+			<h3>Related Posts
 			</h3>
 		</div>
 		<div class="row">
