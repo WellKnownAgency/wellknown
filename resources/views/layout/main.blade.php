@@ -2,7 +2,6 @@
 <html lang="en">
 	<head>
 	@include('partials/_head')
-	@yield('customcss')
 	</head>
 	<body class="index-page">
 		@include('partials/_nav')
