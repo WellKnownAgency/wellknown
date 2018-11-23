@@ -52,7 +52,7 @@
 <div class="wrapper">
     <div class="page-header page-header-small">
 
-    <div class="page-header-image" data-parallax="true" style="background-image: url(/images/blog/{{ $post->image }});">
+    <div class="page-header-image" style="background-image: url(/images/blog/{{ $post->image }});">
     </div>
 
 
