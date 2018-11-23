@@ -132,7 +132,7 @@ class PagesController extends Controller
 
   public function getSingle($slug) {
     $post = Post::where('slug', '=', $slug)->first();
-    $posts = Post::latest()->whereIn('id', $post->categories()->lists('id'))->where('id', '!=', $post->id)->limit(3)->get();
+    $posts = Post::latest()->where('id', '!=', $post->id)->limit(3)->get();
     return view('blog.single')->withPost($post)->withPosts($posts);
   }
 
