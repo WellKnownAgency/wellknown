@@ -52,7 +52,7 @@
 <div class="wrapper">
     <div class="page-header page-header-small">
 
-    <div class="page-header-image" data-parallax="true" style="background-image: url(/images/blog/{{ $post->image }}); transform: translate3d(0px, 0px, 0px);">
+    <div class="page-header-image" data-parallax="true" style="background-image: url(/images/blog/{{ $post->image }});">
     </div>
 
 
@@ -138,7 +138,7 @@
 							<i class="now-ui-icons media-2_sound-wave"></i> {{ $post->category['name'] }}
 						</h6>
 						<h5 class="card-title">
-							<a href="#nuk">{{ $post->title }}</a>
+							<a href="/blog/{{ $post->slug }">{{ $post->title }}</a>
 						</h5>
 						<p class="card-description">
 							{{ str_limit($post->excerpt, 100) }}
