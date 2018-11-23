@@ -67271,7 +67271,7 @@ var render = function() {
                             )
                       ]),
                       _vm._v(" "),
-                      _c("td", [
+                      _c("td", { attrs: { colspan: "2" } }, [
                         _c(
                           "button",
                           {

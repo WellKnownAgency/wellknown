@@ -26,9 +26,6 @@ class LeadsController extends Controller
 
   public function store(Request $request)
   {
-    $this->validate($request,[
-      'email'=>'required'
-    ]);
 
     $lead = new Lead();
     $lead->first_name = $request->first_name;
