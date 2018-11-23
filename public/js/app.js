@@ -66609,6 +66609,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 
 
@@ -67271,7 +67274,7 @@ var render = function() {
                             )
                       ]),
                       _vm._v(" "),
-                      _c("td", { attrs: { colspan: "3" } }, [
+                      _c("td", [
                         _c(
                           "button",
                           {
@@ -67288,8 +67291,10 @@ var render = function() {
                             }
                           },
                           [_vm._v("View")]
-                        ),
-                        _vm._v(" "),
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
                         _c(
                           "button",
                           {
@@ -68899,7 +68904,9 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("th", [_vm._v("Marketing")]),
         _vm._v(" "),
-        _c("th", [_vm._v("Actions")])
+        _c("th"),
+        _vm._v(" "),
+        _c("th")
       ])
     ])
   },

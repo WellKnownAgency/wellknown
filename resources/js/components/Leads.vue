@@ -26,7 +26,8 @@
                 <th>Status <i class="fas fa-sort" style="float:right"></i></th>
                 <th>Submitted <i class="fas fa-sort" style="float:right"></i></th>
                 <th>Marketing</th>
-                <th>Actions</th>
+                <th></th>
+                <th></th>
               </tr>
             </thead>
             <transition-group tag="tbody" name="slide-fade">
@@ -45,8 +46,10 @@
                   <button v-if="lead.status.name === 'New' " disabled class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#followup">Follow up</button>
                   <button @click.prevent="showlead(lead)" v-else class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#followup">Follow up</button>
                 </td>
-                <td colspan="3">
+                <td>
                   <button @click.prevent="showlead(lead)" class="btn btn-info btn-sm" data-toggle="modal" data-target="#leadshow">View</button>
+                </td>
+                <td>
                   <button @click.prevent="deleteLead(lead)" type="button" class="btn btn-danger btn-sm delete">Delete</button>
                 </td>
               </tr>
