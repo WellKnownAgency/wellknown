@@ -20,8 +20,7 @@
           <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
             <thead>
               <tr>
-                <th>First Name  <i class="fas fa-sort" style="float:right"></i></th>
-                <th>Last Name  <i class="fas fa-sort" style="float:right"></i></th>
+                <th>First and Last Name  <i class="fas fa-sort" style="float:right"></i></th>
                 <th>Phone  <i class="fas fa-sort" style="float:right"></i></th>
                 <th>E-mail  <i class="fas fa-sort" style="float:right"></i></th>
                 <th>Status <i class="fas fa-sort" style="float:right"></i></th>
@@ -32,8 +31,7 @@
             </thead>
             <transition-group tag="tbody" name="slide-fade">
               <tr v-for="lead in leads" :key="lead.id">
-                <td>{{lead.first_name}}</td>
-                <td>{{lead.last_name}}</td>
+                <td>{{lead.first_name}} {{lead.last_name}}</td>
                 <td>{{lead.phone}}</td>
                 <td>{{lead.email}}</td>
                 <td>
