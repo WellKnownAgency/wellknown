@@ -47,15 +47,15 @@ canvas {
     <div class="row">
      <div class="col-md-12">
       <div class="hero-images-container">
-       <img src="images/img/hero-image-1.png" alt="">
+       <img src="images/webdesign/desktop.png" alt="">
       </div>
 
       <div class="hero-images-container-1">
-       <img src="images/img/hero-image-2.png" alt="">
+       <img src="images/webdesign/ipad.png" alt="">
       </div>
 
       <div class="hero-images-container-2">
-       <img src="images/img/hero-image-3.png" alt="">
+       <img src="images/webdesign/iphone.png" alt="">
       </div>
      </div>
     </div>
@@ -103,7 +103,7 @@ canvas {
             </div>
             <div class="col-md-6">
               <div class="image-container">
-                <img src="images/img/ipad3.png" alt="">
+                <img src="images/webdesign/ipad3.png" alt="">
               </div>
             </div>
           </div>
@@ -116,7 +116,7 @@ canvas {
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center">
             <h2 class="title">We have many advantages</h2>
-            <h4 class="description">This is the paragraph where you can write more details about your projects. Keep you user engaged by providing meaningful information.</h4>
+            <h4 class="description">Our team will give you the most convenient experience in building your website. You will, definitely, never regret giving us the opportunity to create your online profile.</h4>
             <div class="section-space"></div>
           </div>
         </div>

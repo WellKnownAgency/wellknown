@@ -131,7 +131,7 @@ canvas {
             </div>
             <div class="col-md-4">
               <div class="phone-container">
-                <img src="images/img/iphone2.png" />
+                <img src="images/search/iphone-x.png" />
               </div>
             </div>
             <div class="col-md-4">

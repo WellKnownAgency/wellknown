@@ -71,7 +71,7 @@
       Copyright &copy;
       <script>
         document.write(new Date().getFullYear())
-      </script> WellKnown Agency. All Rights Reserved.
+      </script> WellKnown Agency. All Rights Reserved. <p> <a href="/privacy-policy"> Privacy Policy </a></p>
     </div>
   </div>
 </footer>
