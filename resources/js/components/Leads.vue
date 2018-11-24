@@ -22,7 +22,6 @@
               <tr>
                 <th>Name | Company  <i class="fas fa-sort" style="float:right"></i></th>
                 <th>Phone  <i class="fas fa-sort" style="float:right"></i></th>
-                <th>E-mail  <i class="fas fa-sort" style="float:right"></i></th>
                 <th>Status <i class="fas fa-sort" style="float:right"></i></th>
                 <th>Submitted <i class="fas fa-sort" style="float:right"></i></th>
                 <th>Marketing</th>
@@ -35,7 +34,6 @@
               <tr v-for="lead in leads" :key="lead.id">
                 <td>{{lead.first_name}} {{lead.last_name}} | {{lead.company}}</td>
                 <td>{{lead.phone}}</td>
-                <td>{{lead.email}}</td>
                 <td>
                   <select class="custom-select" v-model="lead.status_id" @change="statuschange(lead)" >
                     <option selected>Choose...</option>
