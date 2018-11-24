@@ -68019,7 +68019,7 @@ var moment = __webpack_require__(0);
         __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
           type: 'success',
           title: 'Yeah',
-          text: 'Lead successfully created!'
+          text: 'Lead successfully updated!'
         });
       }).catch(function (err) {
         console.log(err);

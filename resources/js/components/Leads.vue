@@ -602,7 +602,7 @@ var moment = require('moment');
                  swal({
                      type: 'success',
                      title: 'Yeah',
-                     text: 'Lead successfully created!'
+                     text: 'Lead successfully updated!'
                    })
                })
                .catch((err) =>{
