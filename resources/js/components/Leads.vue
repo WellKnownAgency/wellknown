@@ -28,6 +28,7 @@
                 <th>M Status</th>
                 <th></th>
                 <th></th>
+                <th></th>
               </tr>
             </thead>
             <transition-group tag="tbody" name="slide-fade">
@@ -57,6 +58,9 @@
                 </td>
                 <td>
                   <button @click.prevent="showlead(lead)" class="btn btn-info btn-sm" data-toggle="modal" data-target="#leadshow">View</button>
+                </td>
+                <td>
+                  <button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editlead" @click.prevent="fetchEdit(lead)">Edit</button>
                 </td>
                 <td>
                   <button @click.prevent="deleteLead(lead)" type="button" class="btn btn-danger btn-sm delete">Delete</button>
@@ -305,6 +309,123 @@
       </div>
     </div>
 
+    <!-- Modal Edit Lead-->
+    <div class="modal fade" id="editlead" tabindex="-1" role="dialog" aria-labelledby="leadid" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editleadmodal">Edit Lead</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form method="" autocomplete="nope">
+              <div class="form-row">
+                <div class="col">
+                  <label for="first_name" class="col-form-label">First Name:</label>
+                  <input type="text" class="form-control" id="first_name" v-model="lead.first_name" @keydown.enter="createlead" autocomplete="nope">
+                </div>
+                <div class="col">
+                  <label for="last_name" class="col-form-label" >Last Name:</label>
+                  <input class="form-control" id="last_name" v-model="lead.last_name" @keydown.enter="createlead" autocomplete="nope">
+                </div>
+                <div class="col">
+                  <label for="status" class="col-form-label">Status:</label>
+                  <select class="form-control" v-model="lead.status_id" @keydown.enter="createlead">
+                    <option v-for="status in statuses" :key="status.id" v-bind:value="status.id">{{status.name}}</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <label for="source" class="col-form-label">Source:</label>
+                  <select class="form-control" v-model="lead.source_id" @keydown.enter="createlead">
+                    <option selected>Choose...</option>
+                    <option v-for="source in sources" :key="source.id" v-bind:value="source.id">{{source.name}}</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <label for="phone" class="col-form-label">Phone:</label>
+                  <input type="number" class="form-control" v-model="lead.phone" @keydown.enter="createlead" id="phone" autocomplete="nope">
+                </div>
+                <div class="col">
+                  <label for="email" class="col-form-label">Email:</label>
+                  <input type="email" class="form-control" v-model="lead.email" @keydown.enter="createlead" id="email" autocomplete="nope">
+                </div>
+                <div class="col">
+                  <label for="website" class="col-form-label">Website:</label>
+                  <input type="url" class="form-control" v-model="lead.website" @keydown.enter="createlead" id="website" autocomplete="nope">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <label for="body" class="col-form-label">Message:</label>
+                  <textarea class="form-control" v-model="lead.body" @keydown.enter="createlead" id="body"></textarea>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <label for="company" class="col-form-label">Company:</label>
+                  <input type="text" class="form-control" v-model="lead.company" @keydown.enter="createlead" id="company" autocomplete="nope">
+                </div>
+                <div class="col">
+                  <label for="position" class="col-form-label">Position:</label>
+                  <input type="text" class="form-control" v-model="lead.position" @keydown.enter="createlead" id="position" autocomplete="nope">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <label for="address" class="col-form-label">Address:</label>
+                  <input type="text" class="form-control" v-model="lead.address" @keydown.enter="createlead" id="address" autocomplete="nope">
+                </div>
+                <div class="col">
+                  <label for="city" class="col-form-label">City:</label>
+                  <input type="text" class="form-control" v-model="lead.city" @keydown.enter="createlead" id="city" autocomplete="nope">
+                </div>
+                <div class="col">
+                  <label for="state" class="col-form-label">State:</label>
+                  <input type="text" class="form-control" v-model="lead.state" @keydown.enter="createlead" id="state" autocomplete="nope">
+                </div>
+                <div class="col">
+                  <label for="country" class="col-form-label">Country:</label>
+                  <input type="text" class="form-control" v-model="lead.country" @keydown.enter="createlead" id="country" autocomplete="nope">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <label for="facebook" class="col-form-label">Facebook:</label>
+                  <input type="url" class="form-control" v-model="lead.facebook" @keydown.enter="createlead" id="facebook" autocomplete="nope">
+                </div>
+                <div class="col">
+                  <label for="linkedin" class="col-form-label">Linkedin:</label>
+                  <input type="url" class="form-control" v-model="lead.linkedin" @keydown.enter="createlead" id="linkedin" autocomplete="nope">
+                </div>
+                <div class="col">
+                  <label for="instagram" class="col-form-label">Instagram:</label>
+                  <input type="url" class="form-control" v-model="lead.instagram" @keydown.enter="createlead" id="instagram" autocomplete="nope">
+                </div>
+                <div class="col">
+                  <label for="twitter" class="col-form-label">Twitter:</label>
+                  <input type="url" class="form-control" v-model="lead.twitter" @keydown.enter="createlead" id="twitter" autocomplete="nope">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <label for="note" class="col-form-label">Note:</label>
+                  <textarea class="form-control" v-model="lead.note" @keydown.enter="createlead" id="note"></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" v-on:click="editlead(lead)" data-dismiss="modal">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
   </div>
   <!-- /.container-fluid -->
@@ -397,6 +518,16 @@ var moment = require('moment');
                  })
                },
 
+         fetchEdit (lead) {
+          axios.get(`/api/leads/${lead.id}`)
+               .then((res) => {
+                 this.lead = res.data
+               })
+               .catch((err) => {
+                 console.log(err)
+               })
+        },
+
           createlead () {
            axios.post('/api/leads', this.lead)
                .then((res) => {
@@ -440,6 +571,50 @@ var moment = require('moment');
                    })
            })
           },
+
+          editlead (lead) {
+           axios.put(`/api/leads/${lead.id}`, this.lead)
+               .then((res) => {
+                 this.lead.first_name = ''
+                 this.lead.last_name = ''
+                 this.lead.phone = ''
+                 this.lead.emil = ''
+                 this.lead.website = ''
+                 this.lead.company = ''
+                 this.lead.position = ''
+                 this.lead.address = ''
+                 this.lead.city = ''
+                 this.lead.state = ''
+                 this.lead.country = ''
+                 this.lead.body = ''
+                 this.lead.facebook = ''
+                 this.lead.twitter = ''
+                 this.lead.instagram = ''
+                 this.lead.linkedin = ''
+                 this.lead.note = ''
+                 this.lead.status_id = ''
+                 this.lead.source_id = ''
+               })
+               .then((res) => {
+                 this.fetchLeads();
+               })
+               .then((res) => {
+                 swal({
+                     type: 'success',
+                     title: 'Yeah',
+                     text: 'Lead successfully created!'
+                   })
+               })
+               .catch((err) =>{
+                 console.log(err)
+                 swal({
+                     type: 'error',
+                     title: 'Ooops...',
+                     text: 'Something went wrong!'
+                   })
+           })
+          },
+
 
           statuschange(lead) {
                 axios.put(`/api/leads/statuschange/${lead.id}`,

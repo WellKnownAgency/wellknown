@@ -50,5 +50,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
   Route::put('posts/statuschange/{id}','PostController@statuschange');
 
-
   Route::resource('categories', 'CategoryController');
+
+  Route::get('/lead/{id}', 'LeadsController@openedit');
+
+  
