@@ -14,6 +14,7 @@
     <div class="dropdown-menu" aria-labelledby="pagesDropdown">
       <a class="dropdown-item" href="/admin/leads">Leads</a>
       <a class="dropdown-item" href="/admin/clients">Customers</a>
+      <a class="dropdown-item" href="/admin/partners">Partners</a>
     </div>
   </li>
   <li class="nav-item dropdown">
