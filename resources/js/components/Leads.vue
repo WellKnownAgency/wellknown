@@ -20,19 +20,20 @@
           <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
             <thead>
               <tr>
-                <th>First and Last Name  <i class="fas fa-sort" style="float:right"></i></th>
+                <th>Name | Company  <i class="fas fa-sort" style="float:right"></i></th>
                 <th>Phone  <i class="fas fa-sort" style="float:right"></i></th>
                 <th>E-mail  <i class="fas fa-sort" style="float:right"></i></th>
                 <th>Status <i class="fas fa-sort" style="float:right"></i></th>
                 <th>Submitted <i class="fas fa-sort" style="float:right"></i></th>
                 <th>Marketing</th>
+                <th>M Status</th>
                 <th></th>
                 <th></th>
               </tr>
             </thead>
             <transition-group tag="tbody" name="slide-fade">
               <tr v-for="lead in leads" :key="lead.id">
-                <td>{{lead.first_name}} {{lead.last_name}}</td>
+                <td>{{lead.first_name}} {{lead.last_name}} | {{lead.company}}</td>
                 <td>{{lead.phone}}</td>
                 <td>{{lead.email}}</td>
                 <td>
@@ -45,6 +46,16 @@
                 <td >
                   <button v-if="lead.status.name === 'New' " disabled class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#followup">Follow up</button>
                   <button @click.prevent="showlead(lead)" v-else class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#followup">Follow up</button>
+                </td>
+                <td>
+                  <span v-if="lead.introemail === 0" class="dot text-center"></span>
+                  <span v-else="lead.introemail === 1" class="dot-green text-center"></span>
+                  <span v-if="lead.introemail === 0" class="dot text-center"></span>
+                  <span v-else="lead.introemail === 1" class="dot-green text-center"></span>
+                  <span v-if="lead.fllupemail === 0" class="dot text-center"></span>
+                  <span v-else="lead.fllupemail === 1" class="dot-green text-center"></span>
+                  <span v-if="lead.lastemail === 0" class="dot text-center"></span>
+                  <span v-if="lead.lastemail === 1" class="dot-green text-center"></span>
                 </td>
                 <td>
                   <button @click.prevent="showlead(lead)" class="btn btn-info btn-sm" data-toggle="modal" data-target="#leadshow">View</button>
