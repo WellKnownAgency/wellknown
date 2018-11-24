@@ -21,6 +21,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     'except' => ['create']
   ]);
   Route::get('clients', 'LeadsController@indexClients');
+  Route::get('partners', 'LeadsController@indexPartners');
   Route::put('leads/statuschange/{id}','LeadsController@statuschange');
   Route::put('leads/introemail/{id}','LeadsController@doneintroemail');
   Route::put('leads/introcall/{id}','LeadsController@doneintrocall');

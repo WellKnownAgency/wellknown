@@ -22,6 +22,11 @@ class AdminPagesController extends Controller
     return view('admin.clients');
     }
 
+    public function partners()
+    {
+    return view('admin.partners');
+    }
+
     public function companies()
     {
     return view('admin.companies');
