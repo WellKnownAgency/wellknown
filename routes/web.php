@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::prefix('admin')->middleware('auth:admin')->group(function() {
+Route::prefix('admin')->middleware('auth:web')->group(function() {
   Route::get('/', 'AdminPagesController@index')->name('admin.index');
   Route::get('/leads', 'AdminPagesController@leads');
   Route::get('/clients', 'AdminPagesController@clients');
@@ -52,8 +52,6 @@ Route::get('/blog/{slug}', ['as' => 'blog.single', 'uses' => 'PagesController@ge
 
 /* Auth Routes */
 Auth::routes();
-Route::get('/admin/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
-Route::post('/admin/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
 
 /* Post Methods */
 Route::post('contact-send', 'PagesController@postContactus');

@@ -1,7 +1,7 @@
 <!-- Sidebar -->
 <ul class="sidebar navbar-nav">
   <li class="nav-item active">
-    <a class="nav-link" href="index.html">
+    <a class="nav-link" href="/admin">
       <i class="fas fa-fw fa-tachometer-alt"></i>
       <span>Dashboard</span>
     </a>
@@ -43,10 +43,5 @@
       <a class="dropdown-item" href="">Users</a>
       <a class="dropdown-item" href="">Roles</a>
     </div>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="tables.html">
-      <i class="fas fa-fw fa-table"></i>
-      <span>Tables</span></a>
   </li>
 </ul>

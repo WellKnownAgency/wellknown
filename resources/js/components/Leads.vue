@@ -20,19 +20,19 @@
           <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
             <thead>
               <tr>
-                <th>Name | Company  <i class="fas fa-sort" style="float:right"></i></th>
-                <th>Phone  <i class="fas fa-sort" style="float:right"></i></th>
-                <th>Status <i class="fas fa-sort" style="float:right"></i></th>
-                <th>Submitted <i class="fas fa-sort" style="float:right"></i></th>
+                <th>Name | Company</th>
+                <th>Phone</th>
+                <th @click="sortBy('status_id')">Status</th>
+                <th>Submitted</th>
                 <th>Marketing</th>
-                <th>M Status</th>
+                <th>M Status <i class="fas fa-sort" style="float:right"></i></th>
                 <th></th>
                 <th></th>
                 <th></th>
               </tr>
             </thead>
             <transition-group tag="tbody" name="slide-fade">
-              <tr v-for="lead in leads" :key="lead.id">
+              <tr v-for="lead in leadsSorted" :key="lead.id">
                 <td>{{lead.first_name}} {{lead.last_name}} | {{lead.company}}</td>
                 <td>{{lead.phone}}</td>
                 <td>
@@ -444,8 +444,16 @@ var moment = require('moment');
         this.fetchSources()
       },
 
+      computed: {
+          leadsSorted: function() {
+              return _.orderBy(this.leads, this.sortKey, this.sortOrder);
+          },
+      },
+
       data () {
         return {
+          sortKey: ['status_id'],
+          sortOrder: ['asc'],
           moment: moment,
           leads: [],
           lead: {
@@ -486,6 +494,16 @@ var moment = require('moment');
 
 
       methods: {
+
+        sortBy: function(key) {
+            if (key == this.sortKey) {
+                this.sortOrder = (this.sortOrder == 'asc') ? 'desc' : 'asc';
+            } else {
+                this.sortKey = key;
+                this.sortOrder = 'asc';
+            }
+       },
+
           customFormatter(date) {
             return moment(date).format('YYYY-MM-D');
           },
