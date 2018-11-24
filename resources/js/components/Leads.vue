@@ -22,10 +22,10 @@
               <tr>
                 <th>Name | Company</th>
                 <th>Phone</th>
-                <th @click="sortBy('status_id')">Status</th>
-                <th>Submitted</th>
+                <th>Status <i class="fas fa-sort pointer" style="float:right" @click="sortBy('status_id')"></i></th>
+                <th>Submitted <i class="fas fa-sort pointer" style="float:right" @click="sortBy('created_at')"></i></th>
                 <th>Marketing</th>
-                <th>M Status <i class="fas fa-sort" style="float:right"></i></th>
+                <th>M Status</th>
                 <th></th>
                 <th></th>
                 <th></th>
