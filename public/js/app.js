@@ -66623,6 +66623,127 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -66703,32 +66824,81 @@ var moment = __webpack_require__(0);
         console.log(err);
       });
     },
-    createlead: function createlead() {
+    fetchEdit: function fetchEdit(lead) {
       var _this4 = this;
 
+      axios.get('/api/leads/' + lead.id).then(function (res) {
+        _this4.lead = res.data;
+      }).catch(function (err) {
+        console.log(err);
+      });
+    },
+    createlead: function createlead() {
+      var _this5 = this;
+
       axios.post('/api/leads', this.lead).then(function (res) {
-        _this4.leads.unshift(res.data);
-        _this4.lead.first_name = '';
-        _this4.lead.last_name = '';
-        _this4.lead.phone = '';
-        _this4.lead.emil = '';
-        _this4.lead.website = '';
-        _this4.lead.company = '';
-        _this4.lead.position = '';
-        _this4.lead.address = '';
-        _this4.lead.city = '';
-        _this4.lead.state = '';
-        _this4.lead.country = '';
-        _this4.lead.body = '';
-        _this4.lead.facebook = '';
-        _this4.lead.twitter = '';
-        _this4.lead.instagram = '';
-        _this4.lead.linkedin = '';
-        _this4.lead.note = '';
-        _this4.lead.status_id = '';
-        _this4.lead.source_id = '';
+        _this5.leads.unshift(res.data);
+        _this5.lead.first_name = '';
+        _this5.lead.last_name = '';
+        _this5.lead.phone = '';
+        _this5.lead.emil = '';
+        _this5.lead.website = '';
+        _this5.lead.company = '';
+        _this5.lead.position = '';
+        _this5.lead.address = '';
+        _this5.lead.city = '';
+        _this5.lead.state = '';
+        _this5.lead.country = '';
+        _this5.lead.body = '';
+        _this5.lead.facebook = '';
+        _this5.lead.twitter = '';
+        _this5.lead.instagram = '';
+        _this5.lead.linkedin = '';
+        _this5.lead.note = '';
+        _this5.lead.status_id = '';
+        _this5.lead.source_id = '';
       }).then(function (res) {
-        _this4.fetchLeads();
+        _this5.fetchLeads();
+      }).then(function (res) {
+        __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
+          type: 'success',
+          title: 'Yeah',
+          text: 'Lead successfully created!'
+        });
+      }).catch(function (err) {
+        console.log(err);
+        __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
+          type: 'error',
+          title: 'Ooops...',
+          text: 'Something went wrong!'
+        });
+      });
+    },
+    editlead: function editlead(lead) {
+      var _this6 = this;
+
+      axios.put('/api/leads/' + lead.id, this.lead).then(function (res) {
+        _this6.lead.first_name = '';
+        _this6.lead.last_name = '';
+        _this6.lead.phone = '';
+        _this6.lead.emil = '';
+        _this6.lead.website = '';
+        _this6.lead.company = '';
+        _this6.lead.position = '';
+        _this6.lead.address = '';
+        _this6.lead.city = '';
+        _this6.lead.state = '';
+        _this6.lead.country = '';
+        _this6.lead.body = '';
+        _this6.lead.facebook = '';
+        _this6.lead.twitter = '';
+        _this6.lead.instagram = '';
+        _this6.lead.linkedin = '';
+        _this6.lead.note = '';
+        _this6.lead.status_id = '';
+        _this6.lead.source_id = '';
+      }).then(function (res) {
+        _this6.fetchLeads();
       }).then(function (res) {
         __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
           type: 'success',
@@ -66745,7 +66915,7 @@ var moment = __webpack_require__(0);
       });
     },
     statuschange: function statuschange(lead) {
-      var _this5 = this;
+      var _this7 = this;
 
       axios.put('/api/leads/statuschange/' + lead.id, {
         status_id: lead.status_id
@@ -66757,7 +66927,7 @@ var moment = __webpack_require__(0);
           text: 'Something went wrong!'
         });
       }).then(function (res) {
-        _this5.fetchLeads();
+        _this7.fetchLeads();
       });
       __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
         type: 'success',
@@ -66765,16 +66935,16 @@ var moment = __webpack_require__(0);
       });
     },
     showlead: function showlead(lead) {
-      var _this6 = this;
+      var _this8 = this;
 
       axios.get('/api/leads/' + lead.id).then(function (res) {
-        _this6.lead = res.data;
+        _this8.lead = res.data;
       }).catch(function (err) {
         console.log(err);
       });
     },
     doneintroemail: function doneintroemail(lead) {
-      var _this7 = this;
+      var _this9 = this;
 
       __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
         title: 'Are you sure?',
@@ -66791,20 +66961,20 @@ var moment = __webpack_require__(0);
           }).catch(function (err) {
             console.log(err);
           }).then(function (res) {
-            _this7.showDone = true, _this7.showCursornot = true;
+            _this9.showDone = true, _this9.showCursornot = true;
           });
         }
       });
     },
     doneintrocall: function doneintrocall(lead) {
-      var _this8 = this;
+      var _this10 = this;
 
       axios.put('/api/leads/introcall/' + lead.id, {
         introcall: true
       }).catch(function (err) {
         console.log(err);
       }).then(function (res) {
-        _this8.showDone = true, _this8.showCursornot = true;
+        _this10.showDone = true, _this10.showCursornot = true;
       });
       __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
         type: 'success',
@@ -66812,7 +66982,7 @@ var moment = __webpack_require__(0);
       });
     },
     donefllupemail: function donefllupemail(lead) {
-      var _this9 = this;
+      var _this11 = this;
 
       __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
         title: 'Are you sure?',
@@ -66829,13 +66999,13 @@ var moment = __webpack_require__(0);
           }).catch(function (err) {
             console.log(err);
           }).then(function (res) {
-            _this9.showDone = true, _this9.showCursornot = true;
+            _this11.showDone = true, _this11.showCursornot = true;
           });
         }
       });
     },
     donelastemail: function donelastemail(lead) {
-      var _this10 = this;
+      var _this12 = this;
 
       __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
         title: 'Are you sure?',
@@ -66852,13 +67022,13 @@ var moment = __webpack_require__(0);
           }).catch(function (err) {
             console.log(err);
           }).then(function (res) {
-            _this10.showDone = true, _this10.showCursornot = true;
+            _this12.showDone = true, _this12.showCursornot = true;
           });
         }
       });
     },
     deleteLead: function deleteLead(lead) {
-      var _this11 = this;
+      var _this13 = this;
 
       __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
         title: 'Are you sure?',
@@ -66871,8 +67041,8 @@ var moment = __webpack_require__(0);
         if (result.value) {
           __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()('Deleted!');
           axios.delete('/api/leads/' + lead.id).then(function (res) {
-            var leadIndex = _this11.leads.indexOf(lead);
-            _this11.leads.splice(leadIndex, 1);
+            var leadIndex = _this13.leads.indexOf(lead);
+            _this13.leads.splice(leadIndex, 1);
           });
         }
       });
@@ -67332,6 +67502,26 @@ var render = function() {
                             }
                           },
                           [_vm._v("View")]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-warning btn-sm",
+                            attrs: {
+                              "data-toggle": "modal",
+                              "data-target": "#editlead"
+                            },
+                            on: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                _vm.fetchEdit(lead)
+                              }
+                            }
+                          },
+                          [_vm._v("Edit")]
                         )
                       ]),
                       _vm._v(" "),
@@ -68862,6 +69052,1120 @@ var render = function() {
             ]
           )
         ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "modal fade",
+          attrs: {
+            id: "editlead",
+            tabindex: "-1",
+            role: "dialog",
+            "aria-labelledby": "leadid",
+            "aria-hidden": "true"
+          }
+        },
+        [
+          _c(
+            "div",
+            {
+              staticClass: "modal-dialog modal-lg",
+              attrs: { role: "document" }
+            },
+            [
+              _c("div", { staticClass: "modal-content" }, [
+                _vm._m(12),
+                _vm._v(" "),
+                _c("div", { staticClass: "modal-body" }, [
+                  _c("form", { attrs: { method: "", autocomplete: "nope" } }, [
+                    _c("div", { staticClass: "form-row" }, [
+                      _c("div", { staticClass: "col" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "col-form-label",
+                            attrs: { for: "first_name" }
+                          },
+                          [_vm._v("First Name:")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.lead.first_name,
+                              expression: "lead.first_name"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            id: "first_name",
+                            autocomplete: "nope"
+                          },
+                          domProps: { value: _vm.lead.first_name },
+                          on: {
+                            keydown: function($event) {
+                              if (
+                                !("button" in $event) &&
+                                _vm._k(
+                                  $event.keyCode,
+                                  "enter",
+                                  13,
+                                  $event.key,
+                                  "Enter"
+                                )
+                              ) {
+                                return null
+                              }
+                              return _vm.createlead($event)
+                            },
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(
+                                _vm.lead,
+                                "first_name",
+                                $event.target.value
+                              )
+                            }
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "col-form-label",
+                            attrs: { for: "last_name" }
+                          },
+                          [_vm._v("Last Name:")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.lead.last_name,
+                              expression: "lead.last_name"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: { id: "last_name", autocomplete: "nope" },
+                          domProps: { value: _vm.lead.last_name },
+                          on: {
+                            keydown: function($event) {
+                              if (
+                                !("button" in $event) &&
+                                _vm._k(
+                                  $event.keyCode,
+                                  "enter",
+                                  13,
+                                  $event.key,
+                                  "Enter"
+                                )
+                              ) {
+                                return null
+                              }
+                              return _vm.createlead($event)
+                            },
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(
+                                _vm.lead,
+                                "last_name",
+                                $event.target.value
+                              )
+                            }
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "col-form-label",
+                            attrs: { for: "status" }
+                          },
+                          [_vm._v("Status:")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "select",
+                          {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.lead.status_id,
+                                expression: "lead.status_id"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            on: {
+                              keydown: function($event) {
+                                if (
+                                  !("button" in $event) &&
+                                  _vm._k(
+                                    $event.keyCode,
+                                    "enter",
+                                    13,
+                                    $event.key,
+                                    "Enter"
+                                  )
+                                ) {
+                                  return null
+                                }
+                                return _vm.createlead($event)
+                              },
+                              change: function($event) {
+                                var $$selectedVal = Array.prototype.filter
+                                  .call($event.target.options, function(o) {
+                                    return o.selected
+                                  })
+                                  .map(function(o) {
+                                    var val = "_value" in o ? o._value : o.value
+                                    return val
+                                  })
+                                _vm.$set(
+                                  _vm.lead,
+                                  "status_id",
+                                  $event.target.multiple
+                                    ? $$selectedVal
+                                    : $$selectedVal[0]
+                                )
+                              }
+                            }
+                          },
+                          _vm._l(_vm.statuses, function(status) {
+                            return _c(
+                              "option",
+                              {
+                                key: status.id,
+                                domProps: { value: status.id }
+                              },
+                              [_vm._v(_vm._s(status.name))]
+                            )
+                          })
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "col-form-label",
+                            attrs: { for: "source" }
+                          },
+                          [_vm._v("Source:")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "select",
+                          {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.lead.source_id,
+                                expression: "lead.source_id"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            on: {
+                              keydown: function($event) {
+                                if (
+                                  !("button" in $event) &&
+                                  _vm._k(
+                                    $event.keyCode,
+                                    "enter",
+                                    13,
+                                    $event.key,
+                                    "Enter"
+                                  )
+                                ) {
+                                  return null
+                                }
+                                return _vm.createlead($event)
+                              },
+                              change: function($event) {
+                                var $$selectedVal = Array.prototype.filter
+                                  .call($event.target.options, function(o) {
+                                    return o.selected
+                                  })
+                                  .map(function(o) {
+                                    var val = "_value" in o ? o._value : o.value
+                                    return val
+                                  })
+                                _vm.$set(
+                                  _vm.lead,
+                                  "source_id",
+                                  $event.target.multiple
+                                    ? $$selectedVal
+                                    : $$selectedVal[0]
+                                )
+                              }
+                            }
+                          },
+                          [
+                            _c("option", { attrs: { selected: "" } }, [
+                              _vm._v("Choose...")
+                            ]),
+                            _vm._v(" "),
+                            _vm._l(_vm.sources, function(source) {
+                              return _c(
+                                "option",
+                                {
+                                  key: source.id,
+                                  domProps: { value: source.id }
+                                },
+                                [_vm._v(_vm._s(source.name))]
+                              )
+                            })
+                          ],
+                          2
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "form-row" }, [
+                      _c("div", { staticClass: "col" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "col-form-label",
+                            attrs: { for: "phone" }
+                          },
+                          [_vm._v("Phone:")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.lead.phone,
+                              expression: "lead.phone"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "number",
+                            id: "phone",
+                            autocomplete: "nope"
+                          },
+                          domProps: { value: _vm.lead.phone },
+                          on: {
+                            keydown: function($event) {
+                              if (
+                                !("button" in $event) &&
+                                _vm._k(
+                                  $event.keyCode,
+                                  "enter",
+                                  13,
+                                  $event.key,
+                                  "Enter"
+                                )
+                              ) {
+                                return null
+                              }
+                              return _vm.createlead($event)
+                            },
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(_vm.lead, "phone", $event.target.value)
+                            }
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "col-form-label",
+                            attrs: { for: "email" }
+                          },
+                          [_vm._v("Email:")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.lead.email,
+                              expression: "lead.email"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "email",
+                            id: "email",
+                            autocomplete: "nope"
+                          },
+                          domProps: { value: _vm.lead.email },
+                          on: {
+                            keydown: function($event) {
+                              if (
+                                !("button" in $event) &&
+                                _vm._k(
+                                  $event.keyCode,
+                                  "enter",
+                                  13,
+                                  $event.key,
+                                  "Enter"
+                                )
+                              ) {
+                                return null
+                              }
+                              return _vm.createlead($event)
+                            },
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(_vm.lead, "email", $event.target.value)
+                            }
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "col-form-label",
+                            attrs: { for: "website" }
+                          },
+                          [_vm._v("Website:")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.lead.website,
+                              expression: "lead.website"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "url",
+                            id: "website",
+                            autocomplete: "nope"
+                          },
+                          domProps: { value: _vm.lead.website },
+                          on: {
+                            keydown: function($event) {
+                              if (
+                                !("button" in $event) &&
+                                _vm._k(
+                                  $event.keyCode,
+                                  "enter",
+                                  13,
+                                  $event.key,
+                                  "Enter"
+                                )
+                              ) {
+                                return null
+                              }
+                              return _vm.createlead($event)
+                            },
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(_vm.lead, "website", $event.target.value)
+                            }
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "form-row" }, [
+                      _c("div", { staticClass: "col" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "col-form-label",
+                            attrs: { for: "body" }
+                          },
+                          [_vm._v("Message:")]
+                        ),
+                        _vm._v(" "),
+                        _c("textarea", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.lead.body,
+                              expression: "lead.body"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: { id: "body" },
+                          domProps: { value: _vm.lead.body },
+                          on: {
+                            keydown: function($event) {
+                              if (
+                                !("button" in $event) &&
+                                _vm._k(
+                                  $event.keyCode,
+                                  "enter",
+                                  13,
+                                  $event.key,
+                                  "Enter"
+                                )
+                              ) {
+                                return null
+                              }
+                              return _vm.createlead($event)
+                            },
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(_vm.lead, "body", $event.target.value)
+                            }
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "form-row" }, [
+                      _c("div", { staticClass: "col" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "col-form-label",
+                            attrs: { for: "company" }
+                          },
+                          [_vm._v("Company:")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.lead.company,
+                              expression: "lead.company"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            id: "company",
+                            autocomplete: "nope"
+                          },
+                          domProps: { value: _vm.lead.company },
+                          on: {
+                            keydown: function($event) {
+                              if (
+                                !("button" in $event) &&
+                                _vm._k(
+                                  $event.keyCode,
+                                  "enter",
+                                  13,
+                                  $event.key,
+                                  "Enter"
+                                )
+                              ) {
+                                return null
+                              }
+                              return _vm.createlead($event)
+                            },
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(_vm.lead, "company", $event.target.value)
+                            }
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "col-form-label",
+                            attrs: { for: "position" }
+                          },
+                          [_vm._v("Position:")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.lead.position,
+                              expression: "lead.position"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            id: "position",
+                            autocomplete: "nope"
+                          },
+                          domProps: { value: _vm.lead.position },
+                          on: {
+                            keydown: function($event) {
+                              if (
+                                !("button" in $event) &&
+                                _vm._k(
+                                  $event.keyCode,
+                                  "enter",
+                                  13,
+                                  $event.key,
+                                  "Enter"
+                                )
+                              ) {
+                                return null
+                              }
+                              return _vm.createlead($event)
+                            },
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(
+                                _vm.lead,
+                                "position",
+                                $event.target.value
+                              )
+                            }
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "form-row" }, [
+                      _c("div", { staticClass: "col" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "col-form-label",
+                            attrs: { for: "address" }
+                          },
+                          [_vm._v("Address:")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.lead.address,
+                              expression: "lead.address"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            id: "address",
+                            autocomplete: "nope"
+                          },
+                          domProps: { value: _vm.lead.address },
+                          on: {
+                            keydown: function($event) {
+                              if (
+                                !("button" in $event) &&
+                                _vm._k(
+                                  $event.keyCode,
+                                  "enter",
+                                  13,
+                                  $event.key,
+                                  "Enter"
+                                )
+                              ) {
+                                return null
+                              }
+                              return _vm.createlead($event)
+                            },
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(_vm.lead, "address", $event.target.value)
+                            }
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "col-form-label",
+                            attrs: { for: "city" }
+                          },
+                          [_vm._v("City:")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.lead.city,
+                              expression: "lead.city"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            id: "city",
+                            autocomplete: "nope"
+                          },
+                          domProps: { value: _vm.lead.city },
+                          on: {
+                            keydown: function($event) {
+                              if (
+                                !("button" in $event) &&
+                                _vm._k(
+                                  $event.keyCode,
+                                  "enter",
+                                  13,
+                                  $event.key,
+                                  "Enter"
+                                )
+                              ) {
+                                return null
+                              }
+                              return _vm.createlead($event)
+                            },
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(_vm.lead, "city", $event.target.value)
+                            }
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "col-form-label",
+                            attrs: { for: "state" }
+                          },
+                          [_vm._v("State:")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.lead.state,
+                              expression: "lead.state"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            id: "state",
+                            autocomplete: "nope"
+                          },
+                          domProps: { value: _vm.lead.state },
+                          on: {
+                            keydown: function($event) {
+                              if (
+                                !("button" in $event) &&
+                                _vm._k(
+                                  $event.keyCode,
+                                  "enter",
+                                  13,
+                                  $event.key,
+                                  "Enter"
+                                )
+                              ) {
+                                return null
+                              }
+                              return _vm.createlead($event)
+                            },
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(_vm.lead, "state", $event.target.value)
+                            }
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "col-form-label",
+                            attrs: { for: "country" }
+                          },
+                          [_vm._v("Country:")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.lead.country,
+                              expression: "lead.country"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            id: "country",
+                            autocomplete: "nope"
+                          },
+                          domProps: { value: _vm.lead.country },
+                          on: {
+                            keydown: function($event) {
+                              if (
+                                !("button" in $event) &&
+                                _vm._k(
+                                  $event.keyCode,
+                                  "enter",
+                                  13,
+                                  $event.key,
+                                  "Enter"
+                                )
+                              ) {
+                                return null
+                              }
+                              return _vm.createlead($event)
+                            },
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(_vm.lead, "country", $event.target.value)
+                            }
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "form-row" }, [
+                      _c("div", { staticClass: "col" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "col-form-label",
+                            attrs: { for: "facebook" }
+                          },
+                          [_vm._v("Facebook:")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.lead.facebook,
+                              expression: "lead.facebook"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "url",
+                            id: "facebook",
+                            autocomplete: "nope"
+                          },
+                          domProps: { value: _vm.lead.facebook },
+                          on: {
+                            keydown: function($event) {
+                              if (
+                                !("button" in $event) &&
+                                _vm._k(
+                                  $event.keyCode,
+                                  "enter",
+                                  13,
+                                  $event.key,
+                                  "Enter"
+                                )
+                              ) {
+                                return null
+                              }
+                              return _vm.createlead($event)
+                            },
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(
+                                _vm.lead,
+                                "facebook",
+                                $event.target.value
+                              )
+                            }
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "col-form-label",
+                            attrs: { for: "linkedin" }
+                          },
+                          [_vm._v("Linkedin:")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.lead.linkedin,
+                              expression: "lead.linkedin"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "url",
+                            id: "linkedin",
+                            autocomplete: "nope"
+                          },
+                          domProps: { value: _vm.lead.linkedin },
+                          on: {
+                            keydown: function($event) {
+                              if (
+                                !("button" in $event) &&
+                                _vm._k(
+                                  $event.keyCode,
+                                  "enter",
+                                  13,
+                                  $event.key,
+                                  "Enter"
+                                )
+                              ) {
+                                return null
+                              }
+                              return _vm.createlead($event)
+                            },
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(
+                                _vm.lead,
+                                "linkedin",
+                                $event.target.value
+                              )
+                            }
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "col-form-label",
+                            attrs: { for: "instagram" }
+                          },
+                          [_vm._v("Instagram:")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.lead.instagram,
+                              expression: "lead.instagram"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "url",
+                            id: "instagram",
+                            autocomplete: "nope"
+                          },
+                          domProps: { value: _vm.lead.instagram },
+                          on: {
+                            keydown: function($event) {
+                              if (
+                                !("button" in $event) &&
+                                _vm._k(
+                                  $event.keyCode,
+                                  "enter",
+                                  13,
+                                  $event.key,
+                                  "Enter"
+                                )
+                              ) {
+                                return null
+                              }
+                              return _vm.createlead($event)
+                            },
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(
+                                _vm.lead,
+                                "instagram",
+                                $event.target.value
+                              )
+                            }
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "col-form-label",
+                            attrs: { for: "twitter" }
+                          },
+                          [_vm._v("Twitter:")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.lead.twitter,
+                              expression: "lead.twitter"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "url",
+                            id: "twitter",
+                            autocomplete: "nope"
+                          },
+                          domProps: { value: _vm.lead.twitter },
+                          on: {
+                            keydown: function($event) {
+                              if (
+                                !("button" in $event) &&
+                                _vm._k(
+                                  $event.keyCode,
+                                  "enter",
+                                  13,
+                                  $event.key,
+                                  "Enter"
+                                )
+                              ) {
+                                return null
+                              }
+                              return _vm.createlead($event)
+                            },
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(_vm.lead, "twitter", $event.target.value)
+                            }
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "form-row" }, [
+                      _c("div", { staticClass: "col" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "col-form-label",
+                            attrs: { for: "note" }
+                          },
+                          [_vm._v("Note:")]
+                        ),
+                        _vm._v(" "),
+                        _c("textarea", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.lead.note,
+                              expression: "lead.note"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: { id: "note" },
+                          domProps: { value: _vm.lead.note },
+                          on: {
+                            keydown: function($event) {
+                              if (
+                                !("button" in $event) &&
+                                _vm._k(
+                                  $event.keyCode,
+                                  "enter",
+                                  13,
+                                  $event.key,
+                                  "Enter"
+                                )
+                              ) {
+                                return null
+                              }
+                              return _vm.createlead($event)
+                            },
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(_vm.lead, "note", $event.target.value)
+                            }
+                          }
+                        })
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "modal-footer" }, [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-secondary",
+                      attrs: { type: "button", "data-dismiss": "modal" }
+                    },
+                    [_vm._v("Close")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-primary",
+                      attrs: { type: "button", "data-dismiss": "modal" },
+                      on: {
+                        click: function($event) {
+                          _vm.editlead(_vm.lead)
+                        }
+                      }
+                    },
+                    [_vm._v("Save changes")]
+                  )
+                ])
+              ])
+            ]
+          )
+        ]
       )
     ])
   ])
@@ -68938,6 +70242,8 @@ var staticRenderFns = [
         _c("th", [_vm._v("Marketing")]),
         _vm._v(" "),
         _c("th", [_vm._v("M Status")]),
+        _vm._v(" "),
+        _c("th"),
         _vm._v(" "),
         _c("th"),
         _vm._v(" "),
@@ -69060,6 +70366,29 @@ var staticRenderFns = [
     return _c("div", { staticClass: "modal-header" }, [
       _c("h5", { staticClass: "modal-title", attrs: { id: "leadshowmodal" } }, [
         _vm._v("Create New Lead")
+      ]),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "close",
+          attrs: {
+            type: "button",
+            "data-dismiss": "modal",
+            "aria-label": "Close"
+          }
+        },
+        [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "modal-header" }, [
+      _c("h5", { staticClass: "modal-title", attrs: { id: "editleadmodal" } }, [
+        _vm._v("Edit Lead")
       ]),
       _vm._v(" "),
       _c(
