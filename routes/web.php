@@ -27,6 +27,8 @@ Route::prefix('admin')->middleware('auth:web')->group(function() {
   Route::post('/notification/get', 'NotificationController@get');
   Route::post('/notification/read', 'NotificationController@read');
   Route::post('/notification/readall', 'NotificationController@readall');
+
+  
 });
 
 /* Main Pages */

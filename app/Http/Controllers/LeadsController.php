@@ -6,7 +6,7 @@ use App\Notifications\NewLead;
 use App\Notifications\IntroEmail;
 use Illuminate\Http\Request;
 use App\Lead;
-use App\Admin ;
+use App\User;
 
 class LeadsController extends Controller
 {
@@ -64,9 +64,9 @@ class LeadsController extends Controller
 
     $lead->save();
 
-    $admins = Admin::all();
-    foreach ($admins as $admin) {
-      $admin->notify(new NewLead($lead));
+    $users = User::all();
+    foreach ($users as $user) {
+      $user->notify(new NewLead($lead));
     }
 
     return $lead;
