@@ -31,6 +31,13 @@ class LeadsController extends Controller
       return $leads;
   }
 
+  public function indexDashleads()
+  {
+      $leads = Lead::with('source')->with('status')->where('status_id', '=', 1)->take(5)->latest()->get();
+
+      return $leads;
+  }
+
   public function store(Request $request)
   {
 

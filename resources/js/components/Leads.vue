@@ -324,21 +324,21 @@
               <div class="form-row">
                 <div class="col">
                   <label for="first_name" class="col-form-label">First Name:</label>
-                  <input type="text" class="form-control" id="first_name" v-model="lead.first_name" @keydown.enter="createlead" autocomplete="nope">
+                  <input type="text" class="form-control" id="first_name" v-model="lead.first_name" @keydown.enter="editlead" autocomplete="nope">
                 </div>
                 <div class="col">
                   <label for="last_name" class="col-form-label" >Last Name:</label>
-                  <input class="form-control" id="last_name" v-model="lead.last_name" @keydown.enter="createlead" autocomplete="nope">
+                  <input class="form-control" id="last_name" v-model="lead.last_name" @keydown.enter="editlead" autocomplete="nope">
                 </div>
                 <div class="col">
                   <label for="status" class="col-form-label">Status:</label>
-                  <select class="form-control" v-model="lead.status_id" @keydown.enter="createlead">
+                  <select class="form-control" v-model="lead.status_id" @keydown.enter="editlead">
                     <option v-for="status in statuses" :key="status.id" v-bind:value="status.id">{{status.name}}</option>
                   </select>
                 </div>
                 <div class="col">
                   <label for="source" class="col-form-label">Source:</label>
-                  <select class="form-control" v-model="lead.source_id" @keydown.enter="createlead">
+                  <select class="form-control" v-model="lead.source_id" @keydown.enter="editlead">
                     <option selected>Choose...</option>
                     <option v-for="source in sources" :key="source.id" v-bind:value="source.id">{{source.name}}</option>
                   </select>
@@ -347,73 +347,73 @@
               <div class="form-row">
                 <div class="col">
                   <label for="phone" class="col-form-label">Phone:</label>
-                  <input type="number" class="form-control" v-model="lead.phone" @keydown.enter="createlead" id="phone" autocomplete="nope">
+                  <input type="number" class="form-control" v-model="lead.phone" @keydown.enter="editlead" id="phone" autocomplete="nope">
                 </div>
                 <div class="col">
                   <label for="email" class="col-form-label">Email:</label>
-                  <input type="email" class="form-control" v-model="lead.email" @keydown.enter="createlead" id="email" autocomplete="nope">
+                  <input type="email" class="form-control" v-model="lead.email" @keydown.enter="editlead" id="email" autocomplete="nope">
                 </div>
                 <div class="col">
                   <label for="website" class="col-form-label">Website:</label>
-                  <input type="url" class="form-control" v-model="lead.website" @keydown.enter="createlead" id="website" autocomplete="nope">
+                  <input type="url" class="form-control" v-model="lead.website" @keydown.enter="editlead" id="website" autocomplete="nope">
                 </div>
               </div>
               <div class="form-row">
                 <div class="col">
                   <label for="body" class="col-form-label">Message:</label>
-                  <textarea class="form-control" v-model="lead.body" @keydown.enter="createlead" id="body"></textarea>
+                  <textarea class="form-control" v-model="lead.body" @keydown.enter="editlead" id="body"></textarea>
                 </div>
               </div>
               <div class="form-row">
                 <div class="col">
                   <label for="company" class="col-form-label">Company:</label>
-                  <input type="text" class="form-control" v-model="lead.company" @keydown.enter="createlead" id="company" autocomplete="nope">
+                  <input type="text" class="form-control" v-model="lead.company" @keydown.enter="editlead" id="company" autocomplete="nope">
                 </div>
                 <div class="col">
                   <label for="position" class="col-form-label">Position:</label>
-                  <input type="text" class="form-control" v-model="lead.position" @keydown.enter="createlead" id="position" autocomplete="nope">
+                  <input type="text" class="form-control" v-model="lead.position" @keydown.enter="editlead" id="position" autocomplete="nope">
                 </div>
               </div>
               <div class="form-row">
                 <div class="col">
                   <label for="address" class="col-form-label">Address:</label>
-                  <input type="text" class="form-control" v-model="lead.address" @keydown.enter="createlead" id="address" autocomplete="nope">
+                  <input type="text" class="form-control" v-model="lead.address" @keydown.enter="editlead" id="address" autocomplete="nope">
                 </div>
                 <div class="col">
                   <label for="city" class="col-form-label">City:</label>
-                  <input type="text" class="form-control" v-model="lead.city" @keydown.enter="createlead" id="city" autocomplete="nope">
+                  <input type="text" class="form-control" v-model="lead.city" @keydown.enter="editlead" id="city" autocomplete="nope">
                 </div>
                 <div class="col">
                   <label for="state" class="col-form-label">State:</label>
-                  <input type="text" class="form-control" v-model="lead.state" @keydown.enter="createlead" id="state" autocomplete="nope">
+                  <input type="text" class="form-control" v-model="lead.state" @keydown.enter="editlead" id="state" autocomplete="nope">
                 </div>
                 <div class="col">
                   <label for="country" class="col-form-label">Country:</label>
-                  <input type="text" class="form-control" v-model="lead.country" @keydown.enter="createlead" id="country" autocomplete="nope">
+                  <input type="text" class="form-control" v-model="lead.country" @keydown.enter="editlead" id="country" autocomplete="nope">
                 </div>
               </div>
               <div class="form-row">
                 <div class="col">
                   <label for="facebook" class="col-form-label">Facebook:</label>
-                  <input type="url" class="form-control" v-model="lead.facebook" @keydown.enter="createlead" id="facebook" autocomplete="nope">
+                  <input type="url" class="form-control" v-model="lead.facebook" @keydown.enter="editlead" id="facebook" autocomplete="nope">
                 </div>
                 <div class="col">
                   <label for="linkedin" class="col-form-label">Linkedin:</label>
-                  <input type="url" class="form-control" v-model="lead.linkedin" @keydown.enter="createlead" id="linkedin" autocomplete="nope">
+                  <input type="url" class="form-control" v-model="lead.linkedin" @keydown.enter="editlead" id="linkedin" autocomplete="nope">
                 </div>
                 <div class="col">
                   <label for="instagram" class="col-form-label">Instagram:</label>
-                  <input type="url" class="form-control" v-model="lead.instagram" @keydown.enter="createlead" id="instagram" autocomplete="nope">
+                  <input type="url" class="form-control" v-model="lead.instagram" @keydown.enter="editlead" id="instagram" autocomplete="nope">
                 </div>
                 <div class="col">
                   <label for="twitter" class="col-form-label">Twitter:</label>
-                  <input type="url" class="form-control" v-model="lead.twitter" @keydown.enter="createlead" id="twitter" autocomplete="nope">
+                  <input type="url" class="form-control" v-model="lead.twitter" @keydown.enter="editlead" id="twitter" autocomplete="nope">
                 </div>
               </div>
               <div class="form-row">
                 <div class="col">
                   <label for="note" class="col-form-label">Note:</label>
-                  <textarea class="form-control" v-model="lead.note" @keydown.enter="createlead" id="note"></textarea>
+                  <textarea class="form-control" v-model="lead.note" @keydown.enter="editlead" id="note"></textarea>
                 </div>
               </div>
             </form>

@@ -21,6 +21,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     'except' => ['create']
   ]);
   Route::get('clients', 'LeadsController@indexClients');
+  Route::get('dashleads', 'LeadsController@indexDashleads');
   Route::get('partners', 'LeadsController@indexPartners');
   Route::put('leads/statuschange/{id}','LeadsController@statuschange');
   Route::put('leads/introemail/{id}','LeadsController@doneintroemail');
@@ -54,5 +55,3 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
   Route::resource('categories', 'CategoryController');
 
   Route::get('/lead/{id}', 'LeadsController@openedit');
-
-  
