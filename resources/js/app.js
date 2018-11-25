@@ -25,7 +25,6 @@ Vue.component('settings', require('./components/Settings.vue'));
 Vue.component('seo', require('./components/Seo.vue'));
 Vue.component('dashboard', require('./components/Dashboard.vue'));
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
 
 
