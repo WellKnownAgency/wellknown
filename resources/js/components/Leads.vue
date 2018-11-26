@@ -651,6 +651,9 @@ var moment = require('moment');
                         type: 'success',
                         title: 'Status Changed!'
                       })
+                      .then((res) => {
+                        this.fetchLeads();
+                      })
             },
 
           showlead (lead){
