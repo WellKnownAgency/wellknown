@@ -42,7 +42,7 @@
                   </select>
                 </td>
                 <td>{{moment(lead.created_at).fromNow()}}</td>
-                <td><button @click.prevent="showlead(lead)" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#services">Services</button></td>
+                <td><button @click.prevent="showlead(lead)" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#servicesshow">Services</button></td>
                 <td>
                   <span style="float:right;">
                     <button @click.prevent="showlead(lead)" class="btn btn-info btn-sm" data-toggle="modal" data-target="#leadshow">View</button>
@@ -115,6 +115,32 @@
         </div>
       </div>
     </div>
+    <div class="modal fade bd-example-modal-lg" id="servicesshow" tabindex="-1" role="dialog" aria-labelledby="leadid" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="servicesshowmodal">Services</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="table-responsive">
+              <table class="table table-borderless" >
+                <tr>
+                  <td>Name:</td><td>{{ lead.first_name }} {{ lead.last_name }}</td>
+                  <td style="border-left: 1px solid #f0f0f0;">Source:</td><td>{{ lead.source }}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
   <!-- /.container-fluid -->
 
@@ -168,6 +194,11 @@ var moment = require('moment');
           },
           sources: [],
           source: {
+            id: '',
+            name: '',
+          },
+          services: [],
+          service: {
             id: '',
             name: '',
           }
