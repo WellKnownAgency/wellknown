@@ -15,7 +15,7 @@
     <div class="card mb-3">
       <div class="card-header">
         <i class="fas fa-table"></i>
-        List of SEO Projects 2
+        List of SEO Projects
         <button class="btn btn-success" style="float:right;" data-toggle="modal" data-target="#create-project-modal">Add SEO Project</button>
       </div>
       <div class="card-body">

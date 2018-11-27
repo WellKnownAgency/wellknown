@@ -75919,7 +75919,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\n        List of SEO Projects 2\n        "),
+      _vm._v("\n        List of SEO Projects\n        "),
       _c(
         "button",
         {
