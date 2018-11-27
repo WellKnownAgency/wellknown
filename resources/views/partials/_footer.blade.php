@@ -1,4 +1,4 @@
-<footer class="footer footer-big bg-indexcase">
+<footer class="footer footer-big" data-background-color="black">
   <div class="container">
     <div class="content">
       <div class="row">
@@ -47,17 +47,17 @@
           <h5 style="color:#fff;">Follow Us</h5>
           <ul class="social-buttons">
             <li>
-              <a href="https://twitter.com/WKnownMarketing" class="btn btn-icon btn-neutral btn-twitter btn-round">
+              <a href="https://twitter.com/WKnownMarketing" target="_blank" class="btn btn-icon btn-neutral btn-twitter btn-round">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.facebook.com/WellKnown-153425045259276/" class="btn btn-icon btn-neutral btn-facebook btn-round">
+              <a href="https://www.facebook.com/WellKnown-153425045259276/" target="_blank" class="btn btn-icon btn-neutral btn-facebook btn-round">
                 <i class="fab fa-facebook-square"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/company/wellknown/" class="btn btn-icon btn-neutral btn-twitter btn-round">
+              <a href="https://www.linkedin.com/company/wellknown/" target="_blank" class="btn btn-icon btn-neutral btn-twitter btn-round">
                 <i class="fab fa-linkedin"></i>
               </a>
             </li>
@@ -71,7 +71,7 @@
       Copyright &copy;
       <script>
         document.write(new Date().getFullYear())
-      </script> WellKnown Agency. All Rights Reserved.
+      </script> WellKnown Agency. All Rights Reserved. <p> <a href="/privacy-policy"> Privacy Policy </a></p>
     </div>
   </div>
 </footer>

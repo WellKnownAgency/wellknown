@@ -31,12 +31,16 @@ Vue.use(SNotify, {
 
 Vue.component('leads', require('./components/Leads.vue'));
 Vue.component('clients', require('./components/Clients.vue'));
+Vue.component('partners', require('./components/Partners.vue'));
 Vue.component('posts', require('./components/Posts.vue'));
 Vue.component('categories', require('./components/Categories.vue'));
 Vue.component('notifications', require('./components/Notifications.vue'));
 Vue.component('settings', require('./components/Settings.vue'));
 Vue.component('seo', require('./components/seo/Seo.vue'));
 Vue.component('seo-edit', require('./components/seo/SeoEdit.vue'));
+Vue.component('dashboard', require('./components/Dashboard.vue'));
+
+
 
 
 const app = new Vue({

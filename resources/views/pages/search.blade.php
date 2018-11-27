@@ -6,10 +6,6 @@
 
 @section('keywords', 'Search Engine Optimization Services, SEO Agency, Services Company, Local SEO, SEO Expert')
 
-@section('preload')
-<link rel="preload" href="images/bgmain/seo.jpg" as="image">
-@stop
-
 @section('customcss')
 <meta property="og:image" content="/images/sem.jpg" />
 <style>
@@ -59,7 +55,7 @@ canvas {
           </div>
           <div class="row">
             <div class="col-md-4">
-              <div class="card card-background card-raised" data-background-color style="background-image: url('images/search/optimization.webp')">
+              <div class="card card-background card-raised" data-background-color style="background-image: url('images/search/optimization.jpg')">
                 <div class="info">
                   <div class="icon icon-white">
                     <i class="fa fa-cog"></i>
@@ -72,7 +68,7 @@ canvas {
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card card-background card-raised" data-background-color style="background-image: url('images/search/analytics.webp')">
+              <div class="card card-background card-raised" data-background-color style="background-image: url('images/search/analytics.jpg')">
                 <div class="info">
                   <div class="icon icon-white">
                     <i class="fas fa-chart-line"></i>
@@ -85,7 +81,7 @@ canvas {
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card card-background card-raised" data-background-color style="background-image: url('images/search/reporting.webp')">
+              <div class="card card-background card-raised" data-background-color style="background-image: url('images/search/reporting.jpg')">
                 <div class="info">
                   <div class="icon icon-white">
                     <i class="fas fa-flag"></i>
@@ -135,7 +131,7 @@ canvas {
             </div>
             <div class="col-md-4">
               <div class="phone-container">
-                <img src="images/img/iphone2.png" />
+                <img src="images/search/iphone-x.png" />
               </div>
             </div>
             <div class="col-md-4">
@@ -162,7 +158,7 @@ canvas {
         </div>
       </div>
 		</section>
-    <div class="pricing-1 section-image" id="pricing-1" style="background-image: url('/images/search/seo-bg-prices.webp')">
+    <div class="pricing-1 section-image" id="pricing-1" style="background-image: url('/images/search/seo-bg-prices.jpg')">
 
     <div class="container">
         <div class="row">
@@ -254,110 +250,44 @@ canvas {
         </div>
 
     </div>
-</div>
-		<!-- Latest posts in SEO category -->
-		<section>
-      <!-- Blog -->
-      <div class="section section-plain-cards">
-        <div class="container">
-          <div class="title">
-            <h3>Latest Blog Posts
-            </h3>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-lg-4">
-              <div class="card card-blog card-plain">
-                <div class="card-image">
-                  <a href="#pablo">
-                    <img class="img img-raised rounded" src="/images/img/examples/card-blog6.jpg">
-                  </a>
-                </div>
-                <div class="card-body text-center">
-                  <h6 class="category text-danger">
-                    <i class="now-ui-icons media-2_sound-wave"></i> Business
-                  </h6>
-                  <h5 class="card-title">
-                    <a href="#nuk">Axel Springer Spends $343M To Buy Business Insider</a>
-                  </h5>
-                  <p class="card-description">
-                    German media giant Axel Springer has announced it’s acquiring online business news publication Business Inside...
-                  </p>
-                  <div class="card-footer">
-                    <a href="#nuk" class="btn btn-primary">Read Article</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="card card-blog card-plain">
-                <div class="card-image">
-                  <a href="#pablo">
-                    <img class="img img-raised rounded" src="/images/img/examples/card-blog6.jpg">
-                  </a>
-                </div>
-                <div class="card-body text-center">
-                  <h6 class="category text-danger">
-                    <i class="now-ui-icons media-2_sound-wave"></i> Business
-                  </h6>
-                  <h5 class="card-title">
-                    <a href="#nuk">Axel Springer Spends $343M To Buy Business Insider</a>
-                  </h5>
-                  <p class="card-description">
-                    German media giant Axel Springer has announced it’s acquiring online business news publication Business Inside...
-                  </p>
-                  <div class="card-footer">
-                    <a href="#nuk" class="btn btn-primary">Read Article</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="card card-blog card-plain">
-                <div class="card-image">
-                  <a href="#pablo">
-                    <img class="img img-raised rounded" src="/images/img/examples/card-blog6.jpg">
-                  </a>
-                </div>
-                <div class="card-body text-center">
-                  <h6 class="category text-danger">
-                    <i class="now-ui-icons media-2_sound-wave"></i> Business
-                  </h6>
-                  <h5 class="card-title">
-                    <a href="#nuk">Axel Springer Spends $343M To Buy Business Insider</a>
-                  </h5>
-                  <p class="card-description">
-                    German media giant Axel Springer has announced it’s acquiring online business news publication Business Inside...
-                  </p>
-                  <div class="card-footer">
-                    <a href="#nuk" class="btn btn-primary">Read Article</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--subscribe section-->
-		<div class="subscribe-line subscribe-line-image" style="background-image: url('/images/index/hexagonred.webp'); background-repeat: no-repeat;
-    background-attachment: fixed;">
-	    <div class="container">
-	      <div class="row">
-	        <div class="col-md-6 ml-auto mr-auto">
-	          <div class="text-center">
-	            <h4 class="title">Get a free Consultation</h4>
-	            <p class="description">
-	              Contact us if you have any questions and we will get back to you asap.
+	</div>
+	<!-- Blog -->
+	<div class="section section-plain-cards">
+	  <div class="container">
+	    <div class="title">
+	      <h3>Latest Blog Posts
+	      </h3>
+	    </div>
+	    <div class="row">
+	      @foreach( $posts as $post )
+	      <div class="col-md-6 col-lg-4">
+	        <div class="card card-blog card-plain">
+	          <div class="card-image">
+	            <a href="/blog/{{ $post->slug }}">
+	              <img class="img img-raised rounded" src="/images/blog/{{ $post->image }}">
+	            </a>
+	          </div>
+	          <div class="card-body text-center">
+	            <h6 class="category text-danger">
+	              <i class="now-ui-icons media-2_sound-wave"></i> {{ $post->category['name'] }}
+	            </h6>
+	            <h5 class="card-title">
+	              <a href="/blog/{{ $post->slug }}">{{ $post->title }}</a>
+	            </h5>
+	            <p class="card-description">
+	              {{ str_limit($post->excerpt, 100) }}
 	            </p>
-	            <a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;">Free consultation</a>
+	            <div class="card-footer">
+	              <a href="/blog/{{ $post->slug }}" class="btn btn-primary">Read Article</a>
+	            </div>
 	          </div>
 	        </div>
 	      </div>
+	      @endforeach
 	    </div>
 	  </div>
+	</div>
 
-    <!-- About us Section -->
 @stop
 @section('customjs')
 <script>

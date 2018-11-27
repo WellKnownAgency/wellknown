@@ -43,7 +43,7 @@
                 </td>
                 <td>{{moment(post.created_at).fromNow()}}</td>
                 <td>
-                  <a href="" class="btn btn-info btn-sm">View</a>
+                  <a :href="'/admin/posts/'+post.id+'/show'" class="btn btn-info btn-sm">View</a>
                   <a :href="'/admin/posts/'+post.id+'/edit'" class="btn btn-warning btn-sm">Edit</a>
                   <button @click.prevent="deletePost(post)" class="btn btn-danger btn-sm delete">Delete</button>
                 </td>

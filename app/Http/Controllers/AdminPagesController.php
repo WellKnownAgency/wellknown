@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\SeoProject;
 use Illuminate\Http\Request;
+use App\Category;
 
 class AdminPagesController extends Controller
 {
@@ -22,6 +23,11 @@ class AdminPagesController extends Controller
     return view('admin.clients');
     }
 
+    public function partners()
+    {
+    return view('admin.partners');
+    }
+
     public function companies()
     {
     return view('admin.companies');
@@ -29,7 +35,8 @@ class AdminPagesController extends Controller
 
     public function posts()
     {
-    return view('admin.posts.index');
+      $categories = Category::get();
+      return view('admin.posts.index')->withCategories($categories);
     }
 
     public function categories()

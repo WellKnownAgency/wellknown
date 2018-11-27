@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Notification;
-use App\Notifications\Comments;
-use App\Notifications\Customers;
+use App\Notifications\NewLead;
 use Illuminate\Http\Request;
 use App\Lead;
 use App\Post;
+use App\User;
 use App\Comment;
+use App\Category;
 use Mail;
 
 
@@ -19,24 +19,23 @@ class PagesController extends Controller
   }
 
    public function getIndex() {
-	   return view('pages/index');
+     $posts = Post::latest()->with('category')->where('status', 'PUBLISHED')->take(3)->get();
+	   return view('pages/index')->withPosts($posts);
    }
 
 	public function getAdvertising() {
-		return view('pages/advertising');
+    $posts = Post::latest()->with('category')->where('status', 'PUBLISHED')->take(3)->get();
+		return view('pages/advertising')->withPosts($posts);
 	}
 
 	public function getSearch() {
-		return view('pages/search');
+    $posts = Post::latest()->with('category')->where('status', 'PUBLISHED')->take(3)->get();
+		return view('pages/search')->withPosts($posts);
 	}
-
-	public function getSocial() {
-		return view('pages/social');
-	}
-
 
 	public function getWebdesign() {
-		return view('pages/web-design');
+    $posts = Post::latest()->with('category')->where('status', 'PUBLISHED')->take(3)->get();
+		return view('pages/web-design')->withPosts($posts);
 	}
 
 	public function getAboutus() {
@@ -53,6 +52,23 @@ class PagesController extends Controller
 
   public function getContactus() {
     return view('pages/contactus');
+  }
+
+  public function fancyflowers() {
+    return view('pages/case/fancyflowers');
+  }
+
+  public function borntomove() {
+    return view('pages/case/goborntomove');
+  }
+
+  public function omdarling() {
+    return view('pages/case/omdarling');
+  }
+
+  public function blogIndex() {
+    $posts = Post::latest()->with('category')->where('status', 'PUBLISHED')->paginate(9);
+    return view('blog/index')->withPosts($posts);
   }
 
   public function postContactus(Request $request) {
@@ -78,9 +94,13 @@ class PagesController extends Controller
 
 		$lead->save();
 
+    $users = User::all();
+    foreach ($users as $user) {
+      $user->notify(new NewLead($lead));
+    }
 
 
-    return redirect('/your-form-submitted');
+    return redirect('/contact-us');
   }
 
   public function postComment(Request $request, $post_id) {
@@ -107,10 +127,16 @@ class PagesController extends Controller
 
   }
 
-	public function sitemap()
-{
-    $posts = Post::orderBy('updated_at', 'DESC')->get();
-    return response()->view('pages.sitemap', compact('posts'))->header('Content-Type', 'text/xml');
-}
+  	public function sitemap()
+  {
+      $posts = Post::orderBy('updated_at', 'DESC')->get();
+      return response()->view('pages.sitemap', compact('posts'))->header('Content-Type', 'text/xml');
+  }
+
+  public function getSingle($slug) {
+    $post = Post::where('slug', '=', $slug)->first();
+    $posts = Post::latest()->where('id', '!=', $post->id)->limit(3)->get();
+    return view('blog.single')->withPost($post)->withPosts($posts);
+  }
 
 }

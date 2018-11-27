@@ -98,9 +98,7 @@ canvas {
                   </div>
                   <div class="row">
                     <div class="col-md-12">
-                      <div class="card" style="width: 100%">
-                        <img class="card-img-top" src="images/img/ad1.jpg" alt="Card image cap">
-                      </div>
+                        <img src="images/advertising/ideas.jpg" alt="Card image cap" style="margin-left:auto; margin-right:auto; display:block;">
                     </div>
                   </div>
 								</div>
@@ -116,9 +114,7 @@ canvas {
                   </div>
                   <div class="row">
                     <div class="col-md-12">
-                      <div class="card" style="width: 100%">
-                        <img class="card-img-top" src="images/img/ad2.jpg" alt="Card image cap">
-                      </div>
+                        <img class="" src="images/advertising/strategy.jpg" alt="Card image cap" style="margin-left:auto; margin-right:auto; display:block;">
                     </div>
                   </div>
 								</div>
@@ -134,9 +130,7 @@ canvas {
   								</div>
                   <div class="row">
                     <div class="col-md-12">
-                      <div class="card" style="width: 100%">
-                        <img class="card-img-top" src="images/img/ad3.jpg" alt="Card image cap">
-                      </div>
+                        <img class="" src="images/advertising/creating.jpg" alt="Card image cap" style="margin-left:auto; margin-right:auto; display:block;">
                     </div>
                   </div>
                 </div>
@@ -152,9 +146,7 @@ canvas {
                   </div>
                   <div class="row">
                     <div class="col-md-12">
-                      <div class="card" style="width: 100%">
-                        <img class="card-img-top" src="images/img/ad4.jpg" alt="Card image cap">
-                      </div>
+                        <img class="" src="images/advertising/managing.jpg" alt="Card image cap" style="margin-left:auto; margin-right:auto; display:block;">
                     </div>
                   </div>
 								</div>
@@ -166,7 +158,7 @@ canvas {
 		</div>
 	</div>
 </div>
-<div class="features-8 section-image" style="background-image: url('images/advertising/bg-1.webp')">
+<div class="features-8 section-image" style="background-image: url('images/advertising/bg-1.jpg')">
 
     <div class="col-md-8 ml-auto mr-auto text-center">
         <h2 class="title">Types of Online Advertising</h2>
@@ -178,7 +170,7 @@ canvas {
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <img src="images/advertising/ppc.webp" class="rounded" alt="">
+                        <img src="images/advertising/ppc.jpg" class="rounded" alt="">
                     </div>
                     <div class="info text-center">
                         <div class="icon">
@@ -193,7 +185,7 @@ canvas {
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <img src="images/advertising/remarketing.webp" class="rounded" alt="">
+                        <img src="images/advertising/remarketing.jpg" class="rounded" alt="">
                     </div>
                     <div class="info text-center">
                         <div class="icon">
@@ -208,7 +200,7 @@ canvas {
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <img src="images/advertising/smm.webp" class="rounded" alt="">
+                        <img src="images/advertising/smm.jpg" class="rounded" alt="">
                     </div>
                     <div class="info text-center">
                         <div class="icon">
@@ -223,7 +215,7 @@ canvas {
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <img src="images/advertising/brand.webp" class="rounded" alt="">
+                        <img src="images/advertising/brand.jpg" class="rounded" alt="">
                     </div>
                     <div class="info text-center">
                         <div class="icon">
@@ -249,110 +241,50 @@ canvas {
       </div>
       <div class="col-lg-6 col-md-12">
         <div class="image-container">
-          <img class="components-macbook" src="images/img/ipad.png" alt="">
-          <img class="table-img" src="images/img/presentation-page/table.jpg" alt="">
-          <img class="share-btn-img" src="images/img/presentation-page/share-btn.jpg" alt="">
-          <img class="coloured-card-btn-img" src="images/img/presentation-page/coloured-card-with-btn.jpg" alt="">
-          <img class="coloured-card-img" src="images/img/presentation-page/coloured-card.jpg" alt="">
-          <img class="social-img" src="images/img/presentation-page/social-row.jpg" alt="">
-          <img class="linkedin-btn-img" src="images/img/presentation-page/linkedin-btn.jpg" alt="">
+          <img class="components-macbook" src="images/advertising/ipad-ad.png" alt="">
+          <img class="table-img" src="/images/advertising/anton.jpg" alt="">
+          <img class="share-btn-img" src="/images/advertising/stars.jpg" alt="">
+          <img class="coloured-card-btn-img" src="/images/advertising/bannerads.jpg" alt="">
+          <img class="coloured-card-img" src="/images/advertising/facebookads.jpg" alt="">
+          <img class="social-img" src="/images/google.png" alt="">
         </div>
       </div>
     </div>
   </div>
 </div>
+<!-- Blog -->
 <div class="section section-plain-cards">
-  <div class="container">
-    <div class="title">
-      <h3>Latest Blog Posts
-      </h3>
-    </div>
-    <div class="row">
-      <div class="col-md-6 col-lg-4">
-        <div class="card card-blog card-plain">
-          <div class="card-image">
-            <a href="#pablo">
-              <img class="img img-raised rounded" src="/images/img/examples/card-blog6.jpg">
-            </a>
-          </div>
-          <div class="card-body text-center">
-            <h6 class="category text-danger">
-              <i class="now-ui-icons media-2_sound-wave"></i> Business
-            </h6>
-            <h5 class="card-title">
-              <a href="#nuk">Axel Springer Spends $343M To Buy Business Insider</a>
-            </h5>
-            <p class="card-description">
-              German media giant Axel Springer has announced it’s acquiring online business news publication Business Inside...
-            </p>
-            <div class="card-footer">
-              <a href="#nuk" class="btn btn-primary">Read Article</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="card card-blog card-plain">
-          <div class="card-image">
-            <a href="#pablo">
-              <img class="img img-raised rounded" src="/images/img/examples/card-blog6.jpg">
-            </a>
-          </div>
-          <div class="card-body text-center">
-            <h6 class="category text-danger">
-              <i class="now-ui-icons media-2_sound-wave"></i> Business
-            </h6>
-            <h5 class="card-title">
-              <a href="#nuk">Axel Springer Spends $343M To Buy Business Insider</a>
-            </h5>
-            <p class="card-description">
-              German media giant Axel Springer has announced it’s acquiring online business news publication Business Inside...
-            </p>
-            <div class="card-footer">
-              <a href="#nuk" class="btn btn-primary">Read Article</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="card card-blog card-plain">
-          <div class="card-image">
-            <a href="#pablo">
-              <img class="img img-raised rounded" src="/images/img/examples/card-blog6.jpg">
-            </a>
-          </div>
-          <div class="card-body text-center">
-            <h6 class="category text-danger">
-              <i class="now-ui-icons media-2_sound-wave"></i> Business
-            </h6>
-            <h5 class="card-title">
-              <a href="#nuk">Axel Springer Spends $343M To Buy Business Insider</a>
-            </h5>
-            <p class="card-description">
-              German media giant Axel Springer has announced it’s acquiring online business news publication Business Inside...
-            </p>
-            <div class="card-footer">
-              <a href="#nuk" class="btn btn-primary">Read Article</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="subscribe-line subscribe-line-image" style="background-image: url('/images/index/hexagonred.webp'); background-repeat: no-repeat;
-    background-attachment: fixed;">
 	<div class="container">
+		<div class="title">
+			<h3>Latest Blog Posts
+			</h3>
+		</div>
 		<div class="row">
-			<div class="col-md-6 ml-auto mr-auto">
-				<div class="text-center">
-					<h4 class="title">Get a free Consultation</h4>
-					<p class="description">
-						Contact us if you have any questions and we will get back to you asap.
-					</p>
-					<a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;">Free consultation</a>
+			@foreach( $posts as $post )
+			<div class="col-md-6 col-lg-4">
+				<div class="card card-blog card-plain">
+					<div class="card-image">
+						<a href="/blog/{{ $post->slug }}">
+							<img class="img img-raised rounded" src="/images/blog/{{ $post->image }}">
+						</a>
+					</div>
+					<div class="card-body text-center">
+						<h6 class="category text-danger">
+							<i class="now-ui-icons media-2_sound-wave"></i> {{ $post->category['name'] }}
+						</h6>
+						<h5 class="card-title">
+							<a href="/blog/{{ $post->slug }}">{{ $post->title }}</a>
+						</h5>
+						<p class="card-description">
+							{{ str_limit($post->excerpt, 100) }}
+						</p>
+						<div class="card-footer">
+							<a href="/blog/{{ $post->slug }}" class="btn btn-primary">Read Article</a>
+						</div>
+					</div>
 				</div>
 			</div>
+			@endforeach
 		</div>
 	</div>
 </div>

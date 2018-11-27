@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('layout.maincontact')
 
 @section('title', 'Contact Us | WellKnown')
 
@@ -7,7 +7,7 @@
 @section('keywords', '')
 
 @section('preload')
-<link rel="preload" href="images/img/login.jpg" as="image">
+<link rel="preload" href="images/contact-us.jpg" as="image">
 @stop
 @section('customcss')
 <style>
@@ -50,11 +50,14 @@ select.form-control:not([size]):not([multiple]) {
 [v-cloak] {
     display: none;
   }
+	.input-group-text {
+		color: #fff!important;
+	}
 </style>
 @stop
 @section('content')
 <div class="page-header header-filter" filter-color="orange">
-        <div class="page-header-image" style="background-image:url(images/img/login.jpg)"></div>
+        <div class="page-header-image" style="background-image:url(images/contact-us.jpg)"></div>
         <div class="content">
             <div class="container">
                 <div class="col-md-5 ml-auto mr-auto">

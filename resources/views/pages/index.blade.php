@@ -7,23 +7,23 @@
 @section('keywords', 'Digital Agency, Online marketing, online advertising, marketing Agency, Advertising Agency, Web design agency, web development')
 
 @section('preload')
-<link rel="preload" href="/images/sky.webp" as="image">
-<link rel="preload" href="/images/boston.webp" as="image">
+<link rel="preload" href="/images/sky.jpg" as="image">
+<link rel="preload" href="/images/boston.png" as="image">
 @stop
 
 @section('customcss')
-<meta property="og:image" content="/images/sem.jpg" />
+<meta property="og:image" content="/images/sky.jpg" />
 @stop
 
 @section('content')
 <div class="wrapper">
   <div class="page-header clear-filter">
     <div class="rellax-header rellax-header-sky" data-rellax-speed="-4">
-      <div class="page-header-image" style="background-image: url('/images/sky.webp')">
+      <div class="page-header-image" style="background-image: url('/images/sky.jpg')">
       </div>
     </div>
     <div class="rellax-header rellax-header-buildings" data-rellax-speed="0">
-      <div class="page-header-image page-header-city" style="background-image: url('/images/boston.webp')">
+      <div class="page-header-image page-header-city" style="background-image: url('/images/boston.png')">
       </div>
     </div>
     <div class="rellax-text-container rellax-text">
@@ -73,13 +73,13 @@
           </div>
       </div>
   </div>
-  <div class="section section-content" data-background-color="black">
+  <div class="section section-content" style="background-image: url('../images/webdesign/bg-2.jpg');">
     <div class="container">
       <div class="row">
         <div class="col-md-5">
           <div class="image-container">
-            <img class="img img-raised rounded img-comments rellax" data-rellax-speed="1" src="/images/test3.webp">
-            <img class="img img-raised rounded img-blog rellax" data-rellax-speed="4" src="images/test2.webp">
+            <img class="img img-raised rounded img-comments rellax" data-rellax-speed="1" src="/images/philosophy2.jpg">
+            <img class="img img-raised rounded img-blog rellax" data-rellax-speed="4" src="images/philosophy1.jpg">
           </div>
         </div>
         <div class="col-md-4 ml-auto mr-auto">
@@ -98,17 +98,17 @@
       <div class="row">
         <div class="col-md-4">
           <a href="https://upcity.com/local-marketing-agencies/profiles/wellknown-agency" class="btn btn-neutral btn-icon btn-twitter btn-footer">
-            <img src="/images/upcity.webp" width="100px"/>
+            <img src="/images/upcity.png" width="100px"/>
           </a>
         </div>
         <div class="col-md-4">
           <a href="https://clutch.co/profile/wellknown-agency" class="btn btn-neutral btn-icon btn-facebook btn-footer">
-            <img src="/images/clutch.webp" width="100px" />
+            <img src="/images/clutch.png" width="100px" />
           </a>
         </div>
         <div class="col-md-4">
           <a href="" class="btn btn-neutral btn-icon btn-google btn-footer">
-            <img src="/images/dan.webp" width="100px" />
+            <img src="/images/dan.png" width="100px" />
           </a>
         </div>
       </div>
@@ -131,9 +131,9 @@
         <div class="col-md-3 offset-md-1">
           <div class="card-container first-card">
             <div class="card-component">
-              <a href="index.html#basic-elements" target="_blank">
+              <a href="/fancy-flowers" target="_blank">
                 <div class="front">
-                  <img src="images/img/presentation-page/basic_thumb.jpg">
+                  <img src="/images/fflowermain.jpg">
                 </div>
               </a>
             </div>
@@ -142,9 +142,9 @@
         <div class="col-md-3">
           <div class="card-container second-card">
             <div class="card-component">
-              <a href="index.html#cards" target="_blank">
+              <a href="/born-to-move" target="_blank">
                 <div class="front">
-                  <img src="images/img/presentation-page/cards_thumb.jpg">
+                  <img src="/images/btmpagem.jpg">
                 </div>
               </a>
             </div>
@@ -153,9 +153,9 @@
         <div class="col-md-3">
           <div class="card-container third-card">
             <div class="card-component">
-              <a href="sections.html" target="_blank">
+              <a href="/omdarling" target="_blank">
                 <div class="front">
-                  <img src="images/img/presentation-page/sections_thumb.jpg">
+                  <img src="/images/omdarlingmain.jpg">
                 </div>
               </a>
             </div>
@@ -172,91 +172,31 @@
         </h3>
       </div>
       <div class="row">
+        @foreach( $posts as $post )
         <div class="col-md-6 col-lg-4">
           <div class="card card-blog card-plain">
             <div class="card-image">
-              <a href="#pablo">
-                <img class="img img-raised rounded" src="/images/img/examples/card-blog6.jpg">
+              <a href="/blog/{{ $post->slug }}">
+                <img class="img img-raised rounded" src="/images/blog/{{ $post->image }}">
               </a>
             </div>
             <div class="card-body text-center">
               <h6 class="category text-danger">
-                <i class="now-ui-icons media-2_sound-wave"></i> Business
+                <i class="now-ui-icons media-2_sound-wave"></i> {{ $post->category['name'] }}
               </h6>
               <h5 class="card-title">
-                <a href="#nuk">Axel Springer Spends $343M To Buy Business Insider</a>
+                <a href="/blog/{{ $post->slug }}">{{ $post->title }}</a>
               </h5>
               <p class="card-description">
-                German media giant Axel Springer has announced it’s acquiring online business news publication Business Inside...
+                {{ str_limit($post->excerpt, 100) }}
               </p>
               <div class="card-footer">
-                <a href="#nuk" class="btn btn-primary">Read Article</a>
+                <a href="/blog/{{ $post->slug }}" class="btn btn-primary">Read Article</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card card-blog card-plain">
-            <div class="card-image">
-              <a href="#pablo">
-                <img class="img img-raised rounded" src="/images/img/examples/card-blog6.jpg">
-              </a>
-            </div>
-            <div class="card-body text-center">
-              <h6 class="category text-danger">
-                <i class="now-ui-icons media-2_sound-wave"></i> Business
-              </h6>
-              <h5 class="card-title">
-                <a href="#nuk">Axel Springer Spends $343M To Buy Business Insider</a>
-              </h5>
-              <p class="card-description">
-                German media giant Axel Springer has announced it’s acquiring online business news publication Business Inside...
-              </p>
-              <div class="card-footer">
-                <a href="#nuk" class="btn btn-primary">Read Article</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card card-blog card-plain">
-            <div class="card-image">
-              <a href="#pablo">
-                <img class="img img-raised rounded" src="/images/img/examples/card-blog6.jpg">
-              </a>
-            </div>
-            <div class="card-body text-center">
-              <h6 class="category text-danger">
-                <i class="now-ui-icons media-2_sound-wave"></i> Business
-              </h6>
-              <h5 class="card-title">
-                <a href="#nuk">Axel Springer Spends $343M To Buy Business Insider</a>
-              </h5>
-              <p class="card-description">
-                German media giant Axel Springer has announced it’s acquiring online business news publication Business Inside...
-              </p>
-              <div class="card-footer">
-                <a href="#nuk" class="btn btn-primary">Read Article</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="subscribe-line subscribe-line-image" style="background-image: url('/images/index/hexagonred.webp'); background-repeat: no-repeat;
-    background-attachment: fixed;">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 ml-auto mr-auto">
-          <div class="text-center">
-            <h4 class="title">Get a free Consultation</h4>
-            <p class="description">
-              Contact us if you have any questions and we will get back to you asap.
-            </p>
-            <a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;">Free consultation</a>
-          </div>
-        </div>
+        @endforeach
       </div>
     </div>
   </div>

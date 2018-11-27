@@ -6,9 +6,6 @@
 
 @section('keywords', 'website design, simple crm and cms systems, website developers, responsive web design, web design and development')
 
-@section('preload')
-<link rel="preload" href="" as="image">
-@stop
 
 @section('customcss')
 <style>
@@ -50,15 +47,15 @@ canvas {
     <div class="row">
      <div class="col-md-12">
       <div class="hero-images-container">
-       <img src="images/img/hero-image-1.png" alt="">
+       <img src="images/webdesign/desktop.png" alt="">
       </div>
 
       <div class="hero-images-container-1">
-       <img src="images/img/hero-image-2.png" alt="">
+       <img src="images/webdesign/ipad.png" alt="">
       </div>
 
       <div class="hero-images-container-2">
-       <img src="images/img/hero-image-3.png" alt="">
+       <img src="images/webdesign/iphone.png" alt="">
       </div>
      </div>
     </div>
@@ -66,7 +63,7 @@ canvas {
   </div>
 		<!-- Steps -->
 
-      <div class="features-7 section-image" style="background-image: url('images/img/bg11.jpg')">
+      <div class="features-7 section-image" style="background-image: url('images/webdesign/bg-2.jpg')">
         <div class="col-md-8 mr-auto ml-auto text-center">
           <h2 class="title">Our Steps to Build Your Website</h2>
           <h4 class="description">WellKnown Agency is providing a full service in web design & development and help your business to obtain gorgeous Internet profile.</h4>
@@ -106,7 +103,7 @@ canvas {
             </div>
             <div class="col-md-6">
               <div class="image-container">
-                <img src="images/img/ipad3.png" alt="">
+                <img src="images/webdesign/ipad3.png" alt="">
               </div>
             </div>
           </div>
@@ -119,13 +116,13 @@ canvas {
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center">
             <h2 class="title">We have many advantages</h2>
-            <h4 class="description">This is the paragraph where you can write more details about your projects. Keep you user engaged by providing meaningful information.</h4>
+            <h4 class="description">Our team will give you the most convenient experience in building your website. You will, definitely, never regret giving us the opportunity to create your online profile.</h4>
             <div class="section-space"></div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-5 ml-auto">
-            <div class="card card-background card-background-product card-raised" style="background-image: url('../images/webdesign/design.webp')">
+            <div class="card card-background card-background-product card-raised" style="background-image: url('../images/webdesign/design.jpg')">
               <div class="card-body">
                 <h2 class="card-title">Web Design</h2>
                 <p class="card-description">
@@ -210,7 +207,7 @@ canvas {
             </div>
           </div>
           <div class="col-md-5 mr-auto">
-            <div class="card card-background card-background-product card-raised" style="background-image: url('../images/webdesign/development.webp')">
+            <div class="card card-background card-background-product card-raised" style="background-image: url('../images/webdesign/development.jpg')">
               <div class="card-body">
                 <h2 class="card-title">Web Development</h2>
                 <p class="card-description text-white">
@@ -234,168 +231,105 @@ canvas {
         </div>
         <div class="row">
           <div class="col-md-6 px-0">
-            <div class="card card-background card-background-product card-no-shadow" style="background-image: url('images/img/project1.jpg')">
+            <div class="card card-background card-background-product card-no-shadow" style="background-image: url('/images/ffmain.jpg')">
               <div class="card-body">
-                <h6 class="category">History</h6>
+                <h6 class="category">Web Design & Development</h6>
                 <h3 class="card-title">
-                  The City Lost & Found
+                  Fancy Flowers
                 </h3>
                 <p class="card-description">
-                  Developed on the occasion of an exhibition of the same name, The City Lost & Found: Capturing New York...
+                  Fully created Online Flowers Delivery store...
                 </p>
-                <a href="#pablo" class="btn btn-danger btn-round">
-                  <i class="now-ui-icons ui-1_send"></i> View Book
+                <a href="/fancy-flowers" target="_blank" class="btn btn-danger btn-round">
+                  <i class="now-ui-icons ui-1_send"></i> View Case
                 </a>
               </div>
             </div>
           </div>
           <div class="col-md-6 px-0">
-            <div class="card card-raised card-background card-background-product card-no-shadow" style="background-image: url('images/img/project18.jpg')">
+            <div class="card card-raised card-background card-background-product card-no-shadow" style="background-image: url('/images/omdarling.jpg')">
               <div class="card-body">
-                <h6 class="category">Satire</h6>
-                <h3 class="card-title">A Confederacy of Dunces</h3>
+                <h6 class="category">Web Design & Development</h6>
+                <h3 class="card-title">OmDarling</h3>
                 <p class="card-description">
-                  Satires, in the most basic definition, are works making fun of some sort of person or institution...
+                  Personal Blog...
                 </p>
-                <a href="#pablo" class="btn btn-neutral btn-round">
-                  <i class="now-ui-icons ui-1_send"></i> View more
+                <a href="/omdarling" target="_blank" class="btn btn-danger btn-round">
+                  <i class="now-ui-icons ui-1_send"></i> View case
                 </a>
               </div>
             </div>
           </div>
+
           <div class="col-md-6 px-0">
-            <div class="card card-background card-background-product card-no-shadow" style="background-image: url('images/img/project20.jpg')">
+            <div class="card card-background card-background-product card-no-shadow" style="background-image: url('/images/btmmain.jpg')">
               <div class="card-body">
-                <h6 class="category">Fiction</h6>
-                <h3 class="card-title">The Sun Also Rises</h3>
+                <h6 class="category">Web Design & Development</h6>
+                <h3 class="card-title">Born to Move</h3>
                 <p class="card-description">
-                  The most commonly read works are works of fiction. Fiction books are ones that have been made up...
+                  Moving Company Website with High Quality SEO...
                 </p>
-                <a href="#pablo" class="btn btn-neutral btn-round">
-                  <i class="now-ui-icons ui-1_send"></i> Read Now
+                <a href="/born-to-move" target="_blank" class="btn btn-danger btn-round">
+                  <i class="now-ui-icons ui-1_send"></i> View case
                 </a>
               </div>
             </div>
           </div>
-          <div class="col-md-6 px-0">
-            <div class="card card-background card-background-product card-no-shadow" style="background-image: url('images/img/project19.jpg')">
+					<div class="col-md-6 px-0">
+            <div class="card card-background card-background-product card-no-shadow" style="background-image: url('/images/cases/flashmoving.jpg')">
               <div class="card-body">
-                <h6 class="category">Basic Civitas</h6>
-                <h3 class="card-title">The Right Mistake</h3>
+                <h6 class="category">Web Design & Development</h6>
+                <h3 class="card-title">Flashmoving</h3>
                 <p class="card-description">
-                  Living in South Central L.A., Socrates Fortlow is a sixty-year-old ex-convict, still strong enough to kill men with...
+                  In Progress...
                 </p>
-                <a href="#pablo" class="btn btn-danger btn-round">
-                  <i class="now-ui-icons ui-1_send"></i> Read Now
+								<!--
+                <a href="/born-to-move" target="_blank" class="btn btn-danger btn-round">
+                  <i class="now-ui-icons ui-1_send"></i> View case
                 </a>
+							-->
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-		<!-- Latest posts in SEO category -->
-      <!-- Blog -->
-      <div class="section section-plain-cards">
-        <div class="container">
-          <div class="title">
-            <h3>Latest Blog Posts
-            </h3>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-lg-4">
-              <div class="card card-blog card-plain">
-                <div class="card-image">
-                  <a href="#pablo">
-                    <img class="img img-raised rounded" src="/images/img/examples/card-blog6.jpg">
-                  </a>
-                </div>
-                <div class="card-body text-center">
-                  <h6 class="category text-danger">
-                    <i class="now-ui-icons media-2_sound-wave"></i> Business
-                  </h6>
-                  <h5 class="card-title">
-                    <a href="#nuk">Axel Springer Spends $343M To Buy Business Insider</a>
-                  </h5>
-                  <p class="card-description">
-                    German media giant Axel Springer has announced it’s acquiring online business news publication Business Inside...
-                  </p>
-                  <div class="card-footer">
-                    <a href="#nuk" class="btn btn-primary">Read Article</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="card card-blog card-plain">
-                <div class="card-image">
-                  <a href="#pablo">
-                    <img class="img img-raised rounded" src="/images/img/examples/card-blog6.jpg">
-                  </a>
-                </div>
-                <div class="card-body text-center">
-                  <h6 class="category text-danger">
-                    <i class="now-ui-icons media-2_sound-wave"></i> Business
-                  </h6>
-                  <h5 class="card-title">
-                    <a href="#nuk">Axel Springer Spends $343M To Buy Business Insider</a>
-                  </h5>
-                  <p class="card-description">
-                    German media giant Axel Springer has announced it’s acquiring online business news publication Business Inside...
-                  </p>
-                  <div class="card-footer">
-                    <a href="#nuk" class="btn btn-primary">Read Article</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="card card-blog card-plain">
-                <div class="card-image">
-                  <a href="#pablo">
-                    <img class="img img-raised rounded" src="/images/img/examples/card-blog6.jpg">
-                  </a>
-                </div>
-                <div class="card-body text-center">
-                  <h6 class="category text-danger">
-                    <i class="now-ui-icons media-2_sound-wave"></i> Business
-                  </h6>
-                  <h5 class="card-title">
-                    <a href="#nuk">Axel Springer Spends $343M To Buy Business Insider</a>
-                  </h5>
-                  <p class="card-description">
-                    German media giant Axel Springer has announced it’s acquiring online business news publication Business Inside...
-                  </p>
-                  <div class="card-footer">
-                    <a href="#nuk" class="btn btn-primary">Read Article</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    <!--subscribe section-->
-		<div class="subscribe-line subscribe-line-image" style="background-image: url('/images/index/hexagonred.webp'); background-repeat: no-repeat;
-    background-attachment: fixed;">
-	    <div class="container">
-	      <div class="row">
-	        <div class="col-md-6 ml-auto mr-auto">
-	          <div class="text-center">
-	            <h4 class="title">Get a free Consultation</h4>
-	            <p class="description">
-	              Contact us if you have any questions and we will get back to you asap.
-	            </p>
-	            <a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;">Free consultation</a>
-	          </div>
-	        </div>
-	      </div>
-	    </div>
-	  </div>
-
-    <!-- About us Section -->
+		<!-- Blog -->
+		<div class="section section-plain-cards">
+		  <div class="container">
+		    <div class="title">
+		      <h3>Latest Blog Posts
+		      </h3>
+		    </div>
+		    <div class="row">
+		      @foreach( $posts as $post )
+		      <div class="col-md-6 col-lg-4">
+		        <div class="card card-blog card-plain">
+		          <div class="card-image">
+		            <a href="/blog/{{ $post->slug }}">
+		              <img class="img img-raised rounded" src="/images/blog/{{ $post->image }}">
+		            </a>
+		          </div>
+		          <div class="card-body text-center">
+		            <h6 class="category text-danger">
+		              <i class="now-ui-icons media-2_sound-wave"></i> {{ $post->category['name'] }}
+		            </h6>
+		            <h5 class="card-title">
+		              <a href="/blog/{{ $post->slug }}">{{ $post->title }}</a>
+		            </h5>
+		            <p class="card-description">
+		              {{ str_limit($post->excerpt, 100) }}
+		            </p>
+		            <div class="card-footer">
+		              <a href="/blog/{{ $post->slug }}" class="btn btn-primary">Read Article</a>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		      @endforeach
+		    </div>
+		  </div>
+		</div>
 
 @stop
 @section('customjs')

@@ -20,22 +20,21 @@
           <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
             <thead>
               <tr>
-                <th>First Name  <i class="fas fa-sort" style="float:right"></i></th>
-                <th>Last Name  <i class="fas fa-sort" style="float:right"></i></th>
-                <th>Phone  <i class="fas fa-sort" style="float:right"></i></th>
-                <th>E-mail  <i class="fas fa-sort" style="float:right"></i></th>
-                <th>Status <i class="fas fa-sort" style="float:right"></i></th>
-                <th>Submitted <i class="fas fa-sort" style="float:right"></i></th>
+                <th>Name | Company</th>
+                <th>Phone</th>
+                <th>Status <i class="fas fa-sort pointer" style="float:right" @click="sortBy('status_id')"></i></th>
+                <th>Submitted <i class="fas fa-sort pointer" style="float:right" @click="sortBy('created_at')"></i></th>
                 <th>Marketing</th>
-                <th>Actions</th>
+                <th>M Status</th>
+                <th></th>
+                <th></th>
+                <th></th>
               </tr>
             </thead>
             <transition-group tag="tbody" name="slide-fade">
-              <tr v-for="lead in leads" :key="lead.id">
-                <td>{{lead.first_name}}</td>
-                <td>{{lead.last_name}}</td>
+              <tr v-for="lead in leadsSorted" :key="lead.id">
+                <td>{{lead.first_name}} {{lead.last_name}} | {{lead.company}}</td>
                 <td>{{lead.phone}}</td>
-                <td>{{lead.email}}</td>
                 <td>
                   <select class="custom-select" v-model="lead.status_id" @change="statuschange(lead)" >
                     <option selected>Choose...</option>
@@ -43,12 +42,27 @@
                   </select>
                 </td>
                 <td>{{moment(lead.created_at).fromNow()}}</td>
-                <td>
+                <td >
                   <button v-if="lead.status.name === 'New' " disabled class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#followup">Follow up</button>
                   <button @click.prevent="showlead(lead)" v-else class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#followup">Follow up</button>
                 </td>
                 <td>
+                  <span v-if="lead.introemail === 0" class="dot text-center"></span>
+                  <span v-else="lead.introemail === 1" class="dot-green text-center"></span>
+                  <span v-if="lead.introcall === 0" class="dot text-center"></span>
+                  <span v-else="lead.introcall === 1" class="dot-green text-center"></span>
+                  <span v-if="lead.fllupemail === 0" class="dot text-center"></span>
+                  <span v-else="lead.fllupemail === 1" class="dot-green text-center"></span>
+                  <span v-if="lead.lastemail === 0" class="dot text-center"></span>
+                  <span v-if="lead.lastemail === 1" class="dot-green text-center"></span>
+                </td>
+                <td>
                   <button @click.prevent="showlead(lead)" class="btn btn-info btn-sm" data-toggle="modal" data-target="#leadshow">View</button>
+                </td>
+                <td>
+                  <button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editlead" @click.prevent="fetchEdit(lead)">Edit</button>
+                </td>
+                <td>
                   <button @click.prevent="deleteLead(lead)" type="button" class="btn btn-danger btn-sm delete">Delete</button>
                 </td>
               </tr>
@@ -142,14 +156,14 @@
                   <td style="border-left: 1px solid #f0f0f0;">Email:</td> <td>{{ lead.email }}</td>
                 </tr>
                 <tr>
-                  <td>Website:</td> <td>{{ lead.website }}</td>
+                  <td>Website:</td> <td colspan="3">{{ lead.website }}</td>
                 </tr>
                 <tr>
                   <td>Company:</td> <td>{{ lead.company }}</td>
                   <td style="border-left: 1px solid #f0f0f0;">Position:</td> <td>{{ lead.position }}</td>
                 </tr>
                 <tr>
-                  <td>Address:</td> <td>{{ lead.address }}, {{ lead.city }} {{ lead.state }} {{ lead.country }}</td>
+                  <td>Address:</td> <td colspan="3">{{ lead.address }}, {{ lead.city }} {{ lead.state }} {{ lead.country }}</td>
                 </tr>
                 <tr>
                   <td>Facebook:</td> <td>{{ lead.facebook }}</td>
@@ -160,7 +174,10 @@
                   <td style="border-left: 1px solid #f0f0f0;">Twitter:</td> <td>{{ lead.twitter }}</td>
                 </tr>
                 <tr>
-                  <td>Note:</td> <td>{{ lead.note }}</td>
+                  <td>Note:</td> <td colspan="3">{{ lead.note }}</td>
+                </tr>
+                <tr>
+                  <td>Message:</td> <td colspan="3">{{ lead.body }}</td>
                 </tr>
                 <tr>
                   <td>Created:</td> <td>{{moment(lead.created_at).fromNow()}}</td>
@@ -292,6 +309,123 @@
       </div>
     </div>
 
+    <!-- Modal Edit Lead-->
+    <div class="modal fade" id="editlead" tabindex="-1" role="dialog" aria-labelledby="leadid" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editleadmodal">Edit Lead</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form method="" autocomplete="nope">
+              <div class="form-row">
+                <div class="col">
+                  <label for="first_name" class="col-form-label">First Name:</label>
+                  <input type="text" class="form-control" id="first_name" v-model="lead.first_name" @keydown.enter="editlead" autocomplete="nope">
+                </div>
+                <div class="col">
+                  <label for="last_name" class="col-form-label" >Last Name:</label>
+                  <input class="form-control" id="last_name" v-model="lead.last_name" @keydown.enter="editlead" autocomplete="nope">
+                </div>
+                <div class="col">
+                  <label for="status" class="col-form-label">Status:</label>
+                  <select class="form-control" v-model="lead.status_id" @keydown.enter="editlead">
+                    <option v-for="status in statuses" :key="status.id" v-bind:value="status.id">{{status.name}}</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <label for="source" class="col-form-label">Source:</label>
+                  <select class="form-control" v-model="lead.source_id" @keydown.enter="editlead">
+                    <option selected>Choose...</option>
+                    <option v-for="source in sources" :key="source.id" v-bind:value="source.id">{{source.name}}</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <label for="phone" class="col-form-label">Phone:</label>
+                  <input type="number" class="form-control" v-model="lead.phone" @keydown.enter="editlead" id="phone" autocomplete="nope">
+                </div>
+                <div class="col">
+                  <label for="email" class="col-form-label">Email:</label>
+                  <input type="email" class="form-control" v-model="lead.email" @keydown.enter="editlead" id="email" autocomplete="nope">
+                </div>
+                <div class="col">
+                  <label for="website" class="col-form-label">Website:</label>
+                  <input type="url" class="form-control" v-model="lead.website" @keydown.enter="editlead" id="website" autocomplete="nope">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <label for="body" class="col-form-label">Message:</label>
+                  <textarea class="form-control" v-model="lead.body" @keydown.enter="editlead" id="body"></textarea>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <label for="company" class="col-form-label">Company:</label>
+                  <input type="text" class="form-control" v-model="lead.company" @keydown.enter="editlead" id="company" autocomplete="nope">
+                </div>
+                <div class="col">
+                  <label for="position" class="col-form-label">Position:</label>
+                  <input type="text" class="form-control" v-model="lead.position" @keydown.enter="editlead" id="position" autocomplete="nope">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <label for="address" class="col-form-label">Address:</label>
+                  <input type="text" class="form-control" v-model="lead.address" @keydown.enter="editlead" id="address" autocomplete="nope">
+                </div>
+                <div class="col">
+                  <label for="city" class="col-form-label">City:</label>
+                  <input type="text" class="form-control" v-model="lead.city" @keydown.enter="editlead" id="city" autocomplete="nope">
+                </div>
+                <div class="col">
+                  <label for="state" class="col-form-label">State:</label>
+                  <input type="text" class="form-control" v-model="lead.state" @keydown.enter="editlead" id="state" autocomplete="nope">
+                </div>
+                <div class="col">
+                  <label for="country" class="col-form-label">Country:</label>
+                  <input type="text" class="form-control" v-model="lead.country" @keydown.enter="editlead" id="country" autocomplete="nope">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <label for="facebook" class="col-form-label">Facebook:</label>
+                  <input type="url" class="form-control" v-model="lead.facebook" @keydown.enter="editlead" id="facebook" autocomplete="nope">
+                </div>
+                <div class="col">
+                  <label for="linkedin" class="col-form-label">Linkedin:</label>
+                  <input type="url" class="form-control" v-model="lead.linkedin" @keydown.enter="editlead" id="linkedin" autocomplete="nope">
+                </div>
+                <div class="col">
+                  <label for="instagram" class="col-form-label">Instagram:</label>
+                  <input type="url" class="form-control" v-model="lead.instagram" @keydown.enter="editlead" id="instagram" autocomplete="nope">
+                </div>
+                <div class="col">
+                  <label for="twitter" class="col-form-label">Twitter:</label>
+                  <input type="url" class="form-control" v-model="lead.twitter" @keydown.enter="editlead" id="twitter" autocomplete="nope">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <label for="note" class="col-form-label">Note:</label>
+                  <textarea class="form-control" v-model="lead.note" @keydown.enter="editlead" id="note"></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" v-on:click="editlead(lead)" data-dismiss="modal">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
   </div>
   <!-- /.container-fluid -->
@@ -310,8 +444,16 @@ var moment = require('moment');
         this.fetchSources()
       },
 
+      computed: {
+          leadsSorted: function() {
+              return _.orderBy(this.leads, this.sortKey, this.sortOrder);
+          },
+      },
+
       data () {
         return {
+          sortKey: ['status_id'],
+          sortOrder: ['asc'],
           moment: moment,
           leads: [],
           lead: {
@@ -352,6 +494,16 @@ var moment = require('moment');
 
 
       methods: {
+
+        sortBy: function(key) {
+            if (key == this.sortKey) {
+                this.sortOrder = (this.sortOrder == 'asc') ? 'desc' : 'asc';
+            } else {
+                this.sortKey = key;
+                this.sortOrder = 'asc';
+            }
+       },
+
           customFormatter(date) {
             return moment(date).format('YYYY-MM-D');
           },
@@ -383,6 +535,16 @@ var moment = require('moment');
                    console.log(err)
                  })
                },
+
+         fetchEdit (lead) {
+          axios.get(`/api/leads/${lead.id}`)
+               .then((res) => {
+                 this.lead = res.data
+               })
+               .catch((err) => {
+                 console.log(err)
+               })
+        },
 
           createlead () {
            axios.post('/api/leads', this.lead)
@@ -428,6 +590,50 @@ var moment = require('moment');
            })
           },
 
+          editlead (lead) {
+           axios.put(`/api/leads/${lead.id}`, this.lead)
+               .then((res) => {
+                 this.lead.first_name = ''
+                 this.lead.last_name = ''
+                 this.lead.phone = ''
+                 this.lead.emil = ''
+                 this.lead.website = ''
+                 this.lead.company = ''
+                 this.lead.position = ''
+                 this.lead.address = ''
+                 this.lead.city = ''
+                 this.lead.state = ''
+                 this.lead.country = ''
+                 this.lead.body = ''
+                 this.lead.facebook = ''
+                 this.lead.twitter = ''
+                 this.lead.instagram = ''
+                 this.lead.linkedin = ''
+                 this.lead.note = ''
+                 this.lead.status_id = ''
+                 this.lead.source_id = ''
+               })
+               .then((res) => {
+                 this.fetchLeads();
+               })
+               .then((res) => {
+                 swal({
+                     type: 'success',
+                     title: 'Yeah',
+                     text: 'Lead successfully updated!'
+                   })
+               })
+               .catch((err) =>{
+                 console.log(err)
+                 swal({
+                     type: 'error',
+                     title: 'Ooops...',
+                     text: 'Something went wrong!'
+                   })
+           })
+          },
+
+
           statuschange(lead) {
                 axios.put(`/api/leads/statuschange/${lead.id}`,
                   {
@@ -441,12 +647,12 @@ var moment = require('moment');
                           text: 'Something went wrong!'
                         })
                       })
-                    .then((res) => {
-                      this.fetchLeads();
-                    })
                     swal({
                         type: 'success',
                         title: 'Status Changed!'
+                      })
+                      .then((res) => {
+                        this.fetchLeads();
                       })
             },
 
@@ -486,6 +692,9 @@ var moment = require('moment');
                    })
                  }
                  })
+                 .then((res) => {
+                   this.fetchLeads();
+                 })
            },
 
           doneintrocall (lead) {
@@ -498,6 +707,9 @@ var moment = require('moment');
                    .then((res) => {
                      this.showDone = true,
                      this.showCursornot = true
+                   })
+                   .then((res) => {
+                     this.fetchLeads();
                    })
                    swal({
                        type: 'success',
@@ -516,6 +728,7 @@ var moment = require('moment');
                })
                .then((result) => {
                if (result.value) {
+
                swal(
                'intro Email Sent!',
                )
@@ -530,6 +743,9 @@ var moment = require('moment');
                      this.showCursornot = true
                    })
                  }
+                 })
+                 .then((res) => {
+                   this.fetchLeads();
                  })
            },
 
@@ -559,6 +775,9 @@ var moment = require('moment');
                    })
                  }
                  })
+                 .then((res) => {
+                   this.fetchLeads();
+                 })
            },
 
 
@@ -582,6 +801,9 @@ var moment = require('moment');
                         this.leads.splice(leadIndex, 1)
                     })
                 }
+                })
+                .then((res) => {
+                  this.fetchLeads();
                 })
             },
           }

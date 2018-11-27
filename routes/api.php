@@ -21,6 +21,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     'except' => ['create']
   ]);
   Route::get('clients', 'LeadsController@indexClients');
+  Route::get('dashleads', 'LeadsController@indexDashleads');
+  Route::get('partners', 'LeadsController@indexPartners');
   Route::put('leads/statuschange/{id}','LeadsController@statuschange');
   Route::put('leads/introemail/{id}','LeadsController@doneintroemail');
   Route::put('leads/introcall/{id}','LeadsController@doneintrocall');
@@ -52,6 +54,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
   Route::resource('categories', 'CategoryController');
+
+  Route::get('/lead/{id}', 'LeadsController@openedit');
 
   Route::get('seo-projects', 'SeoProjectController@index')->name('seo-projects');
   Route::post('seo-projects', 'SeoProjectController@store')->name('seo-projects-store');

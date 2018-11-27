@@ -1,4 +1,4 @@
-@extends('layout.mainaboutus')
+	@extends('layout.maincontact')
 
 @section('title', 'Thank you for your Submittion | WellKnown')
 
@@ -8,10 +8,23 @@
 
 @section('content')
 <section>
+	<div class="page-header page-header-small">
+    <div class="page-header-image" style="background-image: url('../images/webdesign/bg-2.jpg');">
+    </div>
+
+    <div class="content-center">
+		<div class="row">
+			<div class="col-md-8 ml-auto mr-auto text-center">
+				<h2 class="title">WellKnown<br> Privacy Policy</h2>
+			</div>
+		</div>
+	</div>
+  </div>
+
 	<div class="container">
 	<div class="col-md-12">
-				<h2 style="text-align:center;">Wknown.com Privacy Policy</h2>
-	<div >
+	<div>
+		<br>
 		<p>This privacy policy has been compiled to better serve those who are concerned with how their 'Personally Identifiable Information' (PII) is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.</p>
 
 		<p>What personal information do we collect from the people that visit our blog, website or app?</p>
@@ -210,9 +223,9 @@
 	<h6 style="text-align:center;">
 	wknown.com<br>
 
-	358 Commonwelath ave<br>
+	5115 Abitare Blvd<br>
 
-	Boston, Massachusets 02115<br>
+	Voorhees, NJ 08043<br>
 
 	USA<br>
 
