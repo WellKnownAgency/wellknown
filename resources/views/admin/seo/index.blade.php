@@ -6,6 +6,6 @@
 
 @section('content')
 
-<seo></seo>
+<seo :projects="{{ json_encode($projects) }}" :total="{{ $total }}"/>
 
 @stop

@@ -3,4 +3,5 @@ export default {
     DisplayRow: require('./nested-DisplayRow'),
     Opt: require('./td-Opt'),
     Actions: require('./actions'),
+    Link: require('./link'),
 }

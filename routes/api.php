@@ -55,5 +55,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
   Route::get('seo-projects', 'SeoProjectController@index')->name('seo-projects');
   Route::post('seo-projects', 'SeoProjectController@store')->name('seo-projects-store');
+  Route::get('seo-projects/{seoProject}/keywords-positions', 'SeoProjectController@keywordsPositions')->name('seo-projects-keywords-positions');
   Route::delete('seo-projects/{seoProject}', 'SeoProjectController@destroy')->name('seo-projects-destroy');
+  Route::put('seo-projects/{seoProject}', 'SeoProjectController@update')->name('seo-projects-update');
+
 

@@ -15,7 +15,7 @@
     <div class="card mb-3">
       <div class="card-header">
         <i class="fas fa-table"></i>
-        List of SEO Projects
+        List of SEO Projects 2
         <button class="btn btn-success" style="float:right;" data-toggle="modal" data-target="#create-project-modal">Add SEO Project</button>
       </div>
       <div class="card-body">
@@ -84,11 +84,12 @@
     import components from './table-comps/'
     export default {
         components,
+        props: ['projects', 'total'],
         data () {
             return {
                 table: {
                     columns: [
-                        { title: 'Name', field: 'name', sortable: true },
+                        { title: 'Name', field: 'name', tdComp: 'Link', sortable: true },
                         { title: 'WebSite', field: 'site', sortable: true, thClass: 'text-center', tdClass: 'text-center'},
                         { title: 'Created', field: 'created_at', sortable: true, thClass: 'text-center', tdClass: 'text-center' },
                         { title: 'Pages & Keywords', tdComp: 'Opt', visible: 'true', thClass: 'text-center', tdClass: 'text-center' },
@@ -161,6 +162,8 @@
             }
         },
         created() {
+            this.table.data = this.projects;
+            this.table.total = this.total;
             this.$watch(
                 'table.query', () => {
                     axios.get('/api/seo-projects', {

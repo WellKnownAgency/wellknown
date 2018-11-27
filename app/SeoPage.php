@@ -8,15 +8,17 @@ class SeoPage extends Model
 {
     protected $table = 'seo_pages';
 
-    public $timestamps = false;
+    protected $fillable = ['url_path', 'project_id'];
 
-    /*public function project()
-    {
-        return $this->belongsTo(SeoProject::class, 'page_id');
-    }*/
+    public $timestamps = false;
 
     public function keywords()
     {
         return $this->hasMany(SeoKeyword::class, 'page_id');
+    }
+
+    public function project()
+    {
+        return $this->belongsTo(SeoProject::class, 'project_id');
     }
 }

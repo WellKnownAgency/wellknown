@@ -10,8 +10,18 @@ require('./bootstrap');
 window.Vue = require('vue');
 
 import Datatable from 'vue2-datatable-component'
-
 Vue.use(Datatable)
+
+import Notifications from 'vue-notification'
+Vue.use(Notifications)
+
+import SNotify from 'vue-snotify'
+import 'vue-snotify/styles/material.css';
+Vue.use(SNotify, {
+    toast: {
+        position: 'rightTop'
+    }
+})
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -26,6 +36,7 @@ Vue.component('categories', require('./components/Categories.vue'));
 Vue.component('notifications', require('./components/Notifications.vue'));
 Vue.component('settings', require('./components/Settings.vue'));
 Vue.component('seo', require('./components/seo/Seo.vue'));
+Vue.component('seo-edit', require('./components/seo/SeoEdit.vue'));
 
 
 const app = new Vue({

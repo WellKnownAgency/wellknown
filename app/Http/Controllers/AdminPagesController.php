@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\SeoProject;
 use Illuminate\Http\Request;
 
 class AdminPagesController extends Controller
@@ -43,7 +44,12 @@ class AdminPagesController extends Controller
 
     public function seo()
     {
-    return view('admin.seo.index');
+        $projects = SeoProject::with(['pages.keywords'])->limit(10);
+        $total = $projects->count();
+
+        $projects = $projects->get();
+
+        return view('admin.seo.index', compact('projects', 'total'));
     }
 
 }
