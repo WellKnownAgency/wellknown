@@ -25,7 +25,7 @@ class UrlPath implements Rule
      */
     public function passes($attribute, $value)
     {
-        $pattern = "/^(((\/[a-z0-9]+)+\/?)|\/)$/";
+        $pattern = "/^(((\/[a-z0-9-]+)+\/?)|\/)$/";
         return preg_match($pattern, $value);
     }
 
