@@ -127,7 +127,7 @@ canvas {
                 <p class="card-description">
                   If you want to get for your website the best UX and irresistible functionality - WellKnown Agency is the exclusive solution.
                 </p>
-                <label class="badge badge-neutral">Contact Us</label>
+                <a href="/contact-us" class="badge badge-neutral">Contact Us</a>
               </div>
             </div>
           </div>
@@ -212,7 +212,7 @@ canvas {
                 <p class="card-description text-white">
 									There is nothing imposible in a programming world for our team. WellKnown Agency creates websites and applications no matter how complex it are.
                 </p>
-                <label class="badge badge-neutral">Contact Us</label>
+                <a href="/contact-us" class="badge badge-neutral">Contact Us</a>
               </div>
             </div>
           </div>
