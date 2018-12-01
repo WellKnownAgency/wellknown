@@ -10679,9 +10679,6 @@ img {
 
   .fileinput {
     margin: 0 auto;
-    width: -webkit-fill-available;
-    width: -moz-available;
-    width: stretch;
   }
 
   .header-3 .buttons {
@@ -12710,3 +12707,4 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
+
