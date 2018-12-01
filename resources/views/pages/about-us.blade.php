@@ -17,7 +17,7 @@
     <div class="row">
       <div class="col-md-7 ml-auto text-right">
         <h1 class="title">About us</h1>
-        <h4 class="description">The begining of WellKnown Agency starts with people who started their carrier as Digital Marketers and Web Developers. And it still the same - it's all about people who work here.</h4>
+        <h4 class="description">The beginning of WellKnown Agency starts with people who started their carrier as Digital Marketers and Web Developers. And it still the same - it's all about people who work here.</h4>
         <br />
         <div class="buttons">
           <a href="#wellknown" class="btn btn-primary btn-lg mr-3">

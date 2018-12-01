@@ -28,7 +28,6 @@ canvas {
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center" style="padding-top: 100px;">
             <h1 class="title">Web Design and Development</h1>
-            <h4 class="description">From nowhere to top ten</h4>
           </div>
           <div class="col-md-10 ml-auto mr-auto">
             <div class="card card-raised card-form-horizontal card-plain" data-background-color>
@@ -87,7 +86,7 @@ canvas {
                   </div>
                   <div class="description">
                     <h5 class="info-title">Development</h5>
-                    <p class="description">Our team are the experts of coding and development, and we have all the skills to implement your ideas to life, whether it is one page website or sophisticated web application.  </p>
+                    <p class="description">Our team is the expert of coding and development, and we have all the skills to implement your ideas to life, whether it is one page website or sophisticated web application.  </p>
                   </div>
                 </div>
                 <div class="info info-horizontal">
@@ -140,7 +139,7 @@ canvas {
               <div class="description">
                 <h4 class="info-title">Listen to Customers</h4>
                 <p class="description">
-                  First of all, we carefully listen to our Clients, so we are able to syntesize our thoughts and easier reach their goals.
+                  First of all, we carefully listen to our Clients, so we are able to synthesize our thoughts and easier reach their goals.
                 </p>
               </div>
             </div>
@@ -179,7 +178,7 @@ canvas {
               <div class="description">
                 <h4 class="info-title">Greatest Minds</h4>
                 <p class="description">
-									Our experienced programmers create the most advanced applications, and they are always follow to the latest trends in IT universe.
+									Our experienced programmers create the most advanced applications, and they always follow to the latest trends in IT universe.
                 </p>
               </div>
             </div>

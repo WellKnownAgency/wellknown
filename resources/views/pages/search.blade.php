@@ -50,7 +50,7 @@ canvas {
           <div class="row">
             <div class="col-md-8 ml-auto mr-auto text-center">
               <h2 class="title">Professional SEO Services <br>That Boost Your Business</h2>
-              <h5 class="description">WellKnown is a perfect SEO company to make your business rapidly grow up. If you want to raise FREE Conversions and Traffic to your Website, we can provide you a SEO Campaign with the best solutions to your particular case, that will help you expand your business in the Internet.</h4>
+              <h5 class="description">WellKnown is a perfect SEO company to make your business rapidly growing up. If you want to raise FREE Conversions and Traffic to your Website, we can provide you a SEO Campaign with the best solutions to your particular case, that will help you expand your business on the Internet.</h4>
             </div>
           </div>
           <div class="row">
@@ -105,7 +105,7 @@ canvas {
           <div class="row">
             <div class="col-md-8 ml-auto mr-auto text-center">
               <h2 class="title">SEO Company Strategy</h2>
-              <h4 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information.</h4>
+              <h4 class="description">Over the years we established our own SEO strategy, and with no hesitation, we can say: "Your positions will grow up."</h4>
             </div>
           </div>
           <div class="row">
@@ -116,7 +116,7 @@ canvas {
                 </div>
                 <div class="description">
                   <h4 class="info-title">Keywords Research</h4>
-                  <p>The moment you use Now UI Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
+                  <p>The first step of the process is keywords research, which is based on your business segment. Analyzing competitors, average monthly volume and other parametrs, we generate a list of potential keywords.</p>
                 </div>
               </div>
               <div class="info info-horizontal">
@@ -125,7 +125,7 @@ canvas {
                 </div>
                 <div class="description">
                   <h4 class="info-title">SEO Strategy</h4>
-                  <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                  <p>We develop a unique SEO strategy for the particular client. Because each business sphere has different goals, customers and competitors, we make a deep scan of each case before starting a SEO campaign.</p>
                 </div>
               </div>
             </div>
@@ -141,7 +141,7 @@ canvas {
                 </div>
                 <div class="description">
                   <h4 class="info-title">Onsite Optimization</h4>
-                  <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                  <p>The next step is to check website code and bring it to the correct structure. Optimizing code and pictures, page titles and meta descriptions are only a small part.</p>
                 </div>
               </div>
               <div class="info info-horizontal">
@@ -150,7 +150,7 @@ canvas {
                 </div>
                 <div class="description">
                   <h4 class="info-title">Link Building</h4>
-                  <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                  <p>The literate link building process is vital for every SEO campaign today. Fortunately, we have significant experience and we can build the most advanced link building strategy with guaranteed results.</p>
                 </div>
               </div>
             </div>

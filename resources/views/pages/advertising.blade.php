@@ -122,10 +122,8 @@ canvas {
                   <div class="row">
                     <div class="col-md-12 ">
                       <p class="content-ads">
-                        Now we come to the creative part of the process. Not a secret for any Advertising campaign creativity is important, in some cases
-                        it takes first place. WellKnown Agency team created ads for a lot of industries and we have already an idea which kewords work best.
-                        But still any ad campaign needs testing, so it takes in our creation proces a huge part.
-                      </p>
+												Now we come to the creative part of the process. Not a secret for any Advertising campaign creativity is important, in some cases it takes first place.
+												WellKnown Agency team created ads for a lot of industries and we have already an idea which keywords work best. But still any ad campaign needs testing, so it takes in our creation process a huge part.</p>
                     </div>
   								</div>
                   <div class="row">
@@ -138,10 +136,9 @@ canvas {
                   <div class="row">
                     <div class="col-md-12">
                       <p class="content-ads">
-                        After all the above steps are done we finnaly can deploy your advertising. Any online advertising campaign needs 2 things:
-                        <br>Analytics and Managing.<br>
-                        Analytics gives you information hwo to improve you campaign and sometimes it's really a long process, but eventeally gives huge results.
-                      </p>
+												After all the above steps are done we finally can deploy your advertising. Any online advertising campaign needs 2 things:
+												<br>Analytics and Managing.<br>
+												Analytics gives you information on how to improve your campaign and sometimes it's really a long process, but eventually gives huge results.                      </p>
                     </div>
                   </div>
                   <div class="row">
@@ -235,9 +232,8 @@ canvas {
       <div class="col-lg-5 col-md-7 ml-auto mr-auto">
         <h2 class="title">Online Advertising</h2>
         <h6 class="category">Huge part of any business</h6>
-        <h5 class="description">In the era of Internet there is no business that can ignore <b>online advertising</b>.
-          People search for things to buy online even if it right in front of them. It helps you business not only to build a ROI system
-          where we can help you to know how much any client cost, but also expend your brand to the next level.</h5>
+        <h5 class="description">In the era of the Internet, there is no business that can ignore <b>online advertising</b>.
+          People search for things to buy online even if it right in front of them. It helps your business not only to build an ROI system where we can help you to know how much any client cost, but also expend your brand to the next level.</h5>
       </div>
       <div class="col-lg-6 col-md-12">
         <div class="image-container">

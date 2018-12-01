@@ -123,7 +123,7 @@
             <br>
             <small class="description">Created with passion</small>
           </h2>
-          <h5 class="text-center description">We've had the pleasure of being involved in a stunning projects that helped our clients to boost their business . Here are a select few:</h5>
+          <h5 class="text-center description">We've had the pleasure of being involved in stunning projects that helped our clients to boost their business. Here are a select few:</h5>
           <div class="space-50"></div>
         </div>
       </div>
