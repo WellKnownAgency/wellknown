@@ -77,7 +77,7 @@
   <div class="email--background">
 
 		<div class="pre-header">
-			Get a FREE consultation. Improve your business with our Advertising, Marketing and Web Development solutions...
+			I know you are probably very busy with your business
 		</div>
 
 		<div class="email--container">
@@ -91,22 +91,15 @@
         @else
         <p>Hi {{$lead->first_name}} {{$lead->last_name}} ,</p>
         @endif
-        My name is Alex with WellKnown Agency.</br>
-        <p>We help different businesses to reach their goals in:
-          <ul>
-           <li>Web Design and Development</li>
-           <li>Search Engine Optimization</li>
-           <li>Content Marketing</li>
-           <li>Online Advertising</li>
-         </ul>
-        Our specialists did a little research about your business online. According to this study, we can mention 3 steps to improve your business and get higher results:</p>
-        <ul>
-          <li>Create new or change an existing Website</li>
-          <li>Improve Search Engine positions, so you can get FREE customers for you business</li>
-          <li>Create or Optimize Advertising Campaign</li>
-        </ul>
-        <p>I would love to tell you more.
-          Would you be available for 15 minutes in the next few days to talk over the phone?</p>
+        This is Alex one more time.</br>
+        <p>
+          You didn't reply to my previous emails, just wanna make sure you got them.
+        </p>
+        <p>
+          Our team is still ready to provide you a proposition and help you increase sales.
+          Let me know, please, if interested.
+        </p>
+        <p>Thank you, have a good day.</p>
           <div class="center">
             <a href="https://wknown.com" class="cta">View Website</a>
           </div>

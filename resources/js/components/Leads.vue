@@ -25,7 +25,7 @@
                 <th>Status <i class="fas fa-sort pointer" style="float:right" @click="sortBy('status_id')"></i></th>
                 <th>Submitted <i class="fas fa-sort pointer" style="float:right" @click="sortBy('created_at')"></i></th>
                 <th>Marketing</th>
-                <th>M Status</th>
+                <th colspan="2">M Status</th>
                 <th></th>
                 <th></th>
                 <th></th>
@@ -46,15 +46,15 @@
                   <button v-if="lead.status.name === 'New' " disabled class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#followup">Follow up</button>
                   <button @click.prevent="showlead(lead)" v-else class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#followup">Follow up</button>
                 </td>
-                <td>
+                <td colspan="2">
                   <span v-if="lead.introemail === 0" class="dot text-center"></span>
                   <span v-else="lead.introemail === 1" class="dot-green text-center"></span>
-                  <span v-if="lead.introcall === 0" class="dot text-center"></span>
-                  <span v-else="lead.introcall === 1" class="dot-green text-center"></span>
                   <span v-if="lead.fllupemail === 0" class="dot text-center"></span>
                   <span v-else="lead.fllupemail === 1" class="dot-green text-center"></span>
                   <span v-if="lead.lastemail === 0" class="dot text-center"></span>
                   <span v-if="lead.lastemail === 1" class="dot-green text-center"></span>
+                  <span v-if="lead.introcall === 0" class="dot text-center"></span>
+                  <span v-else="lead.introcall === 1" class="dot-green text-center"></span>
                 </td>
                 <td>
                   <button @click.prevent="showlead(lead)" class="btn btn-info btn-sm" data-toggle="modal" data-target="#leadshow">View</button>
@@ -87,7 +87,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="main-timeline">
-                        <div href="#" class="timeline" :class="{ cursornot: lead.introemail }" v-model="lead.introemail" @click="doneintroemail(lead)">
+                        <div class="timeline" :class="{ cursornot: lead.introemail }" v-model="lead.introemail" @click="doneintroemail(lead)">
                             <div class="timeline-icon"><i class="fa fa-envelope"></i></div>
                             <div class="timeline-content">
                                 <h3  class="title" :class="{ done: lead.introemail }" >Introduction Email</h3>
@@ -96,15 +96,6 @@
                                 </p>
                             </div>
                         </div>
-                        <a href="#" class="timeline" :class="{ cursornot: lead.introcall }" v-model="lead.introcall" @click="doneintrocall(lead)">
-                            <div class="timeline-icon" ><i class="fa fa-phone"></i></div>
-                            <div class="timeline-content">
-                                <h3 class="title" :class="{ done: lead.introcall }">Introduction Call</h3>
-                                <p class="description">
-                                  Make a phone call to introduce yourself and your servces (try 3 times during the day and next day)
-                                </p>
-                            </div>
-                        </a>
                         <a href="#" class="timeline" :class="{ cursornot: lead.fllupemail }" v-model="lead.fllupemail" @click="donefllupemail(lead)">
                             <div class="timeline-icon"><i class="fa fa-envelope"></i></div>
                             <div class="timeline-content">
@@ -123,6 +114,16 @@
                                 </p>
                             </div>
                         </a>
+                        <a href="#" class="timeline" :class="{ cursornot: lead.introcall }" v-model="lead.introcall" @click="doneintrocall(lead)">
+                            <div class="timeline-icon" ><i class="fa fa-phone"></i></div>
+                            <div class="timeline-content">
+                                <h3 class="title" :class="{ done: lead.introcall }">Introduction Call</h3>
+                                <p class="description">
+                                  Make a phone call to introduce yourself and your servces (try 3 times during the day and next day)
+                                </p>
+                            </div>
+                        </a>
+
                     </div>
                 </div>
             </div>
@@ -730,7 +731,7 @@ var moment = require('moment');
                if (result.value) {
 
                swal(
-               'intro Email Sent!',
+               'Follow up Email Sent!',
                )
                axios.put(`/api/leads/fllupemail/${lead.id}`, {
                      fllupemail: true
@@ -761,7 +762,7 @@ var moment = require('moment');
                .then((result) => {
                if (result.value) {
                swal(
-               'intro Email Sent!',
+               'Last Email Sent!',
                )
                axios.put(`/api/leads/lastemail/${lead.id}`, {
                      lastemail: true

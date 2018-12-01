@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Notifications\NewLead;
+use App\Notifications\FollowUpEmail;
+use App\Notifications\LastEmail;
 use App\Notifications\IntroEmail;
 use Illuminate\Http\Request;
 use App\Lead;
@@ -165,7 +167,7 @@ class LeadsController extends Controller
 
     if ($lead->introemail = true) {
     \Notification::route('mail', $lead->email)
-        ->notify(new IntroEmail($lead));
+        ->notify(new FollowUpEmail($lead));
     }
 
     return $lead;
@@ -180,7 +182,7 @@ class LeadsController extends Controller
 
     if ($lead->fllupemail = true) {
     \Notification::route('mail', $lead->email)
-        ->notify(new IntroEmail($lead));
+        ->notify(new LastEmail($lead));
     }
 
     return $lead;
