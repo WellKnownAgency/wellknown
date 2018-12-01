@@ -21,17 +21,18 @@
           <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
             <thead>
               <tr>
-                <th>First and Last Name  <i class="fas fa-sort" style="float:right"></i></th>
-                <th>Phone  <i class="fas fa-sort" style="float:right"></i></th>
-                <th>E-mail  <i class="fas fa-sort" style="float:right"></i></th>
-                <th>Status <i class="fas fa-sort" style="float:right"></i></th>
-                <th>Submitted <i class="fas fa-sort" style="float:right"></i></th>
+                <th>Name | Company  <i class="fas fa-sort pointer" style="float:right" @click="sortBy('company')"></i></th>
+                <th>Phone</th>
+                <th>E-mail</th>
+                <th>Status</th>
+                <th>Submitted <i class="fas fa-sort pointer" style="float:right" @click="sortBy('created_at')"></i></th>
+                <th></th>
                 <th>Actions</th>
               </tr>
             </thead>
             <transition-group tag="tbody" name="slide-fade">
-              <tr v-for="lead in leads" :key="lead.id">
-                <td>{{lead.first_name}} {{lead.last_name}}</td>
+              <tr v-for="lead in leadsSorted" :key="lead.id">
+                <td>{{lead.first_name}} {{lead.last_name}} | {{ lead.company }}</td>
                 <td>{{lead.phone}}</td>
                 <td>{{lead.email}}</td>
                 <td>
@@ -41,9 +42,9 @@
                   </select>
                 </td>
                 <td>{{moment(lead.created_at).fromNow()}}</td>
+                <td><button @click.prevent="showlead(lead)" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#servicesshow">Services</button></td>
                 <td>
                   <span style="float:right;">
-                    <button @click.prevent="showlead(lead)" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#services">Services</button>
                     <button @click.prevent="showlead(lead)" class="btn btn-info btn-sm" data-toggle="modal" data-target="#leadshow">View</button>
                     <button @click.prevent="deleteLead(lead)" type="button" class="btn btn-danger btn-sm delete">Delete</button>
                   </span>
@@ -114,6 +115,32 @@
         </div>
       </div>
     </div>
+    <div class="modal fade bd-example-modal-lg" id="servicesshow" tabindex="-1" role="dialog" aria-labelledby="leadid" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="servicesshowmodal">Services</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="table-responsive">
+              <table class="table table-borderless" >
+                <tr>
+                  <td>Name:</td><td>{{ lead.first_name }} {{ lead.last_name }}</td>
+                  <td style="border-left: 1px solid #f0f0f0;">Source:</td><td>{{ lead.source }}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
   <!-- /.container-fluid -->
 
@@ -133,6 +160,8 @@ var moment = require('moment');
 
       data () {
         return {
+          sortKey: ['status_id'],
+          sortOrder: ['asc'],
           moment: moment,
           leads: [],
           lead: {
@@ -167,15 +196,34 @@ var moment = require('moment');
           source: {
             id: '',
             name: '',
+          },
+          services: [],
+          service: {
+            id: '',
+            name: '',
           }
           }
       },
 
+      computed: {
+          leadsSorted: function() {
+              return _.orderBy(this.leads, this.sortKey, this.sortOrder);
+          },
+      },
 
       methods: {
           customFormatter(date) {
             return moment(date).format('YYYY-MM-D');
           },
+
+          sortBy: function(key) {
+              if (key == this.sortKey) {
+                  this.sortOrder = (this.sortOrder == 'asc') ? 'desc' : 'asc';
+              } else {
+                  this.sortKey = key;
+                  this.sortOrder = 'asc';
+              }
+         },
 
           fetchLeads () {
             axios.get('/api/clients')

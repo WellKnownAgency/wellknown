@@ -77,7 +77,7 @@
   <div class="email--background">
 
 		<div class="pre-header">
-			Get a FREE consultation. Improve your busness with our Advertising, Marketing and Web Development solutions... 
+			Get a FREE consultation. Improve your business with our Advertising, Marketing and Web Development solutions...
 		</div>
 
 		<div class="email--container">
@@ -87,25 +87,25 @@
 
 			<div class="email--inner-container">
         @if ($lead->first_name == null)
-        <p>Hi {{$lead->company}} ,</p>
+        <p>Hi {{$lead->company}} team,</p>
         @else
         <p>Hi {{$lead->first_name}} {{$lead->last_name}} ,</p>
         @endif
-        <p>My name is Alex with WellKnown Agency.</p>
+        My name is Alex with WellKnown Agency.</br>
         <p>We help different businesses to reach their goals in Web Design and Development, Search Engine Optimization, Content Marketing, and Online Advertising.<br>
         Our specialists did a little research about your business online. According to this study, we can mention 3 steps to improve your business and get higher results:</p>
         <ul>
           <li>Create new or change an existing Website</li>
           <li>Improve Search Engine positions, so you can get FREE customers for you business</li>
-          <li>Stop throwing advertising money into the air</li>
+          <li>Create or Optimize Advertising Campaign</li>
         </ul>
         <p>I would love to tell you more.
           Would you be available for 15 minutes in the next few days to talk over the phone?</p>
           <div class="center">
-            <a href="#" class="cta">View Website</a>
+            <a href="https://wknown.com" class="cta">View Website</a>
           </div>
         <p>Best Regards,
-        <br>Alex</p>
+        <br>Taras</p>
 
 			</div>
 

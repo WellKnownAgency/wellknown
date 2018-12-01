@@ -23,10 +23,13 @@ Route::prefix('admin')->middleware('auth:web')->group(function() {
   Route::post('/posts/{id}','PostController@update');
   Route::get('/settings', 'AdminPagesController@settings');
   Route::get('/seo', 'AdminPagesController@seo');
+  Route::get('/seo/projects/{seoProject}/edit', 'SeoProjectController@edit')->name('seo-project.edit');
 
   Route::post('/notification/get', 'NotificationController@get');
   Route::post('/notification/read', 'NotificationController@read');
   Route::post('/notification/readall', 'NotificationController@readall');
+
+  
 });
 
 /* Main Pages */

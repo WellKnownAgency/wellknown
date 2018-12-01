@@ -22,10 +22,10 @@
               <tr>
                 <th>Name | Company</th>
                 <th>Phone</th>
-                <th @click="sortBy('status_id')">Status</th>
-                <th>Submitted</th>
+                <th>Status <i class="fas fa-sort pointer" style="float:right" @click="sortBy('status_id')"></i></th>
+                <th>Submitted <i class="fas fa-sort pointer" style="float:right" @click="sortBy('created_at')"></i></th>
                 <th>Marketing</th>
-                <th>M Status <i class="fas fa-sort" style="float:right"></i></th>
+                <th>M Status</th>
                 <th></th>
                 <th></th>
                 <th></th>
@@ -49,8 +49,8 @@
                 <td>
                   <span v-if="lead.introemail === 0" class="dot text-center"></span>
                   <span v-else="lead.introemail === 1" class="dot-green text-center"></span>
-                  <span v-if="lead.introemail === 0" class="dot text-center"></span>
-                  <span v-else="lead.introemail === 1" class="dot-green text-center"></span>
+                  <span v-if="lead.introcall === 0" class="dot text-center"></span>
+                  <span v-else="lead.introcall === 1" class="dot-green text-center"></span>
                   <span v-if="lead.fllupemail === 0" class="dot text-center"></span>
                   <span v-else="lead.fllupemail === 1" class="dot-green text-center"></span>
                   <span v-if="lead.lastemail === 0" class="dot text-center"></span>
@@ -647,12 +647,12 @@ var moment = require('moment');
                           text: 'Something went wrong!'
                         })
                       })
-                    .then((res) => {
-                      this.fetchLeads();
-                    })
                     swal({
                         type: 'success',
                         title: 'Status Changed!'
+                      })
+                      .then((res) => {
+                        this.fetchLeads();
                       })
             },
 
@@ -692,6 +692,9 @@ var moment = require('moment');
                    })
                  }
                  })
+                 .then((res) => {
+                   this.fetchLeads();
+                 })
            },
 
           doneintrocall (lead) {
@@ -704,6 +707,9 @@ var moment = require('moment');
                    .then((res) => {
                      this.showDone = true,
                      this.showCursornot = true
+                   })
+                   .then((res) => {
+                     this.fetchLeads();
                    })
                    swal({
                        type: 'success',
@@ -722,6 +728,7 @@ var moment = require('moment');
                })
                .then((result) => {
                if (result.value) {
+
                swal(
                'intro Email Sent!',
                )
@@ -736,6 +743,9 @@ var moment = require('moment');
                      this.showCursornot = true
                    })
                  }
+                 })
+                 .then((res) => {
+                   this.fetchLeads();
                  })
            },
 
@@ -765,6 +775,9 @@ var moment = require('moment');
                    })
                  }
                  })
+                 .then((res) => {
+                   this.fetchLeads();
+                 })
            },
 
 
@@ -788,6 +801,9 @@ var moment = require('moment');
                         this.leads.splice(leadIndex, 1)
                     })
                 }
+                })
+                .then((res) => {
+                  this.fetchLeads();
                 })
             },
           }

@@ -2,12 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Notification;
-use App\Notifications\Comments;
-use App\Notifications\Customers;
+use App\Notifications\NewLead;
 use Illuminate\Http\Request;
 use App\Lead;
 use App\Post;
+use App\User;
 use App\Comment;
 use App\Category;
 use Mail;
@@ -95,6 +94,10 @@ class PagesController extends Controller
 
 		$lead->save();
 
+    $users = User::all();
+    foreach ($users as $user) {
+      $user->notify(new NewLead($lead));
+    }
 
 
     return redirect('/contact-us');

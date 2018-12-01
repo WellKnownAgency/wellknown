@@ -32,11 +32,14 @@ class CreateLeadsTable extends Migration
             $table->string('instagram')->nullable();
             $table->string('linkedin')->nullable();
             $table->text('note')->nullable();
-            $table->integer('status_id')->unsigned()->index()->default('1');
-            $table->foreign('status_id')->references('id')->on('statuses')->onDelete('cascade');
-            $table->integer('source_id')->unsigned()->index()->nullable();
-            $table->foreign('source_id')->references('id')->on('sources')->onDelete('cascade');
+            $table->integer('status_id')->unsigned()->default('1');
+            $table->integer('source_id')->unsigned()->nullable();
             $table->timestamps();
+
+            $table->foreign('status_id')->references('id')->on('statuses')
+                ->onUpdate('cascade')->onDelete('cascade');
+            $table->foreign('source_id')->references('id')->on('sources')
+                ->onUpdate('cascade')->onDelete('cascade');
         });
     }
 

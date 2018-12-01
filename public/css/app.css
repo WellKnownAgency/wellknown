@@ -10374,20 +10374,31 @@ body.sidebar-toggled footer.sticky-footer {
   }
 }
 
+.sidebar.toggled {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
 .dot {
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
+  vertical-align: middle !important;
 }
 
 .dot-green {
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
   background-color: green;
   border-radius: 50%;
   display: inline-block;
+  vertical-align: middle !important;
 }
 
 @media only screen and (min-width: 992px) {
