@@ -55,6 +55,11 @@ select.form-control:not([size]):not([multiple]) {
 	}
 </style>
 @stop
+@section('facebook')
+<script>
+  fbq('track', 'Contact');
+</script>
+@stop
 @section('content')
 <div class="page-header header-filter" filter-color="orange">
         <div class="page-header-image" style="background-image:url(images/contact-us.jpg)"></div>
