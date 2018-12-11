@@ -23,7 +23,7 @@
 		   }(document, 'script', 'facebook-jssdk'));
 		</script>
 		<div class="fb-customerchat"
-		 page_id="<153425045259276>">
+		 page_id="153425045259276">
 		</div>
 		@include('partials/_nav')
 		<!-- Page Content -->
