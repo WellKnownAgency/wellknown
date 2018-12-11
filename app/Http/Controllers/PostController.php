@@ -29,7 +29,7 @@ class PostController extends Controller
     public function create()
     {
         $categories = Category::get();
-        return view('admin.posts.create')->withCategories($categories);;
+        return view('admin.posts.create')->withCategories($categories);
     }
 
     /**
@@ -92,8 +92,10 @@ class PostController extends Controller
      */
     public function edit($id)
     {
-      $post = Post::find($id);
-      return view('admin.posts.edit')->withPost($post);
+      $post = Post::with('category')->where('id', $id)->first();
+      $categories = Category::all();
+
+      return view('admin.posts.edit')->withPost($post)->withCategories($categories);;
     }
 
     /**

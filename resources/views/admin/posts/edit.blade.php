@@ -49,20 +49,22 @@
                   <input type="text" class="form-control" name="slug" id="slug" value="{{$post->slug}}">
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="category_id">Category</label>
-                  <select class="form-control" id="category_id" name="category_id">
-                    <option value="1">SEO</option>
-                    <option value="2">SMM</option>
+                  <label for="inputState">Category</label>
+                  <select id="inputState" class="form-control" name="category_id">
+                    @foreach ($categories as $category)
+                    <option value="{{$category->id}}" @if ($category->id == $post->category_id) selected @endif >{{ $category->name }}</option>
+                    @endforeach
                   </select>
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="featured">Featured</label>
-                  <select class="form-control" id="featured" name="featured">
-                    <option value="1">Featured</option>
-                    <option value="0">Not Featured</option>
-                  </select>
+                  <label for="defaultCheck1">
+                    Featured
+                  </label>
+                  <div class="form-check">
+                    <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="1" aria-label="...">
+                  </div>
                 </div>
                 <div class="form-group col-md-6">
                   <label for="dscr">Description</label>
@@ -71,14 +73,15 @@
               </div>
               <div class="form-row">
               <div class="form-group col-md-6">
-                <label for="image">Upload Image (000x000)</label>
+                <label for="image">Upload Image (1920x600)</label>
                 <input type="file" class="form-control-file" name="img" id="image">
               </div>
               <div class="form-group col-md-6">
-                <label for="status">Status</label>
-                <select class="form-control" id="status" name="status">
-                  <option value="1">Published</option>
-                  <option value="0">Not Published</option>
+                <label for="inputState">Status</label>
+                <select id="inputState" class="form-control" name="status">
+                  <option value="DRAFT" @if ($post->status == 'DRAFT') selected @endif>Draft</option>
+                  <option value="PENDING" @if ($post->status == 'PENDING') selected @endif>Pending</option>
+                  <option value="PUBLISHED" @if ($post->status == 'PUBLISHED') selected @endif>Published</option>
                 </select>
               </div>
               </div>
