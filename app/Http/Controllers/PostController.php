@@ -115,7 +115,7 @@ class PostController extends Controller
         $post->excerpt = $request->input('excerpt');
         $post->body = $request->input('body');
         $post->status = $request->input('status');
-        $post->featured = $request->input('featured');
+        $post->featured = 0;
         $post->category_id = $request->input('category_id');
 
      if ($request->hasFile('img')) {
