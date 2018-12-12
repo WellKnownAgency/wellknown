@@ -96,7 +96,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 ml-auto mr-auto">
-
                     <div class="row">
                         <div class="col-md-6">
                             <a id="shareb" href="https://plus.google.com/share?url={{ urlencode(Request::fullUrl()) }}" class="btn btn-google btn-round pull-right">
@@ -111,6 +110,25 @@
                         </div>
                     </div>
                     <hr>
+                    <div class="card card-profile card-plain">
+                      <div class="row">
+                        <div class="col-md-2">
+                          <div class="card-avatar">
+                            <a href="#pablo">
+                              <img class="img img-raised" src="/images/taraskim.jpg">
+                            </a>
+                            <div class="ripple-container"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-8">
+                          <h4 class="card-title">Taras Kim</h4>
+                          <p class="description">Love Business and Marketing. Web programming is one of the greatest openings for me. Studed Construction Engineering.</p>
+                        </div>
+                        <div class="col-md-2">
+                          <a href="#subscribe" class="btn btn-default pull-right btn-round">Subscribe</a>
+                        </div>
+                      </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -153,6 +171,40 @@
 		</div>
 	</div>
 </div>
+
+<div class="subscribe-line subscribe-line-white" id="subscribe">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h4 class="title">Get New Posts every Week!</h4>
+              <p class="description">
+                Join our newsletter and get latest blog news in your inbox every week! We hate spam too, so no worries about this.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <div class="card card-plain card-form-horizontal">
+                <div class="card-content">
+                  <form method="" action="">
+                    <div class="row">
+                      <div class="col-sm-8">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="now-ui-icons ui-1_email-85"></i></span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Email Name...">
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <a href="#" class="btn btn-primary btn-round btn-block">Subscribe</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 @stop
 
 @section('customjs')

@@ -1,4 +1,4 @@
-<div class="subscribe-line subscribe-line-image" style="background-image: url('/images/bg-upfooter.jpg'); background-repeat: no-repeat;
+<div id="freeconsultation" class="subscribe-line subscribe-line-image" style="background-image: url('/images/bg-upfooter.jpg'); background-repeat: no-repeat;
   background-attachment: fixed;">
   <div class="container">
     <div class="row">

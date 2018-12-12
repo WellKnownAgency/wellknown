@@ -1,3 +1,7 @@
+document.querySelector('#freeconsultation').scrollIntoView({
+  behavior: 'smooth'
+});
+
 $('body').bind('touchstart', function() {});
 
 
