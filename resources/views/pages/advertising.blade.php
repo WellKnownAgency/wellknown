@@ -1,6 +1,6 @@
 @extends('layout.main')
 
-@section('title', 'Online Advertsing | PPC, Remarketing, Social Media Adv')
+@section('title', 'Online Advertising | PPC, Remarketing, Social Media Adv')
 
 @section('description', 'All types of Digital Advertising for your Business Online. Pay Per Click (PPC), Remarketing, Social Media Advertising and Video Advertising by WellKnown Agency')
 
