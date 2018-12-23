@@ -1,15 +1,11 @@
 @extends('layout.mainblog')
 
-@section('title', 'Digital Agency - Advertising | Marketing | Web Design - WellKnown ')
+@section('title', 'usines and Marketing Blog from WellKnown Agency')
 
-@section('description', 'WellKnown Digital Agency provides Advertising , Marketing and Webdesign Services for your Business. Years of experience working with small Businesses give us an opportunity to guaranty you great results. Call now and get Free Consultation.')
+@section('description', 'Find our great articles about Business , Development, Advertising and marketing on WellKnown Ageny Blog.')
 
 @section('keywords', 'Digital Agency, Online marketing, online advertising, marketing Agency, Advertising Agency, Web design agency, web development')
 
-@section('preload')
-<link rel="preload" href="/images/sky.webp" as="image">
-<link rel="preload" href="/images/boston.webp" as="image">
-@stop
 
 @section('customcss')
 <meta property="og:image" content="/images/sem.jpg" />
@@ -17,6 +13,7 @@
 .pagination {
   justify-content: center !important;
 }
+
 </style>
 @stop
 

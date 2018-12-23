@@ -45,6 +45,9 @@
   position: relative;
   z-index: 100;
 }
+p {
+    font-size: 1.4em !important;
+}
 </style>
 @stop
 
