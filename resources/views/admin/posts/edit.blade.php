@@ -1,4 +1,4 @@
-@section('title', 'Create New Product')
+@section('title', 'Edit Post')
 @section('dscr', '')
 @section('keywords', '')
 
@@ -16,16 +16,6 @@
           </li>
           <li class="breadcrumb-item active">Tables</li>
         </ol>
-      </div>
-      <div class="col-md-3">
-        <div class="card" style="width: 100%;">
-          <h5 class="card-header">
-            WellKnown Agency Posts
-          </h5>
-          <div class="card-body">
-            <a href="/admin/posts" class="btn btn-info">All Posts</a>
-          </div>
-        </div>
       </div>
       <div class="col-md-9">
         <div class="card" style="width: 100%;">
@@ -59,16 +49,16 @@
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
+                  <label for="dscr">Description</label>
+                  <input type="text" class="form-control" name="dscr" id="dscr" value="{{$post->dscr}}">
+                </div>
+                <div class="form-group col-md-6">
                   <label for="defaultCheck1">
                     Featured
                   </label>
                   <div class="form-check">
                     <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="1" aria-label="...">
                   </div>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="dscr">Description</label>
-                  <input type="text" class="form-control" name="dscr" id="dscr" value="{{$post->dscr}}">
                 </div>
               </div>
               <div class="form-row">
@@ -91,11 +81,21 @@
               </div>
               <div class="form-group">
                 <label for="body">Body</label>
-                <textarea class="form-control" id="Body" name="body" rows="7">{{$post->body}}</textarea>
+                <textarea class="form-control" id="Body" name="body" rows="20">{{$post->body}}</textarea>
               </div>
 
               <button type="submit" class="btn btn-success">Save Changes</button>
             </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" style="width: 100%;">
+          <h5 class="card-header">
+            WellKnown Agency Posts
+          </h5>
+          <div class="card-body">
+            <a href="/admin/posts" class="btn btn-info">All Posts</a>
           </div>
         </div>
       </div>
@@ -107,7 +107,6 @@
 <script>
   tinymce.init({
          selector: "textarea",
-         language: 'ru',
          plugins: [
              "advlist autolink lists link image charmap print preview hr anchor pagebreak",
              "searchreplace wordcount visualblocks visualchars code fullscreen",

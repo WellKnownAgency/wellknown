@@ -1,31 +1,24 @@
-@section('title', 'Create New Product')
+@section('title', 'Create Post')
 @section('dscr', '')
 @section('keywords', '')
 
-@extends('admin.maincrud')
+@extends('admin.main')
 
 @section('content')
 <div id="content-wrapper">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-3">
-        <div class="card" style="width: 100%;">
-          <h5 class="card-header">
-            WellKnown Agency Posts
-          </h5>
-          <div class="card-body">
-            <a href="/admin/posts" class="btn btn-info">All Posts</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-9">
+      <div class="col-md-12">
         <!-- Breadcrumbs-->
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="#">Dashboard</a>
+            <a href="/admin/">Dashboard</a>
           </li>
-          <li class="breadcrumb-item active">Tables</li>
+          <li class="breadcrumb-item"><a href="/admin/posts">Posts</a></li>
+          <li class="breadcrumb-item active">Create</li>
         </ol>
+      </div>
+      <div class="col-md-9">
         <div class="card" style="width: 100%;">
           <h5 class="card-header">Create New Post</h5>
           <div class="card-body">
@@ -37,8 +30,8 @@
                   <input type="text" name="title" class="form-control" id="title" placeholder="Title">
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="title">Seo-Title</label>
-                  <input type="text" name="seotitle" class="form-control" id="seotitle" placeholder="Seo-Title">
+                  <label for="title">Seo Title</label>
+                  <input type="text" name="seotitle" class="form-control" id="seotitle" placeholder="Seo Title">
                 </div>
               </div>
               <div class="form-row">
@@ -72,7 +65,7 @@
               </div>
               <div class="form-row">
               <div class="form-group col-md-6">
-                <label for="image">Upload Image (900x600)</label>
+                <label for="image">Upload Image (1920x600)</label>
                 <input type="file" class="form-control-file" name="img" id="image">
               </div>
               <div class="form-group col-md-6">
@@ -98,6 +91,16 @@
           </div>
         </div>
       </div>
+      <div class="col-md-3">
+        <div class="card" style="width: 100%;">
+          <h5 class="card-header">
+            WellKnown Agency Posts
+          </h5>
+          <div class="card-body">
+            <a href="/admin/posts" class="btn btn-info">All Posts</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -106,7 +109,6 @@
 <script>
   tinymce.init({
          selector: "textarea",
-         language: 'ru',
          plugins: [
              "advlist autolink lists link image charmap print preview hr anchor pagebreak",
              "searchreplace wordcount visualblocks visualchars code fullscreen",
