@@ -24,12 +24,15 @@ Route::prefix('admin')->middleware('auth:web')->group(function() {
   Route::get('/settings', 'AdminPagesController@settings');
   Route::get('/seo', 'AdminPagesController@seo');
   Route::get('/seo/projects/{seoProject}/edit', 'SeoProjectController@edit')->name('seo-project.edit');
+  Route::get('/calendar', 'AdminPagesController@calendar');
 
+
+/* Notifications */
   Route::post('/notification/get', 'NotificationController@get');
   Route::post('/notification/read', 'NotificationController@read');
   Route::post('/notification/readall', 'NotificationController@readall');
 
-  
+
 });
 
 /* Main Pages */

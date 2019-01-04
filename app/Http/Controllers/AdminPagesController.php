@@ -59,4 +59,9 @@ class AdminPagesController extends Controller
         return view('admin.seo.index', compact('projects', 'total'));
     }
 
+    public function calendar()
+    {
+    return view('admin.calendar');
+    }
+
 }

@@ -97,18 +97,18 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <a href="https://upcity.com/local-marketing-agencies/profiles/wellknown-agency" class="btn btn-neutral btn-icon btn-twitter btn-footer">
+          <a href="https://upcity.com/local-marketing-agencies/profiles/wellknown-agency" target="_blank" class="btn btn-neutral btn-icon btn-twitter btn-footer">
             <img src="/images/upcity.png" width="100px"/>
           </a>
         </div>
         <div class="col-md-4">
-          <a href="https://clutch.co/profile/wellknown-agency" class="btn btn-neutral btn-icon btn-facebook btn-footer">
+          <a href="https://clutch.co/profile/wellknown-agency" target="_blank" class="btn btn-neutral btn-icon btn-facebook btn-footer">
             <img src="/images/clutch.png" width="100px" />
           </a>
         </div>
         <div class="col-md-4">
-          <a href="" class="btn btn-neutral btn-icon btn-google btn-footer">
-            <img src="/images/dan.png" width="100px" />
+          <a href="https://www.goodfirms.co/companies/view/13168/wellknown-agency" target="_blank" class="btn btn-neutral btn-icon btn-google btn-footer">
+            <img src="/images/gf.png" width="120px" />
           </a>
         </div>
       </div>

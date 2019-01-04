@@ -25,7 +25,7 @@
   </li>
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <i class="fas fa-fw fa-folder"></i>
+      <i class="fas fa-fw fa-book"></i>
       <span>Blog</span>
     </a>
     <div class="dropdown-menu" aria-labelledby="pagesDropdown">
@@ -33,6 +33,12 @@
       <a class="dropdown-item" href="">Comments</a>
       <a class="dropdown-item" href="/admin/categories">Categories</a>
     </div>
+  </li>
+  <li class="nav-item active">
+    <a class="nav-link" href="/admin/calendar">
+      <i class="fa fa-fw fa-calendar-alt"></i>
+      <span>Calendar</span>
+    </a>
   </li>
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
