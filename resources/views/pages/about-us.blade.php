@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('layout.maincontact')
 
 @section('title', 'Digital Marketing and Advertising Agency | Full Service')
 
