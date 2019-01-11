@@ -38,6 +38,10 @@ class PagesController extends Controller
 		return view('pages/web-design')->withPosts($posts);
 	}
 
+  public function getLanding() {
+		return view('pages/landing-pages');
+	}
+
 	public function getAboutus() {
 		return view('pages/about-us');
 	}

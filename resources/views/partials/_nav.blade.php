@@ -37,6 +37,9 @@
             <a class="dropdown-item {{ Request::is('web-design') ?"active-a" : ""}}" href="/web-design">
               <i class="fa fa-code wk-icons"></i>  <span>Web Design and Dev</span>
             </a>
+            <a class="dropdown-item {{ Request::is('landing-pages') ?"active-a" : ""}}" href="/landing-pages">
+              <i class="fa fa-code wk-icons"></i>  <span>Landing Pages</span>
+            </a>
           </div>
         </li>
         <li class="nav-item {{ Request::is('contact-us') ?"active" : ""}}">
