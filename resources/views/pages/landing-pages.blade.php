@@ -20,9 +20,7 @@ canvas {
 @section('content')
 <!-- Header -->
 <div class="wrapper">
-	<div class="page-header page-header-small">
-			<canvas></canvas>
-			<canvas></canvas>
+	<div class="page-header page-header-small" style="background-image: url('../images/landing/landing-page-header.jpg');">
 			<div class="container">
 					<div class="row">
 							<div class="col-md-8 ml-auto mr-auto text-center" style="padding-top: 5px;">
@@ -44,7 +42,7 @@ canvas {
 			<div class="row">
 				<div class="col-md-8 ml-auto mr-auto text-center">
 					<h2 class="title">Why Landing Page is Vital Today?</h2>
-					<h5 class="description">Choosing is difficult, and people really do not like to do it. They want to be convinced of the right choice. Remember how difficult it is to choose a movie in an online movie theater or pizza on the site. Landing helps with the choice. The choice has already been made, we just convince the user that this choice is correct and necessary.</h5>
+					<h5 class="description">Choosing is difficult, and people really do not like to do it. They want to be convinced of the right choice. Remember how difficult it is to choose a movie in an online movie theater or pizza on the website. Landing helps with the choice. The choice has already been made, we just convince the user that this choice is correct and necessary.</h5>
 				</div>
 			</div>
 			<div class="separator separator-primary"></div>
@@ -52,18 +50,18 @@ canvas {
 				<div class="row">
 					<div class="col-md-6">
 						<!-- First image on the left side -->
-						<div class="image-container image-left" style="background-image: url('../assets/img/bg38.jpg')">
+						<div class="image-container image-left" style="background-image: url('/images/landing/landing-page-2.jpg');">
 							<p class="blockquote blockquote-primary">It's important to formulate an exact proposal for your audience and once again determine why you want to use the landing.
 							</p>
 						</div>
 						<!-- Second image on the left side of the article -->
-						<div class="image-container image-left-bottom" style="background-image: url('../assets/img/bg24.jpg')"></div>
+						<div class="image-container image-left-bottom"></div>
 					</div>
 					<div class="col-md-5">
 						<!-- First image on the right side, above the article -->
-						<div class="image-container image-right" style="background-image: url('../assets/img/bg39.jpg')"></div>
-						<h3>When do We Use Landings?</h3>
-						<p>In brief, landing page is useful if you know exactly what and whom you are selling.</p>
+						<div class="image-container image-right" style="background-image: url('/images/landing/landing-page-1.jpg');"></div>
+						<h3 class="landing_page_steps_header">When do We Use Landings?</h3>
+						<p>In brief, a landing page is useful if you know exactly what and whom you are selling.</p>
 							<h6 class="landing_page_step">1. Sell goods and services</h6>
 						<p>Landing can sell anything: jewels, cinema tickets, consultations, and soft toys. An important condition - the goods count must be little. If you have a catalog of goods in 10 categories, it is better to make an online store.
 						</p>
@@ -71,7 +69,7 @@ canvas {
 						<p>Lead is a visitor who is likely to buy something from you. For example, 10 people came to the website, 5 reached the presentation section, two downloaded it. These two are the leads you can operate with. You can send emails, advertisements, sell additional services.
 						</p>
 							<h6 class="landing_page_step">3. When the main site is already exist</h6>
-						<p>If you have a regular website, you can use a landing page for individual ad campaigns. For example, you have an consulting agency. On the site you can talk about yourself, the conditions of collaboration and completed projects. Advertise a separate services is better on the landing.
+						<p>If you have a regular website, you can use a landing page for individual ad campaigns. For example, you have a consulting agency. On the website you can talk about yourself, the conditions of collaboration and completed projects. Advertise separate services is better on the landing.
 						</p>
 							<h6 class="landing_page_step">4. When there is no main website</h6>
 						<p>Well, no, and not necessary. If you sew leather wallets or cotton dresses, you do not have to pretend a big atelier. Enough to make a landing page that will only advertise your items.
@@ -282,36 +280,7 @@ canvas {
 			</div>
 		</div>
 	</div>
-	<div class="section section-contact-us text-center">
-		<div class="container">
-			<h2 class="title">Want to work with us?</h2>
-			<p class="description">Your project is very important to us.</p>
-			<div class="row">
-				<div class="col-lg-6 text-center ml-auto mr-auto col-md-8">
-					<div class="input-group input-lg">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
-						</div>
-						<input type="text" class="form-control" placeholder="First Name...">
-					</div>
-					<div class="input-group input-lg">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="now-ui-icons ui-1_email-85"></i></span>
-						</div>
-						<input type="text" class="form-control" placeholder="Email Here...">
-					</div>
-					<div class="textarea-container">
-						<textarea class="form-control" name="name" rows="4" cols="80" placeholder="Type a message..."></textarea>
-					</div>
-					<div class="send-button">
-						<a href="#pablo" class="btn btn-primary btn-round btn-block btn-lg">Send Message</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 </div>
-
 @stop
 @section('customjs')
 <script>

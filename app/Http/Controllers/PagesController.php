@@ -39,7 +39,8 @@ class PagesController extends Controller
 	}
 
   public function getLanding() {
-		return view('pages/landing-pages');
+    $posts = Post::latest()->with('category')->where('status', 'PUBLISHED')->take(3)->get();
+    return view('pages/landing-pages')->withPosts($posts);
 	}
 
 	public function getAboutus() {
