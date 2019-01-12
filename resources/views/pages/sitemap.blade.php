@@ -12,22 +12,27 @@
 <url>
   <loc>https://wknown.com/advertising</loc>
   <lastmod>2018-03-23T01:04:07+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>1.00</priority>
 </url>
 <url>
   <loc>https://wknown.com/search-engine-optimization</loc>
   <lastmod>2018-03-23T01:04:07+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>1.00</priority>
 </url>
 <url>
   <loc>https://wknown.com/web-design</loc>
   <lastmod>2018-03-23T01:04:07+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://wknown.com/landing-pages</loc>
+  <lastmod>2019-01-12T01:04:07+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
   <loc>https://wknown.com/about-us</loc>
   <lastmod>2018-03-23T01:04:07+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>1.00</priority>
 </url>
  @foreach($posts as $post)
         <url>
