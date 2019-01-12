@@ -11094,6 +11094,8 @@ html {
 
 .check_price_landing {
   float: left;
+  color: #dc3741;
+  font-weight: bold;
 }
 
 .landing_page_questions {
