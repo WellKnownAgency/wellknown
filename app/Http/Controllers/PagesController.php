@@ -38,6 +38,11 @@ class PagesController extends Controller
 		return view('pages/web-design')->withPosts($posts);
 	}
 
+  public function getLanding() {
+    $posts = Post::latest()->with('category')->where('status', 'PUBLISHED')->take(3)->get();
+    return view('pages/landing-pages')->withPosts($posts);
+	}
+
 	public function getAboutus() {
 		return view('pages/about-us');
 	}

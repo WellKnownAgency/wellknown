@@ -42,6 +42,7 @@ Route::get('search-engine-optimization', 'PagesController@getSearch');
 Route::get('social-media-marketing', 'PagesController@getSocial');
 Route::get('web-design', 'PagesController@getWebdesign');
 Route::get('about-us', 'PagesController@getAboutus');
+Route::get('landing-pages', 'PagesController@getLanding');
 /*Route::get('your-form-submitted', 'PagesController@getYourformsubmitted');*/
 Route::get('privacy-policy', 'PagesController@getPrivacypolicy');
 Route::get('sitemap.xml', 'PagesController@sitemap');
