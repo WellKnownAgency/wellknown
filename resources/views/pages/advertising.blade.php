@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('layout.mainservices')
 
 @section('title', 'Online Advertsing | PPC, Remarketing, Social Media Adv')
 

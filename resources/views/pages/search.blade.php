@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('layout.mainservices')
 
 @section('title', 'Search Engine Optimization | SEO')
 

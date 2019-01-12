@@ -30,6 +30,7 @@
 		<div id="app" class="presentation-page">
 			@yield('content')
 			@include('partials/_upfooter')
+			@include('partials/_blogfooter')
 			@include('partials/_footer')
 		</div>
 		@include('partials/_js')

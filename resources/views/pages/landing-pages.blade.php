@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('layout.mainservices')
 
 @section('title', 'Web Design and Development | WellKnown')
 
@@ -24,12 +24,12 @@ canvas {
 			<div class="container">
 					<div class="row">
 							<div class="col-md-8 ml-auto mr-auto text-center" style="padding-top: 5px;">
-									<h1 class="title landing_page_header">NEED A LANDING PAGE THAT REALLY INCREASE YOUR SALES? </h1>
+									<h1 class="title landing_page_header">EFFICIENT LANDING PAGE SERVICES</h1>
 							</div>
 							<div class="col-md-10 ml-auto mr-auto">
 									<div class="card card-raised card-form-horizontal card-plain" data-background-color="">
 											<div class="card-body">
-												<a href="#freeconsultation" class="btn btn-primary btn-round btn-l">Order Now</a>
+												<a href="#freeconsultation" class="btn btn-primary btn-round btn-l">Free consultation</a>
 											</div>
 									</div>
 							</div>
@@ -109,7 +109,7 @@ canvas {
 									<h4 class="info-title">Don't understand how to define your target audience?</h4>
 										<br>
 										<br>
-									<p class="landing_page_questions">We have years of experience helping different businesses to define  to discover their exact customer.</p>
+									<p class="landing_page_questions">We have years of experience helping different businesses to define and to discover their exact customer.</p>
 							</div>
 					</div>
 
@@ -141,7 +141,7 @@ canvas {
 						<div class="card-body">
 							<h6 class="category">Extended</h6>
 							<h1 class="card-title">
-								<small>$</small>599</h1>
+								<small>$</small>399</h1>
 							<ul>
 								<li>
 									<b>
@@ -166,7 +166,7 @@ canvas {
 								<li>
 									<b>
 										<i class="now-ui-icons ui-1_check check_price_landing"></i>
-									</b> Compatible with any browser
+									</b> Unique copyrighting
 								</li>
 								<li>
 									<b>
@@ -190,7 +190,7 @@ canvas {
 						<div class="card-body">
 							<h6 class="category text-info">Standart</h6>
 							<h1 class="card-title">
-								<small>$</small>399</h1>
+								<small>$</small>299</h1>
 								<ul>
 									<li>
 										<b>
@@ -215,7 +215,7 @@ canvas {
 									<li>
 										<b>
 											<i class="now-ui-icons ui-1_check check_price_landing"></i>
-										</b> Compatible with any browser
+										</b> Unique copyrighting
 									</li>
 									<li>
 										<b>
@@ -260,7 +260,7 @@ canvas {
 									</li>
 									<li>
 										<b>
-										</b> Compatible with any browser
+										</b> Unique copyrighting
 									</li>
 									<li>
 										<b>
