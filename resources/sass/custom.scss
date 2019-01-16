@@ -21,9 +21,6 @@ html {
   }
 }
 
-.collapse:not(.show) {
-    display: block !important;
-}
 
 .header-filter[filter-color="fflowers"] {
     background: rgba(44, 44, 44, 0.2);
@@ -270,4 +267,28 @@ list-style: none;
 
 .smm_page_header_dscr{
   font-weight: 400;
+}
+
+.card_price_title{
+  line-height: 1.25em;
+  font-weight: 400;
+  font-size: 3.5em;
+  margin-bottom: .75rem;
+}
+
+.price_category{
+  font-size: 0.9em;
+  margin-bottom: .5rem;
+  font-family: inherit;
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+.card_price_title small{
+  font-weight: 700;
+text-transform: uppercase;
+opacity: .8;
+position: relative;
+top: -17px;
+font-size: 26px;
 }

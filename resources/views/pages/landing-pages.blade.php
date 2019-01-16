@@ -8,13 +8,6 @@
 
 
 @section('customcss')
-<style>
-canvas {
-	position: absolute;
-	width: 100%;
-  height: 100%;
-}
-</style>
 @stop
 
 @section('content')
@@ -139,8 +132,8 @@ canvas {
 				<div class="col-md-4">
 					<div class="card card-pricing card-plain">
 						<div class="card-body">
-							<h6 class="category">Extended</h6>
-							<h1 class="card-title">
+							<p class="category price_category">Extended</p>
+							<p class="card-title card_price_title">
 								<small>$</small>399</h1>
 							<ul>
 								<li>
@@ -188,8 +181,8 @@ canvas {
 				<div class="col-md-4">
 					<div class="card card-pricing card-background card-raised" style="background-color:#FFCDD2;">
 						<div class="card-body">
-							<h6 class="category text-info">Standart</h6>
-							<h1 class="card-title">
+							<p class="category price_category">Standart</p>
+							<p class="card-title card_price_title">
 								<small>$</small>299</h1>
 								<ul>
 									<li>
@@ -235,8 +228,8 @@ canvas {
 				<div class="col-md-4">
 					<div class="card card-pricing card-plain">
 						<div class="card-body">
-							<h6 class="category">Basic</h6>
-							<h1 class="card-title">
+							<p class="category price_category">Basic</p>
+							<p class="card-title card_price_title">
 								<small>$</small>199</h1>
 								<ul>
 									<li>

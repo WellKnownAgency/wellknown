@@ -227,9 +227,9 @@
 				<div class="col-md-4">
 					<div class="card card-pricing card-plain">
 						<div class="card-body">
-							<h6 class="category">Extended</h6>
-							<h1 class="card-title">
-								<small>$</small>499</h1>
+							<p class="category price_category">Basic</p>
+							<p class="card-title card_price_title">
+								<small>$</small>499</p>
 							<ul>
 								<li>
 									<b>
@@ -261,6 +261,14 @@
 										<i class="now-ui-icons ui-1_check check_price_landing"></i>
 									</b> Profile optimization
 								</li>
+								<li>
+								 		Paid advertisement <br>
+									(Ad budget fees are not included)
+								</li>
+								<li>
+									 Customer review monitoring and responding
+								</li>
+
 							</ul>
 							<a href="/contact-us" class="btn btn-primary btn-round">
 								Order Now
@@ -271,8 +279,8 @@
 				<div class="col-md-4">
 					<div class="card card-pricing card-background card-raised" style="background-color:#FFCDD2;">
 						<div class="card-body">
-							<h6 class="category text-info">Standart</h6>
-							<h1 class="card-title">
+							<p class="category price_category">Standart</p>
+							<p class="card-title card_price_title">
 								<small>$</small>699</h1>
 								<ul>
 									<li>
@@ -311,6 +319,10 @@
 										</b> Paid advertisement <br>
 										(Ad budget fees are not included)
 									</li>
+									<li>
+						 				Customer review monitoring and responding
+									</li>
+
 								</ul>
 							<a href="/contact-us" class="btn btn-neutral btn-round">
 								Order Now
@@ -321,8 +333,8 @@
 				<div class="col-md-4">
 					<div class="card card-pricing card-plain">
 						<div class="card-body">
-							<h6 class="category">Basic</h6>
-							<h1 class="card-title">
+							<p class="category price_category">Extended</p>
+							<p class="card-title card_price_title">
 								<small>$</small>999</h1>
 								<ul>
 									<li>
@@ -358,13 +370,13 @@
 									<li>
 										<b>
 											<i class="now-ui-icons ui-1_check check_price_landing"></i>
-										</b> Customer review monitoring and responding
-									</li>
-									<li>
-										<b>
-											<i class="now-ui-icons ui-1_check check_price_landing"></i>
 										</b> Paid advertisement <br>
 										(Ad budget fees are not included)
+									</li>
+									<li>
+									  <b>
+									    <i class="now-ui-icons ui-1_check check_price_landing"></i>
+									  </b> Customer review monitoring and responding
 									</li>
 								</ul>
 							<a href="/contact-us" class="btn btn-primary btn-round">
