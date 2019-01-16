@@ -10864,6 +10864,14 @@ html {
   }
 }
 
+.navbar .container .collapse:not(.show) {
+  display: block;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
 .header-filter[filter-color="fflowers"] {
   background: rgba(44, 44, 44, 0.2);
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(44, 44, 44, 0.2)), to(rgba(255, 140, 148, 0.6)));
