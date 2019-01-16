@@ -245,3 +245,25 @@ margin-left: 0px;
 margin-top: 30px;
  }
 }
+
+.smm-collapse{
+  font-size:20px;
+  font-weight:bold;
+}
+
+.smm_advatages_p{
+  font-size: 18px;
+}
+
+.smm_strategy_ul{
+list-style: none;
+}
+
+.smm_strategy_ul .smm_strategy_li::before{
+  content: "\2022";
+  color: $primary-color;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em; 
+  margin-left: -1em;
+}

@@ -43,6 +43,11 @@ class PagesController extends Controller
     return view('pages/landing-pages')->withPosts($posts);
 	}
 
+  public function getSocial() {
+    $posts = Post::latest()->with('category')->where('status', 'PUBLISHED')->take(3)->get();
+    return view('pages/smm')->withPosts($posts);
+	}
+
 	public function getAboutus() {
 		return view('pages/about-us');
 	}
