@@ -26,18 +26,28 @@
           <h5 style="color:#fff;">Services</h5>
           <ul class="links-vertical">
             <li>
-              <a href="#pablo" class="text-muted">
+              <a href="/advertising" class="text-muted">
                 Advertising
               </a>
             </li>
             <li>
-              <a href="#pablo" class="text-muted">
+              <a href="/search" class="text-muted">
                 Search Engine Optimization
               </a>
             </li>
             <li>
-              <a href="#pablo" class="text-muted">
-                WEb Design and Development
+              <a href="/smm" class="text-muted">
+                Social Media Marketing
+              </a>
+            </li>
+            <li>
+              <a href="/web-design" class="text-muted">
+                Web Design and Development
+              </a>
+            </li>
+            <li>
+              <a href="/landing-pages" class="text-muted">
+                Landing Pages
               </a>
             </li>
           </ul>

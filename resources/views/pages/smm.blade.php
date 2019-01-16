@@ -18,7 +18,7 @@
 					<div class="row">
 							<div class="col-md-10 ml-auto mr-auto text-center" style="padding-top: 5px;">
 									<h1 class="title landing_page_header">Social Media Marketing (SMM)</h1>
-									<p class="smm_page_header_dscr">SMM promotion - will increase the sales of your business due to the wide coverage of the target audience in social networks by informing users about the products / services and interaction with potential customers.</p>
+									<h5 class="page_header_dscr">SMM promotion - will increase the sales of your business due to the wide coverage of the target audience in social networks by informing users about the products / services and interaction with potential customers.</h5>
 							</div>
 							<div class="col-md-10 ml-auto mr-auto">
 									<div class="card card-raised card-form-horizontal card-plain" data-background-color="">
@@ -70,7 +70,7 @@
 			</div>
 				<div class="col-md-7 ml-auto mr-auto">
 					<div class="container">
-					<h3 class="title"> EFFICIENT SOCIAL MEDIA MARKETING WITH WELLKNOWN AGENCY </h3>
+					<h2 class="title" style="font-size:1.825em;"> EFFICIENT SOCIAL MEDIA MARKETING PROMOTION WITH WELLKNOWN AGENCY </h2>
 					<h5 class="category">Promotion in social networks allows you to achieve your business goals that are difficult to solve with standard advertising campaigns. The right SMM strategy allows you to build communication with users, increase brand loyalty and open a new effective channel for your business to increase sales.</h5>
 					<div id="accordion" role="tablist" aria-multiselectable="true" class="card-collapse">
 						<div class="card card-plain">
@@ -181,7 +181,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-8 mr-auto ml-auto">
-					<h2 class="title">Our Advantages.</h2>
+					<h2 class="title">Our Social Media Advantages</h2>
 					<h4 class="description">For SMM-promotion of a project in social media, there are responsible industry-specific teams of experts who specialize in your business:</h4>
 				</div>
 			</div>
@@ -221,7 +221,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 ml-auto mr-auto text-center">
-					<h2 class="title">Pick the best plan fits for you</h2>
+					<h2 class="title">Social Media Packages Pricing</h2>
 				</div>
 			</div>
 			<div class="row">

@@ -28,7 +28,7 @@ canvas {
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center" style="padding-top: 100px;">
             <h1 class="title">Search Engine Optimization</h1>
-            <h4 class="description">From nowhere to top ten</h4>
+            <h4 class="page_header_dscr">From nowhere to top ten</h4>
           </div>
           <div class="col-md-10 ml-auto mr-auto">
             <div class="card card-raised card-form-horizontal card-plain" data-background-color>

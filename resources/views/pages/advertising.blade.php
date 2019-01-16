@@ -31,7 +31,7 @@ canvas {
             <div class="row">
                 <div class="col-md-8 ml-auto mr-auto text-center" style="padding-top: 100px;">
                     <h1 class="title">Online Advertising</h1>
-                    <h5 class="description">Advertise your business through Search or Social Media with the best possible ROI</h5>
+                    <h5 class="page_header_dscr">Advertise your business through Search or Social Media with the best possible ROI</h5>
                 </div>
                 <div class="col-md-10 ml-auto mr-auto">
                     <div class="card card-raised card-form-horizontal card-plain" data-background-color="">
