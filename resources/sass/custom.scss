@@ -21,9 +21,7 @@ html {
   }
 }
 
-.collapse:not(.show) {
-    display: block !important;
-}
+
 
 .header-filter[filter-color="fflowers"] {
     background: rgba(44, 44, 44, 0.2);
@@ -264,6 +262,6 @@ list-style: none;
   color: $primary-color;
   font-weight: bold;
   display: inline-block;
-  width: 1em; 
+  width: 1em;
   margin-left: -1em;
 }

@@ -82,7 +82,7 @@
 									<i class="now-ui-icons arrows-1_minimal-down"></i>
 								</a>
 							</div>
-							<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+							<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
 								<div class="card-body">
 									<h5>For each project we develop a promotion strategy with a step-by-step work plan.</h5>
 										<p>You get:</p>
@@ -94,6 +94,7 @@
 									</ul>
 								</div>
 							</div>
+
 						</div>
 						<div class="card card-plain">
 							<div class="card-header smm-collapse" role="tab" id="headingTwo">
@@ -176,7 +177,6 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</div>
 	<div class="features-2 section-image smm-advantages-image" style="background-image: url('/images/smm/smm-advantages-bg-drk.jpg'); background-color:rgba(0, 0, 0, 0.7);">
