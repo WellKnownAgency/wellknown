@@ -63,7 +63,7 @@
 							</button>
 						</a>
 					</div>
-					<p class="blockquote blockquote-primary">
+					<p class="blockquote blockquote-primary  ml-auto mr-auto" style="width:90%;">
 						Achieving a high result of promotion in social networks is supported by financial guarantees and spelled out in the contract.
 					</p>
 				</div>
