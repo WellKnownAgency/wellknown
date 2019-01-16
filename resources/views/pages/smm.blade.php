@@ -18,7 +18,7 @@
 					<div class="row">
 							<div class="col-md-10 ml-auto mr-auto text-center" style="padding-top: 5px;">
 									<h1 class="title landing_page_header">Social Media Marketing (SMM)</h1>
-									<p>SMM promotion - will increase the sales of your business due to the wide coverage of the target audience in social networks by informing users about the products / services and interaction with potential customers.</p>
+									<p class="smm_page_header_dscr">SMM promotion - will increase the sales of your business due to the wide coverage of the target audience in social networks by informing users about the products / services and interaction with potential customers.</p>
 							</div>
 							<div class="col-md-10 ml-auto mr-auto">
 									<div class="card card-raised card-form-horizontal card-plain" data-background-color="">
@@ -32,28 +32,24 @@
 
 	</div>
 	<div class="section">
-		<div class="container">
 			<div class="row">
 				<div class="col-md-5">
+					<div class="container">
 					<div id="productCarousel" class="carousel slide" data-ride="carousel" data-interval="8000">
 						<ol class="carousel-indicators">
 							<li data-target="#productCarousel" data-slide-to="0" class="active"></li>
 							<li data-target="#productCarousel" data-slide-to="1"></li>
 							<li data-target="#productCarousel" data-slide-to="2"></li>
-							<li data-target="#productCarousel" data-slide-to="3"></li>
 						</ol>
 						<div class="carousel-inner" role="listbox">
 							<div class="carousel-item active">
-								<img class="d-block img-raised" src="../assets/img/pp-1.jpg" alt="First slide">
+								<img class="d-block img-raised" src="../images/smm/smm-slide-2.jpg" alt="First slide">
 							</div>
 							<div class="carousel-item">
-								<img class="d-block img-raised" src="../assets/img/pp-2.jpg" alt="Second slide">
+								<img class="d-block img-raised" src="./images/smm/smm-slide-3.jpg" alt="Second slide">
 							</div>
 							<div class="carousel-item">
-								<img class="d-block img-raised" src="../assets/img/pp-3.jpg" alt="Third slide">
-							</div>
-							<div class="carousel-item">
-								<img class="d-block img-raised" src="../assets/img/pp-4.jpg" alt="Third slide">
+								<img class="d-block img-raised" src="./images/smm/smm-slide-1.jpg" alt="Third slide">
 							</div>
 						</div>
 						<a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
@@ -67,11 +63,13 @@
 							</button>
 						</a>
 					</div>
-					<p class="blockquote blockquote-primary">
+					<p class="blockquote blockquote-primary  ml-auto mr-auto" style="width:90%;">
 						Achieving a high result of promotion in social networks is supported by financial guarantees and spelled out in the contract.
 					</p>
 				</div>
+			</div>
 				<div class="col-md-7 ml-auto mr-auto">
+					<div class="container">
 					<h3 class="title"> EFFICIENT SOCIAL MEDIA MARKETING WITH WELLKNOWN AGENCY </h3>
 					<h5 class="category">Promotion in social networks allows you to achieve your business goals that are difficult to solve with standard advertising campaigns. The right SMM strategy allows you to build communication with users, increase brand loyalty and open a new effective channel for your business to increase sales.</h5>
 					<div id="accordion" role="tablist" aria-multiselectable="true" class="card-collapse">
@@ -193,7 +191,7 @@
 						<div class="icon icon-primary icon-circle">
 							<i class="now-ui-icons users_single-02"></i>
 						</div>
-						<h4 class="info-title">We know what your audience lives</h4>
+						<h4 class="info-title">We know what is your audience interested in</h4>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -201,7 +199,7 @@
 						<div class="icon icon-danger icon-circle">
 							<i class="now-ui-icons business_chart-bar-32"></i>
 						</div>
-						<h4 class="info-title">Analyze how do your competitors act</h4>
+						<h4 class="info-title">We analyze how do your competitors act</h4>
 					</div>
 				</div>
 				<div class="col-md-4">

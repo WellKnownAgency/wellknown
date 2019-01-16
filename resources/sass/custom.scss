@@ -21,7 +21,13 @@ html {
   }
 }
 
+.navbar .container .collapse:not(.show) {
+    display: block;
+}
 
+.collapse:not(.show) {
+    display: none;
+}
 
 .header-filter[filter-color="fflowers"] {
     background: rgba(44, 44, 44, 0.2);
