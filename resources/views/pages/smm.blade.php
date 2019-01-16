@@ -32,28 +32,24 @@
 
 	</div>
 	<div class="section">
-		<div class="container">
 			<div class="row">
 				<div class="col-md-5">
+					<div class="container">
 					<div id="productCarousel" class="carousel slide" data-ride="carousel" data-interval="8000">
 						<ol class="carousel-indicators">
 							<li data-target="#productCarousel" data-slide-to="0" class="active"></li>
 							<li data-target="#productCarousel" data-slide-to="1"></li>
 							<li data-target="#productCarousel" data-slide-to="2"></li>
-							<li data-target="#productCarousel" data-slide-to="3"></li>
 						</ol>
 						<div class="carousel-inner" role="listbox">
 							<div class="carousel-item active">
-								<img class="d-block img-raised" src="../assets/img/pp-1.jpg" alt="First slide">
+								<img class="d-block img-raised" src="../images/smm/smm-slide-2.jpg" alt="First slide">
 							</div>
 							<div class="carousel-item">
-								<img class="d-block img-raised" src="../assets/img/pp-2.jpg" alt="Second slide">
+								<img class="d-block img-raised" src="./images/smm/smm-slide-3.jpg" alt="Second slide">
 							</div>
 							<div class="carousel-item">
-								<img class="d-block img-raised" src="../assets/img/pp-3.jpg" alt="Third slide">
-							</div>
-							<div class="carousel-item">
-								<img class="d-block img-raised" src="../assets/img/pp-4.jpg" alt="Third slide">
+								<img class="d-block img-raised" src="./images/smm/smm-slide-1.jpg" alt="Third slide">
 							</div>
 						</div>
 						<a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
@@ -71,7 +67,9 @@
 						Achieving a high result of promotion in social networks is supported by financial guarantees and spelled out in the contract.
 					</p>
 				</div>
+			</div>
 				<div class="col-md-7 ml-auto mr-auto">
+					<div class="container">
 					<h3 class="title"> EFFICIENT SOCIAL MEDIA MARKETING WITH WELLKNOWN AGENCY </h3>
 					<h5 class="category">Promotion in social networks allows you to achieve your business goals that are difficult to solve with standard advertising campaigns. The right SMM strategy allows you to build communication with users, increase brand loyalty and open a new effective channel for your business to increase sales.</h5>
 					<div id="accordion" role="tablist" aria-multiselectable="true" class="card-collapse">
@@ -176,7 +174,6 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</div>
 	<div class="features-2 section-image smm-advantages-image" style="background-image: url('/images/smm/smm-advantages-bg-drk.jpg'); background-color:rgba(0, 0, 0, 0.7);">
