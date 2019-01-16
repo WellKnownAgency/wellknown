@@ -221,7 +221,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 ml-auto mr-auto text-center">
-					<h2 class="title">Social Media Packages Pricing</h2>
+					<h2 class="title">Social Media Marketing Packages Pricing</h2>
 				</div>
 			</div>
 			<div class="row">
