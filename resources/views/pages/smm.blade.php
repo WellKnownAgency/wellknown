@@ -18,7 +18,7 @@
 					<div class="row">
 							<div class="col-md-10 ml-auto mr-auto text-center" style="padding-top: 5px;">
 									<h1 class="title landing_page_header">Social Media Marketing (SMM)</h1>
-									<p>SMM promotion - will increase the sales of your business due to the wide coverage of the target audience in social networks by informing users about the products / services and interaction with potential customers.</p>
+									<p class="smm_page_header_dscr">SMM promotion - will increase the sales of your business due to the wide coverage of the target audience in social networks by informing users about the products / services and interaction with potential customers.</p>
 							</div>
 							<div class="col-md-10 ml-auto mr-auto">
 									<div class="card card-raised card-form-horizontal card-plain" data-background-color="">
@@ -190,7 +190,7 @@
 						<div class="icon icon-primary icon-circle">
 							<i class="now-ui-icons users_single-02"></i>
 						</div>
-						<h4 class="info-title">We know what your audience lives</h4>
+						<h4 class="info-title">We know what is your audience interested in</h4>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -198,7 +198,7 @@
 						<div class="icon icon-danger icon-circle">
 							<i class="now-ui-icons business_chart-bar-32"></i>
 						</div>
-						<h4 class="info-title">Analyze how do your competitors act</h4>
+						<h4 class="info-title">We analyze how do your competitors act</h4>
 					</div>
 				</div>
 				<div class="col-md-4">

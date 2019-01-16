@@ -11158,6 +11158,10 @@ html {
   margin-left: -1em;
 }
 
+.smm_page_header_dscr {
+  font-weight: 400;
+}
+
 .tim-row {
   margin-bottom: 20px;
 }
