@@ -32,7 +32,7 @@
 			@include('partials/_upfooter')
 			@include('partials/_footer')
 		</div>
-		<div itemprop="organization" itemscope itemtype="http://schema.org/Organization" display:none;>
+		<div itemprop="organization" itemscope itemtype="http://schema.org/Organization" style="display:none;">
 			<div itemprop="name" display:none;>WellKnown Agency</div>
 			<div itemprop="address" display:none; itemscope itemtype="http://schema.org/PostalAddress">
 				<span display:none; itemprop="streetAddress">
