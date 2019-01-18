@@ -32,11 +32,25 @@
 			@include('partials/_upfooter')
 			@include('partials/_footer')
 		</div>
-		<div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" display:none;>
-        <meta itemprop="itemReviewed" content="WellKnown Agency" />
-        <meta itemprop="ratingValue" content="5" />
-        <meta itemprop="reviewCount" content="3" />
+		<div itemprop="organization" itemscope itemtype="http://schema.org/Organization" display:none;>
+			<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+				<span itemprop="streetAddress">
+					358 Commonwealth avenu
+				</span>
+				<span itemprop="addressLocality">Boston</span>,
+				<span itemprop="addressRegion">MA</span>
+				<span itemprop="postalCode">02115</span>
+			</div>
+			<div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" display:none;>
+	        <meta itemprop="itemReviewed" content="WellKnown Agency" />
+	        <meta itemprop="ratingValue" content="5" />
+	        <meta itemprop="reviewCount" content="3" />
+	    </div>
+			<span itemprop="telephone" content="+13395450956">(339)545-0956</span>
+			<a href="mailto:info@wknown.com" itemprop="email">info@wknown.com</a>
+			<span itemprop="legalName" content="WellKnwn Agency LLC"></span>
     </div>
+
 		@include('partials/_js')
 		@yield('customjs')
 	</body>
