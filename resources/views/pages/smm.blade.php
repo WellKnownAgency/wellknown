@@ -17,7 +17,7 @@
 			<div class="container">
 					<div class="row">
 							<div class="col-md-10 ml-auto mr-auto text-center" style="padding-top: 5px;">
-									<h1 class="title landing_page_header">Social Media Marketing (SMM)</h1>
+									<h1 class="title landing_page_header">Social Media Marketing (SMM) Services</h1>
 									<h5 class="page_header_dscr">SMM promotion - will increase the sales of your business due to the wide coverage of the target audience in social networks by informing users about the products / services and interaction with potential customers.</h5>
 							</div>
 							<div class="col-md-10 ml-auto mr-auto">
