@@ -1,8 +1,8 @@
 @extends('layout.mainservices')
 
-@section('title', 'Landing Page Services | WellKnown')
+@section('title', 'Social Media Services and Promotion (SMM) | WellKnown Agency')
 
-@section('description', 'Sell Online? Beautiful web page design for exactly your audience. Our Services help build right landing page to describe your product and sell it.')
+@section('description', 'Looking to promote your busines in Social Media? Social Media Marketing (SMM) Services for your business with WellKnown Agency.')
 
 @section('keywords', '')
 
