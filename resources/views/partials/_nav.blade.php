@@ -29,7 +29,7 @@
             <a class="dropdown-item {{ Request::is('search') ?"active-a" : ""}}" href="/search-engine-optimization">
               <i class="fa fa-search wk-icons"></i>  <span>Search</span>
             </a>
-              <a class="dropdown-item" href="/smm">
+              <a class="dropdown-item" href="/social-media-marketing">
                 <i class="fa fa-share wk-icons"></i>  <span>Social</span>
               </a>
             <a class="dropdown-item {{ Request::is('web-design') ?"active-a" : ""}}" href="/web-design">
