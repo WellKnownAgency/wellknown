@@ -30,6 +30,11 @@
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://wknown.com/smm</loc>
+  <lastmod>2019-01-18T01:04:07+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
   <loc>https://wknown.com/about-us</loc>
   <lastmod>2018-03-23T01:04:07+00:00</lastmod>
   <priority>1.00</priority>
