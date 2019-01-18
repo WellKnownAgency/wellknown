@@ -33,6 +33,7 @@
 			@include('partials/_footer')
 		</div>
 		<div itemprop="organization" itemscope itemtype="http://schema.org/Organization" display:none;>
+			<span itemprop="name">WellKnown Agency</span>
 			<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 				<span itemprop="streetAddress">
 					358 Commonwealth avenu
@@ -47,7 +48,7 @@
 	        <meta itemprop="reviewCount" content="3" />
 	    </div>
 			<span itemprop="telephone" content="+13395450956">(339)545-0956</span>
-			<a href="mailto:info@wknown.com" itemprop="email">info@wknown.com</a>
+			<span itemprop="email" content="info@wknown.com">info@wknown.com</a>
 			<span itemprop="legalName" content="WellKnwn Agency LLC"></span>
     </div>
 
