@@ -33,14 +33,14 @@
 			@include('partials/_footer')
 		</div>
 		<div itemprop="organization" itemscope itemtype="http://schema.org/Organization" display:none;>
-			<span itemprop="name" display:none;>WellKnown Agency</span>
+			<div itemprop="name" display:none;>WellKnown Agency</div>
 			<div itemprop="address" display:none; itemscope itemtype="http://schema.org/PostalAddress">
-				<span itemprop="streetAddress">
+				<span display:none; itemprop="streetAddress">
 					358 Commonwealth avenu
 				</span>
-				<span itemprop="addressLocality">Boston</span>,
-				<span itemprop="addressRegion">MA</span>
-				<span itemprop="postalCode">02115</span>
+				<span display:none; itemprop="addressLocality">Boston</span>,
+				<span display:none; itemprop="addressRegion">MA</span>
+				<span display:none; itemprop="postalCode">02115</span>
 			</div>
 			<div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" display:none;>
 	        <meta itemprop="itemReviewed" content="WellKnown Agency" />
