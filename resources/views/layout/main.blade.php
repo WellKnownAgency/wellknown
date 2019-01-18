@@ -32,6 +32,11 @@
 			@include('partials/_upfooter')
 			@include('partials/_footer')
 		</div>
+		<div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" display:none;>
+        <meta itemprop="itemReviewed" content="WellKnown Agency" />
+        <meta itemprop="ratingValue" content="5" />
+        <meta itemprop="reviewCount" content="3" />
+    </div>
 		@include('partials/_js')
 		@yield('customjs')
 	</body>
