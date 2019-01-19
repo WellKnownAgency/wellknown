@@ -48,6 +48,12 @@ class PagesController extends Controller
     return view('pages/smm')->withPosts($posts);
 	}
 
+  public function getCase() {
+    $posts = Post::latest()->with('category')->where('status', 'PUBLISHED')->take(3)->get();
+    return view('pages/case-studies')->withPosts($posts);
+	}
+
+
 	public function getAboutus() {
 		return view('pages/about-us');
 	}

@@ -1,8 +1,8 @@
 @extends('layout.mainservices')
 
-@section('title', 'Landing Page Services | WellKnown')
+@section('title', 'Social Media Marketing Services - Social Media Promotion | WellKnown')
 
-@section('description', 'Sell Online? Beautiful web page design for exactly your audience. Our Services help build right landing page to describe your product and sell it.')
+@section('description', 'Social Media Promotion plays a tremendous role in advanced online marketing strategies. WellKnown Agency is your social media marketing team here to generate traffic, sales, and revenue!')
 
 @section('keywords', '')
 
@@ -29,7 +29,6 @@
 							</div>
 					</div>
 			</div>
-
 	</div>
 	<div class="section">
 			<div class="row">

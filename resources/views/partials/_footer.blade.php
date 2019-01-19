@@ -16,7 +16,7 @@
               </a>
             </li>
             <li>
-              <a href="contact-us" class="text-muted">
+              <a href="/contact-us" class="text-muted">
                 Contact Us
               </a>
             </li>
