@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('layout.maincase')
 
 @section('title', 'Case Studies | WellKnown')
 
