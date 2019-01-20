@@ -16,7 +16,6 @@ class AuthUserController extends Controller
 
   public function store(Request $request)
   {
-    if ($request->image) {
       $exploded = explode(',', $request->image);
 
       $decoded = base64_decode($exploded[1]);
@@ -31,7 +30,6 @@ class AuthUserController extends Controller
       $path = public_path().'/images/users/'.$filename;
 
       file_put_contents($path, $decoded);
-    }
 
       $user = Auth::user();
       $user->name = $request->input('name');
@@ -40,9 +38,7 @@ class AuthUserController extends Controller
       $user->linkedin = $request->input('linkedin');
       $user->facebook = $request->input('facebook');
       $user->twitter = $request->input('twitter');
-      if ($request->image) {
         $user->avatar = $filename;
-      }
 
     $user->save();
 
