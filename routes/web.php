@@ -26,6 +26,16 @@ Route::prefix('admin')->middleware('auth:web')->group(function() {
   Route::get('/seo/projects/{seoProject}/edit', 'SeoProjectController@edit')->name('seo-project.edit');
   Route::get('/calendar', 'AdminPagesController@calendar');
 
+  Route::prefix('api')->group(function() {
+      Route::resource('authUser', 'AuthUserController', [
+        'except' => ['create', 'show', 'update', 'edit']
+      ]);
+
+      Route::resource('posts', 'PostController', [
+        'except' => ['create', 'show', 'update', 'edit']
+      ]);
+
+  });
 
 /* Notifications */
   Route::post('/notification/get', 'NotificationController@get');
@@ -44,7 +54,7 @@ Route::get('web-design', 'PagesController@getWebdesign');
 Route::get('about-us', 'PagesController@getAboutus');
 Route::get('landing-pages', 'PagesController@getLanding');
 Route::get('social-media-marketing', 'PagesController@getSocial');
-Route::get('case-studies', 'PagesController@getCase');
+/*Route::get('case-studies', 'PagesController@getCase');*/
 /*Route::get('your-form-submitted', 'PagesController@getYourformsubmitted');*/
 Route::get('privacy-policy', 'PagesController@getPrivacypolicy');
 Route::get('sitemap.xml', 'PagesController@sitemap');

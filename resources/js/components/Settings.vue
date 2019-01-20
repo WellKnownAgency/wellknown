@@ -34,25 +34,25 @@
             </div>
           </div>
           <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" style="float:left;" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Statuses
-            </button>
-          </h5>
-          <button class="btn btn-success" style="float:right;" data-toggle="modal" data-target="#addstatus">Add Status</button>
-        </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-          <div class="card-body">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item" v-for="status in statuses" :key="status.id">
-                {{ status.name }}
-                <button @click.prevent="deleteStatus(status)" style="float:right;" class="btn btn-danger btn-sm delete">Delete</button>
-              </li>
-            </ul>
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" style="float:left;" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Statuses
+                </button>
+              </h5>
+              <button class="btn btn-success" style="float:right;" data-toggle="modal" data-target="#addstatus">Add Status</button>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" v-for="status in statuses" :key="status.id">
+                    {{ status.name }}
+                    <button @click.prevent="deleteStatus(status)" style="float:right;" class="btn btn-danger btn-sm delete">Delete</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
           <div class="card">
             <div class="card-header" id="headingThree">
               <h5 class="mb-0">
@@ -75,10 +75,68 @@
           </div>
         </div>
       </div>
+      <div class="col-md-3">
+        <div class="card">
+          <br>
+          <div class="text-center">
+            <img :src="'/images/users/'+user.avatar" width="150px" class="rounded-circle img-raised"  />
+            <div class="card-body">
+              <h5>{{user.name}}</h5>
+              <button class="btn btn-success" data-toggle="modal" data-target="#updateprofile">Update Profile</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <!-- /.container-fluid -->
   <!-- Modals -->
+  <div class="modal fade bd-example-modal-lg" id="updateprofile" tabindex="-1" role="dialog" aria-labelledby="leadid" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Update Profile</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <form method="" autocomplete="nope">
+                <div class="col">
+                  <label for="name" class="col-form-label">Name:</label>
+                  <input type="text" class="form-control" id="name" v-model="user.name" @keydown.enter="updateProfile" autocomplete="nope">
+                </div>
+                <div class="col">
+                  <label for="email" class="col-form-label">Email:</label>
+                  <input type="text" class="form-control" id="email" v-model="user.email" @keydown.enter="updateProfile" autocomplete="nope">
+                </div>
+                <div class="col">
+                  <label for="facebook" class="col-form-label">Facebook:</label>
+                  <input type="text" class="form-control" id="facebook" v-model="user.facebook" @keydown.enter="updateProfile" autocomplete="nope">
+                </div>
+                <div class="col">
+                  <label for="linkedin" class="col-form-label">Linkedin:</label>
+                  <input type="text" class="form-control" id="linkedin" v-model="user.linkedin" @keydown.enter="updateProfile" autocomplete="nope">
+                </div>
+                <div class="col">
+                  <label for="twitter" class="col-form-label">Twitter:</label>
+                  <input type="text" class="form-control" id="twitter" v-model="user.twitter" @keydown.enter="updateProfile" autocomplete="nope">
+                </div>
+                <div class="col">
+                  <label for="image1" class="col-form-label">Upload Profie Photo</label>
+                  <input type="file" v-on:change="onFileChange" id="image1" class="form-control">
+                </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" v-on:click="updateProfile()" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="modal fade bd-example-modal-lg" id="addsource" tabindex="-1" role="dialog" aria-labelledby="leadid" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -169,6 +227,7 @@ var moment = require('moment');
         this.fetchSource()
         this.fetchStatus()
         this.fetchService()
+        this.fetchAuthUser()
       },
 
       data () {
@@ -191,6 +250,15 @@ var moment = require('moment');
             id:'',
             name: '',
             created_at: ''
+          },
+          user: {
+            name: '',
+            avatar: '',
+            email: '',
+            dscr: '',
+            linkedin: '',
+            facebook: '',
+            twitter: ''
           }
           }
       },
@@ -222,6 +290,56 @@ var moment = require('moment');
                      console.log(err)
                    })
                  },
+             fetchAuthUser () {
+               axios.get('/admin/api/authUser')
+                    .then((res) => {
+                      this.user = res.data
+                    })
+                    .catch((err) => {
+                      console.log(err)
+                    })
+                  },
+
+            onFileChange (e) {
+                  console.log(e.target.files[0])
+                    var fileReader = new FileReader()
+                    fileReader.readAsDataURL(e.target.files[0])
+
+                    fileReader.onload = (e) => {
+                      this.user.image = e.target.result
+                    }
+
+                    console.log(this.user)
+
+                },
+
+            updateProfile () {
+              axios.post('/admin/api/authUser', this.user)
+                  .then((res) => {
+                    this.user.name = ''
+                    this.user.email = ''
+                    this.user.facebook = ''
+                    this.user.linkedin = ''
+                    this.user.twitter = ''
+                  })
+                  .then((res) => {
+                    swal({
+                        type: 'success',
+                        title: 'Yeah',
+                        text: 'Profile was Successfully Updated!'
+                      })
+                      this.fetchAuthUser()
+                  })
+                  .catch((err) =>{
+                    console.log(err)
+                    swal({
+                        type: 'error',
+                        title: 'Ooops...',
+                        text: 'Something went wrong!'
+                      })
+                    })
+             },
+
 
 
             createSource () {

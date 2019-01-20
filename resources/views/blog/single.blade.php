@@ -118,14 +118,14 @@ p {
                         <div class="col-md-2">
                           <div class="card-avatar">
                             <a href="#pablo">
-                              <img class="img img-raised" src="/images/taraskim.jpg">
+                              <img class="img img-raised" src="/images/users/{{$post->user->avatar}}">
                             </a>
                             <div class="ripple-container"></div>
                           </div>
                         </div>
                         <div class="col-md-8">
-                          <h4 class="card-title">Taras Kim</h4>
-                          <p class="description">Love Business and Marketing. Web programming is one of the greatest openings for me. Studed Construction Engineering.</p>
+                          <h4 class="card-title">{{$post->user->name}}</h4>
+                          <p class="description">{{$post->user->dscr}}</p>
                         </div>
                         <div class="col-md-2">
                           <a href="#subscribe" class="btn btn-default pull-right btn-round">Subscribe</a>
@@ -207,6 +207,23 @@ p {
             </div>
           </div>
         </div>
+      </div>
+      <div itemscope itemtype="http://schema.org/Article" style="display:none;">
+  			<div itemprop="headline">{{ $post->title }}</div>
+  			<div itemprop="author">{{ $post->user->name }}</div>
+        <div itemprop="datePublished">{{ $post->created_at }}</div>
+        <div itemprop="dateModified">{{ $post->updated_at }}</div>
+        <div itemprop="image">https://wknown.com/images/blog/{{ $post->image }}</div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <img src="https://wknown.com/images/wk.jpg"/>
+            <meta itemprop="url" content="https://wknown.com/images/wk.jpg">
+            <meta itemprop="width" content="130px">
+            <meta itemprop="height" content="62px">
+          </div>
+          <meta itemprop="name" content="WellKnown Agency">
+  	    </div>
+        <link itemprop="mainEntityOfPage" href="https://wknown.com/blog/{{$post->slug}}" />
       </div>
 @stop
 
