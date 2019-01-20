@@ -1,8 +1,8 @@
 @extends('layout.mainservices')
 
-@section('title', 'Social Media Services and Promotion (SMM) | WellKnown Agency')
+@section('title', 'Social Media Marketing Services - Social Media Promotion | WellKnown')
 
-@section('description', 'Looking to promote your busines in Social Media? Social Media Marketing (SMM) Services for your business with WellKnown Agency.')
+@section('description', 'Social Media Promotion plays a tremendous role in advanced online marketing strategies. WellKnown Agency is your social media marketing team here to generate traffic, sales, and revenue!')
 
 @section('keywords', '')
 
@@ -29,7 +29,6 @@
 							</div>
 					</div>
 			</div>
-
 	</div>
 	<div class="section">
 			<div class="row">
