@@ -92,6 +92,7 @@ p {
             <div class="row">
                 <div class="col-md-10 ml-auto mr-auto">
                   by <a href="#author">{{ $post->user->name}}</a> - {{ date('F d, Y', strtotime($post->created_at)) }}
+                  <br>
                 </br>
                   {!! $post->body !!}
                 </div>
