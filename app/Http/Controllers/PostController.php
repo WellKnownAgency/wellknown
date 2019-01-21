@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Post;
 use App\Category;
+use Auth;
 use Image;
 
 class PostController extends Controller
@@ -18,9 +19,6 @@ class PostController extends Controller
     {
         return Post::latest()->get();
     }
-
-
-
     /**
      * Show the form for creating a new resource.
      *
@@ -57,6 +55,7 @@ class PostController extends Controller
         $post->status = $request->status;
         $post->featured = 0;
         $post->category_id = $request->category_id;
+        $post->user_id = Auth::user()->id;
 
      if ($request->hasFile('img')) {
        $image = $request->file('img');

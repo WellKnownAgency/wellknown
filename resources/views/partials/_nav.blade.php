@@ -40,11 +40,11 @@
             </a>
           </div>
         </li>
-        <li class="nav-item {{ Request::is('contact-us') ?"active" : ""}}">
+        <!-- <li class="nav-item {{ Request::is('contact-us') ?"active" : ""}}">
           <a class="nav-link" href="/case-studies">
             <p>case studies</p>
           </a>
-        </li>
+        </li> -->
         <li class="nav-item {{ Request::is('contact-us') ?"active" : ""}}">
           <a class="nav-link" href="/contact-us">
             <p>contact us</p>

@@ -89,7 +89,7 @@ var moment = require('moment');
       },
       methods: {
           fetchUse () {
-            axios.get('/api/posts')
+            axios.get('/admin/api/posts')
                  .then((res) => {
                    this.posts = res.data
                  })
@@ -118,7 +118,7 @@ var moment = require('moment');
 
 
               deletePost () {
-                axios.delete(`/api/posts/${post.id}`)
+                axios.delete(`/admin/api/posts/${post.id}`)
                 .then((res) => {
                     const postIndex = this.posts.indexOf(post)
                     this.posts.splice(postIndex, 1)

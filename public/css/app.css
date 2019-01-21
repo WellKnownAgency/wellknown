@@ -10274,6 +10274,11 @@ body.fixed-nav.sidebar-toggled #content-wrapper {
   }
 }
 
+.img-raised {
+  -webkit-box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+}
+
 :root {
   --input-padding-x: 0.75rem;
   --input-padding-y: 0.75rem;

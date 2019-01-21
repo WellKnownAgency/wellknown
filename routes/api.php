@@ -46,9 +46,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
   Route::resource('companies', 'CompaniesController', [
     'except' => ['create']
   ]);
-  Route::resource('posts', 'PostController', [
-    'except' => ['create', 'show', 'update', 'edit']
-  ]);
   Route::resource('cases', 'CaseController', [
     'except' => ['create', 'show', 'update', 'edit']
   ]);
