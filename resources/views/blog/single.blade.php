@@ -85,8 +85,10 @@ p {
             </div>
         </div>
     </div>
+
     <div class="section">
         <div class="container">
+          by <a href="#author">{{ $post->user->name}}</a> - {{ date('F d, Y', strtotime($post->created_at)) }}
             <div class="row">
                 <div class="col-md-10 ml-auto mr-auto">
                   {!! $post->body !!}
@@ -112,8 +114,8 @@ p {
                             </a>
                         </div>
                     </div>
-                    <hr>
-                    <div class="card card-profile card-plain">
+                    <hr id="author">
+                    <div  class="card card-profile card-plain">
                       <div class="row">
                         <div class="col-md-2">
                           <div class="card-avatar">
