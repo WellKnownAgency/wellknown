@@ -39,6 +39,11 @@ class AdminPagesController extends Controller
       return view('admin.posts.index')->withCategories($categories);
     }
 
+    public function cases()
+    {
+      return view('admin.cases.index');
+    }
+
     public function categories()
     {
     return view('admin.categories.index');

@@ -20,6 +20,10 @@ Route::prefix('admin')->middleware('auth:web')->group(function() {
   Route::get('/posts/create', 'PostController@create');
   Route::get('/posts/{id}/edit', 'PostController@edit');
   Route::get('/posts/{id}/show', 'PostController@show');
+
+  Route::get('cases', 'AdminPagesController@cases');
+
+
   Route::post('/posts/{id}','PostController@update');
   Route::get('/settings', 'AdminPagesController@settings');
   Route::get('/seo', 'AdminPagesController@seo');

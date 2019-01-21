@@ -17,7 +17,7 @@
 			<div class="container">
 					<div class="row">
 							<div class="col-md-10 ml-auto mr-auto text-center" style="padding-top: 5px;">
-									<h1 class="title landing_page_header">WellKnown Case Stuides</h1>
+									<h1 class="title landing_page_header">WellKnown Case Studies</h1>
 									<h5 class="page_header_dscr"></h5>
 							</div>
 							<div class="col-md-10 ml-auto mr-auto">

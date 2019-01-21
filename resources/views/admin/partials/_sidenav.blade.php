@@ -40,6 +40,12 @@
       <span>Calendar</span>
     </a>
   </li>
+  <li class="nav-item active">
+    <a class="nav-link" href="/admin/cases">
+      <i class="fa fa-fw fa-calendar-alt"></i>
+      <span>Cases</span>
+    </a>
+  </li>
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <i class="fas fa-fw fa-folder"></i>
