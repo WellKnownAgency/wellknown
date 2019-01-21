@@ -30,10 +30,10 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td></td>
-                <td><img  width="200px" height="auto"></td>
-                <td></td>
+              <tr v-for="scase in scases">
+                <td>{{scase.title}}</td>
+                <td style="text-align:center;"><img :src="'/images/cases/'+scase.header_image"  width="auto" height="100px"></td>
+                <td>{{moment(scase.created_at).fromNow()}}</td>
                 <td>
                   <a class="btn btn-info btn-sm">View</a>
                   <a class="btn btn-warning btn-sm">Edit</a>
@@ -70,10 +70,10 @@ var moment = require('moment');
       data () {
         return {
           moment: moment,
-          cases: [],
-          case: {
+          scases: [],
+          scase: {
             title: '',
-            image: '',
+            header_image: '',
             created_at: ''
           },
           }
@@ -82,7 +82,7 @@ var moment = require('moment');
           fetchUse () {
             axios.get('/api/cases')
                  .then((res) => {
-                   this.cases = res.data
+                   this.scases = res.data
                  })
                  .catch((err) => {
                    console.log(err)

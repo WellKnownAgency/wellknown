@@ -46,9 +46,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
   Route::resource('companies', 'CompaniesController', [
     'except' => ['create']
   ]);
-  Route::resource('cases', 'CaseController', [
+  Route::resource('cases', 'ScaseController', [
     'except' => ['create', 'show', 'update', 'edit']
   ]);
+  Route::resource('caseservices', 'CaseServiceController');
+  Route::resource('casetechnologies', 'CaseTechnologyController');
 
 
   Route::put('posts/statuschange/{id}','PostController@statuschange');

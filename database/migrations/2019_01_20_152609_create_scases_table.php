@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCasesTable extends Migration
+class CreateScasesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateCasesTable extends Migration
      */
     public function up()
     {
-        Schema::create('cases', function (Blueprint $table) {
+        Schema::create('scases', function (Blueprint $table) {
           $table->string('title');
           $table->string('header_image');
           $table->string('excerpt');
@@ -33,6 +33,6 @@ class CreateCasesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cases');
+        Schema::dropIfExists('scases');
     }
 }

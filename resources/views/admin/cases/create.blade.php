@@ -14,15 +14,15 @@
           <li class="breadcrumb-item">
             <a href="/admin/">Dashboard</a>
           </li>
-          <li class="breadcrumb-item"><a href="/admin/posts">Posts</a></li>
+          <li class="breadcrumb-item"><a href="/admin/cases">Cases</a></li>
           <li class="breadcrumb-item active">Create</li>
         </ol>
       </div>
       <div class="col-md-9">
         <div class="card" style="width: 100%;">
-          <h5 class="card-header">Create New Post</h5>
+          <h5 class="card-header">Create New Case</h5>
           <div class="card-body">
-            <form action="{{route('posts.store')}}" method="post" enctype="multipart/form-data">
+            <form action="{{route('cases.store')}}" method="post" enctype="multipart/form-data">
               {{ csrf_field() }}
               <div class="form-row">
                 <div class="form-group col-md-6">
@@ -30,8 +30,8 @@
                   <input type="text" name="title" class="form-control" id="title" placeholder="Title">
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="title">Seo Title</label>
-                  <input type="text" name="seotitle" class="form-control" id="seotitle" placeholder="Seo Title">
+                  <label for="excerpt">Excerpt</label>
+                  <input type="text" class="form-control" name="excerpt" id="excerpt">
                 </div>
               </div>
               <div class="form-row">
@@ -40,47 +40,17 @@
                   <input type="text" class="form-control" name="slug" id="slug" placeholder="Slug">
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="inputState">Category</label>
-                  <select id="inputState" class="form-control" name="category_id">
-                    @foreach ($categories as $category)
-                    <option value="{{$category->id}}">{{ $category->name }}</option>
-                    @endforeach
-                  </select>
-                </div>
-              </div>
-              <div class="form-row">
-
-                <div class="form-group col-md-6">
-                  <input onblur="textCounter(this.form.recipients,this,160);" disabled  onfocus="this.blur();" tabindex="999" maxlength="3" size="3" value="160" name="counter">
-                  <label for="dscr">Description</label>
-                  <input onblur="textCounter(this,this.form.counter,160);" onkeyup="textCounter(this,this.form.counter,160);" type="textarea" class="form-control" name="dscr" id="dscr" placeholder="Description">
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="defaultCheck1">
-                    Featured
-                  </label>
-                  <div class="form-check">
-                    <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="1" aria-label="...">
-                  </div>
                 </div>
               </div>
               <div class="form-row">
               <div class="form-group col-md-6">
-                <label for="image">Upload Image (1920x600)</label>
+                <label for="image">Upload Screenshot Image</label>
                 <input type="file" class="form-control-file" name="img" id="image">
               </div>
               <div class="form-group col-md-6">
-                <label for="inputState">Status</label>
-                <select id="inputState" class="form-control" name="status">
-                  <option value="DRAFT" selected>Draft</option>
-                  <option value="PENDING">Pending</option>
-                  <option value="PUBLISHED">Published</option>
-                </select>
+                <label for="image">Upload Header Image (1920x600)</label>
+                <input type="file" class="form-control-file" name="header_image" id="header_image">
               </div>
-              </div>
-              <div class="form-group">
-                <label for="excerpt">Excerpt</label>
-                <input type="text" class="form-control" name="excerpt" id="excerpt">
               </div>
               <div class="form-group">
                 <label for="text">Body</label>
@@ -95,10 +65,10 @@
       <div class="col-md-3">
         <div class="card" style="width: 100%;">
           <h5 class="card-header">
-            WellKnown Agency Posts
+            WellKnown Agency Cases
           </h5>
           <div class="card-body">
-            <a href="/admin/posts" class="btn btn-info">All Posts</a>
+            <a href="/admin/cases" class="btn btn-info">All Posts</a>
           </div>
         </div>
       </div>

@@ -44,6 +44,15 @@ class AdminPagesController extends Controller
       return view('admin.cases.index');
     }
 
+    public function caseservices()
+    {
+    return view('admin.caseservices.index');
+    }
+    public function casetechnologies()
+    {
+    return view('admin.casetechnologies.index');
+    }
+
     public function categories()
     {
     return view('admin.categories.index');

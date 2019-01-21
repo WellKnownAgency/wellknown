@@ -40,11 +40,16 @@
       <span>Calendar</span>
     </a>
   </li>
-  <li class="nav-item active">
-    <a class="nav-link" href="/admin/cases">
-      <i class="fa fa-fw fa-calendar-alt"></i>
-      <span>Cases</span>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <i class="fas fa-fw fa-book"></i>
+      <span>Case Studies</span>
     </a>
+    <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+      <a class="dropdown-item" href="/admin/cases">Cases</a>
+      <a class="dropdown-item" href="/admin/caseservices">Services</a>
+      <a class="dropdown-item" href="/admin/casetechnologies">Technologies</a>
+    </div>
   </li>
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

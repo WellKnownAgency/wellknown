@@ -41,7 +41,8 @@ Vue.component('seo-edit', require('./components/seo/SeoEdit.vue'));
 Vue.component('dashboard', require('./components/Dashboard.vue'));
 Vue.component('calendar', require('./components/Calendar.vue'));
 Vue.component('cases', require('./components/Cases.vue'));
-
+Vue.component('caseservices', require('./components/CaseServices.vue'));
+Vue.component('casetechnologies', require('./components/CaseTechnologies.vue'));
 
 
 
