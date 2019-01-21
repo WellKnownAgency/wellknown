@@ -84612,6 +84612,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 
 
@@ -85358,6 +85362,58 @@ var render = function() {
                           }
                         }
                       })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass: "col-form-label",
+                          attrs: { for: "twitter" }
+                        },
+                        [_vm._v("Description:")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "textarea",
+                        {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.user.dscr,
+                              expression: "user.dscr  "
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: { id: "twitter", autocomplete: "nope" },
+                          domProps: { value: _vm.user.dscr },
+                          on: {
+                            keydown: function($event) {
+                              if (
+                                !("button" in $event) &&
+                                _vm._k(
+                                  $event.keyCode,
+                                  "enter",
+                                  13,
+                                  $event.key,
+                                  "Enter"
+                                )
+                              ) {
+                                return null
+                              }
+                              return _vm.updateProfile($event)
+                            },
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(_vm.user, "dscr", $event.target.value)
+                            }
+                          }
+                        },
+                        [_vm._v(_vm._s(_vm.user.dscr))]
+                      )
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "col" }, [

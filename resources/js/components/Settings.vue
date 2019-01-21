@@ -124,6 +124,10 @@
                   <input type="text" class="form-control" id="twitter" v-model="user.twitter" @keydown.enter="updateProfile" autocomplete="nope">
                 </div>
                 <div class="col">
+                  <label for="twitter" class="col-form-label">Description:</label>
+                  <textarea class="form-control" id="twitter" v-model="user.dscr  " @keydown.enter="updateProfile" autocomplete="nope">{{ user.dscr }}</textarea>
+                </div>
+                <div class="col">
                   <label for="image1" class="col-form-label">Upload Profie Photo</label>
                   <input type="file" v-on:change="onFileChange" id="image1" class="form-control">
                 </div>

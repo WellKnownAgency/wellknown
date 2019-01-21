@@ -38,10 +38,9 @@ class AuthUserController extends Controller
       $user->linkedin = $request->input('linkedin');
       $user->facebook = $request->input('facebook');
       $user->twitter = $request->input('twitter');
+      $user->avatar = $filename;
 
-        $user->avatar = $filename;
-
-    $user->save();
+      $user->save();
 
     return $user;
   }
