@@ -88,10 +88,11 @@ p {
 
     <div class="section">
         <div class="container">
-          by <a href="#author">{{ $post->user->name}}</a> - {{ date('F d, Y', strtotime($post->created_at)) }}
-          <br>
+
             <div class="row">
                 <div class="col-md-10 ml-auto mr-auto">
+                  by <a href="#author">{{ $post->user->name}}</a> - {{ date('F d, Y', strtotime($post->created_at)) }}
+                </br>
                   {!! $post->body !!}
                 </div>
             </div>
