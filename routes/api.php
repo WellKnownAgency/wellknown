@@ -49,6 +49,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
   Route::resource('posts', 'PostController', [
     'except' => ['create', 'show', 'update', 'edit']
   ]);
+  Route::resource('cases', 'CaseController', [
+    'except' => ['create', 'show', 'update', 'edit']
+  ]);
+
 
   Route::put('posts/statuschange/{id}','PostController@statuschange');
 
@@ -62,5 +66,3 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
   Route::get('seo-projects/{seoProject}/keywords-positions', 'SeoProjectController@keywordsPositions')->name('seo-projects-keywords-positions');
   Route::delete('seo-projects/{seoProject}', 'SeoProjectController@destroy')->name('seo-projects-destroy');
   Route::put('seo-projects/{seoProject}', 'SeoProjectController@update')->name('seo-projects-update');
-
-
