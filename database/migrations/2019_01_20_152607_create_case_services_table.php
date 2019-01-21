@@ -16,7 +16,6 @@ class CreateCaseServicesTable extends Migration
         Schema::create('case_services', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('slug')->unique();
             $table->timestamps();
         });
     }

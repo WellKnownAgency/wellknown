@@ -20,9 +20,15 @@ class CreateScasesTable extends Migration
           $table->text('body');
           $table->string('image');
           $table->string('slug');
-          $table->integer('services_id')->unsigned()->nullable();
-          $table->integer('technology_id')->unsigned()->nullable();
+          $table->integer('case_services_id')->unsigned()->nullable();
+          $table->integer('case_technologies_id')->unsigned()->nullable();
           $table->timestamps();
+
+          $table->foreign('case_services_id')->references('id')->on('case_services')
+              ->onUpdate('cascade')->onDelete('cascade');
+
+          $table->foreign('case_technologies_id')->references('id')->on('case_technologies')
+              ->onUpdate('cascade')->onDelete('cascade');
         });
     }
 

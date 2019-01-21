@@ -16,7 +16,6 @@ class CreateCaseTechnologiesTable extends Migration
         Schema::create('case_technologies', function (Blueprint $table) {
           $table->increments('id');
           $table->string('name');
-          $table->string('slug')->unique();
           $table->string('icon');
           $table->timestamps();
         });
