@@ -1,6 +1,6 @@
 @extends('layout.mainservices')
 
-@section('title', 'Landing Page Services | WellKnown')
+@section('title', 'Landing Page Services')
 
 @section('description', 'Sell Online? Beautiful web page design for exactly your audience. Our Services help build right landing page to describe your product and sell it.')
 
