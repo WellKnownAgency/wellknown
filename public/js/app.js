@@ -92603,12 +92603,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
 
 
 
@@ -92624,7 +92618,6 @@ var moment = __webpack_require__(0);
       caseservice: {
         id: '',
         name: '',
-        slug: '',
         created_at: ''
       }
     };
@@ -92646,7 +92639,6 @@ var moment = __webpack_require__(0);
       axios.post('/api/caseservices', this.caseservice).then(function (res) {
         _this2.caseservices.unshift(res.data);
         _this2.caseservice.name = '';
-        _this2.caseservice.slug = '';
       }).then(function (res) {
         _this2.fetchUse();
       }).then(function (res) {
@@ -92718,8 +92710,6 @@ var render = function() {
                   _vm._l(_vm.caseservices, function(caseservice) {
                     return _c("tr", [
                       _c("td", [_vm._v(_vm._s(caseservice.name))]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(caseservice.slug))]),
                       _vm._v(" "),
                       _c("td", [_vm._v(_vm._s(caseservice.created_at))]),
                       _vm._v(" "),
@@ -92818,43 +92808,6 @@ var render = function() {
                             }
                           }
                         })
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "col-form-label",
-                            attrs: { for: "slug" }
-                          },
-                          [_vm._v("Slug:")]
-                        ),
-                        _vm._v(" "),
-                        _c("input", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.caseservice.slug,
-                              expression: "caseservice.slug"
-                            }
-                          ],
-                          staticClass: "form-control",
-                          attrs: { id: "slug", autocomplete: "nope" },
-                          domProps: { value: _vm.caseservice.slug },
-                          on: {
-                            input: function($event) {
-                              if ($event.target.composing) {
-                                return
-                              }
-                              _vm.$set(
-                                _vm.caseservice,
-                                "slug",
-                                $event.target.value
-                              )
-                            }
-                          }
-                        })
                       ])
                     ])
                   ])
@@ -92930,8 +92883,6 @@ var staticRenderFns = [
     return _c("thead", [
       _c("tr", [
         _c("th", [_vm._v("Name")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Slug")]),
         _vm._v(" "),
         _c("th", [_vm._v("Created_at")]),
         _vm._v(" "),
@@ -93149,12 +93100,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
 
 
 
@@ -93170,7 +93115,6 @@ var moment = __webpack_require__(0);
       casetechnology: {
         id: '',
         name: '',
-        slug: '',
         icon: '',
         created_at: ''
       }
@@ -93193,7 +93137,6 @@ var moment = __webpack_require__(0);
       axios.post('/api/casetechnologies', this.casetechnology).then(function (res) {
         _this2.casetechnologies.unshift(res.data);
         _this2.casetechnology.name = '';
-        _this2.casetechnology.slug = '';
         _this2.casetechnology.icon = '';
       }).then(function (res) {
         _this2.fetchUse();
@@ -93266,8 +93209,6 @@ var render = function() {
                   _vm._l(_vm.casetechnologies, function(casetechnology) {
                     return _c("tr", [
                       _c("td", [_vm._v(_vm._s(casetechnology.name))]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(casetechnology.slug))]),
                       _vm._v(" "),
                       _c("td", { staticStyle: { "text-align": "center" } }, [
                         _c("i", { class: casetechnology.icon })
@@ -93365,43 +93306,6 @@ var render = function() {
                               _vm.$set(
                                 _vm.casetechnology,
                                 "name",
-                                $event.target.value
-                              )
-                            }
-                          }
-                        })
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "col-form-label",
-                            attrs: { for: "slug" }
-                          },
-                          [_vm._v("Slug:")]
-                        ),
-                        _vm._v(" "),
-                        _c("input", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.casetechnology.slug,
-                              expression: "casetechnology.slug"
-                            }
-                          ],
-                          staticClass: "form-control",
-                          attrs: { id: "slug", autocomplete: "nope" },
-                          domProps: { value: _vm.casetechnology.slug },
-                          on: {
-                            input: function($event) {
-                              if ($event.target.composing) {
-                                return
-                              }
-                              _vm.$set(
-                                _vm.casetechnology,
-                                "slug",
                                 $event.target.value
                               )
                             }
@@ -93519,8 +93423,6 @@ var staticRenderFns = [
     return _c("thead", [
       _c("tr", [
         _c("th", [_vm._v("Name")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Slug")]),
         _vm._v(" "),
         _c("th", [_vm._v("Icon")]),
         _vm._v(" "),

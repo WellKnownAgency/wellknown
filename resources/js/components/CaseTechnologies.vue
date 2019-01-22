@@ -24,7 +24,6 @@
             <thead>
               <tr>
                 <th>Name</th>
-                <th>Slug</th>
                 <th>Icon</th>
                 <th>Created_at</th>
                 <th>Actions</th>
@@ -33,7 +32,6 @@
             <tbody>
               <tr v-for="casetechnology in casetechnologies">
                 <td>{{casetechnology.name}}</td>
-                <td>{{casetechnology.slug}}</td>
                 <td style="text-align:center;"><i v-bind:class=" casetechnology.icon "></i></td>
                 <td>{{casetechnology.created_at}}</td>
                 <td>
@@ -67,10 +65,6 @@
                 <div class="col">
                   <label for="name" class="col-form-label">Name:</label>
                   <input type="text" class="form-control" id="name" v-model="casetechnology.name"  autocomplete="nope">
-                </div>
-                <div class="col">
-                  <label for="slug" class="col-form-label" >Slug:</label>
-                  <input class="form-control" id="slug" v-model="casetechnology.slug"  autocomplete="nope">
                 </div>
                 <div class="col">
                   <label for="icon" class="col-form-label" >Icon:</label>
@@ -110,7 +104,6 @@ var moment = require('moment');
           casetechnology: {
             id:'',
             name: '',
-            slug: '',
             icon: '',
             created_at: ''
           }
@@ -132,7 +125,6 @@ var moment = require('moment');
                  .then((res) => {
                    this.casetechnologies.unshift(res.data)
                    this.casetechnology.name = ''
-                   this.casetechnology.slug = ''
                    this.casetechnology.icon = ''
                  })
                  .then((res) => {

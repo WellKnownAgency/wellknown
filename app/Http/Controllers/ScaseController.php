@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Scase;
+use App\CaseService;
+use App\CaseTechnology;
 use Image;
 
 class ScaseController extends Controller
@@ -16,8 +18,9 @@ class ScaseController extends Controller
 
   public function create()
   {
-      $scases = Scase::get();
-      return view('admin.cases.create')->withScases($scases);
+      $caseservices = CaseService::all();
+      $casetechnologies = CaseTechnology::all();
+      return view('admin.cases.create', compact('caseservices', 'casetechnologies'));
   }
 
   public function store(Request $request)
@@ -54,7 +57,7 @@ class ScaseController extends Controller
 
    $scase->save();
 
-    return redirect('/admin/scases');
+    return redirect('/admin/cases');
   }
 
 
