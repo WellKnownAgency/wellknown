@@ -1,4 +1,4 @@
-@section('title', 'Create Post')
+@section('title', 'Create Case')
 @section('dscr', '')
 @section('keywords', '')
 
@@ -31,7 +31,7 @@
                 </div>
                 <div class="form-group col-md-6">
                   <label for="excerpt">Excerpt</label>
-                  <input type="text" class="form-control" name="excerpt" id="excerpt">
+                  <input type="text" class="form-control" name="excerpt" id="excerpt" placeholder="Excerpt">
                 </div>
               </div>
               <div class="form-row">
@@ -39,14 +39,39 @@
                   <label for="slug">Slug</label>
                   <input type="text" class="form-control" name="slug" id="slug" placeholder="Slug">
                 </div>
-                <div class="form-group col-md-6">
-                @foreach ($caseservice as $caseservices)
-                  <div class="form-check form-check-inline" >
-                    <input class="form-check-input" type="checkbox" id="caseservice" value="{{$caseservice->id}}" name="caseservices[]">
-                    <label class="form-check-label" for="collections">{{ $caseservices->name }}</label>
+                </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <div class="card" style="box-shadow:none;">
+                        <h6 class="card-header">
+                          Services
+                        </h6>
+                        <div class="card-body">
+                    @foreach ($caseservices as $caseservice)
+                      <div class="form-check form-check-inline" >
+                        <input class="form-check-input" type="checkbox" id="caseservice" value="{{$caseservice->id}}" name="caseservices[]">
+                        <label class="form-check-label" for="collections">{{ $caseservice->name }}</label>
+                        <i class=" {{ $caseservice->icon }} "></i>
+                      </div>
+                    @endforeach
+                      </div>
+                    </div>
                   </div>
-                @endforeach
+                  <div class="form-group col-md-6">
+                    <div class="card" style="box-shadow:none;">
+                      <h6 class="card-header">
+                        Technologies
+                      </h6>
+                      <div class="card-body">
+                    @foreach ($casetechnologies as $casetechnology)
+                      <div class="form-check form-check-inline" >
+                        <input class="form-check-input" type="checkbox" id="caseservice" value="{{$casetechnology->id}}" name="casetechnologies[]">
+                        <label class="form-check-label" for="collections">{{ $casetechnology->name }}</label>
+                      </div>
+                    @endforeach
                   </div>
+                </div>
+              </div>
               </div>
               <div class="form-row">
               <div class="form-group col-md-6">
@@ -74,7 +99,7 @@
             WellKnown Agency Cases
           </h5>
           <div class="card-body">
-            <a href="/admin/cases" class="btn btn-info">All Posts</a>
+            <a href="/admin/cases" class="btn btn-info">All Cases</a>
           </div>
         </div>
       </div>
