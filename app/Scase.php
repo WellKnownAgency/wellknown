@@ -13,6 +13,5 @@ class Scase extends Model
     return $this->belongsTo('App\CaseService');
   }
 
-}
 
 }

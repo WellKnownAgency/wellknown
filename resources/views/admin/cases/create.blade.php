@@ -40,7 +40,13 @@
                   <input type="text" class="form-control" name="slug" id="slug" placeholder="Slug">
                 </div>
                 <div class="form-group col-md-6">
-                </div>
+                @foreach ($caseservice as $caseservices)
+                  <div class="form-check form-check-inline" >
+                    <input class="form-check-input" type="checkbox" id="caseservice" value="{{$caseservice->id}}" name="caseservices[]">
+                    <label class="form-check-label" for="collections">{{ $caseservices->name }}</label>
+                  </div>
+                @endforeach
+                  </div>
               </div>
               <div class="form-row">
               <div class="form-group col-md-6">

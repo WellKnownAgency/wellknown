@@ -15,7 +15,6 @@ class CaseTechnologyController extends Controller
   {
     $casetechnology = new CaseTechnology();
     $casetechnology->name = $request->name;
-    $casetechnology->slug = $request->slug;
     $casetechnology->icon = $request->icon;
     $casetechnology->save();
 
