@@ -14,5 +14,3 @@ class Scase extends Model
   }
 
 }
-
-}
