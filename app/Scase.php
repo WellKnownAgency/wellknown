@@ -6,11 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Scase extends Model
 {
-  public function casetechnology() {
-    return $this->belongsTo('App\CaseTechnology');
+  public function casetechnologies() {
+    return $this->belongsToMany(CaseTechnology::class);
   }
-  public function caseservice() {
-    return $this->belongsTo('App\CaseService');
+  public function caseservices() {
+    return $this->belongsToMany('App\CaseService');
   }
-
 }

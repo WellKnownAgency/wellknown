@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class CaseService extends Model
 {
-  public function caseservices() {
-    return $this->hasmany('App\Scase');
+  public function scases() {
+    return $this->belongsToMany('App\Scase');
   }
 }
