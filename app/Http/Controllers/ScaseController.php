@@ -34,10 +34,12 @@ class ScaseController extends Controller
    // store in the database
       $scase = new Scase;
       $scase->title = $request->title;
+      $scase->title_work = $request->title_work;
       $scase->slug = $request->slug;
       $scase->body = $request->body;
       $scase->excerpt = $request->excerpt;
-      $scase->body = $request->body;
+      $scase->seotitle = $request->seotitle;
+      $scase->dscr = $request->dscr;
 
    if ($request->hasFile('img')) {
      $image = $request->file('img');
@@ -57,9 +59,20 @@ class ScaseController extends Controller
 
    $scase->save();
 
+    $scase->caseservices()->sync($request->caseservices, false);
+    $scase->casetechnologies()->sync($request->casetechnologies, false);
+
     return redirect('/admin/cases');
   }
 
+  public function edit($id)
+  {
+    $scase = Scase::with('caseservices', 'casetechnologies')->where('id', $id)->first();
+    $caseservices = CaseService::all();
+    $casetechnologies = CaseTechnology::all();
+
+    return view('admin.cases.edit')->withCaseservice($caseservice)->withCasatechnology($casetechnology);;
+  }
 
 
 }

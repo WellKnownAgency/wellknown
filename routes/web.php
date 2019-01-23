@@ -22,6 +22,7 @@ Route::prefix('admin')->middleware('auth:web')->group(function() {
   Route::get('/posts/{id}/show', 'PostController@show');
 
   Route::get('cases', 'AdminPagesController@cases');
+  Route::get('/cases/{id}/edit', 'ScaseController@edit');
   Route::get('/cases/create', 'ScaseController@create');
   Route::get('caseservices', 'AdminPagesController@caseservices');
   Route::get('casetechnologies', 'AdminPagesController@casetechnologies');
@@ -74,6 +75,9 @@ Route::get('omdarling', 'PagesController@omdarling');
 /* Blog */
 Route::get('blog', 'PagesController@blogIndex');
 Route::get('/blog/{slug}', ['as' => 'blog.single', 'uses' => 'PagesController@getSingle' ]) -> where('slug', '[\w\d\-\_]+');
+
+/* Cases */
+
 
 /* Auth Routes */
 Auth::routes();

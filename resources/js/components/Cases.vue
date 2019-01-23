@@ -36,7 +36,7 @@
                 <td>{{moment(scase.created_at).fromNow()}}</td>
                 <td>
                   <a class="btn btn-info btn-sm">View</a>
-                  <a class="btn btn-warning btn-sm">Edit</a>
+                  <a :href="'/admin/cases/'+scase.id+'/edit'" class="btn btn-warning btn-sm">Edit</a>
                   <button class="btn btn-danger btn-sm delete">Delete</button>
                 </td>
               </tr>

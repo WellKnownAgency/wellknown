@@ -39,6 +39,18 @@
                   <label for="slug">Slug</label>
                   <input type="text" class="form-control" name="slug" id="slug" placeholder="Slug">
                 </div>
+                <div class="form-group col-md-6">
+                  <label for="title_work">Title Work</label>
+                  <input type="text" class="form-control" name="title_work" id="title_work" placeholder="Title Work">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="seotitle">Seo Title</label>
+                  <input type="text" class="form-control" name="seotitle" id="seotitle" placeholder="Seo Title">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="dscr">Description</label>
+                  <textarea class="form-control" id="dscr" name="dscr" rows="5"></textarea>
+                </div>
                 </div>
                   <div class="form-row">
                     <div class="form-group col-md-6">
@@ -51,7 +63,6 @@
                       <div class="form-check form-check-inline" >
                         <input class="form-check-input" type="checkbox" id="caseservice" value="{{$caseservice->id}}" name="caseservices[]">
                         <label class="form-check-label" for="collections">{{ $caseservice->name }}</label>
-                        <i class=" {{ $caseservice->icon }} "></i>
                       </div>
                     @endforeach
                       </div>
@@ -66,6 +77,7 @@
                     @foreach ($casetechnologies as $casetechnology)
                       <div class="form-check form-check-inline" >
                         <input class="form-check-input" type="checkbox" id="caseservice" value="{{$casetechnology->id}}" name="casetechnologies[]">
+                        <i class=" {{ $casetechnology->icon }} "></i>
                         <label class="form-check-label" for="collections">{{ $casetechnology->name }}</label>
                       </div>
                     @endforeach

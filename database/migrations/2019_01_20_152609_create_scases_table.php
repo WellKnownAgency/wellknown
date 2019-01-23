@@ -14,21 +14,19 @@ class CreateScasesTable extends Migration
     public function up()
     {
         Schema::create('scases', function (Blueprint $table) {
+          $table->increments('id');
           $table->string('title');
+          $table->string('title_work');
           $table->string('header_image');
           $table->string('excerpt');
           $table->text('body');
           $table->string('image');
           $table->string('slug');
-          $table->integer('case_services_id')->unsigned()->nullable();
-          $table->integer('case_technologies_id')->unsigned()->nullable();
+          $table->string('seotitle');
+          $table->string('dscr');
+
           $table->timestamps();
 
-          $table->foreign('case_services_id')->references('id')->on('case_services')
-              ->onUpdate('cascade')->onDelete('cascade');
-
-          $table->foreign('case_technologies_id')->references('id')->on('case_technologies')
-              ->onUpdate('cascade')->onDelete('cascade');
         });
     }
 

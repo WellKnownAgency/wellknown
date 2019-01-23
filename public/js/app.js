@@ -92367,7 +92367,28 @@ var render = function() {
                         _vm._v(_vm._s(_vm.moment(scase.created_at).fromNow()))
                       ]),
                       _vm._v(" "),
-                      _vm._m(3, true)
+                      _c("td", [
+                        _c("a", { staticClass: "btn btn-info btn-sm" }, [
+                          _vm._v("View")
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "a",
+                          {
+                            staticClass: "btn btn-warning btn-sm",
+                            attrs: {
+                              href: "/admin/cases/" + scase.id + "/edit"
+                            }
+                          },
+                          [_vm._v("Edit")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "button",
+                          { staticClass: "btn btn-danger btn-sm delete" },
+                          [_vm._v("Delete")]
+                        )
+                      ])
                     ])
                   })
                 )
@@ -92381,7 +92402,7 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(4)
+      _vm._m(3)
     ])
   ])
 }
@@ -92429,20 +92450,6 @@ var staticRenderFns = [
         _c("th", [_vm._v("Created_at")]),
         _vm._v(" "),
         _c("th", [_vm._v("Actions")])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("td", [
-      _c("a", { staticClass: "btn btn-info btn-sm" }, [_vm._v("View")]),
-      _vm._v(" "),
-      _c("a", { staticClass: "btn btn-warning btn-sm" }, [_vm._v("Edit")]),
-      _vm._v(" "),
-      _c("button", { staticClass: "btn btn-danger btn-sm delete" }, [
-        _vm._v("Delete")
       ])
     ])
   },

@@ -1,4 +1,4 @@
-@section('title', 'Edit Post')
+@section('title', 'Edit Case')
 @section('dscr', '')
 @section('keywords', '')
 
@@ -12,79 +12,83 @@
         <!-- Breadcrumbs-->
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="#">Dashboard</a>
+            <a href="/admin/">Dashboard</a>
           </li>
-          <li class="breadcrumb-item active">Tables</li>
+          <li class="breadcrumb-item"><a href="/admin/cases">Cases</a></li>
+          <li class="breadcrumb-item active">Edit</li>
         </ol>
       </div>
       <div class="col-md-9">
         <div class="card" style="width: 100%;">
-          <h5 class="card-header">Update Post</h5>
+          <h5 class="card-header">Update Case</h5>
           <div class="card-body">
-            <form action="{{action('PostController@update', $post->id)}}" method="post" enctype="multipart/form-data">
+            <form action="{{action('ScaseController@update', $case->id)}}"method="post" enctype="multipart/form-data">
               {{ csrf_field() }}
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="title">Title</label>
-                  <input type="text" name="title" class="form-control" id="title" value="{{$post->title}}">
+                  <input type="text" name="title" class="form-control" id="title" placeholder="{{ $scase->title }}">
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="title">Seo-Title</label>
-                  <input type="text" name="seotitle" class="form-control" id="seotitle" value="{{$post->seotitle}}">
+                  <label for="excerpt">Excerpt</label>
+                  <input type="text" class="form-control" name="excerpt" id="excerpt" placeholder="{{ $scase->excerpt }}">
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="slug">Slug</label>
-                  <input type="text" class="form-control" name="slug" id="slug" value="{{$post->slug}}">
+                  <input type="text" class="form-control" name="slug" id="slug" placeholder="{{ $scase->slug }}">
                 </div>
-                <div class="form-group col-md-6">
-                  <label for="inputState">Category</label>
-                  <select id="inputState" class="form-control" name="category_id">
-                    @foreach ($categories as $category)
-                    <option value="{{$category->id}}" @if ($category->id == $post->category_id) selected @endif >{{ $category->name }}</option>
+                </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <div class="card" style="box-shadow:none;">
+                        <h6 class="card-header">
+                          Services
+                        </h6>
+                        <div class="card-body">
+                    @foreach ($caseservices as $caseservice)
+                      <div class="form-check form-check-inline" >
+                        <input class="form-check-input" type="checkbox" id="caseservice" name="caseservices[]" value="{{$caseservice->id}}" @if ($$caseservice->id == $scase->$caseservice_id) selected @endif >
+                        <label class="form-check-label" for="collections">{{ $caseservice->name }}</label>
+                      </div>
                     @endforeach
-                  </select>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="dscr">Description</label>
-                  <input type="text" class="form-control" name="dscr" id="dscr" value="{{$post->dscr}}">
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="defaultCheck1">
-                    Featured
-                  </label>
-                  <div class="form-check">
-                    <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="1" aria-label="...">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <div class="card" style="box-shadow:none;">
+                      <h6 class="card-header">
+                        Technologies
+                      </h6>
+                      <div class="card-body">
+                    @foreach ($casetechnologies as $casetechnology)
+                      <div class="form-check form-check-inline" >
+                        <input class="form-check-input" type="checkbox" id="caseservice" value="{{$casetechnology->id}}" name="casetechnologies[]" @if ($$casetechnology->id == $scase->$casetechnology_id) selected @endif>
+                        <i class=" {{ $casetechnology->icon }} "></i>
+                        <label class="form-check-label" for="collections">{{ $casetechnology->name }}</label>
+                      </div>
+                    @endforeach
                   </div>
                 </div>
               </div>
+              </div>
               <div class="form-row">
               <div class="form-group col-md-6">
-                <label for="image">Upload Image (1920x600)</label>
+                <label for="image">Upload Screenshot Image</label>
                 <input type="file" class="form-control-file" name="img" id="image">
               </div>
               <div class="form-group col-md-6">
-                <label for="inputState">Status</label>
-                <select id="inputState" class="form-control" name="status">
-                  <option value="DRAFT" @if ($post->status == 'DRAFT') selected @endif>Draft</option>
-                  <option value="PENDING" @if ($post->status == 'PENDING') selected @endif>Pending</option>
-                  <option value="PUBLISHED" @if ($post->status == 'PUBLISHED') selected @endif>Published</option>
-                </select>
+                <label for="image">Upload Header Image (1920x600)</label>
+                <input type="file" class="form-control-file" name="header_image" id="header_image">
               </div>
               </div>
               <div class="form-group">
-                <label for="excerpt">Excerpt</label>
-                <input type="text" class="form-control" name="excerpt" id="excerpt" value="{{$post->excerpt}}">
-              </div>
-              <div class="form-group">
-                <label for="body">Body</label>
-                <textarea class="form-control" id="Body" name="body" rows="20">{{$post->body}}</textarea>
+                <label for="text">Body</label>
+                <textarea class="form-control" id="text" name="body" rows="20">{{$scase->body}}</textarea>
               </div>
 
-              <button type="submit" class="btn btn-success">Save Changes</button>
+              <button type="submit" class="btn btn-success">Save</button>
             </form>
           </div>
         </div>
@@ -92,10 +96,10 @@
       <div class="col-md-3">
         <div class="card" style="width: 100%;">
           <h5 class="card-header">
-            WellKnown Agency Posts
+            WellKnown Agency Cases
           </h5>
           <div class="card-body">
-            <a href="/admin/posts" class="btn btn-info">All Posts</a>
+            <a href="/admin/cases" class="btn btn-info">All Cases</a>
           </div>
         </div>
       </div>
