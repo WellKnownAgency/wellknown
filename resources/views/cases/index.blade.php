@@ -43,7 +43,7 @@
 		<div class="row">
 			  @foreach($scases as $scase)
 			<div class="col-md-6 px-0">
-				<div class="card card-fashion card-background" style="background-image: url('/images/cases/{{ $scase->image_header }}')">
+				<div class="card card-fashion card-background" style="background-image: url('/images/cases/{{ $scase->header_image }}')">
 					<div class="card-body">
 						<div class="card-title text-left">
 							<h2>
@@ -62,15 +62,14 @@
 					</div>
 				</div>
 			</div>
-			endforeach
 			<div class="col-md-6 px-0">
 				<div class="card-container">
 					<div class="card card-fashion">
 						<div class="card-title">
 							<a href="#pablo">
 								<h4>
-									<a href="#pablo">
-										The next time you’re on vacation, take advantage of all the work you can get done...
+									<a href="{{ $scase->slug }}">
+										{{ $scase->body }}
 									</a>
 								</h4>
 							</a>
@@ -79,16 +78,17 @@
 							<div class="card-footer">
 								<div class="stats">
 									<span>
-										<i class="now-ui-icons education_paper"></i> The “I’m on vacation” project
+										<i class="now-ui-icons education_paper"></i> {{ $scase->excerpt }}
 									</span>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="card card-fashion card-background" style="background-image: url('/images/ffmain.jpg')">
+					<div class="card card-fashion card-background" style="background-image: url('/images/cases/{{ $scase->header_image }}')">
 					</div>
 				</div>
 			</div>
+			@endforeach
 		</div>
 		<div class="row">
 			<div class="col-md-6 px-0">

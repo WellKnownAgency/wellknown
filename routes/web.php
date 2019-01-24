@@ -79,7 +79,7 @@ Route::get('/blog/{slug}', ['as' => 'blog.single', 'uses' => 'PagesController@ge
 
 /* Cases */
 Route::get('cases', 'PagesController@scasesIndex');
-Route::get('/cases/{slug}', ['as' => 'cases.single', 'uses' => 'PagesController@getSinglecase' ]) -> where('slug');
+Route::get('/cases/{slug}', ['as' => 'cases.single', 'uses' => 'PagesController@getSinglecase' ]) -> where('slug', '[\w\d\-\_]+');
 /* Auth Routes */
 Auth::routes();
 

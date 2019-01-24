@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('layout.maincase')
 
 @section('title', 'Fancy Flowers | WellKnown Agency Case Studies')
 
@@ -7,16 +7,16 @@
 @section('keywords', '')
 
 @section('preload')
-<link rel="preload" href="/images/ffmain.jpg" as="image">
+<link rel="preload" href="/images/cases/" as="image">
 @stop
 
 @section('customcss')
-<meta property="og:image" content="/images/ffmain.jpg" />
+<meta property="og:image" content="/images/cases/" />
 @stop
 
 @section('content')
 <div class="page-header header-filter " filter-color="fflowers">
-  <div class="page-header-image" style="background-image: url(/images/cases/{{ $scase->header_image }});">
+  <div class="page-header-image" style="background-image: url('/images/cases/{{ $scase->header_image }}')">
   </div>
   <div class="container">
       <div class="row">
@@ -47,9 +47,9 @@
               <div class="row">
                 <div class="col-md-6">
                   <ul style="list-style:none; padding-left: 0;">
-                    foreach()
+
                     <li><a href="/web-design">Web Development</a></li>
-                    endforeach
+
                   </ul>
                 </div>
                 <div class="col-md-6">
@@ -69,11 +69,11 @@
   </div>
   <div class="social-line social-line-big-icons social-line-white text-center">
       <div class="row">
-        foreach()
+
         <div class="col-md-3">
           <i class="{{ $casetechnology->icon }} fa-5x" data-toggle="tooltip" data-placement="top" title="Laravel"></i>
         </div>
-        endforeach
+
       </div>
   </div>
   </div>
