@@ -63336,7 +63336,7 @@ Vue.component('dashboard', __webpack_require__(409));
 Vue.component('calendar', __webpack_require__(412));
 Vue.component('cases', __webpack_require__(422));
 Vue.component('caseservices', __webpack_require__(425));
-Vue.component('casetechnologies', __webpack_require__(440));
+Vue.component('casetechnologies', __webpack_require__(428));
 
 var app = new Vue({
     el: '#app'
@@ -92317,8 +92317,40 @@ var moment = __webpack_require__(0);
         console.log(err);
       });
     }
-  }
+  },
+  deleteScase: function deleteScase() {
+    var _this2 = this;
 
+    axios.delete('/admin/api/cases/' + scase.id).then(function (res) {
+      var scaseIndex = _this2.scases.indexOf(scase);
+      _this2.scases.splice(scaseIndex, 1);
+    }).then(function (res) {
+      _this2.$notify({
+        // (optional)
+        // Name of the notification holder
+        group: 'foo',
+
+        // (optional)
+        // Class that will be assigned to the notification
+        type: 'warn',
+
+        // (optional)
+        // Title (will be wrapped in div.notification-title)
+        title: 'This is title',
+
+        // Content (will be wrapped in div.notification-content)
+        text: 'This is <b> content </b>',
+
+        // (optional)
+        // Overrides default/provided duration
+        duration: 10000,
+
+        // (optional)
+        // Overrides default/provided animation speed
+        speed: 1000
+      });
+    });
+  }
 });
 
 /***/ }),
@@ -92390,7 +92422,15 @@ var render = function() {
                         _vm._v(" "),
                         _c(
                           "button",
-                          { staticClass: "btn btn-danger btn-sm delete" },
+                          {
+                            staticClass: "btn btn-danger btn-sm delete",
+                            on: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                _vm.deleteScase(scase)
+                              }
+                            }
+                          },
                           [_vm._v("Delete")]
                         )
                       ])
@@ -92999,37 +93039,15 @@ if (false) {
 }
 
 /***/ }),
-/* 428 */,
-/* 429 */,
-/* 430 */,
-/* 431 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 432 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 433 */,
-/* 434 */,
-/* 435 */,
-/* 436 */,
-/* 437 */,
-/* 438 */,
-/* 439 */,
-/* 440 */
+/* 428 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(441)
+var __vue_script__ = __webpack_require__(429)
 /* template */
-var __vue_template__ = __webpack_require__(442)
+var __vue_template__ = __webpack_require__(430)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -93068,7 +93086,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 441 */
+/* 429 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -93244,7 +93262,7 @@ var moment = __webpack_require__(0);
 });
 
 /***/ }),
-/* 442 */
+/* 430 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -93542,6 +93560,18 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-01906136", module.exports)
   }
 }
+
+/***/ }),
+/* 431 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 432 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

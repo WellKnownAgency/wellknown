@@ -119,5 +119,11 @@ class ScaseController extends Controller
     return redirect('/admin/cases');
   }
 
+  public function destroy($id)
+  {
+    $scase = Scase::findOrFail($id);
+    $scase->delete();
 
+    return 204;
+  }
 }

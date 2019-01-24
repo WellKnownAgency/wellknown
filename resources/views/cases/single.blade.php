@@ -48,14 +48,19 @@
                 <div class="col-md-6">
                   <ul style="list-style:none; padding-left: 0;">
                     @foreach($scase->caseservices as $caseservice)
+                      @if ($loop->iteration % 2 != 0)
                       <li><a href="/{{ $caseservice->link }}">{{ $caseservice->name }}</a></li>
+                      @endif
                     @endforeach
                   </ul>
                 </div>
                 <div class="col-md-6">
                   <ul style="list-style:none; padding-left: 0;">
-                    <li><a href="/search-engine-optimization">Content Marketing</a></li>
-                    <li><a href="/advertising">Advertising</a></li>
+                    @foreach($scase->caseservices as $caseservice)
+                      @if ($loop->iteration % 2 != 0)
+                      <li><a href="/{{ $caseservice->link }}">{{ $caseservice->name }}</a></li>
+                      @endif
+                    @endforeach
                   </ul>
                 </div>
               </div>
