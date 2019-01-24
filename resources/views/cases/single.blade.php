@@ -39,7 +39,7 @@
       <div class="row" style="font-size: 16px; color: #2c2c2c;">
           <div class="col-md-6">
             <p>
-              {{$scase->body}}
+              {!! $scase->body !!}
             </p>
           </div>
           <div class="col-md-6">
@@ -69,11 +69,11 @@
   </div>
   <div class="social-line social-line-big-icons social-line-white text-center">
       <div class="row">
-
+				@foreach($scase->casetechnologies as $casetechnology)
         <div class="col-md-3">
-          <i class="{{ $casetechnology->icon }} fa-5x" data-toggle="tooltip" data-placement="top" title="Laravel"></i>
+          <i class="{{ $casetechnology->icon }} fa-5x" data-toggle="tooltip" data-placement="top" title="{{ $casetechnology->name }}"></i>
         </div>
-
+				@endforeach
       </div>
   </div>
   </div>

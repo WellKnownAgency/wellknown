@@ -165,7 +165,7 @@ class PagesController extends Controller
     }
 
     public function getSinglecase($slug) {
-      $scase = Scase::where('slug', '=', $slug);
+      $scase = Scase::where('slug', '=', $slug)->with('casetechnologies')->first();
       return view('cases.single')->withScase($scase);
     }
 
