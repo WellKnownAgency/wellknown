@@ -42,6 +42,7 @@
 		</div>
 		<div class="row">
 			  @foreach($scases as $scase)
+				@if ($loop->iteration % 2 != 0)
 			<div class="col-md-6 px-0">
 				<div class="card card-fashion card-background" style="background-image: url('/images/cases/{{ $scase->header_image }}')">
 					<div class="card-body">
@@ -69,7 +70,7 @@
 							<a href="#pablo">
 								<h4>
 									<a href="{{ $scase->slug }}">
-										{{ $scase->body }}
+										{{ $scase->dscr }}
 									</a>
 								</h4>
 							</a>
@@ -84,30 +85,35 @@
 							</div>
 						</div>
 					</div>
-					<div class="card card-fashion card-background" style="background-image: url('/images/cases/{{ $scase->header_image }}')">
+					<div class="card card-fashion card-background" style="background-image: url('/images/cases/{{ $scase->mobile_image }}')">
 					</div>
 				</div>
 			</div>
+			@endif
 			@endforeach
 		</div>
 		<div class="row">
+			@foreach($scases as $scase)
+			@if ($loop->iteration % 2 == 0)
 			<div class="col-md-6 px-0">
 				<div class="card-container">
-					<div class="card card-fashion card-background" style="background-image: url('/images/cases/project15.jpg')">
+					<div class="card card-fashion card-background" style="background-image: url('/images/cases/{{ $scase->mobile_image }}')">
 					</div>
-					<div class="card card-fashion arrow-left">
+					<div class="card card-fashion">
 						<div class="card-title">
-							<h4>
-								<a href="#pablo">
-									The elements of Agile Project Management have been around for decades...
-								</a>
-							</h4>
+							<a href="#pablo">
+								<h4>
+									<a href="{{ $scase->slug }}">
+										{{ $scase->dscr }}
+									</a>
+								</h4>
+							</a>
 						</div>
 						<div class="card-body">
 							<div class="card-footer">
 								<div class="stats">
 									<span>
-										<i class="now-ui-icons design_app"></i>The "Agile Project" project
+										<i class="now-ui-icons education_paper"></i> {{ $scase->excerpt }}
 									</span>
 								</div>
 							</div>
@@ -116,17 +122,19 @@
 				</div>
 			</div>
 			<div class="col-md-6 px-0">
-				<div class="card card-fashion card-background" style="background-image: url('/images/cases/project15.jpg')">
+				<div class="card card-fashion card-background" style="background-image: url('/images/cases/{{ $scase->header_image }}')">
 					<div class="card-body">
 						<div class="card-title text-left">
 							<h2>
-								<a href="#pablo">Performing a Project Premortem</a>
+								<a href="/cases/{{ $scase->slug }}">
+									{{ $scase->title }}
+								</a>
 							</h2>
 						</div>
 						<div class="card-footer text-left">
 							<div class="stats">
 								<span>
-									<i class="now-ui-icons media-2_sound-wave"></i>The "Premortem" project
+									<i class="now-ui-icons objects_globe"></i>{{ $scase->excerpt }}
 								</span>
 							</div>
 						</div>
@@ -135,6 +143,9 @@
 			</div>
 		</div>
 	</div>
+	@endif
+	@endforeach
+
 </div>
 
     <!--     *********   CASE Studies     *********      -->

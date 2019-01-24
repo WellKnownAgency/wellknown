@@ -35,7 +35,7 @@
                 <td style="text-align:center;"><img :src="'/images/cases/'+scase.header_image"  width="auto" height="100px"></td>
                 <td>{{moment(scase.created_at).fromNow()}}</td>
                 <td>
-                  <a class="btn btn-info btn-sm">View</a>
+                  <a :href="'/cases/'+scase.slug+''" class="btn btn-info btn-sm">View</a>
                   <a :href="'/admin/cases/'+scase.id+'/edit'" class="btn btn-warning btn-sm">Edit</a>
                   <button class="btn btn-danger btn-sm delete">Delete</button>
                 </td>

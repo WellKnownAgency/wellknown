@@ -21,6 +21,7 @@ class CreateScasesTable extends Migration
           $table->string('excerpt');
           $table->text('body');
           $table->string('image');
+          $table->string('mobile_image');
           $table->string('slug');
           $table->string('seotitle');
           $table->string('dscr');

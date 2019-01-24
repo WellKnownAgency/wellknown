@@ -15,7 +15,7 @@ class CaseServiceController extends Controller
   {
     $caseservice = new CaseService();
     $caseservice->name = $request->name;
-
+    $caseservice->link = $request->link;
     $caseservice->save();
 
     return $caseservice;

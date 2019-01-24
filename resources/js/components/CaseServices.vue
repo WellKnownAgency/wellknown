@@ -24,6 +24,7 @@
             <thead>
               <tr>
                 <th>Name</th>
+                <th>Link</th>
                 <th>Created_at</th>
                 <th>Actions</th>
               </tr>
@@ -31,6 +32,7 @@
             <tbody>
               <tr v-for="caseservice in caseservices">
                 <td>{{caseservice.name}}</td>
+                <td>{{caseservice.link}}</td>
                 <td>{{caseservice.created_at}}</td>
                 <td>
                   <button @click.prevent="deleteCaseservice(caseservice)" class="btn btn-danger btn-sm delete">Delete</button>
@@ -63,6 +65,10 @@
                 <div class="col">
                   <label for="name" class="col-form-label">Name:</label>
                   <input type="text" class="form-control" id="name" v-model="caseservice.name"  autocomplete="nope">
+                </div>
+                <div class="col">
+                  <label for="link" class="col-form-label">Link:</label>
+                  <input type="text" class="form-control" id="link" v-model="caseservice.link"  autocomplete="nope">
                 </div>
               </div>
             </form>
@@ -98,6 +104,7 @@ var moment = require('moment');
           caseservice: {
             id:'',
             name: '',
+            link: '',
             created_at: ''
           }
           }
@@ -119,6 +126,7 @@ var moment = require('moment');
                  .then((res) => {
                    this.caseservices.unshift(res.data)
                    this.caseservice.name = ''
+                   this.caseservice.link = ''
                  })
                  .then((res) => {
                    this.fetchUse();

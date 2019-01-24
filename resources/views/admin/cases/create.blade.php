@@ -87,13 +87,17 @@
               </div>
               </div>
               <div class="form-row">
-              <div class="form-group col-md-6">
+              <div class="form-group col-md-4">
                 <label for="image">Upload Screenshot Image</label>
                 <input type="file" class="form-control-file" name="img" id="image">
               </div>
-              <div class="form-group col-md-6">
-                <label for="image">Upload Header Image (1920x600)</label>
+              <div class="form-group col-md-4">
+                <label for="header_image">Upload Header Image (1920x600)</label>
                 <input type="file" class="form-control-file" name="header_image" id="header_image">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="mobile_image">Upload Mobile Image</label>
+                <input type="file" class="form-control-file" name="mobile_image" id="mobile_image">
               </div>
               </div>
               <div class="form-group">

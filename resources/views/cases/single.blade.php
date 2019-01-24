@@ -47,9 +47,9 @@
               <div class="row">
                 <div class="col-md-6">
                   <ul style="list-style:none; padding-left: 0;">
-
-                    <li><a href="/web-design">Web Development</a></li>
-
+                    @foreach($scase->caseservices as $caseservice)
+                      <li><a href="/{{ $caseservice->link }}">{{ $caseservice->name }}</a></li>
+                    @endforeach
                   </ul>
                 </div>
                 <div class="col-md-6">
