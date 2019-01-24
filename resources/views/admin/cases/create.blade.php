@@ -48,8 +48,9 @@
                   <input type="text" class="form-control" name="seotitle" id="seotitle" placeholder="Seo Title">
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="dscr">Description</label>
-                  <textarea class="form-control" id="dscr" name="dscr" rows="5"></textarea>
+                  <input onblur="textCounter(this.form.recipients,this,150);" disabled  onfocus="this.blur();" tabindex="999" maxlength="3" size="3" value="150" name="counter">
+                  <label for="dscr">Description (max: 150)</label>
+                  <input onblur="textCounter(this,this.form.counter,150);" onkeyup="textCounter(this,this.form.counter,150);" type="textarea" class="form-control" name="dscr" id="dscr" placeholder="Description">
                 </div>
                 </div>
                   <div class="form-row">
@@ -146,5 +147,6 @@ function textCounter( field, countfield, maxlimit ) {
   countfield.value = maxlimit - field.value.length;
  }
 }
+
 </script>
 @stop

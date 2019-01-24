@@ -41,26 +41,28 @@
 			</div>
 		</div>
 		<div class="row">
+			  @foreach($scases as $scase)
 			<div class="col-md-6 px-0">
-				<div class="card card-fashion card-background" style="background-image: url('/images/ffmain.jpg')">
+				<div class="card card-fashion card-background" style="background-image: url('/images/cases/{{ $scase->image_header }}')">
 					<div class="card-body">
 						<div class="card-title text-left">
 							<h2>
-								<a href="#pablo">
-									The “crazy idea that could lead to a big future commission” project.
+								<a href="/cases/{{ $scase->slug }}">
+									{{ $scase->title }}
 								</a>
 							</h2>
 						</div>
 						<div class="card-footer text-left">
 							<div class="stats">
 								<span>
-									<i class="now-ui-icons objects_globe"></i>The “Crazy idea” project
+									<i class="now-ui-icons objects_globe"></i>{{ $scase->excerpt }}
 								</span>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			endforeach
 			<div class="col-md-6 px-0">
 				<div class="card-container">
 					<div class="card card-fashion">

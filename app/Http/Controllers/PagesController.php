@@ -9,6 +9,9 @@ use App\Post;
 use App\User;
 use App\Comment;
 use App\Category;
+use App\Scase;
+use App\CaseService;
+use App\CaseTechnology;
 use Mail;
 
 
@@ -154,5 +157,13 @@ class PagesController extends Controller
     $posts = Post::latest()->where('id', '!=', $post->id)->where('status', 'PUBLISHED')->limit(3)->get();
     return view('blog.single')->withPost($post)->withPosts($posts);
   }
+
+
+    public function scasesIndex() {
+      $scases = Scase::latest()->paginate(9);
+      return view('cases.index')->withScases($scases);
+    }
+
+
 
 }

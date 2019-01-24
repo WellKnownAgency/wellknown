@@ -71,7 +71,40 @@ class ScaseController extends Controller
     $caseservices = CaseService::all();
     $casetechnologies = CaseTechnology::all();
 
-    return view('admin.cases.edit')->withCaseservice($caseservice)->withCasatechnology($casetechnology);;
+    return view('admin.cases.edit', compact('scase', 'caseservices', 'casetechnologies'));
+  }
+
+  public function update(Request $request, $id)
+  {
+   // store in the database
+      $scase = Scase::find($id);
+      $scase->title = $request->input('title');
+      $scase->title_work = $request->input('title_work');
+      $scase->slug = $request->input('slug');
+      $scase->body = $request->input('body');
+      $scase->excerpt = $request->input('excerpt');
+      $scase->seotitle = $request->input('seotitle');
+      $scase->dscr = $request->input('dscr');
+
+   if ($request->hasFile('img')) {
+     $image = $request->file('img');
+     $filename = time() . '.' . $image->getClientOriginalExtension();
+     $location = public_path('images/cases/' . $filename);
+     Image::make($image)->save($location);
+     $scase->image = $filename;
+   };
+   if ($request->hasFile('header_image')) {
+     $header_image = $request->file('header_image');
+     $filename = time() . '.' . $header_image->getClientOriginalExtension();
+     $location = public_path('images/cases/' . $filename);
+     Image::make($header_image)->save($location);
+     $scase->header_image = $filename;
+   }
+
+
+   $scase->save();
+
+    return redirect('/admin/cases');
   }
 
 

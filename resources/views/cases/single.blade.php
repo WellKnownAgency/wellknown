@@ -71,7 +71,7 @@
       <div class="row">
         foreach()
         <div class="col-md-3">
-          <i class="fab fa-laravel fa-5x" data-toggle="tooltip" data-placement="top" title="Laravel"></i>
+          <i class="{{ $casetechnology->icon }} fa-5x" data-toggle="tooltip" data-placement="top" title="Laravel"></i>
         </div>
         endforeach
       </div>
