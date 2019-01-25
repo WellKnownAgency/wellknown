@@ -26,11 +26,11 @@
               {{ csrf_field() }}
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="title">Title</label>
+                  <label for="title">H1 Title</label>
                   <input type="text" name="title" class="form-control" id="title" placeholder="Title">
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="excerpt">Excerpt</label>
+                  <label for="excerpt">Small Dscr under Title</label>
                   <input type="text" class="form-control" name="excerpt" id="excerpt" placeholder="Excerpt">
                 </div>
               </div>
@@ -40,16 +40,16 @@
                   <input type="text" class="form-control" name="slug" id="slug" placeholder="Slug">
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="title_work">Title Work</label>
+                  <label for="title_work">H2 Title</label>
                   <input type="text" class="form-control" name="title_work" id="title_work" placeholder="Title Work">
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="seotitle">Seo Title</label>
+                  <label for="seotitle">Meta Title</label>
                   <input type="text" class="form-control" name="seotitle" id="seotitle" placeholder="Seo Title">
                 </div>
                 <div class="form-group col-md-6">
                   <input onblur="textCounter(this.form.recipients,this,150);" disabled  onfocus="this.blur();" tabindex="999" maxlength="3" size="3" value="150" name="counter">
-                  <label for="dscr">Description (max: 150)</label>
+                  <label for="dscr">Meta Description (max: 150)</label>
                   <input onblur="textCounter(this,this.form.counter,150);" onkeyup="textCounter(this,this.form.counter,150);" type="textarea" class="form-control" name="dscr" id="dscr" placeholder="Description">
                 </div>
                 </div>
@@ -62,8 +62,8 @@
                         <div class="card-body">
                     @foreach ($caseservices as $caseservice)
                       <div class="form-check form-check-inline" >
-                        <input class="form-check-input" type="checkbox" id="caseservice" value="{{$caseservice->id}}" name="caseservices[]">
-                        <label class="form-check-label" for="collections">{{ $caseservice->name }}</label>
+                        <input class="form-check-input" type="checkbox" id="{{$caseservice->id}}" value="{{$caseservice->id}}" name="caseservices[]">
+                        <label class="form-check-label" for="{{$caseservice->id}}">{{ $caseservice->name }}</label>
                       </div>
                     @endforeach
                       </div>
@@ -77,9 +77,9 @@
                       <div class="card-body">
                     @foreach ($casetechnologies as $casetechnology)
                       <div class="form-check form-check-inline" >
-                        <input class="form-check-input" type="checkbox" id="caseservice" value="{{$casetechnology->id}}" name="casetechnologies[]">
-                        <i class=" {{ $casetechnology->icon }} "></i>
-                        <label class="form-check-label" for="collections">{{ $casetechnology->name }}</label>
+                        <input class="form-check-input" type="checkbox" id="{{$casetechnology->id}}" value="{{$casetechnology->id}}" name="casetechnologies[]">
+                        <i for="{{$casetechnology->id}}" class=" {{ $casetechnology->icon }} "></i>
+                        <label class="form-check-label" for="{{$casetechnology->id}}">{{ $casetechnology->name }}</label>
                       </div>
                     @endforeach
                   </div>
