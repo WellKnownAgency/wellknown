@@ -40,9 +40,10 @@
 				<h2 class="title">Some of Our Awesome Projects - 4</h2>
 			</div>
 		</div>
+		@foreach($scases as $scase)
+		@if ($loop->iteration % 2 != 0)
 		<div class="row">
-			  @foreach($scases as $scase)
-				@if ($loop->iteration % 2 != 0)
+
 			<div class="col-md-6 px-0">
 				<div class="card card-fashion card-background" style="background-image: url('/images/cases/{{ $scase->header_image }}')">
 					<div class="card-body">
@@ -89,12 +90,14 @@
 					</div>
 				</div>
 			</div>
-			@endif
-			@endforeach
+
 		</div>
+		@endif
+		@endforeach
+		@foreach($scases as $scase)
+		@if ($loop->iteration % 2 == 0)
 		<div class="row">
-			@foreach($scases as $scase)
-			@if ($loop->iteration % 2 == 0)
+
 			<div class="col-md-6 px-0">
 				<div class="card-container">
 					<div class="card card-fashion card-background" style="background-image: url('/images/cases/{{ $scase->mobile_image }}')">
@@ -142,85 +145,12 @@
 				</div>
 			</div>
 		</div>
+		@endif
+		@endforeach
 	</div>
-	@endif
-	@endforeach
+
 
 </div>
-
-    <!--     *********   CASE Studies     *********      -->
-    <div class="projects-1">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-8 ml-auto mr-auto text-center">
-            <h2 class="title">Some of Our Awesome Projects</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 px-0">
-            <div class="card card-background card-background-product card-no-shadow" style="background-image: url('/images/ffmain.jpg')">
-              <div class="card-body">
-                <h6 class="category">Web Design & Development</h6>
-                <h3 class="card-title">
-                  Fancy Flowers
-                </h3>
-                <p class="card-description">
-                  Fully created Online Flowers Delivery store...
-                </p>
-                <a href="/fancy-flowers" target="_blank" class="btn btn-danger btn-round">
-                  <i class="now-ui-icons ui-1_send"></i> View Case
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 px-0">
-            <div class="card card-raised card-background card-background-product card-no-shadow" style="background-image: url('/images/omdarling.jpg')">
-              <div class="card-body">
-                <h6 class="category">Web Design & Development</h6>
-                <h3 class="card-title">OmDarling</h3>
-                <p class="card-description">
-                  Personal Blog...
-                </p>
-                <a href="/omdarling" target="_blank" class="btn btn-danger btn-round">
-                  <i class="now-ui-icons ui-1_send"></i> View case
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 px-0">
-            <div class="card card-background card-background-product card-no-shadow" style="background-image: url('/images/btmmain.jpg')">
-              <div class="card-body">
-                <h6 class="category">Web Design & Development</h6>
-                <h3 class="card-title">Born to Move</h3>
-                <p class="card-description">
-                  Moving Company Website with High Quality SEO...
-                </p>
-                <a href="/born-to-move" target="_blank" class="btn btn-danger btn-round">
-                  <i class="now-ui-icons ui-1_send"></i> View case
-                </a>
-              </div>
-            </div>
-          </div>
-					<div class="col-md-6 px-0">
-            <div class="card card-background card-background-product card-no-shadow" style="background-image: url('/images/cases/flashmoving.jpg')">
-              <div class="card-body">
-                <h6 class="category">Web Design & Development</h6>
-                <h3 class="card-title">Flashmoving</h3>
-                <p class="card-description">
-                  In Progress...
-                </p>
-								<!--
-                <a href="/born-to-move" target="_blank" class="btn btn-danger btn-round">
-                  <i class="now-ui-icons ui-1_send"></i> View case
-                </a>
-							-->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 @stop
 @section('customjs')
 @stop
