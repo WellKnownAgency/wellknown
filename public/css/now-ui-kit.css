@@ -11191,14 +11191,28 @@ html {
   font-size: 26px;
 }
 
-.wkn-case-card:hover {
+.wkn-case-card {
   -webkit-box-shadow: -1px 10px 29px 0px rgba(0, 0, 0, 0.8);
           box-shadow: -1px 10px 29px 0px rgba(0, 0, 0, 0.8);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  -webkit-transform: scale(1.025);
-          transform: scale(1.025);
-  z-index: 9999;
+}
+
+.outer-div {
+  height: 100%;
+  overflow: hidden;
+}
+
+.inner-div {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.inner-div:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .tim-row {

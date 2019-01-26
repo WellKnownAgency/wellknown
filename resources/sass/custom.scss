@@ -301,9 +301,25 @@ top: -17px;
 font-size: 26px;
 }
 
-.wkn-case-card:hover{
+.wkn-case-card{
   box-shadow: -1px 10px 29px 0px rgba(0,0,0,0.8);
-  transition: 0.3s ;
-  transform: scale(1.025);
-  z-index: 9999;
+}
+
+
+.outer-div
+{
+  height: 100%;
+  overflow: hidden;
+}
+.inner-div
+{
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease;
+}
+.inner-div:hover
+{
+  transform: scale(1.2);
 }

@@ -213,16 +213,18 @@
         <div class="row">
 					@foreach($scases as $scase)
           <div class="col-md-6"  style="margin-bottom:30px;">
-            <div  onclick="window.location='case-studies/{{ $scase->slug }}';" class="card  wkn-case-card card-background card-background-product card-no-shadow" style="background-image: url('/images/cases/{{ $scase->header_image }}'); cursor: pointer;">
-              <div class="card-body">
-                <h6 class="category">{{ $scase->title_work }}</h6>
-                <h2 class="card-title">
-                  {{ $scase->title }}
-                </h2>
-                <br>
-								<p class="card-description">
-                  {{ str_limit ($scase->body, 150) }}
-                </p>
+            <div class=" wkn-case-card  outer-div">
+              <div  onclick="window.location='case-studies/{{ $scase->slug }}';" class="inner-div card card-background card-background-product card-no-shadow" style="background-image: url('/images/cases/{{ $scase->header_image }}'); cursor: pointer;">
+                <div class="card-body">
+                  <h6 class="category">{{ $scase->title_work }}</h6>
+                  <h2 class="card-title">
+                    {{ $scase->title }}
+                  </h2>
+                  <br>
+  								<p class="card-description">
+                    {{ str_limit ($scase->body, 150) }}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
