@@ -15,8 +15,8 @@
     <div class="card mb-3">
       <div class="card-header">
         <i class="fas fa-table"></i>
-        CaseServices Table
-        <button class="btn btn-success" style="float:right;" data-toggle="modal" data-target="#addnew">Add New Case Service</button>
+        Case Services Table
+        <button class="btn btn-success" style="float:right;" data-toggle="modal" data-target="#addnew">Add New Service</button>
       </div>
       <div class="card-body">
         <div class="table-responsive">

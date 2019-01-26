@@ -161,12 +161,12 @@ class PagesController extends Controller
 
     public function scasesIndex() {
       $scases = Scase::latest()->paginate(9);
-      return view('cases.index')->withScases($scases);
+      return view('case-studies.index')->withScases($scases);
     }
 
     public function getSinglecase($slug) {
       $scase = Scase::where('slug', '=', $slug)->with('casetechnologies')->first();
-      return view('cases.single')->withScase($scase);
+      return view('case-studies.single')->withScase($scase);
     }
 
 }

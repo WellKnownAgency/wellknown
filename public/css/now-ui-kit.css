@@ -11191,6 +11191,16 @@ html {
   font-size: 26px;
 }
 
+.wkn-case-card:hover {
+  -webkit-box-shadow: -1px 10px 29px 0px rgba(0, 0, 0, 0.8);
+          box-shadow: -1px 10px 29px 0px rgba(0, 0, 0, 0.8);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
+  z-index: 9999;
+}
+
 .tim-row {
   margin-bottom: 20px;
 }

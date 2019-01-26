@@ -40,6 +40,7 @@ class ScaseController extends Controller
       $scase->excerpt = $request->excerpt;
       $scase->seotitle = $request->seotitle;
       $scase->dscr = $request->dscr;
+      $scase->filter_color = $request->filter_color;
 
    if ($request->hasFile('img')) {
      $image = $request->file('img');
@@ -54,13 +55,6 @@ class ScaseController extends Controller
      $location = public_path('images/cases/' . $filename);
      Image::make($header_image)->save($location);
      $scase->header_image = $filename;
-   };
-   if ($request->hasFile('mobile_image')) {
-     $mobile_image = $request->file('mobile_image');
-     $filename = time() . '.' . $mobile_image->getClientOriginalExtension();
-     $location = public_path('images/cases/' . $filename);
-     Image::make($mobile_image)->save($location);
-     $scase->mobile_image = $filename;
    }
 
    $scase->save();
@@ -91,6 +85,8 @@ class ScaseController extends Controller
       $scase->excerpt = $request->input('excerpt');
       $scase->seotitle = $request->input('seotitle');
       $scase->dscr = $request->input('dscr');
+      $scase->filter_color = $request->input('filter_color');
+
 
    if ($request->hasFile('img')) {
      $image = $request->file('img');
@@ -105,13 +101,6 @@ class ScaseController extends Controller
      $location = public_path('images/cases/' . $filename);
      Image::make($header_image)->save($location);
      $scase->header_image = $filename;
-   };
-   if ($request->hasFile('mobile_image')) {
-     $mobile_image = $request->file('mobile_image');
-     $filename = time() . '.' . $mobile_image->getClientOriginalExtension();
-     $location = public_path('images/cases/' . $filename);
-     Image::make($mobile_image)->save($location);
-     $scase->mobile_image = $filename;
    }
 
    $scase->save();

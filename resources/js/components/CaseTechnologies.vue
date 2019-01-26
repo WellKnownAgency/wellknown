@@ -16,7 +16,7 @@
       <div class="card-header">
         <i class="fas fa-table"></i>
         Case Technologies Table
-        <button class="btn btn-success" style="float:right;" data-toggle="modal" data-target="#addnew">Add New Case Service</button>
+        <button class="btn btn-success" style="float:right;" data-toggle="modal" data-target="#addnew">Add New Tech</button>
       </div>
       <div class="card-body">
         <div class="table-responsive">

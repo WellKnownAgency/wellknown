@@ -35,9 +35,13 @@
                 </div>
               </div>
               <div class="form-row">
-                <div class="form-group col-md-6">
+                <div class="form-group col-md-3">
                   <label for="slug">Slug</label>
                   <input type="text" class="form-control" name="slug" id="slug" placeholder="Slug">
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="filter_color">Color</label>
+                  <input type="text" class="form-control" name="filter_color" id="filter_color" placeholder="#000">
                 </div>
                 <div class="form-group col-md-6">
                   <label for="title_work">H2 Title</label>
@@ -87,17 +91,13 @@
               </div>
               </div>
               <div class="form-row">
-              <div class="form-group col-md-4">
+              <div class="form-group col-md-6">
                 <label for="image">Upload Screenshot Image</label>
                 <input type="file" class="form-control-file" name="img" id="image">
               </div>
-              <div class="form-group col-md-4">
+              <div class="form-group col-md-6">
                 <label for="header_image">Upload Header Image (1920x600)</label>
                 <input type="file" class="form-control-file" name="header_image" id="header_image">
-              </div>
-              <div class="form-group col-md-4">
-                <label for="mobile_image">Upload Mobile Image</label>
-                <input type="file" class="form-control-file" name="mobile_image" id="mobile_image">
               </div>
               </div>
               <div class="form-group">

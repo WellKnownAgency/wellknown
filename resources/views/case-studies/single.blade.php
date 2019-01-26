@@ -15,8 +15,8 @@
 @stop
 
 @section('content')
-<div class="page-header header-filter " filter-color="fflowers">
-  <div class="page-header-image" style="background-image: url('/images/cases/{{ $scase->header_image }}')">
+<div class="page-header" style="background-color: {{$scase->filter_color}};">
+  <div class="page-header-image" style="background-image: url('/images/cases/{{ $scase->header_image }}') ">
   </div>
   <div class="container">
       <div class="row">
@@ -57,7 +57,7 @@
                 <div class="col-md-6">
                   <ul style="list-style:none; padding-left: 0;">
                     @foreach($scase->caseservices as $caseservice)
-                      @if ($loop->iteration % 2 != 0)
+                      @if ($loop->iteration % 2 == 0)
                       <li><a href="/{{ $caseservice->link }}">{{ $caseservice->name }}</a></li>
                       @endif
                     @endforeach

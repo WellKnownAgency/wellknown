@@ -35,9 +35,13 @@
                 </div>
               </div>
               <div class="form-row">
-                <div class="form-group col-md-6">
+                <div class="form-group col-md-3">
                   <label for="slug">Slug</label>
                   <input type="text" class="form-control" name="slug" id="slug" value="{{ $scase->slug }}">
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="filter_color">Color</label>
+                  <input type="text" class="form-control" name="filter_color" id="filter_color" value="{{ $scase->filter_color }}">
                 </div>
                 <div class="form-group col-md-6">
                   <label for="title_work">Title Work</label>

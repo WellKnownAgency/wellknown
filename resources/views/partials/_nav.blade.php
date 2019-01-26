@@ -41,7 +41,7 @@
           </div>
         </li>
        <li class="nav-item {{ Request::is('cases') ?"active" : ""}}">
-          <a class="nav-link" href="/cases">
+          <a class="nav-link" href="/case-studies">
             <p>case studies</p>
           </a>
         </li>

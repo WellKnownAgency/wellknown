@@ -78,8 +78,8 @@ Route::get('blog', 'PagesController@blogIndex');
 Route::get('/blog/{slug}', ['as' => 'blog.single', 'uses' => 'PagesController@getSingle' ]) -> where('slug', '[\w\d\-\_]+');
 
 /* Cases */
-Route::get('cases', 'PagesController@scasesIndex');
-Route::get('/cases/{slug}', ['as' => 'cases.single', 'uses' => 'PagesController@getSinglecase' ]) -> where('slug', '[\w\d\-\_]+');
+Route::get('case-studies', 'PagesController@scasesIndex');
+Route::get('/case-studies/{slug}', ['as' => 'case-studies.single', 'uses' => 'PagesController@getSinglecase' ]) -> where('slug', '[\w\d\-\_]+');
 /* Auth Routes */
 Auth::routes();
 

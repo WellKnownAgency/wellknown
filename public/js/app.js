@@ -92318,37 +92318,24 @@ var moment = __webpack_require__(0);
       });
     }
   },
-  deleteScase: function deleteScase() {
+  deleteCasetechnology: function deleteCasetechnology(scase) {
     var _this2 = this;
 
-    axios.delete('/admin/api/cases/' + scase.id).then(function (res) {
-      var scaseIndex = _this2.scases.indexOf(scase);
-      _this2.scases.splice(scaseIndex, 1);
-    }).then(function (res) {
-      _this2.$notify({
-        // (optional)
-        // Name of the notification holder
-        group: 'foo',
-
-        // (optional)
-        // Class that will be assigned to the notification
-        type: 'warn',
-
-        // (optional)
-        // Title (will be wrapped in div.notification-title)
-        title: 'This is title',
-
-        // Content (will be wrapped in div.notification-content)
-        text: 'This is <b> content </b>',
-
-        // (optional)
-        // Overrides default/provided duration
-        duration: 10000,
-
-        // (optional)
-        // Overrides default/provided animation speed
-        speed: 1000
-      });
+    __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
+      title: 'Are you sure?',
+      type: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, Delete!'
+    }).then(function (result) {
+      if (result.value) {
+        __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()('Deleted!');
+        axios.delete('/api/cases/' + scase.id).then(function (res) {
+          var scaseIndex = _this2.scases.indexOf(scase);
+          _this2.scases.splice(scaseIndex, 1);
+        });
+      }
     });
   }
 });
@@ -92427,7 +92414,7 @@ var render = function() {
                             on: {
                               click: function($event) {
                                 $event.preventDefault()
-                                _vm.deleteScase(scase)
+                                _vm.deleteCasetechnology(scase)
                               }
                             }
                           },
@@ -92967,7 +92954,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\r\n        CaseServices Table\r\n        "),
+      _vm._v("\r\n        Case Services Table\r\n        "),
       _c(
         "button",
         {
@@ -92975,7 +92962,7 @@ var staticRenderFns = [
           staticStyle: { float: "right" },
           attrs: { "data-toggle": "modal", "data-target": "#addnew" }
         },
-        [_vm._v("Add New Case Service")]
+        [_vm._v("Add New Service")]
       )
     ])
   },
@@ -93495,7 +93482,7 @@ var staticRenderFns = [
           staticStyle: { float: "right" },
           attrs: { "data-toggle": "modal", "data-target": "#addnew" }
         },
-        [_vm._v("Add New Case Service")]
+        [_vm._v("Add New Tech")]
       )
     ])
   },

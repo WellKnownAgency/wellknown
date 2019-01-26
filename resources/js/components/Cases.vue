@@ -37,7 +37,7 @@
                 <td>
                   <a :href="'/cases/'+scase.slug+''" class="btn btn-info btn-sm">View</a>
                   <a :href="'/admin/cases/'+scase.id+'/edit'" class="btn btn-warning btn-sm">Edit</a>
-                  <button @click.prevent="deleteScase(scase)" class="btn btn-danger btn-sm delete">Delete</button>
+                  <button @click.prevent="deleteCasetechnology(scase)" class="btn btn-danger btn-sm delete">Delete</button>
                 </td>
               </tr>
             </tbody>
@@ -89,40 +89,29 @@ var moment = require('moment');
                  })
                }
             },
-            deleteScase () {
-              axios.delete(`/admin/api/cases/${scase.id}`)
-              .then((res) => {
-                  const scaseIndex = this.scases.indexOf(scase)
-                  this.scases.splice(scaseIndex, 1)
-              })
-              .then((res) =>{
-                this.$notify({
-                    // (optional)
-                    // Name of the notification holder
-                    group: 'foo',
-
-                    // (optional)
-                    // Class that will be assigned to the notification
-                    type: 'warn',
-
-                    // (optional)
-                    // Title (will be wrapped in div.notification-title)
-                    title: 'This is title',
-
-                    // Content (will be wrapped in div.notification-content)
-                    text: 'This is <b> content </b>',
-
-                    // (optional)
-                    // Overrides default/provided duration
-                    duration: 10000,
-
-                    // (optional)
-                    // Overrides default/provided animation speed
-                    speed: 1000
+            deleteCasetechnology (scase) {
+              swal({
+                  title: 'Are you sure?',
+                  type: 'warning',
+                  showCancelButton: true,
+                  confirmButtonColor: '#3085d6',
+                  cancelButtonColor: '#d33',
+                  confirmButtonText: 'Yes, Delete!'
+                  })
+                  .then((result) => {
+                  if (result.value) {
+                  swal(
+                  'Deleted!',
+                  )
+                  axios.delete(`/api/cases/${scase.id}`)
+                      .then((res) => {
+                          const scaseIndex = this.scases.indexOf(scase)
+                          this.scases.splice(scaseIndex, 1)
+                      })
+                  }
                   })
               }
-            )
           }
 
-}
+
 </script>

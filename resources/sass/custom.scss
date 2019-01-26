@@ -300,3 +300,10 @@ position: relative;
 top: -17px;
 font-size: 26px;
 }
+
+.wkn-case-card:hover{
+  box-shadow: -1px 10px 29px 0px rgba(0,0,0,0.8);
+  transition: 0.3s ;
+  transform: scale(1.025);
+  z-index: 9999;
+}
