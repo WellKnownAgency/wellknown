@@ -12,9 +12,8 @@
 
 @section('content')
 <!-- Header -->
-<!--
 <div class="wrapper">
-	<div class="page-header page-header-small" style="background-image: url('../images/smm/smm-header-drk.jpg');">
+	<div class="page-header page-header-small" style="background-image: url('../images/cases/case-studies.jpg');background-repeat: no-repeat;  background-size: auto;">
 			<div class="container">
 					<div class="row">
 							<div class="col-md-10 ml-auto mr-auto text-center" style="padding-top: 5px;">
@@ -32,7 +31,7 @@
 			</div>
 	</div>
 </div>
-
+<!--
 <div class="projects-4" data-background-color="gray">
 	<div class="container-fluid">
 		<div class="row">
@@ -202,13 +201,8 @@
 -->
 
     <!--     *********   CASE Studies     *********      -->
-    <div class="projects-1" style="background-color:#F5F5F5; margin-top:100px;">
+    <div class="projects-1" style="background-color:#F5F5F5;">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-8 ml-auto mr-auto text-center">
-            <h1 class="title">WellKnown Case Studies</h1>
-          </div>
-        </div>
         <div class="container-fluid">
         <div class="row">
 					@foreach($scases as $scase)
