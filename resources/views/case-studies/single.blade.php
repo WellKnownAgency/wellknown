@@ -1,8 +1,8 @@
 @extends('layout.maincase')
 
-@section('title', 'Fancy Flowers | WellKnown Agency Case Studies')
+@section('title', '{{$scase->seotitle}} | WellKnown Agency Case Studies')
 
-@section('description', 'Fancy Flowers is a flower delivery business in Philadelphia. Our team at WellKnown Agency create a Ecomerce website with all the functionality and managed SEO.')
+@section('description', '{{$scase->dscr}}')
 
 @section('keywords', '')
 
@@ -37,7 +37,7 @@
       <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center">
               <h6 class="category text-muted">What we did</h6>
-              <h2 class="title">Laravel based E-commerce store</h2>
+              <h2 class="title">{{$scase->title_work}}</h2>
           </div>
       </div>
       <div class="section-story-overview">
