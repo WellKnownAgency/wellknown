@@ -10384,9 +10384,9 @@ body.sidebar-toggled footer.sticky-footer {
   }
 }
 
-.sidebar.toggled {
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
+.transition-togg {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .pointer {

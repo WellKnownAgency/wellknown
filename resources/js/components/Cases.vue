@@ -37,7 +37,7 @@
                 <td>
                   <a :href="'/cases/'+scase.slug+''" class="btn btn-info btn-sm">View</a>
                   <a :href="'/admin/cases/'+scase.id+'/edit'" class="btn btn-warning btn-sm">Edit</a>
-                  <button @click.prevent="deleteCasetechnology(scase)" class="btn btn-danger btn-sm delete">Delete</button>
+                  <button @click.prevent="deleteCase(scase)" class="btn btn-danger btn-sm delete">Delete</button>
                 </td>
               </tr>
             </tbody>
@@ -87,30 +87,32 @@ var moment = require('moment');
                  .catch((err) => {
                    console.log(err)
                  })
-               }
-            },
-            deleteCasetechnology (scase) {
-              swal({
-                  title: 'Are you sure?',
-                  type: 'warning',
-                  showCancelButton: true,
-                  confirmButtonColor: '#3085d6',
-                  cancelButtonColor: '#d33',
-                  confirmButtonText: 'Yes, Delete!'
-                  })
-                  .then((result) => {
-                  if (result.value) {
-                  swal(
-                  'Deleted!',
-                  )
-                  axios.delete(`/api/cases/${scase.id}`)
-                      .then((res) => {
-                          const scaseIndex = this.scases.indexOf(scase)
-                          this.scases.splice(scaseIndex, 1)
-                      })
-                  }
-                  })
-              }
+               },
+
+							 deleteCase (scase) {
+	               swal({
+	                   title: 'Are you sure?',
+	                   type: 'warning',
+	                   showCancelButton: true,
+	                   confirmButtonColor: '#3085d6',
+	                   cancelButtonColor: '#d33',
+	                   confirmButtonText: 'Yes, Delete!'
+	                   })
+	                   .then((result) => {
+	                   if (result.value) {
+	                   swal(
+	                   'Deleted!',
+	                   )
+	                   axios.delete(`/api/cases/${scase.id}`)
+	                       .then((res) => {
+	                           const scaseIndex = this.scases.indexOf(scase)
+	                           this.scases.splice(scaseIndex, 1)
+	                       })
+	                   }
+	                   })
+	               }
+            }
+
           }
 
 

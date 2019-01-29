@@ -2,7 +2,7 @@
   <head>
     @include('admin/partials/_head')
   </head>
-  <body id="page-top">
+  <body id="page-top" class="sidebar-toggled">
     <div id="app">
         <vue-snotify></vue-snotify>
       @include('admin/partials/_nav')

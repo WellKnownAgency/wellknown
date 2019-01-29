@@ -68541,7 +68541,7 @@ var content = __webpack_require__(212);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("4cd5548a", content, false, {});
+var update = __webpack_require__(4)("52c48ab7", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -68795,7 +68795,7 @@ var content = __webpack_require__(217);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("54362aa0", content, false, {});
+var update = __webpack_require__(4)("62c3db20", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -69035,7 +69035,7 @@ var content = __webpack_require__(221);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("3671e204", content, false, {});
+var update = __webpack_require__(4)("7fc38c78", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -72422,7 +72422,7 @@ var content = __webpack_require__(320);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("58078a02", content, false, {});
+var update = __webpack_require__(4)("4a747008", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -73467,7 +73467,7 @@ var content = __webpack_require__(338);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("846ec39a", content, false, {});
+var update = __webpack_require__(4)("3efaf8ad", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -74369,7 +74369,7 @@ var content = __webpack_require__(352);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("2aa024ca", content, false, {});
+var update = __webpack_require__(4)("df334be4", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -78714,7 +78714,7 @@ var render = function() {
                                 _vm._v(" "),
                                 _c("p", { staticClass: "description" }, [
                                   _vm._v(
-                                    "\r\n                                    Send an Email to introduce yourself and your services\r\n                                "
+                                    "\n                                    Send an Email to introduce yourself and your services\n                                "
                                   )
                                 ])
                               ])
@@ -78755,7 +78755,7 @@ var render = function() {
                                 _vm._v(" "),
                                 _c("p", { staticClass: "description" }, [
                                   _vm._v(
-                                    "\r\n                                    Send a follow up email\r\n                                "
+                                    "\n                                    Send a follow up email\n                                "
                                   )
                                 ])
                               ])
@@ -78796,7 +78796,7 @@ var render = function() {
                                 _vm._v(" "),
                                 _c("p", { staticClass: "description" }, [
                                   _vm._v(
-                                    "\r\n                                    Send last email\r\n                                "
+                                    "\n                                    Send last email\n                                "
                                   )
                                 ])
                               ])
@@ -78837,7 +78837,7 @@ var render = function() {
                                 _vm._v(" "),
                                 _c("p", { staticClass: "description" }, [
                                   _vm._v(
-                                    "\r\n                                  Make a phone call to introduce yourself and your servces (try 3 times during the day and next day)\r\n                                "
+                                    "\n                                  Make a phone call to introduce yourself and your servces (try 3 times during the day and next day)\n                                "
                                   )
                                 ])
                               ])
@@ -81289,7 +81289,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\r\n        List of Leads "),
+      _vm._v("\n        List of Leads "),
       _c(
         "button",
         {
@@ -82304,7 +82304,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\r\n        List of Clients")
+      _vm._v("\n        List of Clients")
     ])
   },
   function() {
@@ -83087,7 +83087,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\r\n        List of Partners")
+      _vm._v("\n        List of Partners")
     ])
   },
   function() {
@@ -83561,7 +83561,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\r\n        List of Posts\r\n        "),
+      _vm._v("\n        List of Posts\n        "),
       _c(
         "a",
         {
@@ -84056,7 +84056,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\r\n        Categories Table\r\n        "),
+      _vm._v("\n        Categories Table\n        "),
       _c(
         "button",
         {
@@ -84918,9 +84918,9 @@ var render = function() {
                             { key: source.id, staticClass: "list-group-item" },
                             [
                               _vm._v(
-                                "\r\n                    " +
+                                "\n                    " +
                                   _vm._s(source.name) +
-                                  "\r\n                    "
+                                  "\n                    "
                               ),
                               _c(
                                 "button",
@@ -84969,9 +84969,9 @@ var render = function() {
                             { key: status.id, staticClass: "list-group-item" },
                             [
                               _vm._v(
-                                "\r\n                    " +
+                                "\n                    " +
                                   _vm._s(status.name) +
-                                  "\r\n                    "
+                                  "\n                    "
                               ),
                               _c(
                                 "button",
@@ -85020,9 +85020,9 @@ var render = function() {
                             { key: service.id, staticClass: "list-group-item" },
                             [
                               _vm._v(
-                                "\r\n                    " +
+                                "\n                    " +
                                   _vm._s(service.name) +
-                                  "\r\n                    "
+                                  "\n                    "
                               ),
                               _c(
                                 "button",
@@ -85829,7 +85829,7 @@ var staticRenderFns = [
                 "aria-controls": "collapseOne"
               }
             },
-            [_vm._v("\r\n                  Sources\r\n                ")]
+            [_vm._v("\n                  Sources\n                ")]
           )
         ]),
         _vm._v(" "),
@@ -85867,7 +85867,7 @@ var staticRenderFns = [
                 "aria-controls": "collapseTwo"
               }
             },
-            [_vm._v("\r\n                  Statuses\r\n                ")]
+            [_vm._v("\n                  Statuses\n                ")]
           )
         ]),
         _vm._v(" "),
@@ -85905,7 +85905,7 @@ var staticRenderFns = [
                 "aria-controls": "collapseThree"
               }
             },
-            [_vm._v("\r\n                  Services\r\n                ")]
+            [_vm._v("\n                  Services\n                ")]
           )
         ]),
         _vm._v(" "),
@@ -86077,7 +86077,7 @@ var content = __webpack_require__(385);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("968d3776", content, false, {});
+var update = __webpack_require__(4)("1492f942", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -86358,7 +86358,7 @@ var content = __webpack_require__(389);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("1b7ea66e", content, false, {});
+var update = __webpack_require__(4)("300629d6", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -86569,7 +86569,7 @@ var content = __webpack_require__(394);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("f4c8b206", content, false, {});
+var update = __webpack_require__(4)("1d0c7694", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -87125,7 +87125,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\r\n        List of SEO Projects\r\n        "),
+      _vm._v("\n        List of SEO Projects\n        "),
       _c(
         "button",
         {
@@ -87189,7 +87189,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "modal-body" }, [
       _c("div", { staticClass: "container" }, [
         _vm._v(
-          "\r\n                        Are you sure you want to delete the project?\r\n                    "
+          "\n                        Are you sure you want to delete the project?\n                    "
         )
       ])
     ])
@@ -87266,7 +87266,7 @@ var content = __webpack_require__(406);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("60e70979", content, false, {});
+var update = __webpack_require__(4)("dca9e8da", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -87445,9 +87445,7 @@ var render = function() {
         _c("div", { staticClass: "card-header" }, [
           _c("i", { staticClass: "fas fa-table" }),
           _vm._v(
-            "\r\n        Edit Project " +
-              _vm._s(_vm.project.name) +
-              "\r\n        "
+            "\n        Edit Project " + _vm._s(_vm.project.name) + "\n        "
           ),
           _c(
             "button",
@@ -88354,7 +88352,7 @@ var content = __webpack_require__(414);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("75ecbc92", content, false, {});
+var update = __webpack_require__(4)("649b03e5", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -92316,28 +92314,29 @@ var moment = __webpack_require__(0);
       }).catch(function (err) {
         console.log(err);
       });
-    }
-  },
-  deleteCasetechnology: function deleteCasetechnology(scase) {
-    var _this2 = this;
+    },
+    deleteCase: function deleteCase(scase) {
+      var _this2 = this;
 
-    __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
-      title: 'Are you sure?',
-      type: 'warning',
-      showCancelButton: true,
-      confirmButtonColor: '#3085d6',
-      cancelButtonColor: '#d33',
-      confirmButtonText: 'Yes, Delete!'
-    }).then(function (result) {
-      if (result.value) {
-        __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()('Deleted!');
-        axios.delete('/api/cases/' + scase.id).then(function (res) {
-          var scaseIndex = _this2.scases.indexOf(scase);
-          _this2.scases.splice(scaseIndex, 1);
-        });
-      }
-    });
+      __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
+        title: 'Are you sure?',
+        type: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, Delete!'
+      }).then(function (result) {
+        if (result.value) {
+          __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()('Deleted!');
+          axios.delete('/api/cases/' + scase.id).then(function (res) {
+            var scaseIndex = _this2.scases.indexOf(scase);
+            _this2.scases.splice(scaseIndex, 1);
+          });
+        }
+      });
+    }
   }
+
 });
 
 /***/ }),
@@ -92414,7 +92413,7 @@ var render = function() {
                             on: {
                               click: function($event) {
                                 $event.preventDefault()
-                                _vm.deleteCasetechnology(scase)
+                                _vm.deleteCase(scase)
                               }
                             }
                           },
@@ -92457,7 +92456,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\r\n        List of Cases\r\n        "),
+      _vm._v("\n        List of Cases\n        "),
       _c(
         "a",
         {
@@ -92954,7 +92953,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\r\n        Case Services Table\r\n        "),
+      _vm._v("\n        Case Services Table\n        "),
       _c(
         "button",
         {
@@ -93474,7 +93473,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\r\n        Case Technologies Table\r\n        "),
+      _vm._v("\n        Case Technologies Table\n        "),
       _c(
         "button",
         {

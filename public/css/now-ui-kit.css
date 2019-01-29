@@ -11194,6 +11194,7 @@ html {
 .wkn-case-card {
   -webkit-box-shadow: -1px 10px 29px 0px rgba(0, 0, 0, 0.8);
           box-shadow: -1px 10px 29px 0px rgba(0, 0, 0, 0.8);
+  border-radius: 0.25rem !important;
 }
 
 .outer-div {
