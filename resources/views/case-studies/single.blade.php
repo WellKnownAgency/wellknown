@@ -15,7 +15,7 @@
 @stop
 
 @section('content')
-<div class="page-header" style="background-color: {{$scase->filter_color}};">
+<div class="page-header" style="background: {{$scase->filter_color}};">
   <div class="page-header-image" style="background-image: url('/images/cases/{{ $scase->header_image }}') ">
   </div>
   <div class="container">

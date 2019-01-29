@@ -13,7 +13,7 @@
 @section('content')
 <!-- Header -->
 <div class="wrapper">
-	<div class="page-header page-header-small" style="background-image: url('../images/cases/case-studies.jpg');background-repeat: no-repeat;  background-size: auto;">
+	<div class="page-header page-header-small" style="background-image: url('../images/cases/case-studies-bg.jpg');background-repeat: no-repeat;  background-size: auto;">
 			<div class="container">
 					<div class="row">
 							<div class="col-md-10 ml-auto mr-auto text-center" style="padding-top: 5px;">
