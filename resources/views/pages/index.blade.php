@@ -128,10 +128,10 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-3 offset-md-1">
+        <div class="col-md-3">
           <div class="card-container first-card">
             <div class="card-component">
-              <a href="/fancy-flowers" target="_blank">
+              <a href="case-studies/fancy-flowers" target="_blank">
                 <div class="front">
                   <img src="/images/fflowermain.jpg">
                 </div>
@@ -142,7 +142,7 @@
         <div class="col-md-3">
           <div class="card-container second-card">
             <div class="card-component">
-              <a href="/born-to-move" target="_blank">
+              <a href="case-studies/born-to-move" target="_blank">
                 <div class="front">
                   <img src="/images/btmpagem.jpg">
                 </div>
@@ -153,9 +153,20 @@
         <div class="col-md-3">
           <div class="card-container third-card">
             <div class="card-component">
-              <a href="/omdarling" target="_blank">
+              <a href="case-studies/omdarling" target="_blank">
                 <div class="front">
                   <img src="/images/omdarlingmain.jpg">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card-container forth-card">
+            <div class="card-component">
+              <a href="case-studies/lanjeron" target="_blank">
+                <div class="front">
+                  <img src="/images/lanj.jpg">
                 </div>
               </a>
             </div>
