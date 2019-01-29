@@ -1,8 +1,8 @@
 @extends('layout.maincase')
 
-@section('title', '{{$scase->seotitle}} | WellKnown Agency Case Studies')
+@section('title', "$scase->seotitle | WellKnown Agency Case Studies")
 
-@section('description', '{{$scase->dscr}}')
+@section('description', "$scase->dscr")
 
 @section('keywords', '')
 
