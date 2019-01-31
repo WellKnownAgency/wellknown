@@ -239,7 +239,7 @@ canvas {
                 <p class="card-description">
                   Fully created Online Flowers Delivery store...
                 </p>
-                <a href="/fancy-flowers" target="_blank" class="btn btn-danger btn-round">
+                <a href="/case-studies/fancy-flowers" target="_blank" class="btn btn-danger btn-round">
                   <i class="now-ui-icons ui-1_send"></i> View Case
                 </a>
               </div>
@@ -253,7 +253,7 @@ canvas {
                 <p class="card-description">
                   Personal Blog...
                 </p>
-                <a href="/omdarling" target="_blank" class="btn btn-danger btn-round">
+                <a href="/case-studies/omdarling" target="_blank" class="btn btn-danger btn-round">
                   <i class="now-ui-icons ui-1_send"></i> View case
                 </a>
               </div>
@@ -268,7 +268,7 @@ canvas {
                 <p class="card-description">
                   Moving Company Website with High Quality SEO...
                 </p>
-                <a href="/born-to-move" target="_blank" class="btn btn-danger btn-round">
+                <a href="/case-studies/born-to-move" target="_blank" class="btn btn-danger btn-round">
                   <i class="now-ui-icons ui-1_send"></i> View case
                 </a>
               </div>
