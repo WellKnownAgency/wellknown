@@ -38,6 +38,9 @@
             <a class="dropdown-item {{ Request::is('landing-pages') ?"active-a" : ""}}" href="/landing-pages">
               <i class="fa fa-newspaper wk-icons"></i>  <span>Landing Pages</span>
             </a>
+            <a class="dropdown-item {{ Request::is('content-marketing') ?"active-a" : ""}}" href="/content-marketing">
+              <i class="far fa-edit wk-icons"></i>  <span>Content Marketing</span>
+            </a>
           </div>
         </li>
        <li class="nav-item {{ Request::is('case-studies') ?"active" : ""}}">

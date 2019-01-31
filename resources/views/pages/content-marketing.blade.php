@@ -13,11 +13,11 @@
 @section('content')
 <!-- Header -->
 <div class="wrapper">
-	<div class="page-header page-header-small" style="background-image: url('../images/landing/landing-page-header.jpg');">
+	<div class="page-header page-header-small" style="background-image: url('../images/content/content-bg.jpg');">
 			<div class="container">
 					<div class="row">
 							<div class="col-md-8 ml-auto mr-auto text-center" style="padding-top: 5px;">
-									<h1 class="title landing_page_header">EFFICIENT LANDING PAGE SERVICES</h1>
+									<h1 class="title landing_page_header" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);">CONTENT MARKETING SERVICES</h1>
 							</div>
 							<div class="col-md-10 ml-auto mr-auto">
 									<div class="card card-raised card-form-horizontal card-plain" data-background-color="">
@@ -30,245 +30,270 @@
 			</div>
 
 	</div>
-	<div class="section section-about-us">
+	<div class="section section-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="image-container">
+            <img class="img img-raised rounded img-comments rellax" data-rellax-speed="1" src="/images/content/content-1.jpg">
+            <img class="img img-raised rounded img-blog rellax" data-rellax-speed="4" src="/images/content/content-2.jpg">
+          </div>
+        </div>
+        <div class="col-md-6 ml-auto mr-auto">
+          <div class="section-description">
+            <h2 class="title">WHAT IS CONTENT MARKETING?</h2>
+            <h5 class="description">Content marketing is the promotion of a company through useful materials: newsletters, articles in a blog and mass media, publications in social networks. The method is suitable for complex goods and services, for example, for online courses or consulting. To sell them, you have to explain for a long time what the product is useful for and how to use it. Fast advertising methods will not help here. Content marketing is the rights of the customer to make an informed choice - in your favor! There is no need to shout that your product is the best. The buyer does not need advertising, he needs information.
+							<br>
+							<br>
+							Many companies publish news on the site, but this does not mean that they are engaged in content marketing. The basis of content marketing is strategy and persistence. It is necessary to regularly produce useful materials. If once a year to publish a useful article or write a useless text twice a week, there will be no effect.
+						</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+	<div class="section section-content" style="background-color:#FAFAFA;">
+    <div class="container">
+			<div class="row">
+				<div class="col-md-10 ml-auto mr-auto text-center">
+					<h2 class="title">HOW DOES CONTENT MARKETING WORK?</h2>
+				</div>
+			</div>
+      <div class="row">
+        <div class="col-md-5">
+						<h5 style="font-size:1.5em; text-align: justify; text-justify: inter-word; padding-top:40px;">
+							The trick of content marketing is to create and correctly distribute content that is attractive to the target audience. In no case will it be advertising or hidden ads, but it will increase customer confidence in the brand and allow the company to get the maximum of leads. At the same time, effective content marketing is a complex of elements and actions, a single mechanism, every detail of which should work like a swiss clock.
+						</h5>
+        </div>
+        <div class="col-md-6 ml-auto mr-auto">
+          <div class="section-description">
+						<h4 style="padding-bottom:10px;"><strong>WHAT IS INCLUDED IN CONTENT MARKETING STRATEGY:</strong></h4>
+						<ul class="nav nav-pills nav-pills-info nav-pills-just-icons" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active content_strategy_steps" data-toggle="tab" href="#link1" role="tablist">
+									<p class="content_strategy_steps">1</p>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link content_strategy_steps" data-toggle="tab" href="#link2" role="tablist">
+									<p class="content_strategy_steps">2</p>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link content_strategy_steps" data-toggle="tab" href="#link3" role="tablist">
+									<p class="content_strategy_steps">3</p>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link content_strategy_steps" data-toggle="tab" href="#link4" role="tablist">
+									<p class="content_strategy_steps">4</p>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link content_strategy_steps" data-toggle="tab" href="#link5" role="tablist">
+									<p class="content_strategy_steps">5</p>
+								</a>
+							</li>
+						</ul>
+						<div class="tab-content tab-space">
+							<div class="tab-pane active" id="link1">
+								<p>
+									Setting goals and objectives (What the company wants to achieve, and whether it can be done with the help of content. A good goal: to launch an expert blog to explain the benefits of the product. Bad goal: increase sales by the end of the quarter).
+								</p>
+							</div>
+							<div class="tab-pane" id="link2">
+								<p>
+									Analysis of the target audience. You can not create high-quality content without knowing your audience. By the method of analysis we find out its characteristics, interests, we create characters and images;
+								</p>
+							</div>
+							<div class="tab-pane" id="link3">
+								<p>
+									Research successful competitors. It is ideal to study exactly those competitors who managed to attract the maximum of clients with content marketing tools;
+								</p>
+							</div>
+							<div class="tab-pane" id="link4">
+								<p>
+									Copyrighting. What content you will create, will you be able to do it yourself or will attract specialists, what budget you will stick to, etc .;
+								</p>
+							</div>
+							<div class="tab-pane" id="link5">
+								<p>
+									Identify distribution channels. Here it is important to proceed from the content strategy and determine the effectiveness of information distribution channels, choosing the best.
+								</p>
+							</div>
+						</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	<div class="section section-content">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8 ml-auto mr-auto text-center">
-					<h2 class="title">Why Landing Page is Vital Today?</h2>
-					<h5 class="description">Choosing is difficult, and people really do not like to do it. They want to be convinced of the right choice. Remember how difficult it is to choose a movie in an online movie theater or pizza on the website. Landing helps with the choice. The choice has already been made, we just convince the user that this choice is correct and necessary.</h5>
+				<div class="col-md-10 ml-auto mr-auto text-center">
+					<h2 class="title">WELLKNOWN AGENCY PROVIVES FOLLOWING CONTENT MARKETING SERVICES:</h2>
 				</div>
 			</div>
-			<div class="separator separator-primary"></div>
-			<div class="section-story-overview">
-				<div class="row">
-					<div class="col-md-6">
-						<!-- First image on the left side -->
-						<div class="image-container image-left" style="background-image: url('/images/landing/landing-page-2.jpg');">
-							<p class="blockquote blockquote-primary">It's important to formulate an exact proposal for your audience and once again determine why you want to use the landing.
-							</p>
-						</div>
-						<!-- Second image on the left side of the article -->
-						<div class="image-container image-left-bottom"></div>
-					</div>
-					<div class="col-md-5">
-						<!-- First image on the right side, above the article -->
-						<div class="image-container image-right" style="background-image: url('/images/landing/landing-page-1.jpg');"></div>
-						<h3 class="landing_page_steps_header">When do We Use Landings?</h3>
-						<p>In brief, a landing page is useful if you know exactly what and whom you are selling.</p>
-							<h6 class="landing_page_step">1. Sell goods and services</h6>
-						<p>Landing can sell anything: jewels, cinema tickets, consultations, and soft toys. An important condition - the goods count must be little. If you have a catalog of goods in 10 categories, it is better to make an online store.
-						</p>
-							<h6 class="landing_page_step">2. Collect leads</h6>
-						<p>Lead is a visitor who is likely to buy something from you. For example, 10 people came to the website, 5 reached the presentation section, two downloaded it. These two are the leads you can operate with. You can send emails, advertisements, sell additional services.
-						</p>
-							<h6 class="landing_page_step">3. When the main site is already exist</h6>
-						<p>If you have a regular website, you can use a landing page for individual ad campaigns. For example, you have a consulting agency. On the website you can talk about yourself, the conditions of collaboration and completed projects. Advertise separate services is better on the landing.
-						</p>
-							<h6 class="landing_page_step">4. When there is no main website</h6>
-						<p>Well, no, and not necessary. If you sew leather wallets or cotton dresses, you do not have to pretend a big atelier. Enough to make a landing page that will only advertise your items.
-						</p>
-							<h6 class="landing_page_step">5. When it is a startup</h6>
-						<p>Landing will help you understand whether your product is needed in the market. You can launch a one-page site in a few hours, and advertising will lead to the first customers.
-						</p>
+			<br>
+			<div class="row content_marketing_wkn_services_row">
+				<div class="col-md-2 align-self-center">
+					<i class="now-ui-icons ui-1_check content_marketing_wkn_check"></i>
+ 				</div>
+				<div class="col-md-10 align-self-center">
+				<p class="content_marketing_wkn_services">
+					The creation of textual content (topical articles on the site, corporate blog, etc.) - at least 40 thousand characters per month (for some projects up to 2-3 million characters - believe, we can). Each text is written with the requirements of SEO - not for searching, but for people.
+				</p>
+				</div>
+			</div>
+			<div class="row content_marketing_wkn_services_row">
+				<div class="col-md-2 align-self-center">
+					<i class="now-ui-icons ui-1_check content_marketing_wkn_check"></i>
+ 				</div>
+				<div class="col-md-10 align-self-center">
+					<p class="content_marketing_wkn_services">
+					Monthly expansion of the semantic core (elaboration - from 50 new queries per month).
+				</p>
+				</div>
+			</div>
+			<div class="row content_marketing_wkn_services_row">
+				<div class="col-md-2 align-self-center">
+					<i class="now-ui-icons ui-1_check content_marketing_wkn_check"></i>
+ 				</div>
+				<div class="col-md-10 align-self-center">
+					<p class="content_marketing_wkn_services">
+					Search, purchase and processing of illustrations for the site.
+				</p>
+				</div>
+			</div>
+			<div class="row content_marketing_wkn_services_row">
+				<div class="col-md-2 align-self-center">
+					<i class="now-ui-icons ui-1_check content_marketing_wkn_check"></i>
+ 				</div>
+				<div class="col-md-10 align-self-center">
+					<p class="content_marketing_wkn_services">
+						Layout of materials on the site (with the requirements of SEO and usability).
+				</p>
+				</div>
+			</div>
+			<div class="row content_marketing_wkn_services_row">
+				<div class="col-md-2 align-self-center">
+					<i class="now-ui-icons ui-1_check content_marketing_wkn_check"></i>
+ 				</div>
+				<div class="col-md-10 align-self-center">
+					<p class="content_marketing_wkn_services">
+						Elaboration of the external reference environment, increase in the number of quality backlinks, compliance with backlink plans.
+				</p>
+				</div>
+			</div>
+			<div class="row content_marketing_wkn_services_row">
+				<div class="col-md-2 align-self-center">
+					<i class="now-ui-icons ui-1_check content_marketing_wkn_check"></i>
+				</div>
+				<div class="col-md-10 align-self-center">
+					<p class="content_marketing_wkn_services">
+						Content placement in social networks, community management.
+				</p>
+				</div>
+			</div>
+			<div class="row content_marketing_wkn_services_row">
+				<div class="col-md-2 align-self-center">
+					<i class="now-ui-icons ui-1_check content_marketing_wkn_check"></i>
+				</div>
+				<div class="col-md-10 align-self-center">
+					<p class="content_marketing_wkn_services">
+						Organization of internal links on the site, taking into account the relevance of the project map.
+				</p>
+				</div>
+			</div>
+			<div class="row content_marketing_wkn_services_row">
+				<div class="col-md-2 align-self-center">
+					<i class="now-ui-icons ui-1_check content_marketing_wkn_check"></i>
+				</div>
+				<div class="col-md-10 align-self-center">
+					<p class="content_marketing_wkn_services">
+						Infographics for the project (optional).
+				</p>
+				</div>
+			</div>
+			<div class="row content_marketing_wkn_services_row">
+				<div class="col-md-2 align-self-center">
+					<i class="now-ui-icons ui-1_check content_marketing_wkn_check"></i>
+				</div>
+				<div class="col-md-10 align-self-center">
+					<p class="content_marketing_wkn_services">
+						Video content for the project (optional).
+				</p>
+				</div>
+			</div>
 
-					</div>
+			<div class="row" style="padding-top:50px;">
+				<div class="col-md-10 ml-auto mr-auto text-center">
+					<blockquote class="blockquote blockquote-primary">
+					  <p class="mb-0">
+							<i style="font-size:1.25em; color:#000">Information</i> - this is why the client comes to the site. The audience needs information about your products and services, delivery times and costs, your reliability and reputation. Content marketing is a job, first of all, with the quality of the information flow and with the ways of its distribution in the network. A content promotion site is the promotion of the information in the network that you consider necessary to convey to the audience.
+						</p>
+					</blockquote>
 				</div>
 			</div>
+
 		</div>
 	</div>
+
 	<div class="features-4" style="padding-top:0px; background-color:#FAFAFA;">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 ml-auto mr-auto text-center">
-					<h2 class="title">Not convinced yet?</h2>
+					<h2 class="title">THE PRICE OF CONTENT MARKETING DENEPNDS ON:</h2>
 				</div>
 			</div>
 			<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-3">
 							<div class="info info-hover icon-landing">
-									<div class="icon icon-landing icon-circle">
-											<i class="now-ui-icons education_hat"></i>
+									<div class="icon">
+											<img src="/images/content/1-red.png" width="auto" height="100"></img>
 									</div>
-									<h4 class="info-title">Not cleary understand the technique of creating a good landing?</h4>
-									<p class="landing_page_questions">We combined theory and practice to built a consistent strategy: what you need to know and what to be able to make web project successful.</p>
+									<h4 class="info-title info-title-content">Site status and visibility in search engines</h4>
 							</div>
 					</div>
 
-					<div class="col-md-4">
-							<div class="info info-hover">
-									<div class="icon icon-grey icon-circle">
-											<i class="now-ui-icons users_circle-08"></i>
+					<div class="col-md-3">
+							<div class="info info-hover icon-landing">
+									<div class="icon">
+											<img src="/images/content/2-red.png" width="auto" height="100"></img>
 									</div>
-									<h4 class="info-title">Don't understand how to define your target audience?</h4>
-										<br>
-										<br>
-									<p class="landing_page_questions">We have years of experience helping different businesses to define and to discover their exact customer.</p>
+									<h4 class="info-title">Required content volumes per day / week / month</h4>
 							</div>
 					</div>
 
-					<div class="col-md-4">
-							<div class="info info-hover">
-									<div class="icon icon-grey icon-circle">
-											<i class="now-ui-icons design_vector"></i>
+					<div class="col-md-3">
+							<div class="info info-hover icon-landing">
+									<div class="icon">
+											<img src="/images/content/3-red.png" width="auto" height="100"></img>
 									</div>
-									<h4 class="info-title">Do not know how to mobilize your creative potential?</h4>
-										<br>
-										<br>
-									<p class="landing_page_questions">We know how to avoid boring decisions that are not impressive, and what to do so that the landing catches the clients.</p>
+									<h4 class="info-title">Content distribution channels</h4>
+							</div>
+					</div>
+
+					<div class="col-md-3">
+							<div class="info info-hover icon-landing">
+									<div class="icon">
+											<img src="/images/content/4-red.png" width="auto" height="100"></img>
+									</div>
+									<h4 class="info-title">Depth of immersion in the subject of business, etc.</h4>
 							</div>
 					</div>
 			</div>
-
-		</div>
-	</div>
-	<div class="pricing-2">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 ml-auto mr-auto text-center">
-					<h2 class="title">Pick the best plan fits for you</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="card card-pricing card-plain">
-						<div class="card-body">
-							<p class="category price_category">Extended</p>
-							<p class="card-title card_price_title">
-								<small>$</small>399</h1>
-							<ul>
-								<li>
-									<b>
-										<i class="now-ui-icons ui-1_check check_price_landing"></i>
-									</b> Design concept
-								</li>
-								<li>
-									<b>
-										<i class="now-ui-icons ui-1_check check_price_landing"></i>
-									</b> Optimized for your target audience
-								</li>
-								<li>
-									<b>
-										<i class="now-ui-icons ui-1_check check_price_landing"></i>
-									</b> Unlimited Revisions
-								</li>
-								<li>
-									<b>
-										<i class="now-ui-icons ui-1_check check_price_landing"></i>
-									</b> Fully responsive
-								</li>
-								<li>
-									<b>
-										<i class="now-ui-icons ui-1_check check_price_landing"></i>
-									</b> Unique copyrighting
-								</li>
-								<li>
-									<b>
-										<i class="now-ui-icons ui-1_check check_price_landing"></i>
-									</b> Additional icons and illustrations
-								</li>
-								<li>
-									<b>
-										<i class="now-ui-icons ui-1_check check_price_landing"></i>
-									</b> Stock images (up to 3)
-								</li>
-							</ul>
-							<a href="/contact-us" class="btn btn-primary btn-round">
-								Order Now
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="card card-pricing card-background card-raised" style="background-color:#FFCDD2;">
-						<div class="card-body">
-							<p class="category price_category">Standart</p>
-							<p class="card-title card_price_title">
-								<small>$</small>299</h1>
-								<ul>
-									<li>
-										<b>
-											<i class="now-ui-icons ui-1_check check_price_landing"></i>
-										</b> Design concept
-									</li>
-									<li>
-										<b>
-											<i class="now-ui-icons ui-1_check check_price_landing"></i>
-										</b> Optimized for your target audience
-									</li>
-									<li>
-										<b>
-											<i class="now-ui-icons ui-1_check check_price_landing"></i>
-										</b> 5 Revisions
-									</li>
-									<li>
-										<b>
-											<i class="now-ui-icons ui-1_check check_price_landing"></i>
-										</b> Fully responsive
-									</li>
-									<li>
-										<b>
-											<i class="now-ui-icons ui-1_check check_price_landing"></i>
-										</b> Unique copyrighting
-									</li>
-									<li>
-										<b>
-										</b> Additional icons and illustrations
-									</li>
-									<li>
-										<b>
-										</b> Stock images (up to 3)
-									</li>
-								</ul>
-							<a href="/contact-us" class="btn btn-neutral btn-round">
-								Order Now
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="card card-pricing card-plain">
-						<div class="card-body">
-							<p class="category price_category">Basic</p>
-							<p class="card-title card_price_title">
-								<small>$</small>199</h1>
-								<ul>
-									<li>
-										<b>
-											<i class="now-ui-icons ui-1_check check_price_landing"></i>
-										</b> Design concept
-									</li>
-									<li>
-										<b>
-											<i class="now-ui-icons ui-1_check check_price_landing"></i>
-										</b> Optimized for your target audience
-									</li>
-									<li>
-										<b>
-											<i class="now-ui-icons ui-1_check check_price_landing"></i>
-										</b> 3 Revisions
-									</li>
-									<li>
-										<b>
-										</b> Fully responsive
-									</li>
-									<li>
-										<b>
-										</b> Unique copyrighting
-									</li>
-									<li>
-										<b>
-										</b> Additional icons and illustrations
-									</li>
-									<li>
-										<b>
-										</b> Stock images (up to 3)
-									</li>
-								</ul>
-							<a href="/contact-us" class="btn btn-primary btn-round">
-								Order Now
-							</a>
-						</div>
-					</div>
+			<div class="row" style="padding-top:50px;">
+				<div class="col-md-12 ml-auto mr-auto">
+					  <p class="mb-0" style="font-size:1.25em;">
+							The price starts from <i style="font-size:1.25em; color:#000"> 500 dollars.</i> Make a request using the form below or order a callback in right corner the navigation bar.
+							<br>
+							<br>
+							We are sure that content marketing is still an undervalued tool. This means that its value in the market is not as high as it deserves.
+						</p>
 				</div>
 			</div>
 		</div>
