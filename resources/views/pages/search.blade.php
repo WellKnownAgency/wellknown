@@ -158,6 +158,29 @@ canvas {
         </div>
       </div>
 		</section>
+		<!--     *********    TESTIMONIALS 2     *********      -->
+		<div class="testimonials-2 testimonials-seo">
+			<div class="container">
+				<div class="card card-testimonial card-plain"  style="margin-top:0; margin-bottom:0;">
+					<div class="row">
+					<div class="col-md-3">
+						<a target="_blank" href="https://clutch.co/profile/wellknown-agency">
+							<img class="rounded-circle img-raised" src="images/dmitrii.jpg" />
+						</a>
+					</div>
+					<div class="card-body col-md-7 align-self-center" style="margin-top:15px;">
+						<p class="card-description" style="font-size:1.5em;">"Their ability to increase our online visibility in a market as competitive as ours shows that they were the right choice."
+						</p>
+						<p class="card-title" style="font-size:2em; margin-bottom:5px;">Dmitrii Malashkin</p>
+						<div class="card-footer">
+							<a target="_blank" href="https://clutch.co/profile/wellknown-agency"><p class="category text-primary" style="font-size:1.3em;">Owner, Born to Move, LLC</p><a/>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<!--     *********    END TESTIMONIALS 2      *********      -->
     <div class="pricing-1 section-image" id="pricing-1" style="background-image: url('/images/search/seo-bg-prices.jpg')">
     <div class="container">
         <div class="row">
@@ -249,29 +272,7 @@ canvas {
     </div>
 	</div>
 
-	<!--     *********    TESTIMONIALS 2     *********      -->
-	<div class="testimonials-2 testimonials-seo">
-		<div class="container">
-			<div class="card card-testimonial card-plain"  style="margin-top:0; margin-bottom:0;">
-				<div class="row">
-				<div class="col-md-3">
-					<a href="https://clutch.co/profile/wellknown-agency">
-						<img class="rounded-circle img-raised" src="images/dmitrii.jpg" />
-					</a>
-				</div>
-				<div class="card-body col-md-7 align-self-center" style="margin-top:15px;">
-					<p class="card-description" style="font-size:1.5em;">"Their ability to increase our online visibility in a market as competitive as ours shows that they were the right choice."
-					</p>
-					<p class="card-title" style="font-size:2em; margin-bottom:5px;">Dmitrii Malashkin</p>
-					<div class="card-footer">
-						<a href="https://goborntomove.com"><p class="category text-primary" style="font-size:1.3em;">Owner, Born to Move, LLC</p><a/>
-					</div>
-				</div>
-			</div>
-			</div>
-		</div>
-	</div>
-	<!--     *********    END TESTIMONIALS 2      *********      -->
+
 
 @stop
 @section('customjs')
