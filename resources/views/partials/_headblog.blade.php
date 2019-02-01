@@ -53,8 +53,8 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-109464444-1');
+	gtag('config', 'AW-823555244');
 </script>
 
 <!-- Google Tag Manager -->

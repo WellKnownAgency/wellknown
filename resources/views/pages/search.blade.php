@@ -16,7 +16,24 @@ canvas {
 }
 </style>
 @stop
-
+@section('extrahead')
+<!-- Event snippet for Contact us conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-823555244/kx7RCOT5rZQBEKzp2YgD',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+@stop
 @section('content')
 <!-- Header -->
 <div class="wrapper">
@@ -264,7 +281,7 @@ canvas {
 													<li>Up to 100 Keywords Tracking</li>
 													<li>Weekly and Monthly Reporting</li>
                         </ul>
-                        <a href="/contact-us" class="btn btn-neutral btn-danger btn-round">Contact us</a>
+                        <a onclick="return gtag_report_conversion('https://wknown.com/contact-us');" href="/contact-us" class="btn btn-neutral btn-danger btn-round">Contact us</a>
                     </div>
                 </div>
             </div>

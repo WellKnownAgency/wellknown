@@ -25,8 +25,8 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-109464444-1');
+	gtag('config', 'AW-823555244');
 </script>
 
 <!-- Facebook Pixel Code -->
@@ -59,3 +59,4 @@
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
 <script charset="UTF-8" src="//cdn.sendpulse.com/js/push/55daa6c7717540677e17c7978950d4bf_1.js" async></script>
+@yield('extrahead')
