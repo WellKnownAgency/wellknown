@@ -1,8 +1,8 @@
 @extends('layout.mainservices')
 
-@section('title', 'Search Engine Optimization | SEO')
+@section('title', 'Search Engine Optimization | SEO Services')
 
-@section('description', 'Our Search Engine Optimization Company provide you with SEO Experts for Your Local SEO Business needs.')
+@section('description', 'Our Search Engine Optimization Company provide you with SEO Experts for Your Local Search Business needs. Our SEO Services include offsite, onsite, link building and more.')
 
 @section('keywords', 'Search Engine Optimization Services, SEO Agency, Services Company, Local SEO, SEO Expert')
 
@@ -28,7 +28,7 @@ canvas {
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center" style="padding-top: 100px;">
             <h1 class="title">Search Engine Optimization</h1>
-            <h4 class="page_header_dscr">From nowhere to top ten</h4>
+            <h4 class="page_header_dscr">With Our SEO Services you will be in top 10 guaranteed!</h4>
           </div>
           <div class="col-md-10 ml-auto mr-auto">
             <div class="card card-raised card-form-horizontal card-plain" data-background-color>

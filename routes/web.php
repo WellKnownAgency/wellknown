@@ -71,9 +71,15 @@ Route::get('sitemap.xml', 'PagesController@sitemap');
 Route::get('contact-us', 'PagesController@getContactus');
 
 /* Cases */
-Route::get('fancy-flowers', 'PagesController@fancyflowers');
-Route::get('born-to-move', 'PagesController@borntomove');
-Route::get('omdarling', 'PagesController@omdarling');
+Route::get('/fancy-flowers', function(){
+    return Redirect::to('/case-studies/fancy-flowers', 301);
+});
+Route::get('/born-to-move', function(){
+    return Redirect::to('/case-studies/born-to-move', 301);
+});
+Route::get('/omdarling', function(){
+    return Redirect::to('/case-studies/omdarling', 301);
+});
 
 /* Blog */
 Route::get('blog', 'PagesController@blogIndex');

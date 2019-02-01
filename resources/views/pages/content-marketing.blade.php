@@ -2,7 +2,7 @@
 
 @section('title', 'Content Marketing Services')
 
-@section('description', 'Sell Online? Beautiful web page design for exactly your audience. Our Services help build right landing page to describe your product and sell it.')
+@section('description', 'Content research and strategy, regular blog postings and more you can achieve with our Agency Content Marketing Services. Contact now for a free consultation.')
 
 @section('keywords', '')
 
@@ -134,7 +134,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 ml-auto mr-auto text-center">
-					<h2 class="title">WELLKNOWN AGENCY PROVIVES FOLLOWING CONTENT MARKETING SERVICES:</h2>
+					<h2 class="title">WELLKNOWN AGENCY PROVIDES FOLLOWING CONTENT MARKETING SERVICES:</h2>
 				</div>
 			</div>
 			<br>
