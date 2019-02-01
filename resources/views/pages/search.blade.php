@@ -159,7 +159,6 @@ canvas {
       </div>
 		</section>
     <div class="pricing-1 section-image" id="pricing-1" style="background-image: url('/images/search/seo-bg-prices.jpg')">
-
     <div class="container">
         <div class="row">
             <div class="col-md-6 ml-auto mr-auto text-center">
@@ -249,6 +248,39 @@ canvas {
         </div>
     </div>
 	</div>
+
+	<!--     *********    TESTIMONIALS 2     *********      -->
+	<div class="testimonials-2">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div id="carouselExampleIndicators2" class="carousel slide">
+						<div class="carousel-inner" role="listbox">
+							<div class="carousel-item active justify-content-center">
+								<div class="card card-testimonial card-plain"  style="margin-top:0; margin-bottom:0;">
+									<div class="card-avatar">
+										<a href="https://clutch.co/profile/wellknown-agency">
+											<img class="img img-raised rounded" src="images/dmitrii.jpg" />
+										</a>
+									</div>
+									<div class="card-body">
+										<h5 class="card-description">"Their ability to increase our online visibility in a market as competitive as ours shows that they were the right choice."
+										</h5>
+										<h3 class="card-title">Dmitrii Malashkin</h3>
+										<div class="card-footer">
+											<a href="https://goborntomove.com"><h6 class="category text-primary">Owner, Born to Move, LLC</h6><a/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--     *********    END TESTIMONIALS 2      *********      -->
+
 @stop
 @section('customjs')
 <script>
