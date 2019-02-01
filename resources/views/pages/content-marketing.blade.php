@@ -289,7 +289,7 @@
 			<div class="row" style="padding-top:50px;">
 				<div class="col-md-12 ml-auto mr-auto">
 					  <p class="mb-0" style="font-size:1.25em;">
-							The price starts from <i style="font-size:1.25em; color:#000"> 500 dollars.</i> Make a request using the button below or order a callback in right corner of the navigation bar.
+							The price starts from <i style="font-size:1.25em; color:#000"> 500 dollars.</i> Make a request using the button below or make a call in right corner of the navigation bar.
 							<br>
 							<br>
 							We are sure that content marketing is still an undervalued tool. This means that its value in the market is not as high as it deserves.
