@@ -30,8 +30,13 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://wknown.com/smm</loc>
+  <loc>https://wknown.com/social-media-marketing</loc>
   <lastmod>2019-01-18T01:04:07+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://wknown.com/content-marketing</loc>
+  <lastmod>2019-01-31T01:04:07+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
