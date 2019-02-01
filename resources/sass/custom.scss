@@ -366,3 +366,9 @@ font-size: 1.75em;
 .info-title-content{
   color: #888888;
 }
+
+@media only screen and (max-width : 767px) {
+.testimonials-seo{
+padding-bottom: 0;
+ }
+}
