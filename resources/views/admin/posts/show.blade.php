@@ -67,26 +67,43 @@
         </div>
     </div>
 
-    <div class="section section-blog-info">
+		<div class="section-blog-info">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 ml-auto mr-auto">
-
                     <div class="row">
                         <div class="col-md-6">
-                            <a href="#pablo" class="btn btn-google btn-round pull-right">
-                                <i class="fab fa-google"></i> 232
+                            <a id="shareb" href="https://plus.google.com/share?url={{ urlencode(Request::fullUrl()) }}" class="btn btn-google btn-round pull-right">
+                                <i class="fab fa-google"></i>
                             </a>
-                            <a href="#pablo" class="btn btn-twitter btn-round pull-right">
-                                <i class="fab fa-twitter"></i> 910
+                            <a id="shareb" href="https://twitter.com/intent/tweet?url={{ urlencode(Request::fullUrl()) }}" class="btn btn-twitter btn-round pull-right">
+                                <i class="fab fa-twitter"></i>
                             </a>
-                            <a href="#pablo" class="btn btn-facebook btn-round pull-right">
-                                <i class="fab fa-facebook-square"></i> 872
+                            <a id="shareb" href="https://www.facebook.com/sharer.php?u={{ urlencode(Request::fullUrl()) }}" class="btn btn-facebook btn-round pull-right">
+                                <i class="fab fa-facebook-square"></i>
                             </a>
                         </div>
                     </div>
-
-                    <hr>
+                    <hr id="author">
+                    <div  class="card card-profile card-plain">
+                      <div class="row">
+                        <div class="col-md-2">
+                          <div class="card-avatar">
+                            <a href="#pablo">
+                              <img class="img img-raised" src="/images/users/{{$post->user->avatar}}">
+                            </a>
+                            <div class="ripple-container"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-8">
+                          <h4 class="card-title">{{$post->user->name}}</h4>
+                          <p class="description">{{$post->user->dscr}}</p>
+                        </div>
+                        <div class="col-md-2">
+                          <a href="#subscribe" class="btn btn-default pull-right btn-round">Subscribe</a>
+                        </div>
+                      </div>
+                    </div>
                 </div>
             </div>
         </div>
