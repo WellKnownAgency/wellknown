@@ -43,6 +43,10 @@ Route::prefix('admin')->middleware('auth:web')->group(function() {
         'except' => ['create', 'show', 'update', 'edit']
       ]);
 
+			Route::resource('events', 'EventsController', [
+        'except' => ['create', 'show', 'update', 'edit']
+      ]);
+
   });
 
 /* Notifications */
