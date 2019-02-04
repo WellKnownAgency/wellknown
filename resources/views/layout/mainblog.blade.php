@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	@include('partials/_headblog')
+	@include('partials/_head')
 	@yield('customcss')
 	</head>
 	<body class="index-page sidebar-collapse">
