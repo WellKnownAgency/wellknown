@@ -1,4 +1,4 @@
-@extends('layout.mainblog')
+@extends('layout.main')
 
 @section('title', "$post->seotitle")
 
@@ -47,6 +47,17 @@
 }
 p {
     font-size: 1.4em !important;
+}
+.modal.modal-primary .modal-content {
+		margin-top: 100px;
+    background-color: #dc3741;
+    color: #FFFFFF;
+}
+.modal-content .modal-footer button {
+    /* margin: 0; */
+    /* padding-left: 16px; */
+    /* padding-right: 16px; */
+    width: 100%;
 }
 </style>
 @stop
@@ -133,7 +144,7 @@ p {
                           <p class="description">{{$post->user->dscr}}</p>
                         </div>
                         <div class="col-md-2">
-                          <a href="#subscribe" class="btn btn-default pull-right btn-round">Subscribe</a>
+                          <button data-toggle="modal" data-target="#loginModal" class="btn btn-default pull-right btn-round">Subscribe</button>
                         </div>
                       </div>
                     </div>
@@ -179,60 +190,48 @@ p {
 		</div>
 	</div>
 </div>
+<div class="modal fade modal-primary" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-login">
+    <div class="modal-content" id="app">
+      <div class="card card-login card-plain">
+        <div class="modal-header justify-content-center">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            <i class="now-ui-icons ui-1_simple-remove"></i>
+          </button>
+					<div>
+						<h4 class="title">Get New Posts every Week!</h4>
+					</div>
 
-<div class="subscribe-line subscribe-line-white" id="subscribe">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <h4 class="title">Get New Posts every Week!</h4>
-              <p class="description">
-                Join our newsletter and get latest blog news in your inbox every week! We hate spam too, so no worries about this.
-              </p>
-            </div>
-            <div class="col-md-6">
-              <div class="card card-plain card-form-horizontal">
-                <div class="card-content">
-                  <form method="" action="">
-                    <div class="row">
-                      <div class="col-sm-8">
-                        <div class="input-group">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="now-ui-icons ui-1_email-85"></i></span>
-                          </div>
-                          <input type="text" class="form-control" placeholder="Email Name...">
-                        </div>
-                      </div>
-                      <div class="col-sm-4">
-                        <a href="#" class="btn btn-primary btn-round btn-block">Subscribe</a>
-                      </div>
-                    </div>
-                  </form>
+        </div>
+				<form class="form">
+        <div class="modal-body" data-background-color>
+            <div class="card-body">
+              <div class="input-group form-group-no-border input-lg">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
                 </div>
+                <input type="text" v-model="sub.name" class="form-control" placeholder="Your Name...">
+              </div>
+              <div class="input-group form-group-no-border input-lg">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="now-ui-icons ui-1_email-85"></i></span>
+                </div>
+                <input type="text" v-model="sub.email" class="form-control" placeholder="Your Email...">
               </div>
             </div>
-          </div>
         </div>
+        <div class="modal-footer text-center">
+          <button type="button" @click.prevent="subscribe" data-dismiss="modal" class="btn btn-neutral btn-round btn-lg btn-block">Subscribe</button>
+        </div>
+				</form>
       </div>
-      <div itemscope itemtype="http://schema.org/Article" style="display:none;">
-  			<div itemprop="headline">{{ $post->title }}</div>
-  			<div itemprop="author">{{ $post->user->name }}</div>
-        <div itemprop="datePublished">{{ $post->created_at }}</div>
-        <div itemprop="dateModified">{{ $post->updated_at }}</div>
-        <div itemprop="image">https://wknown.com/images/blog/{{ $post->image }}</div>
-        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-            <img src="https://wknown.com/images/wk.jpg"/>
-            <meta itemprop="url" content="https://wknown.com/images/wk.jpg">
-            <meta itemprop="width" content="130px">
-            <meta itemprop="height" content="62px">
-          </div>
-          <meta itemprop="name" content="WellKnown Agency">
-  	    </div>
-        <link itemprop="mainEntityOfPage" href="https://wknown.com/blog/{{$post->slug}}" />
-      </div>
+    </div>
+  </div>
+</div>
 @stop
 
 @section('customjs')
+
 <script>
 
    var popupSize = {
@@ -257,5 +256,45 @@ p {
        }
 
    });
+</script>
+<script src="{!! asset('js/vue.js') !!}"></script>
+<script src="{!! asset('js/axios.js') !!}"></script>
+<script src="{!! asset('js/sweetalert.js') !!}"></script>
+
+<script>
+const app = new Vue({
+el: '#app',
+data: () => ({
+  sub:{
+		name: '',
+    email: ''
+  }
+}),
+methods: {
+	subscribe () {
+	 axios.post('/api/postsub', this.sub)
+			 .then((res) => {
+				 this.sub.name = ''
+				 this.sub.emil = ''
+			 })
+
+			 .then((res) => {
+				 swal({
+						 icon: "success",
+						 title: 'Yeah',
+						 text: 'You Successfully Subscribed!'
+					 })
+			 })
+			 .catch((err) =>{
+				 console.log(err)
+				 swal({
+						 icon: "warning",
+						 title: 'Ooops...',
+						 text: 'Something went wrong!'
+					 })
+				 })
+	},
+	}
+})
 </script>
 @endsection

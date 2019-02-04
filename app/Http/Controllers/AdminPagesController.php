@@ -78,4 +78,9 @@ class AdminPagesController extends Controller
     return view('admin.calendar');
     }
 
+		public function subs()
+    {
+    return view('admin.subs');
+    }
+
 }
