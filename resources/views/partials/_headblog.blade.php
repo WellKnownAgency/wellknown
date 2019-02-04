@@ -12,34 +12,6 @@
 <meta name="keywords" content="@yield('keywords')">
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
-
-<!-- Schema.org markup for Google+ -->
-<meta itemprop="name" content="@yield('title')">
-<meta itemprop="description" content="@yield('description')">
-<meta itemprop="image" content="@yield('image')">
-
-<!-- Twitter Card data -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@WKnownMarketing">
-<meta name="twitter:title" content="@yield('title')">
-<meta name="twitter:description" content="@yield('description')">
-<meta name="twitter:creator" content="@taras_kim">
-<!-- Twitter summary card with large image must be at least 280x150px -->
-<meta name="twitter:image:src" content="@yield('image')">
-
-<!-- Open Graph data -->
-<meta property="og:title" content="@yield('title')" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="{{url()->current()}}" />
-<meta property="og:image" content="@yield('image')" />
-<meta property="og:description" content="@yield('description')" />
-<meta property="og:site_name" content="WellKnown" />
-<meta property="article:published_time" content="@yield('created')" />
-<meta property="article:modified_time" content="@yield('updated')" />
-<meta property="article:section" content="@yield('category')" />
-<meta property="article:tag" content="@yield('keywords')" />
-<meta property="fb:admins" content="153425045259276" />
-
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({
