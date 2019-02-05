@@ -14,7 +14,6 @@
 <meta property="og:description" content="@yield('description')" />
 
 @yield('preload')
-@yield('customcss')
 <link href="{!! asset('css/bootstrap.min.css') !!}" media="all" rel="stylesheet" type="text/css" />
 <link href="{!! asset('css/now-ui-kit.css') !!}" media="all" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -60,3 +59,4 @@
 </script>
 <script charset="UTF-8" src="//cdn.sendpulse.com/js/push/55daa6c7717540677e17c7978950d4bf_1.js" async></script>
 @yield('extrahead')
+<script type="text/javascript" src="https://static1.clutch.co/api/widget.js"></script>

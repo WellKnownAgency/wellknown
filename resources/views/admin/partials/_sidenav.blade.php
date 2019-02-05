@@ -32,6 +32,7 @@
       <a class="dropdown-item" href="/admin/posts">Posts</a>
       <a class="dropdown-item" href="">Comments</a>
       <a class="dropdown-item" href="/admin/categories">Categories</a>
+			<a class="dropdown-item" href="/admin/subscribers">Subscribers</a>
     </div>
   </li>
 	<li class="nav-item dropdown {{ Request::is('admin/cases','admin/caseservices',	'admin/casetechnologies') ?"active" : ""}}">

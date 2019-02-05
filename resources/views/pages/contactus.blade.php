@@ -151,8 +151,8 @@ select.form-control:not([size]):not([multiple]) {
     </div>
 @stop
 @section('customjs')
-<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="{!! asset('js/vue.js') !!}"></script>
+<script src="{!! asset('js/axios.js') !!}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 
 <script>
