@@ -46,11 +46,11 @@
 			<div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" display:none;>
 	        <meta itemprop="itemReviewed" content="WellKnown Agency" />
 	        <meta itemprop="ratingValue" content="5" />
-	        <meta itemprop="reviewCount" content="3" />
+	        <meta itemprop="reviewCount" content="5" />
 	    </div>
 			<span itemprop="telephone" display:none; content="+13395450956">(339)545-0956</span>
 			<span itemprop="email" display:none; content="info@wknown.com">info@wknown.com</a>
-			<span itemprop="legalName" display:none; content="WellKnwn Agency LLC"></span>
+			<span itemprop="legalName" display:none; content="WellKnown Agency LLC"></span>
     </div>
 
 		@include('partials/_js')
