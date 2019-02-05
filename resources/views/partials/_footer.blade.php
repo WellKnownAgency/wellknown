@@ -22,7 +22,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-3">
           <h5 style="color:#fff;">Services</h5>
           <ul class="links-vertical">
             <li>
@@ -52,7 +52,13 @@
             </li>
           </ul>
         </div>
-
+				<div class="col-md-3">
+					<h5 style="color:#fff;">Trusted by</h5>
+					<ul class="links-vertical">
+						<li><div class="clutch-widget" data-url="https://clutch.co" data-widget-type="1" data-height="50" data-darkbg="1" data-clutchcompany-id="308961"></div></li>
+						<li><img src="/images/google-partner.png" height="40px" width="auto"/></li>
+					</ul>
+				</div>
         <div class="col-md-4">
           <h5 style="color:#fff;">Follow Us</h5>
           <ul class="social-buttons">
