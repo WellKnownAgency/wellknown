@@ -52,14 +52,20 @@
             </li>
           </ul>
         </div>
-				<div class="col-md-3">
+				<div class="col-md-2">
 					<h5 style="color:#fff;">Trusted by</h5>
 					<ul class="links-vertical">
-						<li><div class="clutch-widget" data-url="https://clutch.co" data-widget-type="1" data-height="50" data-darkbg="1" data-clutchcompany-id="308961"></div></li>
-						<li><img src="/images/google-partner.png" height="40px" width="auto"/></li>
+						<li style="margin-bottom:5px;"><div class="clutch-widget" data-url="https://clutch.co" data-widget-type="1" data-height="50" data-darkbg="1" data-clutchcompany-id="308961"></div></li>
+						<li style="margin-bottom:5px;"><img src="/images/google-partner.png" height="40px" width="auto"/></li>
 					</ul>
 				</div>
-        <div class="col-md-4">
+				<div class="col-md-2">
+					<h5 style="color:#fff;"> </h5>
+					<ul class="links-vertical">
+						<li style="margin-bottom:5px;"><a href="https://www.bark.com/en/company/wellknown/g8zQ2/" data-version="2.0" target="_blank" class="bark-widget" data-image="small-gold">WellKnown</a><script type="text/javascript" src="https://www.bark.com/js/widgets.min.js" defer=""></script></li>
+					</ul>
+				</div>
+        <div class="col-md-2">
           <h5 style="color:#fff;">Follow Us</h5>
           <ul class="social-buttons">
             <li>
