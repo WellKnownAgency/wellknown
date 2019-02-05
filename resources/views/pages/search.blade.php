@@ -44,7 +44,7 @@ function gtag_report_conversion(url) {
       <div class="container">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center" style="padding-top: 100px;">
-            <h1 class="title">Search Engine Optimization</h1>
+            <h1 class="title">Search Engine Optimization Services</h1>
             <h4 class="page_header_dscr">With Our SEO Services you will be in top 10 guaranteed!</h4>
           </div>
           <div class="col-md-10 ml-auto mr-auto">
@@ -175,28 +175,55 @@ function gtag_report_conversion(url) {
         </div>
       </div>
 		</section>
-		<!--     *********    TESTIMONIALS 2     *********      -->
-		<div class="testimonials-2 testimonials-seo">
-			<div class="container">
-				<div class="card card-testimonial card-plain"  style="margin-top:0; margin-bottom:0;">
-					<div class="row">
-					<div class="col-md-3">
-						<a target="_blank" href="https://clutch.co/profile/wellknown-agency">
-							<img class="rounded-circle img-raised" src="images/dmitrii.jpg" />
-						</a>
-					</div>
-					<div class="card-body col-md-7 align-self-center" style="margin-top:15px;">
-						<p class="card-description" style="font-size:1.5em;">"Their ability to increase our online visibility in a market as competitive as ours shows that they were the right choice."
-						</p>
-						<p class="card-title" style="font-size:2em; margin-bottom:5px;">Dmitrii Malashkin</p>
-						<div class="card-footer">
-							<a target="_blank" href="https://clutch.co/profile/wellknown-agency"><p class="category text-primary" style="font-size:1.3em;">Owner, Born to Move, LLC</p><a/>
-						</div>
-					</div>
-				</div>
-				</div>
-			</div>
+
+<div class="section section-testimonials">
+	<div class="row">
+		<div class="col-md-8 ml-auto mr-auto text-center">
+			<h4 class="title">Any Questions?</h4>
+			<h5>Ready to get started? Call  <a href="tel:3395450956">(339) 545-0956</span></h5>
+
 		</div>
+	</div>
+</div>
+
+		<!--     *********    TESTIMONIALS 2     *********      -->
+		<div class="section section-testimonials">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto text-center">
+          <h2 class="title">What Our Clients Say</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="carouselExampleIndicators2" class="carousel slide">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active justify-content-center">
+                <div class="card card-testimonial card-plain">
+                  <div class="card-avatar">
+                    <a href="https://clutch.co/profile/wellknown-agency">
+                      <img class="img img-raised rounded" src="/images/dmitrii.jpg" />
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <a href="https://clutch.co/profile/wellknown-agency"><p class="card-description" style="font-size:1.5em;">"Their ability to increase our online visibility in a market as competitive as ours shows that they were the right choice!"
+                    </p></a>
+                    <p class="card-title" style="font-size:2em; margin-bottom:5px;">Dmitrii Malashkin</p>
+                    <a href="https://clutch.co/profile/wellknown-agency"><p class="category text-primary">Owner, Born to Move, LLC</p></a>
+                    <div class="card-footer">
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 		<!--     *********    END TESTIMONIALS 2      *********      -->
     <div class="pricing-1 section-image" id="pricing-1" style="background-image: url('/images/search/seo-bg-prices.jpg')">
     <div class="container">
