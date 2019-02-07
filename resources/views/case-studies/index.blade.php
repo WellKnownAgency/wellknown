@@ -8,6 +8,7 @@
 
 
 @section('customcss')
+
 @stop
 
 @section('content')
@@ -39,7 +40,7 @@
 					@foreach($scases as $scase)
           <div class="col-md-6"  style="margin-bottom:30px;">
             <div class=" wkn-case-card  outer-div">
-              <div  onclick="window.location='case-studies/{{ $scase->slug }}';" class="inner-div card card-background card-background-product card-no-shadow" style="background-image: url('/images/cases/{{ $scase->header_image }}'); cursor: pointer;">
+              <div  onclick="window.location='case-studies/{{ $scase->slug }}';" class="inner-div card card-background card-background-product card-no-shadow" style="background-image: url('/images/cases/{{ $scase->header_image }}');background: {{$scase->filter_color}}; cursor: pointer;">
                 <div class="card-body">
                   <h6 class="category">{{ $scase->title_work }}</h6>
                   <h2 class="card-title">
