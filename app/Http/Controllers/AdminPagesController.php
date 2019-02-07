@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\SeoProject;
+use App\Lead;
 use Illuminate\Http\Request;
 use App\Category;
+use Carbon\Carbon;
 
 class AdminPagesController extends Controller
 {

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Sub;
+use Carbon\Carbon;
 
 class SubController extends Controller
 {
@@ -25,5 +26,12 @@ class SubController extends Controller
 			$sub->save();
 
 			return $sub;
+		}
+
+		public function indexDashSubs()
+		{
+			$subs = Sub::whereBetween('created_at', [Carbon::now()->startOfWeek(),Carbon::now()->endOfWeek()])->get();
+
+			return $subs;
 		}
 }

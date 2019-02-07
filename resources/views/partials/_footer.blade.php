@@ -65,7 +65,7 @@
 						<li style="margin-bottom:5px;"><a href="https://www.bark.com/en/company/wellknown/g8zQ2/" data-version="2.0" target="_blank" class="bark-widget" data-image="small-gold">WellKnown</a><script type="text/javascript" src="https://www.bark.com/js/widgets.min.js" defer=""></script></li>
 					</ul>
 				</div>
-        <div class="col-md-2">
+        <div class="col-md-3">
           <h5 style="color:#fff;">Follow Us</h5>
           <ul class="social-buttons">
             <li>

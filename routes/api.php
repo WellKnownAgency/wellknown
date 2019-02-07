@@ -30,6 +30,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
   Route::put('leads/lastemail/{id}','LeadsController@donelastemail');
   /* End of Lead Routes */
 
+	Route::get('dashsubs', 'SubController@indexDashSubs');
+
   /* Notifications */
 
   /*Endof Notifications */

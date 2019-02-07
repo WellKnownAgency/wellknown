@@ -9,6 +9,7 @@ use App\Notifications\IntroEmail;
 use Illuminate\Http\Request;
 use App\Lead;
 use App\User;
+use Carbon\Carbon;
 
 class LeadsController extends Controller
 {
@@ -35,7 +36,7 @@ class LeadsController extends Controller
 
   public function indexDashleads()
   {
-      $leads = Lead::with('source')->with('status')->where('status_id', '=', 1)->take(5)->latest()->get();
+      $leads = Lead::with('source')->whereBetween('created_at', [Carbon::now()->startOfWeek(),Carbon::now()->endOfWeek()])->with('status')->get();
 
       return $leads;
   }

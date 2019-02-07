@@ -17,11 +17,11 @@
           <div class="card text-white bg-primary o-hidden">
             <div class="card-body">
               <div class="card-body-icon">
-                <i class="fas fa-fw fa-comments"></i>
+                <i class="fas fa-fw fa-hands-helping"></i>
               </div>
-              <div class="mr-5">26 New Messages!</div>
+              <div class="mr-5">{{leads.length}} New Lead(s) This Week!</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="#">
+            <a class="card-footer text-white clearfix small z-1" href="/admin/leads">
               <span class="float-left">View Details</span>
               <span class="float-right">
                 <i class="fas fa-angle-right"></i>
@@ -33,11 +33,11 @@
           <div class="card text-white bg-warning o-hidden">
             <div class="card-body">
               <div class="card-body-icon">
-                <i class="fas fa-fw fa-list"></i>
+                <i class="far fa-fw fa-hand-point-up"></i>
               </div>
-              <div class="mr-5">11 New Tasks!</div>
+              <div class="mr-5">{{subs.length}} New Sub(s) This Week!</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="#">
+            <a class="card-footer text-white clearfix small z-1" href="/admin/subscribers">
               <span class="float-left">View Details</span>
               <span class="float-right">
                 <i class="fas fa-angle-right"></i>
@@ -79,22 +79,36 @@
         </div>
       </div>
 
-      <!-- Area Chart Example-->
-      <div class="card mb-3">
-        <div class="card-header">
-          <i class="fas fa-chart-area"></i>
-          Area Chart Example</div>
-        <div class="card-body">
-          <canvas id="myAreaChart" width="100%" height="30"></canvas>
-        </div>
-        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-      </div>
+			<div class="row">
+	      <!-- Area Chart Example-->
+				<div class="col-xl-3 col-sm-6 mb-3">
+					<div class="card text-white bg-secondary o-hidden">
+						<div class="card-body">
+							<div class="card-body-icon">
+								<i class="fas fa-fw fa-list"></i>
+							</div>
+							<div class="mr-5">SEO Services</div>
+							<br>
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item" style="background-color:transparent;"><strong>Greetings.</strong>
+									<br>Greet and Introduce yourself. Explain why and from where you are calling. Ask about How is person doing.</li>
+								<li class="list-group-item" style="background-color:transparent;"><strong>Personal Info.</strong>
+								<br> Ask for personal information. Use Lead form to fill out to create a new lead or add more info to already existent one.</li>
+								<li class="list-group-item" style="background-color:transparent;"><strong>Lead's Goals.</strong>
+								<br> Ask about what lead is looking to achieve from SEO services. What experience with SEO he had before. Leave this information in the "message" section of the Lead.</li>
+								<li class="list-group-item" style="background-color:transparent;">Porta ac consectetur ac</li>
+								<li class="list-group-item" style="background-color:transparent;">Vestibulum at eros</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 
       <!-- DataTables Example -->
       <div class="card mb-3">
         <div class="card-header">
           <i class="fas fa-table"></i>
-          List of Leads <a href="admin/leads" class="btn btn-success" style="float:right;" >View Leads</a></div>
+          List of This Week Leads <a href="admin/leads" class="btn btn-success" style="float:right;" >View Leads</a></div>
         <div class="card-body">
           <div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -130,13 +144,13 @@ var moment = require('moment');
     export default {
       mounted() {
         this.fetchLeads(),
-        this.fetchStatuses(),
-        this.fetchSources()
+        this.fetchSubs()
       },
 
       data () {
         return {
           moment: moment,
+					subs:[],
           leads: [],
           lead: {
             id: '',
@@ -189,8 +203,16 @@ var moment = require('moment');
                    console.log(err)
                  })
                },
+							 fetchSubs () {
+	 	            axios.get('/api/dashsubs')
+	 	                 .then((res) => {
+	 	                   this.subs = res.data
+	 	                 })
+	 	                 .catch((err) => {
+	 	                   console.log(err)
+	 	                 })
+	 	               },
+	 	            }
             }
-        }
-
 
 </script>
