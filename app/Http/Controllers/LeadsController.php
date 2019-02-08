@@ -72,14 +72,6 @@ class LeadsController extends Controller
       $user->notify(new NewLead($lead));
     }
 
-		OneSignal::sendNotificationToAll(
-        "New Lead",
-        $url = null,
-        $data = null,
-        $buttons = null,
-        $schedule = null
-    );
-
     return response($lead);
   }
 
