@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Events\NewLeadPush;
 use App\Notifications\NewLead;
 use App\Notifications\FollowUpEmail;
 use App\Notifications\LastEmail;
@@ -73,9 +72,15 @@ class LeadsController extends Controller
       $user->notify(new NewLead($lead));
     }
 
-		event(new NewLeadPush($lead));
+		OneSignal::sendNotificationToAll(
+        "New Lead",
+        $url = https://wknown.com/admin/leads,
+        $data = null,
+        $buttons = null,
+        $schedule = null
+    );
 
-    return response($lead, 201);
+    return response($lead);
   }
 
   public function show($id)
