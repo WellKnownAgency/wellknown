@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\NewLeadPush;
 use App\Notifications\NewLead;
 use App\Notifications\FollowUpEmail;
 use App\Notifications\LastEmail;
@@ -72,7 +73,9 @@ class LeadsController extends Controller
       $user->notify(new NewLead($lead));
     }
 
-    return $lead;
+		event(new NewLeadPush($lead));
+
+    return response($lead, 201);
   }
 
   public function show($id)

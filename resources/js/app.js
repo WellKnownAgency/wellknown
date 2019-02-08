@@ -44,6 +44,7 @@ Vue.component('cases', require('./components/Cases.vue'));
 Vue.component('caseservices', require('./components/CaseServices.vue'));
 Vue.component('casetechnologies', require('./components/CaseTechnologies.vue'));
 Vue.component('subs', require('./components/Subs.vue'));
+Vue.component('pushnot', require('./components/Pushnot.vue'));
 
 
 

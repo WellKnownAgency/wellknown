@@ -55,7 +55,7 @@
 				<div class="col-md-2">
 					<h5 style="color:#fff;">Trusted by</h5>
 					<ul class="links-vertical">
-						<li style="margin-bottom:5px;"><div class="clutch-widget" data-url="https://clutch.co" data-widget-type="1" data-height="50" data-darkbg="1" data-clutchcompany-id="308961"></div></li>
+						<li style="margin-bottom:5px;"><div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="1" data-height="50" data-darkbg="1" data-clutchcompany-id="308961"></div></li>
 						<li style="margin-bottom:5px;"><img src="/images/google-partner.png" height="40px" width="auto"/></li>
 					</ul>
 				</div>

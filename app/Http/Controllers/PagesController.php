@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\NewLeadPush;
 use App\Notifications\NewLead;
 use Illuminate\Http\Request;
 use App\Lead;
@@ -123,8 +124,9 @@ class PagesController extends Controller
       $user->notify(new NewLead($lead));
     }
 
+		event(new NewLeadPush($lead));
 
-    return redirect('/contact-us');
+    return response($lead, 201);
   }
 
   public function postComment(Request $request, $post_id) {

@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Lead extends Model
 {
+	protected $fillable = ['first_name', 'last_name'];
+
   public function source()
   {
       return $this->belongsTo('App\Source');
