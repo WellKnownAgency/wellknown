@@ -59,4 +59,4 @@
 </script>
 <script charset="UTF-8" src="//cdn.sendpulse.com/js/push/55daa6c7717540677e17c7978950d4bf_1.js" async></script>
 @yield('extrahead')
-<script type="text/javascript" src="https://static1.clutch.co/api/widget.js"></script>
+<script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>

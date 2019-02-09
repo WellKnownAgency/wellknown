@@ -54,6 +54,12 @@ select.form-control:not([size]):not([multiple]) {
 		color: #fff!important;
 	}
 </style>
+<!-- Scripts -->
+  <script>
+    window.Laravel = {!! json_encode([
+      'csrfToken' => csrf_token(),
+    ]) !!};
+  </script>
 @stop
 @section('facebook')
 <script>
@@ -156,6 +162,7 @@ select.form-control:not([size]):not([multiple]) {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 
 <script>
+
 const app = new Vue({
 el: '#app',
 data: () => ({

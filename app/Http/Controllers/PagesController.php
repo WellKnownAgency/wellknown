@@ -123,8 +123,7 @@ class PagesController extends Controller
       $user->notify(new NewLead($lead));
     }
 
-
-    return redirect('/contact-us');
+    return response($lead);
   }
 
   public function postComment(Request $request, $post_id) {

@@ -63338,6 +63338,7 @@ Vue.component('cases', __webpack_require__(422));
 Vue.component('caseservices', __webpack_require__(425));
 Vue.component('casetechnologies', __webpack_require__(428));
 Vue.component('subs', __webpack_require__(431));
+Vue.component('pushnot', __webpack_require__(443));
 
 var app = new Vue({
     el: '#app'
@@ -63345,8 +63346,11 @@ var app = new Vue({
 
 /***/ }),
 /* 186 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+throw new Error("Cannot find module \"laravel-echo\"");
 
 window._ = __webpack_require__(31);
 window.Popper = __webpack_require__(32).default;
@@ -63393,16 +63397,16 @@ if (token) {
  * allows your team to easily build robust real-time web applications.
  */
 
-// import Echo from 'laravel-echo'
 
-// window.Pusher = require('pusher-js');
 
-// window.Echo = new Echo({
-//     broadcaster: 'pusher',
-//     key: process.env.MIX_PUSHER_APP_KEY,
-//     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
-//     encrypted: true
-// });
+window.Pusher = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"pusher-js\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
+window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
+  broadcaster: 'pusher',
+  key: "",
+  cluster: "mt1",
+  encrypted: true
+});
 
 /***/ }),
 /* 187 */
@@ -77832,9 +77836,32 @@ var moment = __webpack_require__(0);
       }
     };
   },
+  created: function created() {
+    this.listenForChanges();
+  },
 
 
   methods: {
+    listenForChanges: function listenForChanges() {
+      Echo.channel('leads').listen('NewLeadPush', function (post) {
+        if (!('Notification' in window)) {
+          alert('Web Notification is not supported');
+          return;
+        }
+
+        Notification.requestPermission(function (permission) {
+          var notification = new Notification('New Lead alert!', {
+            body: lead.first_name, // content for the alert
+            icon: "https://wknown.com/images/wk.jpg" // optional image url
+          });
+
+          // link to page on clicking the notification
+          notification.onclick = function () {
+            window.open(window.location.href);
+          };
+        });
+      });
+    },
 
     sortBy: function sortBy(key) {
       if (key == this.sortKey) {
@@ -94282,6 +94309,124 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 436 */,
+/* 437 */,
+/* 438 */,
+/* 439 */,
+/* 440 */,
+/* 441 */,
+/* 442 */,
+/* 443 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(444)
+/* template */
+var __vue_template__ = __webpack_require__(445)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/Pushnot.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-23939b44", Component.options)
+  } else {
+    hotAPI.reload("data-v-23939b44", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 444 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {};
+  },
+  created: function created() {
+    this.listenForChanges();
+  },
+
+  methods: {
+    listenForChanges: function listenForChanges() {
+      Echo.channel('leads').listen('NewLeadPush', function (post) {
+        if (!('Notification' in window)) {
+          alert('Web Notification is not supported');
+          return;
+        }
+
+        Notification.requestPermission(function (permission) {
+          var notification = new Notification('New Lead alert!', {
+            body: lead.first_name, // content for the alert
+            icon: "https://wknown.com/images/wk.jpg" // optional image url
+          });
+
+          // link to page on clicking the notification
+          notification.onclick = function () {
+            window.open(window.location.href);
+          };
+        });
+      });
+    }
+  }
+});
+
+/***/ }),
+/* 445 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div")
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-23939b44", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

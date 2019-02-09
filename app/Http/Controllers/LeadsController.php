@@ -72,7 +72,7 @@ class LeadsController extends Controller
       $user->notify(new NewLead($lead));
     }
 
-    return $lead;
+    return response($lead);
   }
 
   public function show($id)
