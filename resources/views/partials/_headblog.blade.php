@@ -64,3 +64,4 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 
 <script src='https://www.google.com/recaptcha/api.js'></script>
+<script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
