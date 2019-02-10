@@ -320,6 +320,69 @@ function gtag_report_conversion(url) {
     </div>
 	</div>
 
+<div class="section">
+	<div class="col-md-12 ml-auto mr-auto">
+		<div class="container">
+		<h3 class="title" style="font-size:1.825em; text-align:center; padding-bottom:15px;">F.A.Q. ABOUT SEO SERVICES
+ 		</h3>
+		<div id="accordion" role="tablist" aria-multiselectable="true" class="card-collapse">
+			<div class="card card-plain">
+				<div class="card-header smm-collapse" role="tab" id="headingOne">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						HOW MUCH IS A SEO, HOW DO I GET A CALCULATION OF COST?
+						<i class="now-ui-icons arrows-1_minimal-down"></i>
+					</a>
+				</div>
+				<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+					<div class="card-body">
+						<blockquote class="blockquote blockquote-primary" style="padding-bottom:0;">
+				      <p>The cost of promotion depends on the subject of your site and the selected keywords. In order to get a calculation of the cost, you must contact us. We will clarify exactly what goals you set for our company, after which we will prepare an individual commercial offer to increase sales for your website. Then we can discuss it over the phone or arrange a meeting. The minimum cost of seo package is $300 / month.</p>
+				    </blockquote>
+					</div>
+				</div>
+
+			</div>
+			<div class="card card-plain">
+				<div class="card-header smm-collapse" role="tab" id="headingTwo">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+						WHAT CHANGES WILL YOU MAKE ON THE WEBSITE?
+						<i class="now-ui-icons arrows-1_minimal-down"></i>
+					</a>
+				</div>
+				<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+					<div class="card-body">
+						<blockquote class="blockquote blockquote-primary" style="padding-bottom:0;">
+							<p>
+								Starting from the first month of work, we are actively starting to modify the site code, and also in 99% of cases, both the appearance and functionality of the site. In the past few years, it is impossible to promote the site if it is lagging behind in terms of design and functionality from its TOP-10 competitors. That is why we do a complete website redesign for many of our customers. At the same time, all the work on site redesign and modernization is included in the budget and the client does not have to pay anything extra. This essentially distinguishes us from other companies, where for each change on the site from a client, an additional charge is required.
+							</p>
+				    </blockquote>
+					</div>
+				</div>
+
+			</div>
+			<div class="card card-plain">
+				<div class="card-header smm-collapse" role="tab" id="headingThree">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+						WHEN YOU CAN EXPECT THE RESULT? HOW LONG DO YOU NEED TO PAY FOR SEO MOVEMENT?
+						<i class="now-ui-icons arrows-1_minimal-down"></i>
+					</a>
+				</div>
+				<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+					<div class="card-body">
+						<blockquote class="blockquote blockquote-primary" style="padding-bottom:0;">
+							<p>
+								Usually, the client observes the first results from the second week of our work, as in most cases (if the site is of high quality) we start to bring potential clients to the site from the first month. By the end of the second month, a noticeable growth in positions in Google and other search engines is already visible, and by the sixth month, the site’s attendance reaches a significantly new level compared to what it was before we began working with us. On average, to achieve excellent results, it takes 6 months - 1 year in medium and highly competitive topics. After achieving the desired results, you also need to continue to work on the site, hold positions and develop it further. This is due to the fact that: the search engines monthly modify and adjust their algorithms, as well as competitors,  are not standing still and are constantly developing their sites.
+							</p>
+				    </blockquote>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
 
 
 @stop
