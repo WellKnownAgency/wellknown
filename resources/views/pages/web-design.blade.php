@@ -280,13 +280,11 @@ canvas {
                 <h6 class="category">Web Design & Development</h6>
                 <h3 class="card-title">Flashmoving</h3>
                 <p class="card-description">
-                  In Progress...
+                  Moving Company Website with High Quality SEO...
                 </p>
-								<!--
-                <a href="/born-to-move" target="_blank" class="btn btn-danger btn-round">
+                <a href="/case-studies/flashmoving" target="_blank" class="btn btn-danger btn-round">
                   <i class="now-ui-icons ui-1_send"></i> View case
                 </a>
-							-->
               </div>
             </div>
           </div>
