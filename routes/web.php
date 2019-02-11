@@ -83,8 +83,8 @@ Route::get('sitemap.xml', 'PagesController@sitemap');
 Route::get('contact-us', 'PagesController@getContactus');
 
 /* Cases */
-Route::get('/fancy-flowers', function(){
-    return Redirect::to('/case-studies/fancy-flowers', 301);
+Route::get('https://secure.flashmoving.net/', function(){
+    return Redirect::to('/moving-quote', 301);
 });
 Route::get('/born-to-move', function(){
     return Redirect::to('/case-studies/born-to-move', 301);
