@@ -336,7 +336,7 @@ function gtag_report_conversion(url) {
 				<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
 					<div class="card-body">
 						<blockquote class="blockquote blockquote-primary" style="padding-bottom:0;">
-				      <p>The cost of promotion depends on the subject of your site and the selected keywords. In order to get a calculation of the cost, you must contact us. We will clarify exactly what goals you set for our company, after which we will prepare an individual commercial offer to increase sales for your website. Then we can discuss it over the phone or arrange a meeting. The minimum cost of seo package is $300 / month.</p>
+				      <p>The cost of promotion depends on the subject of your website and the selected keywords. In order to get a calculation of the cost, you must contact us. We will clarify exactly what goals you set for our company, after which we will prepare an individual commercial offer to increase sales for your website. Then we can discuss it over the phone or arrange a meeting. The minimum cost of seo package is $300 / month.</p>
 				    </blockquote>
 					</div>
 				</div>
@@ -353,7 +353,7 @@ function gtag_report_conversion(url) {
 					<div class="card-body">
 						<blockquote class="blockquote blockquote-primary" style="padding-bottom:0;">
 							<p>
-								Starting from the first month of work, we are actively starting to modify the site code, and also in 99% of cases, both the appearance and functionality of the site. In the past few years, it is impossible to promote the site if it is lagging behind in terms of design and functionality from its TOP-10 competitors. That is why we do a complete website redesign for many of our customers. At the same time, all the work on site redesign and modernization is included in the budget and the client does not have to pay anything extra. This essentially distinguishes us from other companies, where for each change on the site from a client, an additional charge is required.
+								Starting from the first month of work, we are actively starting to modify the website code, and also in 99% of cases, both the appearance and functionality of the website. In the past few years, it is impossible to promote the website if it is lagging behind in terms of design and functionality from its TOP-10 competitors. That is why we do a complete website redesign for many of our customers. At the same time, all the work on website redesign and modernization is included in the budget and the client does not have to pay anything extra. This essentially distinguishes us from other companies, where for each change on the website from a client, an additional charge is required.
 							</p>
 				    </blockquote>
 					</div>
@@ -371,7 +371,7 @@ function gtag_report_conversion(url) {
 					<div class="card-body">
 						<blockquote class="blockquote blockquote-primary" style="padding-bottom:0;">
 							<p>
-								Usually, the client observes the first results from the second week of our work, as in most cases (if the site is of high quality) we start to bring potential clients to the site from the first month. By the end of the second month, a noticeable growth in positions in Google and other search engines is already visible, and by the sixth month, the site’s attendance reaches a significantly new level compared to what it was before we began working with us. On average, to achieve excellent results, it takes 6 months - 1 year in medium and highly competitive topics. After achieving the desired results, you also need to continue to work on the site, hold positions and develop it further. This is due to the fact that: the search engines monthly modify and adjust their algorithms, as well as competitors,  are not standing still and are constantly developing their sites.
+								Usually, the client observes the first results from the second week of our work, as in most cases (if the website is of high quality) we start to bring potential clients to the website from the first month. By the end of the second month, a noticeable growth in positions in Google and other search engines is already visible, and by the sixth month, the website’s attendance reaches a significantly new level compared to what it was before we began working with us. On average, to achieve excellent results, it takes 6 months - 1 year in medium and highly competitive topics. After achieving the desired results, you also need to continue to work on the website, hold positions and develop it further. This is due to the fact that: the search engines monthly modify and adjust their algorithms, as well as competitors,  are not standing still and are constantly developing their websites.
 							</p>
 				    </blockquote>
 					</div>
