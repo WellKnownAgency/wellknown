@@ -404,5 +404,7 @@ padding-bottom: 0;
 	.img_blog_post {
 	  width: 100%;
 	  height: auto;
+		-webkit-box-shadow: 0 5px 25px 0 rgba(0,0,0,.2);
+		box-shadow: 0 5px 25px 0 rgba(0,0,0,.2);
 	}
 }
