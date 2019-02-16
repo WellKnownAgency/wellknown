@@ -11289,6 +11289,13 @@ html {
   margin-bottom: 5px;
 }
 
+@media only screen and (max-width: 767px) {
+  .img_blog_post {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .tim-row {
   margin-bottom: 20px;
 }

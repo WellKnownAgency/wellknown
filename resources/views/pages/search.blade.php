@@ -204,15 +204,15 @@ function gtag_report_conversion(url) {
               <div class="carousel-item active justify-content-center">
                 <div class="card card-testimonial card-plain">
                   <div class="card-avatar">
-                    <a href="https://clutch.co/profile/wellknown-agency">
+                    <a href="https://clutch.co/profile/wellknown-agency"  target="_blank">
                       <img class="img img-raised rounded" src="/images/dmitrii.jpg" />
                     </a>
                   </div>
                   <div class="card-body">
-                    <a href="https://clutch.co/profile/wellknown-agency"><p class="card-description" style="font-size:1.5em;">"Their ability to increase our online visibility in a market as competitive as ours shows that they were the right choice!"
+                    <a href="https://clutch.co/profile/wellknown-agency" target="_blank"><p class="card-description" style="font-size:1.5em;">"Their ability to increase our online visibility in a market as competitive as ours shows that they were the right choice!"
                     </p></a>
                     <p class="card-title" style="font-size:2em; margin-bottom:5px;">Dmitrii Malashkin</p>
-                    <a href="https://clutch.co/profile/wellknown-agency"><p class="category text-primary">Owner, Born to Move, LLC</p></a>
+                    <a href="https://clutch.co/profile/wellknown-agency" target="_blank"><p class="category text-primary">Owner, Born to Move, LLC</p></a>
                     <div class="card-footer">
                       <i class="fa fa-star text-warning"></i>
                       <i class="fa fa-star text-warning"></i>
