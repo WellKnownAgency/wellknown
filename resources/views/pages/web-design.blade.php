@@ -220,6 +220,47 @@ canvas {
       </div>
     </div>
 
+		<!--     *********    TESTIMONIALS 2     *********      -->
+		<div class="section section-testimonials">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto text-center">
+          <h2 class="title">What Our Clients Say</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="carouselExampleIndicators2" class="carousel slide">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active justify-content-center">
+                <div class="card card-testimonial card-plain">
+                  <div class="card-avatar">
+                    <a href="https://clutch.co/profile/wellknown-agency" target="_blank">
+                      <img class="img img-raised rounded" src="/images/kulinich.jpg" />
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <a href="https://clutch.co/profile/wellknown-agency" target="_blank"><p class="card-description" style="font-size:1.5em;">"They take initiative and work autonomously, which is amazing!"
+                    </p></a>
+                    <p class="card-title" style="font-size:2em; margin-bottom:5px;">Anastasia Kulinich</p>
+                    <a href="https://clutch.co/profile/wellknown-agency" target="_blank"><p class="category text-primary">Owner, OM Darling</p></a>
+                    <div class="card-footer">
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+		<!--     *********    END TESTIMONIALS 2      *********      -->
+
+
     <!--     *********   CASE Studies     *********      -->
     <div class="projects-1">
       <div class="container-fluid">
@@ -280,13 +321,11 @@ canvas {
                 <h6 class="category">Web Design & Development</h6>
                 <h3 class="card-title">Flashmoving</h3>
                 <p class="card-description">
-                  In Progress...
+                  Moving Company Website with High Quality SEO...
                 </p>
-								<!--
-                <a href="/born-to-move" target="_blank" class="btn btn-danger btn-round">
+                <a href="/case-studies/flashmoving" target="_blank" class="btn btn-danger btn-round">
                   <i class="now-ui-icons ui-1_send"></i> View case
                 </a>
-							-->
               </div>
             </div>
           </div>
