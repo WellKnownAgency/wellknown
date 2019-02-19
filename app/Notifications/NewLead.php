@@ -6,9 +6,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
-use NotificationChannels\OneSignal\OneSignalChannel;
-use NotificationChannels\OneSignal\OneSignalMessage;
-use NotificationChannels\OneSignal\OneSignalWebButton;
+use Illuminate\Notifications\Messages\SlackMessage;
 
 class NewLead extends Notification
 {
@@ -33,7 +31,7 @@ class NewLead extends Notification
      */
     public function via($notifiable)
     {
-        return ['database', OneSignalChannel::class];
+        return ['database','slack'];
     }
 
     /**
@@ -50,20 +48,17 @@ class NewLead extends Notification
       ];
     }
 
-		public function toOneSignal($notifiable)
+		public function toSlack($notifiable)
     {
-        return OneSignalMessage::create()
-            ->subject("Your {$notifiable->service} account was approved!")
-            ->body("Click here to see details.")
-            ->url('http://onesignal.com')
-            ->webButton(
-                OneSignalWebButton::create('link-1')
-                    ->text('Click here')
-                    ->icon('https://upload.wikimedia.org/wikipedia/commons/4/4f/Laravel_logo.png')
-                    ->url('http://laravel.com')
-            );
+        $lead = $this->lead;
+        return (new SlackMessage)
+            ->success()
+            ->content("New lead")
+            ->attachment(function ($attachment) use ($lead) {
+                $attachment->title($lead->first_name, $lead->last_name, route('admin.leads'))
+                    ->content($lead->body);
+            });
     }
-
     /**
      * Get the array representation of the notification.
      *
@@ -73,7 +68,7 @@ class NewLead extends Notification
     public function toArray($notifiable)
     {
         return [
-            //
+
         ];
     }
 }

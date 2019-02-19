@@ -12,7 +12,7 @@
 */
 Route::prefix('admin')->middleware('auth:web')->group(function() {
   Route::get('/', 'AdminPagesController@index')->name('admin.index');
-  Route::get('/leads', 'AdminPagesController@leads');
+  Route::get('/leads', 'AdminPagesController@leads')->name('admin.leads');
   Route::get('/clients', 'AdminPagesController@clients');
   Route::get('/partners', 'AdminPagesController@partners');
   Route::get('posts', 'AdminPagesController@posts');
