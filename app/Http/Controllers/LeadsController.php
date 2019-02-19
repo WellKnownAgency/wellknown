@@ -71,6 +71,7 @@ class LeadsController extends Controller
     foreach ($users as $user) {
       $user->notify(new NewLead($lead));
     }
+		Notification::send(User::first(), new NewLead($lead));
 
     return response($lead);
   }
