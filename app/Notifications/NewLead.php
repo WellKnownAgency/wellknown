@@ -31,7 +31,7 @@ class NewLead extends Notification
      */
     public function via($notifiable)
     {
-        return ['database','slack'];
+        return ['database';
     }
 
     /**
@@ -46,18 +46,6 @@ class NewLead extends Notification
         'lead' => $this->lead,
         'message' => 'New Lead'
       ];
-    }
-
-		public function toSlack($notifiable)
-    {
-        $lead = $this->lead;
-        return (new SlackMessage)
-            ->success()
-            ->content("New lead")
-            ->attachment(function ($attachment) use ($lead) {
-                $attachment->title($lead->first_name, route('admin.leads'))
-                    ->content($lead->body);
-            });
     }
     /**
      * Get the array representation of the notification.
