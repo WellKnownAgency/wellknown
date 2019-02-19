@@ -55,7 +55,7 @@ class NewLead extends Notification
             ->success()
             ->content("New lead")
             ->attachment(function ($attachment) use ($lead) {
-                $attachment->title(['$lead->first_name' '$lead->last_name'], route('admin.leads'))
+                $attachment->title([$lead->first_name $lead->last_name], route('admin.leads'))
                     ->content($lead->body);
             });
     }
