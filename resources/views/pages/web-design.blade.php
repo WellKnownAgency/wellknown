@@ -220,6 +220,21 @@ canvas {
       </div>
     </div>
 
+		<div class="section call-to-action-section" data-background-color="gray">
+			<div class="row" style="margin-left: 0; margin-right:0;">
+				<div class="col-md-8 ml-auto mr-auto text-center">
+					<h4>Any Questions?</h4>
+					<h5>Ready to get started? Call  <a href="tel:3395450956">(339) 545-0956</span></h5>
+				</div>
+			</div>
+			<div class="row" style="margin-left: 0; margin-right:0;">
+				<div class= "col-md-8 ml-auto mr-auto text-center">
+					<a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;">GET A FREE QUOTE </a>
+				</div>
+			</div>
+		</div>
+
+
 		<!--     *********    TESTIMONIALS 2     *********      -->
 		<div class="section section-testimonials">
       <div class="row">
@@ -262,7 +277,7 @@ canvas {
 
 
     <!--     *********   CASE Studies     *********      -->
-    <div class="projects-1">
+    <div class="projects-1" style="padding-top:0;">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center">
