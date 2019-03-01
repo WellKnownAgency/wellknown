@@ -363,7 +363,7 @@ function gtag_report_conversion(url) {
 			<div class="card card-plain">
 				<div class="card-header smm-collapse" role="tab" id="headingThree">
 					<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-						WHEN YOU CAN EXPECT THE RESULT? HOW LONG DO YOU NEED TO PAY FOR SEO MOVEMENT?
+						WHEN YOU CAN EXPECT THE RESULT? HOW LONG DO YOU NEED TO PAY FOR SEO PROMOTION?
 						<i class="now-ui-icons arrows-1_minimal-down"></i>
 					</a>
 				</div>
