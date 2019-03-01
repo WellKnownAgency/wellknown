@@ -49,7 +49,7 @@ function gtag_report_conversion(url) {
           </div>
           <div class="col-md-10 ml-auto mr-auto">
             <div class="card card-raised card-form-horizontal card-plain" data-background-color>
-              <div class="card-body">
+              <div class="card-body" >
                 <a href="#freeconsultation" class="btn btn-primary btn-round btn-l">Free consultation</a>
               </div>
             </div>
