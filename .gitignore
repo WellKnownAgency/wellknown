@@ -29,3 +29,4 @@ yarn-error.log
 _ide_helper.php
 /.dockerignore
 /.phpstorm.meta.php
+*.lock
