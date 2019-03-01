@@ -8,7 +8,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Messages\SlackMessage;
 
-class NewLead extends Notification
+class NewLeadSlack extends Notification
 {
     use Queueable;
 
@@ -31,21 +31,19 @@ class NewLead extends Notification
      */
     public function via($notifiable)
     {
-        return ['database'];
+        return ['slack'];
     }
 
-    /**
-     * Get the mail representation of the notification.
-     *
-     * @param  mixed  $notifiable
-     * @return \Illuminate\Notifications\Messages\MailMessage
-     */
-    public function toDatabase($notifiable)
+		public function toSlack($notifiable)
     {
-      return [
-        'lead' => $this->lead,
-        'message' => 'New Lead'
-      ];
+        $lead = $this->lead;
+        return (new SlackMessage)
+            ->success()
+            ->content("New lead")
+            ->attachment(function ($attachment) use ($lead) {
+                $attachment->title($lead->first_name, route('admin.leads'))
+                    ->content($lead->body);
+            });
     }
     /**
      * Get the array representation of the notification.

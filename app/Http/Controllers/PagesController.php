@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Notifications\NewLead;
+use App\Notifications\NewLeadSlack;
 use Illuminate\Http\Request;
 use App\Lead;
 use App\Post;
@@ -122,6 +123,7 @@ class PagesController extends Controller
     foreach ($users as $user) {
       $user->notify(new NewLead($lead));
     }
+		$user->notify(new NewLeadSlack($lead));
 
     return response($lead);
   }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Notifications\NewLead;
+use App\Notifications\NewLeadSlack;
 use App\Notifications\FollowUpEmail;
 use App\Notifications\LastEmail;
 use App\Notifications\IntroEmail;
@@ -71,6 +72,8 @@ class LeadsController extends Controller
     foreach ($users as $user) {
       $user->notify(new NewLead($lead));
     }
+		
+		$user->notify(new NewLeadSlack($lead));
 
     return response($lead);
   }

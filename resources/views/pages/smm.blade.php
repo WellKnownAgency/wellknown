@@ -13,14 +13,14 @@
 @section('content')
 <!-- Header -->
 <div class="wrapper">
-	<div class="page-header page-header-small" style="background-image: url('../images/smm/smm-header-drk.jpg');">
+	<div class="page-header page-header" style="background-image: url('../images/smm/smm-header-drk.jpg');">
 			<div class="container">
 					<div class="row">
-							<div class="col-md-10 ml-auto mr-auto text-center" style="padding-top: 5px;">
+							<div class="col-md-10 ml-auto mr-auto text-center" style="padding-top: 100px;">
 									<h1 class="title landing_page_header">Social Media Marketing (SMM) Services</h1>
 									<h5 class="page_header_dscr">SMM promotion - will increase the sales of your business due to the wide coverage of the target audience in social networks by informing users about the products / services and interaction with potential customers.</h5>
 							</div>
-							<div class="col-md-10 ml-auto mr-auto">
+							<div class="col-md-10 ml-auto mr-auto"   style="margin-top: 50px;">
 									<div class="card card-raised card-form-horizontal card-plain" data-background-color="">
 											<div class="card-body">
 												<a href="#freeconsultation" class="btn btn-primary btn-round btn-l">Free consultation</a>
@@ -31,7 +31,7 @@
 			</div>
 	</div>
 	<div class="section">
-			<div class="row">
+			<div class="row" style="margin-left:0px;margin-right:0px; ">
 				<div class="col-md-5">
 					<div class="container">
 					<div id="productCarousel" class="carousel slide" data-ride="carousel" data-interval="8000">
