@@ -26,8 +26,9 @@ canvas {
       <canvas></canvas>
       <div class="container">
         <div class="row">
-          <div class="col-md-8 ml-auto mr-auto text-center" style="padding-top: 100px;">
+          <div class="col-md-8 ml-auto mr-auto text-center web-design-header" style="padding-top: 80px;">
             <h1 class="title">Web Design and Development</h1>
+						<h5 class="page_header_dscr">Creating an effective website is not just design and development, but also competent SEO optimization and a positive User Experience. If your business needs just such a website, we are ready to provide services for its creation.</h5>
           </div>
           <div class="col-md-10 ml-auto mr-auto">
             <div class="card card-raised card-form-horizontal card-plain" data-background-color>
@@ -114,7 +115,7 @@ canvas {
       <div class="container">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center">
-            <h2 class="title">We have many advantages</h2>
+            <h2 class="title">Our Web Design & Development Advantages</h2>
             <h4 class="description">Our team will give you the most convenient experience in building your website. You will, definitely, never regret giving us the opportunity to create your online profile.</h4>
             <div class="section-space"></div>
           </div>
@@ -250,14 +251,14 @@ canvas {
                 <div class="card card-testimonial card-plain">
                   <div class="card-avatar">
                     <a href="https://clutch.co/profile/wellknown-agency" target="_blank">
-                      <img class="img img-raised rounded" src="/images/kulinich.jpg" />
+                      <img class="img img-raised rounded" src="/images/filipp.jpg" />
                     </a>
                   </div>
                   <div class="card-body">
-                    <a href="https://clutch.co/profile/wellknown-agency" target="_blank"><p class="card-description" style="font-size:1.5em;">"They take initiative and work autonomously, which is amazing!"
+                    <a href="https://clutch.co/profile/wellknown-agency" target="_blank"><p class="card-description" style="font-size:1.5em;">"Not only have leads increased by 300%, but the time visitors spend on the website is also up thanks to WellKnown Agency’s efforts. Furthermore, clients also appreciate the new look and functionality. Their daily updates and deliverable quality contribute to a partnership that will extend into the future."
                     </p></a>
-                    <p class="card-title" style="font-size:2em; margin-bottom:5px;">Anastasia Kulinich</p>
-                    <a href="https://clutch.co/profile/wellknown-agency" target="_blank"><p class="category text-primary">Owner, OM Darling</p></a>
+                    <p class="card-title" style="font-size:2em; margin-bottom:5px;">Filipp Nesterov</p>
+                    <a href="https://clutch.co/profile/wellknown-agency" target="_blank"><p class="category text-primary">Owner, Flash Moving Company</p></a>
                     <div class="card-footer">
                       <i class="fa fa-star text-warning"></i>
                       <i class="fa fa-star text-warning"></i>
