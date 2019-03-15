@@ -5,6 +5,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
 <meta name="theme-color" content="#ffffff">
+<meta name="msvalidate.01" content="BAFEFCC2D225DD9706515B2162FF1D71" />
 <title>@yield('title')</title>
 <!-- Meta Keys -->
 <meta name="description" content="@yield('description')">
