@@ -121,11 +121,51 @@
 
 		</div>
 	</div>
-	<div class="pricing-2">
+	<!--     *********    TESTIMONIALS 2     *********      -->
+	<div class="section section-testimonials">
+		<div class="row">
+			<div class="col-md-8 ml-auto mr-auto text-center">
+				<h2 class="title">What Our Clients Say</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div id="carouselExampleIndicators2" class="carousel slide">
+					<div class="carousel-inner" role="listbox">
+						<div class="carousel-item active justify-content-center">
+							<div class="card card-testimonial card-plain">
+								<div class="card-avatar">
+									<a href="https://clutch.co/profile/wellknown-agency"  target="_blank">
+										<img class="img img-raised rounded" src="/images/dmitrii.jpg" />
+									</a>
+								</div>
+								<div class="card-body">
+									<a href="https://clutch.co/profile/wellknown-agency" target="_blank"><p class="card-description" style="font-size:1.5em;">"Their ability to increase our online visibility in a market as competitive as ours shows that they were the right choice!"
+									</p></a>
+									<p class="card-title" style="font-size:2em; margin-bottom:5px;">Dmitrii Malashkin</p>
+									<a href="https://clutch.co/profile/wellknown-agency" target="_blank"><p class="category text-primary">Owner, Born to Move, LLC</p></a>
+									<div class="card-footer">
+										<i class="fa fa-star text-warning"></i>
+										<i class="fa fa-star text-warning"></i>
+										<i class="fa fa-star text-warning"></i>
+										<i class="fa fa-star text-warning"></i>
+										<i class="fa fa-star text-warning"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--     *********    END TESTIMONIALS 2      *********      -->
+
+	<div class="pricing-2" style="padding-top:0px; padding-bottom: 20px; background-color:#FAFAFA;">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 ml-auto mr-auto text-center">
-					<h2 class="title">Pick the best plan fits for you</h2>
+					<h2 class="title" style="padding-bottom:20px;">Landing Page Pricing </h2>
 				</div>
 			</div>
 			<div class="row">
@@ -273,5 +313,129 @@
 			</div>
 		</div>
 	</div>
+
+	<!--     *********    FAQ     *********      -->
+
+	<div class="section">
+		<div class="col-md-12 ml-auto mr-auto">
+			<div class="container">
+			<h3 class="title" style="font-size:1.825em; text-align:center; padding-bottom:15px;">F.A.Q. ABOUT LANDING PAGE SERVICES
+	 		</h3>
+			<div id="accordion" role="tablist" aria-multiselectable="true" class="card-collapse">
+				<div class="card card-plain">
+					<div class="card-header smm-collapse" role="tab" id="headingOne">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="text-transform: uppercase;">
+							What is a landing page?
+							<i class="now-ui-icons arrows-1_minimal-down"></i>
+						</a>
+					</div>
+					<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+						<div class="card-body">
+							<blockquote class="blockquote blockquote-primary" style="padding-bottom:0;">
+					      <p>A landing page is a page that contains information about a service or product that is intended to “push” a user to perform a specific action (leave a request for consultation, subscribe to a newsletter, place an order to buy goods or service).</p>
+								<p>The landing page should encourage the visitor to take a targeted action. Conversion of such pages with a logical structure and attractive design, usually, is much higher than that of a regular website.</p>
+						  </blockquote>
+						</div>
+					</div>
+
+				</div>
+				<div class="card card-plain">
+					<div class="card-header smm-collapse" role="tab" id="headingTwo">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" style="text-transform: uppercase;">
+							I already have a website, do I need a landing page?
+							<i class="now-ui-icons arrows-1_minimal-down"></i>
+						</a>
+					</div>
+					<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+						<div class="card-body">
+							<blockquote class="blockquote blockquote-primary" style="padding-bottom:0;">
+								<p>
+									Creating a landing page is the right solution for your business, since this page is created specifically for selling services or a product line and presenting them from the best side. An ordinary website is mainly aimed at providing general information, acquaintance with the company and services. Depending on the subject matter of the business and the company's objectives, in some cases it is better to make a website with a homepage in the form of a landing page for each service or product.
+								</p>
+								<p>
+									Landing websites sell products and services more efficiently than other types of цуиsites and online stores. They maximize the attention of the visitor to the information that you offer. Conversion of such pages can reach 40%
+								</p>
+					    </blockquote>
+						</div>
+					</div>
+
+				</div>
+				<div class="card card-plain">
+					<div class="card-header smm-collapse" role="tab" id="headingThree">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree" style="text-transform: uppercase;">
+							How does landing page sell?
+							<i class="now-ui-icons arrows-1_minimal-down"></i>
+						</a>
+					</div>
+					<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+						<div class="card-body">
+							<blockquote class="blockquote blockquote-primary" style="padding-bottom:0;">
+								<p>
+									If you sell products or advertise services, then you should definitely use landing pages. With proper development, elaboration of a consistent page structure, stylish design, adaptive layout and setting up targeted traffic for a niche, you can get more customers, orders and increase profits.
+								</p>
+								<p>
+									A landing page is arranged in such a way that a person, scrolling down the page, goes through all stages of the sale: from grabbing attention to calling to action, receiving consistent answers to questions he has. Therefore, a landing page is called a selling page.								</p>
+					    </blockquote>
+						</div>
+					</div>
+				</div>
+				<div class="card card-plain">
+					<div class="card-header smm-collapse" role="tab" id="headingFour">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour" style="text-transform: uppercase;">
+							How does the payment goes?
+							<i class="now-ui-icons arrows-1_minimal-down"></i>
+						</a>
+					</div>
+					<div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+						<div class="card-body">
+							<blockquote class="blockquote blockquote-primary" style="padding-bottom:0;">
+								<p>
+									Payment in the development divided in 2 stages.
+								</p>
+								<p>
+									Stage 1) We make a contract and invoice for payment. You pay 50% of the cost of a landing page or website. Then it goes through all the development stages, a page is created on the selected domain, registered hosting. You check the website performance, adaptability, the work of feedback forms, callback scripts.
+								</p>
+								<p>
+									Stage 2) We make a request for the remaining 50% of the cost, you pay for it and we give you access (from hosting, mail, cms and others)
+								</p>
+					    </blockquote>
+						</div>
+					</div>
+				</div>
+				<div class="card card-plain">
+					<div class="card-header smm-collapse" role="tab" id="headingFive">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive" style="text-transform: uppercase;">
+							How do I, as a customer, involved in the development?
+							<i class="now-ui-icons arrows-1_minimal-down"></i>
+						</a>
+					</div>
+					<div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
+						<div class="card-body">
+							<blockquote class="blockquote blockquote-primary" style="padding-bottom:0;">
+								<p>
+									You participate in each development stage. Every stage is approved with you.
+								</p>
+								<p>
+									1) Fill out the brief, in which you specify your wishes for developing a landing page, we stipulate a website color palette with you.
+								</p>
+								<p>
+									2) Send the necessary materials (photos, description of the product or service, prices, certificates of employees, reviews, etc.). We accept your wishes on the functionality, structure, usability of the landing page or website.
+								</p>
+								<p>
+									3) We approve with you a prototype and design of a future page or website. Make edits if necessary
+								</p>
+								<p>
+									4) Checking the adaptability of the created page on all devices.
+								</p>
+					    </blockquote>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	</div>
+
 </div>
 @stop
