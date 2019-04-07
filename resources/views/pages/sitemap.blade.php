@@ -52,7 +52,7 @@
  @foreach($posts as $post)
         <url>
             <loc>https://wknown.com/blog/{{ $post->slug }}</loc>
-            <lastmod>{{ date('Y-m-d', strtotime($post->created_at)) }}</lastmod>
+            <lastmod>{{ date('Y-m-d', strtotime($post->updated_at)) }}</lastmod>
             <priority>0.70</priority>
         </url>
 @endforeach
