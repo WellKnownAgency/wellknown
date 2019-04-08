@@ -11,42 +11,42 @@
 </url>
 <url>
   <loc>https://wknown.com/advertising</loc>
-  <lastmod>2018-03-23T01:04:07+00:00</lastmod>
+  <lastmod>2018-04-08T01:04:07+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://wknown.com/search-engine-optimization</loc>
-  <lastmod>2018-03-23T01:04:07+00:00</lastmod>
+  <lastmod>2018-04-08T01:04:07+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://wknown.com/web-design</loc>
-  <lastmod>2018-03-23T01:04:07+00:00</lastmod>
+  <lastmod>2018-04-08T01:04:07+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://wknown.com/landing-pages</loc>
-  <lastmod>2019-01-12T01:04:07+00:00</lastmod>
+  <lastmod>2019-04-08T01:04:07+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://wknown.com/social-media-marketing</loc>
-  <lastmod>2019-01-18T01:04:07+00:00</lastmod>
+  <lastmod>2019-04-08T01:04:07+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://wknown.com/content-marketing</loc>
-  <lastmod>2019-01-31T01:04:07+00:00</lastmod>
+  <lastmod>2019-04-08T01:04:07+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://wknown.com/about-us</loc>
-  <lastmod>2018-03-23T01:04:07+00:00</lastmod>
+  <lastmod>2018-04-08T01:04:07+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://wknown.com/blog</loc>
-  <lastmod>2019-02-06T01:04:07+00:00</lastmod>
+  <lastmod>2019-04-08T01:04:07+00:00</lastmod>
   <priority>1.00</priority>
 </url>
  @foreach($posts as $post)
