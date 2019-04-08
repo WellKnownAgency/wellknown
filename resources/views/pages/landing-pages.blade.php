@@ -13,10 +13,10 @@
 @section('content')
 <!-- Header -->
 <div class="wrapper">
-	<div class="page-header page-header-small" style="background-image: url('../images/landing/landing-page-header.jpg');">
+	<div class="page-header" style="background-image: url('../images/landing/landing-page-header.jpg');">
 			<div class="container">
 					<div class="row">
-							<div class="col-md-8 ml-auto mr-auto text-center" style="padding-top: 5px;">
+							<div class="col-md-8 ml-auto mr-auto text-center" style="padding-top: 100px;">
 									<h1 class="title landing_page_header">EFFICIENT LANDING PAGE SERVICES</h1>
 							</div>
 							<div class="col-md-10 ml-auto mr-auto">

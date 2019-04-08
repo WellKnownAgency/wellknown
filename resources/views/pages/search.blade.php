@@ -336,7 +336,7 @@ function gtag_report_conversion(url) {
 				<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
 					<div class="card-body">
 						<blockquote class="blockquote blockquote-primary" style="padding-bottom:0;">
-				      <p>The cost of promotion depends on the subject of your website and the selected keywords. In order to get a calculation of the cost, you must contact us. We will clarify exactly what goals you set for our company, after which we will prepare an individual commercial offer to increase sales for your website. Then we can discuss it over the phone or arrange a meeting. The minimum cost of seo package is $300 / month.</p>
+				      <p>The cost of seo services depends on the subject of your website and the selected keywords. In order to get a calculation of the cost, you must contact us. We will clarify exactly what goals you set for our company, after which we will prepare an individual commercial offer to increase sales for your website. Then we can discuss it over the phone or arrange a meeting. The minimum cost of seo package is $300 / month.</p>
 				    </blockquote>
 					</div>
 				</div>
@@ -363,7 +363,7 @@ function gtag_report_conversion(url) {
 			<div class="card card-plain">
 				<div class="card-header smm-collapse" role="tab" id="headingThree">
 					<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-						WHEN YOU CAN EXPECT THE RESULT? HOW LONG DO YOU NEED TO PAY FOR SEO PROMOTION?
+						WHEN YOU CAN EXPECT THE RESULT? HOW LONG DO YOU NEED TO PAY FOR SEO SERVICES?
 						<i class="now-ui-icons arrows-1_minimal-down"></i>
 					</a>
 				</div>
