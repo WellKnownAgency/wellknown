@@ -248,6 +248,159 @@ canvas {
     </div>
   </div>
 </div>
+
+
+<div class="section call-to-action-section" data-background-color="gray">
+	<div class="row" style="margin-left: 0; margin-right:0;">
+		<div class="col-md-8 ml-auto mr-auto text-center">
+			<h4>Any Questions?</h4>
+			<h5>Ready to get started? Call  <a href="tel:3395450956">(339) 545-0956</span></h5>
+		</div>
+	</div>
+	<div class="row" style="margin-left: 0; margin-right:0;">
+		<div class= "col-md-8 ml-auto mr-auto text-center">
+			<a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;">GET A FREE QUOTE </a>
+		</div>
+	</div>
+</div>
+<!--     *********    TESTIMONIALS 2     *********      -->
+<div class="section section-testimonials">
+	<div class="row">
+		<div class="col-md-8 ml-auto mr-auto text-center">
+			<h2 class="title">What Our Clients Say</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div id="carouselExampleIndicators2" class="carousel slide">
+				<div class="carousel-inner" role="listbox">
+					<div class="carousel-item active justify-content-center">
+						<div class="card card-testimonial card-plain">
+							<div class="card-avatar">
+								<a href="https://clutch.co/profile/wellknown-agency"  target="_blank">
+									<img class="img img-raised rounded" src="/images/dmitrii.jpg" />
+								</a>
+							</div>
+							<div class="card-body">
+								<a href="https://clutch.co/profile/wellknown-agency" target="_blank"><p class="card-description" style="font-size:1.5em;">"Their ability to increase our online visibility in a market as competitive as ours shows that they were the right choice!"
+								</p></a>
+								<p class="card-title" style="font-size:2em; margin-bottom:5px;">Dmitrii Malashkin</p>
+								<a href="https://clutch.co/profile/wellknown-agency" target="_blank"><p class="category text-primary">Owner, Born to Move, LLC</p></a>
+								<div class="card-footer">
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--     *********    END TESTIMONIALS 2      *********      -->
+
+<div class="section" style="background:#F8F8F8";>
+	<div class="col-md-12 ml-auto mr-auto">
+		<div class="container">
+		<h3 class="title" style="font-size:1.825em; text-align:center; padding-bottom:15px;">F.A.Q. ABOUT ONLINE ADVERTISING SERVICES
+		</h3>
+		<div id="accordion" role="tablist" aria-multiselectable="true" class="card-collapse">
+			<div class="card card-plain">
+				<div class="card-header smm-collapse" role="tab" id="headingOne">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="text-transform: uppercase;">
+						Why do You need online advertising?
+						<i class="now-ui-icons arrows-1_minimal-down"></i>
+					</a>
+				</div>
+				<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+					<div class="card-body">
+						<blockquote class="blockquote blockquote-primary" style="padding-bottom:0;">
+							<p>It is not enough to order contextual advertising and set it up, but it should be competently conducted. The purpose of advertising is a constant increase in profits. And there are two sides: if the campaigns in contextual advertising are stopped, then all indicators will start to decrease. If you continue to lead the campaign - they can improve or remain stable. By indicators, we mean not only CTR and cost per click but also much more: ROI, PPV, CV, bounce rate, returns to the website, viewing depth and visit duration, etc. Maintaining occurs through traffic analytics, budget allocation, A / B tests, optimization of all processes.</p>
+						</blockquote>
+					</div>
+				</div>
+
+			</div>
+			<div class="card card-plain">
+				<div class="card-header smm-collapse" role="tab" id="headingTwo">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" style="text-transform: uppercase;">
+						What is our motivation?
+						<i class="now-ui-icons arrows-1_minimal-down"></i>
+					</a>
+				</div>
+				<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+					<div class="card-body">
+						<blockquote class="blockquote blockquote-primary" style="padding-bottom:0;">
+							<p>
+							We understand that you are absolutely not interested in CTR and other minor indicators. You are interested only in profit. And even better, we understand that the more you can earn, the more services you order from us and the more you will work with us. Therefore, we will make every effort, so that the profit will grow. In addition, when the client is satisfied, he recommends us to his friends.
+							</p>
+						</blockquote>
+					</div>
+				</div>
+
+			</div>
+			<div class="card card-plain">
+				<div class="card-header smm-collapse" role="tab" id="headingThree">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree" style="text-transform: uppercase;">
+						How will the reporting be built?
+						<i class="now-ui-icons arrows-1_minimal-down"></i>
+					</a>
+				</div>
+				<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+					<div class="card-body">
+						<blockquote class="blockquote blockquote-primary" style="padding-bottom:0;">
+							<p>
+							You will have access to all statistics. If something is not clear, or additional reporting is needed, we will do it without any problems. Once a month, the results are summarized - before / after; A / B tests conducted; all actions taken on the campaign; opportunities for extension.
+							</p>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+			<div class="card card-plain">
+				<div class="card-header smm-collapse" role="tab" id="headingFour">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour" style="text-transform: uppercase;">
+						What are the guarantees?
+						<i class="now-ui-icons arrows-1_minimal-down"></i>
+					</a>
+				</div>
+				<div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+					<div class="card-body">
+						<blockquote class="blockquote blockquote-primary" style="padding-bottom:0;">
+							<p>
+								We give a 100% guarantee that your sales will grow, provided that you:
+							</p>
+							<ul>
+								<li>
+									Implement the necessary analytics systems
+								</li>
+								<li>
+									You will regularly replenish the balance
+								</li>
+								<li>
+									Make changes to a website according to our instructions
+								</li>
+								<li>
+									It's easy to get at least 100 clicks per day in your niche.
+								</li>
+							</ul>
+							<p>
+								Alternatively, we can not guarantee customers to you, because it depends largely on a website and sales managers. Yes, we will give maximum recommendations on this topic, but no guarantees. We are responsible for the traffic, and we can guarantee that it will have the maximum target coverage. How to check it? According to the behavior of users on a website: by which requests they come, how much time is spent on a website, how many of them come back, etc.  If we do not meet these criteria, we will refund the money.
+							</p>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+</div>
+
+
 </div>
 @stop
 @section('customjs')
