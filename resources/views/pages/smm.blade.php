@@ -444,6 +444,61 @@
 		</div>
 	</div>
 
+	<div class="section" style="background:#F8F8F8";>
+		<div class="col-md-12 ml-auto mr-auto">
+			<div class="container">
+			<h3 class="title" style="font-size:1.825em; text-align:center; padding-bottom:15px;">F.A.Q. ABOUT SOCIAL MEDIA MARKETING SERVICES
+			</h3>
+			<div id="accordion" role="tablist" aria-multiselectable="true" class="card-collapse">
+				<div class="card card-plain">
+					<div class="card-header smm-collapse" role="tab" id="heading3">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3" style="text-transform: uppercase;">
+							Should the company be in all social networks at once?
+							<i class="now-ui-icons arrows-1_minimal-down"></i>
+						</a>
+					</div>
+					<div id="collapse3" class="collapse show" role="tabpanel" aria-labelledby="heading3">
+						<div class="card-body">
+							<blockquote class="blockquote blockquote-primary" style="padding-bottom:0;">
+								<p>
+									It depends on the company, its size, and goals. It is believed that the company should be present in those networks where there is the target audience - and this may not be all social networks.
+								</p>
+								<p>
+									The size of the company and its financial capabilities matter: for example, Amazon or McDonald’s can easily afford to create unique posts for all social networks at once, and for a small production of cabinet furniture in New Jersey it can be costly and meaningless.
+								</p>
+								<p>
+									It is not enough just to be present in social networks, besides, it is forbidden to simply duplicate posts from one social network to another. Everywhere has its own characteristics, and users can easily catch you in that you do not go to the page, but simply transfer posts back and forth. If you are just at the beginning, start with one group in the network where there is a significant part of your target audience.
+								</p>
+							</blockquote>
+						</div>
+					</div>
+
+				</div>
+				<div class="card card-plain">
+					<div class="card-header smm-collapse" role="tab" id="heading4">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="true" aria-controls="collapse4" style="text-transform: uppercase;">
+							How much does it cost to gain 10,000 (100,000; 1,000,000) followers?
+							<i class="now-ui-icons arrows-1_minimal-down"></i>
+						</a>
+					</div>
+					<div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="heading4">
+						<div class="card-body">
+							<blockquote class="blockquote blockquote-primary" style="padding-bottom:0;">
+								<p>
+									This question can be answered clearly and immediately in only one case - if you want to buy bots. However, bots are bad and not the solution. Consider whether you need subscribers who, at best, hang dead weight, and at worst, they will block your group.
+								</p>
+								<p>
+									In order to collect real people, you need to understand who your target audience is, what it does, what things it is interested in, what social networks it communicates in. And only then choose a promotion strategy.
+								</p>
+							</blockquote>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
 
 </div>
 @stop

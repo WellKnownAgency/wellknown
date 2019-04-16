@@ -353,7 +353,7 @@
 									Creating a landing page is the right solution for your business, since this page is created specifically for selling services or a product line and presenting them from the best side. An ordinary website is mainly aimed at providing general information, acquaintance with the company and services. Depending on the subject matter of the business and the company's objectives, in some cases it is better to make a website with a homepage in the form of a landing page for each service or product.
 								</p>
 								<p>
-									Landing websites sell products and services more efficiently than other types of цуиsites and online stores. They maximize the attention of the visitor to the information that you offer. Conversion of such pages can reach 40%
+									Landing websites sell products and services more efficiently than other types of websites and online stores. They maximize the attention of the visitor to the information that you offer. Conversion of such pages can reach 40%
 								</p>
 					    </blockquote>
 						</div>
