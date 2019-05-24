@@ -67,7 +67,7 @@
 				</div>
         <div class="col-md-3">
           <h5 style="color:#fff;">Follow Us</h5>
-          <ul class="social-buttons">
+          <ul class="social-buttons" style="margin-bottom:5px;">
             <li>
               <a href="https://twitter.com/WKnownMarketing" target="_blank" class="btn btn-icon btn-neutral btn-twitter btn-round">
                 <i class="fab fa-twitter"></i>
