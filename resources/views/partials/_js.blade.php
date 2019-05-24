@@ -28,5 +28,27 @@
 
   });
 </script>
-
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "LocalBusiness",
+  "telephone": "339-545-0956",
+	"email":"info@wknown.com",
+  "image": "https://wknown.com/images/wk.jpg",
+  "name": "WellKnown Agency",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Boston",
+    "addressRegion": "MA",
+    "postalCode": "02115",
+    "streetAddress": "358 Commonwealth avenu"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "7"
+  },
+  "url": "https://wknown.com/"
+}
+</script>
 @yield('customjs')

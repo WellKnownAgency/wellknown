@@ -85,6 +85,12 @@
             </li>
 
           </ul>
+					<ul class="links-vertical">
+						<li style="margin-bottom:5px;">358 Commonwealth avenu, Boston, MA 02115</li>
+					</ul>
+					<ul class="links-vertical">
+						<li style="margin-bottom:5px;">info@wknown.com</li>
+					</ul>
         </div>
       </div>
     </div>
