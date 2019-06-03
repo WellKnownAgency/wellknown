@@ -6,6 +6,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
 <meta name="theme-color" content="#ffffff">
 <meta name="msvalidate.01" content="BAFEFCC2D225DD9706515B2162FF1D71" />
+<meta name="p:domain_verify" content="79f1949805c90e9d8e15f318af06c4f9"/>
 <title>@yield('title')</title>
 <!-- Meta Keys -->
 <meta name="description" content="@yield('description')">
