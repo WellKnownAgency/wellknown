@@ -98,7 +98,7 @@
             <div class="col-md-5">
               <div class="card-image">
                 <a href="#pablo">
-                  <img class="rounded-circle img-raised" src="../images/img/olivia.jpg" />
+                  <img class="rounded-circle img-raised" src="../images/tolik.png" />
                 </a>
               </div>
             </div>
