@@ -31,7 +31,7 @@
     </div>
     <h3 class="h3-description rellax-text" data-rellax-speed="-1">Advertising | Marketing | Web Design | Development</h3>
   </div>
-  <div class="features-3">
+  <div class="features-3" data-aos="fade-right">
       <div class="container">
           <div class="row">
               <div class="col-md-8 ml-auto mr-auto">
@@ -73,17 +73,17 @@
           </div>
       </div>
   </div>
-  <div class="section section-content" style="background-image: url('../images/webdesign/bg-2.jpg');">
+  <div class="section section-content"  style="background-image: url('../images/webdesign/bg-2.jpg');">
     <div class="container">
       <div class="row">
         <div class="col-md-5">
           <div class="image-container">
-            <img class="img img-raised rounded img-comments rellax" data-rellax-speed="1" src="/images/philosophy2.jpg">
-            <img class="img img-raised rounded img-blog rellax" data-rellax-speed="4" src="images/philosophy1.jpg">
+            <img data-aos="fade-up" class="img img-raised rounded img-comments rellax" data-rellax-speed="1" src="/images/philosophy2.jpg">
+            <img data-aos="fade-down" class="img img-raised rounded img-blog rellax" data-rellax-speed="4" src="images/philosophy1.jpg">
           </div>
         </div>
         <div class="col-md-4 ml-auto mr-auto">
-          <div class="section-description">
+          <div class="section-description" data-aos="zoom-in">
             <h2 class="title">Agency Philosophy</h2>
             <h6 class="category">That what we think matters</h6>
             <h5 class="description">First of all, WellKnown is a full-service agency, based on a team of talented and creative people, who have a large marketing experience, unique ideas, and specific knowledge. Each of us joined the company to implement our ambitious and evolve. Your business or brand with your goals and purposes is what gives us energy and power. WellKnown is simply the best solution to make your ROI increase.</h5>
@@ -96,17 +96,17 @@
   <div class="social-line social-line-big-icons social-line-white" style="padding:40px 40px;">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="zoom-in" data-aos-duration="3000">
           <a href="https://upcity.com/local-marketing-agencies/profiles/wellknown-agency" target="_blank" class="btn btn-neutral btn-icon btn-twitter btn-footer">
             <img src="/images/upcity.png" width="100px"/>
           </a>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2500">
           <a href="https://clutch.co/profile/wellknown-agency" target="_blank" class="btn btn-neutral btn-icon btn-facebook btn-footer">
             <img src="/images/clutch.png" width="100px" />
           </a>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2000">
           <a href="https://www.goodfirms.co/companies/view/13168/wellknown-agency" target="_blank" class="btn btn-neutral btn-icon btn-google btn-footer">
             <img src="/images/gf.png" width="120px" />
           </a>
@@ -129,44 +129,52 @@
       </div>
       <div class="row">
         <div class="col-md-3">
-          <div class="card-container first-card">
+          <div class="card-container first-card" data-aos="fade-down"
+							 data-aos-easing="linear"
+							 data-aos-duration="1000">
             <div class="card-component">
               <a href="case-studies/fancy-flowers" target="_blank">
                 <div class="front">
-                  <img src="/images/fflowermain.jpg">
+                  <img  src="/images/fflowermain.jpg">
                 </div>
               </a>
             </div>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="card-container second-card">
+          <div class="card-container second-card" data-aos="fade-down"
+							 data-aos-easing="linear"
+							 data-aos-duration="1500">
             <div class="card-component">
               <a href="case-studies/born-to-move" target="_blank">
                 <div class="front">
-                  <img src="/images/btmpagem.jpg">
+                  <img  src="/images/btmpagem.jpg">
                 </div>
               </a>
             </div>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="card-container third-card">
+          <div class="card-container third-card" data-aos="fade-down"
+							 data-aos-easing="linear"
+							 data-aos-duration="2000">
             <div class="card-component">
               <a href="case-studies/omdarling" target="_blank">
                 <div class="front">
-                  <img src="/images/omdarlingmain.jpg">
+                  <img  src="/images/omdarlingmain.jpg">
                 </div>
               </a>
             </div>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="card-container forth-card">
-            <div class="card-component">
+          <div class="card-container forth-card" data-aos="fade-down"
+							 data-aos-easing="linear"
+							 data-aos-duration="2500">
+            <div class="card-component" >
               <a href="case-studies/lanjeron" target="_blank">
                 <div class="front">
-                  <img src="/images/lanj.jpg">
+                  <img  src="/images/lanj.jpg">
                 </div>
               </a>
             </div>
