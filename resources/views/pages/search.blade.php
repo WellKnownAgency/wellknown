@@ -67,11 +67,14 @@ function gtag_report_conversion(url) {
           <div class="row">
             <div class="col-md-8 ml-auto mr-auto text-center">
               <h2 class="title">Professional SEO Services <br>That Boost Your Business</h2>
-              <h5 class="description">WellKnown is a perfect SEO company to make your business rapidly growing up. If you want to raise FREE Conversions and Traffic to your Website, we can provide you a SEO Campaign with the best solutions to your particular case, that will help you expand your business on the Internet.</h4>
+              <h5 class="description">
+									WellKnown is a perfect SEO company to make your business rapidly growing up. If you want to raise FREE Conversions and Traffic to your Website, we can provide you a SEO Campaign with the best solutions to your particular case, that will help you expand your business on the Internet.</h4>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4" class="card-container first-card" data-aos="fade-up"
+								 data-aos-easing="linear"
+								 data-aos-duration="500">
               <div class="card card-background card-raised" data-background-color style="background-image: url('images/search/optimization.jpg')">
                 <div class="info">
                   <div class="icon icon-white">
@@ -84,7 +87,9 @@ function gtag_report_conversion(url) {
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4"class="card-container first-card" data-aos="fade-up"
+								 data-aos-easing="linear"
+								 data-aos-duration="600">
               <div class="card card-background card-raised" data-background-color style="background-image: url('images/search/analytics.jpg')">
                 <div class="info">
                   <div class="icon icon-white">
@@ -97,7 +102,9 @@ function gtag_report_conversion(url) {
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4"class="card-container first-card" data-aos="fade-up"
+								 data-aos-easing="linear"
+								 data-aos-duration="700">
               <div class="card card-background card-raised" data-background-color style="background-image: url('images/search/reporting.jpg')">
                 <div class="info">
                   <div class="icon icon-white">
@@ -127,7 +134,9 @@ function gtag_report_conversion(url) {
           </div>
           <div class="row">
             <div class="col-md-4">
-              <div class="info info-horizontal">
+              <div class="info info-horizontal" data-aos="fade-right"
+							data-aos-easing="linear"
+							data-aos-duration="300">
                 <div class="icon icon-info">
                   <i class="fab fa-searchengin"></i>
                 </div>
@@ -136,7 +145,9 @@ function gtag_report_conversion(url) {
                   <p>The first step of the process is keywords research, which is based on your business segment. Analyzing competitors, average monthly volume and other parametrs, we generate a list of potential keywords.</p>
                 </div>
               </div>
-              <div class="info info-horizontal">
+              <div class="info info-horizontal"data-aos="fade-right"
+							data-aos-easing="linear"
+							data-aos-duration="500">>
                 <div class="icon icon-danger">
                   <i class="fas fa-globe"></i>
                 </div>
@@ -146,13 +157,18 @@ function gtag_report_conversion(url) {
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="flip-left"
+						data-aos-easing="linear"
+						data-aos-duration="400">
               <div class="phone-container">
                 <img src="images/search/iphone-x.png" />
               </div>
             </div>
             <div class="col-md-4">
-              <div class="info info-horizontal">
+              <div class="info info-horizontal"
+							data-aos="fade-left"
+							data-aos-easing="linear"
+							data-aos-duration="700">
                 <div class="icon icon-primary">
                   <i class="fas fa-edit"></i>
                 </div>
@@ -161,7 +177,9 @@ function gtag_report_conversion(url) {
                   <p>The next step is to check website code and bring it to the correct structure. Optimizing code and pictures, page titles and meta descriptions are only a small part.</p>
                 </div>
               </div>
-              <div class="info info-horizontal">
+              <div class="info info-horizontal"data-aos="fade-left"
+							data-aos-easing="linear"
+							data-aos-duration="900">
                 <div class="icon icon-success">
                   <i class="fas fa-link"></i>
                 </div>
@@ -177,14 +195,22 @@ function gtag_report_conversion(url) {
 		</section>
 
 <div class="section call-to-action-section" data-background-color="gray">
-	<div class="row" style="margin-left: 0; margin-right:0;">
+	<div class="row" style="margin-left: 0; margin-right:0;"
+		data-aos="fade-left"
+		data-aos-offset="100"
+		data-aos-duration="500"
+		data-aos-easing="ease-in-sine">
 		<div class="col-md-8 ml-auto mr-auto text-center">
 			<h4>Any Questions?</h4>
 			<h5>Ready to get started? Call  <a href="tel:3395450956">(339) 545-0956</span></h5>
 		</div>
 	</div>
 	<div class="row" style="margin-left: 0; margin-right:0;">
-		<div class= "col-md-8 ml-auto mr-auto text-center">
+		<div class= "col-md-8 ml-auto mr-auto text-center"
+			data-aos="fade-right"
+	     data-aos-offset="100"
+			 data-aos-duration="500"
+	     data-aos-easing="ease-in-sine">
 			<a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;">GET A FREE QUOTE </a>
 		</div>
 	</div>
@@ -197,7 +223,10 @@ function gtag_report_conversion(url) {
           <h2 class="title">What Our Clients Say</h2>
         </div>
       </div>
-      <div class="row">
+      <div class="row"
+					data-aos="flip-left"
+			     data-aos-easing="ease-out-cubic"
+			     data-aos-duration="2000">
         <div class="col-md-12">
           <div id="carouselExampleIndicators2" class="carousel slide">
             <div class="carousel-inner" role="listbox">
@@ -241,7 +270,9 @@ function gtag_report_conversion(url) {
 
         <div class="row">
 
-            <div class="col-md-3">
+            <div class="col-md-3"data-aos="fade-right"
+							data-aos-easing="linear"
+							data-aos-duration="1200">
                 <div class="card card-pricing card-plain">
                     <div class="card-body">
                         <h5 class="category ">Single</h5>
@@ -260,7 +291,9 @@ function gtag_report_conversion(url) {
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3"data-aos="fade-right"
+							data-aos-easing="linear"
+							data-aos-duration="1000">
                 <div class="card card-pricing">
                     <div class="card-body">
                         <h5 class="category">Double</h5>
@@ -279,7 +312,9 @@ function gtag_report_conversion(url) {
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3"data-aos="fade-right"
+							data-aos-easing="linear"
+							data-aos-duration="700">
                 <div class="card card-pricing card-plain">
                     <div class="card-body">
                         <h5 class="category ">Triple</h5>
@@ -298,7 +333,9 @@ function gtag_report_conversion(url) {
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3"	data-aos="fade-right"
+							data-aos-easing="linear"
+							data-aos-duration="400">
                 <div class="card card-pricing card-plain">
                     <div class="card-body">
                         <h5 class="category">Quadruple</h5>
@@ -320,7 +357,7 @@ function gtag_report_conversion(url) {
     </div>
 	</div>
 
-<div class="section">
+<div class="section" data-aos="zoom-out-right" data-aos-duration="2000">
 	<div class="col-md-12 ml-auto mr-auto">
 		<div class="container">
 		<h3 class="title" style="font-size:1.825em; text-align:center; padding-bottom:15px;">F.A.Q. ABOUT SEO SERVICES

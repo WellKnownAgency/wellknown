@@ -38,7 +38,7 @@
         <div class="container-fluid">
         <div class="row">
 					@foreach($scases as $scase)
-          <div class="col-md-6"  style="margin-bottom:30px;">
+          <div class="col-md-6"  style="margin-bottom:30px;"  data-aos="zoom-in" data-aos-duration="1000">
             <div class=" wkn-case-card  outer-div">
               <div  onclick="window.location='case-studies/{{ $scase->slug }}';" class="inner-div card card-background card-background-product card-no-shadow" style="background-image: url('/images/cases/{{ $scase->header_image }}'); cursor: pointer;">
                 <div class="card-body card_color_filter" style="background:{{ $scase->filter_color }};">

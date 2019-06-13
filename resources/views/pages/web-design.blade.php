@@ -46,15 +46,24 @@ canvas {
    <div class="container">
     <div class="row">
      <div class="col-md-12">
-      <div class="hero-images-container">
+      <div class="hero-images-container"
+				data-aos="fade-left"
+				data-aos-easing="linear"
+				data-aos-duration="600">
        <img src="images/webdesign/desktop.png" alt="">
       </div>
 
-      <div class="hero-images-container-1">
+      <div class="hero-images-container-1"
+			data-aos="fade-left"
+			data-aos-easing="linear"
+			data-aos-duration="900">
        <img src="images/webdesign/ipad.png" alt="">
       </div>
 
-      <div class="hero-images-container-2">
+      <div class="hero-images-container-2"
+			data-aos="fade-left"
+			data-aos-easing="linear"
+			data-aos-duration="1200">
        <img src="images/webdesign/iphone.png" alt="">
       </div>
      </div>
@@ -101,7 +110,10 @@ canvas {
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6"
+						 data-aos="flip-up"
+						 data-aos-easing="linear"
+						 data-aos-duration="1000">
               <div class="image-container">
                 <img src="images/webdesign/ipad3.png" alt="">
               </div>
@@ -121,7 +133,10 @@ canvas {
           </div>
         </div>
         <div class="row">
-          <div class="col-md-5 ml-auto">
+          <div class="col-md-5 ml-auto"
+					 				data-aos="fade-right"
+									data-aos-easing="linear"
+									data-aos-duration="600">
             <div class="card card-background card-background-product card-raised" style="background-image: url('../images/webdesign/design.jpg')">
               <div class="card-body">
                 <h2 class="card-title">Web Design</h2>
@@ -133,7 +148,10 @@ canvas {
             </div>
           </div>
           <div class="col-md-5 mr-auto">
-            <div class="info info-horizontal">
+            <div class="info info-horizontal"
+				 				data-aos="fade-left"
+								data-aos-easing="linear"
+								data-aos-duration="600">
               <div class="icon icon-danger">
                 <i class="now-ui-icons ui-2_chat-round"></i>
               </div>
@@ -144,7 +162,10 @@ canvas {
                 </p>
               </div>
             </div>
-            <div class="info info-horizontal">
+            <div class="info info-horizontal"
+						data-aos="fade-left"
+						data-aos-easing="linear"
+						data-aos-duration="800">
               <div class="icon icon-danger">
                 <i class="now-ui-icons design_app"></i>
               </div>
@@ -155,7 +176,10 @@ canvas {
                 </p>
               </div>
             </div>
-            <div class="info info-horizontal">
+            <div class="info info-horizontal"
+						data-aos="fade-left"
+						data-aos-easing="linear"
+						data-aos-duration="1000">
               <div class="icon icon-danger">
                 <i class="now-ui-icons tech_mobile"></i>
               </div>
@@ -172,7 +196,10 @@ canvas {
 
         <div class="row">
           <div class="col-md-5 ml-auto mt-5">
-            <div class="info info-horizontal">
+            <div class="info info-horizontal"
+				 				data-aos="fade-right"
+								data-aos-easing="linear"
+								data-aos-duration="600">
               <div class="icon icon-warning">
                 <i class="now-ui-icons users_single-02"></i>
               </div>
@@ -183,7 +210,10 @@ canvas {
                 </p>
               </div>
             </div>
-            <div class="info info-horizontal">
+            <div class="info info-horizontal"
+						data-aos="fade-right"
+						data-aos-easing="linear"
+						data-aos-duration="800">
               <div class="icon icon-warning">
                 <i class="now-ui-icons objects_key-25"></i>
               </div>
@@ -194,7 +224,10 @@ canvas {
                 </p>
               </div>
             </div>
-            <div class="info info-horizontal">
+            <div class="info info-horizontal"
+						data-aos="fade-right"
+						data-aos-easing="linear"
+						data-aos-duration="1000">
               <div class="icon icon-warning">
                 <i class="now-ui-icons arrows-1_refresh-69"></i>
               </div>
@@ -206,7 +239,10 @@ canvas {
               </div>
             </div>
           </div>
-          <div class="col-md-5 mr-auto">
+          <div class="col-md-5 mr-auto"
+					data-aos="fade-left"
+					data-aos-easing="linear"
+					data-aos-duration="600">
             <div class="card card-background card-background-product card-raised" style="background-image: url('../images/webdesign/development.jpg')">
               <div class="card-body">
                 <h2 class="card-title">Web Development</h2>
@@ -222,13 +258,21 @@ canvas {
     </div>
 
 		<div class="section call-to-action-section" data-background-color="gray">
-			<div class="row" style="margin-left: 0; margin-right:0;">
+			<div class="row" style="margin-left: 0; margin-right:0;"
+			data-aos="fade-left"
+			data-aos-offset="100"
+			data-aos-duration="500"
+			data-aos-easing="ease-in-sine">
 				<div class="col-md-8 ml-auto mr-auto text-center">
 					<h4>Any Questions?</h4>
 					<h5>Ready to get started? Call  <a href="tel:3395450956">(339) 545-0956</span></h5>
 				</div>
 			</div>
-			<div class="row" style="margin-left: 0; margin-right:0;">
+			<div class="row" style="margin-left: 0; margin-right:0;"
+			data-aos="fade-right"
+			data-aos-offset="100"
+			data-aos-duration="500"
+			data-aos-easing="ease-in-sine">
 				<div class= "col-md-8 ml-auto mr-auto text-center">
 					<a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;">GET A FREE QUOTE </a>
 				</div>
@@ -243,7 +287,10 @@ canvas {
           <h2 class="title">What Our Clients Say</h2>
         </div>
       </div>
-      <div class="row">
+      <div class="row"
+			data-aos="flip-left"
+			data-aos-easing="ease-out-cubic"
+			data-aos-duration="2000">
         <div class="col-md-12">
           <div id="carouselExampleIndicators2" class="carousel slide">
             <div class="carousel-inner" role="listbox">
@@ -286,7 +333,10 @@ canvas {
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 px-0">
+          <div class="col-md-6 px-0"
+					data-aos="fade-down-right"
+					data-aos-easing="linear"
+					data-aos-duration="400">
             <div class="card card-background card-background-product card-no-shadow" style="background-image: url('/images/ffmain.jpg')">
               <div class="card-body">
                 <h6 class="category">Web Design & Development</h6>
@@ -302,7 +352,10 @@ canvas {
               </div>
             </div>
           </div>
-          <div class="col-md-6 px-0">
+          <div class="col-md-6 px-0"
+					data-aos="fade-down-left"
+					data-aos-easing="linear"
+					data-aos-duration="700">
             <div class="card card-raised card-background card-background-product card-no-shadow" style="background-image: url('/images/omdarling.jpg')">
               <div class="card-body">
                 <h6 class="category">Web Design & Development</h6>
@@ -317,7 +370,10 @@ canvas {
             </div>
           </div>
 
-          <div class="col-md-6 px-0">
+          <div class="col-md-6 px-0"
+					data-aos="fade-up-right"
+					data-aos-easing="linear"
+					data-aos-duration="1000">
             <div class="card card-background card-background-product card-no-shadow" style="background-image: url('/images/btmmain.jpg')">
               <div class="card-body">
                 <h6 class="category">Web Design & Development</h6>
@@ -331,7 +387,10 @@ canvas {
               </div>
             </div>
           </div>
-					<div class="col-md-6 px-0">
+					<div class="col-md-6 px-0"
+					data-aos="fade-up-left"
+					data-aos-easing="linear"
+					data-aos-duration="1300">
             <div class="card card-background card-background-product card-no-shadow" style="background-image: url('/images/cases/flashmoving.jpg')">
               <div class="card-body">
                 <h6 class="category">Web Design & Development</h6>

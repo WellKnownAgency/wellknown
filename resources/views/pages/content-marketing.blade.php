@@ -35,8 +35,14 @@
       <div class="row">
         <div class="col-md-5">
           <div class="image-container">
-            <img class="img img-raised rounded img-comments rellax" data-rellax-speed="1" src="/images/content/content-1.jpg">
-            <img class="img img-raised rounded img-blog rellax" data-rellax-speed="4" src="/images/content/content-2.jpg">
+            <img class="img img-raised rounded img-comments rellax" data-rellax-speed="1" src="/images/content/content-1.jpg"
+							data-aos="fade-right"
+							data-aos-easing="linear"
+							data-aos-duration="600">
+            <img class="img img-raised rounded img-blog rellax" data-rellax-speed="4" src="/images/content/content-2.jpg"
+						data-aos="fade-right"
+						data-aos-easing="linear"
+						data-aos-duration="400">
           </div>
         </div>
         <div class="col-md-6 ml-auto mr-auto">
@@ -71,27 +77,42 @@
           <div class="section-description">
 						<h4 style="padding-bottom:10px;"><strong>WHAT IS INCLUDED IN CONTENT MARKETING STRATEGY:</strong></h4>
 						<ul class="nav nav-pills nav-pills-info nav-pills-just-icons" role="tablist">
-							<li class="nav-item">
+							<li class="nav-item"
+							data-aos="fade-left"
+							data-aos-easing="linear"
+							data-aos-duration="400">
 								<a class="nav-link active content_strategy_steps" data-toggle="tab" href="#link1" role="tablist">
 									<p class="content_strategy_steps">1</p>
 								</a>
 							</li>
-							<li class="nav-item">
+							<li class="nav-item"
+							data-aos="fade-left"
+							data-aos-easing="linear"
+							data-aos-duration="600">
 								<a class="nav-link content_strategy_steps" data-toggle="tab" href="#link2" role="tablist">
 									<p class="content_strategy_steps">2</p>
 								</a>
 							</li>
-							<li class="nav-item">
+							<li class="nav-item"
+							data-aos="fade-left"
+							data-aos-easing="linear"
+							data-aos-duration="800">
 								<a class="nav-link content_strategy_steps" data-toggle="tab" href="#link3" role="tablist">
 									<p class="content_strategy_steps">3</p>
 								</a>
 							</li>
-							<li class="nav-item">
+							<li class="nav-item"
+							data-aos="fade-left"
+							data-aos-easing="linear"
+							data-aos-duration="1000">
 								<a class="nav-link content_strategy_steps" data-toggle="tab" href="#link4" role="tablist">
 									<p class="content_strategy_steps">4</p>
 								</a>
 							</li>
-							<li class="nav-item">
+							<li class="nav-item"
+							data-aos="fade-left"
+							data-aos-easing="linear"
+							data-aos-duration="1200">
 								<a class="nav-link content_strategy_steps" data-toggle="tab" href="#link5" role="tablist">
 									<p class="content_strategy_steps">5</p>
 								</a>
@@ -230,7 +251,8 @@
 			</div>
 
 			<div class="row" style="padding-top:50px;">
-				<div class="col-md-10 ml-auto mr-auto text-center">
+				<div class="col-md-10 ml-auto mr-auto text-center" data-aos="fade-up"
+     data-aos-duration="1000">
 					<blockquote class="blockquote blockquote-primary">
 					  <p class="mb-0">
 							<i style="font-size:1.25em; color:#000">Information</i> - this is why the client comes to the site. The audience needs information about your products and services, delivery times and costs, your reliability and reputation. Content marketing is a job, first of all, with the quality of the information flow and with the ways of its distribution in the network. A content promotion site is the promotion of the information in the network that you consider necessary to convey to the audience.
@@ -243,13 +265,22 @@
 	</div>
 
 	<div class="section call-to-action-section" data-background-color="gray">
-		<div class="row" style="margin-left: 0; margin-right:0;">
+		<div class="row" style="margin-left: 0; margin-right:0;"
+		data-aos="fade-left"
+		data-aos-offset="100"
+		data-aos-duration="500"
+		data-aos-easing="ease-in-sine">
 			<div class="col-md-8 ml-auto mr-auto text-center">
 				<h4>Any Questions?</h4>
 				<h5>Ready to get started? Call  <a href="tel:3395450956">(339) 545-0956</span></h5>
 			</div>
 		</div>
-		<div class="row" style="margin-left: 0; margin-right:0;">
+		<div class="row" style="margin-left: 0; margin-right:0;"
+		data-aos="fade-right"
+		 data-aos-offset="100"
+		 data-aos-duration="500"
+		 data-aos-easing="ease-in-sine">
+
 			<div class= "col-md-8 ml-auto mr-auto text-center">
 				<a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;">GET A FREE QUOTE </a>
 			</div>
@@ -263,7 +294,10 @@
 				<h2 class="title">What Our Clients Say</h2>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row"
+		data-aos="flip-left"
+		data-aos-easing="ease-out-cubic"
+		data-aos-duration="2000">
 			<div class="col-md-12">
 				<div id="carouselExampleIndicators2" class="carousel slide">
 					<div class="carousel-inner" role="listbox">
@@ -306,7 +340,7 @@
 			<div class="row">
 					<div class="col-md-3">
 							<div class="info info-hover icon-landing">
-									<div class="icon">
+									<div class="icon"  data-aos="flip-down" 		data-aos-easing="ease-out-cubic" 	data-aos-duration="1000">
 											<img src="/images/content/1-red.png" width="auto" height="100"></img>
 									</div>
 									<h4 class="info-title info-title-content">Site status and visibility in search engines</h4>
@@ -315,7 +349,7 @@
 
 					<div class="col-md-3">
 							<div class="info info-hover icon-landing">
-									<div class="icon">
+								<div class="icon"  data-aos="flip-down" 		data-aos-easing="ease-out-cubic" 	data-aos-duration="1000">
 											<img src="/images/content/2-red.png" width="auto" height="100"></img>
 									</div>
 									<h4 class="info-title">Required content volumes per day / week / month</h4>
@@ -323,8 +357,8 @@
 					</div>
 
 					<div class="col-md-3">
-							<div class="info info-hover icon-landing">
-									<div class="icon">
+							<div class="info info-hover icon-landing" >
+								<div class="icon"  data-aos="flip-down" 		data-aos-easing="ease-out-cubic" 	data-aos-duration="1000">
 											<img src="/images/content/3-red.png" width="auto" height="100"></img>
 									</div>
 									<h4 class="info-title">Content distribution channels</h4>
@@ -333,7 +367,7 @@
 
 					<div class="col-md-3">
 							<div class="info info-hover icon-landing">
-									<div class="icon">
+								<div class="icon"  data-aos="flip-down" 		data-aos-easing="ease-out-cubic" 	data-aos-duration="1000">
 											<img src="/images/content/4-red.png" width="auto" height="100"></img>
 									</div>
 									<h4 class="info-title">Depth of immersion in the subject of business, etc.</h4>
@@ -353,7 +387,7 @@
 		</div>
 	</div>
 
-	<div class="section">
+	<div class="section"  data-aos="zoom-out-right" data-aos-duration="2000">
 		<div class="col-md-12 ml-auto mr-auto">
 			<div class="container">
 			<h3 class="title" style="font-size:1.825em; text-align:center; padding-bottom:15px;">F.A.Q. ABOUT CONTENT MARKETING

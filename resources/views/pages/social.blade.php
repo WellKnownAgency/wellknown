@@ -33,7 +33,7 @@
   					</div>
   				</div>
   			</div>
-  			<div class="row text-center">
+  			<div class="row text-center" >
   				<div class="col-md-3">
   					<div class="box1 text-center hvr-curl-top-right" id="effect">
   						<img src="images/icons/keywords-planner.png">

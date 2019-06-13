@@ -56,7 +56,7 @@ canvas {
 			<div class="row">
 				<div class="col-md-12">
 					<div class="row">
-						<div class="col-lg-2 col-md-10">
+						<div class="col-lg-2 col-md-10" data-aos="fade-up"  data-aos-duration="3500">
 							<ul class="nav nav-pills nav-pills-primary nav-pills-icons flex-column" role="tablist">
 								<li class="nav-item">
 									<a class="nav-link active" data-toggle="tab" href="#link10" role="tablist">
@@ -84,11 +84,11 @@ canvas {
 								</li>
 							</ul>
 						</div>
-						<div class="col-md-10">
+						<div class="col-md-10" data-aos="fade-left"  data-aos-duration="1500">
 							<div class="tab-content">
 								<div class="tab-pane active" id="link10">
                   <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12" data-aos="fade-left"  data-aos-duration="1500">
                       <p class="content-ads">It's essential to understand what you exactly looking for to get from the advertising.
                         It helps, first of all, to understand what auditory is the best for you, what platform to use to catch your Ideal Client and more...
                         Ideal Client is important part for any advertising campaign and any marketing plan.
@@ -97,14 +97,14 @@ canvas {
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12"  data-aos="fade-left"  data-aos-duration="1500">
                         <img src="images/advertising/ideas.jpg" alt="Card image cap" style="margin-left:auto; margin-right:auto; display:block;">
                     </div>
                   </div>
 								</div>
 								<div class="tab-pane" id="link11">
                   <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12" data-aos="fade-left"  data-aos-duration="1500">
                       <p class="content-ads">
                         After understanding your business Goals and Ideas we come to the most important part. Without Strategy your advertising money can "fly away" and give zero results.
                         Our Agency have tried different tactics for different businesses and cases. All this knowledge helps us to make sure,
@@ -113,28 +113,28 @@ canvas {
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12" data-aos="fade-left"  data-aos-duration="1500">
                         <img class="" src="images/advertising/strategy.jpg" alt="Card image cap" style="margin-left:auto; margin-right:auto; display:block;">
                     </div>
                   </div>
 								</div>
                 <div class="tab-pane" id="link12">
                   <div class="row">
-                    <div class="col-md-12 ">
+                    <div class="col-md-12 " data-aos="fade-left"  data-aos-duration="1500">
                       <p class="content-ads">
 												Now we come to the creative part of the process. Not a secret for any Advertising campaign creativity is important, in some cases it takes first place.
 												WellKnown Agency team created ads for a lot of industries and we have already an idea which keywords work best. But still any ad campaign needs testing, so it takes in our creation process a huge part.</p>
                     </div>
   								</div>
                   <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12" data-aos="fade-left"  data-aos-duration="1500">
                         <img class="" src="images/advertising/creating.jpg" alt="Card image cap" style="margin-left:auto; margin-right:auto; display:block;">
                     </div>
                   </div>
                 </div>
                 <div class="tab-pane" id="link13">
                   <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12" data-aos="fade-left"  data-aos-duration="1500">
                       <p class="content-ads">
 												After all the above steps are done we finally can deploy your advertising. Any online advertising campaign needs 2 things:
 												<br>Analytics and Managing.<br>
@@ -142,7 +142,7 @@ canvas {
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12" data-aos="fade-left"  data-aos-duration="1500">
                         <img class="" src="images/advertising/managing.jpg" alt="Card image cap" style="margin-left:auto; margin-right:auto; display:block;">
                     </div>
                   </div>
@@ -164,7 +164,7 @@ canvas {
 
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3" data-aos="flip-left"  data-aos-duration="1500">
                 <div class="card">
                     <div class="card-image">
                         <img src="images/advertising/ppc.jpg" class="rounded" alt="">
@@ -179,7 +179,7 @@ canvas {
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3" data-aos="flip-left"  data-aos-duration="1500">
                 <div class="card">
                     <div class="card-image">
                         <img src="images/advertising/remarketing.jpg" class="rounded" alt="">
@@ -194,7 +194,7 @@ canvas {
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3" data-aos="flip-left"  data-aos-duration="1500">
                 <div class="card">
                     <div class="card-image">
                         <img src="images/advertising/smm.jpg" class="rounded" alt="">
@@ -209,7 +209,7 @@ canvas {
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3" data-aos="flip-left"  data-aos-duration="1500">
                 <div class="card">
                     <div class="card-image">
                         <img src="images/advertising/brand.jpg" class="rounded" alt="">
@@ -228,7 +228,8 @@ canvas {
 </div>
 <div class="section section-basic-components">
   <div class="container">
-    <div class="row">
+    <div class="row"data-aos="fade-up"
+     data-aos-duration="3000">
       <div class="col-lg-5 col-md-7 ml-auto mr-auto">
         <h2 class="title">Online Advertising</h2>
         <h6 class="category">Huge part of any business</h6>
@@ -251,13 +252,19 @@ canvas {
 
 
 <div class="section call-to-action-section" data-background-color="gray">
-	<div class="row" style="margin-left: 0; margin-right:0;">
+	<div class="row" style="margin-left: 0; margin-right:0;" data-aos="fade-left"
+     data-aos-offset="100"
+		 data-aos-duration="500"
+     data-aos-easing="ease-in-sine">
 		<div class="col-md-8 ml-auto mr-auto text-center">
 			<h4>Any Questions?</h4>
 			<h5>Ready to get started? Call  <a href="tel:3395450956">(339) 545-0956</span></h5>
 		</div>
 	</div>
-	<div class="row" style="margin-left: 0; margin-right:0;">
+	<div class="row" style="margin-left: 0; margin-right:0;" data-aos="fade-right"
+     data-aos-offset="100"
+		 data-aos-duration="500"
+     data-aos-easing="ease-in-sine">
 		<div class= "col-md-8 ml-auto mr-auto text-center">
 			<a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;">GET A FREE QUOTE </a>
 		</div>
@@ -270,7 +277,10 @@ canvas {
 			<h2 class="title">What Our Clients Say</h2>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row"
+		data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
 		<div class="col-md-12">
 			<div id="carouselExampleIndicators2" class="carousel slide">
 				<div class="carousel-inner" role="listbox">
@@ -303,7 +313,7 @@ canvas {
 </div>
 <!--     *********    END TESTIMONIALS 2      *********      -->
 
-<div class="section" style="background:#F8F8F8";>
+<div class="section" style="background:#F8F8F8;" data-aos="zoom-out-right" data-aos-duration="2000">
 	<div class="col-md-12 ml-auto mr-auto">
 		<div class="container">
 		<h3 class="title" style="font-size:1.825em; text-align:center; padding-bottom:15px;">F.A.Q. ABOUT ONLINE ADVERTISING SERVICES

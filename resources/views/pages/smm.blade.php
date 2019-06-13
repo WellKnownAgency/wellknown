@@ -32,7 +32,10 @@
 	</div>
 	<div class="section">
 			<div class="row" style="margin-left:0px;margin-right:0px; ">
-				<div class="col-md-5">
+				<div class="col-md-5"
+					data-aos="fade-right"
+					data-aos-easing="linear"
+					data-aos-duration="700">
 					<div class="container">
 					<div id="productCarousel" class="carousel slide" data-ride="carousel" data-interval="8000">
 						<ol class="carousel-indicators">
@@ -67,7 +70,9 @@
 					</p>
 				</div>
 			</div>
-				<div class="col-md-7 ml-auto mr-auto">
+				<div class="col-md-7 ml-auto mr-auto"data-aos="fade-left"
+					data-aos-easing="linear"
+					data-aos-duration="700">
 					<div class="container">
 					<h2 class="title" style="font-size:1.825em;"> EFFICIENT SOCIAL MEDIA MARKETING PROMOTION WITH WELLKNOWN AGENCY </h2>
 					<h5 class="category">Promotion in social networks allows you to achieve your business goals that are difficult to solve with standard advertising campaigns. The right SMM strategy allows you to build communication with users, increase brand loyalty and open a new effective channel for your business to increase sales.</h5>
@@ -187,7 +192,9 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="info">
-						<div class="icon icon-primary icon-circle">
+						<div class="icon icon-primary icon-circle"
+							data-aos="zoom-in"
+							data-aos-duration="800">
 							<i class="now-ui-icons users_single-02"></i>
 						</div>
 						<h4 class="info-title">We know what is your audience interested in</h4>
@@ -195,7 +202,9 @@
 				</div>
 				<div class="col-md-4">
 					<div class="info">
-						<div class="icon icon-danger icon-circle">
+						<div class="icon icon-danger icon-circle"
+						data-aos="zoom-in"
+						data-aos-duration="1200">
 							<i class="now-ui-icons business_chart-bar-32"></i>
 						</div>
 						<h4 class="info-title">We analyze how do your competitors act</h4>
@@ -203,7 +212,9 @@
 				</div>
 				<div class="col-md-4">
 					<div class="info">
-						<div class="icon icon-warning icon-circle">
+						<div class="icon icon-warning icon-circle"
+						data-aos="zoom-in"
+						data-aos-duration="1600">
 							<i class="now-ui-icons arrows-1_refresh-69"></i>
 						</div>
 						<h4 class="info-title">We know what solutions work in your industry</h4>
@@ -223,7 +234,10 @@
 				<h2 class="title">What Our Clients Say</h2>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row"
+			 data-aos="flip-left"
+			 data-aos-easing="ease-out-cubic"
+			 data-aos-duration="2000">
 			<div class="col-md-12">
 				<div id="carouselExampleIndicators2" class="carousel slide">
 					<div class="carousel-inner" role="listbox">
@@ -257,13 +271,21 @@
 	<!--     *********    END TESTIMONIALS 2      *********      -->
 
 	<div class="section call-to-action-section" data-background-color="gray">
-		<div class="row" style="margin-left: 0; margin-right:0;">
+		<div class="row" style="margin-left: 0; margin-right:0;"
+			data-aos="fade-left"
+			data-aos-offset="100"
+			data-aos-duration="500"
+			data-aos-easing="ease-in-sine">
 			<div class="col-md-8 ml-auto mr-auto text-center">
 				<h4>Any Questions?</h4>
 				<h5>Ready to get started? Call  <a href="tel:3395450956">(339) 545-0956</span></h5>
 			</div>
 		</div>
-		<div class="row" style="margin-left: 0; margin-right:0;">
+		<div class="row" style="margin-left: 0; margin-right:0;"
+		 data-aos="fade-right"
+		 data-aos-offset="100"
+		 data-aos-duration="500"
+		 data-aos-easing="ease-in-sine">
 			<div class= "col-md-8 ml-auto mr-auto text-center">
 				<a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;">GET A FREE QUOTE </a>
 			</div>
@@ -279,7 +301,11 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-4"
+				data-aos="fade-right"
+				data-aos-offset="100"
+				data-aos-duration="700"
+				data-aos-easing="ease-in-sine">
 					<div class="card card-pricing card-plain">
 						<div class="card-body">
 							<p class="category price_category">Basic</p>
@@ -331,7 +357,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4"
+				 	data-aos="fade-up"
+			     data-aos-easing="linear"
+			     data-aos-duration="1200">
 					<div class="card card-pricing card-background card-raised" style="background-color:#FFCDD2;">
 						<div class="card-body">
 							<p class="category price_category">Standart</p>
@@ -385,7 +414,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4"
+				data-aos="fade-left"
+				data-aos-offset="100"
+				data-aos-duration="1000"
+				data-aos-easing="ease-in-sine">
 					<div class="card card-pricing card-plain">
 						<div class="card-body">
 							<p class="category price_category">Extended</p>
@@ -444,7 +477,7 @@
 		</div>
 	</div>
 
-	<div class="section" style="background:#F8F8F8";>
+	<div class="section" style="background:#F8F8F8;"  data-aos="zoom-out-right" data-aos-duration="2000">
 		<div class="col-md-12 ml-auto mr-auto">
 			<div class="container">
 			<h3 class="title" style="font-size:1.825em; text-align:center; padding-bottom:15px;">F.A.Q. ABOUT SOCIAL MEDIA MARKETING SERVICES

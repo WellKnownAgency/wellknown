@@ -43,16 +43,27 @@
 				<div class="row">
 					<div class="col-md-6">
 						<!-- First image on the left side -->
-						<div class="image-container image-left" style="background-image: url('/images/landing/landing-page-2.jpg');">
+						<div class="image-container image-left" style="background-image: url('/images/landing/landing-page-2.jpg');"
+						data-aos="fade-down-right"
+						data-aos-easing="linear"
+						data-aos-duration="400">
 							<p class="blockquote blockquote-primary">It's important to formulate an exact proposal for your audience and once again determine why you want to use the landing.
 							</p>
 						</div>
 						<!-- Second image on the left side of the article -->
-						<div class="image-container image-left-bottom"></div>
+						<div class="image-container image-left-bottom"
+						data-aos="fade-right"
+						data-aos-easing="linear"
+						data-aos-duration="400">
+					</div>
 					</div>
 					<div class="col-md-5">
 						<!-- First image on the right side, above the article -->
-						<div class="image-container image-right" style="background-image: url('/images/landing/landing-page-1.jpg');"></div>
+						<div class="image-container image-right" style="background-image: url('/images/landing/landing-page-1.jpg');"
+						data-aos="fade-down-left"
+						data-aos-easing="linear"
+						data-aos-duration="400">
+					</div>
 						<h3 class="landing_page_steps_header">When do We Use Landings?</h3>
 						<p>In brief, a landing page is useful if you know exactly what and whom you are selling.</p>
 							<h6 class="landing_page_step">1. Sell goods and services</h6>
@@ -86,7 +97,9 @@
 			<div class="row">
 					<div class="col-md-4">
 							<div class="info info-hover icon-landing">
-									<div class="icon icon-landing icon-circle">
+									<div class="icon icon-landing icon-circle"
+									data-aos="zoom-in"
+									data-aos-duration="800">
 											<i class="now-ui-icons education_hat"></i>
 									</div>
 									<h4 class="info-title">Not cleary understand the technique of creating a good landing?</h4>
@@ -96,7 +109,9 @@
 
 					<div class="col-md-4">
 							<div class="info info-hover">
-									<div class="icon icon-grey icon-circle">
+									<div class="icon icon-grey icon-circle"
+									data-aos="zoom-in"
+									data-aos-duration="1200">
 											<i class="now-ui-icons users_circle-08"></i>
 									</div>
 									<h4 class="info-title">Don't understand how to define your target audience?</h4>
@@ -108,7 +123,9 @@
 
 					<div class="col-md-4">
 							<div class="info info-hover">
-									<div class="icon icon-grey icon-circle">
+									<div class="icon icon-grey icon-circle"
+									data-aos="zoom-in"
+									data-aos-duration="1600">
 											<i class="now-ui-icons design_vector"></i>
 									</div>
 									<h4 class="info-title">Do not know how to mobilize your creative potential?</h4>
@@ -128,7 +145,10 @@
 				<h2 class="title">What Our Clients Say</h2>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row"
+		data-aos="flip-left"
+		data-aos-easing="ease-out-cubic"
+		data-aos-duration="2000">
 			<div class="col-md-12">
 				<div id="carouselExampleIndicators2" class="carousel slide">
 					<div class="carousel-inner" role="listbox">
@@ -169,7 +189,11 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-4"
+						data-aos="fade-right"
+						data-aos-offset="100"
+						data-aos-duration="700"
+						data-aos-easing="ease-in-sine">
 					<div class="card card-pricing card-plain">
 						<div class="card-body">
 							<p class="category price_category">Extended</p>
@@ -218,7 +242,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4"
+				 	 	 data-aos="fade-up"
+				     data-aos-easing="linear"
+				     data-aos-duration="1200">
 					<div class="card card-pricing card-background card-raised" style="background-color:#FFCDD2;">
 						<div class="card-body">
 							<p class="category price_category">Standart</p>
@@ -265,7 +292,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4"
+				data-aos="fade-left"
+				data-aos-offset="100"
+				data-aos-duration="1000"
+				data-aos-easing="ease-in-sine">
 					<div class="card card-pricing card-plain">
 						<div class="card-body">
 							<p class="category price_category">Basic</p>
@@ -316,7 +347,7 @@
 
 	<!--     *********    FAQ     *********      -->
 
-	<div class="section">
+	<div class="section" data-aos="zoom-out-right" data-aos-duration="2000">
 		<div class="col-md-12 ml-auto mr-auto">
 			<div class="container">
 			<h3 class="title" style="font-size:1.825em; text-align:center; padding-bottom:15px;">F.A.Q. ABOUT LANDING PAGE SERVICES

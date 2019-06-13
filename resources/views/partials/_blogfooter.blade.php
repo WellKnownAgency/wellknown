@@ -7,7 +7,7 @@
 		</div>
 		<div class="row">
 			@foreach( $posts as $post )
-			<div class="col-md-6 col-lg-4">
+			<div class="col-md-6 col-lg-4"  data-aos="zoom-out-up"  data-aos-duration="1000">
 				<div class="card card-blog card-plain">
 					<div class="card-image">
 						<a href="/blog/{{ $post->slug }}">
