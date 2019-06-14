@@ -77,42 +77,27 @@
           <div class="section-description">
 						<h4 style="padding-bottom:10px;"><strong>WHAT IS INCLUDED IN CONTENT MARKETING STRATEGY:</strong></h4>
 						<ul class="nav nav-pills nav-pills-info nav-pills-just-icons" role="tablist">
-							<li class="nav-item"
-							data-aos="fade-left"
-							data-aos-easing="linear"
-							data-aos-duration="400">
+							<li class="nav-item" data-aos="zoom-in" data-aos-duration="500">
 								<a class="nav-link active content_strategy_steps" data-toggle="tab" href="#link1" role="tablist">
 									<p class="content_strategy_steps">1</p>
 								</a>
 							</li>
-							<li class="nav-item"
-							data-aos="fade-left"
-							data-aos-easing="linear"
-							data-aos-duration="600">
+							<li class="nav-item" data-aos="zoom-in" data-aos-duration="700">
 								<a class="nav-link content_strategy_steps" data-toggle="tab" href="#link2" role="tablist">
 									<p class="content_strategy_steps">2</p>
 								</a>
 							</li>
-							<li class="nav-item"
-							data-aos="fade-left"
-							data-aos-easing="linear"
-							data-aos-duration="800">
+							<li class="nav-item" data-aos="zoom-in" data-aos-duration="1000">
 								<a class="nav-link content_strategy_steps" data-toggle="tab" href="#link3" role="tablist">
 									<p class="content_strategy_steps">3</p>
 								</a>
 							</li>
-							<li class="nav-item"
-							data-aos="fade-left"
-							data-aos-easing="linear"
-							data-aos-duration="1000">
+							<li class="nav-item" data-aos="zoom-in" data-aos-duration="1300">
 								<a class="nav-link content_strategy_steps" data-toggle="tab" href="#link4" role="tablist">
 									<p class="content_strategy_steps">4</p>
 								</a>
 							</li>
-							<li class="nav-item"
-							data-aos="fade-left"
-							data-aos-easing="linear"
-							data-aos-duration="1200">
+							<li class="nav-item" data-aos="zoom-in" data-aos-duration="1600">
 								<a class="nav-link content_strategy_steps" data-toggle="tab" href="#link5" role="tablist">
 									<p class="content_strategy_steps">5</p>
 								</a>
@@ -265,24 +250,18 @@
 	</div>
 
 	<div class="section call-to-action-section" data-background-color="gray">
-		<div class="row" style="margin-left: 0; margin-right:0;"
-		data-aos="fade-left"
-		data-aos-offset="100"
-		data-aos-duration="500"
-		data-aos-easing="ease-in-sine">
+		<div class="row" style="margin-left: 0; margin-right:0;">
 			<div class="col-md-8 ml-auto mr-auto text-center">
 				<h4>Any Questions?</h4>
 				<h5>Ready to get started? Call  <a href="tel:3395450956">(339) 545-0956</span></h5>
 			</div>
 		</div>
-		<div class="row" style="margin-left: 0; margin-right:0;"
-		data-aos="fade-right"
-		 data-aos-offset="100"
-		 data-aos-duration="500"
-		 data-aos-easing="ease-in-sine">
+		<div class="row" style="margin-left: 0; margin-right:0;">
 
 			<div class= "col-md-8 ml-auto mr-auto text-center">
-				<a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;">GET A FREE QUOTE </a>
+				<a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;"
+				 data-aos="flip-up"
+				 data-aos-duration="1000">GET A FREE QUOTE </a>
 			</div>
 		</div>
 	</div>
@@ -294,10 +273,7 @@
 				<h2 class="title">What Our Clients Say</h2>
 			</div>
 		</div>
-		<div class="row"
-		data-aos="flip-left"
-		data-aos-easing="ease-out-cubic"
-		data-aos-duration="2000">
+		<div class="row">
 			<div class="col-md-12">
 				<div id="carouselExampleIndicators2" class="carousel slide">
 					<div class="carousel-inner" role="listbox">
@@ -387,13 +363,15 @@
 		</div>
 	</div>
 
-	<div class="section"  data-aos="zoom-out-right" data-aos-duration="2000">
+	<div class="section">
 		<div class="col-md-12 ml-auto mr-auto">
 			<div class="container">
 			<h3 class="title" style="font-size:1.825em; text-align:center; padding-bottom:15px;">F.A.Q. ABOUT CONTENT MARKETING
 	 		</h3>
 			<div id="accordion" role="tablist" aria-multiselectable="true" class="card-collapse">
-				<div class="card card-plain">
+				<div class="card card-plain"
+				data-aos="fade-down" data-aos-duration="600">
+
 					<div class="card-header smm-collapse" role="tab" id="headingOne">
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="text-transform: uppercase;">
 							How many articles per month do you write?
@@ -411,7 +389,9 @@
 					</div>
 
 				</div>
-				<div class="card card-plain">
+				<div class="card card-plain"
+				data-aos="fade-down" data-aos-duration="900">
+
 					<div class="card-header smm-collapse" role="tab" id="headingTwo">
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" style="text-transform: uppercase;">
 							Can content really increase sales?
@@ -429,7 +409,9 @@
 					</div>
 
 				</div>
-				<div class="card card-plain">
+				<div class="card card-plain"
+				data-aos="fade-down" data-aos-duration="1200">
+
 					<div class="card-header smm-collapse" role="tab" id="headingThree">
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree" style="text-transform: uppercase;">
 							Why can not I write content for a website by myself?

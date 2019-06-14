@@ -46,25 +46,24 @@ canvas {
    <div class="container">
     <div class="row">
      <div class="col-md-12">
-      <div class="hero-images-container"
-				data-aos="fade-left"
-				data-aos-easing="linear"
-				data-aos-duration="600">
-       <img src="images/webdesign/desktop.png" alt="">
+      <div class="hero-images-container">
+       <img src="images/webdesign/desktop.png" alt=""
+			 data-aos="fade-up"
+			 data-aos-duration="600">
       </div>
 
-      <div class="hero-images-container-1"
-			data-aos="fade-left"
-			data-aos-easing="linear"
-			data-aos-duration="900">
-       <img src="images/webdesign/ipad.png" alt="">
+      <div class="hero-images-container-1">
+       <img src="images/webdesign/ipad.png" alt=""
+			 data-aos="fade-up"
+			 data-aos-duration="900">
+
       </div>
 
-      <div class="hero-images-container-2"
-			data-aos="fade-left"
-			data-aos-easing="linear"
-			data-aos-duration="1200">
-       <img src="images/webdesign/iphone.png" alt="">
+      <div class="hero-images-container-2">
+       <img src="images/webdesign/iphone.png" alt=""
+			 data-aos="fade-up"
+			 data-aos-duration="1200">
+
       </div>
      </div>
     </div>
@@ -110,12 +109,11 @@ canvas {
                 </div>
               </div>
             </div>
-            <div class="col-md-6"
-						 data-aos="flip-up"
-						 data-aos-easing="linear"
-						 data-aos-duration="1000">
+            <div class="col-md-6">
               <div class="image-container">
-                <img src="images/webdesign/ipad3.png" alt="">
+                <img src="images/webdesign/ipad3.png" alt=""
+								 data-aos="flip-up"
+								 data-aos-duration="1000">
               </div>
             </div>
           </div>
@@ -133,11 +131,10 @@ canvas {
           </div>
         </div>
         <div class="row">
-          <div class="col-md-5 ml-auto"
-					 				data-aos="fade-right"
-									data-aos-easing="linear"
-									data-aos-duration="600">
-            <div class="card card-background card-background-product card-raised" style="background-image: url('../images/webdesign/design.jpg')">
+          <div class="col-md-5 ml-auto">
+            <div class="card card-background card-background-product card-raised" style="background-image: url('../images/webdesign/design.jpg')"
+						 data-aos="flip-left"
+						 data-aos-duration="1500">
               <div class="card-body">
                 <h2 class="card-title">Web Design</h2>
                 <p class="card-description">
@@ -148,10 +145,7 @@ canvas {
             </div>
           </div>
           <div class="col-md-5 mr-auto">
-            <div class="info info-horizontal"
-				 				data-aos="fade-left"
-								data-aos-easing="linear"
-								data-aos-duration="600">
+            <div class="info info-horizontal" data-aos="zoom-in" data-aos-duration="500">
               <div class="icon icon-danger">
                 <i class="now-ui-icons ui-2_chat-round"></i>
               </div>
@@ -162,10 +156,7 @@ canvas {
                 </p>
               </div>
             </div>
-            <div class="info info-horizontal"
-						data-aos="fade-left"
-						data-aos-easing="linear"
-						data-aos-duration="800">
+            <div class="info info-horizontal" data-aos="zoom-in" data-aos-duration="700">
               <div class="icon icon-danger">
                 <i class="now-ui-icons design_app"></i>
               </div>
@@ -176,10 +167,7 @@ canvas {
                 </p>
               </div>
             </div>
-            <div class="info info-horizontal"
-						data-aos="fade-left"
-						data-aos-easing="linear"
-						data-aos-duration="1000">
+            <div class="info info-horizontal"  data-aos="zoom-in" data-aos-duration="900">
               <div class="icon icon-danger">
                 <i class="now-ui-icons tech_mobile"></i>
               </div>
@@ -195,11 +183,8 @@ canvas {
         <hr />
 
         <div class="row">
-          <div class="col-md-5 ml-auto mt-5">
-            <div class="info info-horizontal"
-				 				data-aos="fade-right"
-								data-aos-easing="linear"
-								data-aos-duration="600">
+          <div class="col-md-5 ml-auto" style="margin-top:0px;">
+            <div class="info info-horizontal"  data-aos="zoom-in" data-aos-duration="500">
               <div class="icon icon-warning">
                 <i class="now-ui-icons users_single-02"></i>
               </div>
@@ -210,10 +195,7 @@ canvas {
                 </p>
               </div>
             </div>
-            <div class="info info-horizontal"
-						data-aos="fade-right"
-						data-aos-easing="linear"
-						data-aos-duration="800">
+            <div class="info info-horizontal" data-aos="zoom-in" data-aos-duration="700">
               <div class="icon icon-warning">
                 <i class="now-ui-icons objects_key-25"></i>
               </div>
@@ -224,10 +206,7 @@ canvas {
                 </p>
               </div>
             </div>
-            <div class="info info-horizontal"
-						data-aos="fade-right"
-						data-aos-easing="linear"
-						data-aos-duration="1000">
+            <div class="info info-horizontal" data-aos="zoom-in" data-aos-duration="900">
               <div class="icon icon-warning">
                 <i class="now-ui-icons arrows-1_refresh-69"></i>
               </div>
@@ -239,11 +218,11 @@ canvas {
               </div>
             </div>
           </div>
-          <div class="col-md-5 mr-auto"
-					data-aos="fade-left"
-					data-aos-easing="linear"
-					data-aos-duration="600">
-            <div class="card card-background card-background-product card-raised" style="background-image: url('../images/webdesign/development.jpg')">
+          <div class="col-md-5 mr-auto">
+            <div class="card card-background card-background-product card-raised" style="background-image: url('../images/webdesign/development.jpg')"
+						data-aos="flip-right"
+						data-aos-duration="1500">
+
               <div class="card-body">
                 <h2 class="card-title">Web Development</h2>
                 <p class="card-description text-white">
@@ -258,23 +237,17 @@ canvas {
     </div>
 
 		<div class="section call-to-action-section" data-background-color="gray">
-			<div class="row" style="margin-left: 0; margin-right:0;"
-			data-aos="fade-left"
-			data-aos-offset="100"
-			data-aos-duration="500"
-			data-aos-easing="ease-in-sine">
+			<div class="row" style="margin-left: 0; margin-right:0;">
 				<div class="col-md-8 ml-auto mr-auto text-center">
 					<h4>Any Questions?</h4>
 					<h5>Ready to get started? Call  <a href="tel:3395450956">(339) 545-0956</span></h5>
 				</div>
 			</div>
-			<div class="row" style="margin-left: 0; margin-right:0;"
-			data-aos="fade-right"
-			data-aos-offset="100"
-			data-aos-duration="500"
-			data-aos-easing="ease-in-sine">
+			<div class="row" style="margin-left: 0; margin-right:0;">
 				<div class= "col-md-8 ml-auto mr-auto text-center">
-					<a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;">GET A FREE QUOTE </a>
+					<a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;"
+					 data-aos="flip-up"
+					 data-aos-duration="1000">GET A FREE QUOTE </a>
 				</div>
 			</div>
 		</div>
@@ -287,10 +260,7 @@ canvas {
           <h2 class="title">What Our Clients Say</h2>
         </div>
       </div>
-      <div class="row"
-			data-aos="flip-left"
-			data-aos-easing="ease-out-cubic"
-			data-aos-duration="2000">
+      <div class="row">
         <div class="col-md-12">
           <div id="carouselExampleIndicators2" class="carousel slide">
             <div class="carousel-inner" role="listbox">
@@ -298,7 +268,7 @@ canvas {
                 <div class="card card-testimonial card-plain">
                   <div class="card-avatar">
                     <a href="https://clutch.co/profile/wellknown-agency" target="_blank">
-                      <img class="img img-raised rounded" src="/images/filipp.jpg" />
+                      <img class="img img-raised rounded" src="/images/filipp.jpg" / data-aos="zoom-in" data-aos-duration="500">
                     </a>
                   </div>
                   <div class="card-body">
@@ -333,11 +303,12 @@ canvas {
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 px-0"
-					data-aos="fade-down-right"
-					data-aos-easing="linear"
-					data-aos-duration="400">
-            <div class="card card-background card-background-product card-no-shadow" style="background-image: url('/images/ffmain.jpg')">
+          <div class="col-md-6 px-0">
+            <div class="card card-background card-background-product card-no-shadow" style="background-image: url('/images/ffmain.jpg')"
+						data-aos="fade-up"
+						data-aos-offset="300"
+						data-aos-easing="linear"
+						data-aos-duration="500">
               <div class="card-body">
                 <h6 class="category">Web Design & Development</h6>
                 <h3 class="card-title">
@@ -352,11 +323,12 @@ canvas {
               </div>
             </div>
           </div>
-          <div class="col-md-6 px-0"
-					data-aos="fade-down-left"
-					data-aos-easing="linear"
-					data-aos-duration="700">
-            <div class="card card-raised card-background card-background-product card-no-shadow" style="background-image: url('/images/omdarling.jpg')">
+          <div class="col-md-6 px-0">
+            <div class="card card-raised card-background card-background-product card-no-shadow" style="background-image: url('/images/omdarling.jpg')"
+						data-aos="fade-up"
+						data-aos-offset="300"
+						data-aos-easing="linear"
+						data-aos-duration="800">
               <div class="card-body">
                 <h6 class="category">Web Design & Development</h6>
                 <h3 class="card-title">OmDarling</h3>
@@ -370,11 +342,12 @@ canvas {
             </div>
           </div>
 
-          <div class="col-md-6 px-0"
-					data-aos="fade-up-right"
-					data-aos-easing="linear"
-					data-aos-duration="1000">
-            <div class="card card-background card-background-product card-no-shadow" style="background-image: url('/images/btmmain.jpg')">
+          <div class="col-md-6 px-0">
+            <div class="card card-background card-background-product card-no-shadow" style="background-image: url('/images/btmmain.jpg')"
+						data-aos="fade-up"
+						data-aos-offset="300"
+						data-aos-easing="linear"
+						data-aos-duration="500">
               <div class="card-body">
                 <h6 class="category">Web Design & Development</h6>
                 <h3 class="card-title">Born to Move</h3>
@@ -387,11 +360,12 @@ canvas {
               </div>
             </div>
           </div>
-					<div class="col-md-6 px-0"
-					data-aos="fade-up-left"
-					data-aos-easing="linear"
-					data-aos-duration="1300">
-            <div class="card card-background card-background-product card-no-shadow" style="background-image: url('/images/cases/flashmoving.jpg')">
+					<div class="col-md-6 px-0">
+            <div class="card card-background card-background-product card-no-shadow" style="background-image: url('/images/cases/flashmoving.jpg')"
+						data-aos="fade-up"
+						data-aos-offset="300"
+						data-aos-easing="linear"
+						data-aos-duration="800">
               <div class="card-body">
                 <h6 class="category">Web Design & Development</h6>
                 <h3 class="card-title">Flashmoving</h3>
