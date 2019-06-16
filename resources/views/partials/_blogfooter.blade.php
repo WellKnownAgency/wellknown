@@ -7,8 +7,11 @@
 		</div>
 		<div class="row">
 			@foreach( $posts as $post )
-			<div class="col-md-6 col-lg-4"  data-aos="zoom-out-up"  data-aos-duration="1000">
-				<div class="card card-blog card-plain">
+			<div class="col-md-6 col-lg-4">
+				<div class="card card-blog card-plain"
+						 data-aos="fade-up"
+						 data-aos-easing="linear"
+						 data-aos-duration="800">
 					<div class="card-image">
 						<a href="/blog/{{ $post->slug }}">
 							<img class="img img-raised rounded" src="/images/blog/{{ $post->image }}">

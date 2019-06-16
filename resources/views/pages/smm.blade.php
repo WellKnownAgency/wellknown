@@ -32,12 +32,12 @@
 	</div>
 	<div class="section">
 			<div class="row" style="margin-left:0px;margin-right:0px; ">
-				<div class="col-md-5"
-					data-aos="fade-right"
-					data-aos-easing="linear"
-					data-aos-duration="700">
-					<div class="container">
-					<div id="productCarousel" class="carousel slide" data-ride="carousel" data-interval="8000">
+				<div class="col-md-5">
+					<div id="productCarousel" class="carousel slide" data-ride="carousel" data-interval="8000"
+						data-aos="fade-right"
+						data-aos-easing="linear"
+						data-aos-duration="700">
+						<div class="container">
 						<ol class="carousel-indicators">
 							<li data-target="#productCarousel" data-slide-to="0" class="active"></li>
 							<li data-target="#productCarousel" data-slide-to="1"></li>
@@ -70,9 +70,7 @@
 					</p>
 				</div>
 			</div>
-				<div class="col-md-7 ml-auto mr-auto"data-aos="fade-left"
-					data-aos-easing="linear"
-					data-aos-duration="700">
+				<div class="col-md-7 ml-auto mr-auto">
 					<div class="container">
 					<h2 class="title" style="font-size:1.825em;"> EFFICIENT SOCIAL MEDIA MARKETING PROMOTION WITH WELLKNOWN AGENCY </h2>
 					<h5 class="category">Promotion in social networks allows you to achieve your business goals that are difficult to solve with standard advertising campaigns. The right SMM strategy allows you to build communication with users, increase brand loyalty and open a new effective channel for your business to increase sales.</h5>
@@ -234,10 +232,7 @@
 				<h2 class="title">What Our Clients Say</h2>
 			</div>
 		</div>
-		<div class="row"
-			 data-aos="flip-left"
-			 data-aos-easing="ease-out-cubic"
-			 data-aos-duration="2000">
+		<div class="row">
 			<div class="col-md-12">
 				<div id="carouselExampleIndicators2" class="carousel slide">
 					<div class="carousel-inner" role="listbox">
@@ -245,7 +240,7 @@
 							<div class="card card-testimonial card-plain">
 								<div class="card-avatar">
 									<a href="https://clutch.co/profile/wellknown-agency" target="_blank">
-										<img class="img img-raised rounded" src="/images/kulinich.jpg" />
+										<img class="img img-raised rounded" src="/images/kulinich.jpg" data-aos="zoom-in" data-aos-duration="500"/>
 									</a>
 								</div>
 								<div class="card-body">
@@ -271,23 +266,17 @@
 	<!--     *********    END TESTIMONIALS 2      *********      -->
 
 	<div class="section call-to-action-section" data-background-color="gray">
-		<div class="row" style="margin-left: 0; margin-right:0;"
-			data-aos="fade-left"
-			data-aos-offset="100"
-			data-aos-duration="500"
-			data-aos-easing="ease-in-sine">
+		<div class="row" style="margin-left: 0; margin-right:0;">
 			<div class="col-md-8 ml-auto mr-auto text-center">
 				<h4>Any Questions?</h4>
 				<h5>Ready to get started? Call  <a href="tel:3395450956">(339) 545-0956</span></h5>
 			</div>
 		</div>
-		<div class="row" style="margin-left: 0; margin-right:0;"
-		 data-aos="fade-right"
-		 data-aos-offset="100"
-		 data-aos-duration="500"
-		 data-aos-easing="ease-in-sine">
+		<div class="row" style="margin-left: 0; margin-right:0;">
 			<div class= "col-md-8 ml-auto mr-auto text-center">
-				<a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;">GET A FREE QUOTE </a>
+				<a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;"
+					data-aos="flip-up"
+					data-aos-duration="1000">GET A FREE QUOTE </a>
 			</div>
 		</div>
 	</div>
@@ -302,7 +291,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-4"
-				data-aos="fade-right"
+				data-aos="fade-up"
 				data-aos-offset="100"
 				data-aos-duration="700"
 				data-aos-easing="ease-in-sine">
@@ -360,7 +349,7 @@
 				<div class="col-md-4"
 				 	data-aos="fade-up"
 			     data-aos-easing="linear"
-			     data-aos-duration="1200">
+			     data-aos-duration="1000">
 					<div class="card card-pricing card-background card-raised" style="background-color:#FFCDD2;">
 						<div class="card-body">
 							<p class="category price_category">Standart</p>
@@ -415,9 +404,9 @@
 					</div>
 				</div>
 				<div class="col-md-4"
-				data-aos="fade-left"
+				data-aos="fade-up"
 				data-aos-offset="100"
-				data-aos-duration="1000"
+				data-aos-duration="1200"
 				data-aos-easing="ease-in-sine">
 					<div class="card card-pricing card-plain">
 						<div class="card-body">
@@ -477,13 +466,14 @@
 		</div>
 	</div>
 
-	<div class="section" style="background:#F8F8F8;"  data-aos="zoom-out-right" data-aos-duration="2000">
+	<div class="section" style="background:#F8F8F8;">
 		<div class="col-md-12 ml-auto mr-auto">
 			<div class="container">
 			<h3 class="title" style="font-size:1.825em; text-align:center; padding-bottom:15px;">F.A.Q. ABOUT SOCIAL MEDIA MARKETING SERVICES
 			</h3>
 			<div id="accordion" role="tablist" aria-multiselectable="true" class="card-collapse">
-				<div class="card card-plain">
+				<div class="card card-plain"
+					data-aos="fade-down" data-aos-duration="600">
 					<div class="card-header smm-collapse" role="tab" id="heading3">
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3" style="text-transform: uppercase;">
 							Should the company be in all social networks at once?
@@ -507,7 +497,8 @@
 					</div>
 
 				</div>
-				<div class="card card-plain">
+				<div class="card card-plain"
+					data-aos="fade-down" data-aos-duration="900">
 					<div class="card-header smm-collapse" role="tab" id="heading4">
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="true" aria-controls="collapse4" style="text-transform: uppercase;">
 							How much does it cost to gain 10,000 (100,000; 1,000,000) followers?
