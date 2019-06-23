@@ -147,7 +147,7 @@ function gtag_report_conversion(url) {
               </div>
               <div class="info info-horizontal" data-aos="zoom-in"
 							data-aos-easing="linear"
-							data-aos-duration="500">>
+							data-aos-duration="500">
                 <div class="icon icon-danger">
                   <i class="fas fa-globe"></i>
                 </div>
