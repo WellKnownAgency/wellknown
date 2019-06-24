@@ -11115,6 +11115,12 @@ html {
   font-weight: bold;
 }
 
+.simple_remove_icon_price {
+  float: left;
+  color: grey;
+  font-weight: bold;
+}
+
 .landing_page_questions {
   font-size: 1.5em !important;
 }
