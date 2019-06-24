@@ -68,7 +68,7 @@ function gtag_report_conversion(url) {
             <div class="col-md-8 ml-auto mr-auto text-center">
               <h2 class="title">Professional SEO Services <br>That Boost Your Business</h2>
               <h5 class="description">
-									WellKnown is a perfect SEO company to make your business rapidly growing up. If you want to raise FREE Conversions and Traffic to your Website, we can provide you a SEO Campaign with the best solutions to your particular case, that will help you expand your business on the Internet.</h4>
+									WellKnown is a perfect SEO company to make your business rapidly growing up. If you want to raise FREE Conversions and Traffic to your Website, we can provide you a SEO Campaign with the best solutions to your particular case, that will help you expand your business on the Internet.</h5>
             </div>
           </div>
           <div class="row">
@@ -147,7 +147,7 @@ function gtag_report_conversion(url) {
               </div>
               <div class="info info-horizontal" data-aos="zoom-in"
 							data-aos-easing="linear"
-							data-aos-duration="500">>
+							data-aos-duration="500">
                 <div class="icon icon-danger">
                   <i class="fas fa-globe"></i>
                 </div>

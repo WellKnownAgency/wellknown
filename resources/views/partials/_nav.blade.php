@@ -41,6 +41,9 @@
             <a class="dropdown-item {{ Request::is('content-marketing') ?"active-a" : ""}}" href="/content-marketing">
               <i class="far fa-edit wk-icons"></i>  <span>Content Marketing</span>
             </a>
+            <a class="dropdown-item {{ Request::is('wordpress-seo') ?"active-a" : ""}}" href="/wordpress-seo">
+              <i class="fab fa-wordpress-simple wk-icons"></i>  <span>Wordpress SEO</span>
+            </a>
           </div>
         </li>
        <li class="nav-item {{ Request::is('case-studies') ?"active" : ""}}">

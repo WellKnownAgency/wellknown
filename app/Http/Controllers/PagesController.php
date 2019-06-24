@@ -62,12 +62,10 @@ class PagesController extends Controller
     return view('pages/content-marketing')->withPosts($posts);
 	}
 
-	public function getWpseo() {
-		$posts = Post::latest()->with('category')->where('status', 'PUBLISHED')->take(3)->get();
-		return view('pages/wordpress-seo')->withPosts($posts);
+  public function getWordpressseo() {
+    $posts = Post::latest()->with('category')->where('status', 'PUBLISHED')->take(3)->get();
+    return view('pages/wordpress-seo')->withPosts($posts);
 	}
-
-
 
 	public function getAboutus() {
 		return view('pages/about-us');
