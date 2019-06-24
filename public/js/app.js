@@ -63403,8 +63403,8 @@ window.Pusher = __webpack_require__(208);
 
 window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo__["a" /* default */]({
   broadcaster: 'pusher',
-  key: "",
-  cluster: "mt1",
+  key: "9149e4374512c45eb132",
+  cluster: "us2",
   encrypted: true
 });
 
@@ -69330,22 +69330,13 @@ var Echo = function () {
             return this.connector.presenceChannel(channel);
         }
         /**
-         * Leave the given channel, as well as its private and presence variants.
+         * Leave the given channel.
          */
 
     }, {
         key: 'leave',
         value: function leave(channel) {
             this.connector.leave(channel);
-        }
-        /**
-         * Leave the given channel.
-         */
-
-    }, {
-        key: 'leaveChannel',
-        value: function leaveChannel(channel) {
-            this.connector.leaveChannel(channel);
         }
         /**
          * Listen for an event on a channel instance.
@@ -69455,7 +69446,7 @@ var Echo = function () {
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
- * Pusher JavaScript Library v4.4.0
+ * Pusher JavaScript Library v4.3.1
  * https://pusher.com/
  *
  * Copyright 2017, Pusher
@@ -69584,17 +69575,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	                _this.timelineSender.send(_this.connection.isUsingTLS());
 	            }
 	        });
-	        this.connection.bind('message', function (event) {
-	            var eventName = event.event;
-	            var internal = (eventName.indexOf('pusher_internal:') === 0);
-	            if (event.channel) {
-	                var channel = _this.channel(event.channel);
+	        this.connection.bind('message', function (params) {
+	            var internal = (params.event.indexOf('pusher_internal:') === 0);
+	            if (params.channel) {
+	                var channel = _this.channel(params.channel);
 	                if (channel) {
-	                    channel.handleEvent(event);
+	                    channel.handleEvent(params.event, params.data);
 	                }
 	            }
 	            if (!internal) {
-	                _this.global_emitter.emit(event.event, event.data);
+	                _this.global_emitter.emit(params.event, params.data);
 	            }
 	        });
 	        this.connection.bind('connecting', function () {
@@ -69936,7 +69926,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	"use strict";
 	var Defaults = {
-	    VERSION: "4.4.0",
+	    VERSION: "4.3.1",
 	    PROTOCOL: 7,
 	    host: 'ws.pusherapp.com',
 	    ws_port: 80,
@@ -70486,9 +70476,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 	        javascriptQuickStart: {
 	            path: "/docs/javascript_quick_start"
-	        },
-	        triggeringClientEvents: {
-	            path: "/docs/client_api_guide/client_events#trigger-events"
 	        }
 	    }
 	};
@@ -71045,21 +71032,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	        this.unbind_global();
 	        return this;
 	    };
-	    Dispatcher.prototype.emit = function (eventName, data, metadata) {
-	        for (var i = 0; i < this.global_callbacks.length; i++) {
+	    Dispatcher.prototype.emit = function (eventName, data) {
+	        var i;
+	        for (i = 0; i < this.global_callbacks.length; i++) {
 	            this.global_callbacks[i](eventName, data);
 	        }
 	        var callbacks = this.callbacks.get(eventName);
-	        var args = [];
-	        if (metadata) {
-	            args.push(data, metadata);
-	        }
-	        else if (data) {
-	            args.push(data);
-	        }
 	        if (callbacks && callbacks.length > 0) {
-	            for (var i = 0; i < callbacks.length; i++) {
-	                callbacks[i].fn.apply(callbacks[i].context || (window), args);
+	            for (i = 0; i < callbacks.length; i++) {
+	                callbacks[i].fn.call(callbacks[i].context || (window), data);
 	            }
 	        }
 	        else if (this.failThrough) {
@@ -72286,35 +72267,30 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ (function(module, exports) {
 
 	"use strict";
-	exports.decodeMessage = function (messageEvent) {
+	exports.decodeMessage = function (message) {
 	    try {
-	        var messageData = JSON.parse(messageEvent.data);
-	        var pusherEventData = messageData.data;
-	        if (typeof pusherEventData === 'string') {
+	        var params = JSON.parse(message.data);
+	        if (typeof params.data === 'string') {
 	            try {
-	                pusherEventData = JSON.parse(messageData.data);
+	                params.data = JSON.parse(params.data);
 	            }
-	            catch (e) { }
+	            catch (e) {
+	                if (!(e instanceof SyntaxError)) {
+	                    throw e;
+	                }
+	            }
 	        }
-	        var pusherEvent = {
-	            event: messageData.event,
-	            channel: messageData.channel,
-	            data: pusherEventData
-	        };
-	        if (messageData.user_id) {
-	            pusherEvent.user_id = messageData.user_id;
-	        }
-	        return pusherEvent;
+	        return params;
 	    }
 	    catch (e) {
-	        throw { type: 'MessageParseError', error: e, data: messageEvent.data };
+	        throw { type: 'MessageParseError', error: e, data: message.data };
 	    }
 	};
-	exports.encodeMessage = function (event) {
-	    return JSON.stringify(event);
+	exports.encodeMessage = function (message) {
+	    return JSON.stringify(message);
 	};
-	exports.processHandshake = function (messageEvent) {
-	    var message = exports.decodeMessage(messageEvent);
+	exports.processHandshake = function (message) {
+	    message = exports.decodeMessage(message);
 	    if (message.event === "pusher:connection_established") {
 	        if (!message.data.activity_timeout) {
 	            throw "No activity timeout specified in handshake";
@@ -72406,12 +72382,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return this.transport.send(data);
 	    };
 	    Connection.prototype.send_event = function (name, data, channel) {
-	        var event = { event: name, data: data };
+	        var message = { event: name, data: data };
 	        if (channel) {
-	            event.channel = channel;
+	            message.channel = channel;
 	        }
-	        logger_1["default"].debug('Event sent', event);
-	        return this.send(Protocol.encodeMessage(event));
+	        logger_1["default"].debug('Event sent', message);
+	        return this.send(Protocol.encodeMessage(message));
 	    };
 	    Connection.prototype.ping = function () {
 	        if (this.transport.supportsPing()) {
@@ -72427,23 +72403,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	    Connection.prototype.bindListeners = function () {
 	        var _this = this;
 	        var listeners = {
-	            message: function (messageEvent) {
-	                var pusherEvent;
+	            message: function (m) {
+	                var message;
 	                try {
-	                    pusherEvent = Protocol.decodeMessage(messageEvent);
+	                    message = Protocol.decodeMessage(m);
 	                }
 	                catch (e) {
 	                    _this.emit('error', {
 	                        type: 'MessageParseError',
 	                        error: e,
-	                        data: messageEvent.data
+	                        data: m.data
 	                    });
 	                }
-	                if (pusherEvent !== undefined) {
-	                    logger_1["default"].debug('Event recd', pusherEvent);
-	                    switch (pusherEvent.event) {
+	                if (message !== undefined) {
+	                    logger_1["default"].debug('Event recd', message);
+	                    switch (message.event) {
 	                        case 'pusher:error':
-	                            _this.emit('error', { type: 'PusherError', data: pusherEvent.data });
+	                            _this.emit('error', { type: 'PusherError', data: message.data });
 	                            break;
 	                        case 'pusher:ping':
 	                            _this.emit("ping");
@@ -72452,7 +72428,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                            _this.emit("pong");
 	                            break;
 	                    }
-	                    _this.emit('message', pusherEvent);
+	                    _this.emit('message', message);
 	                }
 	            },
 	            activity: function () {
@@ -72590,26 +72566,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	            callback(error, authData);
 	        });
 	    };
-	    PresenceChannel.prototype.handleEvent = function (event) {
-	        var eventName = event.event;
-	        if (eventName.indexOf("pusher_internal:") === 0) {
-	            this.handleInternalEvent(event);
-	        }
-	        else {
-	            var data = event.data;
-	            var metadata = {};
-	            if (event.user_id) {
-	                metadata.user_id = event.user_id;
-	            }
-	            this.emit(eventName, data, metadata);
-	        }
-	    };
-	    PresenceChannel.prototype.handleInternalEvent = function (event) {
-	        var eventName = event.event;
-	        var data = event.data;
-	        switch (eventName) {
+	    PresenceChannel.prototype.handleEvent = function (event, data) {
+	        switch (event) {
 	            case "pusher_internal:subscription_succeeded":
-	                this.handleSubscriptionSucceededEvent(event);
+	                this.subscriptionPending = false;
+	                this.subscribed = true;
+	                if (this.subscriptionCancelled) {
+	                    this.pusher.unsubscribe(this.name);
+	                }
+	                else {
+	                    this.members.onSubscription(data);
+	                    this.emit("pusher:subscription_succeeded", this.members);
+	                }
 	                break;
 	            case "pusher_internal:member_added":
 	                var addedMember = this.members.addMember(data);
@@ -72621,17 +72589,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    this.emit('pusher:member_removed', removedMember);
 	                }
 	                break;
-	        }
-	    };
-	    PresenceChannel.prototype.handleSubscriptionSucceededEvent = function (event) {
-	        this.subscriptionPending = false;
-	        this.subscribed = true;
-	        if (this.subscriptionCancelled) {
-	            this.pusher.unsubscribe(this.name);
-	        }
-	        else {
-	            this.members.onSubscription(event.data);
-	            this.emit("pusher:subscription_succeeded", this.members);
+	            default:
+	                private_channel_1["default"].prototype.handleEvent.call(this, event, data);
 	        }
 	    };
 	    PresenceChannel.prototype.disconnect = function () {
@@ -72684,7 +72643,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	var dispatcher_1 = __webpack_require__(24);
 	var Errors = __webpack_require__(31);
 	var logger_1 = __webpack_require__(8);
-	var url_store_1 = __webpack_require__(14);
 	var Channel = (function (_super) {
 	    __extends(Channel, _super);
 	    function Channel(name, pusher) {
@@ -72704,35 +72662,27 @@ return /******/ (function(modules) { // webpackBootstrap
 	        if (event.indexOf("client-") !== 0) {
 	            throw new Errors.BadEventName("Event '" + event + "' does not start with 'client-'");
 	        }
-	        if (!this.subscribed) {
-	            var suffix = url_store_1["default"].buildLogSuffix("triggeringClientEvents");
-	            logger_1["default"].warn("Client event triggered before channel 'subscription_succeeded' event . " + suffix);
-	        }
 	        return this.pusher.send_event(event, data, this.name);
 	    };
 	    Channel.prototype.disconnect = function () {
 	        this.subscribed = false;
 	        this.subscriptionPending = false;
 	    };
-	    Channel.prototype.handleEvent = function (event) {
-	        var eventName = event.event;
-	        var data = event.data;
-	        if (eventName === "pusher_internal:subscription_succeeded") {
-	            this.handleSubscriptionSucceededEvent(event);
-	        }
-	        else if (eventName.indexOf("pusher_internal:") !== 0) {
-	            var metadata = {};
-	            this.emit(eventName, data, metadata);
-	        }
-	    };
-	    Channel.prototype.handleSubscriptionSucceededEvent = function (event) {
-	        this.subscriptionPending = false;
-	        this.subscribed = true;
-	        if (this.subscriptionCancelled) {
-	            this.pusher.unsubscribe(this.name);
+	    Channel.prototype.handleEvent = function (event, data) {
+	        if (event.indexOf("pusher_internal:") === 0) {
+	            if (event === "pusher_internal:subscription_succeeded") {
+	                this.subscriptionPending = false;
+	                this.subscribed = true;
+	                if (this.subscriptionCancelled) {
+	                    this.pusher.unsubscribe(this.name);
+	                }
+	                else {
+	                    this.emit("pusher:subscription_succeeded", data);
+	                }
+	            }
 	        }
 	        else {
-	            this.emit("pusher:subscription_succeeded", event.data);
+	            this.emit(event, data);
 	        }
 	    };
 	    Channel.prototype.subscribe = function () {
@@ -72744,7 +72694,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        this.subscriptionCancelled = false;
 	        this.authorize(this.pusher.connection.socket_id, function (error, data) {
 	            if (error) {
-	                _this.emit('pusher:subscription_error', data);
+	                _this.handleEvent('pusher:subscription_error', data);
 	            }
 	            else {
 	                _this.pusher.send_event('pusher:subscribe', {
@@ -72878,14 +72828,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	    EncryptedChannel.prototype.trigger = function (event, data) {
 	        throw new Errors.UnsupportedFeature('Client events are not currently supported for encrypted channels');
 	    };
-	    EncryptedChannel.prototype.handleEvent = function (event) {
-	        var eventName = event.event;
-	        var data = event.data;
-	        if (eventName.indexOf("pusher_internal:") === 0 || eventName.indexOf("pusher:") === 0) {
-	            _super.prototype.handleEvent.call(this, event);
+	    EncryptedChannel.prototype.handleEvent = function (event, data) {
+	        if (event.indexOf("pusher_internal:") === 0 || event.indexOf("pusher:") === 0) {
+	            _super.prototype.handleEvent.call(this, event, data);
 	            return;
 	        }
-	        this.handleEncryptedEvent(eventName, data);
+	        this.handleEncryptedEvent(event, data);
 	    };
 	    EncryptedChannel.prototype.handleEncryptedEvent = function (event, data) {
 	        var _this = this;
@@ -78689,7 +78637,7 @@ var content = __webpack_require__(214);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(5)("4cd5548a", content, false, {});
+var update = __webpack_require__(5)("52c48ab7", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -78943,7 +78891,7 @@ var content = __webpack_require__(219);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(5)("54362aa0", content, false, {});
+var update = __webpack_require__(5)("62c3db20", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -79183,7 +79131,7 @@ var content = __webpack_require__(223);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(5)("3671e204", content, false, {});
+var update = __webpack_require__(5)("7fc38c78", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -82570,7 +82518,7 @@ var content = __webpack_require__(322);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(5)("58078a02", content, false, {});
+var update = __webpack_require__(5)("4a747008", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -83615,7 +83563,7 @@ var content = __webpack_require__(340);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(5)("846ec39a", content, false, {});
+var update = __webpack_require__(5)("3efaf8ad", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -84517,7 +84465,7 @@ var content = __webpack_require__(354);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(5)("2aa024ca", content, false, {});
+var update = __webpack_require__(5)("df334be4", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -88885,7 +88833,7 @@ var render = function() {
                                 _vm._v(" "),
                                 _c("p", { staticClass: "description" }, [
                                   _vm._v(
-                                    "\r\n                                    Send an Email to introduce yourself and your services\r\n                                "
+                                    "\n                                    Send an Email to introduce yourself and your services\n                                "
                                   )
                                 ])
                               ])
@@ -88926,7 +88874,7 @@ var render = function() {
                                 _vm._v(" "),
                                 _c("p", { staticClass: "description" }, [
                                   _vm._v(
-                                    "\r\n                                    Send a follow up email\r\n                                "
+                                    "\n                                    Send a follow up email\n                                "
                                   )
                                 ])
                               ])
@@ -88967,7 +88915,7 @@ var render = function() {
                                 _vm._v(" "),
                                 _c("p", { staticClass: "description" }, [
                                   _vm._v(
-                                    "\r\n                                    Send last email\r\n                                "
+                                    "\n                                    Send last email\n                                "
                                   )
                                 ])
                               ])
@@ -89008,7 +88956,7 @@ var render = function() {
                                 _vm._v(" "),
                                 _c("p", { staticClass: "description" }, [
                                   _vm._v(
-                                    "\r\n                                  Make a phone call to introduce yourself and your servces (try 3 times during the day and next day)\r\n                                "
+                                    "\n                                  Make a phone call to introduce yourself and your servces (try 3 times during the day and next day)\n                                "
                                   )
                                 ])
                               ])
@@ -91460,7 +91408,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\r\n        List of Leads "),
+      _vm._v("\n        List of Leads "),
       _c(
         "button",
         {
@@ -92475,7 +92423,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\r\n        List of Clients")
+      _vm._v("\n        List of Clients")
     ])
   },
   function() {
@@ -93258,7 +93206,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\r\n        List of Partners")
+      _vm._v("\n        List of Partners")
     ])
   },
   function() {
@@ -93732,7 +93680,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\r\n        List of Posts\r\n        "),
+      _vm._v("\n        List of Posts\n        "),
       _c(
         "a",
         {
@@ -94227,7 +94175,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\r\n        Categories Table\r\n        "),
+      _vm._v("\n        Categories Table\n        "),
       _c(
         "button",
         {
@@ -95089,9 +95037,9 @@ var render = function() {
                             { key: source.id, staticClass: "list-group-item" },
                             [
                               _vm._v(
-                                "\r\n                    " +
+                                "\n                    " +
                                   _vm._s(source.name) +
-                                  "\r\n                    "
+                                  "\n                    "
                               ),
                               _c(
                                 "button",
@@ -95140,9 +95088,9 @@ var render = function() {
                             { key: status.id, staticClass: "list-group-item" },
                             [
                               _vm._v(
-                                "\r\n                    " +
+                                "\n                    " +
                                   _vm._s(status.name) +
-                                  "\r\n                    "
+                                  "\n                    "
                               ),
                               _c(
                                 "button",
@@ -95191,9 +95139,9 @@ var render = function() {
                             { key: service.id, staticClass: "list-group-item" },
                             [
                               _vm._v(
-                                "\r\n                    " +
+                                "\n                    " +
                                   _vm._s(service.name) +
-                                  "\r\n                    "
+                                  "\n                    "
                               ),
                               _c(
                                 "button",
@@ -96000,7 +95948,7 @@ var staticRenderFns = [
                 "aria-controls": "collapseOne"
               }
             },
-            [_vm._v("\r\n                  Sources\r\n                ")]
+            [_vm._v("\n                  Sources\n                ")]
           )
         ]),
         _vm._v(" "),
@@ -96038,7 +95986,7 @@ var staticRenderFns = [
                 "aria-controls": "collapseTwo"
               }
             },
-            [_vm._v("\r\n                  Statuses\r\n                ")]
+            [_vm._v("\n                  Statuses\n                ")]
           )
         ]),
         _vm._v(" "),
@@ -96076,7 +96024,7 @@ var staticRenderFns = [
                 "aria-controls": "collapseThree"
               }
             },
-            [_vm._v("\r\n                  Services\r\n                ")]
+            [_vm._v("\n                  Services\n                ")]
           )
         ]),
         _vm._v(" "),
@@ -96248,7 +96196,7 @@ var content = __webpack_require__(387);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(5)("968d3776", content, false, {});
+var update = __webpack_require__(5)("1492f942", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -96529,7 +96477,7 @@ var content = __webpack_require__(391);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(5)("1b7ea66e", content, false, {});
+var update = __webpack_require__(5)("300629d6", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -96740,7 +96688,7 @@ var content = __webpack_require__(396);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(5)("f4c8b206", content, false, {});
+var update = __webpack_require__(5)("1d0c7694", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -97296,7 +97244,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\r\n        List of SEO Projects\r\n        "),
+      _vm._v("\n        List of SEO Projects\n        "),
       _c(
         "button",
         {
@@ -97360,7 +97308,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "modal-body" }, [
       _c("div", { staticClass: "container" }, [
         _vm._v(
-          "\r\n                        Are you sure you want to delete the project?\r\n                    "
+          "\n                        Are you sure you want to delete the project?\n                    "
         )
       ])
     ])
@@ -97437,7 +97385,7 @@ var content = __webpack_require__(408);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(5)("60e70979", content, false, {});
+var update = __webpack_require__(5)("dca9e8da", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -97616,9 +97564,7 @@ var render = function() {
         _c("div", { staticClass: "card-header" }, [
           _c("i", { staticClass: "fas fa-table" }),
           _vm._v(
-            "\r\n        Edit Project " +
-              _vm._s(_vm.project.name) +
-              "\r\n        "
+            "\n        Edit Project " + _vm._s(_vm.project.name) + "\n        "
           ),
           _c(
             "button",
@@ -98642,7 +98588,7 @@ var content = __webpack_require__(416);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(5)("75ecbc92", content, false, {});
+var update = __webpack_require__(5)("649b03e5", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -103098,7 +103044,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\r\n        List of Cases\r\n        "),
+      _vm._v("\n        List of Cases\n        "),
       _c(
         "a",
         {
@@ -103595,7 +103541,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\r\n        Case Services Table\r\n        "),
+      _vm._v("\n        Case Services Table\n        "),
       _c(
         "button",
         {
@@ -104115,7 +104061,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\r\n        Case Technologies Table\r\n        "),
+      _vm._v("\n        Case Technologies Table\n        "),
       _c(
         "button",
         {
@@ -104403,7 +104349,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fas fa-table" }),
-      _vm._v("\r\n        List of Subscribers "),
+      _vm._v("\n        List of Subscribers "),
       _c(
         "button",
         {

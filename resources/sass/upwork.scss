@@ -1,0 +1,208 @@
+.air-card {
+	position: relative;
+	background-color: #fff;
+	margin: 30px -30px;
+	padding: 30px;
+	-webkit-box-shadow: 0 1px 6px rgba(57,73,76,0.35);
+	box-shadow: 0 1px 6px rgba(57,73,76,0.35)
+}
+
+.upwork-font {
+	font-family: "Gotham SSm",Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  line-height: 1.42857;
+  color: #222;
+}
+
+.media:first-child {
+    margin-top: 0;
+}
+
+.media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.off-canvas-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+    transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.media>.pull-left {
+    margin-right: 10px;
+    float: none !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.fe-ui-application img, .fe-ui-window img {
+    border: medium none;
+    max-width: 100%;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.cfe-avatar {
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    padding: 0;
+}
+
+.m-0 {
+    margin: 0 !important;
+}
+
+.avatar-md, .avatar-80 {
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    padding: 0;
+}
+
+.media .avatar {
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    color: #E0E0E0;
+    border: solid 1px #E0E0E0;
+		width: 80px;
+		height: 80px;
+}
+
+.media-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    min-width: 0;
+}
+
+.air-card h1:first-child, .air-card h2:first-child, .air-card h3:first-child, .air-card h4:first-child, .air-card h5:first-child, .air-card h6:first-child, .air-card section h1:first-child, .air-card section h2:first-child, .air-card section h3:first-child, .air-card section h4:first-child, .air-card section h5:first-child, .air-card section h6:first-child, up-c-card h1:first-child, up-c-card h2:first-child, up-c-card h3:first-child, up-c-card h4:first-child, up-c-card h5:first-child, up-c-card h6:first-child, up-c-card section h1:first-child, up-c-card section h2:first-child, up-c-card section h3:first-child, up-c-card section h4:first-child, up-c-card section h5:first-child, up-c-card section h6:first-child {
+    padding-top: 0;
+}
+
+.m-xs-bottom {
+    margin-bottom: 5px !important;
+}
+
+fe-profile-map .fe-map-trigger {
+    padding-bottom: 2px;
+}
+
+fe-profile-map .fe-map {
+    visibility: hidden;
+    opacity: 0;
+    background: #fff;
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    z-index: 1001;
+    box-shadow: rgba(0,0,0,0.5) 0 0 3px;
+    -moz-box-shadow: rgba(0,0,0,0.5) 0 0 3px;
+    -webkit-box-shadow: rgba(0,0,0,0.5) 0 0 3px;
+    transition: visibility 0s,opacity .15s ease-in-out;
+    -moz-transition: visibility 0s,opacity .15s ease-in-out;
+    -webkit-transition: visibility 0s,opacity .15s ease-in-out;
+}
+
+@media (min-width: 768px){
+	.d-md-block {
+	    display: block !important;
+	}
+}
+.d-none {
+    display: none !important;
+}
+
+.glyphicon {
+    position: relative;
+    top: 0;
+    display: inline-block;
+}
+
+.glyphicon, [class^="air-icon-"], [class*=" air-icon-"] {
+    font-family: 'Air icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    line-height: 14px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.fe-profile-header .w-700 {
+    font-weight: 600;
+}
+.text-capitalize {
+    text-transform: capitalize !important;
+}
+@media (min-width: 480px){
+	.d-sm-block {
+	    display: block !important;
+	}
+}
+
+.air-card h3:first-child {
+	    padding-top: 0;
+}
+fe-profile-header cfe-job-success .progress-sm {
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+.progress-sm {
+    height: 4px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #E0E0E0;
+    overflow: visible;
+    border-radius: 0;
+}
+
+.progress-sm .progress-bar {
+    position: relative;
+	}
+.progress-bar {
+		background-color: #14BFF4;
+	  height: 4px;
+	  -webkit-box-shadow: none;
+	  box-shadow: none;
+	  color: #222;
+    float: left;
+    width: 0%;
+    font-size: 10px;
+    line-height: 18px;
+
+}
+.m-0-bottom {
+    margin-bottom: 0 !important;
+}
+.upwork-sm {
+	font-size: 12px;
+line-height: 20px;
+}
