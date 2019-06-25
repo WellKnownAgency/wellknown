@@ -90,81 +90,20 @@
 						 data-aos-easing="linear"
 						 data-aos-duration="1100">
 			</div>
-
 		</div>
 	</div>
 
-<!--
-	<section>
-		<div class="features-4 " data-background-color="gray">
-			<div class="container">
-				<div class="row" style="margin-left:0px;margin-right:0px; ">
-					<div class = "col-md-9">
-					<div class="col-md-10 ml-auto mr-auto text-center">
-						<h2 class="title">Professional WORDPRESS SEO Services</h2>
-						<h5 class="description">
-								WordPress is one of the most demanded CMS systems.
-								It is constantly being upgraded and has a lot of competitive advantages, which ensures convenient operation and maximum security of the sites.
-								WellKnown Digital agency provides services in search engine optimization for websites based on WordPress.
-								We will select the best SEO plan in terms of performance and budget. </h5>
-								<h4>Our clients get:</h4>
-					</div>
-				<div class="row wordpress_wkn_services_row"
-						 data-aos="fade-right"
-						 data-aos-easing="linear"
-						 data-aos-duration="500">
-					<div class="col-md-2 align-self-right">
-						<i class="now-ui-icons ui-1_check wordpress_wkn_check"></i>
-					</div>
-					<div class="col-md-10 align-self-center">
-					<p class="wordpress_wkn_services">
-						Increasing of positions in search engines in the shortest possible time due to the correct implementation of tools for onsite optimization;							</p>
-					</div>
-				</div>
-				<div class="row wordpress_wkn_services_row"
-						 data-aos="fade-right"
-						 data-aos-easing="linear"
-						 data-aos-duration="700">
-					<div class="col-md-2 align-self-center">
-						<i class="now-ui-icons ui-1_check wordpress_wkn_check"></i>
-					</div>
-					<div class="col-md-10 align-self-center">
-						<p class="wordpress_wkn_services">
-						Traffic increase - the audience will be attracted by a quality website with clear URLs, user-friendly elements, and useful content;
-					</p>
-					</div>
-				</div>
-				<div class="row wordpress_wkn_services_row"
-						 data-aos="fade-right"
-						 data-aos-easing="linear"
-						 data-aos-duration="900">
-					<div class="col-md-2 align-self-center">
-						<i class="now-ui-icons ui-1_check wordpress_wkn_check"></i>
-					</div>
-					<div class="col-md-10 align-self-center">
-						<p class="wordpress_wkn_services">
-						A website based on the CMS that is optimally set up for your goals - whether it is a news portal, a blog or a resource in any different format.
-					</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-<img src="/images/wordpress/wordpress_info.jpg">
-			</div>
-			</div>
-		</div>
-	</section>
--->
-
+<section>
 	<div class="section section-content">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 ml-auto mr-auto text-center">
 					<h2 class="title">KEY POINTS OF WORDPRESS WEBISTE OPTIMIZATION:</h2>
+					<h5 class="description">
+						WordPress website optimization is not completely different from the SEO of a resource on any other platform. The nuances are mainly in the inner part. SEO optimization of a WordPress resource should be based on the following features:
+					</h5>
+
 				</div>
-				<p>
-					WordPress website optimization is not completely different from the SEO of a resource on any other platform. The nuances are mainly in the inner part. SEO optimization of a WordPress resource should be based on the following features:
-				</p>
 			</div>
 			<br>
 			<div class="row wordpress_wkn_services_row"
@@ -234,12 +173,14 @@
 			</div>
 		</br>
 			<div class="row">
+				<div class="container">
 				<p>
 				SEO optimization of a Wordpress resource begins with an audit of the site and includes all the main stages of optimization.
 				These are a fix of technical errors, checking for robots.txt, redirects, layouts, images, creating a semantic core, working with content and backlinks mass, following up to Google algorithms changing, and so on. WordPress site optimization is practically not carried out without the use of plug-ins.
 				Among the most common:
 				</p>
 			</div>
+		</div>
 		</br>
 			<div class="row wordpress_wkn_services_row"
 					 data-aos="fade-right"
@@ -293,7 +234,6 @@
 				</p>
 				</div>
 			</div>
-
 			<div class="row" style="padding-top:50px;">
 				<div class="col-md-10 ml-auto mr-auto text-center" data-aos="fade-up" data-aos-duration="1000">
 					<blockquote class="blockquote">
@@ -303,9 +243,9 @@
 					</blockquote>
 				</div>
 			</div>
-
 		</div>
 	</div>
+</section>
 
 	<div class="section call-to-action-section" data-background-color="gray">
 		<div class="row" style="margin-left: 0; margin-right:0;">
@@ -364,200 +304,192 @@
 	</div>
 	<!--     *********    END TESTIMONIALS 2      *********      -->
 
-	<div class="pricing-1" id="pricing-1" style="background-color: #c3cbdc;
-background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
-">
+	<div class="pricing-1" id="pricing-1" style="background-color: #c3cbdc; background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);">
 	<div class="container">
-			<div class="row">
-					<div class="col-md-6 ml-auto mr-auto text-center">
-							<h2 class="title">WordPress SEO Pricing</h2>
-							<div class="section-space"></div>
+		<div class="row">
+				<div class="col-md-6 ml-auto mr-auto text-center">
+						<h2 class="title">WordPress SEO Pricing</h2>
+						<div class="section-space"></div>
+				</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4"data-aos="fade-right"
+				data-aos-easing="linear"
+				data-aos-duration="1200">
+					<div class="card card-pricing card-plain">
+							<div class="card-body">
+									<h5 class="category ">Single</h5>
+									<div class="icon icon-warning">
+											<i class="now-ui-icons media-1_button-power"></i>
+									</div>
+									<h3 class="card-title">$200</h3>
+									<ul>
+										<li>
+											<i class="now-ui-icons ui-1_check check_price_landing"></i>
+											One Page SEO</li>
+										<li>
+											<i class="now-ui-icons ui-1_check check_price_landing"></i>
+											Keywords Research</li>
+										<li>
+											<i class="now-ui-icons ui-1_check check_price_landing"></i>
+											Yoast Setup</li>
+										<li>
+											<i class="now-ui-icons ui-1_check check_price_landing"></i>
+											Title Optimization</li>
+										<li>
+											<i class="now-ui-icons ui-1_check check_price_landing"></i>
+											Meta Description</li>
+										<li>
+											<i class="now-ui-icons ui-1_check check_price_landing"></i>
+											Image Alt Tags</li>
+										<li>
+											<i class="now-ui-icons ui-1_check check_price_landing"></i>
+											H1, H2, H3 Tags</li>
+										<li>
+											<i class="now-ui-icons ui-1_check check_price_landing"></i>
+											Sitemap Creation</li>
+										<li>
+											<i class="now-ui-icons ui-1_simple-remove simple_remove_icon_price"></i>
+											Schema Markup</li>
+										<li>
+											<i class="now-ui-icons ui-1_simple-remove simple_remove_icon_price"></i>
+											Cache & speed Optimization</li>
+										<li>
+											<i class="now-ui-icons ui-1_simple-remove simple_remove_icon_price"></i>
+											Content Optimization</li>
+										<li>
+											<i class="now-ui-icons ui-1_simple-remove simple_remove_icon_price"></i>
+											Analytics & search console setting</li>
+										<li>
+											<i class="now-ui-icons ui-1_simple-remove simple_remove_icon_price"></i>
+											Spam links removal</li>
+										<li>
+											<i class="now-ui-icons ui-1_simple-remove simple_remove_icon_price"></i>
+											Link Building strategy</li>
+									</ul>
+									<a href="/contact-us" class="btn btn-neutral btn-warning btn-round">Contact us</a>
+							</div>
 					</div>
 			</div>
-
-			<div class="row">
-
-					<div class="col-md-4"data-aos="fade-right"
-						data-aos-easing="linear"
-						data-aos-duration="1200">
-							<div class="card card-pricing card-plain">
-									<div class="card-body">
-											<h5 class="category ">Single</h5>
-											<div class="icon icon-warning">
-													<i class="now-ui-icons media-1_button-power"></i>
-											</div>
-											<h3 class="card-title">$200</h3>
-											<ul>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													One Page SEO</li>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													Keywords Research</li>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													Yoast Setup</li>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													Title Optimization</li>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													Meta Description</li>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													Image Alt Tags</li>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													H1, H2, H3 Tags</li>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													Sitemap Creation</li>
-												<li>
-													<i class="now-ui-icons ui-1_simple-remove simple_remove_icon_price"></i>
-													Schema Markup</li>
-												<li>
-													<i class="now-ui-icons ui-1_simple-remove simple_remove_icon_price"></i>
-													Cache & speed Optimization</li>
-												<li>
-													<i class="now-ui-icons ui-1_simple-remove simple_remove_icon_price"></i>
-													Content Optimization</li>
-												<li>
-													<i class="now-ui-icons ui-1_simple-remove simple_remove_icon_price"></i>
-													Analytics & search console setting</li>
-												<li>
-													<i class="now-ui-icons ui-1_simple-remove simple_remove_icon_price"></i>
-													Spam links removal</li>
-												<li>
-													<i class="now-ui-icons ui-1_simple-remove simple_remove_icon_price"></i>
-													Link Building strategy</li>
-											</ul>
-											<a href="/contact-us" class="btn btn-neutral btn-warning btn-round">Contact us</a>
+			<div class="col-md-4"data-aos="fade-right"
+				data-aos-easing="linear"
+				data-aos-duration="1000">
+					<div class="card card-pricing">
+							<div class="card-body">
+									<h5 class="category">Double</h5>
+									<div class="icon icon-primary">
+											<i class="now-ui-icons objects_diamond"></i>
 									</div>
+									<h3 class="card-title">$300</h3>
+									<ul>
+										<li>
+											<i class="now-ui-icons ui-1_check check_price_landing"></i>
+											One Page SEO</li>
+										<li>
+											<i class="now-ui-icons ui-1_check check_price_landing"></i>
+											Keywords Research</li>
+										<li>
+											<i class="now-ui-icons ui-1_check check_price_landing"></i>
+											Yoast Setup</li>
+										<li>
+											<i class="now-ui-icons ui-1_check check_price_landing"></i>
+											Title Optimization</li>
+										<li>
+											<i class="now-ui-icons ui-1_check check_price_landing"></i>
+											Meta Description</li>
+										<li>
+											<i class="now-ui-icons ui-1_check check_price_landing"></i>
+											Image Alt Tags</li>
+										<li>
+											<i class="now-ui-icons ui-1_check check_price_landing"></i>
+											H1, H2, H3 Tags</li>
+										<li>
+											<i class="now-ui-icons ui-1_check check_price_landing"></i>
+											Sitemap Creation</li>
+											<li>
+												<i class="now-ui-icons ui-1_check check_price_landing"></i>
+												Schema Markup</li>
+										<li>
+											<i class="now-ui-icons ui-1_check check_price_landing"></i>
+											Cache & speed Optimization</li>
+										<li>
+											<i class="now-ui-icons ui-1_check check_price_landing"></i>
+											Content Optimization</li>
+										<li>
+											<i class="now-ui-icons ui-1_simple-remove simple_remove_icon_price"></i>
+											Analytics & search console setting</li>
+										<li>
+											<i class="now-ui-icons ui-1_simple-remove simple_remove_icon_price"></i>
+											Spam links removal</li>
+										<li>
+											<i class="now-ui-icons ui-1_simple-remove simple_remove_icon_price"></i>
+											Link Building strategy</li>
+									</ul>
+									<a href="/contact-us" class="btn btn-primary btn-round">Contact us</a>
 							</div>
 					</div>
-
-					<div class="col-md-4"data-aos="fade-right"
-						data-aos-easing="linear"
-						data-aos-duration="1000">
-							<div class="card card-pricing">
-									<div class="card-body">
-											<h5 class="category">Double</h5>
-											<div class="icon icon-primary">
-													<i class="now-ui-icons objects_diamond"></i>
-											</div>
-											<h3 class="card-title">$300</h3>
-											<ul>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													One Page SEO</li>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													Keywords Research</li>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													Yoast Setup</li>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													Title Optimization</li>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													Meta Description</li>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													Image Alt Tags</li>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													H1, H2, H3 Tags</li>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													Sitemap Creation</li>
-													<li>
-														<i class="now-ui-icons ui-1_check check_price_landing"></i>
-														Schema Markup</li>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													Cache & speed Optimization</li>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													Content Optimization</li>
-												<li>
-													<i class="now-ui-icons ui-1_simple-remove simple_remove_icon_price"></i>
-													Analytics & search console setting</li>
-												<li>
-													<i class="now-ui-icons ui-1_simple-remove simple_remove_icon_price"></i>
-													Spam links removal</li>
-												<li>
-													<i class="now-ui-icons ui-1_simple-remove simple_remove_icon_price"></i>
-													Link Building strategy</li>
-											</ul>
-											<a href="/contact-us" class="btn btn-primary btn-round">Contact us</a>
-									</div>
-							</div>
-					</div>
-
-					<div class="col-md-4"data-aos="fade-right"
-						data-aos-easing="linear"
-						data-aos-duration="700">
-							<div class="card card-pricing card-plain">
-									<div class="card-body">
-											<h5 class="category ">Triple</h5>
-											<div class="icon icon-success">
-													<i class="now-ui-icons media-2_sound-wave"></i>
-											</div>
-											<h3 class="card-title">$500</h3>
-											<ul>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													One Page SEO</li>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													Keywords Research</li>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													Yoast Setup</li>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													Title Optimization</li>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													Meta Description</li>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													Image Alt Tags</li>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													H1, H2, H3 Tags</li>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													Sitemap Creation</li>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													Schema Markup</li>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													Cache & speed Optimization</li>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													Content Optimization</li>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													Analytics & search console setting</li>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													Spam links removal</li>
-												<li>
-													<i class="now-ui-icons ui-1_check check_price_landing"></i>
-													Link Building strategy</li>
-											</ul>
-											<a href="/contact-us" class="btn btn-neutral btn-success btn-round">Contact us</a>
-									</div>
-							</div>
-					</div>
-
 			</div>
-	</div>
-</div>
-
+			<div class="col-md-4"data-aos="fade-right"
+					data-aos-easing="linear"
+					data-aos-duration="700">
+						<div class="card card-pricing card-plain">
+								<div class="card-body">
+										<h5 class="category ">Triple</h5>
+										<div class="icon icon-success">
+												<i class="now-ui-icons media-2_sound-wave"></i>
+										</div>
+										<h3 class="card-title">$500</h3>
+										<ul>
+											<li>
+												<i class="now-ui-icons ui-1_check check_price_landing"></i>
+												One Page SEO</li>
+											<li>
+												<i class="now-ui-icons ui-1_check check_price_landing"></i>
+												Keywords Research</li>
+											<li>
+												<i class="now-ui-icons ui-1_check check_price_landing"></i>
+												Yoast Setup</li>
+											<li>
+												<i class="now-ui-icons ui-1_check check_price_landing"></i>
+												Title Optimization</li>
+											<li>
+												<i class="now-ui-icons ui-1_check check_price_landing"></i>
+												Meta Description</li>
+											<li>
+												<i class="now-ui-icons ui-1_check check_price_landing"></i>
+												Image Alt Tags</li>
+											<li>
+												<i class="now-ui-icons ui-1_check check_price_landing"></i>
+												H1, H2, H3 Tags</li>
+											<li>
+												<i class="now-ui-icons ui-1_check check_price_landing"></i>
+												Sitemap Creation</li>
+											<li>
+												<i class="now-ui-icons ui-1_check check_price_landing"></i>
+												Schema Markup</li>
+											<li>
+												<i class="now-ui-icons ui-1_check check_price_landing"></i>
+												Cache & speed Optimization</li>
+											<li>
+												<i class="now-ui-icons ui-1_check check_price_landing"></i>
+												Content Optimization</li>
+											<li>
+												<i class="now-ui-icons ui-1_check check_price_landing"></i>
+												Analytics & search console setting</li>
+											<li>
+												<i class="now-ui-icons ui-1_check check_price_landing"></i>
+												Spam links removal</li>
+											<li>
+												<i class="now-ui-icons ui-1_check check_price_landing"></i>
+												Link Building strategy</li>
+										</ul>
+										<a href="/contact-us" class="btn btn-neutral btn-success btn-round">Contact us</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
 
 </div>
 @stop
