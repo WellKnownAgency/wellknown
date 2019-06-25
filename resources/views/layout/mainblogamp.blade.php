@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ⚡ lang="en">
 	<head>
-	@include('partials/_head')
+	@include('partials/_headamp')
 	@yield('customcss')
 	</head>
 	<body class="index-page sidebar-collapse">
@@ -9,7 +9,7 @@
 		<!-- Page Content -->
 		<div class="presentation-page">
 			@yield('content')
-			@include('partials/_footer')
+			@include('partials/_footeramp')
 		</div>
 	</body>
 </html>
