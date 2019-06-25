@@ -13,7 +13,7 @@
 @section('content')
 <!-- Header -->
 <div class="wrapper">
-	<div class="page-header page-header" style="background-image: url('../images/wordpress/wordpress_bg.jpg')">
+	<div class="page-header page-header" style="background-image: url('../images/wordpress/wordpress_seo_bg.jpg')">
 			<div class="container">
 					<div class="row">
 							<div class="col-md-8 ml-auto mr-auto text-center" style="padding-top: 100px;">
