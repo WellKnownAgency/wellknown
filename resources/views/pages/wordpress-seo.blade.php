@@ -84,7 +84,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3 ml-auto mr-auto">
+			<div class="col-md-3 ml-auto mr-auto" style="text-align:center;">
 				<img src="/images/wordpress/wordpress_info.jpg" width="280" height="auto" alt="WordPress"
 						 data-aos="zoom-in"
 						 data-aos-easing="linear"
