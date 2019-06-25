@@ -235,8 +235,7 @@
 				</div>
 			</div>
 			<div class="row" style="padding-top:50px;">
-				<div class="col-md-10 ml-auto mr-auto text-center" data-aos="fade-up"
-     data-aos-duration="1000">
+				<div class="col-md-10 ml-auto mr-auto text-center" data-aos="fade-up" data-aos-duration="1000">
 					<blockquote class="blockquote">
 					  <p class="mb-0">
 							<span style="font-weight:bold; font-size:1.1em;">WellKnown Digital Agency</span> will help in optimizing the resource on a popular platform. Professional Search Engine Optimization will bring rapid growth in conversion, ROI and other key factors. <a href="/contact-us"> Book a free consultation now.</a>
