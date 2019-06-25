@@ -19,7 +19,7 @@
    "@type":"WebPage",
    "@id":"https://wknown.com/blog/{!! $post->slug !!}"
  },
- "headline": "My First AMP Article",
+ "headline": "{!! $post->title !!}",
  "image": {
    "@type": "ImageObject",
    "url": "https://wknown.com/images/blog/{{ $post->image }}",
@@ -27,7 +27,7 @@
    "width": 800
  },
  "datePublished": "{!! $post->created_at !!}",
- "dateModified": "{!! $post->udated_at !!}",
+ "dateModified": "{!! $post->updated_at !!}",
  "author": {
    "@type": "Person",
    "name": "{!! $post->user->name !!}"
