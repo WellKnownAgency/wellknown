@@ -11,10 +11,40 @@
 @stop
 
 @section('customcss')
-<!-- Schema.org markup for Google+ -->
-<meta itemprop="name" content="{{ $post->title }}">
-<meta itemprop="description" content="{{ $post->dscr }}">
-<meta itemprop="image" content="http://www.wknown.com/images/blog/{{ $post->image }}">
+<script type="application/ld+json">
+{
+ "@context": "http://schema.org",
+ "@type": "NewsArticle",
+ "mainEntityOfPage":{
+   "@type":"WebPage",
+   "@id":"https://wknown.com/blog/{!! $post->slug !!}"
+ },
+ "headline": "My First AMP Article",
+ "image": {
+   "@type": "ImageObject",
+   "url": "https://wknown.com/images/blog/{{ $post->image }}",
+   "height": 800,
+   "width": 800
+ },
+ "datePublished": "{!! $post->created_at !!}",
+ "dateModified": "{!! $post->udated_at !!}",
+ "author": {
+   "@type": "Person",
+   "name": "{!! $post->user->name !!}"
+ },
+ "publisher": {
+   "@type": "Organization",
+   "name": "WellKnown Agency",
+   "logo": {
+     "@type": "ImageObject",
+     "url": "https://wknown.com/images/wk.jpg",
+     "width": 100,
+     "height": 48
+   }
+ },
+ "description": "{!! $post->excerpt !!}"
+}
+</script>
 
 <!-- Twitter Card data -->
 <meta name="twitter:card" content="summary_large_image">
