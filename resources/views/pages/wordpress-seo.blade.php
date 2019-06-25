@@ -2,7 +2,7 @@
 
 @section('title', 'Wordpress SEO Services')
 
-@section('description', 'Content research and strategy, regular blog postings and more you can achieve with our Agency Content Marketing Services. Contact now for a free consultation.')
+@section('description', 'Our SEO-specialists will create a successful SEO strategy of your WordPress website, regarding your budget and needs. Contact now for a free consultation.')
 
 @section('keywords', '')
 
@@ -36,7 +36,7 @@
 			<div class="row" style="margin-left:0px;margin-right:0px; ">
 				<div class="col-md-9 ml-auto mr-auto">
 					<div class="container">
-					<h2 class="title">PROFESSIONAL WORDPRESS SEO SERVICES</h2>
+					<h2 class="title">PROFESSIONAL SEO FOR WORDPRESS</h2>
 					<h5 class="category">WordPress is one of the most demanded CMS systems.
 													It is constantly being upgraded and has a lot of competitive advantages, which ensures convenient operation and maximum security of the sites.
 													WellKnown Digital agency provides services in search engine optimization for websites based on WordPress.
