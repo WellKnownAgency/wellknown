@@ -12,7 +12,8 @@
         "laravel/framework": "5.7.*",
         "laravel/passport": "^7.0",
         "laravel/tinker": "^1.0",
-        "petehouston/laravel-tinymce-simple-imageupload": "^1.1"
+        "petehouston/laravel-tinymce-simple-imageupload": "^1.1",
+        "wearejust/laravel-amp": "^1.1"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
@@ -54,9 +55,7 @@
             "@php artisan package:discover"
         ],
         "post-update-cmd": [
-            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
-            "php artisan ide-helper:generate",
-            "php artisan ide-helper:meta"
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate"
         ]
     },
     "config": {

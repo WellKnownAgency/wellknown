@@ -1,4 +1,4 @@
-@extends('layout.mainblog')
+@extends('layout.mainblogamp')
 
 @section('title', "$post->seotitle")
 
@@ -11,7 +11,9 @@
 @stop
 
 @section('customcss')
-<link rel="amphtml" href="http://www.wknown.com/blog/{{ $post->slug }}">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<link rel="canonical" href="http://www.wknown.com/amp/blog/{{ $post->slug }}">
 <script type="application/ld+json">
 {
  "@context": "http://schema.org",
