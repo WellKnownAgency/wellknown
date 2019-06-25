@@ -81,7 +81,7 @@
   z-index: 100;
 }
 p {
-    font-size: 1.4em !important;
+    font-size: 1.2em !important;
 }
 .modal.modal-primary .modal-content {
 		margin-top: 100px;

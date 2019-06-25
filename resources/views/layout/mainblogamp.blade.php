@@ -11,8 +11,5 @@
 			@yield('content')
 			@include('partials/_footer')
 		</div>
-
-		@include('partials/_js')
-@yield('customjs')
 	</body>
 </html>
