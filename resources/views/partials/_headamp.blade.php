@@ -30,4 +30,8 @@
 		font-family: Roboto;
 		font-size: 18px;
   }
+	a {
+		text-decoration: none;
+		color: #dc3741;
+	}
 </style>
