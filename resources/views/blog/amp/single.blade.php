@@ -7,7 +7,7 @@
 @section('keywords', '')
 
 @section('customcss')
-<link rel="canonical" href="http://www.wknown.com/amp/blog/{{ $post->slug }}">
+<link rel="canonical" href="http://www.wknown.com/blog/{{ $post->slug }}">
 <script type="application/ld+json">
 {
  "@context": "http://schema.org",
