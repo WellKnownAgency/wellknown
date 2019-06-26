@@ -72,36 +72,16 @@
 <meta property="article:section" content="Article Section" />
 <meta property="article:tag" content="Marketing" />
 <meta property="fb:admins" content="153425045259276" />
-
-<style>
-.button-container {
-  text-align: center;
-  margin-top: -112px;
-  position: relative;
-  z-index: 100;
-}
-p {
-    font-size: 1.2em !important;
-}
-.modal.modal-primary .modal-content {
-		margin-top: 100px;
-    background-color: #dc3741;
-    color: #FFFFFF;
-}
-.modal-content .modal-footer button {
-    /* margin: 0; */
-    /* padding-left: 16px; */
-    /* padding-right: 16px; */
-    width: 100%;
-}
-</style>
 @stop
 
 @section('content')
+<amp-img src="http://127.0.0.1:8000/images/blog/{{ $post->image }})" alt="Welcome" height="600" width="auto" style="border:0;">
+<h1 style="text-align:center; margin-top:50%;">{{ $post->title }}</h1>
+</amp-img>
 <div class="wrapper">
     <div class="page-header page-header-small">
 
-    <div class="page-header-image" style="background-image: url(/images/blog/{{ $post->image }});">
+    <div class="page-header-image" style="background-image: url(">
     </div>
 
 
@@ -264,72 +244,3 @@ p {
   </div>
 </div>
 @stop
-
-@section('customjs')
-
-<script>
-
-   var popupSize = {
-       width: 550,
-       height: 550
-   };
-
-   $(document).on('click', '#shareb', function(e){
-
-       var
-           verticalPos = Math.floor(($(window).width() - popupSize.width) / 2),
-           horisontalPos = Math.floor(($(window).height() - popupSize.height) / 2);
-
-       var popup = window.open($(this).prop('href'), 'social',
-           'width='+popupSize.width+',height='+popupSize.height+
-           ',left='+verticalPos+',top='+horisontalPos+
-           ',location=0,menubar=0,toolbar=0,status=0,scrollbars=1,resizable=1');
-
-       if (popup) {
-           popup.focus();
-           e.preventDefault();
-       }
-
-   });
-</script>
-<script src="{!! asset('js/vue.js') !!}"></script>
-<script src="{!! asset('js/axios.js') !!}"></script>
-<script src="{!! asset('js/sweetalert.js') !!}"></script>
-
-<script>
-const app = new Vue({
-el: '#app',
-data: () => ({
-  sub:{
-		name: '',
-    email: ''
-  }
-}),
-methods: {
-	subscribe () {
-	 axios.post('/api/postsub', this.sub)
-			 .then((res) => {
-				 this.sub.name = ''
-				 this.sub.emil = ''
-			 })
-
-			 .then((res) => {
-				 swal({
-						 icon: "success",
-						 title: 'Yeah',
-						 text: 'You Successfully Subscribed!'
-					 })
-			 })
-			 .catch((err) =>{
-				 console.log(err)
-				 swal({
-						 icon: "warning",
-						 title: 'Ooops...',
-						 text: 'Something went wrong!'
-					 })
-				 })
-	},
-	}
-})
-</script>
-@endsection

@@ -5,7 +5,7 @@
 	@yield('customcss')
 	</head>
 	<body class="index-page sidebar-collapse">
-		@include('partials/_nav')
+		@include('partials/_navamp')
 		<!-- Page Content -->
 		<div class="presentation-page">
 			@yield('content')
