@@ -82,10 +82,10 @@
 		<h3 style="text-align:center;">Related Posts</h3>
 		@foreach( $posts as $post )
 			<h4>
-				<a href="/blog/{{ $post->slug }}" style="color:#dc3741;text-decoration: none;">{{ $post->title }}</a>
+				<a href="/amp/blog/{{ $post->slug }}" style="color:#dc3741;text-decoration: none;">{{ $post->title }}</a>
 			</h4>
 			<div>
-				<a href="/blog/{{ $post->slug }}">
+				<a href="/amp/blog/{{ $post->slug }}">
 					<amp-img src="/images/blog/{{ $post->image }}" alt="Welcome" height="600" width="1920" layout="responsive" style="border:0; margin-bottom: 20px;">
 					</amp-img>
 				</a>
