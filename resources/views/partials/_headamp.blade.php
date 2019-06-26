@@ -15,7 +15,9 @@
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <meta property="og:title" content="@yield('title')" />
 <meta property="og:description" content="@yield('description')" />
-
+<script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+</script>
 @yield('preload')
 
 

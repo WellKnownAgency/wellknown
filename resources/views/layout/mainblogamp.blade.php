@@ -4,10 +4,14 @@
 	@include('partials/_headamp')
 	@yield('customcss')
 	</head>
-	<body class="index-page sidebar-collapse">
+	<body>
+
 		@include('partials/_navamp')
 		<!-- Page Content -->
-		<div class="presentation-page">
+		<amp-auto-ads type="adsense"
+              data-ad-client="ca-pub-6025240004467345">
+						</amp-auto-ads>
+		<div>
 			@yield('content')
 			@include('partials/_footeramp')
 		</div>
