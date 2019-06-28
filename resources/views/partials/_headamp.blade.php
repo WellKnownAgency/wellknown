@@ -34,4 +34,13 @@
 		text-decoration: none;
 		color: #dc3741;
 	}
+	.blockquote {
+		background-color: #fafafa;
+    border: 2px solid #dc3741;
+    padding: 20px;
+    font-size: 1.1em;
+    line-height: 1.8;
+		margin-bottom: 1rem;
+		margin: 0 0 1rem;
+}
 </style>
