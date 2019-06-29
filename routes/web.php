@@ -96,6 +96,7 @@ Route::get('/omdarling', function(){
 /* Blog */
 Route::get('blog', 'PagesController@blogIndex');
 Route::get('/blog/{slug}', ['as' => 'blog.single', 'uses' => 'PagesController@getSingle' ]) -> where('slug', '[\w\d\-\_]+');
+Route::get('/amp/blog/{slug}', ['as' => 'amp.blog.single', 'uses' => 'PagesController@getSingleAmp' ]) -> where('slug', '[\w\d\-\_]+');
 
 /* Cases */
 Route::get('case-studies', 'PagesController@scasesIndex');
