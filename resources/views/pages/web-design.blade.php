@@ -295,7 +295,7 @@ canvas {
 
 
     <!--     *********   CASE Studies     *********      -->
-    <div class="projects-1" style="padding-top:0;">
+    <div class="projects-1" style="padding-top:0; padding-bottom:0;">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center">
@@ -341,7 +341,6 @@ canvas {
               </div>
             </div>
           </div>
-
           <div class="col-md-6 px-0">
             <div class="card card-background card-background-product card-no-shadow" style="background-image: url('/images/btmmain.jpg')"
 						data-aos="fade-up"
@@ -381,6 +380,117 @@ canvas {
         </div>
       </div>
     </div>
+
+
+		<div class="section" style="background:#F8F8F8;">
+			<div class="col-md-12 ml-auto mr-auto">
+				<div class="container">
+				<h3 class="title" style="font-size:1.825em; text-align:center; padding-bottom:15px;">F.A.Q. ABOUT WEB DESIGN SERVICES
+				</h3>
+				<div id="accordion" role="tablist" aria-multiselectable="true" class="card-collapse">
+					<div class="card card-plain"
+						data-aos="fade-down" data-aos-duration="600">
+						<div class="card-header smm-collapse" role="tab" id="heading1">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1" style="text-transform: uppercase;">
+								How long has your agency been on the web services market?
+								<i class="now-ui-icons arrows-1_minimal-down"></i>
+							</a>
+						</div>
+						<div id="collapse1" class="collapse show" role="tabpanel" aria-labelledby="heading1">
+							<div class="card-body">
+								<blockquote class="blockquote blockquote-primary" style="padding-bottom:0;">
+									<p>
+										<span style="color:black;">WellKnown Digital Agency</span> began its work in 2016, based on a team of experienced designers and developers with 7-years average work on a niche, and we are ready to perform any task on website design and development no matter of its complexity.
+									</p>
+								</div>
+						</div>
+					</div>
+
+					<div class="card card-plain"
+						data-aos="fade-down" data-aos-duration="900">
+						<div class="card-header smm-collapse" role="tab" id="heading4">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="true" aria-controls="collapse4" style="text-transform: uppercase;">
+								How long does it take to get a website?
+								<i class="now-ui-icons arrows-1_minimal-down"></i>
+							</a>
+						</div>
+						<div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="heading4">
+							<div class="card-body">
+								<blockquote class="blockquote blockquote-primary" style="padding-bottom:0;">
+									<p>
+										It all depends on the list and volume of work that should be performed. However, on average the development of a professional website takes from <span style="color:black;">1 to 2 months.</span>
+									</p>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+
+					<div class="card card-plain"
+						data-aos="fade-down" data-aos-duration="1200">
+						<div class="card-header smm-collapse" role="tab" id="heading3">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3" style="text-transform: uppercase;">
+								How many design varieties do you offer in a standard contract?
+								<i class="now-ui-icons arrows-1_minimal-down"></i>
+							</a>
+						</div>
+						<div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading3">
+							<div class="card-body">
+								<blockquote class="blockquote blockquote-primary" style="padding-bottom:0;">
+									<p>
+										We usually offer <span style="color:black;">two or three original designs</span>. On their basis, we create sub-designs and several color schemes.
+									</p>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+
+					<div class="card card-plain"
+						data-aos="fade-down" data-aos-duration="1500">
+						<div class="card-header smm-collapse" role="tab" id="heading5">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="true" aria-controls="collapse5" style="text-transform: uppercase;">
+								Where do you host websites and how much does it cost?
+								<i class="now-ui-icons arrows-1_minimal-down"></i>
+							</a>
+						</div>
+						<div id="collapse5" class="collapse" role="tabpanel" aria-labelledby="heading5">
+							<div class="card-body">
+								<blockquote class="blockquote blockquote-primary" style="padding-bottom:0;">
+									<p>
+										We deploy developed websites to <a href="https://www.digitalocean.com/">Digital Ocean</a> cloud servers. Over the years working in the industry we can assure you that Digital Ocean is one of the safest places to store the data.
+									</p>
+									<p>
+										The price is <span style="color:black;">$15/month</span>, and you get first <span style="color:black;">2-month for free</span>!
+									</p>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+
+					<div class="card card-plain"
+						data-aos="fade-down" data-aos-duration="2100">
+						<div class="card-header smm-collapse" role="tab" id="heading6">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="true" aria-controls="collapse6" style="text-transform: uppercase;">
+								Do you help register a domain name?
+								<i class="now-ui-icons arrows-1_minimal-down"></i>
+							</a>
+						</div>
+						<div id="collapse6" class="collapse" role="tabpanel" aria-labelledby="heading6">
+							<div class="card-body">
+								<blockquote class="blockquote blockquote-primary" style="padding-bottom:0;">
+									<p>
+										We not only register domain names but also help our Customers to come up with a convenient and easy to remember domain name for a website.
+									</p>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+				</div>
+			</div>
+		</div>
+
 @stop
 @section('customjs')
 <script>
