@@ -1,8 +1,8 @@
 @extends('layout.main')
 
-@section('title', 'Digital Agency - Advertising | Marketing | Web Design - WellKnown ')
+@section('title', 'WellKnown Agency - Advertising | Marketing | Web Design and Development ')
 
-@section('description', 'WellKnown Digital Agency provides Advertising , Marketing and Webdesign Services for your Business. Years of experience working with small Businesses give us an opportunity to guaranty you great results. Call now and get Free Consultation.')
+@section('description', 'WellKnown Agency provides Advertising , Marketing, Web Design adn Development Services for your Business. Years of experience working with small Businesses give us an opportunity to guaranty you great results. Call now and get Free Consultation.')
 
 @section('keywords', 'Digital Agency, Online marketing, online advertising, marketing Agency, Advertising Agency, Web design agency, web development')
 

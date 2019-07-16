@@ -2,7 +2,7 @@
 
 @section('title', 'Landing Page Services')
 
-@section('description', 'Sell Online? Beautiful web page design for exactly your audience. Our Services help build right landing page to describe your product and sell it.')
+@section('description', 'Sell Online? Beautiful web page design for exactly your audience. Our Landing Page Services help build right landing page for your audience, to describe your product and sell it.')
 
 @section('keywords', '')
 
@@ -35,7 +35,7 @@
 			<div class="row">
 				<div class="col-md-8 ml-auto mr-auto text-center">
 					<h2 class="title">Why Landing Page is Vital Today?</h2>
-					<h5 class="description">Choosing is difficult, and people really do not like to do it. They want to be convinced of the right choice. Remember how difficult it is to choose a movie in an online movie theater or pizza on the website. Landing helps with the choice. The choice has already been made, we just convince the user that this choice is correct and necessary.</h5>
+					<h5 class="description">Choosing is difficult, and people really do not like to do it. They want to be convinced of the right choice. Remember how difficult it is to choose a movie in an online movie theater or pizza on the website. Right Landing page helps with the choice. The choice has already been made, we just convince the user that this choice is correct and necessary.</h5>
 				</div>
 			</div>
 			<div class="separator separator-primary"></div>
@@ -47,7 +47,7 @@
 						data-aos="fade-up"
 						data-aos-easing="linear"
 						data-aos-duration="400">
-							<p class="blockquote blockquote-primary">It's important to formulate an exact proposal for your audience and once again determine why you want to use the landing.
+							<p class="blockquote blockquote-primary">It's important to formulate an exact proposal for your audience and once again determine why you want to use the landing page.
 							</p>
 						</div>
 						<!-- Second image on the left side of the article -->
@@ -64,8 +64,8 @@
 						data-aos-easing="linear"
 						data-aos-duration="600">
 					</div>
-						<h3 class="landing_page_steps_header">When do We Use Landings?</h3>
-						<p>In brief, a landing page is useful if you know exactly what and whom you are selling.</p>
+						<h3 class="landing_page_steps_header">When do We Use Landing Pages?</h3>
+						<p>In brief, a landing page is useful if you know exactly what and whom you are selling to.</p>
 							<h6 class="landing_page_step">1. Sell goods and services</h6>
 						<p>Landing can sell anything: jewels, cinema tickets, consultations, and soft toys. An important condition - the goods count must be little. If you have a catalog of goods in 10 categories, it is better to make an online store.
 						</p>
@@ -91,7 +91,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 ml-auto mr-auto text-center">
-					<h2 class="title">Not convinced yet?</h2>
+					<h2 class="title">Not convinced yet to create a Landing Page?</h2>
 				</div>
 			</div>
 			<div class="row">

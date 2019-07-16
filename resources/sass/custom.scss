@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
+.info .icon.icon-circle i {
+    line-height: 2.4 !important;
+}
 
 @media screen and (max-width: 767px) {
   .web-design-header {
@@ -202,9 +205,7 @@ padding-bottom: 20px !important;
 .info .icon>i {
     font-size: 3em;
 }
-.info .icon.icon-circle i {
-    line-height: 2.7;
-}
+
 .icon.icon-primary {
     color: $primary-color;
 }
