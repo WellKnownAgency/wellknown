@@ -29,11 +29,11 @@ class HomeController extends Controller
 		public function postAMP()
     {
 		 // store in the database
-				$rating = new Rating;
-				$rating->rating = $request->rating;
+				$review = new Review ;
+				$review ->rating = $request->rating;
+				$review ->name = $requst->name;
 
-
-			 $rating->save();
+			 	$review ->save();
 
 			return back();
     }
