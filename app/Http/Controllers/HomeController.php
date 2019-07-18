@@ -25,4 +25,16 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+		public function postAMP()
+    {
+		 // store in the database
+				$rating = new Rating;
+				$rating->rating = $request->rating;
+
+
+			 $rating->save();
+
+			return back();
+    }
 }
