@@ -11,6 +11,9 @@
 	p { padding:0 ; margin:0  }
 	img { -ms-interpolation-mode: bicubic; /* Allow smoother rendering of resized image in Internet Explorer */ }
 	.mcnPreviewText { display: none ; }
+	input:focus {
+	  outline: -webkit-focus-ring-color auto 0px
+	}
 
 
 	/* Mobile styles */
@@ -164,63 +167,50 @@
 																<table width="100%" border="0" cellspacing="0" cellpadding="0">
 																	<tr>
 																		<td class="pb25" style="color:#fff; font-family:'Muli', Arial,sans-serif; font-size:20px; line-height:46px; text-align:center; padding-bottom:25px;">
-																			<form method="post"
-																			  action-xhr="https://wknown.com/api/emailamp">
-																			  <div class="m1">
-																					<fieldset class="rating">
-																				    <input name="rating"
-																				      type="radio"
-																				      id="rating5"
-																				      value="5"
-																				      on="change:step2.show" />
-																				    <label for="rating5" title="5 stars">☆</label>
+																			<form action-xhr="https://wknown.com/api/emailamp"
+                                        method="post">
+																				<input type="radio"
+																		      id="rating1"
+																		      name="rating"
+																		      value="3"
+																		      on="change:step2.show"
+																		      required>
+																		    <label for="rating1">Great</label>
 
-																				    <input name="rating"
-																				      type="radio"
-																				      id="rating4"
-																				      value="4"
-																				      on="change:step2.show" />
-																				    <label for="rating4" title="4 stars">☆</label>
+																		    <input type="radio"
+																		      id="rating2"
+																		      name="rating"
+																		      value="2"
+																		      on="change:step2.show">
+																		    <label for="rating2">Not bad</label>
 
-																				    <input name="rating"
-																				      type="radio"
-																				      id="rating3"
-																				      value="3"
-																				      on="change:step2.show" />
-																				    <label for="rating3" title="3 stars">☆</label>
-
-																				    <input name="rating"
-																				      type="radio"
-																				      id="rating2"
-																				      value="2"
-																				      on="change:step2.show"
-																				      checked="checked" />
-																				    <label for="rating2" title="2 stars">☆</label>
-
-																				    <input name="rating"
-																				      type="radio"
-																				      id="rating1"
-																				      value="1"
-																				      on="change:step2.show" />
-																				    <label for="rating1" title="1 stars">☆</label>
-																				  </fieldset>
-																			  </div>
-																			  <div class="m1"
-																			    id="step2"
-																			    hidden>
-																			    <textarea class="block"
-																			      id="info"
-																			      name="name"
-																			      rows="5"></textarea>
-																			  </div>
-																				<input type="submit" class="blue-button text-button link-white" style="background:#dc3412; color:#ffffff; font-family:'Muli', Arial,sans-serif; font-size:14px; line-height:18px; padding:12px 30px; text-align:center; border-radius:0px 22px 22px 22px; font-weight:bold; text-decoration:none;" value="Send Feedback">																  <input type="reset"
-																			    value="Clear">
-
-																			  <div class="m1"
-																			    submit-success>
-																			    Thank you for submitting feedback.
-																			  </div>
-																			</form>
+																		    <input type="radio"
+																		      id="rating3"
+																		      name="rating"
+																		      value="1"
+																		      on="change:step2.show">
+																		    <label for="rating3">Meh</label>
+																		  </div>
+																		  <div class="m1"
+																		    id="step2"
+																		    hidden>
+																		    <label class="block"
+																		      for="info">Would you like to tell us more?</label>
+																		    <textarea class="block"
+																		      id="info"
+																		      name="name"
+																		      rows="5"></textarea>
+																		  </div>
+																			<br>
+																		  <input type="submit" style="color: #ffffff; text-decoration: none; background: #dc3412; font-size: 14px;line-height: 18px; padding: 12px 30px;text-align: center;border-radius: 0px 22px 22px 22px;font-weight: bold; border-color:#dc3412;"
+																		    value="Send feedback">
+																		  <input type="reset"
+																		    value="Clear">
+																		  <div class="m1"
+																		    submit-success>
+																		    Thank you for submitting feedback.
+																		  </div>
+                                      </form>
 																		</td>
 																	</tr>
 																</table>
