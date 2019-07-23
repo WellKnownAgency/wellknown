@@ -35,8 +35,10 @@ class HomeController extends Controller
 
 			 	$review ->save();
 
-				$review->headers->set('Content-type: application/json','Access-Control-Allow-Credentials: true','Access-Control-Allow-Origin: *.ampproject.org');
+				$review->headers->set();
 
-			return $review;
+			return response($review)->header('Content-type: application/json')
+															->header('Access-Control-Allow-Credentials: true')
+															->header('Access-Control-Allow-Origin: *.ampproject.org');
     }
 }
