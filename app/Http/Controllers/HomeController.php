@@ -35,6 +35,6 @@ class HomeController extends Controller
 
 			 	$review ->save();
 
-			return back();
+			return $review;
     }
 }
