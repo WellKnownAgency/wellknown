@@ -2,8 +2,6 @@
 <html ⚡4email>
 <head>
   <meta charset="utf-8">
-	<meta content="width=device-width,minimum-scale=1,initial-scale=1">
-
 	<style amp4email-boilerplate>body{visibility:hidden}</style>
 	<style amp-custom>
 	body { padding:0 ; margin:0 ; display:block ; min-width:100% ; width:100% ; background: #fff; -webkit-text-size-adjust:none }
