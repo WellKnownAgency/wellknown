@@ -39,6 +39,7 @@ class HomeController extends Controller
 
 			return response($review)->header('Content-type: application/json')
 															->header('Access-Control-Allow-Credentials: true')
-															->header('Access-Control-Allow-Origin: *.ampproject.org'Request $request);
+															->header('Access-Control-Allow-Origin: *.ampproject.org')
+															->header('no-cors');
     }
 }
