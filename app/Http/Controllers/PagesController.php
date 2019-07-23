@@ -22,6 +22,8 @@ class PagesController extends Controller
 
 	public function postAMP(Request $request)
 	{
+
+			
 	 // store in the database
 			$review = new Review ;
 			$review ->rating = $request->rating;
