@@ -107,6 +107,7 @@
 	</style>
 			<script async src="https://cdn.ampproject.org/v0.js"></script>
 			<script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+			<script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
 		</head>
 		<body class="body" style="padding:0; margin:0 ; display:block ; min-width:100% ; width:100% ; background:#fff;">
 			<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FDFDFF">
