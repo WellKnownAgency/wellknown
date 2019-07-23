@@ -32,7 +32,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 	Route::get('dashsubs', 'SubController@indexDashSubs');
 
-	Route::post('emailamp', 'HomeController@postAMP');
 
   /* Notifications */
 
