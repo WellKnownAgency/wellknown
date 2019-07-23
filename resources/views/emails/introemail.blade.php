@@ -87,60 +87,59 @@
 					<h2 class="h2">Your Feedback</h2>
 				</div>
 				<div class="m1">
-					<div>
-						<form action-xhr="https://wknown.com/api/emailamp"
+					<form action-xhr="https://wknown.com/api/emailamp"
 						method="post">
+						<div>
+							<input type="radio"
+								id="rating3"
+								name="rating"
+								value="1"
+								on="change:step2.show">
+							<label class="ratingl" for="rating3">1 </label>
 
-						<input type="radio"
-							id="rating3"
-							name="rating"
-							value="1"
-							on="change:step2.show">
-						<label class="ratingl" for="rating3">1 </label>
+							<input type="radio"
+								id="rating2"
+								name="rating"
+								value="2"
+								on="change:step2.show">
+							<label class="ratingl" for="rating2">2 </label>
 
-						<input type="radio"
-							id="rating2"
-							name="rating"
-							value="2"
-							on="change:step2.show">
-						<label class="ratingl" for="rating2">2 </label>
+							<input type="radio"
+								id="rating1"
+								name="rating"
+								value="3"
+								on="change:step2.show"
+								required>
+							<label class="ratingl" for="rating1">3 </label>
 
-						<input type="radio"
-							id="rating1"
-							name="rating"
-							value="3"
-							on="change:step2.show"
-							required>
-						<label class="ratingl" for="rating1">3 </label>
+							<input type="radio"
+								id="rating4"
+								name="rating"
+								value="4"
+								on="change:step2.show">
+							<label class="ratingl" for="rating4">4 </label>
 
-						<input type="radio"
-							id="rating4"
-							name="rating"
-							value="4"
-							on="change:step2.show">
-						<label class="ratingl" for="rating4">4 </label>
-
-						<input type="radio"
-							id="rating5"
-							name="rating"
-							value="5"
-							on="change:step2.show">
-						<label class="ratingl" for="rating5">5</label>
-					</div>
-					<div class="m1"
-						id="step2"
-						hidden>
-						<label class="block"
-							for="info">Would you like to tell us more?</label>
-							<br>
-						<textarea class="block textarea"
-							id="info"
-							name="name"
-							rows="5"></textarea>
-					</div>
+							<input type="radio"
+								id="rating5"
+								name="rating"
+								value="5"
+								on="change:step2.show">
+							<label class="ratingl" for="rating5">5</label>
+						</div>
+						<div class="m1"
+							id="step2"
+							hidden>
+							<label class="block"
+								for="info">Would you like to tell us more?</label>
+								<br>
+							<textarea class="block textarea"
+								id="info"
+								name="name"
+								rows="5"></textarea>
+						</div>
 					<br>
-					<input type="submit" class="background-color-main border-color-main" style="color: #ffffff; text-decoration: none; font-size: 14px;line-height: 18px; padding: 12px 30px;text-align: center;border-radius: 0px 22px 22px 22px;font-weight: bold;"
-						value="Send Feedback">
+						<input type="submit" class="background-color-main border-color-main" style="color: #ffffff; text-decoration: none; font-size: 14px;line-height: 18px; padding: 12px 30px;text-align: center;border-radius: 0px 22px 22px 22px;font-weight: bold;"
+							value="Send Feedback">
 						<div submit-success>
 							<template type="amp-mustache">
 								<p>Thanks for your feedback!</p>
