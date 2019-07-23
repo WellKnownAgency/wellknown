@@ -25,7 +25,7 @@ class PagesController extends Controller
 	 // store in the database
 			$review = new Review ;
 			$review ->rating = $request->rating;
-			$review ->name = $requst->name;
+			$review ->name = $request->name;
 
 			$review ->save();
 
