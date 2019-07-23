@@ -18,6 +18,20 @@ use Mail;
 
 class PagesController extends Controller
 {
+
+	public function postAMP(Request $request)
+	{
+	 // store in the database
+			$review = new Review ;
+			$review ->rating = $request->rating;
+			$review ->name = $requst->name;
+
+			$review ->save();
+
+		return response($review)->header('Content-type: application/json')
+														->header('Access-Control-Allow-Origin: *.ampproject.org');
+	}
+
   public function getTest() {
     return view('pages/test');
   }

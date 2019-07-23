@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::post('/emailamp', 'HomeController@postAMP');
+
 
 Route::prefix('admin')->middleware('auth:web')->group(function() {
   Route::get('/', 'AdminPagesController@index')->name('admin.index');
