@@ -129,7 +129,7 @@
               <table class="table table-borderless" >
                 <tr>
                   <td>Name:</td><td>{{ lead.first_name }} {{ lead.last_name }}</td>
-                  <td style="border-left: 1px solid #f0f0f0;">Source:</td><td>{{ lead.source }}</td>
+                  <td style="border-left: 1px solid #f0f0f0;">Source:</td><td>{{ lead.source.name }}</td>
                 </tr>
               </table>
             </div>
@@ -186,6 +186,9 @@ var moment = require('moment');
             source_id: '',
             created_at: '',
             updated_at: '',
+						source: {
+							name: ''
+						}
           },
           statuses: [],
           status: {
