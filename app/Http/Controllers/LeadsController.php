@@ -23,7 +23,7 @@ class LeadsController extends Controller
 
   public function indexClients()
   {
-      $leads = Lead::with('source')->with('status')->where('status_id', '=', 4)->get();
+      $leads = Lead::with('source')->with('status')->get();
 
       return $leads;
   }
