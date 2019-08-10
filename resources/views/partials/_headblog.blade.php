@@ -66,3 +66,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
 <script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-6025240004467345",
+          enable_page_level_ads: true
+     });
+</script>
