@@ -100,6 +100,7 @@
       <script>
         document.write(new Date().getFullYear())
       </script> WellKnown Agency. All Rights Reserved. <p> <a href="/privacy-policy"> Privacy Policy </a></p>
+      <p> <a href="https://taraskim.com"> Web Development & Digital Marketing </a></p>
     </div>
   </div>
 </footer>
