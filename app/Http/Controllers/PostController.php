@@ -55,7 +55,7 @@ class PostController extends Controller
         $post->status = $request->status;
         $post->featured = 0;
         $post->category_id = $request->category_id;
-      // $post->user_id = Auth::user()->id;
+        $post->user_id = Auth::user()->id;
 
      if ($request->hasFile('img')) {
        $image = $request->file('img');
