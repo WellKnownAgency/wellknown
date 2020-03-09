@@ -23,3 +23,11 @@
 <link href="/vendor/admin/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
 <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+<script src="https://cdn.ckeditor.com/4.13.1/standard-all/ckeditor.js"></script>
+
+<style>
+.navbar-nav .nav-item .nav-link .badge {
+    margin-left: 0 !important;
+}
+</style>

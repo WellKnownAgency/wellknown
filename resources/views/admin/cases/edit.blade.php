@@ -102,7 +102,7 @@
               </div>
               <div class="form-group">
                 <label for="text">Body</label>
-                <textarea class="form-control" id="text" name="body" rows="20">{{ $scase->body }}</textarea>
+                <textarea class="form-control" id="editor" name="body" rows="20">{{ $scase->body }}</textarea>
               </div>
 
               <button type="submit" class="btn btn-success">Save</button>
@@ -126,19 +126,9 @@
 @stop
 @section('customjs')
 <script>
-  tinymce.init({
-         selector: "textarea",
-         plugins: [
-             "advlist autolink lists link image charmap print preview hr anchor pagebreak",
-             "searchreplace wordcount visualblocks visualchars code fullscreen",
-             "insertdatetime media nonbreaking save table contextmenu directionality",
-             "emoticons template paste textcolor colorpicker textpattern"
-         ],
-         file_browser_callback: function(field_name, url, type, win) {
-            // trigger file upload form
-            if (type == 'image') $('#formUpload input').click();
-        }
-       });
+  CKEDITOR.replace('editor', {
+    height: 300,
+  });
 </script>
 <script>
 function textCounter( field, countfield, maxlimit ) {

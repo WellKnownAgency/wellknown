@@ -92,5 +92,13 @@
 			</div>
 		@endforeach
 	</div>
+	<amp-sticky-ad layout="nodisplay">
+	<amp-ad width="320"
+		height="50"
+		type="doubleclick"
+		data-slot="/35096353/amptesting/formats/sticky">
+		This is a test
+	</amp-ad>
+	</amp-sticky-ad>
 </div>
 @stop

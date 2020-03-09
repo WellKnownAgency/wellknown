@@ -1,0 +1,1 @@
+https://cdn.ckeditor.com/4.13.1/standard-all/

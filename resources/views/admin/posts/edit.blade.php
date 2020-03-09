@@ -81,7 +81,7 @@
               </div>
               <div class="form-group">
                 <label for="body">Body</label>
-                <textarea class="form-control" id="Body" name="body" rows="20">{{$post->body}}</textarea>
+                <textarea class="form-control" id="editor" name="body" rows="20">{{$post->body}}</textarea>
               </div>
 
               <button type="submit" class="btn btn-success">Save Changes</button>
@@ -105,18 +105,8 @@
 @stop
 @section('customjs')
 <script>
-  tinymce.init({
-         selector: "textarea",
-         plugins: [
-             "advlist autolink lists link image charmap print preview hr anchor pagebreak",
-             "searchreplace wordcount visualblocks visualchars code fullscreen",
-             "insertdatetime media nonbreaking save table contextmenu directionality",
-             "emoticons template paste textcolor colorpicker textpattern"
-         ],
-         file_browser_callback: function(field_name, url, type, win) {
-            // trigger file upload form
-            if (type == 'image') $('#formUpload input').click();
-        }
-       });
+  CKEDITOR.replace('editor', {
+    height: 300,
+  });
 </script>
 @stop
