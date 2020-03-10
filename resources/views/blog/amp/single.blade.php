@@ -95,15 +95,5 @@
 	
 </div>
 
-<amp-sticky-ad layout="nodisplay">
-	<amp-ad
-		width="320"
-		height="50"
-		type="doubleclick"
-		class="ad-box"
-	>
-	<a href="/contact-us" class="ad-text">Free Consultation</a>
-	</amp-ad>
-	
-</amp-sticky-ad>
+
 @stop
