@@ -65,12 +65,5 @@
 @yield('extrahead')
 <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
 <script async src="https://cdn.ampproject.org/v0.js"></script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: "ca-pub-6025240004467345",
-          enable_page_level_ads: true
-     });
-</script>
 
 <script data-ad-client="ca-pub-6886180586572664" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
