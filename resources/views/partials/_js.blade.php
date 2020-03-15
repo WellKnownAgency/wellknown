@@ -43,14 +43,26 @@
     "postalCode": "02115",
     "streetAddress": "358 Commonwealth avenu"
   },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5",
-    "reviewCount": "7"
-  },
   "url": "https://wknown.com/"
 }
 </script>
+<script type="application/ld+json">
+  {
+  "@context":"http://schema.org",
+  "@type":"Product",
+  "name":"Boston to New York (NYC) Movers",
+  "aggregateRating": {
+  "@type": "AggregateRating",
+  "ratingValue": "5",
+  "ratingCount": "7"
+  },
+  "offers": {
+  "@type":"AggregateOffer",
+  "lowPrice":"300",
+  "priceCurrency":"USD"
+  }
+  }
+  </script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
