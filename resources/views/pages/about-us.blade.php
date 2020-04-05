@@ -125,21 +125,22 @@
             <div class="col-md-5">
               <div class="card-image">
                 <a href="#pablo">
-                  <img class="rounded-circle img-raised" src="/images/img/emily.jpg" />
+                  <img class="rounded-circle img-raised" src="/images/martashvedava.jpeg" />
                 </a>
               </div>
             </div>
             <div class="col-md-7">
               <div class="card-body">
-                <h4 class="card-title">Liza Cole</h4>
-                <h6 class="category">Web Designer</h6>
+                <h4 class="card-title">Marta Shvedava</h4>
+                <h6 class="category">Graphic Design</h6>
                 <p class="card-description">
-                  When it comes to Art in web development
+                  Specialist in Visual Design
                 </p>
+                <br>
                 <div class="card-footer">
-                  <a href="#pablo" class="btn btn-icon btn-neutral btn-twitter"><i class="fab fa-twitter"></i></a>
-                  <a href="#pablo" class="btn btn-icon btn-neutral btn-facebook"><i class="fab fa-facebook-square"></i></a>
-                  <a href="#pablo" class="btn btn-icon btn-neutral btn-linkedin"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://www.behance.net/martisha355" class="btn btn-icon btn-neutral btn-twitter"><i class="fab fa-behance"></i></a>
+                  <a href="https://www.facebook.com/marta.shvedova" class="btn btn-icon btn-neutral btn-facebook"><i class="fab fa-facebook-square"></i></a>
+                  <a href="https://www.linkedin.com/in/marta-shvedava-b5b73b18a/" class="btn btn-icon btn-neutral btn-linkedin"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
             </div>
