@@ -138,9 +138,9 @@
                 </p>
                 <br>
                 <div class="card-footer">
-                  <a href="https://www.behance.net/martisha355" class="btn btn-icon btn-neutral btn-twitter"><i class="fab fa-behance"></i></a>
-                  <a href="https://www.facebook.com/marta.shvedova" class="btn btn-icon btn-neutral btn-facebook"><i class="fab fa-facebook-square"></i></a>
-                  <a href="https://www.linkedin.com/in/marta-shvedava-b5b73b18a/" class="btn btn-icon btn-neutral btn-linkedin"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://www.behance.net/martisha355" target="_blank"  class="btn btn-icon btn-neutral btn-twitter"><i class="fab fa-behance"></i></a>
+                  <a href="https://www.facebook.com/marta.shvedova" target="_blank" class="btn btn-icon btn-neutral btn-facebook"><i class="fab fa-facebook-square"></i></a>
+                  <a href="https://www.linkedin.com/in/marta-shvedava-b5b73b18a/" target="_blank" class="btn btn-icon btn-neutral btn-linkedin"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
             </div>
