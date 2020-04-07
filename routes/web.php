@@ -72,7 +72,10 @@ Route::get('/', 'PagesController@getIndex');
 Route::get('advertising', 'PagesController@getAdvertising');
 Route::get('search-engine-optimization', 'PagesController@getSearch');
 Route::get('social-media-marketing', 'PagesController@getSocial');
-Route::get('web-design', 'PagesController@getWebdesign');
+Route::get('web-design-dev-services', 'PagesController@getWebdesign');
+Route::get('web-design', function(){ 
+  return Redirect::to('/web-design-dev-services', 302); 
+});
 Route::get('about-us', 'PagesController@getAboutus');
 Route::get('landing-pages', 'PagesController@getLanding');
 Route::get('social-media-marketing', 'PagesController@getSocial');

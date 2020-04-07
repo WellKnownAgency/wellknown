@@ -32,7 +32,7 @@
               <a class="dropdown-item" href="/social-media-marketing">
                 <i class="fa fa-share wk-icons"></i>  <span>Social</span>
               </a>
-            <a class="dropdown-item {{ Request::is('web-design') ?"active-a" : ""}}" href="/web-design">
+            <a class="dropdown-item {{ Request::is('web-design') ?"active-a" : ""}}" href="/web-design-dev-services">
               <i class="fa fa-code wk-icons"></i>  <span>Web Design and Dev</span>
             </a>
             <a class="dropdown-item {{ Request::is('landing-pages') ?"active-a" : ""}}" href="/landing-pages">
