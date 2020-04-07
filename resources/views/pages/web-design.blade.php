@@ -1,6 +1,6 @@
 @extends('layout.main')
 
-@section('title', 'Web Design and Development | WellKnown')
+@section('title', 'Web Design and Development Services | WellKnown')
 
 @section('description', 'WEbsite DEsign and DEvelopment services for your personal or business needs. We fully develop all types of the websites - from one page to large complexed web applications.')
 
