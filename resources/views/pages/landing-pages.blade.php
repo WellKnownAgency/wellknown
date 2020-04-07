@@ -195,8 +195,6 @@
 							data-aos-easing="ease-in-sine">
 						<div class="card-body">
 							<p class="category price_category">Extended</p>
-							<p class="card-title card_price_title">
-								<small>$</small>399</h1>
 							<ul>
 								<li>
 									<b>
@@ -247,8 +245,6 @@
 					     data-aos-duration="1200">
 						<div class="card-body">
 							<p class="category price_category">Standart</p>
-							<p class="card-title card_price_title">
-								<small>$</small>299</h1>
 								<ul>
 									<li>
 										<b>
@@ -297,8 +293,6 @@
 					data-aos-easing="ease-in-sine">
 						<div class="card-body">
 							<p class="category price_category">Basic</p>
-							<p class="card-title card_price_title">
-								<small>$</small>199</h1>
 								<ul>
 									<li>
 										<b>
