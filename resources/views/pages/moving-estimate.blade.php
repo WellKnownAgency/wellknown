@@ -53,9 +53,9 @@
 	<div class="section section-content">
     <div class="container-fluid">
 		<noscript><strong>We're sorry but widget doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
-		<widget-moving apptitle="Request your move Online. See Your Quote In two Easy Steps." class="descw"></widget-moving>
+		<widget-moving apptitle="Get a free Moving Estimate" class="descw"></widget-moving>
 		<div style="max-width: 420px;" class="mobw">
-			<fast-widget-moving apptitle="Get a quote fast online"></fast-widget-moving>
+			<fast-widget-moving apptitle="Get a free Moving Estimate"></fast-widget-moving>
 		</div>
 	 
     </div>

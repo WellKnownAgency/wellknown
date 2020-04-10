@@ -52,5 +52,25 @@
 	border: 1px solid red;
 	border-radius: 3px;
 }
-
+.btn-primary {
+	-webkit-box-shadow: 0 9px 30px -6px rgba(220,55,65,.35);
+	box-shadow: 0 9px 30px -6px rgba(220,55,65,.35);
+	background-color: #dc3741;
+    color: #fff;
+}
+.btn {
+	border-width: 2px;
+    font-weight: 400;
+    font-size: .8571em;
+    line-height: 1.35em;
+    margin: 10px 1px;
+    border: none;
+    border-radius: .1875rem;
+    padding: 11px 22px;
+    cursor: pointer;
+	text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
 </style>
