@@ -9,6 +9,11 @@
 
 @section('customcss')
 <link href="https://movingcrm.wknown.com/cdn-widget/css/app.css" rel="stylesheet">
+<style>
+
+
+
+</style>
 @stop
 
 @section('content')
@@ -41,7 +46,8 @@
 	<div class="section section-content">
     <div class="container-fluid">
 		<noscript><strong>We're sorry but widget doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
-		<widget-moving apptitle="Request your move Online. See Your Quote In two Easy Steps."></widget-moving>
+		<widget-moving apptitle="Request your move Online. See Your Quote In two Easy Steps." class="descw"></widget-moving>
+		
     </div>
   </div>
 
