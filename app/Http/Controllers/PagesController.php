@@ -34,8 +34,8 @@ class PagesController extends Controller
 		return response($review)->header('Content-type: application/json','Access-Control-Allow-Origin: *.ampproject.org');
 	}
 
-  public function getTest() {
-    return view('pages/test');
+  public function getCalculator() {
+    return view('pages/moving-estimate');
   }
 
    public function getIndex() {

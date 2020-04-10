@@ -17,7 +17,7 @@
 			<div class="container">
 					<div class="row">
 							<div class="col-md-8 ml-auto mr-auto text-center" style="padding-top: 5px;">
-									<h1 class="title landing_page_header" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);">CONTENT MARKETING SERVICES</h1>
+									<h1 class="title landing_page_header" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);">Content Marketing Services</h1>
 									<nav aria-label="breadcrumb" role="navigation" style="margin: 0 auto;display:table;">
 										<ol class="breadcrumb" style="background-color:transparent;" itemscope itemtype="https://schema.org/BreadcrumbList">
 											<li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
@@ -324,7 +324,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 ml-auto mr-auto text-center">
-					<h2 class="title">THE PRICE OF CONTENT MARKETING DENEPNDS ON:</h2>
+					<h2 class="title">THE PRICE OF CONTENT MARKETING DEPENDS ON:</h2>
 				</div>
 			</div>
 			<div class="row">

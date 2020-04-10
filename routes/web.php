@@ -67,6 +67,7 @@ Route::prefix('admin')->middleware('auth:web')->group(function() {
 
 	Route::post('/api/postsub', 'SubController@subStore');
 
+  Route::get('/moving-estimate', 'PagesController@getCalculator');
 /* Main Pages */
 Route::get('/', 'PagesController@getIndex');
 Route::get('advertising', 'PagesController@getAdvertising');

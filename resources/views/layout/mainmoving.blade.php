@@ -3,9 +3,11 @@
 	<head>
 	@include('partials/_head')
 	@yield('customcss')
+
+	
 	</head>
 	<body class="index-page">
-		<script>
+		{{-- <script>
 		  window.fbAsyncInit = function() {
 		    FB.init({
 		      appId            : '131016570928938',
@@ -25,13 +27,11 @@
 		</script>
 		<div class="fb-customerchat"
 		 page_id="153425045259276">
-		</div>
+		</div> --}}
 		@include('partials/_nav')
 		<!-- Page Content -->
 		<div id="app" class="presentation-page">
 			@yield('content')
-			@include('partials/_upfooter')
-
 			@include('partials/_footer')
 		</div>
 		@include('partials/_js')

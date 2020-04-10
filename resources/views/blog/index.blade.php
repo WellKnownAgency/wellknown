@@ -1,6 +1,6 @@
 @extends('layout.mainblog')
 
-@section('title', 'Busines and Marketing Blog from WellKnown Agency')
+@section('title', 'Business and Marketing Blog from WellKnown Agency')
 
 @section('description', 'Find our great articles about Business , Development, Advertising and marketing on WellKnown Ageny Blog.')
 
