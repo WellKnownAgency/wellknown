@@ -10,9 +10,16 @@
 @section('customcss')
 <link href="https://movingcrm.wknown.com/cdn-widget/css/app.css" rel="stylesheet">
 <style>
-
-
-
+@media only screen and (max-width: 1024px) {
+  .descw {
+	  display:none;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .mobw {
+	  display:none;
+  }
+}
 </style>
 @stop
 
@@ -47,7 +54,10 @@
     <div class="container-fluid">
 		<noscript><strong>We're sorry but widget doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
 		<widget-moving apptitle="Request your move Online. See Your Quote In two Easy Steps." class="descw"></widget-moving>
-		
+		<div style="max-width: 420px;" class="mobw">
+			<fast-widget-moving apptitle="Get a quote fast online"></fast-widget-moving>
+		</div>
+	 
     </div>
   </div>
 
