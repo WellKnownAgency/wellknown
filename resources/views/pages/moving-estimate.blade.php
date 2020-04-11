@@ -51,32 +51,93 @@
 
 	</div>
 	<div class="section section-content">
-    <div class="container-fluid">
-		<noscript><strong>We're sorry but widget doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
-		<widget-moving apptitle="Get a free Moving Estimate" class="descw"></widget-moving>
-		<div style="max-width: 420px;" class="mobw">
-			<fast-widget-moving apptitle="Get a free Moving Estimate"></fast-widget-moving>
+		<div class="container-fluid">
+			<noscript><strong>We're sorry but widget doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
+			<widget-moving apptitle="Get a free Moving Estimate" class="descw"></widget-moving>
+			<div style="max-width: 420px;" class="mobw">
+				<fast-widget-moving apptitle="Get a free Moving Estimate"></fast-widget-moving>
+			</div>
+		
 		</div>
-	 
-    </div>
-  </div>
-
+	</div>
 	<div class="section call-to-action-section" data-background-color="gray">
 		<div class="row" style="margin-left: 0; margin-right:0;">
 			<div class="col-md-8 ml-auto mr-auto text-center">
-				<h4>Any Questions?</h4>
-				<h5>Ready to get started? Call  <a href="tel:3395450956">(339) 545-0956</span></h5>
+				<h2 class="title">How Moving Calculator works?</h2>
 			</div>
-		</div>
-		<div class="row" style="margin-left: 0; margin-right:0;">
-
-			<div class= "col-md-8 ml-auto mr-auto text-center">
-				<a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;"
-				 data-aos="flip-up"
-				 data-aos-duration="1000">Call Now</a>
+			<div class="col-md-8 ml-auto mr-auto">
+				<p>MovingCRM moving cost calculator is an easy way to recieve a movign calculate based on the information provided. 
+					The algorithm determines the distance betwen both locations nad calculates travel time based on the companie's paking zip code. 
+					Rates that apply in this version of the calculator aare the average on the moving market in Boston area. 
+					Based on the moving size and stairs, it calculates the time and amount of movers it takes to make this job.</p>
 			</div>
 		</div>
 	</div>
+	<div class="section" style="background:#F8F8F8;">
+			<div class="col-md-12 ml-auto mr-auto">
+				<div class="container">
+				<h3 class="title" style="font-size:1.825em; text-align:center; padding-bottom:15px;">Moving Estimate F.A.Q.
+				</h3>
+				<div id="accordion" role="tablist" aria-multiselectable="true" class="card-collapse">
+					<div class="card card-plain"
+					data-aos="fade-down" data-aos-duration="600">
+		
+						<div class="card-header smm-collapse" role="tab" id="headingOne">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="text-transform: uppercase;">
+								How to estimate moving costs?
+								<i class="now-ui-icons arrows-1_minimal-down"></i>
+							</a>
+						</div>
+						<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+							<div class="card-body">
+								<blockquote class="blockquote blockquote-primary" style="padding-bottom:0;">
+									<p>
+										Estimate moving costs is really easy using MovingCRM moving estimate calculator. Just fill out the required fields and you will get an accurate moving estimate for your upcoming move.
+									</p>
+								</blockquote>
+							</div>
+						</div>
+		
+					</div>
+					<div class="card card-plain"
+					data-aos="fade-down" data-aos-duration="1200">
+		
+						<div class="card-header smm-collapse" role="tab" id="headingThree">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree" style="text-transform: uppercase;">
+									How to estimate boxes for moving?
+								<i class="now-ui-icons arrows-1_minimal-down"></i>
+							</a>
+						</div>
+						<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+							<div class="card-body">
+								<blockquote class="blockquote blockquote-primary" style="padding-bottom:0;">
+									<p>
+									To estimate how many boxes you need you have to simply call a professional moving company and provide a list of items.
+									</p>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+		
+				</div>
+			</div>
+		</div>
+		<div class="section call-to-action-section" data-background-color="gray">
+				<div class="row" style="margin-left: 0; margin-right:0;">
+					<div class="col-md-8 ml-auto mr-auto text-center">
+						<h4>Any Questions?</h4>
+						<h5>Ready to get started? Call  <a href="tel:3395450956">(339) 545-0956</span></h5>
+					</div>
+				</div>
+				<div class="row" style="margin-left: 0; margin-right:0;">
+		
+					<div class= "col-md-8 ml-auto mr-auto text-center">
+						<a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;"
+						 data-aos="flip-up"
+						 data-aos-duration="1000">Call Now</a>
+					</div>
+				</div>
+			</div>
 @stop
 @section('customjs')
  <script src="https://movingcrm.wknown.com/cdn-widget/js/app.js"> </script>

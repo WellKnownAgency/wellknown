@@ -6,49 +6,54 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>https://wknown.com/</loc>
-  <lastmod>2018-03-23T01:04:07+00:00</lastmod>
+  <lastmod>2020-04-10T01:04:07+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://wknown.com/advertising</loc>
-  <lastmod>2018-04-08T01:04:07+00:00</lastmod>
+  <lastmod>2020-04-10T01:04:07+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://wknown.com/search-engine-optimization</loc>
-  <lastmod>2018-04-08T01:04:07+00:00</lastmod>
+  <lastmod>2020-04-10T01:04:07+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://wknown.com//wordpress-seo</loc>
-  <lastmod>2018-06-24T01:04:07+00:00</lastmod>
+  <lastmod>2020-04-10T01:04:07+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://wknown.com/web-design-dev-services</loc>
-  <lastmod>2018-04-08T01:04:07+00:00</lastmod>
+  <lastmod>2020-04-10T01:04:07+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://wknown.com/landing-pages</loc>
-  <lastmod>2019-04-08T01:04:07+00:00</lastmod>
+  <lastmod>2020-04-10T01:04:07+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://wknown.com/social-media-marketing</loc>
-  <lastmod>2019-04-08T01:04:07+00:00</lastmod>
+  <lastmod>2020-04-10T01:04:07+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://wknown.com/content-marketing</loc>
-  <lastmod>2019-04-08T01:04:07+00:00</lastmod>
+  <lastmod>2020-04-10T01:04:07+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://wknown.com/about-us</loc>
-  <lastmod>2018-04-08T01:04:07+00:00</lastmod>
+  <lastmod>2020-04-10T01:04:07+00:00</lastmod>
   <priority>1.00</priority>
 </url>
+<url>
+    <loc>https://wknown.com/moving-estimate</loc>
+    <lastmod>2020-04-10T01:04:07+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
 <url>
   <loc>https://wknown.com/blog</loc>
   <lastmod>2019-04-08T01:04:07+00:00</lastmod>
