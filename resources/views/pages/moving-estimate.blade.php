@@ -21,6 +21,7 @@
   }
 }
 </style>
+<script src="https://movingcrm.wknown.com/cdn-widget/js/app.js"> </script>
 @stop
 
 @section('content')
@@ -139,7 +140,5 @@
 				</div>
 			</div>
 @stop
-@section('customjs')
- <script src="https://movingcrm.wknown.com/cdn-widget/js/app.js"> </script>
-@stop
+
 
