@@ -27,8 +27,14 @@
 											<meta itemprop="position" content="1" />
 										</li>
 										<li class="breadcrumb-item active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" style="color:#fff;" aria-current="page">
-											<span itemprop="name">Wordpress SEO Services</span>
+											<a href="/search-engine-optimization" itemprop="item">
+												<span itemprop="name">SEO</span>
+											</a>
 											<meta itemprop="position" content="2" />
+										</li>
+										<li class="breadcrumb-item active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" style="color:#fff;" aria-current="page">
+											<span itemprop="name">Wordpress SEO Services</span>
+											<meta itemprop="position" content="3" />
 										</li>
 									</ol>
 								</nav>
