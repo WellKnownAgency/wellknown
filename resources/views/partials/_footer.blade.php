@@ -62,7 +62,13 @@
 				<div class="col-md-2">
 					<h5 style="color:#fff;"> </h5>
 					<ul class="links-vertical">
-						<li style="margin-bottom:5px;"><a href="https://www.bark.com/en/company/wellknown/g8zQ2/" data-version="2.0" target="_blank" class="bark-widget" data-image="small-gold">WellKnown</a><script type="text/javascript" src="https://www.bark.com/js/widgets.min.js" defer=""></script></li>
+            <li style="margin-bottom:5px;">
+              <!-- TrustBox widget - Starter -->
+              <div class="trustpilot-widget" data-locale="en-US" data-template-id="5613c9cde69ddc09340c6beb" data-businessunit-id="5eb987e15cd55b0001f5c852" data-style-height="100%" data-style-width="100%" data-theme="dark">
+                <a href="https://www.trustpilot.com/review/wknown.com" target="_blank" rel="noopener">Trustpilot</a>
+              </div>
+              <!-- End TrustBox widget -->
+            </li>
 					</ul>
 				</div>
         <div class="col-md-3">

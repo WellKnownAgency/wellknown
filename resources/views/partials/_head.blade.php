@@ -21,8 +21,6 @@
 <link href="{!! asset('css/aos.css') !!}" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
-<script charset="UTF-8" src="//cdn.sendpulse.com/js/push/5e58d19181d74ca35a19fe08a4065c4d_1.js" async></script>
-
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109464444-1"></script>
 <script>
@@ -66,3 +64,6 @@
 <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 
+<!-- TrustBox script -->
+<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+<!-- End TrustBox script -->
