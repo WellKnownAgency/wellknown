@@ -47,10 +47,7 @@
 	<div class="section">
 			<div class="row" style="margin-left:0px;margin-right:0px; ">
 				<div class="col-md-5">
-					<div id="productCarousel" class="carousel slide" data-ride="carousel" data-interval="8000"
-						data-aos="fade-right"
-						data-aos-easing="linear"
-						data-aos-duration="700">
+					<div id="productCarousel" class="carousel slide" data-ride="carousel" data-interval="8000">
 						<div class="container">
 						<ol class="carousel-indicators">
 							<li data-target="#productCarousel" data-slide-to="0" class="active"></li>
@@ -204,9 +201,7 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="info">
-						<div class="icon icon-primary icon-circle"
-							data-aos="zoom-in"
-							data-aos-duration="800">
+						<div class="icon icon-primary icon-circle">
 							<i class="now-ui-icons users_single-02"></i>
 						</div>
 						<h4 class="info-title">We know what is your audience interested in</h4>
@@ -214,9 +209,7 @@
 				</div>
 				<div class="col-md-4">
 					<div class="info">
-						<div class="icon icon-danger icon-circle"
-						data-aos="zoom-in"
-						data-aos-duration="1200">
+						<div class="icon icon-danger icon-circle">
 							<i class="now-ui-icons business_chart-bar-32"></i>
 						</div>
 						<h4 class="info-title">We analyze how do your competitors act</h4>
@@ -224,9 +217,7 @@
 				</div>
 				<div class="col-md-4">
 					<div class="info">
-						<div class="icon icon-warning icon-circle"
-						data-aos="zoom-in"
-						data-aos-duration="1600">
+						<div class="icon icon-warning icon-circle">
 							<i class="now-ui-icons arrows-1_refresh-69"></i>
 						</div>
 						<h4 class="info-title">We know what solutions work in your industry</h4>
@@ -254,7 +245,7 @@
 							<div class="card card-testimonial card-plain">
 								<div class="card-avatar">
 									<a href="https://clutch.co/profile/wellknown-agency" target="_blank">
-										<img class="img img-raised rounded" src="/images/kulinich.jpg" data-aos="zoom-in" data-aos-duration="500"/>
+										<img class="img img-raised rounded" src="/images/kulinich.jpg"/>
 									</a>
 								</div>
 								<div class="card-body">
@@ -289,8 +280,7 @@
 		<div class="row" style="margin-left: 0; margin-right:0;">
 			<div class= "col-md-8 ml-auto mr-auto text-center">
 				<a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;"
-					data-aos="flip-up"
-					data-aos-duration="1000">GET A FREE QUOTE </a>
+					>GET A FREE QUOTE </a>
 			</div>
 		</div>
 	</div>
@@ -304,16 +294,12 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4"
-				data-aos="fade-up"
-				data-aos-offset="100"
-				data-aos-duration="700"
-				data-aos-easing="ease-in-sine">
+				<div class="col-md-4">
 					<div class="card card-pricing card-plain">
 						<div class="card-body">
 							<p class="category price_category">Basic</p>
-							<p class="card-title card_price_title">
-								<small>$</small>499</p>
+							{{-- <p class="card-title card_price_title">
+								<small>$</small>499</p> --}}
 							<ul>
 								<li>
 									<b>
@@ -360,15 +346,12 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4"
-				 	data-aos="fade-up"
-			     data-aos-easing="linear"
-			     data-aos-duration="1000">
+				<div class="col-md-4">
 					<div class="card card-pricing card-background card-raised" style="background-color:#FFCDD2;">
 						<div class="card-body">
 							<p class="category price_category">Standart</p>
-							<p class="card-title card_price_title">
-								<small>$</small>699</h1>
+							{{-- <p class="card-title card_price_title">
+								<small>$</small>699</h1></p> --}}
 								<ul>
 									<li>
 										<b>
@@ -417,16 +400,12 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4"
-				data-aos="fade-up"
-				data-aos-offset="100"
-				data-aos-duration="1200"
-				data-aos-easing="ease-in-sine">
+				<div class="col-md-4">
 					<div class="card card-pricing card-plain">
 						<div class="card-body">
 							<p class="category price_category">Extended</p>
-							<p class="card-title card_price_title">
-								<small>$</small>999</h1>
+							{{-- <p class="card-title card_price_title">
+								<small>$</small>999</h1></p> --}}
 								<ul>
 									<li>
 										<b>
@@ -486,8 +465,7 @@
 			<h3 class="title" style="font-size:1.825em; text-align:center; padding-bottom:15px;">F.A.Q. ABOUT SOCIAL MEDIA MARKETING SERVICES
 			</h3>
 			<div id="accordion" role="tablist" aria-multiselectable="true" class="card-collapse">
-				<div class="card card-plain"
-					data-aos="fade-down" data-aos-duration="600">
+				<div class="card card-plain">
 					<div class="card-header smm-collapse" role="tab" id="heading3">
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3" style="text-transform: uppercase;">
 							Should the company be in all social networks at once?
@@ -511,8 +489,7 @@
 					</div>
 
 				</div>
-				<div class="card card-plain"
-					data-aos="fade-down" data-aos-duration="900">
+				<div class="card card-plain">
 					<div class="card-header smm-collapse" role="tab" id="heading4">
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="true" aria-controls="collapse4" style="text-transform: uppercase;">
 							How much does it cost to gain 10,000 (100,000; 1,000,000) followers?

@@ -80,8 +80,7 @@
 				<h3 class="title" style="font-size:1.825em; text-align:center; padding-bottom:15px;">Moving Estimate F.A.Q.
 				</h3>
 				<div id="accordion" role="tablist" aria-multiselectable="true" class="card-collapse">
-					<div class="card card-plain"
-					data-aos="fade-down" data-aos-duration="600">
+					<div class="card card-plain">
 		
 						<div class="card-header smm-collapse" role="tab" id="headingOne">
 							<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="text-transform: uppercase;">
@@ -100,8 +99,7 @@
 						</div>
 		
 					</div>
-					<div class="card card-plain"
-					data-aos="fade-down" data-aos-duration="1200">
+					<div class="card card-plain">
 		
 						<div class="card-header smm-collapse" role="tab" id="headingThree">
 							<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree" style="text-transform: uppercase;">
@@ -133,9 +131,7 @@
 				<div class="row" style="margin-left: 0; margin-right:0;">
 		
 					<div class= "col-md-8 ml-auto mr-auto text-center">
-						<a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;"
-						 data-aos="flip-up"
-						 data-aos-duration="1000">Call Now</a>
+						<a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;">Call Now</a>
 					</div>
 				</div>
 			</div>

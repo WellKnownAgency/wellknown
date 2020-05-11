@@ -50,13 +50,9 @@
         <div class="col-md-5">
           <div class="image-container">
             <img class="img img-raised rounded img-comments rellax" data-rellax-speed="1" src="/images/content/content-1.jpg"
-							data-aos="fade-right"
-							data-aos-easing="linear"
-							data-aos-duration="600">
+							>
             <img class="img img-raised rounded img-blog rellax" data-rellax-speed="4" src="/images/content/content-2.jpg"
-						data-aos="fade-right"
-						data-aos-easing="linear"
-						data-aos-duration="400">
+						>
           </div>
         </div>
         <div class="col-md-6 ml-auto mr-auto">
@@ -91,27 +87,27 @@
           <div class="section-description">
 						<h4 style="padding-bottom:10px;"><strong>WHAT IS INCLUDED IN CONTENT MARKETING STRATEGY:</strong></h4>
 						<ul class="nav nav-pills nav-pills-info nav-pills-just-icons" role="tablist">
-							<li class="nav-item" data-aos="zoom-in" data-aos-duration="500">
+							<li class="nav-item">
 								<a class="nav-link active content_strategy_steps" data-toggle="tab" href="#link1" role="tablist">
 									<p class="content_strategy_steps">1</p>
 								</a>
 							</li>
-							<li class="nav-item" data-aos="zoom-in" data-aos-duration="700">
+							<li class="nav-item">
 								<a class="nav-link content_strategy_steps" data-toggle="tab" href="#link2" role="tablist">
 									<p class="content_strategy_steps">2</p>
 								</a>
 							</li>
-							<li class="nav-item" data-aos="zoom-in" data-aos-duration="1000">
+							<li class="nav-item">
 								<a class="nav-link content_strategy_steps" data-toggle="tab" href="#link3" role="tablist">
 									<p class="content_strategy_steps">3</p>
 								</a>
 							</li>
-							<li class="nav-item" data-aos="zoom-in" data-aos-duration="1300">
+							<li class="nav-item">
 								<a class="nav-link content_strategy_steps" data-toggle="tab" href="#link4" role="tablist">
 									<p class="content_strategy_steps">4</p>
 								</a>
 							</li>
-							<li class="nav-item" data-aos="zoom-in" data-aos-duration="1600">
+							<li class="nav-item">
 								<a class="nav-link content_strategy_steps" data-toggle="tab" href="#link5" role="tablist">
 									<p class="content_strategy_steps">5</p>
 								</a>
@@ -250,8 +246,7 @@
 			</div>
 
 			<div class="row" style="padding-top:50px;">
-				<div class="col-md-10 ml-auto mr-auto text-center" data-aos="fade-up"
-     data-aos-duration="1000">
+				<div class="col-md-10 ml-auto mr-auto text-center">
 					<blockquote class="blockquote blockquote-primary">
 					  <p class="mb-0">
 							<i style="font-size:1.25em; color:#000">Information</i> - this is why the client comes to the site. The audience needs information about your products and services, delivery times and costs, your reliability and reputation. Content marketing is a job, first of all, with the quality of the information flow and with the ways of its distribution in the network. A content promotion site is the promotion of the information in the network that you consider necessary to convey to the audience.
@@ -273,9 +268,7 @@
 		<div class="row" style="margin-left: 0; margin-right:0;">
 
 			<div class= "col-md-8 ml-auto mr-auto text-center">
-				<a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;"
-				 data-aos="flip-up"
-				 data-aos-duration="1000">GET A FREE QUOTE </a>
+				<a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;">GET A FREE QUOTE </a>
 			</div>
 		</div>
 	</div>
@@ -330,7 +323,7 @@
 			<div class="row">
 					<div class="col-md-3">
 							<div class="info info-hover icon-landing">
-									<div class="icon"  data-aos="flip-down" 		data-aos-easing="ease-out-cubic" 	data-aos-duration="1000">
+									<div class="icon">
 											<img src="/images/content/1-red.png" width="auto" height="100"></img>
 									</div>
 									<h4 class="info-title info-title-content">Site status and visibility in search engines</h4>
@@ -339,7 +332,7 @@
 
 					<div class="col-md-3">
 							<div class="info info-hover icon-landing">
-								<div class="icon"  data-aos="flip-down" 		data-aos-easing="ease-out-cubic" 	data-aos-duration="1000">
+								<div class="icon">
 											<img src="/images/content/2-red.png" width="auto" height="100"></img>
 									</div>
 									<h4 class="info-title">Required content volumes per day / week / month</h4>
@@ -348,7 +341,7 @@
 
 					<div class="col-md-3">
 							<div class="info info-hover icon-landing" >
-								<div class="icon"  data-aos="flip-down" 		data-aos-easing="ease-out-cubic" 	data-aos-duration="1000">
+								<div class="icon">
 											<img src="/images/content/3-red.png" width="auto" height="100"></img>
 									</div>
 									<h4 class="info-title">Content distribution channels</h4>
@@ -357,7 +350,7 @@
 
 					<div class="col-md-3">
 							<div class="info info-hover icon-landing">
-								<div class="icon"  data-aos="flip-down" 		data-aos-easing="ease-out-cubic" 	data-aos-duration="1000">
+								<div class="icon">
 											<img src="/images/content/4-red.png" width="auto" height="100"></img>
 									</div>
 									<h4 class="info-title">Depth of immersion in the subject of business, etc.</h4>
@@ -383,8 +376,7 @@
 			<h3 class="title" style="font-size:1.825em; text-align:center; padding-bottom:15px;">F.A.Q. ABOUT CONTENT MARKETING
 	 		</h3>
 			<div id="accordion" role="tablist" aria-multiselectable="true" class="card-collapse">
-				<div class="card card-plain"
-				data-aos="fade-down" data-aos-duration="600">
+				<div class="card card-plain">
 
 					<div class="card-header smm-collapse" role="tab" id="headingOne">
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="text-transform: uppercase;">
@@ -403,8 +395,7 @@
 					</div>
 
 				</div>
-				<div class="card card-plain"
-				data-aos="fade-down" data-aos-duration="900">
+				<div class="card card-plain">
 
 					<div class="card-header smm-collapse" role="tab" id="headingTwo">
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" style="text-transform: uppercase;">
@@ -423,8 +414,7 @@
 					</div>
 
 				</div>
-				<div class="card card-plain"
-				data-aos="fade-down" data-aos-duration="1200">
+				<div class="card card-plain">
 
 					<div class="card-header smm-collapse" role="tab" id="headingThree">
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree" style="text-transform: uppercase;">

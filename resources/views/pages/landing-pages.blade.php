@@ -58,25 +58,19 @@
 					<div class="col-md-6">
 						<!-- First image on the left side -->
 						<div class="image-container image-left" style="background-image: url('/images/landing/landing-page-2.jpg');"
-						data-aos="fade-up"
-						data-aos-easing="linear"
-						data-aos-duration="400">
+						>
 							<p class="blockquote blockquote-primary">It's important to formulate an exact proposal for your audience and once again determine why you want to use the landing page.
 							</p>
 						</div>
 						<!-- Second image on the left side of the article -->
 						<div class="image-container image-left-bottom"
-						data-aos="fade-right"
-						data-aos-easing="linear"
-						data-aos-duration="400">
+						>
 					</div>
 					</div>
 					<div class="col-md-5">
 						<!-- First image on the right side, above the article -->
 						<div class="image-container image-right" style="background-image: url('/images/landing/landing-page-1.jpg');"
-						data-aos="fade-up"
-						data-aos-easing="linear"
-						data-aos-duration="600">
+						>
 					</div>
 						<h3 class="landing_page_steps_header">When do We Use Landing Pages?</h3>
 						<p>In brief, a landing page is useful if you know exactly what and whom you are selling to.</p>
@@ -111,9 +105,7 @@
 			<div class="row">
 					<div class="col-md-4">
 							<div class="info info-hover icon-landing">
-									<div class="icon icon-landing icon-circle"
-									data-aos="zoom-in"
-									data-aos-duration="800">
+									<div class="icon icon-landing icon-circle">
 											<i class="now-ui-icons education_hat"></i>
 									</div>
 									<h4 class="info-title">Not cleary understand the technique of creating a good landing?</h4>
@@ -123,9 +115,7 @@
 
 					<div class="col-md-4">
 							<div class="info info-hover">
-									<div class="icon icon-grey icon-circle"
-									data-aos="zoom-in"
-									data-aos-duration="1200">
+									<div class="icon icon-grey icon-circle">
 											<i class="now-ui-icons users_circle-08"></i>
 									</div>
 									<h4 class="info-title">Don't understand how to define your target audience?</h4>
@@ -137,9 +127,7 @@
 
 					<div class="col-md-4">
 							<div class="info info-hover">
-									<div class="icon icon-grey icon-circle"
-									data-aos="zoom-in"
-									data-aos-duration="1600">
+									<div class="icon icon-grey icon-circle">
 											<i class="now-ui-icons design_vector"></i>
 									</div>
 									<h4 class="info-title">Do not know how to mobilize your creative potential?</h4>
@@ -168,8 +156,7 @@
 								<div class="card-avatar">
 									<a href="https://clutch.co/profile/wellknown-agency"  target="_blank">
 										<img class="img img-raised rounded" src="/images/dmitrii.jpg" /
-										data-aos="zoom-in"
-										data-aos-duration="600">
+										>
 									</a>
 								</div>
 								<div class="card-body">
@@ -203,10 +190,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-4">
-					<div class="card card-pricing card-plain"
-							data-aos="fade-up"
-							data-aos-duration="700"
-							data-aos-easing="ease-in-sine">
+					<div class="card card-pricing card-plain">
 						<div class="card-body">
 							<p class="category price_category">Extended</p>
 							<ul>
@@ -254,9 +238,7 @@
 				</div>
 				<div class="col-md-4">
 					<div class="card card-pricing card-background card-raised" style="background-color:#FFCDD2;"
-					 	 	 data-aos="fade-up"
-					     data-aos-easing="linear"
-					     data-aos-duration="1200">
+					 	 	>
 						<div class="card-body">
 							<p class="category price_category">Standart</p>
 								<ul>
@@ -301,10 +283,7 @@
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="card card-pricing card-plain"
-					data-aos="fade-up"
-					data-aos-duration="1000"
-					data-aos-easing="ease-in-sine">
+					<div class="card card-pricing card-plain">
 						<div class="card-body">
 							<p class="category price_category">Basic</p>
 								<ul>
@@ -358,8 +337,7 @@
 			<h3 class="title" style="font-size:1.825em; text-align:center; padding-bottom:15px;">F.A.Q. ABOUT LANDING PAGE SERVICES
 	 		</h3>
 			<div id="accordion" role="tablist" aria-multiselectable="true" class="card-collapse">
-				<div class="card card-plain"
-					data-aos="fade-down" data-aos-duration="600">
+				<div class="card card-plain">
 					<div class="card-header smm-collapse" role="tab" id="headingOne">
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="text-transform: uppercase;">
 							What is a landing page?
@@ -375,8 +353,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="card card-plain"
-				data-aos="fade-down" data-aos-duration="900">
+				<div class="card card-plain">
 					<div class="card-header smm-collapse" role="tab" id="headingTwo">
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" style="text-transform: uppercase;">
 							I already have a website, do I need a landing page?
@@ -397,8 +374,7 @@
 					</div>
 
 				</div>
-				<div class="card card-plain"
-				data-aos="fade-down" data-aos-duration="1200">
+				<div class="card card-plain">
 					<div class="card-header smm-collapse" role="tab" id="headingThree">
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree" style="text-transform: uppercase;">
 							How does landing page sell?
@@ -417,8 +393,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="card card-plain"
-				data-aos="fade-down" data-aos-duration="1500">
+				<div class="card card-plain">
 					<div class="card-header smm-collapse" role="tab" id="headingFour">
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour" style="text-transform: uppercase;">
 							How does the payment goes?
@@ -441,8 +416,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="card card-plain"
-				data-aos="fade-down" data-aos-duration="1800">
+				<div class="card card-plain">
 					<div class="card-header smm-collapse" role="tab" id="headingFive">
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive" style="text-transform: uppercase;">
 							How do I, as a customer, involved in the development?

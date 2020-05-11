@@ -61,22 +61,16 @@ canvas {
     <div class="row">
      <div class="col-md-12">
       <div class="hero-images-container">
-       <img src="images/webdesign/desktop.png" alt=""
-			 data-aos="fade-up"
-			 data-aos-duration="600">
+       <img src="images/webdesign/desktop.png" alt="web design desktop">
       </div>
 
       <div class="hero-images-container-1">
-       <img src="images/webdesign/ipad.png" alt=""
-			 data-aos="fade-up"
-			 data-aos-duration="900">
+       <img src="images/webdesign/ipad.png" alt="web design ipad">
 
       </div>
 
       <div class="hero-images-container-2">
-       <img src="images/webdesign/iphone.png" alt=""
-			 data-aos="fade-up"
-			 data-aos-duration="1200">
+       <img src="images/webdesign/iphone.png" alt="web design iphone">
 
       </div>
      </div>
@@ -125,9 +119,7 @@ canvas {
             </div>
             <div class="col-md-6">
               <div class="image-container">
-                <img src="images/webdesign/ipad3.png" alt=""
-								 data-aos="flip-up"
-								 data-aos-duration="1000">
+                <img src="images/webdesign/ipad3.png" alt="">
               </div>
             </div>
           </div>
@@ -146,9 +138,7 @@ canvas {
         </div>
         <div class="row">
           <div class="col-md-5 ml-auto">
-            <div class="card card-background card-background-product card-raised" style="background-image: url('../images/webdesign/design.jpg')"
-						 data-aos="flip-left"
-						 data-aos-duration="1500">
+            <div class="card card-background card-background-product card-raised" style="background-image: url('../images/webdesign/design.jpg')">
               <div class="card-body">
                 <h2 class="card-title">Web Design</h2>
                 <p class="card-description">
@@ -159,7 +149,7 @@ canvas {
             </div>
           </div>
           <div class="col-md-5 mr-auto">
-            <div class="info info-horizontal" data-aos="zoom-in" data-aos-duration="500">
+            <div class="info info-horizontal">
               <div class="icon icon-danger">
                 <i class="now-ui-icons ui-2_chat-round"></i>
               </div>
@@ -170,7 +160,7 @@ canvas {
                 </p>
               </div>
             </div>
-            <div class="info info-horizontal" data-aos="zoom-in" data-aos-duration="700">
+            <div class="info info-horizontal">
               <div class="icon icon-danger">
                 <i class="now-ui-icons design_app"></i>
               </div>
@@ -181,7 +171,7 @@ canvas {
                 </p>
               </div>
             </div>
-            <div class="info info-horizontal"  data-aos="zoom-in" data-aos-duration="900">
+            <div class="info info-horizontal">
               <div class="icon icon-danger">
                 <i class="now-ui-icons tech_mobile"></i>
               </div>
@@ -198,7 +188,7 @@ canvas {
 
         <div class="row">
           <div class="col-md-5 ml-auto" style="margin-top:0px;">
-            <div class="info info-horizontal"  data-aos="zoom-in" data-aos-duration="500">
+            <div class="info info-horizontal">
               <div class="icon icon-warning">
                 <i class="now-ui-icons users_single-02"></i>
               </div>
@@ -209,7 +199,7 @@ canvas {
                 </p>
               </div>
             </div>
-            <div class="info info-horizontal" data-aos="zoom-in" data-aos-duration="700">
+            <div class="info info-horizontal">
               <div class="icon icon-warning">
                 <i class="now-ui-icons objects_key-25"></i>
               </div>
@@ -220,7 +210,7 @@ canvas {
                 </p>
               </div>
             </div>
-            <div class="info info-horizontal" data-aos="zoom-in" data-aos-duration="900">
+            <div class="info info-horizontal">
               <div class="icon icon-warning">
                 <i class="now-ui-icons arrows-1_refresh-69"></i>
               </div>
@@ -233,9 +223,7 @@ canvas {
             </div>
           </div>
           <div class="col-md-5 mr-auto">
-            <div class="card card-background card-background-product card-raised" style="background-image: url('../images/webdesign/development.jpg')"
-						data-aos="flip-right"
-						data-aos-duration="1500">
+            <div class="card card-background card-background-product card-raised" style="background-image: url('../images/webdesign/development.jpg')">
 
               <div class="card-body">
                 <h2 class="card-title">Web Development</h2>
@@ -260,8 +248,7 @@ canvas {
 			<div class="row" style="margin-left: 0; margin-right:0;">
 				<div class= "col-md-8 ml-auto mr-auto text-center">
 					<a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;"
-					 data-aos="flip-up"
-					 data-aos-duration="1000">GET A FREE QUOTE </a>
+					 >GET A FREE QUOTE </a>
 				</div>
 			</div>
 		</div>
@@ -282,7 +269,7 @@ canvas {
                 <div class="card card-testimonial card-plain">
                   <div class="card-avatar">
                     <a href="https://clutch.co/profile/wellknown-agency" target="_blank">
-                      <img class="img img-raised rounded" src="/images/filipp.jpg" / data-aos="zoom-in" data-aos-duration="500">
+                      <img class="img img-raised rounded" src="/images/filipp.jpg" />
                     </a>
                   </div>
                   <div class="card-body">
@@ -319,10 +306,7 @@ canvas {
         <div class="row">
           <div class="col-md-6 px-0">
             <div class="card card-background card-background-product card-no-shadow" style="background-image: url('/images/ffmain.jpg')"
-						data-aos="fade-up"
-						data-aos-offset="300"
-						data-aos-easing="linear"
-						data-aos-duration="500">
+						>
               <div class="card-body">
                 <h6 class="category">Web Design & Development</h6>
                 <h3 class="card-title">
@@ -339,10 +323,7 @@ canvas {
           </div>
           <div class="col-md-6 px-0">
             <div class="card card-raised card-background card-background-product card-no-shadow" style="background-image: url('/images/omdarling.jpg')"
-						data-aos="fade-up"
-						data-aos-offset="300"
-						data-aos-easing="linear"
-						data-aos-duration="800">
+						>
               <div class="card-body">
                 <h6 class="category">Web Design & Development</h6>
                 <h3 class="card-title">OmDarling</h3>
@@ -357,10 +338,7 @@ canvas {
           </div>
           <div class="col-md-6 px-0">
             <div class="card card-background card-background-product card-no-shadow" style="background-image: url('/images/btmmain.jpg')"
-						data-aos="fade-up"
-						data-aos-offset="300"
-						data-aos-easing="linear"
-						data-aos-duration="500">
+						>
               <div class="card-body">
                 <h6 class="category">Web Design & Development</h6>
                 <h3 class="card-title">Born to Move</h3>
@@ -375,10 +353,7 @@ canvas {
           </div>
 					<div class="col-md-6 px-0">
             <div class="card card-background card-background-product card-no-shadow" style="background-image: url('/images/cases/flashmoving.jpg')"
-						data-aos="fade-up"
-						data-aos-offset="300"
-						data-aos-easing="linear"
-						data-aos-duration="800">
+						>
               <div class="card-body">
                 <h6 class="category">Web Design & Development</h6>
                 <h3 class="card-title">Flashmoving</h3>
@@ -403,7 +378,7 @@ canvas {
 				</h3>
 				<div id="accordion" role="tablist" aria-multiselectable="true" class="card-collapse">
 					<div class="card card-plain"
-						data-aos="fade-down" data-aos-duration="600">
+						>
 						<div class="card-header smm-collapse" role="tab" id="heading1">
 							<a data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1" style="text-transform: uppercase;">
 								How long has your agency been on the web services market?
@@ -420,8 +395,7 @@ canvas {
 						</div>
 					</div>
 
-					<div class="card card-plain"
-						data-aos="fade-down" data-aos-duration="900">
+					<div class="card card-plain">
 						<div class="card-header smm-collapse" role="tab" id="heading4">
 							<a data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="true" aria-controls="collapse4" style="text-transform: uppercase;">
 								How long does it take to get a website?
@@ -439,8 +413,7 @@ canvas {
 						</div>
 					</div>
 
-					<div class="card card-plain"
-						data-aos="fade-down" data-aos-duration="1200">
+					<div class="card card-plain">
 						<div class="card-header smm-collapse" role="tab" id="heading3">
 							<a data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3" style="text-transform: uppercase;">
 								How many design varieties do you offer in a standard contract?
@@ -458,8 +431,7 @@ canvas {
 						</div>
 					</div>
 
-					<div class="card card-plain"
-						data-aos="fade-down" data-aos-duration="1500">
+					<div class="card card-plain">
 						<div class="card-header smm-collapse" role="tab" id="heading5">
 							<a data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="true" aria-controls="collapse5" style="text-transform: uppercase;">
 								Where do you host websites and how much does it cost?
@@ -480,8 +452,7 @@ canvas {
 						</div>
 					</div>
 
-					<div class="card card-plain"
-						data-aos="fade-down" data-aos-duration="2100">
+					<div class="card card-plain">
 						<div class="card-header smm-collapse" role="tab" id="heading6">
 							<a data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="true" aria-controls="collapse6" style="text-transform: uppercase;">
 								Do you help register a domain name?

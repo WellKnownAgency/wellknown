@@ -86,9 +86,7 @@ function gtag_report_conversion(url) {
             </div>
           </div>
           <div class="row">
-            <div class="col-md-4" class="card-container first-card" data-aos="fade-up"
-								 data-aos-easing="linear"
-								 data-aos-duration="500">
+            <div class="col-md-4" class="card-container first-card">
               <div class="card card-background card-raised" data-background-color style="background-image: url('images/search/optimization.jpg')">
                 <div class="info">
                   <div class="icon icon-white">
@@ -101,9 +99,7 @@ function gtag_report_conversion(url) {
                 </div>
               </div>
             </div>
-            <div class="col-md-4"class="card-container first-card" data-aos="fade-up"
-								 data-aos-easing="linear"
-								 data-aos-duration="600">
+            <div class="col-md-4"class="card-container first-card">
               <div class="card card-background card-raised" data-background-color style="background-image: url('images/search/analytics.jpg')">
                 <div class="info">
                   <div class="icon icon-white">
@@ -116,9 +112,7 @@ function gtag_report_conversion(url) {
                 </div>
               </div>
             </div>
-            <div class="col-md-4"class="card-container first-card" data-aos="fade-up"
-								 data-aos-easing="linear"
-								 data-aos-duration="700">
+            <div class="col-md-4"class="card-container first-card">
               <div class="card card-background card-raised" data-background-color style="background-image: url('images/search/reporting.jpg')">
                 <div class="info">
                   <div class="icon icon-white">
@@ -148,9 +142,7 @@ function gtag_report_conversion(url) {
           </div>
           <div class="row">
             <div class="col-md-4">
-              <div class="info info-horizontal" data-aos="zoom-in"
-							data-aos-easing="linear"
-							data-aos-duration="300">
+              <div class="info info-horizontal">
                 <div class="icon icon-info">
                   <i class="fab fa-searchengin"></i>
                 </div>
@@ -159,9 +151,7 @@ function gtag_report_conversion(url) {
                   <p>The first step of the process is keywords research, which is based on your business segment. Analyzing competitors, average monthly volume and other parametrs, we generate a list of potential keywords.</p>
                 </div>
               </div>
-              <div class="info info-horizontal" data-aos="zoom-in"
-							data-aos-easing="linear"
-							data-aos-duration="500">
+              <div class="info info-horizontal">
                 <div class="icon icon-danger">
                   <i class="fas fa-globe"></i>
                 </div>
@@ -171,18 +161,13 @@ function gtag_report_conversion(url) {
                 </div>
               </div>
             </div>
-            <div class="col-md-4" data-aos="flip-left"
-						data-aos-easing="linear"
-						data-aos-duration="400">
+            <div class="col-md-4">
               <div class="phone-container">
                 <img src="images/search/iphone-x.png" />
               </div>
             </div>
             <div class="col-md-4">
-              <div class="info info-horizontal"
-							data-aos="zoom-in"
-							data-aos-easing="linear"
-							data-aos-duration="700">
+              <div class="info info-horizontal">
                 <div class="icon icon-primary">
                   <i class="fas fa-edit"></i>
                 </div>
@@ -191,10 +176,7 @@ function gtag_report_conversion(url) {
                   <p>The next step is to check website code and bring it to the correct structure. Optimizing code and pictures, page titles and meta descriptions are only a small part.</p>
                 </div>
               </div>
-              <div class="info info-horizontal"
-							data-aos="zoom-in"
-							data-aos-easing="linear"
-							data-aos-duration="900">
+              <div class="info info-horizontal">
                 <div class="icon icon-success">
                   <i class="fas fa-link"></i>
                 </div>
@@ -219,8 +201,7 @@ function gtag_report_conversion(url) {
 			<div class="row" style="margin-left: 0; margin-right:0;">
 				<div class= "col-md-8 ml-auto mr-auto text-center">
 					<a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;"
-						data-aos="flip-up"
-						data-aos-duration="1000">GET A FREE QUOTE </a>
+						>GET A FREE QUOTE </a>
 				</div>
 			</div>
 		</div>
@@ -240,7 +221,7 @@ function gtag_report_conversion(url) {
                 <div class="card card-testimonial card-plain">
                   <div class="card-avatar">
                     <a href="https://clutch.co/profile/wellknown-agency"  target="_blank">
-                      <img class="img img-raised rounded" src="/images/dmitrii.jpg"  data-aos="zoom-in" data-aos-duration="500"/>
+                      <img class="img img-raised rounded" src="/images/dmitrii.jpg"/>
                     </a>
                   </div>
                   <div class="card-body">
@@ -276,84 +257,88 @@ function gtag_report_conversion(url) {
 
         <div class="row">
 
-            <div class="col-md-3"data-aos="fade-right"
-							data-aos-easing="linear"
-							data-aos-duration="1200">
+            <div class="col-md-3">
                 <div class="card card-pricing card-plain">
                     <div class="card-body">
-                        <h5 class="category ">Single</h5>
+                        <h5 class="category ">One Page Website</h5>
                         <div class="icon icon-warning">
                             <i class="now-ui-icons media-1_button-power"></i>
                         </div>
-                        <h3 class="card-title">$300</h3>
+                        {{-- <h3 class="card-title">$300</h3> --}}
                         <ul>
-                            <li>One Page SEO</li>
-														<li>Keywords Research</li>
-														<li>Up to 10 Keywords Tracking</li>
-														<li>Weekly and Monthly Reporting</li>
+                            <li>Monthly Reporting</li>
+							<li>Keywords Research (up to 20 keywords)</li>
+							<li>Position Tracking (up to 10 keywords)</li>
+							<li>Add Schema</li>
+							<li>Onsite Optimization</li>
+							<li>Link Building</li>
+							<li>Local Search Optimization</li>
                         </ul>
                         <a href="/contact-us" class="btn btn-neutral btn-warning btn-round">Contact us</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-3"data-aos="fade-right"
-							data-aos-easing="linear"
-							data-aos-duration="1000">
+            <div class="col-md-3">
                 <div class="card card-pricing">
                     <div class="card-body">
-                        <h5 class="category">Double</h5>
+                        <h5 class="category">Small Size Website</h5>
                         <div class="icon icon-primary">
                             <i class="now-ui-icons objects_diamond"></i>
                         </div>
-                        <h3 class="card-title">$500</h3>
+                        {{-- <h3 class="card-title">$500</h3> --}}
                         <ul>
-													<li>Two Pages SEO</li>
-													<li>Keywords Research</li>
-													<li>Up to 25 Keywords Tracking</li>
-													<li>Weekly and Monthly Reporting</li>
+							<li>Monthly Reporting</li>
+							<li>Keywords Research (up to 30 keywords)</li>
+							<li>Position Tracking (up to 20 keywords)</li>
+							<li>Add Schema</li>
+							<li>Onsite Optimization</li>
+							<li>Link Building</li>
+							<li>Local Search Optimization</li>
                         </ul>
                         <a href="/contact-us" class="btn btn-primary btn-round">Contact us</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-3"data-aos="fade-right"
-							data-aos-easing="linear"
-							data-aos-duration="700">
+            <div class="col-md-3">
                 <div class="card card-pricing card-plain">
                     <div class="card-body">
-                        <h5 class="category ">Triple</h5>
+                        <h5 class="category ">Medium Size Website</h5>
                         <div class="icon icon-success">
                             <i class="now-ui-icons media-2_sound-wave"></i>
                         </div>
-                        <h3 class="card-title">$800</h3>
+                        {{-- <h3 class="card-title">$800</h3> --}}
                         <ul>
-													<li>Three Pages SEO</li>
-													<li>Keywords Research</li>
-													<li>Up to 50 Keywords Tracking</li>
-													<li>Weekly and Monthly Reporting</li>
+							<li>Monthly Reporting</li>
+							<li>Keywords Research (up to 70 keywords)</li>
+							<li>Position Tracking (up to 50 keywords)</li>
+							<li>Add Schema</li>
+							<li>Onsite Optimization</li>
+							<li>Link Building</li>
+							<li>Local Search Optimization</li>
                         </ul>
                         <a href="/contact-us" class="btn btn-neutral btn-success btn-round">Contact us</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-3"	data-aos="fade-right"
-							data-aos-easing="linear"
-							data-aos-duration="400">
+            <div class="col-md-3">
                 <div class="card card-pricing card-plain">
                     <div class="card-body">
-                        <h5 class="category">Quadruple</h5>
+                        <h5 class="category">Large Website</h5>
                         <div class="icon icon-danger">
                             <i class="now-ui-icons education_atom"></i>
                         </div>
-                        <h3 class="card-title">$1200</h3>
+                        {{-- <h3 class="card-title">$1200</h3> --}}
                         <ul>
-													<li>Five Pages SEO</li>
-													<li>Keywords Research</li>
-													<li>Up to 100 Keywords Tracking</li>
-													<li>Weekly and Monthly Reporting</li>
+							<li>Monthly Reporting</li>
+							<li>Keywords Research (up to 150 keywords)</li>
+							<li>Position Tracking (up to 100 keywords)</li>
+							<li>Add Schema</li>
+							<li>Onsite Optimization</li>
+							<li>Link Building</li>
+							<li>Local Search Optimization</li>
                         </ul>
                         <a onclick="return gtag_report_conversion('https://wknown.com/contact-us');" href="/contact-us" class="btn btn-neutral btn-danger btn-round">Contact us</a>
                     </div>
@@ -369,8 +354,7 @@ function gtag_report_conversion(url) {
 		<h3 class="title" style="font-size:1.825em; text-align:center; padding-bottom:15px;">F.A.Q. ABOUT SEO SERVICES
  		</h3>
 		<div id="accordion" role="tablist" aria-multiselectable="true" class="card-collapse">
-			<div class="card card-plain"
-			data-aos="fade-down" data-aos-duration="600">
+			<div class="card card-plain">
 
 				<div class="card-header smm-collapse" role="tab" id="headingOne">
 					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -387,8 +371,7 @@ function gtag_report_conversion(url) {
 				</div>
 
 			</div>
-			<div class="card card-plain"
-			data-aos="fade-down" data-aos-duration="900">
+			<div class="card card-plain">
 
 				<div class="card-header smm-collapse" role="tab" id="headingTwo">
 					<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
@@ -407,8 +390,7 @@ function gtag_report_conversion(url) {
 				</div>
 
 			</div>
-			<div class="card card-plain"
-			data-aos="fade-down" data-aos-duration="1200">
+			<div class="card card-plain">
 
 				<div class="card-header smm-collapse" role="tab" id="headingThree">
 					<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">

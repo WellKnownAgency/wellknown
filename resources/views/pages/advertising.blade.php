@@ -72,25 +72,25 @@ canvas {
 					<div class="row">
 						<div class="col-lg-2 col-md-10">
 							<ul class="nav nav-pills nav-pills-primary nav-pills-icons flex-column" role="tablist">
-								<li class="nav-item" data-aos="fade-up"  data-aos-duration="1000">
+								<li class="nav-item"   >
 									<a class="nav-link active" data-toggle="tab" href="#link10" role="tablist">
 										<i class="fas fa-bullseye fa-2x"></i>
                     Goals and Ideas
 									</a>
 								</li>
-								<li class="nav-item" data-aos="fade-up"  data-aos-duration="1300">
+								<li class="nav-item"   1300">
 									<a class="nav-link" data-toggle="tab" href="#link11" role="tablist">
 										<i class="fas fa-globe fa-2x"></i>
 										Strategy and Tactics
 									</a>
 								</li>
-                <li class="nav-item" data-aos="fade-up"  data-aos-duration="1600">
+                <li class="nav-item"   1600">
 									<a class="nav-link" data-toggle="tab" href="#link12" role="tablist">
 										<i class="fab fa-creative-commons-share"></i>
 										Creating and Testing
 									</a>
 								</li>
-                <li class="nav-item" data-aos="fade-up"  data-aos-duration="1900">
+                <li class="nav-item"   1900">
 									<a class="nav-link" data-toggle="tab" href="#link13" role="tablist">
 										<i class="fas fa-clipboard-check"></i>
 										Deployment and Managing
@@ -102,23 +102,21 @@ canvas {
 							<div class="tab-content">
 								<div class="tab-pane active" id="link10">
                   <div class="row">
-                    <div class="col-md-12" data-aos="fade-right"  data-aos-duration="1500">
-                      <p class="content-ads">It's essential to understand what you exactly looking for to get from the advertising.
-                        It helps, first of all, to understand what auditory is the best for you, what platform to use to catch your Ideal Client and more...
-                        Ideal Client is important part for any advertising campaign and any marketing plan.
-                        For Ads is important to have An overall Idea, we will make sure you get all you can from each penny you spend.
-                      </p>
+                    <div class="col-md-12">
+                      <p class="content-ads">
+						Understanding exactly what you are looking for to get from the advertising is important. First of all, it lets you realize the auditory is the right for you, the channel to use to attract your Ideal Client and more ... Ideal Client is an important part of any marketing plan and advertising campaign. For Advertising is crucial to have a general picture. We will make sure you get as much as you can with every penny you pay.
+					  </p>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-md-12"  data-aos="fade-right"  data-aos-duration="2000">
+                    <div class="col-md-12">
                         <img src="images/advertising/ideas.jpg" alt="Card image cap" style="margin-left:auto; margin-right:auto; display:block;">
                     </div>
                   </div>
 								</div>
 								<div class="tab-pane" id="link11">
                   <div class="row">
-                    <div class="col-md-12" data-aos="fade-left"  data-aos-duration="1500">
+                    <div class="col-md-12">
                       <p class="content-ads">
                         After understanding your business Goals and Ideas we come to the most important part. Without Strategy your advertising money can "fly away" and give zero results.
                         Our Agency have tried different tactics for different businesses and cases. All this knowledge helps us to make sure,
@@ -127,28 +125,28 @@ canvas {
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-md-12" data-aos="fade-left"  data-aos-duration="1500">
+                    <div class="col-md-12" >
                         <img class="" src="images/advertising/strategy.jpg" alt="Card image cap" style="margin-left:auto; margin-right:auto; display:block;">
                     </div>
                   </div>
 								</div>
                 <div class="tab-pane" id="link12">
                   <div class="row">
-                    <div class="col-md-12 " data-aos="fade-left"  data-aos-duration="1500">
+                    <div class="col-md-12 " >
                       <p class="content-ads">
 												Now we come to the creative part of the process. Not a secret for any Advertising campaign creativity is important, in some cases it takes first place.
 												WellKnown Agency team created ads for a lot of industries and we have already an idea which keywords work best. But still any ad campaign needs testing, so it takes in our creation process a huge part.</p>
                     </div>
   								</div>
                   <div class="row">
-                    <div class="col-md-12" data-aos="fade-left"  data-aos-duration="1500">
+                    <div class="col-md-12" >
                         <img class="" src="images/advertising/creating.jpg" alt="Card image cap" style="margin-left:auto; margin-right:auto; display:block;">
                     </div>
                   </div>
                 </div>
                 <div class="tab-pane" id="link13">
                   <div class="row">
-                    <div class="col-md-12" data-aos="fade-left"  data-aos-duration="1500">
+                    <div class="col-md-12" >
                       <p class="content-ads">
 												After all the above steps are done we finally can deploy your advertising. Any online advertising campaign needs 2 things:
 												<br>Analytics and Managing.<br>
@@ -156,7 +154,7 @@ canvas {
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-md-12" data-aos="fade-left"  data-aos-duration="1500">
+                    <div class="col-md-12" >
                         <img class="" src="images/advertising/managing.jpg" alt="Card image cap" style="margin-left:auto; margin-right:auto; display:block;">
                     </div>
                   </div>
@@ -178,7 +176,7 @@ canvas {
 
     <div class="container">
         <div class="row">
-            <div class="col-md-3" data-aos="flip-left"  data-aos-duration="1500">
+            <div class="col-md-3" >
                 <div class="card">
                     <div class="card-image">
                         <img src="images/advertising/ppc.jpg" class="rounded" alt="">
@@ -193,7 +191,7 @@ canvas {
                 </div>
             </div>
 
-            <div class="col-md-3" data-aos="flip-left"  data-aos-duration="1500">
+            <div class="col-md-3" >
                 <div class="card">
                     <div class="card-image">
                         <img src="images/advertising/remarketing.jpg" class="rounded" alt="">
@@ -208,7 +206,7 @@ canvas {
                 </div>
             </div>
 
-            <div class="col-md-3" data-aos="flip-left"  data-aos-duration="1500">
+            <div class="col-md-3" >
                 <div class="card">
                     <div class="card-image">
                         <img src="images/advertising/smm.jpg" class="rounded" alt="">
@@ -223,7 +221,7 @@ canvas {
                 </div>
             </div>
 
-            <div class="col-md-3" data-aos="flip-left"  data-aos-duration="1500">
+            <div class="col-md-3" >
                 <div class="card">
                     <div class="card-image">
                         <img src="images/advertising/brand.jpg" class="rounded" alt="">
@@ -242,8 +240,8 @@ canvas {
 </div>
 <div class="section section-basic-components">
   <div class="container">
-    <div class="row"data-aos="fade-up"
-     data-aos-duration="3000">
+    <div class="row"
+     3000">
       <div class="col-lg-5 col-md-7 ml-auto mr-auto">
         <h2 class="title">Online Advertising</h2>
         <h6 class="category">Huge part of any business</h6>
@@ -275,8 +273,7 @@ canvas {
 	<div class="row" style="margin-left: 0; margin-right:0;">
 		<div class= "col-md-8 ml-auto mr-auto text-center">
 			<a href="/contact-us" class="btn btn-primary btn-round btn-l" style="margin-top: 30px; margin-bottom: 40px;"
-				data-aos="flip-up"
-				data-aos-duration="1000">GET A FREE QUOTE </a>
+				>GET A FREE QUOTE </a>
 		</div>
 	</div>
 </div>
@@ -295,7 +292,7 @@ canvas {
 						<div class="card card-testimonial card-plain">
 							<div class="card-avatar">
 								<a href="https://clutch.co/profile/wellknown-agency"  target="_blank">
-									<img class="img img-raised rounded" src="/images/dmitrii.jpg"   data-aos="zoom-in" data-aos-duration="500" />
+									<img class="img img-raised rounded" src="/images/dmitrii.jpg"  />
 								</a>
 							</div>
 							<div class="card-body">
@@ -327,7 +324,7 @@ canvas {
 		</h3>
 		<div id="accordion" role="tablist" aria-multiselectable="true" class="card-collapse">
 			<div class="card card-plain"
-			data-aos="fade-down" data-aos-duration="600">
+			>
 
 				<div class="card-header smm-collapse" role="tab" id="headingOne">
 					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="text-transform: uppercase;">
@@ -344,8 +341,7 @@ canvas {
 				</div>
 
 			</div>
-			<div class="card card-plain"
-			data-aos="fade-down" data-aos-duration="900">
+			<div class="card card-plain">
 
 				<div class="card-header smm-collapse" role="tab" id="headingTwo">
 					<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" style="text-transform: uppercase;">
@@ -364,8 +360,7 @@ canvas {
 				</div>
 
 			</div>
-			<div class="card card-plain"
-			data-aos="fade-down" data-aos-duration="1200">
+			<div class="card card-plain">
 
 				<div class="card-header smm-collapse" role="tab" id="headingThree">
 					<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree" style="text-transform: uppercase;">
@@ -383,8 +378,7 @@ canvas {
 					</div>
 				</div>
 			</div>
-			<div class="card card-plain"
-			data-aos="fade-down" data-aos-duration="1500">
+			<div class="card card-plain">
 
 				<div class="card-header smm-collapse" role="tab" id="headingFour">
 					<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour" style="text-transform: uppercase;">
