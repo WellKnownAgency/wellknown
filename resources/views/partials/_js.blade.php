@@ -12,22 +12,7 @@
 <script type="text/javascript" src="{!! asset('js/js/now-ui-kit.min.js') !!}"></script>
 <script type="text/javascript" src="{!! asset('js/js/plugins/presentation-page/rellax.min.js') !!}"></script>
 <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    if ($(window).width() >= 991) {
 
-      setTimeout(function() {
-        var rellax = new Rellax('.rellax', {
-          center: true
-        });
-      }, 5000);
-
-      var rellaxHeader = new Rellax('.rellax-header');
-      var rellaxText = new Rellax('.rellax-text');
-    }
-
-  });
-</script>
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
@@ -50,7 +35,7 @@
   {
   "@context":"http://schema.org",
   "@type":"Product",
-  "name":"Boston to New York (NYC) Movers",
+  "name":"WellKnown Agency",
   "aggregateRating": {
   "@type": "AggregateRating",
   "ratingValue": "5",
@@ -58,7 +43,7 @@
   },
   "offers": {
   "@type":"AggregateOffer",
-  "lowPrice":"300",
+  "lowPrice":"300/",
   "priceCurrency":"USD"
   }
   }
