@@ -51,8 +51,11 @@ class PagesController extends Controller
 	public function getSearch() {
     $posts = Post::latest()->with('category')->where('status', 'PUBLISHED')->take(3)->get();
 		return view('pages/search')->withPosts($posts);
+  }
+  public function getSeoboston() {
+    $posts = Post::latest()->with('category')->where('status', 'PUBLISHED')->take(3)->get();
+		return view('pages/seoboston')->withPosts($posts);
 	}
-
 	public function getWebdesign() {
     $posts = Post::latest()->with('category')->where('status', 'PUBLISHED')->take(3)->get();
 		return view('pages/web-design')->withPosts($posts);

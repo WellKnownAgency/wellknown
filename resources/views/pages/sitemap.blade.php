@@ -20,10 +20,15 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://wknown.com//wordpress-seo</loc>
+  <loc>https://wknown.com/wordpress-seo</loc>
   <lastmod>2020-04-10T01:04:07+00:00</lastmod>
   <priority>1.00</priority>
 </url>
+<url>
+    <loc>https://wknown.com/seo-agency-boston</loc>
+    <lastmod>2020-05-11T01:04:07+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
 <url>
   <loc>https://wknown.com/web-design-dev-services</loc>
   <lastmod>2020-04-10T01:04:07+00:00</lastmod>

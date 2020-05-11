@@ -22,7 +22,7 @@ Route::prefix('admin')->middleware('auth:web')->group(function() {
   Route::get('/posts/create', 'PostController@create');
   Route::get('/posts/{id}/edit', 'PostController@edit');
   Route::get('/posts/{id}/show', 'PostController@show');
-	Route::get('/subscribers', 'AdminPagesController@subs');
+	Route::get('/subscribers', 'AdminPagesController@subs'); 
 
   Route::get('cases', 'AdminPagesController@cases');
   Route::get('/cases/{id}/edit', 'ScaseController@edit');
@@ -75,13 +75,14 @@ Route::get('search-engine-optimization', 'PagesController@getSearch');
 Route::get('social-media-marketing', 'PagesController@getSocial');
 Route::get('web-design-dev-services', 'PagesController@getWebdesign');
 Route::get('web-design', function(){ 
-  return Redirect::to('/web-design-dev-services', 302); 
+  return Redirect::to('/web-design-dev-services', 301); 
 });
 Route::get('about-us', 'PagesController@getAboutus');
 Route::get('landing-pages', 'PagesController@getLanding');
 Route::get('social-media-marketing', 'PagesController@getSocial');
 Route::get('content-marketing', 'PagesController@getContentmarketing');
 Route::get('wordpress-seo', 'PagesController@getWordpressseo');
+Route::get('seo-agency-boston', 'PagesController@getSeoboston');
 /*Route::get('case-studies', 'PagesController@getCase');*/
 /*Route::get('your-form-submitted', 'PagesController@getYourformsubmitted');*/
 Route::get('privacy-policy', 'PagesController@getPrivacypolicy');
