@@ -2,7 +2,7 @@
 
 @section('title', 'SEO Agency in Boston | SEO Services Boston ')
 
-@section('description', 'Are you Looking SEO Agency in Boston? WellKnown Agency provides reliable SEO Services in Boston. Feel free to consult us for any digital marketing requirement.')
+@section('description', 'Are you Looking SEO Agency in Boston? WellKnown Agency provides reliable SEO Services in Boston. Feel free to consult with our boston seo company.')
 
 @section('keywords', 'seo services, boston seo, seo agency ,seo boston services')
 
@@ -30,7 +30,7 @@ canvas {
 			<div class="row">
 				<div class="col-md-9 ml-auto mr-auto text-center" style="padding-top: 100px;">
 					<h1 class="title">SEO Agency in Boston</h1>
-					<h5 class="page_header_dscr">SEO services for you from Boston based agency</h5>
+					<h5 class="page_header_dscr">Boston SEO company for your marketing needs</h5>
 					<nav aria-label="breadcrumb" role="navigation" style="margin: 0 auto;display:table;">
 						<ol class="breadcrumb" style="background-color:transparent;" itemscope itemtype="https://schema.org/BreadcrumbList">
 							<li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
