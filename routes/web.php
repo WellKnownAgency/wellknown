@@ -83,6 +83,7 @@ Route::get('social-media-marketing', 'PagesController@getSocial');
 Route::get('content-marketing', 'PagesController@getContentmarketing');
 Route::get('wordpress-seo', 'PagesController@getWordpressseo');
 Route::get('seo-agency-boston', 'PagesController@getSeoboston');
+Route::get('moving-company-marketing', 'PagesController@getMovmarketing');
 /*Route::get('case-studies', 'PagesController@getCase');*/
 /*Route::get('your-form-submitted', 'PagesController@getYourformsubmitted');*/
 Route::get('privacy-policy', 'PagesController@getPrivacypolicy');

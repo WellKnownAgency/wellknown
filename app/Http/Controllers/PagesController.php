@@ -59,6 +59,11 @@ class PagesController extends Controller
 	public function getWebdesign() {
     $posts = Post::latest()->with('category')->where('status', 'PUBLISHED')->take(3)->get();
 		return view('pages/web-design')->withPosts($posts);
+  }
+  
+  public function getMovmarketing() {
+    $posts = Post::latest()->with('category')->where('status', 'PUBLISHED')->take(3)->get();
+		return view('pages/movingmarketing')->withPosts($posts);
 	}
 
   public function getLanding() {
