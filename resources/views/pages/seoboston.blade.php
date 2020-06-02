@@ -297,7 +297,7 @@ canvas {
 						<div class="card card-testimonial card-plain">
 							<div class="card-avatar">
 								<a href="https://clutch.co/profile/wellknown-agency"  target="_blank">
-									<img class="img img-raised rounded" src="/images/dmitrii.jpg"/>
+									<img class="img img-raised rounded" src="/images/dmitrii.jpg" alt="SEO Agency Reviewer"/>
 								</a>
 							</div>
 							<div class="card-body">

@@ -31,17 +31,17 @@
               </a>
             </li>
             <li>
-              <a href="/search" class="text-muted">
+              <a href="/search-engine-optimization" class="text-muted">
                 Search Engine Optimization
               </a>
             </li>
             <li>
-              <a href="/smm" class="text-muted">
+              <a href="/social-media-marketing" class="text-muted">
                 Social Media Marketing
               </a>
             </li>
             <li>
-              <a href="/web-design" class="text-muted">
+              <a href="/web-design-dev-services" class="text-muted">
                 Web Design and Development
               </a>
             </li>

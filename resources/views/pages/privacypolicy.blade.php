@@ -1,10 +1,10 @@
-	@extends('layout.maincontact')
+@extends('layout.maincontact')
 
-@section('title', 'Thank you for your Submittion | WellKnown')
+@section('title', 'Privacy Policy | WellKnown Agency')
 
-@section('description', 'Form Submitted')
+@section('description', 'Learn about WellKnown Agency Privacy Policy. We always keep your information safe.')
 
-@section('keywords', 'Submittion Form')
+@section('keywords', '')
 
 @section('content')
 <section>
