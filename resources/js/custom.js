@@ -2,11 +2,16 @@ require("./bootstrap-other");
 
 window.Vue = require("vue");
 
-Vue.component("form-wizard", require("./components/FormWizard.vue"));
+Vue.component("contact-form", require("./components/FormWizard.vue"));
 Vue.component("tab", require("./components/Tab.vue"));
 
-import Vuelidate from "vuelidate";
-Vue.use(Vuelidate);
+import SNotify from "vue-snotify";
+import "vue-snotify/styles/material.css";
+Vue.use(SNotify, {
+    toast: {
+        position: "rightTop"
+    }
+});
 
 const app = new Vue({
     el: "#app"

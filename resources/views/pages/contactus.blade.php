@@ -23,18 +23,16 @@
 </script>
 @stop
 @section('content')
-<div class="page-header header-filter" filter-color="orange">
-        <div class="page-header-image" style="background-image:url(images/contact-us.jpg)"></div>
-        <div class="content">
-            <div class="container">
-                <div class="col-md-5 ml-auto mr-auto">
-                    <div class="card card-login card-plain" style="margin-top: 100px;" id="app">
-						<contact-form></contact-form>
-					</div>
-                </div>
-            </div>
+<div class="page-header header-filter" filter-color="orange" style="min-height: 120vh;">
+  <div class="page-header-image" style="background-image:url(images/contact-us.jpg)"></div>
+    <div class="content">
+      <div class="container">
+        <div class="col-md-7 ml-auto mr-auto" id="app">
+            <contact-form></contact-form>
         </div>
     </div>
+  </div>
+</div>
 @stop
 @section('customjs')
 <script src="{!! asset('js/custom.js') !!}"></script>
